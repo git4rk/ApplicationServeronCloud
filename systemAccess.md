@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-05-24"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -117,8 +117,8 @@ The following message is an example of the response:
 
 Use the following instructions to set up SSH access to your WebSphere Application Server in Bluemix VMs
 
-1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user virtuser.
-2. Log in to virtuser by using the private key. For best results, use the private key authentication method.
+1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
+2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
 3. Copy the contents of the private key into a file.
 4. Run the command:
 
@@ -127,7 +127,7 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
   </pre>
   {: codeblock}
 
-5. Gain full sysadmin authority by switching virtuser to root by using the command:
+5. Gain full sysadmin authority by switching **virtuser** to **root** by using the command:
 
   <pre>
     $ sudo su root
@@ -152,7 +152,7 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
   </pre>
   {: codeblock}
 
-9. Run "ssh VM1" to be connected as virtuser.
+9. Run "ssh VM1" to be connected as **virtuser**.
 
 ## System paths
 {: #system_paths}
@@ -161,6 +161,11 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
 * The Liberty Profile server profile location is */opt/IBM/WebSphere/Profiles/Liberty/servers/server1*.
 * The Traditional WebSphere Application Server commands can be issued from */opt/IBM/WebSphere/AppServer/bin*.
 * The Traditional WebSphere Application Server profile location for the server is */opt/IBM/WebSphere/Profiles/DefaultAppSrv01/servers/server1*.
+
+## Starting and stopping servers from the command line
+{: #start_servers}
+
+**Avoid trouble:** When you start and stop servers from the command line, be sure to use **wsadmin**, the WebSphere Administrative ID, not **virtuser**.
 
 ## Using the Admin Center and Admin Console links
 {: #console_links}

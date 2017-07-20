@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-05-24"
+lastupdated: "2017-07-20"
 
 ---
 
@@ -50,7 +50,37 @@ All the features available from the Service Dashboard in the {{site.data.keyword
 ## Public internet access
 {: #publicInternetAccess}
 
-Optionally, you can request a public IP address for your WebSphere server VM by clicking **Manage Public IP** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI and requesting a public IP. This process reserves the IP address for this server. Then, click **Open IP** to open the connection from the internet to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance.
+Optionally, you can manage public internet access from the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI. You can **request** a public IP address from the pool and **open** the connection from the internet to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance. Conversely, you can **close** access from your service instance to the internet and **return** the public IP address to the pool.
+
+To **request** a public IP address and **open** a connection, follow these instructions:
+
+1. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+2. The IP address for your host is shown, but not your public IP address. Click **Request Public IP Address**.
+
+    **Note:** You are returned to the Service Dashboard with a public IP assigned. However, the following message is displayed:
+
+    > Access is currently closed. Click Manage Public IP to Open Access.
+3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+4. The IP addresses for your host and your new public IP are shown, but access is closed. Click **Open Access**.
+
+    **Note:** You are returned to the Service Dashboard with the following message displayed:
+
+    > Access is currently open. Click Manage Public IP to Close Access.
+
+To **close** a connection and **return** a public IP address, follow these instructions:
+
+1. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+2. Click **Close Access**.
+
+    **Note:** You are returned to the Service Dashboard with the following message displayed:
+
+    > Access is currently closed. Click Manage Public IP to Open Access.
+3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+4. Click **Return Public IP Address**.
+
+    **Note:** You are returned to the Service Dashboard where the IP address of your host is shown with the following message displayed:
+
+    > Returned Public IP.
 
 ## Public IP ports
 {: #publicIPports}
@@ -58,6 +88,49 @@ Optionally, you can request a public IP address for your WebSphere server VM by 
 When you open access to your public IP, the IP address is associated with your VM, and ports 80 and 443 are opened at the gateway. However, by default, Liberty Core, and traditional WebSphere Base servers do not open ports 80 and 443. Conversely, ports 80 and 443 are opened by default on the IBM HTTP Server. Therefore, you might need to configure your Liberty Core and traditional WebSphere Base servers to listen for application traffic on port 80/443 when you use public IP.
 * To configure your Liberty Core server, see [Configure Liberty Core Server for public access](networkEnvironment.html#configureLibertyForPublicAccess).
 * To configure your traditional WebSphere Base server, add a Web container transport chain listening on port 80/443 as described in [Configuring transport chains](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
+
+**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a Web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port above 1024, such as 9080 and 9443. The following commands provide an example of this process:
+
+```
+-bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
+-bash-4.1# sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+-bash-4.1# sudo iptables -I INPUT -p tcp -m tcp --dport 9080 -j ACCEPT
+
+-bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 9443
+-bash-4.1# sudo iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+-bash-4.1# sudo iptables -I INPUT -p tcp -m tcp --dport 9443 -j ACCEPT
+```
+
+**Note:** Changes to **iptables** are ephemeral. For example, if your guest is rebooted or if the **iptables** service is restarted, the rules are automatically flushed and reset. To save the rules so that they are persisted when the iptables service is started or the guest is rebooted, use the following command as the **root** user:
+
+```
+-bash-4.1# service iptables save
+iptables: Saving firewall rules to /etc/sysconfig/iptables:[  OK  ]
+
+bash-4.1# cat /etc/sysconfig/iptables
+# Generated by iptables-save v1.4.7 on Wed May 31 19:44:11 2017
+*nat
+:PREROUTING ACCEPT [0:0]
+:POSTROUTING ACCEPT [23:1706]
+:OUTPUT ACCEPT [23:1706]
+-A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 9080
+-A PREROUTING -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 9443
+COMMIT
+# Completed on Wed May 31 19:44:11 2017
+# Generated by iptables-save v1.4.7 on Wed May 31 19:44:11 2017
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+-A INPUT -p tcp -m tcp --dport 9443 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 9080 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+
+```
+
+
+**Note:** **iptables** are invoked on requests that travel over the guest's external interface. Requests that travel over the local loopback (127.0.0.1) are not processed by **iptables** so redirecting ports, as noted earlier, would not be invoked over loopback.
 
 ## VPN private IP ports
 {: #privateIPports}
@@ -105,7 +178,7 @@ The following snippet is an example of server.xml configuration adjustments:
 ```
 {: codeblock}
 
-Now associate your application with the **external_host** virtual host by including the following snippet in your application's **META-INF/ibm-web-bnd.xml** file:
+Now associate your application with the **external_host** virtual host by including the following snippet in your application's **WEB-INF/ibm-web-bnd.xml** file:
 
 ```
     <?xml version="1.0" encoding="UTF-8"?>

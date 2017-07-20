@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-02-24"
+lastupdated: "2017-07-05"
 
 ---
 
@@ -12,6 +12,15 @@ lastupdated: "2017-02-24"
 
 # Installation conventions
 {: #installation_conventions}
+
+## Administration Tips
+{: admin_tips}
+
+When you are administering your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} environment and need to determine which user to use, it is important to understand the following concepts:
+
+ * Maintenance can be applied by using the [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} installed in the */home/virtuser/IBM/Installation Manager* directory. Since the underlying binaries are installed as **virtuser**, a limited administrative virtual user, ensure that all fix packs and interim fixes are installed as **virtuser**.
+
+ * However, when you start and stop servers from the command line, be sure to use **wsadmin**, the WebSphere Administrative ID, not **virtuser**.
 
 ## Cell Installation Conventions
 {: cell_installation_conventions}
@@ -35,7 +44,3 @@ A Liberty collective is installed and configured following a standardized direct
 * PLG_HOME=/opt/IBM/WebSphere/Plugins
 * PROFILES_HOME=/opt/IBM/WebSphere/Profiles
 * WLP_HOME=/opt/IBM/WebSphere/Liberty
-
-**Note**:
-* Maintenance can be applied by using the [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} installed in the /home/virtuser/IBM/Installation Manager directory. Since the underlying binaries are installed as virtuser, ensure that all fix packs and interim fixes are installed as virtuser.
-* Ensure that starting and stopping servers from the command line is performed as the WebSphere Administrative ID, not as virtuser

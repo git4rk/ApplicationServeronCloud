@@ -1,8 +1,8 @@
----
+controller---
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-02-24"
+lastupdated: "2017-07-05"
 ---
 
 {:shortdesc: .shortdesc}
@@ -26,15 +26,15 @@ You are given a familiar WebSphere administration experience and have full acces
 
 The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Plan consists of a WebSphere Application Server Network Deployment cell environment with two or more virtual machines. The first virtual machine contains the Deployment Manager and IBM HTTP Server and the remaining virtual machines contain custom nodes (node agents) federated to the Deployment Manager. Use your existing wsadmin scripts to create your WebSphere configuration or use the WebSphere Admin Console to manually configure the environment. These new capabilities allow users to set up a clustered environment, which is a critical aspect of any middleware enterprise application. Clients can now elect to cluster a topology to load balance requests across two or more Instances.
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Liberty Core Plan includes the use of a Liberty Collective. The Liberty Collective is an administrative domain for a group of Liberty profiles (servers) and consists of two or more virtual machines. The first virtual machine contains the Collective Controller liberty server, which is a control point for the Liberty Collective. In addition to the liberty collective, this virtual machine also contains the IBM HTTP Server, which allows access to your applications from a web browser. The remaining virtual machines are the collective hosts where the collective members reside (liberty profile servers). The Liberty Admin Center feature is also enabled on the liberty controller server.
+The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Plan also includes the use of a Liberty collective. The Liberty collective is an administrative domain for a group of Liberty profiles (servers) and consists of two or more virtual machines. The first virtual machine contains the collective controller Liberty server, which is a control point for the Liberty collective. In addition to the Liberty collective, this virtual machine also contains the IBM HTTP Server, which allows access to your applications from a web browser. The remaining virtual machines are the collective hosts where the collective members reside (Liberty profile servers). The Liberty Admin Center feature is also enabled on the Liberty controller server.
 
-The following figure shows the architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Cell and Liberty Collective environments.
+The following figure shows the architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Cell and Liberty collective environments.
 
 Figure 1. Network deployment cell and Liberty collective architecture
 
 ![Figure1. Architecture of Network deployment cell and Liberty collective](images/CellCollectiveDiagram.gif)
 
-**Note**: In _Figure 1_ above, the pattern that depicts collocation of the Deployment Manager or the Collective controller with the IBM HTTP Server is intended for development and testing purposes. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} also gives you the freedom to reconfigure the preinstalled software to meet your production application and operational needs; just as you would on-premises. Further, for the strictest production requirements, contact your IBM Sales representative who can speak to our single-tenant IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} offering, which offers isolated networking and compute resources.
+**Note**: In _Figure 1_ above, the pattern that depicts collocation of the Deployment Manager or the collective controller with the IBM HTTP Server is intended for development and testing purposes. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} also gives you the freedom to reconfigure the preinstalled software to meet your production application and operational needs; just as you would on-premises. Further, for the strictest production requirements, contact your IBM Sales representative who can speak to our single-tenant IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} offering, which offers isolated networking and compute resources.
 
 
 ## Operational Environment
