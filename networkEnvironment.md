@@ -59,13 +59,13 @@ To **request** a public IP address and **open** a connection, follow these instr
 
     **Note:** You are returned to the Service Dashboard with a public IP assigned. However, the following message is displayed:
 
-    > Access is currently closed. Click Manage Public IP to Open Access.
+    > **Access is currently closed. Click Manage Public IP to Open Access.**
 3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
 4. The IP addresses for your host and your new public IP are shown, but access is closed. Click **Open Access**.
 
     **Note:** You are returned to the Service Dashboard with the following message displayed:
 
-    > Access is currently open. Click Manage Public IP to Close Access.
+    > **Access is currently open. Click Manage Public IP to Close Access.**
 
 To **close** a connection and **return** a public IP address, follow these instructions:
 
@@ -74,13 +74,13 @@ To **close** a connection and **return** a public IP address, follow these instr
 
     **Note:** You are returned to the Service Dashboard with the following message displayed:
 
-    > Access is currently closed. Click Manage Public IP to Open Access.
+    > **Access is currently closed. Click Manage Public IP to Open Access.**
 3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
 4. Click **Return Public IP Address**.
 
     **Note:** You are returned to the Service Dashboard where the IP address of your host is shown with the following message displayed:
 
-    > Returned Public IP.
+    > **Returned Public IP.**
 
 ## Public IP ports
 {: #publicIPports}
