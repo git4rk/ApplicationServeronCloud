@@ -6,6 +6,7 @@ WebSphere Application Server in Bluemix
 
     {: .navgroup id="learn"}
     index.md
+    gettingStartedSTE.md
     networkEnvironment.md
     maintenanceAndUpdates.md
     {: .navgroup-end}
@@ -18,6 +19,7 @@ WebSphere Application Server in Bluemix
 
     {: .navgroup id="howto"}
     systemAccess.md
+    singleTenantAccess.md
     installationConventions.md
     {: .navgroup-end}
 
