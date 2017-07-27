@@ -45,7 +45,7 @@ All the features available from the Service Dashboard in the {{site.data.keyword
 
 -->
 
-**Note:** Currently, the **Advanced VPN Management** feature is only available in the Frankfurt region.
+**Note:** Currently, the **Advanced VPN Management** feature is only available in the Frankfurt, London and Sydney regions.
 
 ## Public internet access
 {: #publicInternetAccess}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-04-21"
+lastupdated: "2017-07-10"
 
 ---
 
@@ -15,12 +15,41 @@ lastupdated: "2017-04-21"
 
 A list of the latest updates to the service.
 
+## June 30, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Integrated miscellaneous service maintenance.
+* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} binaries such that fixpack 8.5.5.12 or 9.0.0.4 is installed with new instances of Traditional WebSphere Application Server.
+* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} binaries such that fixpack 17.0.0.2 is installed with new instances of WebSphere Application Server Liberty (Core and ND Plans).
+* Added an [Advanced VPN Configuration Management](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window} feature which allows you to create and manage multiple VPN configurations in the London and Sydney regions.
+* Added enhancements to the [Public Internet Access](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#publicInternetAccess){: new_window} feature that allows clients to better manage their public IP address.
+* Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} in the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+  * An unspecified vulnerability related to the Java SE AWT component that could allow an unauthenticated attacker to take control of the system.
+  * An unspecified vulnerability related to the Java SE JCE component that could allow an unauthenticated attacker to take control of the system.
+  * An unspecified vulnerability related to the Java SE JAXP component that could allow an unauthenticated attacker to cause a denial of service resulting in a high availability impact using unknown attack vectors.
+  * An unspecified vulnerability related to the Java SE Networking component that could allow an unauthenticated attacker to cause low confidentiality impact, low integrity impact, and no availability impact.
+  * An unspecified vulnerability related to the Java SE Networking component that could allow an unauthenticated attacker to cause no confidentiality impact, low integrity impact, and no availability impact.
+  * An unspecified vulnerability related to the Java SE Security component that could allow an unauthenticated attacker to cause no confidentiality impact, low integrity impact, and no availability impact.
+  * A vulnerability to a XML External Entity Injection (XXE) error when processing XML data. A remote attacker could exploit this vulnerability to expose highly sensitive information or consume memory resources.
+  * An issue where zlib is vulnerable to a denial of service, caused by an out-of-bounds pointer arithmetic in inftrees.c.
+  * An issue where zlib is vulnerable to a denial of service, caused by an undefined left shift of a negative number.
+  * An issue where zlib is vulnerable to a denial of service, caused by a big-endian out-of-bounds pointer.
+
+## May 25, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Integrated miscellaneous service maintenance.
+* Added an [Advanced VPN Configuration Management](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window} feature which allows you to create and manage multiple VPN configurations in the Frankfurt region.
+* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} binaries such that JDK 8 is installed with all new instances of the service.
+* Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+  * A potential security vulnerability with the WebSphere Application Server MQ JCA Resource adapter.
+  * An unspecified vulnerability related to the Libraries component which could allow a remote attacker to obtain sensitive information resulting in a high confidentiality impact using unknown attack vectors.
+
 ## April 21, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Integrated miscellaneous service maintenance.
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22000834){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
-  * A potential security vulnerability with the WebSphere Application Server MQ JCA Resource adapter.
-  * An unspecified vulnerability related to the Libraries component which could allow a remote attacker to obtain sensitive information resulting in a high confidentiality impact using unknown attack vectors.
+  * A vulnerability where WebSphere Application Server configured with OpenID Connect (OIDC) Trust Association Interceptor (TAI) could allow a user to gain elevated privileges on the system.
+  * A vulnerability where WebSphere Application Server could provide weaker than expected security. A remote attacker could exploit this weakness to obtain sensitive information and gain unauthorized access to the admin console.
+  * An issue where WebSphere Application Server is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and unauthorized actions transmitted from a user that the website trusts.
 
 
 ## March 15, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
