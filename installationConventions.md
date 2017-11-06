@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-11-03"
 
 ---
 
@@ -25,7 +25,7 @@ When you are administering your WebSphere Application Server in {{site.data.keyw
 ## Cell Installation Conventions
 {: cell_installation_conventions}
 
-A WebSphere Application Server in Bluemix cell is installed and configured following a standardized directory structure. The following list notes a few of the important settings.  See /etc/virtualimage.properties for a full list of the settings.
+A WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} cell is installed and configured following a standardized directory structure. The following list notes a few of the important settings.  See /etc/virtualimage.properties for a full list of the settings.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

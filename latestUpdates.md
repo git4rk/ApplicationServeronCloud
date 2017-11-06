@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-10"
+lastupdated: "2017-11-06"
 
 ---
 
@@ -14,6 +14,25 @@ lastupdated: "2017-07-10"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Added the ability to provision an older fixpack level [(n-1)](maintenanceAndUpdates.html#maintenance_strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or via the REST API.
+* The 9.0.0.5 fixpack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.5, other fixpack versions of traditional WebSphere Application Server, such as 9.0.0.4, 8.5.5.12, and 8.5.5.11, are available for provisioning.
+* The 17.0.0.3 fixpack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 17.0.0.3, the 17.0.0.2 fixpack version of WebSphere Application Server Liberty is available for provisioning.
+* Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+  * A vulnerability where IBM WebSphere Application Server might create files using the default permissions instead of the customized permissions when custom startup scripts are used.
+  * A vulnerability where IBM WebSphere Application Server Proxy Server or On-demand-router (ODR) could allow a local attacker to obtain sensitive information, caused by stale data being cached and then served.
+  * A vulnerability where IBM WebSphere Application Server is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.
+  * A vulnerability where IBM WebSphere Application Server could provide weaker than expected security after using the Admin Console to update the web services security bindings settings.
+  * A vulnerability where IBM WebSphere Application Server Version 9.0.0.4 could provide weaker than expected security after using the PasswordUtil command to enable AES password encryption.
+  * A vulnerability where Apache MyFaces could allow a remote attacker to obtain sensitive information.
+  * A vulnerability where IBM WebSphere Application Server could allow a remote attacker to obtain sensitive information caused by improper error handling by MyFaces in JSF.
+* Integrated miscellaneous service maintenance.
+
+## August 30, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Integrated miscellaneous service maintenance.
 
 ## June 30, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -112,7 +131,7 @@ A list of the latest updates to the service.
 
 ## August 17, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Upgraded the WebSphere Application Server in Bluemix binaries from 8.5.5.9 to 8.5.5.10
+* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} binaries from 8.5.5.9 to 8.5.5.10
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg21988710){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * Apache Struts vulnerabilities that affect the WebSphere Application Server and WebSphere Application Server Hypervisor Edition Administration Console.
   * A potential denial of service vulnerability with IBM WebSphere Application Server when using SIP services.
@@ -135,7 +154,7 @@ A list of the latest updates to the service.
 
 ## June 13, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added ability for clients to build, provision, manage, and delete virtual machine instances through the creation of an application or script that uses WebSphere Application Server in Bluemix RESTful APIs.
+* Added ability for clients to build, provision, manage, and delete virtual machine instances through the creation of an application or script that uses WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} RESTful APIs.
 * Added function that allows a client to have a fixed number of STOPPED instances with no more than 10 IP addresses or 64 GB of memory. Clients are now charged for accumulated instances in the STOPPED state at a reduced rate of 5%.
 
 ## April 26, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-11-03"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2017-07-05"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} provides consumers with pre-configured Traditional WebSphere and Liberty Profile servers. It is hosted on virtual machine guests with root access to the guest operating system. When you are creating your service, choose between _Liberty_, _Traditional ND_, or _Traditional WebSphere_.
 
-**Note:** Consumers are now able to choose between V8.5 and V9.0 when you create a new _Traditional ND_ or _Traditional WebSphere_ instance.
+**Note:** Consumers are now able to choose between the current fixpack level or one older version [(n or n-1)](maintenanceAndUpdates.html#maintenance_strategy){: new_window} when you create any WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance.
 
 You are given a familiar WebSphere administration experience and have full access to the underlying operating system. You can reuse your existing scripts and make the little system tweaks that you need to make to work with your own, or third party, frameworks. The Admin Center and Admin Consoles are provided to administer your WebSphere Application Server Liberty, ND or Traditional service, just like your on-premises WebSphere configurations.
 
