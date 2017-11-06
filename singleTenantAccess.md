@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-26"
+lastupdated: "2017-11-03"
 
 ---
 
@@ -82,7 +82,7 @@ After your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: S
 ## Managing your Single Tenant Environment
 {: #manageSTE}
 
-To add extra capacity to your existing WebSphere Application Server in Bluemix: Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. To identify your representative or partner call 800-426-4968. For more information, contact the Americas Call Centers. Phone: 800-IBM-CALL (426-2255) Fax: 800-2IBM-FAX (242-6329).
+To add extra capacity to your existing WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. To identify your representative or partner call 800-426-4968. For more information, contact the Americas Call Centers. Phone: 800-IBM-CALL (426-2255) Fax: 800-2IBM-FAX (242-6329).
 
 
 ## Supporting your Single Tenant Environment

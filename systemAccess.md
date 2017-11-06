@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-11-03"
 
 ---
 
@@ -61,10 +61,10 @@ From the service dashboard you can access:
 **Note**: Due to a specific amount of compute, memory, and I/O resources, clients are charged for accumulated VMs in the STOPPED state at a reduced rate of 5%. Clients are managed to a fixed number of STOPPED instances with no more than 10 IP addresses or 64 GB of memory.
 
 
-## Setting up openVPN for WebSphere Application Server in Bluemix instances
+## Setting up openVPN for WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instances
 {: #setup_openvpn}
 
-OpenVPN is required for access to any WebSphere Application Server in Bluemix virtual machine. It must be installed and running with administrator privileges.
+OpenVPN is required for access to any WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} virtual machine. It must be installed and running with administrator privileges.
 
 ### Use the following instructions to set up openVPN in Windows:
 
@@ -72,7 +72,7 @@ OpenVPN is required for access to any WebSphere Application Server in Bluemix vi
   * [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window} for 64-bit, or
   * [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window} for 32-bit.
 2. Ensure you [Run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} and openVPN is installed.
-3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in Bluemix instance in the service dashboard. Extract all four files in the compressed file to the **{OpenVPN home}\config** directory. For example:
+3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the **{OpenVPN home}\config** directory. For example:
 
   <pre>  
     C:\Program Files\OpenVPN\Config
@@ -84,7 +84,7 @@ OpenVPN is required for access to any WebSphere Application Server in Bluemix vi
 ### Use the following instructions to set up openVPN in Linux:
 1. To install openVPN, follow the [instructions](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
   * If you need to manually download and install the RPM Package Manager, go to [openVPN unix/linux download](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. You might need assistance from your Linux administrator.
-3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in Bluemix instance in the service dashboard. Extract the files into the directory from which you plan to start the openVPN client. You need all four files in the same directory.
+3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract the files into the directory from which you plan to start the openVPN client. You need all four files in the same directory.
 3. Start the openVPN client program. Open a terminal window and go to the directory that contains the config files. Run the following command as root:
 
   <pre>
@@ -98,7 +98,7 @@ OpenVPN is required for access to any WebSphere Application Server in Bluemix vi
 3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from [Tunnelblick](https://tunnelblick.net/){: new_window}. You can put an icon on the top menu bar for easy access.
 
 
-## Using SSH to access WebSphere Application Server in Bluemix VMs
+## Using SSH to access WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
 {: #using_ssh}
 
 These instructions assume that you are using OpenSSH as your client. OpenSSH is normally available on Linux or in Cygwin running on Windows. It also can be installed to run from a Windows command prompt.
@@ -115,7 +115,7 @@ The following message is an example of the response:
   ```
   {: codeblock}
 
-Use the following instructions to set up SSH access to your WebSphere Application Server in Bluemix VMs
+Use the following instructions to set up SSH access to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
 
 1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
 2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
@@ -159,13 +159,16 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
 
 * The Liberty Profile commands can be issued from */opt/IBM/WebSphere/Liberty/bin*.
 * The Liberty Profile server profile location is */opt/IBM/WebSphere/Profiles/Liberty/servers/server1*.
-* The Traditional WebSphere Application Server commands can be issued from */opt/IBM/WebSphere/AppServer/bin*.
-* The Traditional WebSphere Application Server profile location for the server is */opt/IBM/WebSphere/Profiles/DefaultAppSrv01/servers/server1*.
+* The Traditional WebSphere Application Server core product files, which are shared by all profiles, are located in */opt/IBM/WebSphere/AppServer/*.
+* The Traditional WebSphere Application Server commands can be issued from the default profile location in */opt/IBM/WebSphere/Profiles/Default**profile_typeprofile_number**/bin* where:
+  * **profile_type** is a value of *AppSrv*, *Dmgr*, *Custom*, *AdminAgent*, *JobMgr*, or *SecureProxySrv*.
+  * **profile_number** is a sequential number that is used to create a unique profile name
 
-## Starting and stopping servers from the command line
+
+## Managing servers from the command line
 {: #start_servers}
 
-**Avoid trouble:** When you start and stop servers from the command line, be sure to use **wsadmin**, the WebSphere Administrative ID, not **virtuser**.
+**Avoid trouble:** When you manage WebSphere servers from the command line, be sure to use **wsadmin**, the WebSphere Administrative ID, not **virtuser**. When you manage the IHS server from the command line, be sure to use **root**.
 
 ## Using the Admin Center and Admin Console links
 {: #console_links}
@@ -182,7 +185,7 @@ Lastly, customers often install their own root certificates for applications the
 {: #firewall_ports}
 
 You might find it necessary to open ports on the firewall to allow access to applications and databases.
-  * On each WebSphere Application Server in Bluemix node, you find a script openFirewallPorts.sh in the WAS_HOME/virtual/bin directory.
+  * On each WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} node, you find a script openFirewallPorts.sh in the WAS_HOME/virtual/bin directory.
   * On each Liberty collective host, you find a script openFirewallPorts.sh in the WAS_HOME/virtual/bin directory.
 
 Usage:

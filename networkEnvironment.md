@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-07-20"
+lastupdated: "2017-11-06"
 
 ---
 
@@ -193,3 +193,12 @@ Now associate your application with the **external_host** virtual host by includ
     </web-bnd>
 ```
 {: codeblock}
+
+## DNS configuration
+{: #dnsConfig}
+
+It is important to note that WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs are configured with two DNS resolvers. The resolvers are configured in the **/etc/resolv.conf** file on the VM. The primary DNS server is a non authoritative server provided by the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service. The secondary DNS server is a non authoritative server provided by {{site.data.keyword.Bluemix_notm}}.
+
+We recommend you review the DNS configuration to see if it fits your needs. You can update the **/etc/resolv.conf** file to reference the DNS server of your choice if the ones provided by IBM do not meet your requirements.
+
+**Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might only have a primary DNS server configured in the **/etc/resolv.conf** file. If you want a HA solution, you can either release the VM and provision a new one or update the **/etc/resolv.conf** file to add a secondary DNS server. This can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
