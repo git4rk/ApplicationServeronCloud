@@ -2,7 +2,7 @@
 
 copyright:
   years: 2016, 2017
-lastupdated: "2017-11-06"
+lastupdated: "2017-12-21"
 
 ---
 
@@ -14,6 +14,11 @@ lastupdated: "2017-11-06"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## December 21, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Added the WebSphere Application Server in IBM Cloud Migration Feature in Dallas, London & Sydney. This feature provides complete end to end migration from existing v7, v8 or v8.5.5 on-prem environments to v9 environments running in IBM Cloud. For more information, see the [WebSphere Configuration Migration Tool for IBM Cloud](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud).
+* Integrated miscellaneous service maintenance.
 
 ## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
