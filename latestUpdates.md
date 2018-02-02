@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2017
-lastupdated: "2017-12-21"
+  years: 2017, 2018
+lastupdated: "2018-02-02"
 
 ---
 
@@ -14,6 +14,16 @@ lastupdated: "2017-12-21"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## January 8, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.0.6 fixpack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.6, other fixpack versions of traditional WebSphere Application Server, such as 9.0.0.5, 8.5.5.12, and 8.5.5.11, are available for provisioning.
+* The 17.0.0.4 fixpack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 17.0.0.4, the 17.0.0.3 fixpack version of WebSphere Application Server Liberty is available for provisioning.
+* Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22013153){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+  * A vulnerability where OpenSAML could allow a remote authenticated attacker to obtain sensitive information, caused by an error when parsing XML entities.
+  * A vulnerability where Apache HTTP Server could allow a remote attacker to obtain sensitive information, caused by a flaw in the HTTP OPTIONS method, aka Optionsbleed.
+  * A vulnerability where Apache Portable Runtime Utility (APR-util) is vulnerable to a denial of service, caused by failing to validate the integrity of SDBM database files used by apr_sdbm*() functions.
+* Integrated miscellaneous service maintenance.
 
 ## December 21, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 

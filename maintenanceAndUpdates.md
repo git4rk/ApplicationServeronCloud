@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2016, 2017
-lastupdated: "2017-11-03"
+  years: 2017, 2018
+lastupdated: "2018-02-02"
 
 ---
 
@@ -20,13 +20,13 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} is update
 
 Additionally, consumers can create a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance using an older fixpack level if desired to conform with hybrid cloud deployment requirements. You can choose between the current fixpack level or one older version (n or n-1) through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard.
 
-For Liberty instances, choose between 17.0.0.2 and 17.0.0.3 as shown in Figure 1:
+For Liberty instances, choose between 17.0.0.3 and 17.0.0.4 as shown in Figure 1:
 
 Figure 1. Fixpack selection choices for Liberty Core instances
 
 ![Figure1. Fixpack selection choices for Liberty Core instances](images/libertyNMinus1.png)
 
-For Traditional WebSphere instances, choose between 8.5.5.11, 8.5.5.12, 9.0.0.4 or 9.0.0.5 as shown in Figure 2:
+For Traditional WebSphere instances, choose between 8.5.5.11, 8.5.5.12, 9.0.0.5 or 9.0.0.6 as shown in Figure 2:
 
 Figure 2. Fixpack selection choices for Traditional WebSphere instances
 
