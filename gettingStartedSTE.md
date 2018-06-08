@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-08"
 
 ---
 
@@ -10,10 +10,10 @@ lastupdated: "2018-02-02"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-# Getting Started Guide for Single Tenant Environments
+# Single Tenant Environments
 {: #getting_startedSTE}
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix}}:Single Tenant Environment is an offering that provides customers with an isolated WebSphere workload, a fully integrated hybrid environment, and secure data. The Getting Started Guide is designed to identify key elements that assist clients in accessing and managing their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
+The {{site.data.keyword.appserver_full}}:Single Tenant Environment is an offering that provides customers with an isolated WebSphere workload, a fully integrated hybrid environment, and secure data. This getting started guide is designed to identify key elements that assist clients in accessing and managing their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
 {: shortdesc}
 
 
@@ -23,7 +23,7 @@ The WebSphere Application Server in {{site.data.keyword.Bluemix}}:Single Tenant 
 You need the following software to access your Single Tenant Environment:
 * A web browser that is supported by {{site.data.keyword.Bluemix_notm}}:
     * Chrome: the latest version for your operating system
-    * Firefox: the latest version for your operating system and ESR 38 or ESR 45
+    * Firefox: the latest version for your operating system or the latest ESR version
     * Internet Explorer: version 10 or 11
     * Safari: the latest version for the Mac
 * Cloud Foundry command line interface, Version 6.5.1 or later (you can use the latest release)

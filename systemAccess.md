@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-05-04"
 
 ---
 
@@ -10,15 +10,14 @@ lastupdated: "2018-02-02"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-#System Access
+# System access
 {: #system_access}
 
-
-Methods of creating and managing a service instance are discussed in this section, along with various ways to access and setup access to your systems.
+Methods of creating and managing a service instance are discussed in this section, along with various ways to access and set up access to your systems.
 {: shortdesc}
 
 
-## REST API Usage in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+## REST API usage in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 {: #restapi_usage}
 
 Instances in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} are created, provisioned, managed, and deleted in one of the following ways:
@@ -26,13 +25,13 @@ Instances in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 
 * From the {{site.data.keyword.Bluemix_notm}} Catalog and Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
 * From the creation of an application or script that uses RESTful APIs.
 
-Through use of Swagger 2.0 compliant REST APIs, clients have access to the same function as provided through the portal and dashboard. For more information about supported REST APIs and resources, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}. For sample code that demonstrates usage of the REST APIs, download the Git hosted WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Samples](https://github.com/IBM-Bluemix/WebSphere-for-Bluemix-API-Usage){: new_window}.
+Through use of Swagger 2.0 compliant REST APIs, clients have access to the same function as provided through the portal and dashboard. For more information about supported REST APIs and resources, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}. For sample code that demonstrates usage of the REST APIs, download the Git hosted WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}.
 
-**Note:** After you create a service instance, depending on the Tee-Shirt size that is created, your service might not be immediately ready for use. It is recommended that you query the **Status** field of the JSON returned to determine the current state of the service instance.
+**Note:** After you create a service instance, depending on the T-shirt size that is created, your service might not be immediately ready for use. It is recommended that you query the **Status** field of the JSON returned to determine the current state of the service instance.
 
-**Note:** The **apiEndpoint** URL referenced in the [REST API Samples](https://github.com/IBM-Bluemix/WebSphere-for-Bluemix-API-Usage){: new_window} points to the US South Region. If you are using other regions, ensure that your application references the appropriate **apiEndpoint**.
+**Note:** The **apiEndpoint** URL referenced in the [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} points to the US South Region. If you are using other regions, ensure that your application references the appropriate **apiEndpoint**.
 
-*Table 1. API Endpoint URLs for Rest API Implementation*
+*Table 1. API Endpoint URLs for REST API Implementation*
 
 | **Region name** | **Geographic location** | **Region prefix** | **API Endpoint URL** |       
 |:-------------:|:----------:|:--------------:|:-------------:|
@@ -43,7 +42,7 @@ Through use of Swagger 2.0 compliant REST APIs, clients have access to the same 
 
 
 
-## Service Dashboard
+## Service dashboard
 {: #service_dashboard}
 
 After you create your service instance, you will be taken to the service dashboard. You can always get back to the service dashboard by clicking the service icon from your organization dashboard.
@@ -56,9 +55,7 @@ From the service dashboard you can access:
 * The admin user and admin password
 * A private SSH key
 * The WebSphere® admin user and admin password
-* The Admin Center and Admin Console URLS
-
-**Note**: Due to a specific amount of compute, memory, and I/O resources, clients are charged for accumulated VMs in the STOPPED state at a reduced rate of 5%. Clients are managed to a fixed number of STOPPED instances with no more than 10 IP addresses or 64 GB of memory.
+* The Admin Center and Admin Console URLs
 
 
 ## Setting up openVPN for WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instances
@@ -68,34 +65,34 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 
 ### Use the following instructions to set up openVPN in Windows:
 
-1. From the [openVPN Windows download](http://swupdate.openvpn.org/community/releases/) link, download
-  * [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window} for 64-bit, or
-  * [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window} for 32-bit.
+1. Download the openVPN Windows installer for your system architecture from the openVPN website:
+  * 64-bit systems: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
+  * 32-bit systems:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
 2. Ensure you [Run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} and openVPN is installed.
-3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the **{OpenVPN home}\config** directory. For example:
+3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the `{OpenVPN home}\config` directory. For example:
 
-  <pre>  
-    C:\Program Files\OpenVPN\Config
-  </pre>
-  {: codeblock}
+  ```  
+  C:\Program Files\OpenVPN\Config
+  ```
 
-4. Start the openVPN client program "OpenVPN GUI". Ensure that you select [Run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} to start the program. If you do not, you might not be able to connect.
+4. Start the openVPN client program "OpenVPN GUI". Ensure that you select **Run as a Windows Administrator** to start the program. If you do not, you might not be able to connect.
 
 ### Use the following instructions to set up openVPN in Linux:
-1. To install openVPN, follow the [instructions](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
+
+1. To install openVPN, follow the [openVPN instructions for Linux](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
   * If you need to manually download and install the RPM Package Manager, go to [openVPN unix/linux download](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. You might need assistance from your Linux administrator.
 3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract the files into the directory from which you plan to start the openVPN client. You need all four files in the same directory.
-3. Start the openVPN client program. Open a terminal window and go to the directory that contains the config files. Run the following command as root:
+3. Start the openVPN client program. Open a terminal window and go to the directory that contains the configuration files. Run the following command as root:
 
-  <pre>
-      $ openvpn --config vt-wasaas-wasaas.ovpn
-  </pre>
-  {: codeblock}  
+  ```
+  openvpn --config vt-wasaas-wasaas.ovpn
+  ```
+  {: .codeblock}  
 
 ### Use the following instructions to configure openVPN in Mac:
 1. One method is to install [Tunnelblick](https://tunnelblick.net/){: new_window}, an open source software product.
 2. Extract the VPN configuration files from the WebSphere service. Tunnelblick prompts for your admin password for Mac and adds the config to the set of VPNs you can use to connect.
-3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from [Tunnelblick](https://tunnelblick.net/){: new_window}. You can put an icon on the top menu bar for easy access.
+3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from Tunnelblick. You can put an icon on the top menu bar for easy access.
 
 
 ## Using SSH to access WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
@@ -179,9 +176,9 @@ Since you are using links that are provided by {{site.data.keyword.IBM}}, you ca
 
 Another option is to export the incoming signer certificate and then import it into your browser as a trusted root certificate. This option would require you to make an entry in your *hosts* file that maps the VM's IP address to the certificate issuer's common name. This name is in the following format: wl<pureapplication.ibmcloud.com. If you now use the host name instead of the IP address in the URL, you can connect cleanly. You then must access the Admin Center or Admin Console by using that host name instead of the IP address in the URL.
 
-Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5/com.ibm.websphere.base.doc/ae/tsec_securecomm.html?cp=SSEQTP_8.5.5%2F1-11-2-6&lang=en){: new_window} or [Liberty Core](http://www.ibm.com/support/knowledgecenter/SSD28V_8.5.5/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html?lang=en){: new_window} IBM Knowledge Center.
+Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
 
-## Firewall Ports
+## Firewall ports
 {: #firewall_ports}
 
 You might find it necessary to open ports on the firewall to allow access to applications and databases.
@@ -265,16 +262,16 @@ The following high-level steps assume that the prerequisite tasks are complete:
   ```
   {: codeblock}
 
-**NOTE:** The steps that are provided represent one path of many when you're attempting to configure a web server. If further assistance is needed, see the [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.0){: new_window}.
+**Note:** The steps that are provided represent one path of many when you're attempting to configure a web server. If further assistance is needed, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.0){: new_window}.
 
 **NOTE:** If you cannot access your application, you are likely facing a port access issue on your firewall. Therefore, you might need to restart any of the following servers: the application server, the node agent, the web server, and the deployment manager. Additionally, it is possible that you might need to access the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Service Dashboard and restart each virtual machine.
 
 ## SSL Configuration
 {: #ssl_configuration}
 
-Traditional WebSphere Application Server and Liberty profile are configured with the [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} protocol.  To change the protocol, modify the following files:
+WebSphere Application Server traditional and Liberty are configured with the [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} protocol.  To change the protocol, modify the following files:
 
-For Traditional WebSphere Application Server:
+For WebSphere Application Server traditional:
 
 1. Edit **security.xml** in /opt/IBM/WebSphere/Profiles/*profile_name*/config/cell/*cell_name* and modify the following line:
 
@@ -290,7 +287,7 @@ For Traditional WebSphere Application Server:
   ```
 {: codeblock}
 
-For Liberty profile:
+For Liberty:
 
 1. Edit **server.xml** in /opt/IBM/WebSphere/Profiles/Liberty/servers/server1 and modify the following line located in the defaultSSLConfig ssl configuration element:
 
