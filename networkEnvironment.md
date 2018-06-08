@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-04-06"
 
 ---
 
@@ -13,7 +13,7 @@ lastupdated: "2018-02-02"
 # Network environment
 {: #networkEnvironment}
 
-After your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance is provisioned, you can access your VM in several ways. You can connect over a secure VPN to get SSH, traditional WebSphere Admin Console, and application access to your VM. You can also connect your VM to the internet with a public IP address.
+After your {{site.data.keyword.appserver_full}} service instance is provisioned, you can access your VM in several ways. You can connect over a secure VPN to get SSH, traditional WebSphere Admin Console, and application access to your VM. You can also connect your VM to the internet with a public IP address.
 
 The following diagram shows these network paths:
 
@@ -39,13 +39,8 @@ In most cases, you need only a single VPN configuration that you can download by
 
 If your VPN configurations are compromised or expired, you can revoke VPN configuration by using the advanced VPN management page. Additionally, from an audit perspective, you can view a history of all VPN management activity and download active VPN configurations that were created previously from the advanced VPN management page.
 
-<!-- Commenting out until iteration 17.10
-
 All the features available from the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}.
 
--->
-
-**Note:** Currently, the **Advanced VPN Management** feature is only available in the Frankfurt, London and Sydney regions.
 
 ## Public internet access
 {: #publicInternetAccess}
@@ -139,7 +134,7 @@ You connect to your VM's private IP address over the VPN connection. Your Libert
 
 **Avoid trouble:** For Liberty Core and traditional WebSphere Base servers, the Firewall ports are preconfigured when your VM is provisioned. However, for Network Deployment configurations where the Deployment manager or the Collective controller is collocated with the IBM HTTP Server, you might need to open ports on the firewall. See [Firewall ports](systemAccess.html#firewall_ports) for details.
 
-## Configure Liberty Core server for Public IP access
+## Configuring a Liberty Core server for a public IP access
 {: #configureLibertyForPublicAccess}
 
 You need to configure Liberty Core to listen for application traffic on port 80/443 when you use the public IP.
@@ -165,7 +160,7 @@ The following snippet is an example of server.xml configuration adjustments:
         <tcpOptions soReuseAddr="true"/>
     </httpEndpoint>
 
-    <!– restrict default_host to vpn so the Liberty Admin Center is not public -->
+    <!–- restrict default_host to vpn so the Liberty Admin Center is not public -->
     <virtualHost id="default_host" allowFromEndpointRef="defaultHttpEndpoint">
       <hostAlias>*:9080</hostAlias>
       <hostAlias>*:9443</hostAlias>
@@ -194,7 +189,7 @@ Now associate your application with the **external_host** virtual host by includ
 ```
 {: codeblock}
 
-## DNS configuration
+## Configuring DNS
 {: #dnsConfig}
 
 It is important to note that WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs are configured with two DNS resolvers. The resolvers are configured in the **/etc/resolv.conf** file on the VM. The primary DNS server is a non authoritative server provided by the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service. The secondary DNS server is a non authoritative server provided by {{site.data.keyword.Bluemix_notm}}.
@@ -202,3 +197,14 @@ It is important to note that WebSphere Application Server in {{site.data.keyword
 We recommend you review the DNS configuration to see if it fits your needs. You can update the **/etc/resolv.conf** file to reference the DNS server of your choice if the ones provided by IBM do not meet your requirements.
 
 **Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might only have a primary DNS server configured in the **/etc/resolv.conf** file. If you want a HA solution, you can either release the VM and provision a new one or update the **/etc/resolv.conf** file to add a secondary DNS server. This can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
+
+
+## Opening ports for new servers on custom nodes
+{: #serversOnCustom}
+
+When you create a server on a custom node, the additional ports that are required by the server must be opened on the deployment manager and custom node VMs before you start the server. After you create the server, but before you start the server, open the ports by running the `openWASPorts.sh` script:
+
+ 1. Log into each deployment manager and custom VM as the root user.
+ 1. Run the `/opt/IBM/WebSphere/AppServer/virtual/bin/openWASPorts.sh` script to open the ports.
+ 
+After you run the script, you can start the server from the deployment manager admin console.

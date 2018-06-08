@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-08"
 
 ---
 
@@ -10,7 +10,7 @@ lastupdated: "2018-02-02"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-#Single Tenant Environment Access
+# Single Tenant Environment access
 {: #singleTenantEnvironment}
 
 
@@ -21,41 +21,32 @@ The following steps discuss accessing your Single Tenant Environment, along with
 ## Accessing your Single Tenant Environment
 {: #accessSTE}
 
-1. Go to [https://console.bluemix.net](https://console.bluemix.net){: new_window} in your browser.
-2. Click **Log in** and enter your **IBMid**
-3. Select the **Region** where your Single Tenant Environment is deployed. Change to the Region wanted by clicking the current Region and selecting from the dropdown menu:
+1. In your browser, go to the [{{site.data.keyword.cloud_notm}} catalog](https://console.bluemix.net/catalog/){: new_window}.
 
-      ![alt text](images/myRegion.png "Regions from the dropdown menu")
-4. Click **Catalog** in the upper right once you are in the correct Region:
+2. Click **Log in**, and log in with your IBMid.
 
-      ![alt text](images/catalog.png "Catalog")
-
-5. Select the **Application Services** category once in the Catalog:
-
-    ![alt text](images/applicationServices.png "Application Services Category")
-
-6. Type **WebSphere Application Server** in the search filter:
+6. In the Catalog search filter, enter **WebSphere Application Server**.
 
     ![alt text](images/filter.png "Search Filter")
 
-7. Click the tile that is named **WebSphere Application Server**:
+7. Under **Application Services**, click the **WebSphere Application Server** tile.
 
     ![alt text](images/iconWAS.png "WebSphere Application Server tile")
 
-8. Your Single Tenant Environment name is displayed in the **Environment** pull-down menu immediately below the service name:
+8. In the **Environment** menu, select your Single Tenant Environment.
 
-    ![alt text](images/environment.png "Single Tenant Environment name")
+    ![alt text](images/environmentSTE.png "Single Tenant Environment name")
 
-    **Avoid Trouble:** The public environment might be shown as the default, so you might have to click the pull-down menu to find and select your Single Tenant Environment name. Displaying the correct environment name assumes that you are logged in to the correct region, and a member of an organization that is allowed to access your Single Tenant Environment.
+    **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and a member of an organization that is allowed to access your Single Tenant Environment.
 
-    **NOTE:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as defined on the [Getting Customer Support](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} page.
+    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as defined on the [Getting Customer Support](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} page.
 
-9. Select the appropriate plan and click **Create:**
+9. Select the appropriate plan, and click **Create**.
 
     ![alt text](images/createSTE.png "Choose a plan and create your service")
 
 
-**NOTE:** Hourly pricing does not apply for Single Tenant environments. A Single Tenant environment includes a fixed number of **blocks** that are called a quota. A small environment contains 64 blocks. A medium contains 128 blocks, and a large contains 256 blocks.
+**Note:** Hourly pricing does not apply for Single Tenant environments. A Single Tenant environment includes a fixed number of **blocks** that are called a quota. A small environment contains 64 blocks. A medium contains 128 blocks, and a large contains 256 blocks.
 
 A **block** is defined as follows:
   * 1 vCPU
@@ -64,9 +55,9 @@ A **block** is defined as follows:
 
 [1] *Technically, a small system contains only 12 GB of disk. A medium system contains 25 GB of disk, and a large contains 50 GB, and so on.*
 
-For each virtual machine you create, specify the Tee-Shirt size you desire: S, M, L, XL, or XXL, which corresponds to 1, 2, 4, 8, and 16 blocks. When you select a Tee-Shirt size, the corresponding number of blocks is decremented from your quota.
+For each virtual machine you create, specify the T-shirt size you desire: S, M, L, XL, or XXL, which corresponds to 1, 2, 4, 8, and 16 blocks. When you select a T-shirt size, the corresponding number of blocks is decremented from your quota.
 
-For example, suppose that you have a small environment, which contains 64 blocks. Within this environment, you configured service instances that contain two XXLs, three XLs, and 1 L for a total of 60 used blocks. If you select a Medium Tee-Shirt size for a new Liberty Core subscription, a message might be displayed that states your quota and the number of blocks still available:
+For example, suppose that you have a small environment, which contains 64 blocks. Within this environment, you configured service instances that contain two XXLs, three XLs, and 1 L for a total of 60 used blocks. If you select a Medium T-shirt size for a new Liberty Core subscription, a message might be displayed that states your quota and the number of blocks still available:
 
 > **Your Single-Tenant memory quota for this service is 64 blocks. Including your current configuration, you have 2 blocks remaining. To increase your memory quota, contact IBM Sales.**
 

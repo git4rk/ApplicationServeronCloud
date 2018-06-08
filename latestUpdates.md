@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-03-30"
 
 ---
 
@@ -14,6 +14,19 @@ lastupdated: "2018-02-02"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## March 30, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.0.7 fixpack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.7, other fixpack versions of traditional WebSphere Application Server, such as 9.0.0.6, 8.5.5.13, and 8.5.5.12, are available for provisioning.
+* The 18.0.0.1 fixpack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 18.0.0.1, the 17.0.0.4 fixpack version of WebSphere Application Server Liberty is available for provisioning.
+* Addressed [several security vulnerabilities]( http://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+  * Multiple Vulnerabilities in IBM® Java SDK
+  * A vulnerability where IBM WebSphere Application Server could provide weaker than expected security when using the Administrative Console.
+  * A vulnerability where IBM WebSphere Application Server installations using Form Login could allow a remote attacker to conducts spoofing attacks.
+  * A vulnerability where IBM WebSphere Application Server could allow a local attacker to obtain sensitive information, caused by improper handling of application requests, which could allow unauthorized access to read a file.
+  * A vulnerability where Apache Commons FileUpload, as used in several products, could allow a remote attacker to execute arbitrary code on the system, caused by deserialization of untrusted data in DiskFileItem class of the FileUpload library. A remote attacker could exploit this vulnerability to execute arbitrary code under the context of the current process.
+  * A vulnerability where Intel Haswell Xeon, AMD PRO and ARM Cortex A57 CPUs could allow a local authenticated attacker to obtain sensitive information, caused by a bounds check bypass in the CPU speculative branch instruction execution feature. By conducting targeted cache side-channel attacks, an attacker could exploit this vulnerability to cross the syscall boundary and read data from the CPU virtual memory.
+* Integrated miscellaneous service maintenance.
 
 ## January 8, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
