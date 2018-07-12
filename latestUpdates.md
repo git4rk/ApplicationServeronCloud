@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-30"
+lastupdated: "2018-06-13"
 
 ---
 
@@ -14,6 +14,12 @@ lastupdated: "2018-03-30"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## June 13, 2018: Reserve contract billing now available
+
+With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other {{site.data.keyword.appserver_full}} users. You can use your service block hours in any way you choose throughout the month, with any overages being charged according to the typical pay-as-you-go subscription model.
+
+To learn more about reserve contract billing, see [Billing options](index.html#billing-options).
 
 ## March 30, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -45,7 +51,7 @@ A list of the latest updates to the service.
 
 ## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added the ability to provision an older fixpack level [(n-1)](maintenanceAndUpdates.html#maintenance_strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or via the REST API.
+* Added the ability to provision an older fixpack level [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or via the REST API.
 * The 9.0.0.5 fixpack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.5, other fixpack versions of traditional WebSphere Application Server, such as 9.0.0.4, 8.5.5.12, and 8.5.5.11, are available for provisioning.
 * The 17.0.0.3 fixpack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 17.0.0.3, the 17.0.0.2 fixpack version of WebSphere Application Server Liberty is available for provisioning.
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
