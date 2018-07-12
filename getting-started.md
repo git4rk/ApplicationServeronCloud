@@ -58,7 +58,7 @@ For the Network Deployment plan, choose the profile and architecture for your en
 ## Step 3: Size your virtual machines
 {: #vm_sizing}
 
-You can individually size the virtual machine for each component in your environment. Virtual machine sizing is chunked in [T-shirt sizes](index.html#vm-sizes) of blocks of resources.
+You can individually size the virtual machine for each component in your environment. Virtual machine sizing is chunked in [T-shirt sizes](index.html#vm-size) of blocks of resources.
 
 Click the tab for the component, such as the server, deployment manager, or application node, and select the T-shirt size for its virtual machine.
 
