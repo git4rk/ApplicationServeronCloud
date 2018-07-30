@@ -2,23 +2,29 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="wasaas" audience="service"}
-Bluemix 中的 WebSphere Application Server
+WebSphere Application Server in IBM Cloud
 
     {: .navgroup id="learn"}
+    getting-started.md
     index.md
+    gettingStartedSTE.md
     networkEnvironment.md
-    maintenanceAndUpdates.md
-    {: .navgroup-end}
 
     {: .topicgroup}
     相關鏈結
         [WASdev](https://developer.ibm.com/wasdev/)
-        [WebSphere Application Server 第 9 版文件](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/as_ditamaps/was900_welcome_base.html)
+        [WebSphere Application Server 第 9 版文件](http://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/)
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    installationConventions.md
+    [REST API 文件](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     systemAccess.md
-    installationConventions.md
+    singleTenantAccess.md
+    maintenanceAndUpdates.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

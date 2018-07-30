@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-04-07"
+  years: 2017, 2018
+lastupdated: "2018-06-13"
 
 ---
 
@@ -15,14 +15,104 @@ lastupdated: "2017-04-07"
 
 服务的最新更新的列表。
 
+## 2018 年 6 月 13 日：保留合同计费现在可用
+
+使用保留合同计费时，可以购买预付费的每月预订，以保证对以物理方式保留的计算资源块进行访问。这些服务块已保留供您专用，不能视为是可供其他任何 {{site.data.keyword.appserver_full}} 用户使用的容量。您可以在一个月内以所选的任何方式使用服务块小时数，并根据典型的现买现付预订模型对任何超额量进行收费。
+
+要了解有关保留合同计费的更多信息，请参阅[计费选项](index.html#billing-options)。
+
+## 2018 年 3 月 30 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.7 修订包版本可用。除了 9.0.0.7 外，传统 WebSphere Application Server 的其他修订包版本（例如，9.0.0.6、8.5.5.13 和 8.5.5.12）也可用于供应。
+* 在供应新服务实例时，WebSphere Application Server Liberty 的 18.0.0.1 修订包版本可用。除了 18.0.0.1 外，WebSphere Application Server Liberty 的 17.0.0.4 修订包版本也可用于供应。
+* 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞]( http://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window}，包括：
+  * IBM® Java SDK 中的多个漏洞
+  * 导致 IBM WebSphere Application Server 在使用管理控制台时提供的安全性可能低于预期的漏洞。
+  * 导致使用“表单登录”的 IBM WebSphere Application Server 安装可能允许远程攻击者执行电子欺骗攻击的漏洞。
+  * 导致 IBM WebSphere Application Server 可能允许本地攻击者获取敏感信息的漏洞，此漏洞是由于处理应用程序请求不当引起的，可能允许未经授权的访问来读取文件。
+  * 导致在多个产品中使用的 Apache Commons FileUpload 可能允许远程攻击者在系统上执行任意代码的漏洞，此漏洞是由于对 FileUpload 库的 DiskFileItem 类中不可信数据进行反序列化引起的。远程攻击者可能利用此漏洞在当前进程的上下文中执行任意代码。
+  * 导致 Intel Haswell Xeon、AMD PRO 和 ARM Cortex A57 CPU 可能允许经认证的本地攻击者获取敏感信息的漏洞，此漏洞是由于 CPU 推测转移指令执行功能中的边界检查旁路引起的。通过执行有针对性的高速缓存端通道攻击，攻击者可能利用此漏洞来跨越 syscall 边界，并从 CPU 虚拟内存中读取数据。
+* 集成了其他服务维护。
+
+## 2018 年 1 月 8 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.6 修订包版本可用。除了 9.0.0.6 外，传统 WebSphere Application Server 的其他修订包版本（例如，9.0.0.5、8.5.5.12 和 8.5.5.11）也可用于供应。
+* 在供应新服务实例时，WebSphere Application Server Liberty 的 17.0.0.4 修订包版本可用。除了 17.0.0.4 外，WebSphere Application Server Liberty 的 17.0.0.3 修订包版本也可用于供应。
+* 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22013153){: new_window}，包括：
+  * 导致 OpenSAML 可能允许经认证的远程攻击者获取敏感信息的漏洞，此漏洞是由于解析 XML 实体时的错误引起的。
+  * 导致 Apache HTTP Server 可能允许远程攻击者获取敏感信息的漏洞，此漏洞是由于 HTTP OPTIONS 方法中的缺陷（也称为 Optionsbleed）引起的。
+  * 导致 Apache 可移植运行时实用程序 (APR-util) 易受拒绝服务攻击的漏洞，此漏洞是由于未能验证 apr_sdbm*() 函数所使用的 SDBM 数据库文件的完整性引起的。
+* 集成了其他服务维护。
+
+## 2017 年 12 月 21 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 在达拉斯、伦敦和悉尼添加了 WebSphere Application Server in IBM Cloud 迁移功能。此功能提供从现有 V7、V8 或 V8.5.5 内部部署环境到 IBM Cloud 中运行的 V9 环境的完整端到端迁移。有关更多信息，请参阅 [WebSphere Configuration Migration Tool for IBM Cloud](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud)。
+* 集成了其他服务维护。
+
+## 2017 年 10 月 27 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 添加了通过 {{site.data.keyword.Bluemix_notm}} 服务仪表板的“服务概要文件”选项卡或通过 REST API 来供应较旧修订包级别 [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} 的功能。
+* 现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.5 修订包版本可用。除了 9.0.0.5 外，传统 WebSphere Application Server 的其他修订包版本（例如，9.0.0.4、8.5.5.12 和 8.5.5.11）也可用于供应。
+* 在供应新服务实例时，WebSphere Application Server Liberty 的 17.0.0.3 修订包版本可用。除了 17.0.0.3 外，WebSphere Application Server Liberty 的 17.0.0.2 修订包版本也可用于供应。
+* 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}，包括：
+  * 导致在使用定制启动脚本时，IBM WebSphere Application Server 可能使用缺省许可权而不是定制许可权来创建文件的漏洞。
+  * 导致 IBM WebSphere Application Server 代理服务器或按需路由器 (ODR) 可能允许本地攻击者获取敏感信息的漏洞，此漏洞是由于高速缓存了旧数据并随后提供这些数据引起的。
+  * 导致 IBM WebSphere Application Server 易受跨站点脚本攻击的漏洞。此漏洞允许用户在 Web UI 中嵌入任意 JavaScript 代码来改变目标功能，可能会导致在可信会话中泄露凭证。
+  * 导致 IBM WebSphere Application Server 使用管理控制台来更新 Web Service 安全性绑定设置后，提供的安全性可能低于预期的漏洞。
+  * 导致 IBM WebSphere Application Server V9.0.0.4 使用 PasswordUtil 命令来启用 AES 密码加密后，提供的安全性可能低于预期的漏洞。
+  * 导致 Apache MyFaces 可能允许远程攻击者获取敏感信息的漏洞。
+  * 导致 IBM WebSphere Application Server 可能允许远程攻击者获取敏感信息的漏洞，此漏洞是由于 JSF 中 MyFaces 处理错误不当引起的。
+* 集成了其他服务维护。
+
+## 2017 年 8 月 30 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 集成了其他服务维护。
+
+## 2017 年 6 月 30 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 集成了其他服务维护。
+* 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件，以便 FP8.5.5.12 或 9.0.0.4 随传统 WebSphere Application Server 的新实例一起安装。
+* 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件，以便 FP17.0.0.2 随 WebSphere Application Server Liberty（Core 和 ND 套餐）的新实例一起安装。
+* 添加了[高级 VPN 配置管理](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window}功能，以允许在伦敦和悉尼区域中创建和管理多个 VPN 配置。
+* 向[公用因特网访问](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#publicInternetAccess){: new_window}功能添加了增强功能，以允许客户更好地管理其公共 IP 地址。
+* 解决了 IBM SDK Java Technology Edition 中影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}，包括：
+  * 与 Java SE AWT 组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者控制系统。
+  * 与 Java SE JCE 组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者控制系统。
+  * 与 Java SE JAXP 组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者使用未知攻击矢量生成拒绝服务，导致高可用性影响。
+  * 与 Java SE 联网组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者导致低机密性影响、低完整性影响和无可用性影响。
+  * 与 Java SE 联网组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者导致无机密性影响、低完整性影响和无可用性影响。
+  * 与 Java SE 安全组件相关的不明确漏洞，此漏洞可能允许未经认证的攻击者导致无机密性影响、低完整性影响和无可用性影响。
+  * 导致处理 XML 数据时发生 XML 外部实体注入 (XXE) 错误的漏洞。远程攻击者可利用此漏洞来公开高敏感性信息或使用内存资源。
+  * 导致 zlib 易受拒绝服务攻击的问题，此问题是由于 inftrees.c 中的越界指针算术引起的。
+  * 导致 zlib 易受拒绝服务攻击的问题，此问题是由于未定义的负数左移引起的。
+  * 导致 zlib 易受拒绝服务攻击的问题，此问题是由于大尾数法越界指针引起的。
+
+## 2017 年 5 月 25 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 集成了其他服务维护。
+* 添加了[高级 VPN 配置管理](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window}功能，以允许在法兰克福区域中创建和管理多个 VPN 配置。
+* 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件，以便 JDK 8 随服务的所有新实例一起安装。
+* 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window}，包括：
+  * WebSphere Application Server MQ JCA 资源适配器的潜在安全漏洞。
+  * 与库组件相关的不明确漏洞，此漏洞可能允许远程攻击者使用未知攻击矢量获取敏感信息，导致高机密性影响。
+
+## 2017 年 4 月 21 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 集成了其他服务维护。
+* 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22000834){: new_window}，包括：
+  * 导致配置了 OpenID Connect (OIDC) 信任关联拦截器 (TAI) 的 WebSphere Application Server 可能允许用户在系统上获取提升特权的漏洞。
+  * 导致 WebSphere Application Server 提供的安全性可能低于预期的漏洞。远程攻击者可能利用此漏洞来获取敏感信息，并获得对管理控制台的未经授权的访问。
+  * 导致 WebSphere Application Server 易受跨站点请求伪造攻击的问题，此问题可能允许攻击者执行通过 Web 站点信任的用户传输的恶意和未经授权的操作。
+
+
 ## 2017 年 3 月 15 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * 集成了其他服务维护。
 * 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件，以便 FP8.5.5.11 或 9.0.0.3 随传统 WebSphere Application Server 的新实例一起安装。
 * 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](https://www-01.ibm.com/support/docview.wss?uid=swg22000587){: new_window}，包括：
-  * 与库组件相关的未指定漏洞，此漏洞没有机密性和可用性影响，但有高完整性影响。
-  * 与库组件相关的未指定漏洞，此漏洞可允许远程黑客使用未知攻击矢量获取敏感信息，导致高机密性影响。
-  * 与库组件相关的未指定漏洞，此漏洞可允许远程黑客使用未知攻击矢量生成拒绝服务，导致低可用性影响。
+  * 与库组件相关的不明确漏洞，此漏洞存在无机密性影响、高完整性影响和无可用性影响。
+  * 与库组件相关的不明确漏洞，此漏洞可能允许远程攻击者使用未知攻击矢量获取敏感信息，导致高机密性影响。
+  * 与库组件相关的不明确漏洞，此漏洞可能允许远程攻击者使用未知攻击矢量生成拒绝服务，导致低可用性影响。
   * OpenSSL 中可能允许远程黑客获取敏感信息的漏洞，此漏洞是由用作 SSL/TLS 协议一部分的 DES/3DES 密码中的错误引起的。
   * 允许用户在 Web UI 中嵌入任意 JavaScript 代码来改变目标功能的漏洞，此漏洞可能会导致在可信会话中泄露凭证。
   * Apache HTTPD 中会受到 HTTP 响应分割攻击的漏洞，此漏洞是由对用户提供的输入不正确验证引起的。
@@ -45,8 +135,8 @@ lastupdated: "2017-04-07"
 
 * 集成了其他服务维护。
 * 解决了 IBM SDK Java Technology Edition 中影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](https://www-01.ibm.com/support/docview.wss?uid=swg21995995){: new_window}，包括：
-  * Oracle Java SE 和 Java SE Embedded 中与热点组件相关的未指定漏洞，此漏洞具有高机密性影响、高完整性影响和高可用性影响。
-  * Oracle Java SE 和 Java SE Embedded 中与联网组件相关的未指定漏洞，此漏洞可允许远程黑客使用未知攻击矢量获取敏感信息，导致高机密性影响。
+  * Oracle Java SE 和 Java SE Embedded 中与热点组件相关的不明确漏洞，此漏洞存在高机密性影响、高完整性影响和高可用性影响。
+  * Oracle Java SE 和 Java SE Embedded 中与联网组件相关的不明确漏洞，此漏洞可能允许远程攻击者使用未知攻击矢量获取敏感信息，导致高机密性影响。
   *  IBM WebSphere Application Server 中的跨站点脚本编制漏洞，此漏洞允许用户在 Web UI 中嵌入任意 JavaScript 代码来潜在改变目标功能，从而导致在可信会话中泄露凭证。
 
 
@@ -71,11 +161,11 @@ lastupdated: "2017-04-07"
   * IBM WebSphere Application Server Liberty 中允许远程黑客获取敏感信息的潜在漏洞，这是由于缺省错误页面不存在时不正当地处理异常导致的。
   * Apache Tomcat 中拒绝服务漏洞，由 Apache Commons FileUpload 组件中的错误导致。
   * IBM WebSphere Application Server 和 IBM WebSphere Application Server Liberty 中的漏洞，该漏洞可能允许远程黑客获取敏感信息，由特定条件下对响应的不当处理导致的。
-  * 与无机密性影响、低完整性影响和无可用性的联网组件相关的未指定漏洞。
+  * 与联网组件相关的不明确漏洞，此漏洞存在无机密性影响、低完整性影响和无可用性影响。
 
 ## 2016 年 8 月 17 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* 已将 WebSphere Application Server in Bluemix 二进制文件从 8.5.5.9 升级到 8.5.5.10
+* 将 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件从 8.5.5.9 升级到了 8.5.5.10
 * 解决了影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg21988710){: new_window}，包括：
   * 对 WebSphere Application Server 和 WebSphere Application Server Hypervisor Edition 管理控制台有影响的 Apache Struts 漏洞。
   * 使用 SIP 服务时 IBM WebSphere Application Server 中潜在的拒绝服务漏洞。
@@ -87,7 +177,7 @@ lastupdated: "2017-04-07"
 
 ## 2016 年 6 月 24 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* 为客户新增了在创建新的*传统 ND* 或*传统 WebSphere* 实例时，可以选择 V8.5 或 V9.0 的能力。
+* 为客户新增了在创建新的_传统 ND_ 或_传统 WebSphere_ 实例时，可以选择 V8.5 或 V9.0 的能力。
 * 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 二进制文件，以便 WebSphere Application Server Liberty（核心和 ND 套餐）的新实例安装 FP16.0.0.2。16.0.0.2 是 8.5.5.9 之后的下一个修订包。从 16.0.0.2 开始，缺省情况下将安装这些套餐支持的所有授权 Liberty 可选功能部件。
 * 解决了影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window}，包括：
   * Apache Standard Taglibs 中的 XML 外部实体注入 (XXE) 漏洞，该漏洞会影响到 IBM WebSphere Application Server。
@@ -98,7 +188,7 @@ lastupdated: "2017-04-07"
 
 ## 2016 年 6 月 13 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* 添加了新功能，使客户可以通过创建使用了 WebSphere Application Server in Bluemix RESTful API 的应用程序或脚本来构建、供应、管理和删除虚拟机实例。
+* 添加了新功能，使客户可以通过创建使用 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} RESTful API 的应用程序或脚本来构建、供应、管理和删除虚拟机实例。
 * 添加了新功能，使客户的固定“已停止”实例数控制为 10 个 IP 地址或 64 GB 内存以内。现在，对于“已停止”状态的累计实例，我们向客户减免 5%。
 
 ## 2016 年 4 月 26 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}

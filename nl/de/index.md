@@ -1,40 +1,42 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-06-08"
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
+{:tip: .tip}
 
-# Einführung in IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
-{: #getting_started}
+# Informationen
+{: #about}
 
-{{site.data.keyword.IBM}} WebSphere Application Server in {{site.data.keyword.Bluemix}} ist ein Service, mit dem Sie ohne Zeitverlust eine vorkonfigurierte WebSphere Application Server Liberty-, eine klassische Network Deployment- oder eine klassische WebSphere Java EE-Instanz in einer gehosteten Cloudumgebung in {{site.data.keyword.Bluemix_notm}} einrichten können.
+{{site.data.keyword.appserver_full}} ermöglicht das schnelle Einrichten einer vordefinierten Instanz von WebSphere Application Server Liberty, Network Deployment (klassisch) oder WebSphere Java EE (klassisch) in einer gehosteten Cloud-Umgebung in {{site.data.keyword.Bluemix_notm}}.
 {: shortdesc}
 
 ## Übersicht zu WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 {: #overview}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} bietet Nutzern vorkonfigurierte klassische WebSphere- und Liberty Profile-Server. Das Programm wird auf virtuellen Gastmaschinen mit Rootzugriff auf das Gastbetriebssystem gehostet. Wenn Sie einen eigenen Service erstellen, müssen Sie zwischen *Liberty*, *klassischem ND* und *klassischem WebSphere* wählen.
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} bietet Nutzern vorkonfigurierte klassische WebSphere-Server und Liberty-Server. Das Programm wird auf virtuellen Gastmaschinen mit Rootzugriff auf das Gastbetriebssystem gehostet. Wenn Sie einen eigenen Service erstellen, müssen Sie zwischen _Liberty_, _klassischem ND_ und _klassischem WebSphere_ wählen.
 
-**Anmerkung:** Kunden können nun bei der Erstellung einer neuen Instanz von *klassischem ND* oder *klassischem WebSphere* zwischen V8.5 und V9.0 wählen.
+**Hinweis:** Kunden können nun zwischen der aktuellen Fixpackstufe und einer älteren Version [(n oder n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} auswählen, wenn sie eine beliebige Instanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} erstellen.
 
-Sie erhalten eine vertraute WebSphere-Administrationserfahrung und uneingeschränkten Zugriff auf das zugrunde liegende Betriebssystem. Sie können bereits vorhandene Scripts weiterverwenden und am System die für die Arbeit mit eigenen Frameworks oder Frameworks von Dritten erforderlichen Optimierungsschritte vornehmen. Admin Center und Admin Consoles werden ähnlich Ihren lokalen WebSphere-Konfigurationen zur Verwaltung Ihrer WebSphere Application Server Liberty-, ND- oder klassischen Services bereitgestellt.
+Sie erhalten eine vertraute WebSphere-Administrationserfahrung und uneingeschränkten Zugriff auf das zugrunde liegende Betriebssystem. Sie können bereits vorhandene Scripts weiterverwenden und am System die für die Arbeit mit eigenen Frameworks oder Frameworks von Dritten erforderlichen Optimierungsschritte vornehmen. Admin Center und Administrationskonsolen werden ähnlich Ihren lokalen WebSphere-Konfigurationen zur Verwaltung Ihrer WebSphere Application Server Liberty-, ND- oder klassischen Services bereitgestellt.
 
-Der WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment-Plan besteht aus einer WebSphere Application Server Network Deployment-Zellenumgebung mit mindestens zwei virtuellen Maschinen. Die erste virtuelle Maschine enthält den Deployment Manager und IBM HTTP Server und die übrigen virtuellen Maschinen enthalten angepasste Knoten (Knotenagenten), die in den Deployment Manager integriert sind. Mithilfe der vorhandenen wsadmin-Scripts können Sie eine eigene WebSphere-Konfiguration erstellen oder Sie können WebSphere Admin Console verwenden, um die Umgebung manuell zu konfigurieren. Mit diesen neuen Funktionen können Benutzer eine Clusterumgebung konfigurieren, die ein entscheidender Aspekt einer Middleware-Unternehmensanwendung ist. Kunden können nun auswählen, dass für eine Topologie ein Cluster gebildet werden soll, um in zwei oder mehr Instanzen einen Lastausgleich für Anforderungen durchzuführen.
+Der Network Deployment-Plan von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} besteht aus einer WebSphere Application Server Network Deployment-Zellenumgebung mit mindestens zwei virtuellen Maschinen. Die erste virtuelle Maschine enthält den Deployment Manager und IBM HTTP Server und die übrigen virtuellen Maschinen enthalten angepasste Knoten (Knotenagenten), die in den Deployment Manager integriert sind. Mithilfe der vorhandenen wsadmin-Scripts können Sie eine eigene WebSphere-Konfiguration erstellen oder Sie können WebSphere Admin Console verwenden, um die Umgebung manuell zu konfigurieren. Mit diesen neuen Funktionen können Benutzer eine Clusterumgebung konfigurieren, die ein entscheidender Aspekt einer Middleware-Unternehmensanwendung ist. Kunden können nun auswählen, dass für eine Topologie ein Cluster gebildet werden soll, um in zwei oder mehr Instanzen einen Lastausgleich für Anforderungen durchzuführen.
 
-Der WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Liberty Core-Plan beinhaltet die Nutzung eines Liberty-Verbunds. Der Liberty-Verbund ist eine Verwaltungsdomäne für eine Gruppe von Liberty-Profilen (Servern), die aus mindestens zwei virtuellen Maschinen besteht. Die erste virtuelle Maschine enthält den Liberty-Server für den Verbundcontroller, einen Steuerpunkt für den Liberty-Verbund. Zusätzlich zum Liberty-Verbund enthält diese virtuelle Maschine auch IBM HTTP Server, wodurch Zugriff auf Ihre Anwendungen über einen Web-Browser ermöglicht wird. Die übrigen virtuellen Maschinen sind Verbundhosts, in denen sich die Verbundmember befinden (Liberty Profile-Server). Das Feature Liberty Admin Center ist auf dem Liberty-Controller-Server ebenfalls aktiviert.
+Darüber hinaus umfasst der Network Deployment-Plan von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} die Verwendung eines Liberty-Verbunds. Der Liberty-Verbund ist eine Verwaltungsdomäne für eine Gruppe von Liberty-Profilen (Servern), die aus mindestens zwei virtuellen Maschinen besteht. Die erste virtuelle Maschine enthält den Liberty-Server für den Verbundcontroller, einen Steuerpunkt für den Liberty-Verbund. Zusätzlich zum Liberty-Verbund enthält diese virtuelle Maschine auch IBM HTTP Server, wodurch Zugriff auf Ihre Anwendungen über einen Web-Browser ermöglicht wird. Die übrigen virtuellen Maschinen sind Verbundhosts, in denen sich die Verbundmember befinden (Liberty Profile-Server). Das Liberty Admin Center-Feature ist auf dem Liberty-Controller-Server ebenfalls aktiviert.
 
-In der folgenden Abbildung ist die Architektur der WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment-Zelle sowie der Liberty-Verbundumgebungen zu sehen.
+In der folgenden Abbildung ist die Umbgebungsarchitektur der Network Deployment-Zelle von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} und des Liberty-Verbunds dargestellt.
 
 Abbildung 1. Architektur der Network Deployment-Zelle sowie des Liberty-Verbunds
 
 ![Abbildung 1. Architektur der Network Deployment-Zelle sowie des Liberty-Verbunds](images/CellCollectiveDiagram.gif)
 
-**Anmerkung**: In *Abbildung 1* dient das Muster, das die Kollokation des Deployment Managers oder des Verbundcontrollers mit dem IBM HTTP Server darstellt, Entwicklungs- und Testzwecken. Mit WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} haben Sie außerdem die Möglichkeit, die vorinstallierte Software den Erfordernissen der Produktionsanwendung und den betrieblichen Anforderungen entsprechend anzupassen, wie es vor Ort in der Regel der Fall ist. Wenn es ausschließlich um Produktionsanforderungen geht, können Sie sich an den IBM Vertriebsbeauftragten wenden, der Sie gerne über das IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Single-Tenant-Angebot informiert, das isolierte Netz- und Rechenressourcen umfasst.
+**Hinweis**: In der oben dargestellten _Abbildung 1_ dient das Muster, das die Kollokation des Deployment Managers oder des Verbundcontrollers mit dem IBM HTTP Server darstellt, Entwicklungs- und Testzwecken. Mit WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} haben Sie außerdem die Möglichkeit, die vorinstallierte Software den Erfordernissen der Produktionsanwendung und den betrieblichen Anforderungen entsprechend anzupassen, wie es vor Ort in der Regel der Fall ist. Wenn es ausschließlich um Produktionsanforderungen geht, können Sie sich an den IBM Vertriebsbeauftragten wenden, der Sie gerne über das IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Single-Tenant-Angebot informiert, das isolierte Netz- und Rechenressourcen umfasst.
 
 
 ## Betriebsumgebung
@@ -46,58 +48,95 @@ Da bestimmte Berechnungs-, Speicher- und Ein-/Ausgaberessourcen von virtuellen M
 
 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} stellt VM-Instanzen bereit. Mit diesen Instanzen nutzen Kunden für die Erstellung und Verwaltung von WebSphere Application Server-Bereitstellungen für Unternehmen ein einfaches Portal; dabei ist für die Optimierung von Anwendungen neben Konsistenz und wiederholter Anwendbarkeit auch eine erhebliche Flexibilität von Bedeutung. Benutzer können mit vorkonfigurierten WebSphere Application Server Liberty-, ND- oder konventionellen VMs in einer gehosteten Cloudumgebung arbeiten. Benutzer können vorhandene WebSphere Application Server-Anwendungen nach {{site.data.keyword.Bluemix_notm}} migrieren und das zugrunde liegende Betriebssystem und die Middleware uneingeschränkt nutzen.
 
-## Strategie für die Preisermittlung
-{: #pricing_strategy}
+## Größe der virtuellen Maschine bestimmen
+{: #vm-size}
 
-IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} bietet Clients mit speicherintensiven Anwendungen nach T-Shirt-Größen unterteilte Instanzen, sodass diese ihre Umgebung mit größeren virtuellen Maschinen in der geeigneten Größe einrichten können. Kunden können die jeweilige Ressourcengröße einer angegebenen WebSphere Application Server-Komponente oder eines einzelnen Systems bis zu 32 GB RAM VM auswählen.
+IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} bietet eine Preisstruktur auf der Basis von T-Shirt-Größen, mit der Sie die geeignete Umgebungsgröße für speicherintensive Anwendungen einrichten können, indem Sie größere virtuelle Maschinen bereitstellen. Für jede virtuelle Maschine, die Sie für die Ausführung von WebSphere Application Server bereitstellen, kann die Größe unabhängig an den erwarteten Ressourcenbedarf angepasst werden.
 
-In den folgenden Tabellen sind die Preise für IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Pläne zum 01. April 2016 in US-Dollar (USD) dargestellt.
+Die Größen- und Preisstruktur für virtuelle Maschinen basiert auf *Blöcken*. Für jeden in T-Shirt-Größen angegebenen Block werden der virtuellen Maschine die folgenden Ressourcen bereitgestellt.
+* 1 virtuelle CPU (vCPU)
+* 2 GB RAM
+* 12,5 GB Festplattenspeicherplatz (12,0 GB für Einzelblock-VMs)
 
-*Tabelle 1. Liberty Core-Plan*
 
-| **T-Shirt** | **vCPU** | **RAM (GB)** | **FP (GB)** | **Preis/Std** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| S | 1 | 2 | 12 | $ 0,21 |
-| M | 2 | 4 | 25 | $ 0,42 |
-| L | 4 | 8 | 50 | $ 0,84 |
-| XL | 8 | 16 | 100 | $ 1,68 |
-| XXL | 16 | 32 | 200 | $ 3,36 |
+| T-Shirt | Blöcke | vCPU | RAM (GB) | FP (GB) |
+|:-------:|:------:|:----------:|:--------------:|:-------------:|
+| S | 1 | 1 | 2 | 12 |
+| M | 2 | 2 | 4 | 25 |
+| L | 4 | 4 | 8 | 50 |
+| XL | 8 | 8 | 16 | 100 |
+| XXL | 16 | 16 | 32 | 200 |
+{: caption="Tabelle 1. Blöcke nach T-Shirt-Größen" caption-side="top"}
 
-*Tabelle 2. WebSphere Application Server-Basisplan*
+Jeder Server oder Knoten wird in einer einzelnen virtuellen Maschine bereitgestellt. Beispiel: Wenn Sie im Rahmen des Network Deployment-Plans eine virtuelle Maschine der Größe M (2 Blöcke) für den Deployment Manager und 8 virtuellen Maschinen der Größe S (1 Block) für Anwendungsknoten bereitstellen, fallen Gebühren von insgesamt 10 Blöcke an.
 
-| **T-Shirt** | **vCPU** | **RAM (GB)** | **FP (GB)** | **Preis/Std** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| S | 1 | 2 | 12 | $ 0,30 |
-| M | 2 | 4 | 25 | $ 0,60 |
-| L | 4 | 8 | 50 | $ 1,20 |
-| XL | 8 | 16 | 100 | $ 2,40 |
-| XXL | 16 | 32 | 200 | $ 4,80 |
+## Abrechnungsoptionen
+{: #billing-options}
 
-*Tabelle 3. WebSphere Application Server-ND-Plan*
+Die Preisstruktur für den jeweiligen Block ist abhängig von den ausgewählten Abrechnungsoptionen:
+* **[Nutzungsabhängige Preisstruktur](#pay-as-you-go):** Nutzungsabhängige Abrechnung in Stunden pro genutztem Block
+* **[Reservierungsvertrag](#reserve-contract):** Vorausbezahlte monatliche Abonnements reservierter Ressourcen
 
-| **T-Shirt** | **vCPU** | **RAM (GB)** | **FP (GB)** | **Preis/Std** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| S | 1 | 2 | 12 | $ 0,70 |
-| M | 2 | 4 | 25 | $ 1,40 |
-| L | 4 | 8 | 50 | $ 2,80 |
-| XL | 8 | 16 | 100 | $ 5,60 |
-| XXL | 16 | 32 | 200 | $ 11,20 |
+### Nutzungsabhängige Preisstruktur
+{: #pay-as-you-go}
 
-<p></p>
+Eine nutzungsabhängige Preisstruktur findet Anwendung, wenn der IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Service bereitgestellt wird, ohne dass der IBM Vertrieb hinsichtlich alternativer Abrechnungsoptionen kontaktiert wird. Nutzungsgebühren fallen für die volle Stunde oder ein entsprechendes Stundensegment für jeden Block an, der während des monatlichen Abrechnungszeitraums genutzt wird. Als Mindestabrechnungszeitraum ist 1/4 Blockstunde festgelegt.
 
-IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} wird der folgenden Gebührenmetrik entsprechend angeboten:
+**Hinweise**: Aufgrund einer bestimmten Menge an Rechen-, Speicher- und E/A-Ressourcen wird für gestoppte Instanzen ein reduzierter Gebührensatz von 5 % des stündlichen Blocksatzes berechnet. Innerhalb des Service sind gestoppte Instanzen auf 10 IP-Adressen oder 64 GB Speicherplatz begrenzt.
 
-*  *Instanz-Stunde*: Eine Instanz wird definiert als Zugriff auf eine bestimmte Konfiguration des IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Service. Kunden wird jede volle Stunde oder jede Teilstunde pro Instanz des Service in Rechnung gestellt, der im Abrechnungszeitraum bereitgestellt wird. Jede Instanz-Stunde wird monatlich in Rechnung stellen und wenn eine Instanz in diesem Montat nur teilweise genutzt wurde, wird die Nutzung anteilmäßig berechnet.
+#### Preisstruktur der Pläne
 
-Beispiel: Bei Nutzung des ND-Plans entspricht eine einzige Instanz 1vCPU mit 2 GB RAM und 12 GB Festplattenspeicher. Wenn Sie sich also für die Konfiguration Ihrer Zelle mit einem einzigen Steuerknoten und acht angepassten Knoten entscheiden, werden Ihnen neun Knoten (Instanzen) berechnet.
+Der Preis pro Block variiert abhängig vom ausgewählten WebSphere Application Server-Plan.
 
-**Anmerkung**: Die Mindestabrechungseinheit sind 0,25 Instanz-Stunden pro angepassten Knoten oder Liberty-Host. Für das oben stehende Beispiel gilt, dass ein Steuerknoten und ein angepasster Knoten, der für mindestens 15 Minuten konfiguriert ist, einer Mindestgebühr von (.25 * Anzahl der Instanzen) entspricht.
+In der folgenden Tabelle ist der Gesamtpreis pro Stunden für jede in T-Shirt-Größen angegebene virtuelle Maschine aufgeführt. Die Preise entsprechen den IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Plänen zum 01. April 2016 und sind in US-Dollar (USD) angegeben. Informationen zu den aktuellen Preisen in Ihrer Region finden Sie im Katalog.
 
-**Hinweis**: Aufgrund einer bestimmten Menge an Rechen-, Speicher- und E/A-Ressourcen werden für Clients Gebühren für die Summe der Instanzen im Status GESTOPPT mit einer reduzierten Rate von 5 % berechnet. Clients werden mit einer festen Anzahl von Instanzen im Status GESTOPPT mit maximal 10 IP-Adressen oder 64 GB Speicherplatz verwaltet.
+| T-Shirt | Blöcke | Liberty Core | WAS Base | WAS ND |
+|:-------:|:------:|:----------:|:------:|:----------:|
+| S | 1 | $ 0,21 | $ 0,30 |  $ 0,70 |
+| M | 2 | $ 0,42 | $ 0,60 |  $ 1,40 |
+| L | 4 | $ 0,84 | $ 1,20 |  $ 2,80 |
+| XL | 8 | $ 1,68 | $ 2,40 |  $ 5,60 |
+| XXL | 16 | $ 3,36 | $ 4,80 |  $ 11,20 |
+{: caption="Tabelle 2. Liberty Core-Plan" caption-side="top"}
 
-# Zugehörige Links
-{: #rellinks}
-## Allgemein
-{: #general}
-* [WASdev](https://developer.ibm.com/wasdev/){: new_window}
-* [Dokumentation zu WebSphere Application Server V9](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/as_ditamaps/was900_welcome_base.html){: new_window}
+
+### Reservierungsvertrag
+{:#reserve-contract}
+
+Bei der Abrechnung im Rahmen eines Reservierungsvertrags erwerben Sie ein vorausbezahltes monatliches Abonnement, mit dem der Zugriff auf Blöcke mit physisch reservierten Rechenressourcen garantiert wird. Diese Serviceblöcke werden zu Ihrer exklusiven Nutzung reserviert und stehen anderen WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Benutzern nicht als verfügbare Kapazität zur Verfügung. [Kontaktieren Sie den IBM Vertrieb](reportingIssues.html#contacting-sales), um die Abrechnung im Rahmen eines Reservierungsvertrags einzurichten.
+
+Abonnements sind in 8-Block-Stufen verfügbar. Die Gesamtzahl der Blockstunden basiert auf der Anzahl der Stunden im Monat, die Blockstunden können jedoch zu jedem beliebigen Zeitpunkt innerhalb des Monats genutzt werden. Beispiel: Ein Monat mit 30 Tagen umfasst 720 Stunden. Multipliziert mit einem 8-Blöcke-Abonnement ergibt dies insgesamt 5.760 Blockstunden.
+
+  ```
+30 Tage * 24 Stunden pro Tag * 8 Blöcke = 5.760 Blockstunden
+  ```
+
+Sie können anpassen, wie und wann die Blöcke genutzt werden, um variable Workloadanforderungen zu erfüllen; z. B. können Sie 4 Blöcke nutzen, dann die Nutzung auf 12 Blöcke erhöhen und wieder auf 8 Blöcke reduzieren. Unter der Voraussetzung, dass die Gesamtzahl der Blockstunden im Monat nicht überschritten wird, fallen keine zusätzlichen Gebühren an.
+
+#### Überschreitungen
+
+Wenn die Nutzung die monatlichen Blockstunden im Abonnement überschreitet, werden Überschreitungsgebühren dem nutzungsabhängigen Abrechnungsmodell entsprechend berechnet; dabei werden nur für die zusätzlich genutzten Blockstunden Gebühren fällig. Die Blocknutzung wird auf der Basis einer vollen Stunde oder eines entsprechenden Stundensegments gemessen. Als Mindestabrechnungszeitraum ist 1/4 Blockstunde festgelegt.
+
+Blöcke im Rahmen des nutzungsabhängigen Modells stellen keine reservierte Kapazität dar und stammen aus einem gemeinsamen Ressourcenpool.
+
+#### Gebührensätze für anteilmäßige Verrechnung zur flexiblen Nutzung
+
+Bei der Abrechnung im Rahmen eines Reservierungsvertrags basieren Blöcke auf dem WebSphere Application Server Network Deployment-Plan, Sie können die Blöcke jedoch auch für andere Pläne verwenden. Bei anderen Plänen wird die Nutzung anteilmäßig verrechnet. D. h., eine Blockstunde wird durch den Gebührensatz der anteilmäßigen Verrechnung des jeweiligen Plans reduziert, wenn sie in den verbleibenden Blockstunden des Reservierungsvertrags wiedergegeben wird.
+
+Die folgende Tabelle enthält die Gebührensätze für die anteilmäßige Verrechnung innerhalb des jeweiligen Plans und den effektiven Preis pro tatsächlicher Blockstunde nach der anteilmäßigen Verrechnung. Die aktuellen Preise in der jeweiligen Region erhalten Sie beim [IBM Vertrieb](reportingIssues.html#contacting-sales).
+
+| Plan | Gebührensatz für anteilmäßige Verrechnung | Preis/Stunde nach anteilmäßiger Verrechnung|
+|:-------:|:------:|:------:|
+| WebSphere Application Server Liberty Core | 0,3 | $ 0,21 |
+| WebSphere Application Server Base  | 0,43 | $ 0,30 |
+| WebSphere Application Server Network Deployment | 1,0 | $ 0,70 |
+{: caption="Tabelle 3. Gebührensätze für anteilmäßige Verrechnung unterteilt nach Plänen" caption-side="top"}
+
+Beispiel: Sie verfügen über eine WebSphere Application Server Base-Instanz der Größe M (2 Blöcke), die 51 Stunden lang ausgeführt wird. Zur Berechnung der genutzten Blockstunden Ihres Reservierungsvertrags werden die tatsächlichen Blockstunden mit dem Gebührensatz der anteilmäßigen Verrechnung multipliziert. Dies ergibt 43,86 Blockstunden:
+
+```
+2 Blöcke * 51 Stunden * 0,43 Gebührensatz für anteilmäßige Verrechnung = 43,86 Blockstunden nach anteilmäßiger Verrechnung
+```
+
+Die Gesamtkosten bleiben unverändert, Sie können jedoch mehr tatsächliche Blockstunden im Rahmen der anteilmäßig verrechneten Pläne nutzen, da diese weniger Blockstunden Ihres Reservierungsvertrags verbrauchen.
+{:.tip}

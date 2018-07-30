@@ -1,29 +1,29 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-06-08"
+
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
+{:tip: .tip}
 
-# Introdução ao IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}
-{: #getting_started}
+# Sobre
+{: #about}
 
-{{site.data.keyword.IBM}} WebSphere Application Server no {{site.data.keyword.Bluemix}} é um serviço que facilita a
-rápida configuração em uma instância WebSphere Application Server Liberty, Traditional Network Deployment ou Traditional WebSphere Java EE
-pré-configurada em um ambiente de nuvem hospedado no {{site.data.keyword.Bluemix_notm}}.
+O {{site.data.keyword.appserver_full}} facilita a configuração rápida em uma instância pré-configurada do WebSphere Application Server Liberty, do Traditional Network Deployment ou do Traditional WebSphere Java EE em um ambiente de nuvem hospedado no {{site.data.keyword.Bluemix_notm}}.
 {: shortdesc}
 
 ## Visão geral do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}
 {: #overview}
 
-O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece aos consumidores servidores pré-configurados Traditional WebSphere e Liberty Profile. Ele é hospedado em convidados da máquina
-virtual com acesso raiz para o sistema operacional guest. Quando você estiver criando seu serviço, escolha entre *Liberty*, *Traditional ND* ou *Traditional WebSphere*.
+O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece aos consumidores os servidores pré-configurados do WebSphere tradicional e do Liberty. Ele é hospedado em convidados da máquina
+virtual com acesso raiz para o sistema operacional guest. Quando você estiver criando seu serviço, escolha entre _Liberty_, _Traditional ND_ ou _Traditional WebSphere_.
 
-**Nota:** os consumidores são agora capazes de escolher entre a V8.5 e a V9.0 quando você cria uma nova instância do *Traditional ND* ou do *Traditional WebSphere*.
+**Nota: ** os consumidores agora podem escolher entre o nível de fix pack atual ou uma versão mais antiga [(n ou n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} ao criar qualquer WebSphere Application Server na instância do {{site.data.keyword.Bluemix_notm}}.
 
 Você recebe uma experiência de administração do WebSphere familiar e tem acesso completo
 ao sistema operacional subjacente. É possível reutilizar seus scripts existentes e fazer pequenos ajustes de sistema
@@ -33,26 +33,22 @@ O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} Network Dep
 o Console administrativo do WebSphere para configurar manualmente o ambiente. Esses novos recursos permitem que os usuários configurem um ambiente em cluster, o que é um aspecto crítico de qualquer aplicativo corporativo de middleware. Os
 clientes agora podem optar por agrupar uma topologia para balancear a carga de solicitações entre duas ou mais Instâncias.
 
-O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} Liberty Core Plan inclui o uso de um Liberty Collective. O Liberty Collective é um domínio administrativo para um grupo de perfis Liberty (servidores) e consiste em duas ou mais máquinas virtuais. A
-primeira máquina virtual contém o servidor Collective Controller liberty, que é um ponto de controle
-para o Liberty Collective. Além do liberty collective, essa máquina virtual também
-contém o IBM HTTP Server, que permite acesso aos aplicativos a partir de um navegador da web. As
-máquinas virtuais restantes são os hosts coletivos nos quais os membros coletivos residem (servidores
-do perfil liberty). O recurso Liberty Admin Center também é ativado no servidor liberty controller.
+O WebSphere Application Server no plano de implementação de rede do {{site.data.keyword.Bluemix_notm}} também inclui o uso de um Liberty Collective. O Liberty Collective é um domínio administrativo para um grupo de perfis Liberty (servidores) e consiste em duas ou mais máquinas virtuais. A primeira máquina virtual contém o servidor Liberty do controlador coletivo, que é um ponto de controle para o Liberty Collective. Além do Liberty Collective, essa máquina virtual também contém o IBM HTTP Server, que permite o acesso a seus aplicativos de um navegador da web. As máquinas virtuais restantes são
+os hosts coletivos em que os membros coletivos residem (servidores de perfil Liberty). O recurso Liberty Admin Center também está
+ativado no servidor do controlador do Liberty.
 
-A figura a seguir mostra a arquitetura dos ambientes WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} Network Deployment Cell e Liberty Collective.
+A figura a seguir mostra a arquitetura do WebSphere Application Server em ambientes da célula de implementação de rede do {{site.data.keyword.Bluemix_notm}} e do Liberty collective.
 
 Figura 1. Célula de implementação de rede e arquitetura Liberty Collective
 
-![Figura1. Arquitetura da célula de implementação de rede e Liberty Collective](images/CellCollectiveDiagram.gif)
+![Figura 1. Arquitetura da célula de implementação de rede e do Liberty Collective](images/CellCollectiveDiagram.gif)
 
-**Nota**: na *Figura 1* acima, o padrão que descreve a disposição do Gerenciador de Implementação ou do Controlador Coletivo com o IBM HTTP Server se
-destina para propósitos de desenvolvimento e de testes. O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} também oferece
+**Nota**: na _Figura 1_ acima, o padrão que descreve a disposição do Deployment Manager ou do controlador coletivo com o IBM HTTP Server é destinado para propósitos de desenvolvimento e teste. O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} também oferece
 a liberdade de reconfigurar o software pré-instalado para atender às necessidades operacionais e de aplicativo de produção; tal como você faria no
 local. Além disso, para os requisitos de produção mais estritos, entre em contato com o representante de vendas IBM que poderá falar sobre a oferta de único locatário do IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}, que oferece recursos de rede e computação isolados.
 
 
-## Ambiente Operacional
+## Ambiente operacional
 {: #operational_environment}
 
 O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} é um serviço que retorna guests (máquinas virtuais) em um ambiente compartilhado para que os consumidores implementem aplicativos. Um VPN protege o serviço público de varreduras de portas genéricas e outros
@@ -65,60 +61,99 @@ por máquinas virtuais em um ambiente compartilhado, as configurações de servi
 
 O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece instâncias de máquina virtual. Com essas instâncias, os clientes usam um portal simples para criar e gerenciar implementações corporativas do WebSphere Application Server de uma forma consistente e repetida com flexibilidade significativa para ajustar seus aplicativos. Os usuários podem começar a trabalhar em máquinas virtuais pré-configuradas do WebSphere Application Server Liberty, ND ou Traditional em um ambiente de nuvem hospedado. Os usuários podem migrar aplicativos existentes do WebSphere Application Server para o {{site.data.keyword.Bluemix_notm}} e assumir o controle total do sistema operacional e do middleware subjacentes.
 
-## Estratégia de precificação
-{: #pricing_strategy}
+## Dimensionamento da máquina virtual
+{: #vm-size}
 
-O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece instâncias dimensionadas T-Shirt para clientes com
-aplicativos de memória intensiva para que dimensionem corretamente o ambiente com máquinas virtuais maiores. Os clientes podem selecionar o tamanho do recurso específico de um componente provisionado do WebSphere Application Server ou de um único sistema com máquinas virtuais de até 32 GB de RAM.
+O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece dimensionamento de camisetas para que você possa dimensionar os ambientes de maneira ideal para aplicativos de uso intensivo de memória, fornecendo máquinas virtuais maiores. Cada máquina virtual que você fornecer para executar o WebSphere Application Server poderá ser dimensionada independentemente de acordo com as necessidades de recursos esperadas.
 
-As tabelas a seguir representam os preços de planos do IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} a partir de 1º de abril de 2016 e são representadas em dólares americanos (USD).
+As máquinas virtuais são dimensionadas e precificadas em *blocos*. Para cada bloco no tamanho da camiseta, a máquina virtual é fornecida com os recursos a seguir.
+* 1 CPU virtual (vCPU)
+* 2 GB de RAM
+* 12,5 GB de espaço de disco rígido (12,0 GB para VMs de bloco único)
 
-*Tabela 1. Plano do Liberty Core*
 
-| **Camiseta** | **vCPU** | **RAM (GB)** | **HD (GB)** | **Preço/H** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| P | 1 | 2 | 12 | US$ 0,21 |
-| M | 2 | 4 | 25 | US$ 0,42 |
-| G | 4 | 8 | 50 | US$ 0,84 |
-| EG | 8 | 16 | 100 | US$ 1,68 |
-| EEG | 16 | 32 | 200 | US$ 3,36 |
+| Camiseta | Blocos | vCPU | RAM (GB) | HD (GB) |
+|:-------:|:------:|:----------:|:--------------:|:-------------:|
+| P | 1 | 1 | 2 | 12 |
+| M | 2 | 2 | 4 | 25 |
+| G | 4 | 4 | 8 | 50 |
+| EG | 8 | 8 | 16 | 100 |
+| EEG | 16 | 16 | 32 | 200 |
+{: caption="Tabela 1. Bloqueios por tamanho de camiseta" caption-side="top"}
 
-*Tabela 2. Plano base do WebSphere Application Server*
+Cada servidor ou nó é fornecido em uma única máquina virtual. Por exemplo, no plano de implementação de rede, se você fornecer uma máquina virtual M (2 blocos) para o seu gerenciador de implementação e 8 máquinas virtuais S (1 bloco) para nós de aplicativos, você será cobrado por um total de 10 blocos.
 
-| **Camiseta** | **vCPU** | **RAM (GB)** | **HD (GB)** | **Preço/H** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| P | 1 | 2 | 12 | US$ 0,30 |
-| M | 2 | 4 | 25 | US$ 0,60 |
-| G | 4 | 8 | 50 | US$ 1,20 |
-| EG | 8 | 16 | 100 | US$ 2,40 |
-| EEG | 16 | 32 | 200 | US$ 4,80 |
+## Opções de Faturamento
+{: #billing-options}
 
-*Tabela 3. Plano do WebSphere Application Server ND*
+A precificação para cada bloco dependerá da opção de faturamento que você escolher:
+* ** [Pré-pago](#pay-as-you-go):** faturamento baseado em uso, precificado em horas por bloco usado
+* **[Contrato de reserva](#reserve-contract):** assinaturas mensais pré-pagas de recursos reservados
 
-| **Camiseta** | **vCPU** | **RAM (GB)** | **HD (GB)** | **Preço/H** |       
-|:-------------:|:----------:|:--------------:|:-------------:|:--------------:|
-| P | 1 | 2 | 12 | US$ 0,70 |
-| M | 2 | 4 | 25 | US$ 1,40 |
-| G | 4 | 8 | 50 | US$ 2,80 |
-| EG | 8 | 16 | 100 | US$ 5,60 |
-| EEG | 16 | 32 | 200 | US$ 11,20 |
+### Pague o quanto for.
+{: #pay-as-you-go}
 
-<p></p>
+A precificação pré-paga se aplicará se você fornecer o IBM WebSphere Application Server no serviço do {{site.data.keyword.Bluemix_notm}} sem entrar em contato com Vendas IBM para obter opções de faturamento alternativo. O uso é cobrado para a hora total ou parcial de cada bloco que é usado durante o período de faturamento mensal. O faturamento mínimo é configurado em 1/4 de uma hora de bloco.
 
-O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} é oferecido de acordo com a métrica de encargos a seguir:
+**Nota**: devido a uma quantidade específica de recursos de computação, de memória e de E/S, as instâncias interrompidas são cobradas em uma taxa reduzida de 5% da taxa de bloco por hora. Dentro do serviço, as instâncias
+interrompidas são limitadas a 10 endereços IP ou 64 GB de memória.
 
-*  *Instância-hora*: uma instância é definida como acesso a uma configuração específica do IBM WebSphere Application Server
-no {{site.data.keyword.Bluemix_notm}} Service. Os clientes são cobrados por cada hora integral ou parcial de cada Instância do Serviço que é implementado durante o período de faturamento. Cada Hora da instância é faturada mensalmente e se uma instância for usada somente uma parte do mês, a taxa de uso será rateada.
+#### Precificação de
 
-Por exemplo, se você usar o Plano ND, uma Instância será equiparada a 1vCPU com 2 GB de RAM e 12 GB de HD. Portanto, se você escolher configurar sua Célula com um nó de Controle e oito nós Customizados, será cobrado por nove nós (instâncias).
+O preço por bloco varia dependendo do plano do WebSphere Application Server que você escolher.
 
-**Nota**: o faturamento mínimo é configurado como 0,25 a hora da instância por nó Customizado ou host Liberty. No exemplo acima, um nó de Controle e um nó Customizado que esteja configurado para pelo menos 15 minutos seria equiparado a um encargo mínimo de (0,25 * n.º de instâncias).
+A tabela a seguir lista o preço total por hora para cada máquina virtual do tamanho da camiseta. Os preços representam o IBM WebSphere Application Server em planos do {{site.data.keyword.Bluemix_notm}} a partir de 1º de abril de 2016 e estão listados em dólares americanos (USD). Consulte o catálogo para os preços atuais em sua região.
 
-**Nota**: em razão de uma quantia específica de recursos de cálculo, de memória e de E/S, os clientes são cobrados por instâncias acumuladas no estado INTERROMPIDO a uma taxa reduzida de 5%. Os clientes são gerenciados para um número fixo de instâncias INTERROMPIDAS com não mais de 10 endereços IP ou 64 GB de memória.
+| Camiseta | Blocos | Liberty Core | Base do WAS | ND do WAS |
+|:-------:|:------:|:----------:|:------:|:----------:|
+| P | 1 | US$ 0,21 | US$ 0,30 |  US$ 0,70 |
+| M | 2 | US$ 0,42 | US$ 0,60 |  US$ 1,40 |
+| G | 4 | US$ 0,84 | US$ 1,20 |  US$ 2,80 |
+| EG | 8 | US$ 1,68 | US$ 2,40 |  US$ 5,60 |
+| EEG | 16 | US$ 3,36 | US$ 4,80 |  US$ 11,20 |
+{: caption="Tabela 2. Plano do Liberty Core" caption-side="top"}
 
-# rellinks
-{: #rellinks}
-## gerais
-{: #general}
-* [WASdev](https://developer.ibm.com/wasdev/){: new_window}
-* [Documentação do WebSphere Application Server V9](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/as_ditamaps/was900_welcome_base.html){: new_window}
+
+### Contrato reserva
+{:#reserve-contract}
+
+Com o faturamento do contrato de reserva, você compra uma assinatura mensal pré-paga que garante o acesso a blocos de recursos
+computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para qualquer outro WebSphere Application Server em usuários do {{site.data.keyword.Bluemix_notm}}. Para configurar o faturamento do contrato de reserva, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+
+Assinaturas estão disponíveis em incrementos de 8 blocos. As horas de bloco totais são baseadas no número de horas no mês, mas
+é possível usar as horas de bloco a qualquer momento durante o mês. Por exemplo, um mês de 30 dias tem 720 horas, o que, quando multiplicado por uma assinatura de 8 blocos, resulta em um total de 5.760 horas de bloco.
+
+  ```
+30 dias * 24 horas por dia * 8 blocos = 5.760 horas de bloco
+  ```
+
+É possível customizar como e quando usar os blocos para atender a demanda de carga de trabalho variável, como o uso de 4 blocos, aumentando para 12 blocos e, em seguida, reduzindo para 8 blocos. Contanto que você fique abaixo do total de horas de bloco do mês, não há nenhum encargo adicional.
+
+#### Exagidades
+
+Se o seu uso exceder as horas de bloco mensais em sua assinatura, o excedente será cobrado de acordo com o modelo de faturamento pré-pago, portanto, você será cobrado apenas pelas horas extras de bloco que usar. O uso de bloco é medido em uma base horária total ou parcial, com o uso mínimo em 1/4 de uma hora de bloco.
+
+Os blocos do modelo pré-pago não são de capacidade reservada e vêm de um conjunto de recursos comuns.
+
+#### Taxas de precificação para utilização flexível
+
+Os blocos em faturamento de contrato de reserva são baseados no plano do WebSphere Application Server Network Deployment, mas
+também é possível usar os blocos para outros planos. Com outros planos, o uso é rateado de forma que uma hora de bloco seja reduzida pela taxa de rateio do plano quando ela é refletida em suas horas de bloco do contrato de reserva restantes.
+
+A tabela a seguir mostra as taxas de rateio para cada plano e o preço efetivo por hora de bloco real após o cálculo do rateio. Para preços atuais em sua região, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+
+| Plano | Taxa de precificação | Preço / hora após rateio |
+|:-------:|:------:|:------:|
+| WebSphere Application Server Liberty Core | 0,3 | US$ 0,21 |
+| Base do WebSphere Application Server  | 0,43 | US$ 0,30 |
+| WebSphere Application Server Network Deployment | 1,0 | US$ 0,70 |
+{: caption="Tabela 3. Taxas de rateio de hora de bloco por plano" caption-side="top"}
+
+Por exemplo, você pode ter uma instância M (2 blocos) do WebSphere Application Server Base que é executada por 51 horas. Para calcular as horas de bloco usadas de seu contrato de reserva, as horas de bloco reais são multiplicadas pela taxa de rateio, para um total de 43,86 horas de bloco:
+
+```
+2 blocks * 51 hours * 0.43 proration = 43.86 prorated block hours
+```
+
+O custo total permanece o mesmo, mas é possível usar mais horas de bloco reais dos planos rateados, pois eles deduzem menos de suas horas de bloco do contrato de reserva.
+{:.tip}

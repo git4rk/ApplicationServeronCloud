@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-05-02"
 
 ---
 
@@ -10,11 +10,25 @@ lastupdated: "2017-02-24"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-# 报告问题
+# 获取帮助
 {: #reporting_issues}
 
-如果使用 IBM WebSphere Application Server in Bluemix 时遇到问题，可以使用以下其中一种方法来获得帮助：
 
-* 按照[联系 Bluemix 支持页面](/docs/support/index.html#contacting-support)上定义的过程，打开支持凭单
-* 在其中一个公开的 [Bluemix 支持论坛](https://developer.ibm.com/bluemix/support/){: new_window}上提问。该论坛受到实时监视，能迅速给出回复。
-  * **注**：请在帖子中包含标记 ibm-was-oc 和 bluemix，以改善您的支持体验。
+## 报告问题
+{:#reporting-issues}
+
+如果使用 {{site.data.keyword.appserver_full}} 时遇到问题，可以使用以下其中一种方法来获得帮助：
+
+* 按照[联系 IBM Cloud Public 支持](/docs/support/index.html#contacting-support)页面上定义的过程，开具支持凭单。
+* 在其中一个公开的 [IBM Cloud 支持论坛](https://developer.ibm.com/bluemix/support/){: new_window}上提问。这些论坛受到密切监视。
+
+  **注**：请在帖子中包含标记 `ibm-was-oc` 和 `bluemix`，以改善您的支持体验。
+
+## 联系销售人员
+{:#contacting-sales}
+
+要购买保留合同计费或 Single Tenant Environment 的预订，请联系美洲呼叫中心、当地 IBM 代表或您的 IBM 业务合作伙伴。要识别代表或合作伙伴，请拨打 800-426-4968。
+
+有关更多信息，请联系美洲呼叫中心，号码为：
+* **电话：**800-IBM-CALL (426-2255)
+* **传真：**800-2IBM-FAX (242-6329)

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-05-02"
 
 ---
 
@@ -10,11 +10,25 @@ lastupdated: "2017-02-24"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-# Probleme melden
+# Hilfe anfordern
 {: #reporting_issues}
 
-Wenn bei der Verwendung von IBM WebSphere Application Server in Bluemix Probleme auftreten, haben Sie die folgenden Möglichkeiten, um Unterstützung anzufordern:
 
-* Öffnen Sie ein Support-Ticket, indem Sie den auf der Seite [Bluemix-Support kontaktieren](/docs/support/index.html#contacting-support) definierten Prozess befolgen.
-* Stellen Sie in einem der öffentlichen [Bluemix-Support-Foren](https://developer.ibm.com/bluemix/support/){: new_window} eine Frage. Die Foren werden aktiv überwacht und Sie erhalten zeitnahe Antworten.
-  * **Anmerkung**: Verwenden Sie zur Erweiterung Ihrer Sachkenntnis in Sachen Support in Ihrem Beitrag die Tags ibm-was-oc und bluemix.
+## Probleme melden
+{:#reporting-issues}
+
+Wenn bei der Verwendung von {{site.data.keyword.appserver_full}} Probleme auftreten, stehen Ihnen die folgenden Möglichkeiten zur Verfügung, Unterstützung aufzurufen:
+
+* Öffnen Sie ein Support-Ticket, indem Sie den auf der Seite [Unterstützung für IBM Cloud Public anfordern](/docs/support/index.html#contacting-support) definierten Prozess ausführen.
+* Stellen Sie eine Frage in einem der öffentlichen [IBM Cloud-Unterstützungsforen](https://developer.ibm.com/bluemix/support/){: new_window}. Die Foren werden aktiv überwacht.
+
+  **Hinweis**: Geben Sie die Tags `ibm-was-oc` und `bluemix` in Ihrem Beitrag an, um die Bearbeitung Ihrer Unterstützungsanforderung zu vereinfachen.
+
+## Kontaktaufnahme mit dem Vertrieb
+{:#contacting-sales}
+
+Wenn Sie Abonnements für Abrechnungen im Rahmen eines Reservierungsvertrags oder Single-Tenant-Umgebungen erwerben möchten, wenden Sie sich an die Call-Center für Nord- und Südamerika, an den IBM Ansprechpartner vor Ort oder an den IBM Business Partner. Informationen zum zuständigen Ansprechpartner oder Partner erhalten Sie unter 800-426-4968.
+
+Weitere Informationen erhalten Sie in den Call-Centern für Nord- und Südamerika unter den folgenden Nummern:
+* **Telefon:** 800-IBM-CALL (426-2255)
+* **Telefax:** 800-2IBM-FAX (242-6329)

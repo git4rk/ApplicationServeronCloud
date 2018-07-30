@@ -2,23 +2,29 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="wasaas" audience="service"}
-WebSphere Application Server no Bluemix
+WebSphere Application Server no IBM Cloud
 
     {: .navgroup id="learn"}
+    getting-started.md
     index.md
+    gettingStartedSTE.md
     networkEnvironment.md
-    maintenanceAndUpdates.md
-    {: .navgroup-end}
 
     {: .topicgroup}
     Links relacionados
         [WASdev](https://developer.ibm.com/wasdev/)
-        [Documentação do WebSphere Application Server V9](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/as_ditamaps/was900_welcome_base.html)
+        [Documentação do WebSphere Application Server V9](http://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/)
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    installationConventions.md
+    [Documentação da API de REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     systemAccess.md
-    installationConventions.md
+    singleTenantAccess.md
+    maintenanceAndUpdates.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}

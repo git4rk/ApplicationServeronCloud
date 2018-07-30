@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-06-08"
 
 ---
 
@@ -13,10 +13,19 @@ lastupdated: "2017-02-24"
 # Installationskonventionen
 {: #installation_conventions}
 
-## Konventionen für die Installation von Zellen
+## Verwaltungstipps
+{: admin_tips}
+
+Wenn Sie bei der Verwaltung Ihrer {{site.data.keyword.appserver_full}}-Umgebung bestimmen müssen, welcher Benutzer verwendet werden soll, sind die folgenden Konzepte von zentraler Bedeutung:
+
+ * Für die Wartung kann der [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} verwendet werden, der im Verzeichnis */home/virtuser/IBM/Installation Manager* installiert ist. Da die Installation der zugrunde liegenden Binärdateien als **virtuser** ausgeführt wird, d. h. als virtueller Benutzer mit begrenzer Administratorberechtigung, müssen Sie sicherstellen, dass die Installation aller Fixpacks und vorläufigen Fixes als **virtuser** ausgeführt wird.
+
+ * Für das Starten und Stoppen von Servern über die Befehlszeile muss jedoch die WebSphere-Administrator-ID **wsadmin** verwendet werden, nicht **virtuser**.
+
+## Konventionen bei der Installation von Zellen
 {: cell_installation_conventions}
 
-WebSphere Application Server in Bluemix-Zellen werden unter Verwendung einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen.  Eine vollständige Liste der Einstellungen finden Sie in der Datei /etc/virtualimage.properties.
+Eine Zelle von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} wird mit einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen. Eine vollständige Liste der Einstellungen finden Sie in der Datei /etc/virtualimage.properties.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -26,7 +35,7 @@ WebSphere Application Server in Bluemix-Zellen werden unter Verwendung einer sta
 * WAS_INSTALL_ROOT=/opt/IBM/WebSphere/AppServer
 * WCT_HOME=/opt/IBM/WebSphere/Toolbox
 
-## Konventionen für die Installation von Liberty-Verbünden
+## Konventionen bei der Installation von Liberty-Verbünden
 
 Ein Liberty-Verbund wird unter Verwendung einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen.  Eine vollständige Liste der Einstellungen finden Sie in der Datei /etc/virtualimage.properties.
 
@@ -35,7 +44,3 @@ Ein Liberty-Verbund wird unter Verwendung einer standardisierten Verzeichnisstru
 * PLG_HOME=/opt/IBM/WebSphere/Plugins
 * PROFILES_HOME=/opt/IBM/WebSphere/Profiles
 * WLP_HOME=/opt/IBM/WebSphere/Liberty
-
-**Anmerkung**:
-* Mithilfe von [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} im Verzeichnis /home/virtuser/IBM/Installation Manager können Wartungen durchgeführt werden. Da die zugrunde liegenden Binärdateien als Benutzer virtuser installiert werden, müsen Sie sicherstellen, dass alle Fixpacks und vorläufigen Fixes ebenfalls als virtuser installiert werden.
-* Stellen Sie sicher, dass das Starten und Stoppen von Servern über die Befehlszeile mit der WebSphere-Verwaltungs-ID und nicht als Benutzer virtuser durchgeführt werden.
