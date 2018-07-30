@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2016
-lastupdated: "2017-02-24"
+  years: 2017, 2018
+lastupdated: "2018-06-08"
 
 ---
 
@@ -10,22 +10,89 @@ lastupdated: "2017-02-24"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-# Maintenance et mise à jour des machines virtuelles
-{: #maintenance_and_vm_updates}
+# Mise à jour de votre environnement
+{: #updating-your-environment}
 
 ## Stratégie de maintenance
-{: #maintenance_strategy}
+{: #maintenance-strategy}
 
-IBM WebSphere Application Server in Bluemix est mis à jour régulièrement de sorte à garantir que les nouvelles instances de service soient créées avec les groupes de correctifs et les correctifs les plus récents. Le cloud met à la disposition des équipes de gestion du middleware de nouvelles instances de service facilement et rapidement. En général, de nombreux consommateurs procèdent à la mise à niveau vers une nouvelle instance de service lorsqu'ils veulent assurer la maintenance. Pour les consommateurs qui veulent conserver des instances de service à longue durée de vie, des référentiels de maintenance sont disponibles pour le middleware et l'invité du système d'exploitation sous-jacent. Ceux-ci permettent aux utilisateurs d'assurer la maintenance de leur environnement comme ils le feraient sur site.
+{{site.data.keyword.appserver_full}} est mis à jour régulièrement de façon à garantir que les nouvelles instances de service sont créées avec les groupes de correctifs et les correctifs les plus récents. Le cloud met à la disposition des équipes de gestion du middleware de nouvelles instances de service facilement et rapidement.
 
-## Mises à jour des machines virtuelles
+Vous pouvez créer une instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} au niveau du groupe de correctifs actuel ou à un niveau précédent (n ou n-1) pour une version de produit particulière. L'utilisation du groupe de correctifs actuel fournit les dernières mises à jour et fonctions, mais le groupe de correctifs précédent peut être nécessaire pour se conformer aux exigences d'un déploiement de cloud hybride.
 
-La section ci-après décrit comment appliquer des modifications système aux machines virtuelles.
+Quand vous créez une nouvelle instance, vous pouvez choisir l'un des niveaux de groupe de correctifs suivants sur l'onglet **Profil de service** de l'instance de service :
 
-Vous pouvez mettre à jour votre machine virtuelle de la même façon que n'importe quel système RHEL normal. Avec le gestionnaire de packages Red Hat "Yum", vous pouvez installer, mettre à jour et désinstaller vos packages, entre autres opérations.
+**Liberty**
+  * 18.0.0.1
+  * 17.0.0.4
 
-Votre système est configuré pour recevoir ces mises à jour depuis le serveur Red Hat Satellite d'IBM. Ce satellite fournit des packages sécurisés et fiables depuis Red Hat Network par le biais du gestionnaire de packages Yum.
+**WebSphere Application Server Traditional**
+  * 9.0.0.7
+  * 9.0.0.6
+  * 8.5.5.13
+  * 8.5.5.12
 
-Le serveur satellite est géré par IBM et ne peut pas être modifié depuis votre système.
+## Applications des mises à jour de correctifs et de groupes de correctifs
+{:#applying-fixes}
+
+La façon la plus rapide d'appliquer une mise à jour sur le dernier niveau de maintenance est de créer une nouvelle instance. Toutefois, si vous préférez conserver des instances de service à long terme, vous pouvez appliquer une maintenance sur l'installation existante en exécutant le script `installService.sh` fourni ou en vous servant d'IBM Installation Manager, comme décrit dans les sections suivantes.
+
+### Mise à jour en utilisant le script installService.sh
+
+Votre instance de service est configurée avec un référentiel Installation Manager qui est fréquemment mis à jour avec les correctifs de sécurité et les groupes de correctifs WebSphere Application Server disponibles. Vous pouvez utiliser le script `/home/virtuser/installService.sh` pour appliquer ces correctifs et groupes de correctifs. Le script doit être exécuté en tant qu'utilisateur racine.
+
+La quantité d'espace disque requise pour installer les mises à jour varie selon les types de mises à jour que vous installez. L'installation des seuls correctifs temporaires nécessite 1 Go d'espace libre sur la machine virtuelle. Ce chiffre passe à 1,3 Go si vous installez les groupes de correctifs.
+
+L'exécution du script génère les actions suivantes :
+
+* Arrêt de toutes les instances WebSphere Application Server et IBM HTTP Server en cours d'exécution
+* Installation facultative des derniers groupes de correctifs pour Installation Manager, WebSphere Application Server, IBM HTTP Server et Java SDK
+* Installation des derniers correctifs temporaires pour WebSphere, IBM HTTP Server et Java SDK
+* Redémarrage de toutes les instances
+
+#### Options
+* **`-fixpacks`**
+
+    Met tous les packages au niveau du dernier groupe de correctifs.
+* **`-noprompt`**
+
+    Ne demande pas confirmation avant de procéder à la mise à jour.
+
+#### Exemples de syntaxe
+
+```
+./installService.sh -?
+```
+{:.codeblock}
+
+Affiche le texte d'aide.
+
+
+```
+./installService.sh
+```
+{:.codeblock}
+
+Installe tous les correctifs temporaires applicables mais aucun groupe de correctifs.
+
+
+```
+./installService.sh -fixpacks
+```
+{:.codeblock}
+
+Installe tous les groupes de correctifs disponibles puis tous les correctifs temporaires applicables.
+
+### Mise à jour en utilisant Installation Manager
+{:#installation-manager}
+
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} est installé dans le répertoire `/home/virtuser/IBM/Installation Manager` et peut être exécuté directement pour appliquer les correctifs et groupes de correctifs.
+
+**Evitez les problèmes :** puisque les fichiers binaires sous-jacents sont installés en tant que **virtuser** (utilisateur administrateur virtuel, doté de droits limités), assurez-vous qu'Installation Manager est toujours exécuté en tant que **virtuser**.
+
+## Application des mises à jour système sur vos machines virtuelles
+{:#vm-system-updates}
+
+L'application des mises à jour système sur une machine virtuelle est similaire à la mise à jour d'un système RHEL (Red Hat Enterprise Linux). En utilisant le gestionnaire de package Yum, vous pouvez installer, mettre à jour, désinstaller et gérer les packages. Les systèmes WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sont configurés pour recevoir des mises à jour du serveur Red Hat Satellite d'IBM, qui fournit des packages fiables et sécurisés depuis le réseau Red Hat. Le serveur Satellite est géré par IBM et ne peut être modifié depuis votre système.
 
 Pour plus d'informations, voir [Applying package updates on Red Hat Enterprise Linux](https://access.redhat.com/articles/11258#rhel6){: new_window} et [Yum, the Red Hat package manager](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}.
