@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-13"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -14,6 +14,13 @@ lastupdated: "2018-06-13"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## July 16, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.0.8 fixpack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.8, other fixpack versions of traditional WebSphere Application Server, such as 9.0.0.7, 8.5.5.13, and 8.5.5.12, are available for provisioning.
+* The 18.0.0.2 fixpack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 18.0.0.2, the 18.0.0.1 fixpack version of WebSphere Application Server Liberty is available for provisioning.
+* Addressed [several security vulnerabilities]( https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+* Addressed [several security vulnerabilities]( http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window} the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
 
 ## June 13, 2018: Reserve contract billing now available
 

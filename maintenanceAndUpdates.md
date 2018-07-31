@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-07-16"
 
 ---
 
@@ -23,12 +23,12 @@ You can create a WebSphere Application Server in {{site.data.keyword.Bluemix_not
 When you create a new instance, you can choose from the following fix pack levels on the **Service Profile** tab in the service instance:
 
 **Liberty**
+  * 18.0.0.2
   * 18.0.0.1
-  * 17.0.0.4
 
 **WebSphere Application Server traditional**
+  * 9.0.0.8
   * 9.0.0.7
-  * 9.0.0.6
   * 8.5.5.13
   * 8.5.5.12
 
