@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -112,6 +112,8 @@ Subscriptions are available in 8-block increments. The total block hours are bas
   ```
 
 You can tailor how and when you use the blocks to meet variable workload demand, such as using 4 blocks, increasing to 12 blocks, and then reducing to 8 blocks. As long as you stay under the total block hours in the month, there is no additional charge.
+
+You can choose whether to use your reserve contract blocks or to use pay-as-you-go billing when you provision each environment.
 
 #### Overages
 
