@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-04"
 
 ---
 
@@ -32,7 +32,9 @@ If you want an environment with more dedicated virtual machine resources, such a
 1. Log in with your IBMid, or sign up for an {{site.data.keyword.cloud_notm}} account.
 1. On the catalog page, review the selections for the service configuration.
 
-  For pay-as-you-go environments, use the default selections or modify them to suit your needs. If you have a reserve contract or Single Tenant Environment, pay careful attention to the following options.
+  For pay-as-you-go environments, use the default selections or modify them to suit your needs.
+
+  If you have a reserve contract or Single Tenant Environment, pay careful attention to the following options.
 
   * **Reserve contract:** Under **Choose a region/location to deploy in**, verify that the selected region is the correct region for your contract.
 
@@ -44,7 +46,7 @@ If you want an environment with more dedicated virtual machine resources, such a
 1. Click **Create**.
 
 
-## Step 2: Choose your environment
+## Step 2: Choose your environment (Network Deployment only)
 {: #choose_env}
 
 {{site.data.keyword.appserver_short}} Base and Liberty Core plans only have single servers, so if you chose these plans, you can skip this step.
@@ -65,7 +67,11 @@ Click the tab for the component, such as the server, deployment manager, or appl
 ## Step 4: Provision your environment
 {: #service_profile}
 
-Review the details in the service configuration summary, including the estimated time that it will take to provision. Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
+Review the details in the service configuration summary, including the estimated time that it will take to provision.
+
+**Reserve contract:** Make sure the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your org](../../account/orgs_spaces.html){:new_window} is exactly the same, including case and whitespace, as the org name for your contract. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
+
+Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
 
 ## Next steps
 {: #anchor_value}
