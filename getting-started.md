@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-04"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -24,6 +24,12 @@ With {{site.data.keyword.appserver_full}}, you can set up a pre-configured WebSp
 {: #prereqs}
 
 If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, you'll need to contact IBM Sales before you create the service. Learn more about these options in [About](index.html).
+
+### Migrating an existing WebSphere environment
+
+To migrate an existing WebSphere Application Server Network Deployment environment to this service, use the [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. The tool uploads the profile configuration and applications for your standalone server or cell nodes to a service instance in {{site.data.keyword.cloud_notm}}. For an overview of cloud migration and a step-by-step walkthrough of using the tool, see [the WebSphere Configuration Migration Tool for IBM Cloud guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}  on WASdev.
+
+The following steps walk you through creating a new environment in {{site.data.keyword.appserver_full}}.
 
 ## Step 1: Create the service
 {: #create}
