@@ -103,7 +103,7 @@ The following table lists the total price per hour for each T-shirt sized virtua
 ### Reserve contract
 {:#reserve-contract}
 
-With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} users. To set up reserve contract billing, [contact IBM Sales](reportingIssues.html#contacting-sales).
+With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} users. If you have existing WebSphere Application Server licenses, you can choose a bring-your-own-license reserve contract, which uses these licenses and has a reduced billing rate. To set up reserve contract billing, [contact IBM Sales](reportingIssues.html#contacting-sales).
 
 Subscriptions are available in 8-block increments. The total block hours are based on the number of hours in the month, but you can use the block hours at any point throughout the month. For example, a 30-day month has 720 hours, which when multiplied by an 8-block subscription results in a total of 5,760 block hours.
 

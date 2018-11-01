@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # Single Tenant Environments
 {: #getting_startedSTE}
 
-The {{site.data.keyword.appserver_full}}:Single Tenant Environment is an offering that provides customers with an isolated WebSphere workload, a fully integrated hybrid environment, and secure data. This getting started guide is designed to identify key elements that assist clients in accessing and managing their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
+The {{site.data.keyword.appserver_full}}:Single Tenant Environment provides customers with an isolated WebSphere workload, a fully integrated hybrid environment, and secure data. This getting started guide is designed to identify key elements that assist clients in accessing and managing their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
 {: shortdesc}
 
+## Ordering a Single Tenant Environment
+{:#ordering}
 
-## Recommended software
-{: #recommended_software}
+Single Tenant Environments cannot be created through the {{site.data.keyword.Bluemix_notm}} catalog and must be ordered by contacting IBM sales. When you order your environment, you can choose from a standard or bring-your-own-license Single Tenant Environment. Standard Single Tenant Environments include all required infrastructure and  WebSphere Application Server licenses. Bring-your-own-license Single Tenant Environments enable you to use separate WebSphere Application Server licenses.
 
-You need the following software to access your Single Tenant Environment:
-* A web browser that is supported by {{site.data.keyword.Bluemix_notm}}:
-    * Chrome: the latest version for your operating system
-    * Firefox: the latest version for your operating system or the latest ESR version
-    * Internet Explorer: version 10 or 11
-    * Safari: the latest version for the Mac
-* Cloud Foundry command line interface, Version 6.5.1 or later (you can use the latest release)
-* Git Bash (recommended)
-    * Download and install [Git Bash](https://git-scm.com/downloads){: new_window}
-
+To order a Single Tenant Environment, [contact IBM sales](reportingIssues.html#contacting-sales). The sales team can assist you in setting up an environment tailored to your needs.
 
 ## Overview of WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment
 {: #overviewSTE}
