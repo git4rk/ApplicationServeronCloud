@@ -17,7 +17,7 @@ A list of the latest updates to the service.
 
 ## October 24, 2018: Bring-your-own-license billing now available for reserve contract and Single Tenant environments
 
-If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](reportingIssues.md#contacting-sales).
+If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](reportingIssues.html#contacting-sales).
 
 ## August 22, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 8.5.5.14 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 8.5.5.14, other fix packs of traditional WebSphere Application Server, such as 9.0.0.8, 9.0.0.7, and 8.5.5.13, are available for provisioning.
