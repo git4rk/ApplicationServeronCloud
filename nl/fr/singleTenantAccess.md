@@ -55,7 +55,7 @@ Un **bloc** est défini de la façon suivante :
 
 [1] *Techniquement, un petit système ne contient que 12 Go de disque. Un système moyen contient 25 Go de disque, un grand système, 50 Go, et ainsi de suite.*
 
-Pour chaque machine virtuelle que vous créez, spécifiez la taille standard que vous voulez utiliser - S, M, L, XL ou XXL - qui correspond à 1, 2, 4, 8 et 16 blocs. Quand vous sélectionnez une taille standard, le nombre correspondant de blocs est déduit de votre quota. 
+Pour chaque machine virtuelle que vous créez, spécifiez la taille standard que vous voulez utiliser - S, M, L, XL ou XXL - qui correspond à 1, 2, 4, 8 et 16 blocs. Quand vous sélectionnez une taille standard, le nombre correspondant de blocs est déduit de votre quota.
 
 Supposez, par exemple, que vous disposiez d'un petit environnement, qui contient 64 blocs. Au sein de cet environnement, vous avez configuré des instances de service contenant deux blocs de taille XXL, trois blocs de taille XL et un bloc de taille L, pour un total de 60 blocs utilisés. Si vous sélectionnez une taille standard M pour un nouvel abonnement Liberty Core, un message peut s'afficher qui indique votre quota et le nombre de blocs qui sont encore disponibles :
 
@@ -65,7 +65,7 @@ Supposez, par exemple, que vous disposiez d'un petit environnement, qui contient
 ## Environnement de réseau privé
 {: #private_network}
 
-Une fois votre environnement WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment mis à disposition, vous pouvez télécharger vos données d'identification VPN et établir une connexion OpenVPN. Pour plus d'informations, voir les liens suivants : 
+Une fois votre environnement WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment mis à disposition, vous pouvez télécharger vos données d'identification VPN et établir une connexion OpenVPN. Pour plus d'informations, voir les liens suivants :
 
 * [Accès au VPN (réseau privé virtuel)](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
 * [Configuration d'OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}

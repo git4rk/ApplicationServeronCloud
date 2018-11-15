@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-08-22"
 
 ---
 
@@ -19,19 +19,19 @@ lastupdated: "2018-06-08"
 {{site.data.keyword.appserver_full}} viene aggiornato regolarmente, garantendo che le nuove istanze del servizio vengano create con i fix pack e le patch correnti. Il cloud offre alla gestione middleware un provisioning facile e rapido
 di nuove istanze del servizio.
 
-Puoi creare un'istanza di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} al livello di fixpack corrente o precedente (n o n-1) per una particolare versione del prodotto. L'utilizzo del fix pack corrente fornisce gli aggiornamenti e le funzionalità più recenti, ma potrebbe essere necessario il fix pack precedente per conformarsi ai requisiti di distribuzione del cloud ibrido.
+Puoi creare un'istanza di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} al livello di fix pack corrente o precedente (n o n-1) per una particolare versione del prodotto. L'utilizzo del fix pack corrente fornisce gli aggiornamenti e le funzionalità più recenti, ma potrebbe essere necessario il fix pack precedente per conformarsi ai requisiti di distribuzione del cloud ibrido.
 
-Quando crei una nuova istanza, puoi scegliere tra i seguenti livelli di fixpack nella scheda **Service Profile** dell'istanza del servizio:
+Quando crei una nuova istanza, puoi scegliere tra i seguenti livelli di fix pack nella scheda **Service Profile** dell'istanza del servizio:
 
 **Liberty**
+  * 18.0.0.2
   * 18.0.0.1
-  * 17.0.0.4
 
 **WebSphere Application Server tradizionale**
+  * 9.0.0.8
   * 9.0.0.7
-  * 9.0.0.6
+  * 8.5.5.14
   * 8.5.5.13
-  * 8.5.5.12
 
 ## Applicazione di correzioni e aggiornamenti del fix pack
 {:#applying-fixes}

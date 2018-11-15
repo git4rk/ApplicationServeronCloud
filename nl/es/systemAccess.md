@@ -35,7 +35,7 @@ Mediante el uso de las API REST compatibles con Swagger 2.0, los clientes tienen
 
 | **Nombre de la región** | **Ubicación geográfica** | **Prefijo de la región** | **URL de punto final de API** |       
 |:-------------:|:----------:|:--------------:|:-------------:|
-| EE.UU. Sur | Dallas, TX, EE. UU. | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
+| EE.UU. sur | Dallas, TX, EE. UU. | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
 | Reino Unido | Londres, Inglaterra | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
 | Sídney | Sídney, Australia | au-syd | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
 | Frankfurt | Frankfurt, Alemania | eu-de | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |

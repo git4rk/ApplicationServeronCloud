@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-08-22"
 
 ---
 
@@ -23,14 +23,14 @@ Puede crear un WebSphere Application Server en la instancia de {{site.data.keywo
 Cuando crea una instancia nueva, puede elegir entre los siguientes niveles de fixpack en el separador **Perfil de servicio** de la instancia de servicio:
 
 **Liberty**
+  * 18.0.0.2
   * 18.0.0.1
-  * 17.0.0.4
 
 **WebSphere Application Server tradicional**
+  * 9.0.0.8
   * 9.0.0.7
-  * 9.0.0.6
+  * 8.5.5.14
   * 8.5.5.13
-  * 8.5.5.12
 
 ## Aplicación de arreglos y actualizaciones de fixpack
 {:#applying-fixes}

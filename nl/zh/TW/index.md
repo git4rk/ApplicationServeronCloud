@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -104,7 +104,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供依
 ### 保留合約
 {:#reserve-contract}
 
-透過保留合約計費，您可以購買每月預付訂閱，以保證存取實際保留可計算資源區塊。這些服務區塊會擱置供您專用，因此不能視為任何其他 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 使用者的可用容量。若要設定保留合約計費，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。
+透過保留合約計費，您可以購買每月預付訂閱，以保證存取實際保留可計算資源區塊。這些服務區塊會擱置供您專用，因此不能視為任何其他 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 使用者的可用容量。如果您有現有的 WebSphere Application Server 授權，可以選擇自帶授權保留合約，這樣會使用這些授權，並且會享有折價的計費費率。若要設定保留合約計費，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。
 
 訂閱是以 8 區塊的增量提供。總區塊小時數是根據該月份的小時數，但您可以在整個月的任何時間點使用區塊小時。例如，30 天的月份有 720 個小時，並在乘上 8 區塊的訂閱時產生共 5,760 個區塊小時。
 
@@ -113,6 +113,10 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供依
   ```
 
 您可以修改使用區塊以符合變動工作負載需求的方式及時機，例如使用 4 個區塊、增加為 12 個區塊，然後減少為 8 個區塊。只要您保持低於該月份的總區塊小時數，就不會有任何額外費用。
+
+在您佈建每個環境時，可以選擇要使用保留合約區塊，還是使用隨收隨付制計費。
+
+**附註：**如果您刪除服務實例，可能必須等待大約 30 分鐘，讓它的區塊可供新的服務實例使用。
 
 #### 超額
 

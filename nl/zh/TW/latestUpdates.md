@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-13"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -14,6 +14,21 @@ lastupdated: "2018-06-13"
 {: #latest_updates}
 
 服務最新更新項目的清單。
+
+## 2018 年 10 月 24 日：自帶授權計費現在可用於保留合約及單一承租戶環境
+
+如果您有現有的 WebSphere Application Server 授權，您現在可以在保留合約或單一承租戶環境中使用這些授權。使用自帶授權計費的環境，所提供的權益與標準保留合約或單一承租戶環境相同，但是以折價的費率計費。若要使用自帶授權，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。
+
+## 2018 年 8 月 22 日：已更新 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* 當您佈建新的服務實例後，傳統 WebSphere Application Server 的 8.5.5.14 修正套件版本現在可供使用。除了 8.5.5.14 之外，傳統 WebSphere Application Server 的其他修正套件（例如 9.0.0.8、9.0.0.7 及 8.5.5.13）也可用於佈建。
+* 整合式細項服務維護。
+
+## 2018 年 7 月 16 日：已更新 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* 當您佈建新的服務實例後，傳統 WebSphere Application Server 的 9.0.0.8 修正套件版本現在可供使用。除了 9.0.0.8 之外，傳統 WebSphere Application Server 的其他修正套件版本（例如 9.0.0.7、8.5.5.13 及 8.5.5.12）也可用於佈建。
+* 當您佈建新的服務實例後，WebSphere Application Server Liberty 的 18.0.0.2 修正套件版本現在可供使用。除了 18.0.0.2 之外，WebSphere Application Server Liberty 的 18.0.0.1 修正套件版本也可用於佈建。
+* 已解決 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[數個安全漏洞](https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window}。
+* 已解決 IBM SDK Java Technology Edition 中會影響 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 運行的[數個安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window}。
 
 ## 2018 年 6 月 13 日：保留合約計費現在可供使用
 

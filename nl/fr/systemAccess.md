@@ -69,7 +69,7 @@ OpenVPN est requis pour accéder à toute machine virtuelle WebSphere Applicatio
   * Systèmes 64 bits : [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * Systèmes 32 bits :  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
 2. Prenez soin de sélectionner [Exécuter en tant qu'administrateur Windows](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} et installez openVPN.
-3. Téléchargez les fichiers de configuration VPN depuis le lien de téléchargement OpenVPN de l'instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}},  fourni dans le tableau de bord de service. Décompressez les quatre fichiers vers le répertoire `{répertoire_OpenVPN}\config`. Par exemple :
+3. Téléchargez les fichiers de configuration VPN depuis le lien de téléchargement OpenVPN de l'instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fourni dans le tableau de bord de service. Décompressez les quatre fichiers vers le répertoire `{répertoire_OpenVPN}\config`. Par exemple :
 
   ```  
   C:\Program Files\OpenVPN\Config
@@ -81,7 +81,7 @@ OpenVPN est requis pour accéder à toute machine virtuelle WebSphere Applicatio
 
 1. Pour installer openVPN, suivez les [instructions openVPN pour Linux](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
   * Si vous devez télécharger et installer manuellement le gestionnaire de packages RPM, accédez à la [page de téléchargement d'openVPN unix/linux](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. Vous aurez peut-être besoin de l'aide de votre administrateur Linux.
-3. Téléchargez les fichiers de configuration VPN depuis le lien de téléchargement OpenVPN de l'instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}},  fourni dans le tableau de bord de service. Procédez à l'extraction des fichiers dans le répertoire à partir duquel vous prévoyez de démarrer le client openVPN. Les quatre fichiers doivent se trouver dans le même répertoire.
+3. Téléchargez les fichiers de configuration VPN depuis le lien de téléchargement OpenVPN de l'instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fourni dans le tableau de bord de service. Procédez à l'extraction des fichiers dans le répertoire à partir duquel vous prévoyez de démarrer le client openVPN. Les quatre fichiers doivent se trouver dans le même répertoire.
 3. Démarrez le programme client openVPN. Ouvrez une fenêtre de terminal et accédez au répertoire contenant les fichiers de configuration. Exécutez la commande suivante en tant que root :
 
   ```
@@ -269,7 +269,7 @@ Les étapes de haut niveau suivantes supposent que les tâches préalables sont 
 ## Configuration de SSL
 {: #ssl_configuration}
 
-WebSphere Application Server Traditional et Liberty sont configurés avec le protocole [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Pour changer de protocole, modifiez les fichiers suivants :
+WebSphere Application Server Traditional et Liberty sont configurés avec le protocole [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}.  Pour changer de protocole, modifiez les fichiers suivants :
 
 Pour WebSphere Application Server Traditional :
 

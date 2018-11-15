@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -107,7 +107,7 @@ En la tabla siguiente se muestra el precio total por hora de cada máquina virtu
 ### Contrato de reserva
 {:#reserve-contract}
 
-Con la facturación de contrato de reserva, adquiere una suscripción mensual de prepago que garantiza el acceso a los bloques de recursos de cálculo reservados físicamente. Estos bloques de servicio se reservan para su uso exclusivo y no se pueden considerar como capacidad disponible para ningún otro usuario de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}. Para configurar la facturación del contrato, [póngase en contacto con el equipo de ventas de IBM](reportingIssues.html#contacting-sales).
+Con la facturación de contrato de reserva, adquiere una suscripción mensual de prepago que garantiza el acceso a los bloques de recursos de cálculo reservados físicamente. Estos bloques de servicio se reservan para su uso exclusivo y no se pueden considerar como capacidad disponible para ningún otro usuario de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}. Si ya tiene licencias de WebSphere Application Server, puede elegir un contrato de reserva para traer su propia licencia, que utiliza estas licencias y tiene una tarifa de facturación reducida. Para configurar la facturación del contrato, [póngase en contacto con el equipo de ventas de IBM](reportingIssues.html#contacting-sales).
 
 Las suscripciones están disponibles en incrementos de 8 bloques. Las horas totales de bloque se basan en el número de horas del mes, pero puede utilizar horas de bloque en cualquier momento del mes. Por ejemplo, un mes de 30 días tiene 720 horas, que, si se multiplica por una suscripción de 8 bloques, da como resultado un total de 5.760 horas de bloque.
 
@@ -116,6 +116,10 @@ Las suscripciones están disponibles en incrementos de 8 bloques. Las horas tota
   ```
 
 Puede personalizar la forma y el momento eh que se utilizan los bloques para satisfacer la demanda de carga de trabajo variable; puede, por ejemplo, utilizar 4 bloques, aumentar a 12 bloques y luego reducir a 8 bloques. Mientras permanezca por debajo del total de horas de bloque del mes, no hay ningún cargo adicional.
+
+Se puede elegir entre utilizar los bloques de contrato de reserva o utilizar la facturación de pago según uso cuando se aprovisiona cada entorno.
+
+**Nota:**Si suprime una instancia de servicio, puede que tenga que esperar unos 30 minutos para que sus bloques estén disponibles para las nuevas instancias de servicio.
 
 #### Excedentes
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -30,7 +30,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deplo
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜에도 Liberty Collective를 사용할 수 있습니다. Liberty Collective는 Liberty Profile 그룹에 대한 관리 도메인이며 둘 이상의 가상 머신으로 구성되어 있습니다. 첫 번째 가상 머신에는 Liberty Collective의 제어점인 Collective Controlle Liberty 서버가 포함됩니다. Liberty Collective 외에도 이 가상 머신에는 웹 브라우저에서 애플리케이션에 액세스할 수 있는 IBM HTTP Server도 포함됩니다. 나머지 가상 머신은 집합체(collective) 멤버가 있는 집합체 호스트(Liberty 프로파일 서버)입니다. Liberty 제어기 서버에서는 Liberty Admin Center 기능도 사용됩니다.
 
-다음 그림은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 셀과 Liberty Collective 환경의 아키텍처를 보여줍니다. 
+다음 그림은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 셀과 Liberty Collective 환경의 아키텍처를 보여줍니다.
 
 그림 1. Network Deployment 셀 및 Liberty Collective 아키텍처
 
@@ -73,18 +73,18 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 대형
 ## 비용 청구 옵션
 {: #billing-options}
 
-선택한 비용 청구 옵션에 따른 각 블록의 가격 책정:
-* **[종량과금제](#pay-as-you-go):** 사용량 기반 청구, 사용한 블록당 시간당 가격 책정
+선택한 비용 청구 옵션에 따른 각 블록의 가격:
+* **[종량과금제](#pay-as-you-go):** 사용량 기반 청구, 사용한 블록당 시간당 가격
 * **[예비 계약](#reserve-contract):** 예약된 리소스에 대한 선불 월별 구독
 
 ### 종량과금제
 {: #pay-as-you-go}
 
-종량과금제 가격 책정은 IBM 영업 담당자에게 다른 비용 청구 옵션을 문의하지 않고 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 서비스를 프로비저닝하는 경우에 적용됩니다. 사용량은 월 청구 기간 동안 각 블록이 사용된 전체 또는 부분 시간에 대해 요금이 부과됩니다. 최소 비용 청구는 한 블록 시간의 1/4로 설정됩니다.
+종량과금제 가격은 IBM 영업 담당자에게 다른 비용 청구 옵션을 문의하지 않고 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 서비스를 프로비저닝하는 경우에 적용됩니다. 사용량은 월 청구 기간 동안 각 블록이 사용된 전체 또는 부분 시간에 대해 요금이 부과됩니다. 최소 비용 청구는 한 블록 시간의 1/4로 설정됩니다.
 
 **참고**: 특정 양의 컴퓨팅, 메모리 및 입출력 리소스로 인해 중지된 인스턴스의 요금은 5% 감소된 시간당 블록 비율로 부과됩니다. 서비스 내에서 중지된 인스턴스는 10개의 IP 주소 또는 64GB의 메모리로 제한됩니다.
 
-#### 플랜 가격 책정
+#### 플랜 가격
 
 블록당 가격은 선택한 WebSphere Application Server 플랜에 따라 다릅니다.
 
@@ -103,15 +103,19 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 대형
 ### 예비 계약
 {:#reserve-contract}
 
-예비 계약 비용 청구를 사용하는 경우 물리적으로 예약된 컴퓨팅 리소스 블록에 액세스하도록 보장하는 선불 월별 구독을 구매합니다. 이러한 서비스 블록은 독점 사용을 위해 따로 설정되고 다른 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 사용자가 사용할 수 있는 용량으로 인식되지 않습니다. 서비스 계약 비용 청구를 설정하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
+예비 계약 비용 청구를 사용하는 경우 물리적으로 예약된 컴퓨팅 리소스 블록에 액세스하도록 보장하는 선불 월별 구독을 구매합니다. 이러한 서비스 블록은 독점 사용을 위해 따로 설정되고 다른 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 사용자가 사용할 수 있는 용량으로 인식되지 않습니다. 기존 WebSphere Application Server 라이센스가 있는 경우 BYOL(Bring-Your-Own-License) 예비 계약을 선택할 수 있습니다. 이 경우 이 라이센스를 사용하고 청구 비용이 줄어듭니다. 서비스 계약 비용 청구를 설정하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
 
-구독은 8블록 단위로 사용할 수 있습니다. 총 블록 시간은 해당 월의 시간을 기반으로 하지만 월중 어느 때라도 블록 시간을 사용할 수 있습니다. 예를 들어 총 일 수가 30일인 달은 720시간이며, 8블록 구독으로 곱했을 때 총 블록 시간은 5,760시간입니다. 
+구독은 8블록 단위로 사용할 수 있습니다. 총 블록 시간은 해당 월의 시간을 기반으로 하지만 월중 어느 때라도 블록 시간을 사용할 수 있습니다. 예를 들어, 총 일 수가 30일인 달은 720시간이며, 8블록 구독으로 곱했을 때 총 블록 시간은 5,760시간입니다.
 
   ```
 30 days * 24 hours per day * 8 blocks = 5,760 block hours
   ```
 
 블록을 사용하는 방법과 시기를 조정하여 블록 4개 사용, 블록 12개로 증가한 다음 블록 8개로 감소하는 등 가변적인 워크로드 요구사항을 충족시킬 수 있습니다. 해당 월의 총 블록 시간 내에서 사용하는 한 추가 요금은 부과되지 않습니다.
+
+예비 계약 블록을 사용할 것인지, 또는 각 환경을 프로비저닝할 때 종량과금제 청구를 사용할 것인지 여부를 선택할 수 있습니다.
+
+**참고:** 서비스 인스턴스를 삭제하는 경우 새 서비스 인스턴스를 사용하려면 해당 블록에서 30분을 기다려야 할 수도 있습니다.
 
 #### 초과분
 

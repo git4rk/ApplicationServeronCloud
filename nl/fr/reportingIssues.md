@@ -32,4 +32,3 @@ Pour acheter des abonnements pour une facturation de contrat avec réservation o
 Pour plus d'informations, contactez l'un des centres d'appels situés sur le continent américain aux numéros suivants :
 * **Téléphone : ** +1 800 IBM CALL (426 2255)
 * **Fax :** +1 800 2IBM FAX (242 6329).
-

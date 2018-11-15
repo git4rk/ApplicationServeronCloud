@@ -33,7 +33,7 @@ La configurazione VPN è applicabile alla tua organizzazione e regione. È valid
 ## Gestione della configurazione VPN avanzata
 {: #advancedVPN}
 
-Nella maggior parte dei casi, ti serve una sola configurazione VPN che puoi scaricare utilizzando il pulsante **Download VPN Configuration**. Tuttavia, la pagina di gestione VPN avanzata, a cui si accede utilizzando il pulsante **Advanced VPN Management** dal dashboard del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}, ti consente di creare e gestire più configurazioni VPN. Avere più configurazioni potrebbe essere utile per passare senza problemi a una nuova configurazione VPN quando quella vecchia sta per scadere. Puoi anche richiedere più configurazioni VPN per gestire l'accesso alle tue VM con diversi individui o team nella tua organizzazione.   
+Nella maggior parte dei casi, ti serve una sola configurazione VPN che puoi scaricare utilizzando il pulsante **Download VPN Configuration**. Tuttavia, la pagina di gestione VPN avanzata, a cui si accede utilizzando il pulsante **Advanced VPN Management** dal dashboard del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}, ti consente di creare e gestire più configurazioni VPN. Avere più configurazioni potrebbe essere utile per passare senza problemi a una nuova configurazione VPN quando quella vecchia sta per scadere. Puoi anche richiedere più configurazioni VPN per gestire l'accesso alle tue VM con diversi individui o team nella tua organizzazione.  
 
 **Nota:** ti è consentito un **massimo** di 10 configurazioni VPN attive per la tua organizzazione in qualsiasi momento.
 

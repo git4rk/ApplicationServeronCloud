@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # Ambienti a singolo tenant
 {: #getting_startedSTE}
 
-{{site.data.keyword.appserver_full}}:Single Tenant Environment è un'offerta che fornisce ai clienti un carico di lavoro WebSphere isolato, un ambiente ibrido completamente integrato e protezione dei dati. Questa guida introduttiva è progettata per identificare gli elementi chiave che aiutano i clienti ad accedere e gestire il loro WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
+L'ambiente a singolo tenant {{site.data.keyword.appserver_full}}:fornisce ai clienti un carico di lavoro WebSphere isolato, un ambiente ibrido completamente integrato e dei dati protetti. Questa guida introduttiva è progettata per identificare gli elementi chiave che aiutano i clienti ad accedere e gestire il loro WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
 {: shortdesc}
 
+## Ordinazione di un ambiente a singolo tenant
+{:#ordering}
 
-## Software consigliato
-{: #recommended_software}
+Gli ambienti a singolo tenant non possono essere creati tramite il catalogo {{site.data.keyword.Bluemix_notm}} e devono essere ordinati contattando il settore Vendite IBM. Quando ordini il tuo ambiente, puoi scegliere da un ambiente a singolo tenant standard oppure BYOL (bring-your-own-license). Gli ambienti a singolo tenant standard includono tutta l'infrastruttura e le licenze WebSphere Application Server necessarie. Gli ambienti a singolo tenant BYOL (bring-your-own-license) ti consentono di utilizzare licenze WebSphere Application Server separate.
 
-Per accedere al tuo ambiente a singolo tenant, avrai bisogno del seguente software:
-* Un browser web supportato da {{site.data.keyword.Bluemix_notm}}:
-    * Chrome: la versione più recente per il tuo sistema operativo
-    * Firefox: la versione più recente per il tuo sistema operativo o l'ultima versione ESR
-    * Internet Explorer: versione 10 o 11
-    * Safari: la versione più recente per il Mac
-* Interfaccia riga di comando Cloud Foundry, versione 6.5.1 o successiva (puoi utilizzare l'ultima release)
-* Git Bash (consigliato)
-    * Scarica e installa [Git Bash](https://git-scm.com/downloads){: new_window}
-
+Per ordinare un ambiente a singolo tenant, [contatta il settore Vendite IBM](reportingIssues.html#contacting-sales). Il team di vendita può aiutarti nella configurazione di un ambiente personalizzato in base alle tue esigenze.
 
 ## Panoramica di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment
 {: #overviewSTE}

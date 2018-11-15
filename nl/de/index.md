@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -103,7 +103,7 @@ In der folgenden Tabelle ist der Gesamtpreis pro Stunden für jede in T-Shirt-Gr
 ### Reservierungsvertrag
 {:#reserve-contract}
 
-Bei der Abrechnung im Rahmen eines Reservierungsvertrags erwerben Sie ein vorausbezahltes monatliches Abonnement, mit dem der Zugriff auf Blöcke mit physisch reservierten Rechenressourcen garantiert wird. Diese Serviceblöcke werden zu Ihrer exklusiven Nutzung reserviert und stehen anderen WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Benutzern nicht als verfügbare Kapazität zur Verfügung. [Kontaktieren Sie den IBM Vertrieb](reportingIssues.html#contacting-sales), um die Abrechnung im Rahmen eines Reservierungsvertrags einzurichten.
+Bei der Abrechnung im Rahmen eines Reservierungsvertrags erwerben Sie ein vorausbezahltes monatliches Abonnement, mit dem der Zugriff auf Blöcke mit physisch reservierten Rechenressourcen garantiert wird. Diese Serviceblöcke werden zu Ihrer exklusiven Nutzung reserviert und stehen anderen WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Benutzern nicht als verfügbare Kapazität zur Verfügung. Falls Sie über vorhandene WebSphere Application Server-Lizenzen verfügen, können Sie einen BYOL-Reservierungsvertrag (Bring Your Own License) auswählen, der diese Lizenzen verwendet und einen reduzierten Abrechnungs aufweist. [Kontaktieren Sie den IBM Vertrieb](reportingIssues.html#contacting-sales), um die Abrechnung im Rahmen eines Reservierungsvertrags einzurichten.
 
 Abonnements sind in 8-Block-Stufen verfügbar. Die Gesamtzahl der Blockstunden basiert auf der Anzahl der Stunden im Monat, die Blockstunden können jedoch zu jedem beliebigen Zeitpunkt innerhalb des Monats genutzt werden. Beispiel: Ein Monat mit 30 Tagen umfasst 720 Stunden. Multipliziert mit einem 8-Blöcke-Abonnement ergibt dies insgesamt 5.760 Blockstunden.
 
@@ -112,6 +112,10 @@ Abonnements sind in 8-Block-Stufen verfügbar. Die Gesamtzahl der Blockstunden b
   ```
 
 Sie können anpassen, wie und wann die Blöcke genutzt werden, um variable Workloadanforderungen zu erfüllen; z. B. können Sie 4 Blöcke nutzen, dann die Nutzung auf 12 Blöcke erhöhen und wieder auf 8 Blöcke reduzieren. Unter der Voraussetzung, dass die Gesamtzahl der Blockstunden im Monat nicht überschritten wird, fallen keine zusätzlichen Gebühren an.
+
+Bei der Bereitstellung der jeweiligen Umgebung können Sie auswählen, ob die Blöcke des Reservierungsvertrags oder eine nutzungsabhängige Abrechnung verwendet werden soll.
+
+**Hinweis:** Beim Löschen einer Serviceinstanz müssen Sie möglicherweise etwa 30 Minuten warten, bis die Blöcke für neue Serviceinstanzen verfügbar werden.
 
 #### Überschreitungen
 
@@ -125,7 +129,7 @@ Bei der Abrechnung im Rahmen eines Reservierungsvertrags basieren Blöcke auf de
 
 Die folgende Tabelle enthält die Gebührensätze für die anteilmäßige Verrechnung innerhalb des jeweiligen Plans und den effektiven Preis pro tatsächlicher Blockstunde nach der anteilmäßigen Verrechnung. Die aktuellen Preise in der jeweiligen Region erhalten Sie beim [IBM Vertrieb](reportingIssues.html#contacting-sales).
 
-| Plan | Gebührensatz für anteilmäßige Verrechnung | Preis/Stunde nach anteilmäßiger Verrechnung|
+| Plan | Gebührensatz für anteilmäßige Verrechnung | Preis/Stunde nach anteilmäßiger Verrechnung |
 |:-------:|:------:|:------:|
 | WebSphere Application Server Liberty Core | 0,3 | $ 0,21 |
 | WebSphere Application Server Base  | 0,43 | $ 0,30 |

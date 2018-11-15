@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # Environnements à service exclusif
 {: #getting_startedSTE}
 
-{{site.data.keyword.appserver_full}}:Single Tenant Environment est une offre à service exclusif qui fournit aux clients avec une charge de travail WebSphere isolée un environnement hybride intégré complet et des données sécurisées. Ce guide d'initiation est conçu pour identifier les éléments clé permettant d'aider les clients à accéder à leur serveur WebSphere Application Server et à le gérer dans l'environnement à service exclusif {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
+{{site.data.keyword.appserver_full}}:Single Tenant Environment fournit aux clients avec une charge de travail WebSphere isolée un environnement hybride intégré complet et des données sécurisées. Ce guide d'initiation est conçu pour identifier les éléments clé permettant d'aider les clients à accéder à leur serveur WebSphere Application Server et à le gérer dans l'environnement à service exclusif {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment.
 {: shortdesc}
 
+## Commande d'un environnement à service exclusif
+{:#ordering}
 
-## Logiciels recommandés
-{: #recommended_software}
+Les environnements à service exclusif ne peuvent pas être créés via le catalogue {{site.data.keyword.Bluemix_notm}} et doivent être commandés en contact IBM Sales. Lorsque vous commandez votre environnement, vous pouvez choisir un environnement à service exclusif standard ou BYOL. Les environnements à service exclusif standard incluent toutes les licences d'infrastructure et WebSphere Application Server requises. Les environnements à service exclusif BYOL vous permettent d'utiliser des licences WebSphere Application Server distinctes.
 
-Vous devez disposer du logiciel suivant pour accéder à votre environnement à service exclusif :
-* Navigateur Web pris en charge par {{site.data.keyword.Bluemix_notm}} :
-    * Chrome : la dernière version disponible pour votre système d'exploitation
-    * Firefox : la dernière version disponible pour votre système d'exploitation ou la dernière version ESR (Extended Support Release)
-    * Internet Explorer : version 10 ou 11
-    * Safari : la dernière version pour Mac
-* Interface de ligne de commande Cloud Foundry, version 6.5.1 ou ultérieure (vous pouvez utiliser la dernière édition)
-* Git Bash (recommandé)
-    * Téléchargez et installez [Git Bash](https://git-scm.com/downloads){: new_window}
-
+Pour commander un environnement à service exclusif, [contactez IBM Sales](reportingIssues.html#contacting-sales). L'équipe commerciale peut vous aider à installer et configurer un environnement adapté à vos besoins. 
 
 ## Présentation de l'environnement à service exclusif WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment
 {: #overviewSTE}

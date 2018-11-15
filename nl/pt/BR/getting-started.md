@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -14,7 +14,7 @@ lastupdated: "2018-06-08"
 {:tip: .tip}
 
 
-# Tutorial Introdução
+# Tutorial de Introdução
 {:#getting-started}
 
 Com o {{site.data.keyword.appserver_full}}, é possível configurar um ambiente pré-configurado do WebSphere Application Server tradicional ou do Liberty em minutos. Este tutorial de introdução orienta o provisionamento de um ambiente do WebSphere Application Server em uma máquina virtual em apenas algumas etapas.
@@ -25,6 +25,13 @@ Com o {{site.data.keyword.appserver_full}}, é possível configurar um ambiente 
 
 Se você desejar um ambiente com recursos de máquina virtual mais dedicados, como um contrato de reserva ou um ambiente de locatário único, será necessário entrar em contato com Vendas IBM antes de criar o serviço. Saiba mais sobre essas opções em [Sobre](index.html).
 
+### Migrando um ambiente existente do WebSphere
+
+Para migrar um ambiente existente do WebSphere Application Server Network Deployment para esse serviço, use o [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}}![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. A ferramenta faz upload da configuração do perfil e dos aplicativos para o servidor independente ou nós de célula para uma instância de serviço no {{site.data.keyword.cloud_notm}}. Para obter uma visão geral da migração de nuvem e um roteiro passo a passo do uso da ferramenta, consulte [o guia do WebSphere Configuration Migration Tool for IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo") ](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} em WASdev.
+
+As etapas a seguir orientam a criação de um novo ambiente no
+{{site.data.keyword.appserver_full}}.
+
 ## Etapa 1: Criar o Serviço
 {: #create}
 
@@ -32,7 +39,9 @@ Se você desejar um ambiente com recursos de máquina virtual mais dedicados, co
 1. Efetue login com o seu IBMid ou inscreva-se em uma conta do {{site.data.keyword.cloud_notm}}.
 1. Na página do catálogo, revise as seleções para a configuração de serviço.
 
-  Para ambientes pré-pagos, use as seleções padrão ou modifique-as para se adequarem às suas necessidades. Se você tiver um contrato de reserva ou um ambiente de locatário único, observe as opções a seguir.
+  Para ambientes pré-pagos, use as seleções padrão ou modifique-as para se adequarem às suas necessidades.
+
+  Se você tiver um contrato de reserva ou um ambiente de locatário único, observe as opções a seguir.
 
   * **Contrato de reserva:** em **Escolha uma região/local na qual implementar**, verifique se a região selecionada é a região correta para o seu contrato.
 
@@ -44,7 +53,7 @@ Se você desejar um ambiente com recursos de máquina virtual mais dedicados, co
 1. Clique em  ** Criar **.
 
 
-## Etapa 2: escolha o seu ambiente
+## Etapa 2: Escolha o seu ambiente (somente implementação de rede)
 {: #choose_env}
 
 {{site.data.keyword.appserver_short}} Os planos Base e Liberty Core têm apenas servidores únicos, portanto, se você tiver escolhido esses planos, poderá ignorar essa etapa.
@@ -68,7 +77,15 @@ da camiseta para a sua máquina virtual.
 ## Etapa 4: Provisão de seu ambiente
 {: #service_profile}
 
-Revise os detalhes no resumo da configuração de serviço, incluindo o tempo estimado para o fornecimento. Clique em
+Revise os detalhes no resumo da configuração de serviço, incluindo o tempo estimado para o fornecimento.
+
+**Contrato de reserva:** certifique-se de que a opção **Faturamento** esteja
+configurada como _Contrato de reserva_. Se você não vir a opção, verifique se
+[a sua organização](../../account/orgs_spaces.html){:new_window} é exatamente a mesma do nome da
+organização para o seu contrato, incluindo as letras maiúsculas e minúsculas e os espaços em branco. Se você
+fornecer o serviço sem selecionar o faturamento de contrato de reserva, o faturamento pré-pago será usado.
+
+Clique em
 **Fornecimento** para configurar o seu ambiente do {{site.data.keyword.appserver_short}}.
 
 ## Próximas etapas

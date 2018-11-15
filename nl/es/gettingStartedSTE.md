@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # Entornos de un solo arrendatario
 {: #getting_startedSTE}
 
-El entorno de un solo arrendatario de {{site.data.keyword.appserver_full}} es una oferta que ofrece a los clientes con una carga de trabajo de WebSphere aislada un entorno híbrido completamente integrado y datos seguros. Esta guía de iniciación se ha diseñado para identificar los elementos clave que ayudan a los clientes a acceder y a gestionar su WebSphere Application Server en un entorno de {{site.data.keyword.Bluemix_notm}} de un solo arrendatario.
+El entorno de un solo arrendatario de {{site.data.keyword.appserver_full}} ofrece a los clientes con una carga de trabajo de WebSphere aislada un entorno híbrido completamente integrado y datos seguros. Esta guía de iniciación se ha diseñado para identificar los elementos clave que ayudan a los clientes a acceder y a gestionar su WebSphere Application Server en un entorno de {{site.data.keyword.Bluemix_notm}} de un solo arrendatario.
 {: shortdesc}
 
+## Solicitud de un entorno de un solo arrendatario
+{:#ordering}
 
-## Software recomendado
-{: #recommended_software}
+Los entornos de un único arrendatario no se pueden crear a través del catálogo {{site.data.keyword.Bluemix_notm}} y deben solicitarse poniéndose en contacto con el departamento de ventas de IBM. Cuando pida su entorno, puede elegir entre un entorno de un solo arrendatario estándar o con su propia licencia. Los entornos estándar de un solo arrendatario incluyen toda la infraestructura necesaria y las licencias de WebSphere Application Server. Los entornos de un solo arrendatario le permiten utilizar licencias independientes de WebSphere Application Server.
 
-Necesita el software siguiente para acceder a su entorno de un solo arrendatario:
-* Un navegador web que reciba soporte de {{site.data.keyword.Bluemix_notm}}:
-    * Chrome: la versión más reciente para su sistema operativo
-    * Firefox: la versión más reciente para su sistema operativo o la última versión de ESR
-    * Internet Explorer: versión 10 u 11
-    * Safari: la versión más reciente para Mac
-* La interfaz de línea de mandatos de Cloud Foundry, Versión 6.5.1 o posterior (puede utilizar el release más reciente)
-* Git Bash (recomendado)
-    * Descargue e instale [Git Bash](https://git-scm.com/downloads){: new_window}
-
+Para pedir un entorno de un solo arrendatario, [póngase en contacto con ventas de IBM](reportingIssues.html#contacting-sales). El equipo de ventas puede ayudarle a configurar un entorno ajustado a sus necesidades.
 
 ## Visión general de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}: entorno de un solo arrendatario
 {: #overviewSTE}

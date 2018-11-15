@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="wasaas" audience="service"}
+{: .toc subcollection="wasaas" audience="service" arm="283" path="services/ApplicationServeronCloud"}
 WebSphere Application Server en IBM Cloud
 
     {: .navgroup id="learn"}

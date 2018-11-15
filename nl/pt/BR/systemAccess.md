@@ -36,7 +36,7 @@ dos EUA. Se estiver usando outras regiões, assegure-se de que seu aplicativo re
 
 *Tabela 1. URLs de terminal de API para implementação da API de REST*
 
-| **Nome da região** | **Local geográfico** | **Prefixo da região** |**URL de terminal de API** |       
+| **Nome da região** | **Local geográfico** | **Prefixo da região** | **URL de terminal de API** |       
 |:-------------:|:----------:|:--------------:|:-------------:|
 | SUL dos EUA | Dallas, TX, EUA | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
 | Reino Unido | Londres, Inglaterra | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
@@ -292,7 +292,7 @@ disso, é possível que precise acessar o Painel de serviço do WebSphere Applic
 ## Configuração do SSL
 {: #ssl_configuration}
 
-O WebSphere Application Server tradicional e o Liberty são configurados com o protocolo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Para mudar o protocolo, modifique as regras a seguir:
+O WebSphere Application Server tradicional e o Liberty são configurados com o protocolo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}.  Para mudar o protocolo, modifique as regras a seguir:
 
 Para WebSphere Application Server tradicional:
 

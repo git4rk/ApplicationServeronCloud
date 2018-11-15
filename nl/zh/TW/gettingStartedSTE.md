@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # 單一承租戶環境
 {: #getting_startedSTE}
 
-「{{site.data.keyword.appserver_full}}：單一承租戶環境」是一種供應項目，可為客戶提供隔離的 WebSphere 工作負載、完全整合的混合式環境及安全資料。本入門手冊的設計旨在識別重要元素，以協助用戶端存取及管理其「WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}：單一承租戶環境」。
+「{{site.data.keyword.appserver_full}}：單一承租戶環境」可為客戶提供隔離的 WebSphere 工作負載、完全整合的混合式環境及安全資料。本入門手冊的設計旨在識別重要元素，以協助用戶端存取及管理其「WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}：單一承租戶環境」。
 {: shortdesc}
 
+## 訂購單一承租戶環境
+{:#ordering}
 
-## 建議的軟體
-{: #recommended_software}
+單一承租戶環境無法透過 {{site.data.keyword.Bluemix_notm}} 型錄建立，且必須與 IBM 銷售人員聯絡才能訂購。當您訂購環境時，可以從標準或自帶授權的單一承租戶環境選擇。標準單一承租戶環境包含所有必要的基礎架構及 WebSphere Application Server 授權。自帶授權單一承租戶環境則讓您能使用個別的 WebSphere Application Server 授權。
 
-您需要下列軟體，才能存取「單一承租戶環境」：
-* {{site.data.keyword.Bluemix_notm}} 支援的 Web 瀏覽器：
-    * Chrome：您作業系統的最新版本
-    * Firefox：作業系統的最新版本或最新 ESR 版本
-    * Internet Explorer：第 10 版或第 11 版
-    * Safari：Mac 的最新版本
-* Cloud Foundry 指令行介面 6.5.1 版或更新版本（您可以使用最新版本）
-* Git Bash（建議）
-    * 下載並安裝 [Git Bash](https://git-scm.com/downloads){: new_window}
-
+若要訂購單一承租戶環境，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。銷售團隊可以協助您設定針對您的需要量身訂做的環境。
 
 ## WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}：單一承租戶環境概觀
 {: #overviewSTE}

@@ -10,7 +10,7 @@ lastupdated: "2018-05-02"
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
 
-# Getting help
+# Obtendo ajuda
 {: #reporting_issues}
 
 
