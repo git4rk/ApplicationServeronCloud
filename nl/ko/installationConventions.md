@@ -21,7 +21,7 @@ lastupdated: "2018-06-08"
  * */home/virtuser/IBM/Installation Manager* 디렉토리에 설치된
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}를 사용하여 유지보수를 적용할 수 있습니다. 기본 바이너리가 제한된 관리 가상 사용자인 **virtuser**로 설치되므로 모든 수정팩과 임시 수정사항이 **virtuser**로 설치됩니다.
 
- * 그러나 명령행에서 서버를 시작하고 중지할 때는 **virtuser**가 아닌 WebSphere Administrative ID인 **wsadmin**을 사용해야 합니다. 
+ * 그러나 명령행에서 서버를 시작하고 중지할 때는 **virtuser**가 아닌 WebSphere Administrative ID인 **wsadmin**을 사용해야 합니다.
 
 ## 셀 설치 규칙
 {: cell_installation_conventions}

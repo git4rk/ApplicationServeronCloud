@@ -113,7 +113,7 @@ OpenSSH의 설치를 확인하려면 다음 명령을 입력하십시오.
   ```
   {: codeblock}
 
-다음 지시사항을 사용하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 대한 SSH 액세스를 설정하십시오. 
+다음 지시사항을 사용하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 대한 SSH 액세스를 설정하십시오.
 
 1. 사용자가 처음 연결할 때 표시되는 경고 메시지, "호스트 x.x.x.x의 인증을 확립할 수 없습니다."를 검토하십시오. 이 메시지는 정상입니다. 프롬프트가 표시되면 예를 선택하십시오. 공개 키가 이제 사용자 **virtuser**의 VM에 설치되었습니다.
 2. 개인 키를 사용하여 **virtuser**에 로그인하십시오. 최상의 결과를 위해서는 개인 키 인증 메소드를 사용하십시오.
@@ -183,7 +183,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 {: #firewall_ports}
 
 애플리케이션과 데이터베이스에 액세스 가능하도록 방화벽에서 포트를 열어야 할 수도 있습니다.
-  * 각 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 노드에서 WAS_HOME/virtual/bin 디렉토리의 openFirewallPorts.sh 스크립트를 찾습니다. 
+  * 각 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 노드에서 WAS_HOME/virtual/bin 디렉토리의 openFirewallPorts.sh 스크립트를 찾습니다.
   * 각 Liberty Collective 호스트에서 WAS_HOME/virtual/bin 디렉토리의 openFirewallPorts.sh 스크립트를 찾습니다.
 
 사용법:
@@ -219,7 +219,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 서비스 대시보드에서 **관리자 콘솔 열기**를 클릭하고 wsadmin 및 서비스 대시보드에 제공된 관리자 비밀번호로 로그인하십시오.
 
-* 배치 관리자가 비어 있는 사용자 정의 노드와 연합되어 있으므로 Admin Console에서 애플리케이션 서버(예: ****server1***)를 작성하십시오. 
+* 배치 관리자가 비어 있는 사용자 정의 노드와 연합되어 있으므로 Admin Console에서 애플리케이션 서버(예: ****server1***)를 작성하십시오.
 
 * 작성한 서버를 시작하십시오.
 
@@ -270,7 +270,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 ## SSL 구성
 {: #ssl_configuration}
 
-WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 프로토콜로 구성되어 있습니다. 프로토콜을 변경하려면 다음 파일을 수정하십시오.
+WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 프로토콜로 구성되어 있습니다.  프로토콜을 변경하려면 다음 파일을 수정하십시오.
 
 WebSphere Application Server Traditional의 경우:
 

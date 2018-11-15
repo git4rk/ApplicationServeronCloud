@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,12 @@ Mit {{site.data.keyword.appserver_full}} können Sie innerhalb von Minuten eine 
 
 Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, die in einem höheren Maß dediziert sind, wie z. B. im Rahmen eines Reservierungsvertrags oder einer Single-Tenant-Umgebung, müssen Sie den IBM Vertrieb kontaktieren, bevor Sie den Service erstellen. Weitere Einzelheiten zu diesen Optionen finden Sie im Abschnitt [Informationen](index.html).
 
+### Vorhandene WebSphere-Umgebung migrieren
+
+Wenn Sie eine vorhandene WebSphere Application Server Network Deployment-Umgebung in diesen Service migrieren möchten, verwenden Sie das [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. Mit dem Tool werden die Profilkonfiguration und die Anwendungen für den eigenständigen Server oder die Zellenknoten in einer Serviceinstanz in {{site.data.keyword.cloud_notm}} hochgeladen. Eine Übersicht über die Cloud-Migration und eine Anleitung zur Verwendung des Tools in einzelnen Schritten finden Sie im [Handbuch zum WebSphere Configuration Migration Tool for IBM Cloud ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} in WASdev.
+
+Im Folgenden werden die einzelnen Schritte zur Erstellung einer neuen Umgebung in {{site.data.keyword.appserver_full}} beschrieben.
+
 ## Schritt 1: Service erstellen
 {: #create}
 
@@ -32,7 +38,9 @@ Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, d
 1. Melden Sie sich mit Ihrer IBMid an oder führen Sie eine Anmeldung für ein {{site.data.keyword.cloud_notm}}-Konto durch.
 1. Überprüfen Sie auf der Katalogseite die Auswahlmöglichkeiten für die Servicekonfiguration.
 
-  Verwenden Sie für nutzungsabhängige Umgebungen die Standardoptionen oder ändern Sie sie nach Bedarf. Wenn Sie einen Reservierungsvertrag oder eine Single-Tenant-Umgebung verwenden, beachten Sie die nachfolgend beschriebenen Optionen sorgfältig.
+  Verwenden Sie für nutzungsabhängige Umgebungen die Standardoptionen oder ändern Sie sie nach Bedarf.
+
+  Wenn Sie einen Reservierungsvertrag oder eine Single-Tenant-Umgebung verwenden, beachten Sie die nachfolgend beschriebenen Optionen sorgfältig.
 
   * **Reservierungsvertrag:** Vergewissern Sie sich, dass es sich bei der unter **Region/Standort für Bereitstellung auswählen** ausgewählten Region um die korrekte Region für Ihren Vertrag handelt.
 
@@ -44,7 +52,7 @@ Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, d
 1. Klicken Sie auf **Erstellen**.
 
 
-## Schritt 2: Umgebung auswählen
+## Schritt 2: Umgebung auswählen (nur Network Deployment)
 {: #choose_env}
 
 Der {{site.data.keyword.appserver_short}} Base- und der Liberty Core-Plan umfassen nur Einzelserver, d. h., bei der Verwendung dieser Pläne können Sie diesen Schritt überspringen.
@@ -65,7 +73,11 @@ Klicken Sie auf die Registerkarte für die jeweilige Komponente, z. B. den Serve
 ## Schritt 4: Umgebung bereitstellen
 {: #service_profile}
 
-Überprüfen Sie die Details in der Servicekonfigurationszusammenfassung einschließlich der geschätzten Zeit für die Bereitstellung. Klicken Sie auf **Bereitstellen**, um die {{site.data.keyword.appserver_short}}-Umgebung einzurichten.
+Überprüfen Sie die Details in der Servicekonfigurationszusammenfassung einschließlich der geschätzten Zeit für die Bereitstellung.
+
+**Reservierungsvertrag:** Stellen Sie sicher, dass für die Option **Abrechnung** die Einstellung _Reservierungsvertrag_ ausgewählt ist. Wenn diese Option nicht angezeigt wird, stellen Sie sicher, dass der für [Ihre Organisation](../../account/orgs_spaces.html){:new_window} eingegebene Name exakt mit dem Organisationsnamen des Vertrags übereinstimmt, einschließlich Groß-/Kleinschreibung und Leerzeichen. Wenn Sie diesen Service bereitstellen, ohne die Abrechnung im Rahmen eines Reservierungsvertrags auszuwählen, wird eine nutzungsabhängige Abrechnung verwendet.
+
+Klicken Sie auf **Bereitstellen**, um die {{site.data.keyword.appserver_short}}-Umgebung einzurichten.
 
 ## Weitere Schritte
 {: #anchor_value}

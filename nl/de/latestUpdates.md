@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-13"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -14,6 +14,21 @@ lastupdated: "2018-06-13"
 {: #latest_updates}
 
 Eine Liste der neuesten Aktualisierungen für den Service.
+
+## 24. Oktober 2018: BYOL-Abrechnungen (Bring Your Own License) sind nun für Reservierungsverträge und Single-Tenant-Umgebungen verfügbar
+
+Falls Sie über vorhandene WebSphere Application Server-Lizenzen verfügen, können Sie nun diese Lizenzen in Ihrem Resevierungsvertrag für Single-Tenant-Umgebungen verwenden. Umgebungen mit BYOL-Abrechnung bieten dieselben Vorteile wie Standardreservierungsverträge oder Single-Tenant-Umgebungen, jedoch einen reduzierten Abrechnungssatz. [Kontaktieren Sie den IBM Vertrieb](reportingIssues.html#contacting-sales), wenn Sie BYOL verwenden möchten.
+
+## 22. August 2018: Aktualisierung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Die Fixpack-Version 8.5.5.14 für den klassischen WebSphere Application Server ist nun bei der Bereitstellung einer neuen Serviceinstanz verfügbar. Zusätzlich zu 8.5.5.14 stehen auch andere Fixpackversionen des klassischen WebSphere Application Server, wie z. B. 9.0.0.8, 9.0.0.7 und 8.5.5.13, zur Bereitstellung zur Verfügung.
+* Verschiedene Funktionen für die Servicewartung wurden integriert.
+
+## 16. Juli 2018: Aktualisierung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* Die Fixpack-Version 9.0.0.8 für den klassischen WebSphere Application Server ist nun bei der Bereitstellung einer neuen Serviceinstanz verfügbar. Zusätzlich zu 9.0.0.8 stehen auch andere Fixpackversionen des klassischen WebSphere Application Server, wie z. B. 9.0.0.7, 8.5.5.13 und 8.5.5.12, zur Bereitstellung zur Verfügung.
+* Die Fixpack-Version 18.0.0.2 für WebSphere Application Server Liberty ist nun bei der Bereitstellung einer neuen Serviceinstanz verfügbar. Zusätzlich zu 18.0.0.2 steht die Fixpackversion 18.0.0.1 von WebSphere Application Server Liberty zur Bereitstellung zur Verfügung.
+* Es wurden [eine Reihe von Sicherheitslücken](https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} adressiert.
+* Es wurden [eine Reihe von Sicherheitslücken](http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window} in IBM SDK Java Technology Edition adressiert, die sich auf WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} auswirken.
 
 ## 13. Juni 2018: Abrechnung im Rahmen eines Reservierungsvertrags nun verfügbar
 
@@ -101,7 +116,7 @@ Weitere Informationen zur Abrechnung im Rahmen eines Reservierungsvertrags finde
 * Verschiedene Funktionen für die Servicewartung wurden integriert.
 * Es wurden [eine Reihe von Sicherheitslücken](http://www-01.ibm.com/support/docview.wss?uid=swg22000834){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} adressiert; dazu gehören die folgenden:
   * Eine Sicherheitslücke, durch die WebSphere Application Server bei einer Konfiguration mit OpenID Connect (OIDC) Trust Association Interceptor (TAI) es einem Benutzer ermöglichen könnte, höhere Berechtigungen für das System zu erhalten.
-  * Eine Sicherheitslücke, durch die die von WebSphere Application Server bereitgestellte Sicherheit möglicherweise nicht die erwartete Stärke aufweist. Ein Angreifer über Fernzugriff könnte diese Schwachstelle nutzen, um sensible Informationen und unbefugten Zugriff auf die Administrationskonsole zu erhalten. 
+  * Eine Sicherheitslücke, durch die die von WebSphere Application Server bereitgestellte Sicherheit möglicherweise nicht die erwartete Stärke aufweist. Ein Angreifer über Fernzugriff könnte diese Schwachstelle nutzen, um sensible Informationen und unbefugten Zugriff auf die Administrationskonsole zu erhalten.
   * Ein Problem, das WebSphere Application Server angreifbar für Cross-Site Request Forgery macht. Dies könnte es einem Angreifer ermöglichen, schädliche und unbefugte Aktionen über einen Benutzer auszuführen, den die Website als vertrauenswürdig einstuft.
 
 

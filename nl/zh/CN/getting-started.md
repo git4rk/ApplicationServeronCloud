@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,14 @@ lastupdated: "2018-06-08"
 
 如果您需要的是具有更多专用虚拟机资源的环境（例如，保留合同或 Single Tenant Environment），您将需要在创建服务之前联系 IBM 销售人员。在[关于](index.html)中了解有关这些选项的更多信息。
 
+### 迁移现有 WebSphere 环境
+
+要将现有的 WebSphere Application Server Network Deployment 环境迁移到此服务，请使用 [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}。该工具将单机服务器或单元节点的概要文件配置和应用程序上传到
+{{site.data.keyword.cloud_notm}} 中的服务实例中。有关云迁移的概述和使用此工具的分步说明，请参阅 WASdev 上的
+[WebSphere Configuration Migration Tool for IBM Cloud guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}。
+
+下面的步骤将指导您在 {{site.data.keyword.appserver_full}} 中逐步创建新环境。
+
 ## 步骤 1：创建服务
 {: #create}
 
@@ -32,7 +40,9 @@ lastupdated: "2018-06-08"
 1. 使用 IBM 标识登录，或注册 {{site.data.keyword.cloud_notm}} 帐户。
 1. 在目录页面上，查看用于服务配置的选择。
 
-  对于现买现付环境，请使用缺省选择或根据您的需求进行修改。如果您有保留合同或 Single Tenant Environment，请特别注意以下选项。
+  对于现买现付环境，请使用缺省选择或根据您的需求进行修改。
+
+  如果您有保留合同或 Single Tenant Environment，请特别注意以下选项。
 
   * **保留合同：**在**选择要部署的区域/位置**下，验证所选区域是否为合同的正确区域。
 
@@ -44,7 +54,7 @@ lastupdated: "2018-06-08"
 1. 单击**创建**。
 
 
-## 步骤 2：选择环境
+## 步骤 2：选择您的环境（仅限 Network Deployment）
 {: #choose_env}
 
 {{site.data.keyword.appserver_short}} Base 和 Liberty Core 套餐仅具有单服务器，因此，如果您选择了这些套餐，那么可以跳过此步骤。
@@ -65,7 +75,11 @@ lastupdated: "2018-06-08"
 ## 步骤 4：供应环境
 {: #service_profile}
 
-复查服务配置摘要中的详细信息，包括供应所需的估算时间。单击**供应**以设置 {{site.data.keyword.appserver_short}} 环境。
+复查服务配置摘要中的详细信息，包括供应所需的估算时间。
+
+**保留合同：**确保**计费**选项设置为_保留合同_。如果您没有看到此选项，请验证[您的组织名称](../../account/orgs_spaces.html){:new_window}与合同上的组织名称是否完全一致，包括大小写和空格。如果您供应服务时没有选择保留合同计费，那么将使用现买现付计费。
+
+单击**供应**以设置 {{site.data.keyword.appserver_short}} 环境。
 
 ## 后续步骤
 {: #anchor_value}

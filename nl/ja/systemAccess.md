@@ -169,7 +169,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM への SSH
 ## コマンド・ラインからのサーバーの管理
 {: #start_servers}
 
-**問題の回避:** コマンド・ラインから WebSphere サーバーを管理する場合、**virtuser** ではなく **wsadmin** (WebSphere 管理 ID) を使用する必要があります。コマンド・ラインから IHS サーバーを管理する場合、**root** を使用する必要があります。
+**問題の回避:** コマンド・ラインから WebSphere サーバーを管理する場合、**virtuser** ではなく **wsadmin** (WebSphere 管理 ID) を使用する必要があります。 コマンド・ラインから IHS サーバーを管理する場合、**root** を使用する必要があります。
 
 ## 管理センターと管理コンソールのリンクの使用
 {: #console_links}
@@ -273,7 +273,7 @@ Web サーバーですべてのユーザー要求を処理する必要がある�
 ## SSL 構成
 {: #ssl_configuration}
 
-WebSphere Application Server traditional および Liberty には、[SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}プロトコルが構成されています。プロトコルを変更するには、以下のファイルを変更します。
+WebSphere Application Server traditional および Liberty には、[SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}プロトコルが構成されています。  プロトコルを変更するには、以下のファイルを変更します。
 
 WebSphere Application Server traditional の場合:
 

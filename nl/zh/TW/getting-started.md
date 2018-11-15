@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,12 @@ lastupdated: "2018-06-08"
 
 如果您要環境具有更多專用虛擬機器資源（例如保留合約或「單一承租戶環境」），則需要先與 IBM 銷售人員聯絡，再建立服務。若要進一步瞭解這些選項，請參閱[關於](index.html)。
 
+### 移轉現有的 WebSphere 環境
+
+若要將現有的 WebSphere Application Server Network Deployment 環境移轉至此服務，請使用 [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}。工具會將獨立式伺服器或 Cell 節點的設定檔配置及應用程式，上傳到 {{site.data.keyword.cloud_notm}} 中的服務實例。如需雲端移轉及工具使用之逐步演練的概觀，請參閱  WASdev 上的 [WebSphere Configuration Migration Tool for IBM Cloud 手冊 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}。
+
+下列步驟會帶領您在 {{site.data.keyword.appserver_full}} 建立新的環境。
+
 ## 步驟 1：建立服務
 {: #create}
 
@@ -32,7 +38,9 @@ lastupdated: "2018-06-08"
 1. 使用 IBM ID 登入，或註冊 {{site.data.keyword.cloud_notm}} 帳戶。
 1. 在型錄頁面上，檢閱服務配置的選取項目。
 
-  針對隨收隨付制環境，使用預設選項，或修改它們以符合您的需求。如果您有保留合約或「單一承租戶環境」，請特別注意下列選項。
+  針對隨收隨付制環境，使用預設選項，或修改它們以符合您的需求。
+
+  如果您有保留合約或「單一承租戶環境」，請特別注意下列選項。
 
   * **保留合約：**在**選擇要在其中部署的地區/位置**下，驗證選取的地區為合約的正確地區。
 
@@ -44,7 +52,7 @@ lastupdated: "2018-06-08"
 1. 按一下**建立**。
 
 
-## 步驟 2：選擇環境
+## 步驟 2：選擇環境（僅限 Network Deployment）
 {: #choose_env}
 
 {{site.data.keyword.appserver_short}} Base 及 Liberty Core 方案只有單一伺服器，因此，如果您選擇這些方案，則可以跳過此步驟。
@@ -65,7 +73,11 @@ lastupdated: "2018-06-08"
 ## 步驟 4：佈建環境
 {: #service_profile}
 
-請檢閱服務配置摘要中的詳細資料（包括佈建所需的估計時間）。按一下**佈建**來設定 {{site.data.keyword.appserver_short}} 環境。
+請檢閱服務配置摘要中的詳細資料（包括佈建所需的估計時間）。
+
+**保留合約：**請確定**計費**選項設為_保留合約_。如果您沒有看到該選項，請確認[您的組織](../../account/orgs_spaces.html){:new_window}與合約的組織名稱完全相同，包括大小寫和空格在內。如果佈建服務時未選取保留合約計費，則會使用隨收隨付制計費。
+
+按一下**佈建**來設定 {{site.data.keyword.appserver_short}} 環境。
 
 ## 後續步驟
 {: #anchor_value}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-08-22"
 
 ---
 
@@ -23,14 +23,14 @@ Sie können eine Instanz von WebSphere Application Server in {{site.data.keyword
 Bei der Erstellung einer neuen Instanz können Sie eine der folgenden Fixpackstufen auf der Registerkarte **Serviceprofil** in der Serviceinstanz auswählen:
 
 **Liberty**
+  * 18.0.0.2
   * 18.0.0.1
-  * 17.0.0.4
 
 **WebSphere Application Server (klassisch)**
+  * 9.0.0.8
   * 9.0.0.7
-  * 9.0.0.6
+  * 8.5.5.14
   * 8.5.5.13
-  * 8.5.5.12
 
 ## Fixes und Fixpack-Aktualisierungen anwenden
 {:#applying-fixes}

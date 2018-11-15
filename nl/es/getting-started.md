@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,12 @@ Con {{site.data.keyword.appserver_full}}, puede configurar un entorno tradiciona
 
 Si desea un entorno con recursos de máquina virtual más dedicados, como un contrato de reserva o un entorno de un solo arrendatario, tendrá que ponerse en contacto con el equipo de ventas de IBM antes de crear el servicio. Obtenga más información sobre estas opciones en la sección [Acerca de](index.html).
 
+### Migración de un entorno WebSphere existente
+
+Para migrar un entorno de WebSphere Application Server Network Deployment existente a este servicio, utilice la herramienta [de migración de la configuración de WebSphere para {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. La herramienta carga la configuración del perfil y las aplicaciones para su servidor independiente o nodos de celda en una instancia de servicio en {{site.data.keyword.cloud_notm}}. Para obtener una visión general de la migración a cloud y un resumen paso a paso del uso de la herramienta, consulte [la herramienta de migración de la configuración de WebSphere para la guía de IBM Cloud ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} en WASdev.
+
+Los siguientes pasos le guiarán a través de la creación de un nuevo entorno en {{site.data.keyword.appserver_full}}.
+
 ## Paso 1: Crear el servicio
 {: #create}
 
@@ -32,7 +38,9 @@ Si desea un entorno con recursos de máquina virtual más dedicados, como un con
 1. Inicie una sesión con su IBMid, o regístrese para una cuenta de {{site.data.keyword.cloud_notm}}.
 1. En la página del catálogo, revise las selecciones correspondientes a la configuración del servicio.
 
-  En el caso de entornos de pago según uso, utilice las selecciones predeterminadas o modifíquelas para que se ajusten a sus necesidades. Si tiene un contrato de reserva o un entorno de un solo arrendatario, preste especial atención a las opciones siguientes.
+  En el caso de entornos de pago según uso, utilice las selecciones predeterminadas o modifíquelas para que se ajusten a sus necesidades.
+
+  Si tiene un contrato de reserva o un entorno de un solo arrendatario, preste especial atención a las opciones siguientes.
 
   * **Contrato de reserva:** en **Elegir una región/ubicación de despliegue**, verifique que la región seleccionada es la región correcta para el contrato.
 
@@ -44,7 +52,7 @@ Si desea un entorno con recursos de máquina virtual más dedicados, como un con
 1. Pulse **Crear**.
 
 
-## Paso 2: Elegir el entorno
+## Paso 2: Elegir el entorno (sólo Network Deployment)
 {: #choose_env}
 
 Los planes básico y Liberty Core de {{site.data.keyword.appserver_short}} solo tienen servidores únicos; si elige estos planes, puede saltarse este paso.
@@ -65,7 +73,11 @@ Pulse el separador correspondiente al componente, como el servidor, el gestor de
 ## Paso 4: Suministrar el entorno
 {: #service_profile}
 
-Revise los detalles del resumen de la configuración del servicio, incluido el tiempo estimado que tardará en suministrarse. Pulse **Suministrar** para configurar el entorno de {{site.data.keyword.appserver_short}}.
+Revise los detalles del resumen de la configuración del servicio, incluido el tiempo estimado que tardará en suministrarse.
+
+**Contrato de reserva:** Asegúrese de que la opción **Facturación** está definida como _Contrato de reserva_. Si no ve la opción, compruebe que [su empresa](../../account/orgs_spaces.html){:new_window} es exactamente la misma, incluyendo el caso y el espacio en blanco, que el nombre de la empresa para su contrato. Si se presta el servicio sin seleccionar la facturación de contrato de reserva, se utiliza la facturación de pago según uso.
+
+Pulse **Suministrar** para configurar el entorno de {{site.data.keyword.appserver_short}}.
 
 ## Pasos siguientes
 {: #anchor_value}

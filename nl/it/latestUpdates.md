@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-13"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -15,16 +15,31 @@ lastupdated: "2018-06-13"
 
 Un elenco degli aggiornamenti più recenti al servizio.
 
+## 24 ottobre 2018: la fatturazione BYOL (bring-your-own-license) è ora disponibile per ambienti a singolo tenant e contratto di riserva
+
+Se hai delle licenze WebSphere Application Server esistenti, puoi ora utilizzarle nei tuoi ambienti a singolo tenant o contratto di riserva. Gli ambienti con la fatturazione BYOL (bring-your-own-license) offrono gli stessi vantaggi degli ambienti a singolo tenant o contratto di riserva ma vengono fatturati a un tasso ridotto. Per utilizzare le licenze BYOL (bring-your-own license), [contatta il settore vendite IBM](reportingIssues.html#contacting-sales).
+
+## 22 agosto 2018: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Il fix pack 8.5.5.14 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 8.5.5.14, per il provisioning sono disponibili anche altri fix pack di Traditional WebSphere Application Server, come 9.0.0.8, 9.0.0.7 e 8.5.5.13.
+* Manutenzione dei servizi vari integrata.
+
+## 16 luglio 2018: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* La versione del fix pack 9.0.0.8 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.8, per il provisioning sono disponibili anche altre versioni del fix pack di Traditional WebSphere Application Server, come 9.0.0.7, 8.5.5.13 e 8.5.5.12.
+* La versione del fix pack 18.0.0.2 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 18.0.0.2, per il provisioning è disponibile la versione del fix pack 18.0.0.1 di WebSphere Application Server Liberty.
+* Sono state risolte [diverse vulnerabilità di sicurezza](https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+* Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window} in IBM SDK Java Technology Edition che influivano su WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+
 ## 13 giugno 2018: è ora disponibile la fatturazione del contratto di riserva
 
-Con la fatturazione del contratto di riserva, acquisti una sottoscrizione mensile prepagata che garantisce l'accesso a blocchi di risorse computazionali riservate fisicamente. Questi blocchi di servizio sono riservati per il tuo uso esclusivo e non possono essere considerati come capacità disponibile per gli altri utenti di {{site.data.keyword.appserver_full}}. Puoi utilizzare le ore del blocco di servizio in qualsiasi modo tu scelga per tutto il mese, con eventuali eccedenze da addebitare in base al tipico modello di sottoscrizione di pagamento a consumo. 
+Con la fatturazione del contratto di riserva, acquisti una sottoscrizione mensile prepagata che garantisce l'accesso a blocchi di risorse computazionali riservate fisicamente. Questi blocchi di servizio sono riservati per il tuo uso esclusivo e non possono essere considerati come capacità disponibile per gli altri utenti di {{site.data.keyword.appserver_full}}. Puoi utilizzare le ore del blocco di servizio in qualsiasi modo tu scelga per tutto il mese, con eventuali eccedenze da addebitare in base al tipico modello di sottoscrizione di pagamento a consumo.
 
 Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Opzioni di fatturazione](index.html#billing-options).
 
 ## 30 marzo 2018: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* La versione del fixpack 9.0.0.7 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.7, per il provisioning sono disponibili anche altre versioni del fixpack di Traditional WebSphere Application Server, come 9.0.0.6, 8.5.5.13 e.5.12.
-* La versione del fixpack 18.0.0.1 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 18.0.0.1, per il provisioning è disponibile anche la versione del fixpack 17.0.0.4 di WebSphere Application Server Liberty.
+* La versione del fix pack 9.0.0.7 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.7, per il provisioning sono disponibili anche altre versioni del fix pack di Traditional WebSphere Application Server, come 9.0.0.6, 8.5.5.13 e 8.5.5.12.
+* La versione del fix pack 18.0.0.1 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 18.0.0.1, è disponibile per il provisioning la versione del fix pack 17.0.0.4 di WebSphere Application Server Liberty.
 * Sono state risolte [diverse vulnerabilità di sicurezza]( http://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Vulnerabilità multiple nell'SKK Java IBM®
   * Una vulnerabilità in cui IBM WebSphere Application Server potrebbe fornire una sicurezza più debole del previsto quando si utilizza la Console di gestione.
@@ -36,8 +51,8 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 
 ## 8 gennaio 2018: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* La versione del fixpack 9.0.0.6 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.6, per il provisioning sono disponibili anche altre versioni del fixpack di Traditional WebSphere Application Server, come 9.0.0.5, 8.5.5.12 e 8.5.5.11.
-* La versione del fixpack 17.0.0.4 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 17.0.0.4, per il provisioning è disponibile anche la versione del fixpack 17.0.0.3 di WebSphere Application Server Liberty.
+* La versione del fix pack 9.0.0.6 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.6, per il provisioning sono disponibili anche altre versioni del fix pack di Traditional WebSphere Application Server, come 9.0.0.5, 8.5.5.12 e 8.5.5.11.
+* La versione del fix pack 17.0.0.4 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 17.0.0.4, è disponibile per il provisioning la versione del fix pack 17.0.0.3 di WebSphere Application Server Liberty.
 * Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=swg22013153){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità in cui OpenSAML potrebbe consentire a un aggressore autenticato remoto di ottenere informazioni sensibili, causata da un errore durante l'analisi delle entità XML.
   * Una vulnerabilità in cui Apache HTTP Server potrebbe consentire a un aggressore remoto di ottenere informazioni sensibili, causata da un errore nel metodo HTTP OPTIONS, noto anche come Optionsbleed.
@@ -51,9 +66,9 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 
 ## 27 ottobre 2017: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* È stata aggiunta la possibilità di fornire un livello di fixpack precedente [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} attraverso la scheda Service Profile del dashboard del servizio {{site.data.keyword.Bluemix_notm}} o tramite l'API REST.
-* La versione del fixpack 9.0.0.5 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.5, per il provisioning sono disponibili anche altre versioni del fixpack di Traditional WebSphere Application Server, come 9.0.0.4, 8.5.5.12 e 8.5.5.11.
-* La versione del fixpack 17.0.0.3 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 17.0.0.3, per il provisioning è disponibile anche la versione del fixpack 17.0.0.2 di WebSphere Application Server Liberty.
+* È stata aggiunta la possibilità di fornire un livello di fix pack precedente [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} attraverso la scheda Service Profile del dashboard del servizio {{site.data.keyword.Bluemix_notm}} o tramite l'API REST.
+* La versione del fix pack 9.0.0.5 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.5, per il provisioning sono disponibili anche altre versioni del fix pack di Traditional WebSphere Application Server, come 9.0.0.4, 8.5.5.12 e 8.5.5.11.
+* La versione del fix pack 17.0.0.3 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 17.0.0.3, è disponibile per il provisioning la versione del fix pack 17.0.0.2 di WebSphere Application Server Liberty.
 * Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità in cui IBM WebSphere Application Server potrebbe creare file utilizzando le autorizzazioni predefinite invece delle autorizzazioni personalizzate quando vengono utilizzati gli script di avvio personalizzati.
   * Una vulnerabilità in cui il server proxy o il router on-demand (ODR) di IBM WebSphere Application Server potrebbe consentire a un aggressore locale di ottenere informazioni sensibili, causata da dati obsoleti che vengono memorizzati nella cache e quindi pubblicati.
@@ -71,8 +86,8 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 ## 30 giugno 2017: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Manutenzione dei servizi vari integrata.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fixpack 8.5.5.12 o 9.0.0.4 venga installato con le nuove istanze di Traditional WebSphere Application Server.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fixpack 17.0.0.2 venga installato con le nuove istanze di WebSphere Application Server Liberty (piani Core e ND).
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fix pack 8.5.5.12 o 9.0.0.4 venga installato con le nuove istanze di Traditional WebSphere Application Server.
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fix pack 17.0.0.2 venga installato con le nuove istanze di WebSphere Application Server Liberty (piani Core e ND).
 * È stata aggiunta una funzione di [Gestione della configurazione VPN avanzata](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window} che ti consente di creare e gestire più configurazioni VPN nelle regioni di Londra e Sydney.
 * Sono stati aggiunti miglioramenti alla funzione di [Accesso Internet pubblico](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#publicInternetAccess){: new_window} che consente ai clienti di gestire meglio il loro indirizzo IP pubblico.
 * Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} in IBM SDK Java Technology Edition che influivano su WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
@@ -108,7 +123,7 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 ## 15 marzo 2017: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Manutenzione dei servizi vari integrata.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fixpack 8.5.5.11 o 9.0.0.3 venga installato con le nuove istanze di Traditional WebSphere Application Server.
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fix pack 8.5.5.11 o 9.0.0.3 venga installato con le nuove istanze di Traditional WebSphere Application Server.
 * Sono state risolte [diverse vulnerabilità di sicurezza](https://www-01.ibm.com/support/docview.wss?uid=swg22000587){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità non specificata correlata al componente Librerie che ha un alto impatto sull'integrità e nessun impatto sulla riservatezza e sulla disponibilità.
   * Una vulnerabilità non specificata correlata al componente Librerie che potrebbe consentire a un aggressore remoto di ottenere informazioni sensibili comportando un alto impatto sulla riservatezza tramite vettori di attacco sconosciuti.
@@ -124,8 +139,8 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 ## 10 febbraio 2017: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Manutenzione dei servizi vari integrata.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fixpack 8.5.5.11 o 9.0.0.2 venga installato con le nuove istanze di Traditional WebSphere Application Server.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fixpack 16.0.0.4 venga installato con le nuove istanze di WebSphere Application Server Liberty (piani Core e ND).
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fix pack 8.5.5.11 o 9.0.0.2 venga installato con le nuove istanze di Traditional WebSphere Application Server.
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che il fix pack 16.0.0.4 venga installato con le nuove istanze di WebSphere Application Server Liberty (piani Core e ND).
 * Sono state risolte [diverse vulnerabilità di sicurezza](https://www-01.ibm.com/support/docview.wss?uid=swg21997657){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità a DoS (Denial of Service), causata dall'esecuzione di oggetti serializzati provenienti fonti non attendibili provocando così il consumo di risorse.
   * L'utilizzo di richieste SOAP con formato errato, che potrebbe consentire a un aggressore remoto di ottenere informazioni sensibili.
@@ -154,7 +169,7 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 
 ## 19 settembre 2016: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che le nuove istanze di WebSphere Application Server Liberty (piani Core e ND) abbiano il fixpack 16.0.0.3 installato.
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che le nuove istanze di WebSphere Application Server Liberty (piani Core e ND) abbiano il fix pack 16.0.0.3 installato.
 * Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=swg21990236){: new_window} che influivano su WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità in IBM WebSphere Application Server Liberty che può consentire ad aggressori in remoto di effettuare attacchi di pishing.
   * Una vulnerabilità in IBM WebSphere Application Server Liberty di XSS (Cross-Site Scripting) nei client OpenID Connect.
@@ -178,7 +193,7 @@ Per ulteriori informazioni sulla fatturazione del contratto di riserva, vedi [Op
 ## 24 giugno 2016: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Aggiunta la possibilità per i clienti di scegliere tra la V8.5 e la V9.0 quando creano una nuova istanza _Traditional ND_ o _Traditional WebSphere_.
-* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che le nuove istanze di WebSphere Application Server Liberty (piani Core e ND) abbiano il fixpack 16.0.0.2 installato. 16.0.0.2 è il fixpack successivo a 8.5.5.9. Come parte di 16.0.0.2, tutte le funzioni facoltative intitolate Liberty supportate per questi piani sono installate per impostazioni predefinita.
+* I file binari di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} sono stati aggiornati in modo che le nuove istanze di WebSphere Application Server Liberty (piani Core e ND) abbiano il fix pack 16.0.0.2 installato. 16.0.0.2 è il fix pack successivo a 8.5.5.9. Come parte di 16.0.0.2, tutte le funzioni facoltative intitolate Liberty supportate per questi piani sono installate per impostazioni predefinita.
 * Sono state risolte [diverse vulnerabilità di sicurezza](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window} che influivano su WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, tra cui:
   * Una vulnerabilità XML External Entity Injection (XXE) in Apache Standard Taglibs che riguardava IBM WebSphere Application Server.
   * Una sicurezza potenziale più debole del previsto durante l'utilizzo della funzione WebSphere Application Server Liberty profile API Discovery e della documentazione Swagger.

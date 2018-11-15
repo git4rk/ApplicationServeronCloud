@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -13,23 +13,15 @@ lastupdated: "2018-06-08"
 # Ambientes de Locação Única
 {: #getting_startedSTE}
 
-O {{site.data.keyword.appserver_full}}: o ambiente de locatário único é uma oferta que fornece aos clientes uma carga de trabalho isolada do WebSphere, um ambiente híbrido totalmente integrado e dados seguros. Esse guia de introdução é projetado para identificar os elementos chave que auxiliam os clientes no acesso e no gerenciamento de seu WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}: ambiente de locatário único.
+O {{site.data.keyword.appserver_full}}:ambiente de locatário único fornece aos clientes uma carga de trabalho isolada do WebSphere, um ambiente híbrido totalmente integrado e dados seguros. Esse guia de introdução é projetado para identificar os elementos chave que auxiliam os clientes no acesso e no gerenciamento de seu WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}: ambiente de locatário único.
 {: shortdesc}
 
+## Solicitando um ambiente de locatário único
+{:#ordering}
 
-## Software Recomendado
-{: #recommended_software}
+Os ambientes de locatário único não podem ser criados por meio do catálogo do {{site.data.keyword.Bluemix_notm}} e devem ser solicitados entrando em contato com Vendas IBM. Ao solicitar o ambiente, é possível escolher um ambiente de locatário único padrão ou com sua própria licença. Os ambientes de locatário único padrão incluem toda a infraestrutura necessária e as licenças do WebSphere Application Server. Os ambientes de locatário único com sua própria licença permitem a utilização de licenças separadas do WebSphere Application Server.
 
-É necessário o software a seguir para acessar o seu ambiente de locatário único:
-* Um navegador da web que é suportado pelo {{site.data.keyword.Bluemix_notm}}:
-    * Chrome: a versão mais recente para o seu sistema operacional
-    * Firefox: a versão mais recente para o seu sistema operacional ou a versão mais recente do ESR
-    * Internet Explorer: versão 10 ou 11
-    * Safari: a versão mais recente para o Mac
-* Interface da linha de comandos do Cloud Foundry, Versão 6.5.1 ou mais recente (é possível usar a liberação mais recente)
-* Bash de Git (recomendado)
-    * Fazer download e instalar o  [ Git Bash ](https://git-scm.com/downloads){: new_window}
-
+Para solicitar um ambiente de locatário único, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales). A equipe de vendas pode ajudar com a configuração de um ambiente customizado para as suas necessidades.
 
 ## Visão geral do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}: ambiente de locatário único
 {: #overviewSTE}

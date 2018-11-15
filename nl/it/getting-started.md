@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,12 @@ Con {{site.data.keyword.appserver_full}}, puoi impostare un ambiente WebSphere A
 
 Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un contratto di riserva o un ambiente a singolo tenant, dovrai contattare il settore Vendite IBM prima di creare il servizio. Scopri di più su queste opzioni in [Informazioni](index.html).
 
+### Migrazione di un ambiente WebSphere esistente
+
+Per eseguire la migrazione di un ambiente WebSphere Application Server Network Deployment esistente a questo servizio, utilizza il [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. Lo strumento carica le applicazioni e la configurazione del profilo per il server autonomo o i nodi cella a un'istanza di servizio in {{site.data.keyword.cloud_notm}}. Per una panoramica della migrazione cloud e istruzioni dettagliate sull'utilizzo dello strumento, vedi [la guida per WebSphere Configuration Migration Tool for IBM Cloud ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}  on WASdev.
+
+I seguenti passi ti guidano nella creazione di un nuovo ambiente in {{site.data.keyword.appserver_full}}.
+
 ## Passo 1: crea il servizio
 {: #create}
 
@@ -32,7 +38,9 @@ Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un c
 1. Accedi con il tuo ID IBM o registrarti per un account {{site.data.keyword.cloud_notm}}.
 1. Nella pagina del catalogo, rivedi le selezioni per la configurazione del servizio.
 
-  Per gli ambienti con pagamento a consumo, utilizza le selezioni predefinite o modificale in base alle tue esigenze. Se hai un contratto di riserva o un ambiente a singolo tenant, presta particolare attenzione alle seguenti opzioni.
+  Per gli ambienti con pagamento a consumo, utilizza le selezioni predefinite o modificale in base alle tue esigenze.
+
+  Se hai un contratto di riserva o un ambiente a singolo tenant, presta particolare attenzione alle seguenti opzioni.
 
   * **Contratto di riserva:** in **Scegli una regione/ubicazione in cui distribuire**, verifica che la regione selezionata sia la regione corretta per il tuo contratto.
 
@@ -44,14 +52,14 @@ Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un c
 1. Fai clic su **Crea**.
 
 
-## Passo 2: scegli il tuo ambiente
+## Passo 2: scegli il tuo ambiente (solo Network Deployment)
 {: #choose_env}
 
 I piani {{site.data.keyword.appserver_short}} Base e Liberty Core prevedono solo server singoli, quindi se hai scelto questi piani, puoi saltare questo passo.
 
 Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo ambiente.
 
-* **Profilo:** scegli {{site.data.keyword.appserver_short}} tradizionale o Liberty
+* **Profilo:** scegli {{site.data.keyword.appserver_short}} Traditional o Liberty
 * **Architettura:** scegli un ambiente a server singolo o un ambiente cluster con celle tradizionali o collettivi Liberty
 
 
@@ -65,7 +73,11 @@ Fai clic sulla scheda relativa al componente, ad esempio il server, il Deploymen
 ## Passo 4: esegui il provisioning del tuo ambiente
 {: #service_profile}
 
-Rivedi i dettagli nel riepilogo della configurazione del servizio, compreso il tempo stimato necessario per eseguire il provisioning. Fai clic su **Provisioning** per impostare il tuo ambiente {{site.data.keyword.appserver_short}}.
+Rivedi i dettagli nel riepilogo della configurazione del servizio, compreso il tempo stimato necessario per eseguire il provisioning.
+
+**Contratto di riserva:** assicurati che l'opzione **Fatturazione** sia impostata su _Contratto di riserva_. Se non vedi l'opzione, verifica che [la tua organizzazione](../../account/orgs_spaces.html){:new_window} sia esattamente uguale, compresi maiuscole/minuscole e spazi vuoti, al nome dell'organizzazione per il tuo contratto. Se esegui il provisioning del servizio senza selezionare la fatturazione del contratto di riserva, viene utilizzata la fatturazione con pagamento a consumo.
+
+Fai clic su **Provisioning** per impostare il tuo ambiente {{site.data.keyword.appserver_short}}.
 
 ## Passi successivi
 {: #anchor_value}

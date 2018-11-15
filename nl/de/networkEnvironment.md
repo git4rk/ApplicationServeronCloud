@@ -125,7 +125,7 @@ COMMIT
 ```
 
 
-**Hinweis:** **iptables** wird bei Anforderungen aufgerufen, die über die externe Schnittstelle des Gastsystems gesendet werden. Anforderungen, die über das lokale Loopback (127.0.0.1) gesendet werden, werden nicht von **iptables** verarbeitet; d. h., die oben beschriebene Umadressierung von Ports wird über Loopback nicht aufgerufen. 
+**Hinweis:** **iptables** wird bei Anforderungen aufgerufen, die über die externe Schnittstelle des Gastsystems gesendet werden. Anforderungen, die über das lokale Loopback (127.0.0.1) gesendet werden, werden nicht von **iptables** verarbeitet; d. h., die oben beschriebene Umadressierung von Ports wird über Loopback nicht aufgerufen.
 
 ## VPN-Ports für private IP
 {: #privateIPports}

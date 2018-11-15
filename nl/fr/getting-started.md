@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-09-13"
 
 ---
 
@@ -25,6 +25,12 @@ Avec {{site.data.keyword.appserver_full}}, vous pouvez définir un environnement
 
 Si vous voulez un environnement disposant de plus de ressources de machines virtuelles dédiées, de type contrat avec réservation ou environnement à service exclusif, contactez IBM Sales avant de créer le service. Découvrez ces options plus en détail dans la rubrique [A propos](index.html).
 
+### Migration d'un environnement WebSphere existant
+
+Pour faire migrer un environnement WebSphere Application Server Network Deployment existant vers ce service, utilisez [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. Cet outil télécharge la configuration de profil et les applications pour votre serveur autonome ou vos noeuds de cellule sur une instance de service dans {{site.data.keyword.cloud_notm}}. Pour obtenir une présentation de la migration de cloud et une procédure expliquant de manière détaillée comment utiliser cet outil, voir le [guide WebSphere Configuration Migration Tool for IBM Cloud![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} sur WASdev.
+
+Les étapes de création d'un nouvel environnement dans {{site.data.keyword.appserver_full}} sont décrites ci-après.
+
 ## Etape 1 : création du service
 {: #create}
 
@@ -32,18 +38,21 @@ Si vous voulez un environnement disposant de plus de ressources de machines virt
 1. Connectez-vous avec votre ID IBMid ou inscrivez-vous pour un compte {{site.data.keyword.cloud_notm}}.
 1. Sur la page du catalogue, passez en revue les sélections pour la configuration de service.
 
-  Pour des environnements avec tarification à l'utilisation, utilisez les sélections par défaut ou modifiez-les pour les adapter à vos besoins. Si vous disposez d'un environnement de type contrat avec réservation ou d'un environnement à service exclusif, tenez compte des options suivantes :
+  Pour des environnements avec tarification à l'utilisation, utilisez les sélections par défaut ou modifiez-les pour les adapter à vos besoins.
+
+  Si vous disposez d'un environnement de type contrat avec réservation ou d'un environnement à service exclusif, tenez compte des options suivantes :
 
   * **Contrat avec réservation :** sous **Sélectionnez une région/un emplacement où effectuer le déploiement**, vérifiez que la région sélectionnée correspond bien à celle de votre contrat.
 
   * **Environnement à service exclusif : ** sous **Sélectionnez une région/un emplacement où effectuer le déploiement**, vérifiez que la zone sélectionnée est la région dans laquelle votre environnement à service exclusif est déployé. Sous **Environnement**, sélectionnez votre environnement à service exclusif. Par défaut, l'environnement public doit s'afficher.
 
-    Si votre environnement à service exclusif n'est pas répertorié, vérifiez que vous êtes bien dans la bonne région et que votre organisation a accès à votre environnement à service exclusif. {: tip}
+    Si votre environnement à service exclusif n'est pas répertorié, vérifiez que vous êtes bien dans la bonne région et que votre organisation a accès à votre environnement à service exclusif.
+    {: tip}
 1. Sélectionnez le plan de tarification pour l'édition de {{site.data.keyword.appserver_short}} que vous voulez déployer.
 1. Cliquez sur **Créer**.
 
 
-## Etape 2 : choix de votre environnement
+## Etape 2 : choix de votre environnement (Network Deployment uniquement)
 {: #choose_env}
 
 Les plans {{site.data.keyword.appserver_short}} Base et Liberty Core n'ayant que des serveurs uniques, si vous les choisissez, vous pouvez sauter cette étape.
@@ -64,7 +73,11 @@ Cliquez sur l'onglet pour le composant (serveur, gestionnaire de déploiement ou
 ## Etape 4 : mise à disposition de votre environnement
 {: #service_profile}
 
-Vérifiez les informations figurant dans le récapitulatif de la configuration du service, dont la durée estimée pour la mise à disposition. Cliquez sur **Mettre à disposition** pour configurer votre environnement {{site.data.keyword.appserver_short}}.
+Vérifiez les informations figurant dans le récapitulatif de la configuration du service, dont la durée estimée pour la mise à disposition.
+
+**Contrat de réservation** : assurez-vous que l'option **Facturation** a pour valeur _Contrat de réservation_. Si l'option n'est pas visible, assurez-vous que le nom de [votre organisation](../../account/orgs_spaces.html){:new_window} est exactement le même, casse et espaces blancs compris, que le nom d'organisation pour votre contrat. Si vous mettez à disposition le service sans sélectionner la facturation avec contrat de réservation, la facturation Paiement à la carte est utilisée. 
+
+Cliquez sur **Mettre à disposition** pour configurer votre environnement {{site.data.keyword.appserver_short}}.
 
 ## Etapes suivantes
 {: #anchor_value}

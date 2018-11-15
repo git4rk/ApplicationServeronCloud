@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-13"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -15,6 +15,23 @@ lastupdated: "2018-06-13"
 
 Uma lista das atualizações mais recentes para o serviço.
 
+## 24 de outubro de 2018: agora, o faturamento com sua própria licença está disponível para o contrato de
+reserva e os ambientes de locatário único
+
+Se você tem licenças existentes do WebSphere Application Server, agora é possível usá-las em seu contrato de reserva ou nos ambientes de locatário único. Os ambientes com faturamento de sua própria licença oferecem os mesmos benefícios que o contrato de reserva padrão ou os ambientes de locatário único, mas são faturados a uma taxa reduzida. Para usar o seu próprio licenciamento, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+
+## 22 de agosto de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
+* O fix pack 8.5.5.14 do WebSphere Application Server tradicional agora é disponibilizado quando você fornece uma nova instância de serviço. Além do 8.5.5.14, outros fix packs do WebSphere Application Server tradicional, como o 9.0.0.8, o 9.0.0.7 e o 8.5.5.13, estão disponíveis para fornecimento.
+* Integrada a manutenção de serviços diversos.
+
+## 16 de julho de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
+
+* A versão de fix pack 9.0.0.8 do WebSphere Application Server tradicional agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 9.0.0.8, outras versões de fix pack do WebSphere Application Server tradicional, como a 9.0.0.7, a 8.5.5.13 e a 8.5.5.12, estão disponíveis para fornecimento.
+* A versão de fix pack 18.0.0.2 do WebSphere Application Server Liberty agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 18.0.0.2, a versão de fix pack 18.0.0.1 do WebSphere Application Server
+Liberty está disponível para fornecimento.
+* [Várias vulnerabilidades de segurança tratadas](https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window} no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}.
+* [Várias vulnerabilidades de segurança tratadas](http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window} no IBM SDK Java Technology Edition que afetam o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}.
+
 ## 13 de junho de 2018: faturamento de contrato de reserva agora disponível
 
 Com o faturamento do contrato de reserva, você compra uma assinatura mensal pré-paga que garante o acesso a blocos de recursos
@@ -24,9 +41,8 @@ Para saber mais sobre o faturamento do contrato de reserva, consulte [Opções d
 
 ## 30 de março de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
-* A versão do fix pack 9.0.0.7 do WebSphere Application Server tradicional está agora disponível quando você fornece uma nova instância de serviço. Além da 9.0.0.7, outras versões do fix pack do WebSphere Application Server tradicional, como a 9.0.0.6, a 8.5.5.13 e a 8.5.5.12, estão disponíveis para fornecimento.
-* A versão do fix pack 18.0.0.1 do WebSphere Application Server Liberty agora está disponível quando você fornece uma nova instância de serviço. Além da 18.0.0.1, a versão do fix pack 17.0.0.4 do WebSphere Application Server Liberty está
-disponível para fornecimento.
+* A versão de fix pack 9.0.0.7 do WebSphere Application Server tradicional agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 9.0.0.7, outras versões de fix pack do WebSphere Application Server tradicional, como a 9.0.0.6, a 8.5.5.13 e a 8.5.5.12, estão disponíveis para fornecimento.
+* A versão de fix pack 18.0.0.1 do WebSphere Application Server Liberty agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 18.0.0.1, a versão de fix pack 17.0.0.4 do WebSphere Application Server Liberty está disponível para fornecimento.
 * [Várias vulnerabilidades de segurança]( http://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window}
 abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Diversas Vulnerabilidades no IBM ® Java SDK
@@ -43,8 +59,8 @@ essa vulnerabilidade para cruzar o limite de syscall e ler dados da memória vir
 
 ## 8 de janeiro de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
-* A versão do fix pack 9.0.0.6 do WebSphere Application Server tradicional está agora disponível quando você fornece uma nova instância de serviço. Além da 9.0.0.6, outras versões do fixpack do WebSphere Application Server tradicional, como a 9.0.0.5, a 8.5.5.12 e a 8.5.5.11, estão disponíveis para fornecimento.
-* A versão do fix pack 17.0.0.4 do WebSphere Application Server Liberty agora está disponível quando você fornece uma nova instância de serviço. Além da 17.0.0.4, a versão do fixpack 17.0.0.3 do WebSphere Application Server Liberty está disponível para fornecimento.
+* A versão de fix pack 9.0.0.6 do WebSphere Application Server tradicional agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 9.0.0.6, outras versões de fix pack do WebSphere Application Server tradicional, como a 9.0.0.5, a 8.5.5.12 e a 8.5.5.11, estão disponíveis para fornecimento.
+* A versão de fix pack 17.0.0.4 do WebSphere Application Server Liberty agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 17.0.0.4, a versão de fix pack 17.0.0.3 do WebSphere Application Server Liberty está disponível para fornecimento.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22013153){: new_window}
 abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade em que o OpenSAML pode permitir que um invasor autenticado remoto obtenha informações confidenciais, causado por um erro ao analisar entidades XML.
@@ -59,10 +75,9 @@ abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} 
 
 ## 27 de outubro de 2017: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
-* Incluída a capacidade de fornecer um nível de fix pack mais antigo [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} por meio da guia Perfil de serviço no painel de serviço do {{site.data.keyword.Bluemix_notm}} ou por meio da API de REST.
-* A versão do fix pack 9.0.0.5 do WebSphere Application Server tradicional está agora disponível quando você fornece uma nova instância de serviço. Além da 9.0.0.5, outras versões do fix pack do WebSphere Application Server tradicional, como a 9.0.0.4, 8.5.5.12 e 8.5.5.11, estão disponíveis para fornecimento.
-* A versão do fixpack 17.0.0.3 do WebSphere Application Server Liberty agora está disponível quando você fornece uma nova instância de serviço. Além da 17.0.0.3, a versão do fix pack 17.0.0.2 do WebSphere Application Server Liberty está disponível
-para fornecimento.
+* Incluída a capacidade de fornecimento de um nível de fix pack mais antigo [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} por meio da guia Perfil de serviço no Painel de serviço do {{site.data.keyword.Bluemix_notm}} ou por meio da API de REST.
+* A versão de fix pack 9.0.0.5 do WebSphere Application Server tradicional agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 9.0.0.5, outras versões de fix pack do WebSphere Application Server tradicional, como a 9.0.0.4, a 8.5.5.12 e a 8.5.5.11, estão disponíveis para fornecimento.
+* A versão de fix pack 17.0.0.3 do WebSphere Application Server Liberty agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 17.0.0.3, a versão de fix pack 17.0.0.2 do WebSphere Application Server Liberty está disponível para fornecimento.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}
 abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade em que o IBM WebSphere Application Server pode criar arquivos usando as permissões padrão em vez de as permissões customizadas quando os scripts de inicialização customizados são usados.
@@ -81,8 +96,8 @@ abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} 
 ## 30 de junho de 2017: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
 * Integrada a manutenção de serviços diversos.
-* WebSphere Application Server atualizado em binários do {{site.data.keyword.Bluemix_notm}}, de modo que o fix pack 8.5.5.12 ou 9.0.0.4 esteja instalado com as novas instâncias do WebSphere Application Server tradicional.
-* WebSphere Application Server atualizado nos binários do {{site.data.keyword.Bluemix_notm}}, de modo que esse fix pack 17.0.0.2 esteja instalado com as novas instâncias do WebSphere Application Server Liberty (Planos Core e ND).
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que o fix pack 8.5.5.12 ou o 9.0.0.4 esteja instalado nas novas instâncias do WebSphere Application Server tradicional.
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que o fix pack 17.0.0.2 esteja instalado nas novas instâncias do WebSphere Application Server Liberty (núcleo e planos ND).
 * Incluído um recurso [Advanced VPN Configuration Management](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#advancedVPN){: new_window} que permite criar e gerenciar múltiplas configurações de VPN nas regiões de Londres e Sydney.
 * Aprimoramentos incluídos no recurso [Acesso à Internet pública](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#publicInternetAccess){: new_window} que permite que os clientes gerenciem melhor o seu endereço IP público.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}
@@ -127,8 +142,7 @@ permitir que um invasor execute ações maliciosas e desautorizadas transmitidas
 ## 15 de março de 2017: WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} atualizado
 
 * Integrada a manutenção de serviços diversos.
-* Binários do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} submetidos a upgrade, de modo que o fix pack
-8.5.5.11 ou 9.0.0.3 esteja instalado com novas instâncias do Traditional WebSphere Application Server.
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que o fix pack 8.5.5.11 ou o 9.0.0.3 esteja instalado nas novas instâncias do WebSphere Application Server tradicional.
 * [Várias vulnerabilidades de segurança](https://www-01.ibm.com/support/docview.wss?uid=swg22000587){: new_window}
 abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade não especificada relacionada ao componente Bibliotecas que não possui impacto de confidencialidade, alto impacto de integridade e nenhum impacto de disponibilidade.
@@ -147,9 +161,8 @@ causada pelo encaminhamento de um Chamado de concessão de chamado (TGT) a outro
 ## 10 de fevereiro de 2017: WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} atualizado
 
 * Integrada a manutenção de serviços diversos.
-* Binários do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} submetidos a upgrade de modo que o fix pack
-8.5.5.11 ou 9.0.0.2 esteja instalado com novas instâncias do Traditional WebSphere Application Server.
-* Binários do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} submetidos a upgrade de modo que o fix pack 16.0.0.4 esteja instalado com novas instâncias do WebSphere Application Server Liberty (Planos Core e ND).
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que o fix pack 8.5.5.11 ou o 9.0.0.2 esteja instalado nas novas instâncias do WebSphere Application Server tradicional.
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que o fix pack 16.0.0.4 esteja instalado nas novas instâncias do WebSphere Application Server Liberty (núcleo e planos ND).
 * [Várias vulnerabilidades de segurança](https://www-01.ibm.com/support/docview.wss?uid=swg21997657){: new_window} abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade de negação de serviço, causada permitindo que objetos serializados de fontes não confiáveis executem e causem o consumo de recursos.
   * O uso de solicitações SOAP malformadas que poderia permitir que um invasor remoto obtivesse informações confidenciais.
@@ -189,7 +202,7 @@ autenticado poderia explorar essa vulnerabilidade para acionar uma leitura fora 
 
 ## 19 de setembro de 2016: WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} atualizado
 
-* Binários do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} submetidos a upgrade para que novas instâncias do WebSphere Application Server Liberty (Planos Core e ND) tenham o fix pack 16.0.0.3 instalado.
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que as novas instâncias do WebSphere Application Server Liberty (núcleo e planos ND) tenham o fix pack 16.0.0.3 instalado.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg21990236){: new_window} abordadas que afetam o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade no IBM WebSphere Application Server Liberty que poderia permitir que um invasor remoto realizasse ataques de phishing.
   * Uma vulnerabilidade no IBM WebSphere Application Server Liberty para cross-site scripting em clientes OpenID Connect.
@@ -215,8 +228,7 @@ inadequada de exceções quando não existe uma página de erro padrão.
 ## 24 de junho de 2016: WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} atualizado
 
 * Incluída a capacidade para os clientes escolherem entre a V8.5 e a V9.0 quando você cria uma nova instância do _Traditional ND_ ou do _Traditional WebSphere_.
-* Binários do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} submetidos a upgrade de modo que novas
-instâncias do WebSphere Application Server Liberty (Planos Core e ND) tenham o fix pack 16.0.0.2 instalado. 16.0.0.2 é o próximo fix pack depois de 8.5.5.9. A partir de 16.0.0.2, todos os recursos opcionais autorizados do Liberty suportados para esses planos são instalados por padrão.
+* Upgrade do WebSphere Application Server nos binários do {{site.data.keyword.Bluemix_notm}} de forma que as novas instâncias do WebSphere Application Server Liberty (núcleo e planos ND) tenham o fix pack 16.0.0.2 instalado. 16.0.0.2 é o próximo fix pack após o 8.5.5.9. A partir de 16.0.0.2, todos os recursos opcionais autorizados do Liberty suportados para esses planos são instalados por padrão.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window} abordadas que afetam o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade XML External Entity Injection (XXE) no Apache Standard Taglibs que afeta o IBM WebSphere Application Server.
   * Um potencial para segurança menor que a esperada ao usar o recurso Descoberta de API do perfil Liberty do WebSphere Application Server e os documentos do Swagger.
@@ -263,7 +275,7 @@ do objeto Java.
 de divisão de resposta HTTP](http://www-01.ibm.com/support/docview.wss?uid=swg21972254){: new_window}.
 * Integrada a manutenção de serviços diversos.
 
-## 15 de outubro de 2015: Atualizado o Application Server on Cloud
+## 15 de outubro de 2015: Atualização do Application Server on Cloud
 * Incluídos os dois novos planos a seguir:
   * [WebSphere Application Server Traditional V9 Beta](https://www-01.ibm.com/marketing/iwm/iwmdocs/web/cc/earlyprograms/websphere.shtml){: new_window}
   * WebSphere Application Server ND

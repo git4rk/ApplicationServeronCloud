@@ -33,7 +33,7 @@ I seguenti passi illustrano come accedere al tuo ambiente a singolo tenant, insi
 
     ![alt text](images/iconWAS.png "Tile WebSphere Application Server")
 
-8. Nel menu **Ambiente**, seleziona il tuo ambiente a singolo tenant. 
+8. Nel menu **Ambiente**, seleziona il tuo ambiente a singolo tenant.
 
     ![alt text](images/environmentSTE.png "Nome ambiente a singolo tenant")
 
@@ -55,7 +55,7 @@ Un **blocco** è definito come segue:
 
 [1] *Tecnicamente, un sistema piccolo contiene solo 12 GB di disco. Un sistema medio contiene 25 GB di disco, un sistema grande contiene 50 GB e così via.*
 
-Per ogni macchina virtuale che crei, specifica la dimensione T-shirt desiderata: S, M, L, XL o XXL, che corrisponde a 1, 2, 4, 8 e blocchi. Quando selezioni una dimensione T-shirt, il numero corrispondente di blocchi viene decrementato dalla tua quota.
+Per ogni macchina virtuale che crei, specifica la dimensione T-shirt desiderata: S, M, L, XL o XXL, che corrisponde a 1, 2, 4, 8 e 16 blocchi. Quando selezioni una dimensione T-shirt, il numero corrispondente di blocchi viene decrementato dalla tua quota.
 
 Ad esempio, supponiamo che tu abbia un ambiente piccolo, che contiene 64 blocchi. All'interno di questo ambiente, hai configurato istanze del servizio che contengono due XXL, tre XL e 1 L per un totale di 60 blocchi utilizzati. Se selezioni una dimensione T-shirt media per una nuova sottoscrizione Liberty Core, potrebbe essere visualizzato un messaggio che indica la tua quota e il numero di blocchi ancora disponibili:
 

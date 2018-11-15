@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -104,7 +104,7 @@ Le tableau ci-après répertorie le prix total par heure pour chaque machine vir
 ### Contrat avec réservation
 {:#reserve-contract}
 
-Avec une facturation de contrat avec réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Pour configurer une facturation de contrat avec réservation, [contactez IBM Sales](reportingIssues.html#contacting-sales).
+Avec une facturation de contrat avec réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Si vous disposez de licences WebSphere Application Server, vous pouvez choisir un contrat de réservation BYOL (bring-your-own-license), qui utilise ces licences et propose un taux de facturation réduit. Pour configurer une facturation de contrat avec réservation, [contactez IBM Sales](reportingIssues.html#contacting-sales).
 
 Les abonnements sont disponibles par incréments de 8 blocs. Le total des heures de bloc repose sur le nombre d'heures dans le mois, mais vous pouvez utiliser les heures de bloc à toute période du mois. Ainsi, un mois de 30 jours se compose de 720 heures qui, lorsqu'elles sont multipliées par un abonnement de 8 blocs, donnent un total de 5760 heures de bloc.
 
@@ -113,6 +113,10 @@ Les abonnements sont disponibles par incréments de 8 blocs. Le total des heures
   ```
 
 Vous pouvez personnaliser la façon et le moment dont vous utilisez les blocs afin de répondre à une demande de charge de travail variable (utilisation de 4 blocs, augmentation à 12 blocs puis réduction à 8 blocs, par exemple). Tant que vous restez sous le nombre total d'heures de bloc mensuelles, aucun supplément ne vous est facturé.
+
+Vous pouvez choisir d'utiliser vos blocs de contrat de réservation ou une facturation Paiement à la carte lorsque vous mettez à disposition chaque environnement. 
+
+**Remarque :** si vous supprimez une instance de service, vous devrez peut-être attendre environ 30 minutes pour que ses blocs deviennent disponibles pour les nouvelles instances de service. 
 
 #### Dépassements
 

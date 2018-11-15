@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-10-25"
 
 ---
 
@@ -118,16 +118,20 @@ A tabela a seguir lista o preço total por hora para cada máquina virtual do ta
 {:#reserve-contract}
 
 Com o faturamento do contrato de reserva, você compra uma assinatura mensal pré-paga que garante o acesso a blocos de recursos
-computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para qualquer outro WebSphere Application Server em usuários do {{site.data.keyword.Bluemix_notm}}. Para configurar o faturamento do contrato de reserva, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para qualquer outro WebSphere Application Server em usuários do {{site.data.keyword.Bluemix_notm}}. Se você tem licenças existentes do WebSphere Application Server, é possível usá-las ao escolher um contrato de reserva com sua própria licença, que tem uma taxa de faturamento reduzida. Para configurar o faturamento do contrato de reserva, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
 
 Assinaturas estão disponíveis em incrementos de 8 blocos. As horas de bloco totais são baseadas no número de horas no mês, mas
-é possível usar as horas de bloco a qualquer momento durante o mês. Por exemplo, um mês de 30 dias tem 720 horas, o que, quando multiplicado por uma assinatura de 8 blocos, resulta em um total de 5.760 horas de bloco.
+é possível usar as horas de bloco a qualquer momento durante o mês. Por exemplo, um mês de 30 dias tem 720 horas que, quando multiplicadas por uma assinatura de 8 blocos, resulta em um total de 5.760 horas de bloco.
 
   ```
 30 dias * 24 horas por dia * 8 blocos = 5.760 horas de bloco
   ```
 
 É possível customizar como e quando usar os blocos para atender a demanda de carga de trabalho variável, como o uso de 4 blocos, aumentando para 12 blocos e, em seguida, reduzindo para 8 blocos. Contanto que você fique abaixo do total de horas de bloco do mês, não há nenhum encargo adicional.
+
+É possível escolher usar os seus blocos do contrato de reserva ou usar o faturamento pré-pago ao provisionar cada ambiente.
+
+**Nota:** se você excluir uma instância de serviço, poderá ter que esperar cerca de 30 minutos para que os blocos sejam disponibilizados para as novas instâncias de serviço.
 
 #### Exagidades
 

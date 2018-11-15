@@ -269,7 +269,7 @@ Bei den folgenden allgemeinen Schritten wird davon ausgegangen, dass die vorausg
 ## SSL-Konfiguration
 {: #ssl_configuration}
 
-Der klassische WebSphere Application Server und Liberty sind mit dem [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}-Protokoll konfiguriert. Modifizieren Sie zum Ändern des Protokolls die folgenden Dateien:
+Der klassische WebSphere Application Server und Liberty sind mit dem [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}-Protokoll konfiguriert.  Modifizieren Sie zum Ändern des Protokolls die folgenden Dateien:
 
 Für den klassischen WebSphere Application Server:
 
