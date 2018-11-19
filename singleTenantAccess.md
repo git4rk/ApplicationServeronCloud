@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,29 +21,29 @@ The following steps discuss accessing your Single Tenant Environment, along with
 ## Accessing your Single Tenant Environment
 {: #accessSTE}
 
-1. In your browser, go to the [{{site.data.keyword.cloud_notm}} catalog](https://console.bluemix.net/catalog/){: new_window}.
+1. In your browser, go to the [{{site.data.keyword.cloud_notm}} catalog](https://{DomainName}/catalog/){: new_window}.
 
 2. Click **Log in**, and log in with your IBMid.
 
-6. In the Catalog search filter, enter **WebSphere Application Server**.
+6. In the catalog search filter, enter **WebSphere Application Server**.
 
-    ![alt text](images/filter.png "Search Filter")
+    ![Search filter](images/filter.png)
 
 7. Under **Application Services**, click the **WebSphere Application Server** tile.
 
-    ![alt text](images/iconWAS.png "WebSphere Application Server tile")
+    ![WebSphere Application Server tile](images/iconWAS.png)
 
 8. In the **Environment** menu, select your Single Tenant Environment.
 
-    ![alt text](images/environmentSTE.png "Single Tenant Environment name")
+    ![Single Tenant Environment name](images/environmentSTE.png)
 
     **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and a member of an organization that is allowed to access your Single Tenant Environment.
 
-    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as defined on the [Getting Customer Support](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} page.
+    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](reportingIssues.html){: new_window} page.
 
 9. Select the appropriate plan, and click **Create**.
 
-    ![alt text](images/createSTE.png "Choose a plan and create your service")
+    ![Choose a plan and create your service](images/createSTE.png)
 
 
 **Note:** Hourly pricing does not apply for Single Tenant environments. A Single Tenant environment includes a fixed number of **blocks** that are called a quota. A small environment contains 64 blocks. A medium contains 128 blocks, and a large contains 256 blocks.
@@ -65,18 +65,12 @@ For example, suppose that you have a small environment, which contains 64 blocks
 ## Private Network Environment
 {: #private_network}
 
-After your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment is provisioned, you can download your VPN credentials and establish an OpenVPN connection. For more information, see the following links:
+After your Single Tenant Environment is provisioned, you can download your VPN credentials and establish an OpenVPN connection. For more information, see the following links:
 
-* [VPN Access](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [Setting up OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [VPN Access](networkEnvironment.html#vpnAccess){: new_window}
+* [Setting up OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## Managing your Single Tenant Environment
 {: #manageSTE}
 
-To add extra capacity to your existing WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. To identify your representative or partner call 800-426-4968. For more information, contact the Americas Call Centers. Phone: 800-IBM-CALL (426-2255) Fax: 800-2IBM-FAX (242-6329).
-
-
-## Supporting your Single Tenant Environment
-{: #supportingSTE}
-
-If you experience issues, you can receive assistance by opening a Support Ticket as defined on the [Getting Customer Support](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} page.
+To add extra capacity to your existing Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. See [Contacting sales](reportingIssues.html#contacting-sales) for details.
