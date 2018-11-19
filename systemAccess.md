@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-11-14"
 
 ---
 
@@ -29,18 +29,16 @@ Through use of Swagger 2.0 compliant REST APIs, clients have access to the same 
 
 **Note:** After you create a service instance, depending on the T-shirt size that is created, your service might not be immediately ready for use. It is recommended that you query the **Status** field of the JSON returned to determine the current state of the service instance.
 
-**Note:** The **apiEndpoint** URL referenced in the [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} points to the US South Region. If you are using other regions, ensure that your application references the appropriate **apiEndpoint**.
+**Note:** The **apiEndpoint** URL referenced in the [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} points to the Dallas region. If you are using other regions, ensure that your application references the appropriate **apiEndpoint**.
 
 *Table 1. API Endpoint URLs for REST API Implementation*
 
-| **Region name** | **Geographic location** | **Region prefix** | **API Endpoint URL** |       
-|:-------------:|:----------:|:--------------:|:-------------:|
-| US South | Dallas, TX, US | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| United Kingdom | London, England | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| Sydney | Sydney, Australia | au-syd | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
-| Frankfurt | Frankfurt, Germany | eu-de | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-
-
+| **Region name** | **Region prefix** | **API Endpoint URL** |       
+|:-------------:|:--------------:|:-------------:|
+| Dallas | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
+| London | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
+| Frankfurt | eu-de | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
+| Sydney | au-syd | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
 
 ## Service dashboard
 {: #service_dashboard}
