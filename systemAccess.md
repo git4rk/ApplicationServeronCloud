@@ -61,7 +61,7 @@ From the service dashboard you can access:
 
 OpenVPN is required for access to any WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} virtual machine. It must be installed and running with administrator privileges.
 
-### Use the following instructions to set up openVPN in Windows:
+### Set up openVPN on Windows
 
 1. Download the openVPN Windows installer for your system architecture from the openVPN website:
   * 64-bit systems: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
@@ -75,10 +75,11 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 
 4. Start the openVPN client program "OpenVPN GUI". Ensure that you select **Run as a Windows Administrator** to start the program. If you do not, you might not be able to connect.
 
-### Use the following instructions to set up openVPN in Linux:
+### Set up openVPN on Linux
 
 1. To install openVPN, follow the [openVPN instructions for Linux](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
-  * If you need to manually download and install the RPM Package Manager, go to [openVPN unix/linux download](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. You might need assistance from your Linux administrator.
+
+   If you need to manually download and install the RPM Package Manager, go to [openVPN unix/linux download](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. You might need assistance from your Linux administrator.
 3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract the files into the directory from which you plan to start the openVPN client. You need all four files in the same directory.
 3. Start the openVPN client program. Open a terminal window and go to the directory that contains the configuration files. Run the following command as root:
 
@@ -87,7 +88,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
   ```
   {: .codeblock}  
 
-### Use the following instructions to configure openVPN in Mac:
+### Set up openVPN on Mac
 1. One method is to install [Tunnelblick](https://tunnelblick.net/){: new_window}, an open source software product.
 2. Extract the VPN configuration files from the WebSphere service. Tunnelblick prompts for your admin password for Mac and adds the config to the set of VPNs you can use to connect.
 3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from Tunnelblick. You can put an icon on the menu bar for easy access.
@@ -98,42 +99,41 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 
 These instructions assume that you are using OpenSSH as your client. OpenSSH is normally available on Linux or in Cygwin running on Windows. It also can be installed to run from a Windows command prompt.
 
-To verify installation of OpenSSH, enter the command:
+To verify installation of OpenSSH, run the following command.
   ```
-      $ ssh -V
+  ssh -V
   ```
   {: codeblock}
 
 The following message is an example of the response:
   ```
-      OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
+  OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
   ```
-  {: codeblock}
 
 Use the following instructions to set up SSH access to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
 
 1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
 2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
 3. Copy the contents of the private key into a file.
-4. Run the command:
+4. Connect using SSH by running the following command.
 
-  <pre>
-    $ ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
-  </pre>
+  ```
+  ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
+  ```
   {: codeblock}
 
-5. Gain full sysadmin authority by switching **virtuser** to **root** by using the command:
+5. Gain full sysadmin authority by switching **virtuser** to **root** by running the following command.
 
-  <pre>
-    $ sudo su root
-  </pre>
+  ```
+  sudo su root
+  ```
   {: codeblock}
 
 6. If you experience problems when you access the system with the private ssh key, use the root password that is provided. Log in as root by running the command that follows and provide the password.
 
- <pre>
-    $ ssh root@169.53.246.x
-  </pre>
+  ```
+  ssh root@169.53.246.x
+  ```
   {: codeblock}
 
 7. Whether you access the system with the private ssh key or the root password, immediately change the root password.
@@ -147,7 +147,12 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
    ```
    {: codeblock}
 
-9. Run the `ssh VM1` command to connect as **virtuser**.
+9. Run the following command to connect as **virtuser**.
+
+   ```
+   ssh VM1
+   ```
+   {: codeblock}
 
 ## System paths
 {: #system_paths}
@@ -179,23 +184,27 @@ Lastly, customers often install their own root certificates for applications the
 ## Firewall ports
 {: #firewall_ports}
 
-You might find it necessary to open ports on the firewall to allow access to applications and databases.
-  * On each WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} node, you find a script openFirewallPorts.sh in the WAS_HOME/virtual/bin directory.
-  * On each Liberty collective host, you find a script openFirewallPorts.sh in the WAS_HOME/virtual/bin directory.
+You might find it necessary to open ports on the firewall to allow access to applications and databases. You can open firewall ports by using the `openFirewallPorts.sh` script, which you can find in the following locations.
+  * On each WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} node, the `openFirewallPorts.sh` script is in the `WAS_HOME/virtual/bin` directory.
+  * On each Liberty collective host, the `openFirewallPorts.sh` is in the `WAS_HOME/virtual/bin` directory.
 
-Usage:
+### Usage
+
+Run the `openFirewallPorts.sh` script using the following command syntax.
+
   ```
-      $ openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
+  openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
   ```
   {: codeblock}
 
+where:
 * PORT is a port number
 * PROTOCOL is either TCP or UDP
-* -persist is either true or false
+* `-persist` is either `true` or `false`
 
-To specify multiple ports, separate them with a comma ","
+You can specify multiple ports in a comma-separated list.
 
-**Note**: The sport and dport of the port that is opened is open in the INPUT and OUTPUT sections of the firewall. You must run this script as root by using sudo. You can also modify iptables directly.
+**Note**: The sport and dport of the port that is opened is open in the INPUT and OUTPUT sections of the firewall. You must run this script as root by using `sudo`. You can also modify iptables directly.
 
 ## Configuring the web server
 {: #configure_webserver}
@@ -203,30 +212,24 @@ To specify multiple ports, separate them with a comma ","
 When you provision a cell or a collective, you receive a preconfigured environment. Specifically, for a Traditional Network Deployment cell, you receive the following environment:
 
 * A Deployment Manager that is collocated with the IBM HTTP Server for development and testing purposes.
-
 * A custom node federated to the Deployment Manager.
-
 * The Deployment Manager, the IHS Server, and the Node Agent all initially provisioned to the STARTED state.
 
 If you require the web server to handle all user requests, then you might need to generate and propagate the plug-in after you deploy your application.
 
-**Avoid trouble:** Before you generate and propagate the plug-in, ensure that the following prerequisite tasks are complete:
+**Avoid trouble:** Before you generate and propagate the plug-in, ensure that the following prerequisite tasks are complete.
 
 * In your local Windows, Linux or MAC environment, ensure that [openVPN](systemAccess.html#setup_openvpn) is configured, started and you are connected to the appropriate region.
-
-* From the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Service Dashboard, click **Open the admin console** and login with wsadmin and the Admin Password that is provided in the Service Dashboard.
-
+* From the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service dashboard, click **Open the admin console** and log in with wsadmin and the Admin Password that is provided in the service dashboard.
 * From the Admin Console, create an application server (for example, ***server1***), because the Deployment Manager is federated with an empty custom node.
-
 * Start the server that you created.
-
 * During application installation, ensure that the modules of your application are mapped to the server you just started and to the web server (for example, ***webserver1***).
 
 The following high-level steps assume that the prerequisite tasks are complete.
 
 1. From the Admin Console, generate the plug-in from the Environment option.
-   1. Choose Environment > Update global web server plug-in configuration
-   2. Click **OK** or **Overwrite to generate a new plug-in configuration file**
+   1. Choose **Environment > Update global web server plug-in configuration**.
+   2. Click **OK** or **Overwrite to generate a new plug-in configuration file**.
 2. From the Deployment Manager, copy the plug-in to the web server configuration.
 
   ```
@@ -273,14 +276,14 @@ WebSphere Application Server traditional and Liberty are configured with the [SS
 ### WebSphere Application Server traditional
 {: #ssl-was}
 
-1. Open the `security.xml` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` directory, and modify the following line:
+1. Open the `security.xml` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` directory, and modify the following line.
 
    ```
    sslProtocol="SSL_TLSv2"
    ```
    {: codeblock}
 
-2. Open the `ssl.client.props` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` directory, and modify the following line:
+2. Open the `ssl.client.props` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` directory, and modify the following line.
 
    ```
    com.ibm.ssl.protocol=SSL_TLSv2
@@ -290,7 +293,7 @@ WebSphere Application Server traditional and Liberty are configured with the [SS
 ### Liberty
 {: #ssl-liberty}
 
-1. Open the `server.xml` file in the `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` directory, and modify the following line within the `defaultSSLConfig` SSL configuration element:
+1. Open the `server.xml` file in the `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` directory, and modify the following line within the `defaultSSLConfig` SSL configuration element.
 
    ```
    sslProtocol="SSL_TLSv2"
