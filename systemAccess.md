@@ -2,27 +2,27 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-11-14"
+lastupdated: "2018-11-20"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
+{:tip: .tip}
 
 # System access
 {: #system_access}
 
-Methods of creating and managing a service instance are discussed in this section, along with various ways to access and set up access to your systems.
+Learn methods of creating and managing a service instance, and explore ways to access and set up access to your systems.
 {: shortdesc}
-
 
 ## REST API usage in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 {: #restapi_usage}
 
 Instances in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} are created, provisioned, managed, and deleted in one of the following ways:
 
-* From the {{site.data.keyword.Bluemix_notm}} Catalog and Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+* From the {{site.data.keyword.Bluemix_notm}} catalog and service dashboard.
 * From the creation of an application or script that uses RESTful APIs.
 
 Through use of Swagger 2.0 compliant REST APIs, clients have access to the same function as provided through the portal and dashboard. For more information about supported REST APIs and resources, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}. For sample code that demonstrates usage of the REST APIs, download the Git hosted WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}.
@@ -35,15 +35,15 @@ Through use of Swagger 2.0 compliant REST APIs, clients have access to the same 
 
 | **Region name** | **Region prefix** | **API Endpoint URL** |       
 |:-------------:|:--------------:|:-------------:|
-| Dallas | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| London | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| Frankfurt | eu-de | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-| Sydney | au-syd | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
+| Dallas | `ng` | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
+| London | `eu-gb` | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
+| Frankfurt | `eu-de` | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
+| Sydney | `au-syd` | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
 
 ## Service dashboard
 {: #service_dashboard}
 
-After you create your service instance, you will be taken to the service dashboard. You can always get back to the service dashboard by clicking the service icon from your organization dashboard.
+After you create your service instance, you are taken to the service dashboard. You can always get back to the service dashboard by clicking the service icon from your organization dashboard.
 From the service dashboard you can access:
 
 * A link to this documentation
@@ -52,7 +52,7 @@ From the service dashboard you can access:
 * The host name
 * The admin user and admin password
 * A private SSH key
-* The WebSphere® admin user and admin password
+* The WebSphere&reg; admin user and admin password
 * The Admin Center and Admin Console URLs
 
 
@@ -66,7 +66,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 1. Download the openVPN Windows installer for your system architecture from the openVPN website:
   * 64-bit systems: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32-bit systems:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Ensure you [Run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} and openVPN is installed.
+2. Ensure you [run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} and openVPN is installed.
 3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the `{OpenVPN home}\config` directory. For example:
 
   ```  
@@ -90,7 +90,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 ### Use the following instructions to configure openVPN in Mac:
 1. One method is to install [Tunnelblick](https://tunnelblick.net/){: new_window}, an open source software product.
 2. Extract the VPN configuration files from the WebSphere service. Tunnelblick prompts for your admin password for Mac and adds the config to the set of VPNs you can use to connect.
-3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from Tunnelblick. You can put an icon on the top menu bar for easy access.
+3. Connect to the VPN network and then you can access your virtual machine. After your first access, Tunnelblick caches the configuration and you can connect from Tunnelblick. You can put an icon on the menu bar for easy access.
 
 
 ## Using SSH to access WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
@@ -137,27 +137,27 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
   {: codeblock}
 
 7. Whether you access the system with the private ssh key or the root password, immediately change the root password.
-8. To simplify your SSH commands, create a file that is named "config" in the %HOME%/.ssh directory. For example:
+8. To simplify your SSH commands, create a file that is named `config` in the `%HOME%/.ssh` directory. For example:
 
-  <pre>
+   ```
    Host VM1
       Hostname 169.53.246.xxx
       User virtuser
       IdentityFile /path/privateKeyFileName
-  </pre>
-  {: codeblock}
+   ```
+   {: codeblock}
 
-9. Run "ssh VM1" to be connected as **virtuser**.
+9. Run the `ssh VM1` command to connect as **virtuser**.
 
 ## System paths
 {: #system_paths}
 
-* The Liberty Profile commands can be issued from */opt/IBM/WebSphere/Liberty/bin*.
-* The Liberty Profile server profile location is */opt/IBM/WebSphere/Profiles/Liberty/servers/server1*.
-* The Traditional WebSphere Application Server core product files, which are shared by all profiles, are located in */opt/IBM/WebSphere/AppServer/*.
-* The Traditional WebSphere Application Server commands can be issued from the default profile location in */opt/IBM/WebSphere/Profiles/Default**profile_typeprofile_number**/bin* where:
-  * **profile_type** is a value of *AppSrv*, *Dmgr*, *Custom*, *AdminAgent*, *JobMgr*, or *SecureProxySrv*.
-  * **profile_number** is a sequential number that is used to create a unique profile name
+* The Liberty commands can be issued from `/opt/IBM/WebSphere/Liberty/bin`.
+* The Liberty server profile location is `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
+* The Traditional WebSphere Application Server core product files, which are shared by all profiles, are located in `/opt/IBM/WebSphere/AppServer/`.
+* The Traditional WebSphere Application Server commands can be issued from the default profile location in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` where:
+  * `<profile_type> is a value of `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr`, or `SecureProxySrv`.
+  * `<profile_number>` is a sequential number that is used to create a unique profile name.
 
 
 ## Managing servers from the command line
@@ -172,7 +172,7 @@ When you click the link to the Admin Center or the Admin Console, you might rece
 
 Since you are using links that are provided by {{site.data.keyword.IBM}}, you can safely ignore the warning and connect. If your browser offers to store a security exception, doing so is the easiest way to prevent the warning in the future.
 
-Another option is to export the incoming signer certificate and then import it into your browser as a trusted root certificate. This option would require you to make an entry in your *hosts* file that maps the VM's IP address to the certificate issuer's common name. This name is in the following format: wl<pureapplication.ibmcloud.com. If you now use the host name instead of the IP address in the URL, you can connect cleanly. You then must access the Admin Center or Admin Console by using that host name instead of the IP address in the URL.
+Another option is to export the incoming signer certificate and then import it into your browser as a trusted root certificate. This option would require you to make an entry in your *hosts* file that maps the VM's IP address to the certificate issuer's common name. This name is in the following format: `wl<pureapplication.ibmcloud.com`. If you now use the host name instead of the IP address in the URL, you can connect cleanly. You then must access the Admin Center or Admin Console by using that host name instead of the IP address in the URL.
 
 Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
 
@@ -222,39 +222,39 @@ If you require the web server to handle all user requests, then you might need t
 
 * During application installation, ensure that the modules of your application are mapped to the server you just started and to the web server (for example, ***webserver1***).
 
-The following high-level steps assume that the prerequisite tasks are complete:
+The following high-level steps assume that the prerequisite tasks are complete.
 
-1. From the Admin Console, generate the plug-in from the Environment option:
+1. From the Admin Console, generate the plug-in from the Environment option.
    1. Choose Environment > Update global web server plug-in configuration
    2. Click **OK** or **Overwrite to generate a new plug-in configuration file**
-2. From the Deployment Manager, copy the plug-in to the web server configuration:
+2. From the Deployment Manager, copy the plug-in to the web server configuration.
 
   ```
    cp /opt/IBM/WebSphere/Profiles/DefaultDmgr01/config/cells/plugin-cfg.xml /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
   ```
   {: codeblock}
-3. Edit **httpd.conf** in **IHS_HOME/conf** (for example, */opt/IBM/WebSphere/HTTPServer/conf*) and ensure that the following two lines exist:
+3. Open the `httpd.conf` file in the `IHS_HOME/conf` (for example, `/opt/IBM/WebSphere/HTTPServer/conf`), and ensure that the following two lines exist.
 
     ```
     LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
     WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
     ```
     {: codeblock}  
-4. Open the ports with these two commands:
+4. Open the ports by running the following commands.
 
-  ```
+   ```
    export serverPorts=2810:TCP,2810:UDP,8880:TCP,8880:UDP,9101:TCP,9101:UDP,9061:TCP,9061:UDP,9080:TCP,9080:UDP,9354:TCP,9354:UDP,9044:TCP,9044:UDP,9443:TCP,9443:UDP,5060:TCP,5060:UDP,5061:TCP,5061:UDP,11005:TCP,11005:UDP,11007:TCP,11007:UDP,9633:TCP,9633:UDP,7276:TCP,7276:UDP,7286:TCP,7286:UDP,5558:TCP,5558:UDP,5578:TCP,5578:UDP
 
    sudo /opt/IBM/WebSphere/AppServer/virtual/bin/openFirewallPorts.sh -ports $serverPorts -persist true
-  ```
-    {: codeblock}
-5. Stop and start the web server with the following two commands:
+   ```
+   {: codeblock}
+5. Stop and start the web server by running the following commands:
     ```
     sudo /opt/IBM/WebSphere/HTTPServer/bin/apachectl -k stop
     sudo /opt/IBM/WebSphere/HTTPServer/bin/apachectl -k start
     ```
     {: codeblock}
-8. Access your application through the plug-in:
+8. Access your application through the plug-in.
   ```
    http://169.53.246.xxx/contextRoot/
   ```
@@ -262,34 +262,37 @@ The following high-level steps assume that the prerequisite tasks are complete:
 
 **Note:** The steps that are provided represent one path of many when you're attempting to configure a web server. If further assistance is needed, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.0){: new_window}.
 
-**NOTE:** If you cannot access your application, you are likely facing a port access issue on your firewall. Therefore, you might need to restart any of the following servers: the application server, the node agent, the web server, and the deployment manager. Additionally, it is possible that you might need to access the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Service Dashboard and restart each virtual machine.
+If you cannot access your application, you are likely facing a port access issue on your firewall. Therefore, you might need to restart any of the following servers: the application server, the node agent, the web server, and the deployment manager. Additionally, it is possible that you might need to access the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Service Dashboard and restart each virtual machine.
+{: tip}
 
-## SSL Configuration
+## SSL configuration
 {: #ssl_configuration}
 
-WebSphere Application Server traditional and Liberty are configured with the [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} protocol.  To change the protocol, modify the following files:
+WebSphere Application Server traditional and Liberty are configured with the [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} protocol. You can change the protocol by modifying the SSL configuration.
 
-For WebSphere Application Server traditional:
+### WebSphere Application Server traditional
+{: #ssl-was}
 
-1. Edit **security.xml** in /opt/IBM/WebSphere/Profiles/*profile_name*/config/cell/*cell_name* and modify the following line:
+1. Open the `security.xml` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` directory, and modify the following line:
 
-  ```
-  sslProtocol="SSL_TLSv2"
-  ```
-{: codeblock}
+   ```
+   sslProtocol="SSL_TLSv2"
+   ```
+   {: codeblock}
 
-2. Edit **ssl.client.props** in /opt/IBM/WebSphere/Profiles/*profile_name*/properties and modify the following line:
+2. Open the `ssl.client.props` file in the `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` directory, and modify the following line:
 
-  ```
-  com.ibm.ssl.protocol=SSL_TLSv2
-  ```
-{: codeblock}
+   ```
+   com.ibm.ssl.protocol=SSL_TLSv2
+   ```
+   {: codeblock}
 
-For Liberty:
+### Liberty
+{: #ssl-liberty}
 
-1. Edit **server.xml** in /opt/IBM/WebSphere/Profiles/Liberty/servers/server1 and modify the following line located in the defaultSSLConfig ssl configuration element:
+1. Open the `server.xml` file in the `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` directory, and modify the following line within the `defaultSSLConfig` SSL configuration element:
 
-  ```
-  sslProtocol="SSL_TLSv2"
-  ```
-{: codeblock}
+   ```
+   sslProtocol="SSL_TLSv2"
+   ```
+   {: codeblock}

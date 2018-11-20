@@ -24,7 +24,7 @@ Figure 1. Client view of Multi-tenant networking with Public IP
 ## VPN access
 {: #vpnAccess}
 
-After you provision a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance from the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI, you can establish an OpenVPN connection. To create the connection, expand the drop-down menu and click **Download VPN Configuration** to download your VPN configuration. The VPN configuration contains an `.ovpn` file and certificates that are used to authenticate with the OpenVPN server. Once the OpenVPN connection is established, you can then access your VM through SSH. You can also access your Liberty Admin Center, traditional WebSphere Admin Console, and applications.
+After you provision a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI, you can establish an OpenVPN connection. To create the connection, expand the drop-down menu and click **Download VPN Configuration** to download your VPN configuration. The VPN configuration contains an `.ovpn` file and certificates that are used to authenticate with the OpenVPN server. Once the OpenVPN connection is established, you can then access your VM through SSH. You can also access your Liberty Admin Center, traditional WebSphere Admin Console, and applications.
 
 The VPN configuration is scoped to your organization and region. It is valid for one year from the time created. Multiple OpenVPN client connections can be established simultaneously by using the same VPN configuration.
 
@@ -39,43 +39,45 @@ In most cases, you need only a single VPN configuration that you can download by
 
 If your VPN configurations are compromised or expired, you can revoke VPN configuration by using the advanced VPN management page. Additionally, from an audit perspective, you can view a history of all VPN management activity and download active VPN configurations that were created previously from the advanced VPN management page.
 
-All the features available from the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}.
+All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}.
 
 
 ## Public internet access
 {: #publicInternetAccess}
 
-Optionally, you can manage public internet access from the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI. You can **request** a public IP address from the pool and **open** the connection from the internet to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance. Conversely, you can **close** access from your service instance to the internet and **return** the public IP address to the pool.
+Optionally, you can manage public internet access from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI. You can **request** a public IP address from the pool and **open** the connection from the internet to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance. Conversely, you can **close** access from your service instance to the internet and **return** the public IP address to the pool.
 
-To **request** a public IP address and **open** a connection, follow these instructions:
+### Request a public IP address and open a connection
+{: #request-open-ip}
 
-1. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+1. Click **Manage Public IP Access** on the service dashboard in the {{site.data.keyword.Bluemix_notm}} console.
 2. The IP address for your host is shown, but not your public IP address. Click **Request Public IP Address**.
 
-    **Note:** You are returned to the Service Dashboard with a public IP assigned. However, the following message is displayed:
+    You are returned to the service dashboard with a public IP assigned. However, the following message is displayed:
 
-    > **Access is currently closed. Click Manage Public IP to Open Access.**
-3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+    > _Access is currently closed. Click Manage Public IP to Open Access._
+3. Click **Manage Public IP Access** on the service dashboard.
 4. The IP addresses for your host and your new public IP are shown, but access is closed. Click **Open Access**.
 
-    **Note:** You are returned to the Service Dashboard with the following message displayed:
+    You are returned to the service dashboard with the following message displayed:
 
-    > **Access is currently open. Click Manage Public IP to Close Access.**
+    > _Access is currently open. Click Manage Public IP to Close Access._
 
-To **close** a connection and **return** a public IP address, follow these instructions:
+### Close a connection and return a public IP address
+{: #close-return-ip}
 
-1. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+1. Click **Manage Public IP Access** on the service dashboard.
 2. Click **Close Access**.
 
-    **Note:** You are returned to the Service Dashboard with the following message displayed:
+    You are returned to the service dashboard with the following message displayed:
 
-    > **Access is currently closed. Click Manage Public IP to Open Access.**
-3. Click **Manage Public IP Access** on the Service Dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
+    > _Access is currently closed. Click Manage Public IP to Open Access._
+3. Click **Manage Public IP Access** on the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI.
 4. Click **Return Public IP Address**.
 
-    **Note:** You are returned to the Service Dashboard where the IP address of your host is shown with the following message displayed:
+    You are returned to the service dashboard where the IP address of your host is shown with the following message displayed:
 
-    > **Returned Public IP.**
+    > _Returned Public IP._
 
 ## Public IP ports
 {: #publicIPports}
@@ -84,7 +86,7 @@ When you open access to your public IP, the IP address is associated with your V
 * To configure your Liberty Core server, see [Configure Liberty Core Server for public access](networkEnvironment.html#configureLibertyForPublicAccess).
 * To configure your traditional WebSphere Base server, add a web container transport chain that listens on port 80 and 443 as described in [Configuring transport chains](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
 
-**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a Web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port above 1024, such as 9080 and 9443. The following commands provide an example of this process:
+**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a Web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port over 1024, such as 9080 and 9443. The following commands provide an example of this process:
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
@@ -192,17 +194,17 @@ Now associate your application with the `external_host` virtual host by includin
 ## Configuring DNS
 {: #dnsConfig}
 
-It is important to note that WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs are configured with two DNS resolvers. The resolvers are configured in the **/etc/resolv.conf** file on the VM. The primary DNS server is a non-authoritative server provided by the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service. The secondary DNS server is a non-authoritative server provided by {{site.data.keyword.Bluemix_notm}}.
+It is important to note that WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs are configured with two DNS resolvers. The resolvers are configured in the **/etc/resolv.conf** file on the VM. The primary DNS server is a non-authoritative server that is provided by the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service. The secondary DNS server is a non-authoritative server that is provided by {{site.data.keyword.Bluemix_notm}}.
 
 We recommend that you review the DNS configuration to see whether it fits your needs. You can update the `/etc/resolv.conf` file to reference the DNS server of your choice if the ones provided by IBM do not meet your requirements.
 
-**Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might  have only a primary DNS server configured in the `/etc/resolv.conf` file. If you want a HA solution, you can either release the VM and provision a new one or update the `/etc/resolv.conf` file to add a secondary DNS server. This can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
+**Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might  have only a primary DNS server configured in the `/etc/resolv.conf` file. If you want a HA solution, you can either release the VM and provision a new one or update the `/etc/resolv.conf` file to add a secondary DNS server. The secondary DNS server can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
 
 
 ## Opening ports for new servers on custom nodes
 {: #serversOnCustom}
 
-When you create a server on a custom node, the additional ports that are required by the server must be opened on the deployment manager and custom node VMs before you start the server. After you create the server, but before you start the server, open the ports by running the `openWASPorts.sh` script:
+When you create a server on a custom node, the additional ports that are required by the server must be opened on the deployment manager and custom node VMs before you start the server. After you create the server, but before you start the server, open the ports by running the `openWASPorts.sh` script.
 
  1. Log in to each deployment manager and custom VM as the root user.
  1. Run the `/opt/IBM/WebSphere/AppServer/virtual/bin/openWASPorts.sh` script to open the ports.
