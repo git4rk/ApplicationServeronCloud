@@ -23,12 +23,12 @@ Single Tenant Environments cannot be created through the {{site.data.keyword.Blu
 
 To order a Single Tenant Environment, [contact IBM sales](reportingIssues.html#contacting-sales). The sales team can assist you in setting up an environment that is tailored to your needs.
 
-## Overview of WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment
+## Overview of WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment
 {: #overviewSTE}
 
 The Single Tenant Environment you your own private instance of the service, private networking, and isolated resources. Although the offering is managed independently, the service and created service instance dashboards are accessible through a specific {{site.data.keyword.Bluemix_notm}} public region as indicated in the following figure.
 
-Figure 1. Architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment
+Figure 1. Architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment
 
 ![Figure 1. Architecture of Single Tenant Environment](images/WASaaS.png)
 
@@ -36,6 +36,6 @@ Figure 1. Architecture of the WebSphere Application Server in {{site.data.keywor
 ## Organization Management
 {: #organization_management}
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} organization names as part of the order, you can start accessing your environment now. If you did not provide one or more organization names or if you want to change this setting, open a [support ticket](reportingIssues.html#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your org name in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Account > Cloud Foundry orgs**. 
+The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} organization names as part of the order, you can start accessing your environment now. If you did not provide an organization name or if you want to change this setting, open a [support ticket](reportingIssues.html#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your org name in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Account > Cloud Foundry orgs**.
 
 **Note:** To access your Single Tenant Environment, see [Single Tenant Environment Access](singleTenantAccess.html#singleTenantEnvironment).

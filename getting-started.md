@@ -23,11 +23,11 @@ With {{site.data.keyword.appserver_full}}, you can set up a pre-configured WebSp
 ## Before you begin
 {: #prereqs}
 
-If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, you'll need to contact IBM Sales before you create the service. Learn more about these options in [About](index.html).
+If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, contact IBM Sales before you create the service. Learn more about these options in [About](index.html).
 
 ### Migrating an existing WebSphere environment
 
-To migrate an existing WebSphere Application Server Network Deployment environment to this service, use the [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. The tool uploads the profile configuration and applications for your standalone server or cell nodes to a service instance in {{site.data.keyword.cloud_notm}}. For an overview of cloud migration and a step-by-step walkthrough of using the tool, see [the WebSphere Configuration Migration Tool for IBM Cloud guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}  on WASdev.
+To migrate an existing WebSphere Application Server Network Deployment environment to this service, use the [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. The tool uploads the profile configuration and applications for your stand-alone server or cell nodes to a service instance in {{site.data.keyword.cloud_notm}}. For an overview of cloud migration and a step-by-step walkthrough of using the tool, see [the WebSphere Configuration Migration Tool for IBM Cloud guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}  on WASdev.
 
 The following steps walk you through creating a new environment in {{site.data.keyword.appserver_full}}.
 
@@ -66,7 +66,7 @@ For the Network Deployment plan, choose the profile and architecture for your en
 ## Step 3: Size your virtual machines
 {: #vm_sizing}
 
-You can individually size the virtual machine for each component in your environment. Virtual machine sizing is chunked in [T-shirt sizes](index.html#vm-size) of blocks of resources.
+You can individually size the virtual machine for each component in your environment. Virtual machines are chunked in [T-shirt sizes](index.html#vm-size) of blocks of resources.
 
 Click the tab for the component, such as the server, deployment manager, or application node, and select the T-shirt size for its virtual machine.
 

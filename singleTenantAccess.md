@@ -48,7 +48,7 @@ The following steps discuss accessing your Single Tenant Environment, along with
 
 **Note:** Hourly pricing does not apply for Single Tenant environments. A Single Tenant environment includes a fixed number of **blocks** that are called a quota. A small environment contains 64 blocks. A medium contains 128 blocks, and a large contains 256 blocks.
 
-A **block** is defined as follows:
+A **block** is defined as follows.
   * 1 vCPU
   * 12.5 GB disk[1]
   * 2 GB RAM
