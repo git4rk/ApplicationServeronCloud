@@ -110,7 +110,7 @@ The following message is an example of the response:
   OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
   ```
 
-Use the following instructions to set up SSH access to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
+Use the following instructions to set up SSH access to your WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs.
 
 1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
 2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
