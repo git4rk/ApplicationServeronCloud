@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,18 +23,18 @@ Con {{site.data.keyword.appserver_full}}, puede configurar un entorno tradiciona
 ## Antes de empezar
 {: #prereqs}
 
-Si desea un entorno con recursos de máquina virtual más dedicados, como un contrato de reserva o un entorno de un solo arrendatario, tendrá que ponerse en contacto con el equipo de ventas de IBM antes de crear el servicio. Obtenga más información sobre estas opciones en la sección [Acerca de](index.html).
+Si desea un entorno con recursos de máquina virtual más dedicados, como un contrato de reserva o un entorno de un solo arrendatario, póngase en contacto con el equipo de ventas de IBM antes de crear el servicio. Obtenga más información sobre estas opciones en la sección [Acerca de](index.html).
 
 ### Migración de un entorno WebSphere existente
 
-Para migrar un entorno de WebSphere Application Server Network Deployment existente a este servicio, utilice la herramienta [de migración de la configuración de WebSphere para {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. La herramienta carga la configuración del perfil y las aplicaciones para su servidor independiente o nodos de celda en una instancia de servicio en {{site.data.keyword.cloud_notm}}. Para obtener una visión general de la migración a cloud y un resumen paso a paso del uso de la herramienta, consulte [la herramienta de migración de la configuración de WebSphere para la guía de IBM Cloud ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} en WASdev.
+Para migrar un entorno de WebSphere Application Server Network Deployment existente a este servicio, utilice la herramienta [de migración de la configuración de WebSphere para {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. La herramienta carga la configuración del perfil y las aplicaciones para su servidor autónomo o nodos de celda en una instancia de servicio en {{site.data.keyword.cloud_notm}}. Para obtener una visión general de la migración a cloud y un resumen paso a paso del uso de la herramienta, consulte [la herramienta de migración de la configuración de WebSphere para la guía de IBM Cloud ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} en WASdev.
 
 Los siguientes pasos le guiarán a través de la creación de un nuevo entorno en {{site.data.keyword.appserver_full}}.
 
 ## Paso 1: Crear el servicio
 {: #create}
 
-1. Vaya a la página [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server) del catálogo de {{site.data.keyword.cloud_notm}}.
+1. Vaya a la página [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server) del catálogo de {{site.data.keyword.cloud_notm}}.
 1. Inicie una sesión con su IBMid, o regístrese para una cuenta de {{site.data.keyword.cloud_notm}}.
 1. En la página del catálogo, revise las selecciones correspondientes a la configuración del servicio.
 
@@ -66,7 +66,7 @@ Para el plan de despliegue de red, seleccione el perfil y la arquitectura para e
 ## Paso 3: Seleccionar el tamaño de las máquinas virtuales
 {: #vm_sizing}
 
-Puede seleccionar el tamaño de la máquina virtual individualmente para cada componente del entorno. El tamaño de la máquina virtual se fragmenta en [tamaños de camiseta](index.html#vm-size) de bloques de recursos.
+Puede seleccionar el tamaño de la máquina virtual individualmente para cada componente del entorno. Las máquinas virtuales se fragmentan en [tamaños de camiseta](index.html#vm-size) de bloques de recursos.
 
 Pulse el separador correspondiente al componente, como el servidor, el gestor de despliegue o el nodo de aplicación, y seleccione el tamaño de camiseta para su máquina virtual.
 

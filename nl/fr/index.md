@@ -76,7 +76,7 @@ Chaque serveur ou noeud est mis à disposition dans une machine virtuelle unique
 
 La tarification pour chaque bloc dépend de l'option de facturation que vous avez choisie :
 * **[Facturation à l'utilisation](#pay-as-you-go) :** tarification basée sur l'utilisation, facturée en heures par bloc
-* **[Contrat avec réservation](#reserve-contract) :** abonnement mensuel prépayé portant sur des ressources réservées
+* **[Contrat de réservation](#reserve-contract) :** abonnement mensuel prépayé portant sur des ressources réservées
 
 ### Facturation à l'utilisation
 {: #pay-as-you-go}
@@ -101,10 +101,10 @@ Le tableau ci-après répertorie le prix total par heure pour chaque machine vir
 {: caption="Tableau 2. Plan Liberty Core" caption-side="top"}
 
 
-### Contrat avec réservation
+### Contrat de réservation
 {:#reserve-contract}
 
-Avec une facturation de contrat avec réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Si vous disposez de licences WebSphere Application Server, vous pouvez choisir un contrat de réservation BYOL (bring-your-own-license), qui utilise ces licences et propose un taux de facturation réduit. Pour configurer une facturation de contrat avec réservation, [contactez IBM Sales](reportingIssues.html#contacting-sales).
+Avec une facturation de contrat de réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Si vous disposez de licences WebSphere Application Server, vous pouvez choisir un contrat de réservation BYOL (bring-your-own-license), qui utilise ces licences et propose un taux de facturation réduit. Pour configurer une facturation de contrat de réservation, [contactez IBM Sales](reportingIssues.html#contacting-sales).
 
 Les abonnements sont disponibles par incréments de 8 blocs. Le total des heures de bloc repose sur le nombre d'heures dans le mois, mais vous pouvez utiliser les heures de bloc à toute période du mois. Ainsi, un mois de 30 jours se compose de 720 heures qui, lorsqu'elles sont multipliées par un abonnement de 8 blocs, donnent un total de 5760 heures de bloc.
 
@@ -114,9 +114,9 @@ Les abonnements sont disponibles par incréments de 8 blocs. Le total des heures
 
 Vous pouvez personnaliser la façon et le moment dont vous utilisez les blocs afin de répondre à une demande de charge de travail variable (utilisation de 4 blocs, augmentation à 12 blocs puis réduction à 8 blocs, par exemple). Tant que vous restez sous le nombre total d'heures de bloc mensuelles, aucun supplément ne vous est facturé.
 
-Vous pouvez choisir d'utiliser vos blocs de contrat de réservation ou une facturation Paiement à la carte lorsque vous mettez à disposition chaque environnement. 
+Vous pouvez choisir d'utiliser vos blocs de contrat de réservation ou une facturation Paiement à la carte lorsque vous mettez à disposition chaque environnement.
 
-**Remarque :** si vous supprimez une instance de service, vous devrez peut-être attendre environ 30 minutes pour que ses blocs deviennent disponibles pour les nouvelles instances de service. 
+**Remarque :** si vous supprimez une instance de service, vous devrez peut-être attendre environ 30 minutes pour que ses blocs deviennent disponibles pour les nouvelles instances de service.
 
 #### Dépassements
 
@@ -126,7 +126,7 @@ Les blocs provenant du modèle de tarification à l'utilisation ne correspondent
 
 #### Taux calculés au prorata pour une utilisation souple
 
-Les blocs inclus dans une facturation de contrat avec réservation reposent sur le plan WebSphere Application Server Network Deployment, mais vous pouvez aussi vous en servir pour d'autres plans. Avec ces autres plans, l'utilisation est répartie au prorata, ce qui fait qu'une heure de bloc est réduite via le taux de proratisation quand elle se reflète dans les heures de bloc restantes dans le contrat avec réservation.
+Les blocs inclus dans une facturation de contrat de réservation reposent sur le plan WebSphere Application Server Network Deployment, mais vous pouvez aussi vous en servir pour d'autres plans. Avec ces autres plans, l'utilisation est répartie au prorata, ce qui fait qu'une heure de bloc est réduite via le taux de proratisation quand elle se reflète dans les heures de bloc restantes dans le contrat de réservation.
 
 Le tableau suivant affiche les taux de proratisation pour chaque plan et le prix effectif par heure de bloc réellement utilisée une fois le calcul au prorata effectué. Pour les prix actuels de votre région, [contactez IBM Sales](reportingIssues.html#contacting-sales).
 
@@ -137,11 +137,11 @@ Le tableau suivant affiche les taux de proratisation pour chaque plan et le prix
 | WebSphere Application Server Network Deployment | 1,0 | 0,70 $ |
 {: caption="Tableau 3. Taux de proratisation par heure de bloc et par plan" caption-side="top"}
 
-Ainsi, vous pouvez avoir une instance WebSphere Application Server Base de taille M (2 blocs) qui s'exécute pendant 51 heures. Pour calculer les heures de bloc utilisées depuis votre contrat avec réservation, les heures de bloc effectives sont multipliées par le taux de proratisation, ce qui donne un total de 43,86 heures de bloc :
+Ainsi, vous pouvez avoir une instance WebSphere Application Server Base de taille M (2 blocs) qui s'exécute pendant 51 heures. Pour calculer les heures de bloc utilisées depuis votre contrat de réservation, les heures de bloc effectives sont multipliées par le taux de proratisation, ce qui donne un total de 43,86 heures de bloc :
 
 ```
 2 blocs * 51 heures * 0,43 (taux de proratisation) = 43,86 heures (calculées au prorata)
 ```
 
-Le coût total reste le même, mais vous pouvez utiliser plus d'heures de bloc effectives en provenance des plans avec calcul au prorata, car un nombre moindre d'heures est déduit de vos heures de bloc incluses dans votre contrat avec réservation.
+Le coût total reste le même, mais vous pouvez utiliser plus d'heures de bloc effectives en provenance des plans avec calcul au prorata, car un nombre moindre d'heures est déduit de vos heures de bloc incluses dans votre contrat de réservation.
 {:.tip}

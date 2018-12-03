@@ -64,9 +64,9 @@ O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece
 ## Dimensionamento da máquina virtual
 {: #vm-size}
 
-O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece dimensionamento de camisetas para que você possa dimensionar os ambientes de maneira ideal para aplicativos de uso intensivo de memória, fornecendo máquinas virtuais maiores. Cada máquina virtual que você fornecer para executar o WebSphere Application Server poderá ser dimensionada independentemente de acordo com as necessidades de recursos esperadas.
+O IBM WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece dimensionamento para que você possa dimensionar os ambientes de maneira ideal para aplicativos de uso intensivo de memória, fornecendo máquinas virtuais maiores. Cada máquina virtual que você fornecer para executar o WebSphere Application Server poderá ser dimensionada independentemente de acordo com as necessidades de recursos esperadas.
 
-As máquinas virtuais são dimensionadas e precificadas em *blocos*. Para cada bloco no tamanho da camiseta, a máquina virtual é fornecida com os recursos a seguir.
+As máquinas virtuais são dimensionadas e precificadas em *blocos*. Para cada bloco no tamanho, a máquina virtual é fornecida com os recursos a seguir.
 * 1 CPU virtual (vCPU)
 * 2 GB de RAM
 * 12,5 GB de espaço de disco rígido (12,0 GB para VMs de bloco único)
@@ -79,7 +79,7 @@ As máquinas virtuais são dimensionadas e precificadas em *blocos*. Para cada b
 | G | 4 | 4 | 8 | 50 |
 | EG | 8 | 8 | 16 | 100 |
 | EEG | 16 | 16 | 32 | 200 |
-{: caption="Tabela 1. Bloqueios por tamanho de camiseta" caption-side="top"}
+{: caption="Tabela 1. Bloqueios por tamanho" caption-side="top"}
 
 Cada servidor ou nó é fornecido em uma única máquina virtual. Por exemplo, no plano de implementação de rede, se você fornecer uma máquina virtual M (2 blocos) para o seu gerenciador de implementação e 8 máquinas virtuais S (1 bloco) para nós de aplicativos, você será cobrado por um total de 10 blocos.
 
@@ -102,7 +102,7 @@ interrompidas são limitadas a 10 endereços IP ou 64 GB de memória.
 
 O preço por bloco varia dependendo do plano do WebSphere Application Server que você escolher.
 
-A tabela a seguir lista o preço total por hora para cada máquina virtual do tamanho da camiseta. Os preços representam o IBM WebSphere Application Server em planos do {{site.data.keyword.Bluemix_notm}} a partir de 1º de abril de 2016 e estão listados em dólares americanos (USD). Consulte o catálogo para os preços atuais em sua região.
+A tabela a seguir lista o preço total por hora para cada tamanho de máquina virtual. Os preços representam o IBM WebSphere Application Server em planos do {{site.data.keyword.Bluemix_notm}} a partir de 1º de abril de 2016 e estão listados em dólares americanos (USD). Consulte o catálogo para os preços atuais em sua região.
 
 | Camiseta | Blocos | Liberty Core | Base do WAS | ND do WAS |
 |:-------:|:------:|:----------:|:------:|:----------:|

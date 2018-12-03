@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,7 +23,7 @@ Mit {{site.data.keyword.appserver_full}} können Sie innerhalb von Minuten eine 
 ## Vorbereitungen
 {: #prereqs}
 
-Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, die in einem höheren Maß dediziert sind, wie z. B. im Rahmen eines Reservierungsvertrags oder einer Single-Tenant-Umgebung, müssen Sie den IBM Vertrieb kontaktieren, bevor Sie den Service erstellen. Weitere Einzelheiten zu diesen Optionen finden Sie im Abschnitt [Informationen](index.html).
+Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, die in einem höheren Maß dediziert sind, wie z. B. im Rahmen eines Reservierungsvertrags oder einer Single-Tenant-Umgebung, wenden Sie sich an den IBM Vertrieb, bevor Sie den Service erstellen. Weitere Einzelheiten zu diesen Optionen finden Sie im Abschnitt [Informationen](index.html).
 
 ### Vorhandene WebSphere-Umgebung migrieren
 
@@ -34,7 +34,7 @@ Im Folgenden werden die einzelnen Schritte zur Erstellung einer neuen Umgebung i
 ## Schritt 1: Service erstellen
 {: #create}
 
-1. Rufen Sie die [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server)-Seite im {{site.data.keyword.cloud_notm}}-Katalog auf.
+1. Rufen Sie die [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server)-Seite im {{site.data.keyword.cloud_notm}}-Katalog auf.
 1. Melden Sie sich mit Ihrer IBMid an oder führen Sie eine Anmeldung für ein {{site.data.keyword.cloud_notm}}-Konto durch.
 1. Überprüfen Sie auf der Katalogseite die Auswahlmöglichkeiten für die Servicekonfiguration.
 
@@ -66,7 +66,7 @@ Wählen Sie für den Network Deployment-Plan das Profil und die Architektur für
 ## Schritt 3: Größe der virtuellen Maschine bestimmen
 {: #vm_sizing}
 
-Die Größe der virtuellen Maschine kann für jede Komponente in der Umgebung individuell bestimmt werden. Die Größen virtueller Maschinen sind in Ressourcenblöcke unterteilt, die in [T-Shirt-Größen](index.html#vm-size) angegeben werden.
+Die Größe der virtuellen Maschine kann für jede Komponente in der Umgebung individuell bestimmt werden. Virtuelle Maschinen sind in Ressourcenblöcke unterteilt, die in [T-Shirt-Größen](index.html#vm-size) angegeben werden.
 
 Klicken Sie auf die Registerkarte für die jeweilige Komponente, z. B. den Server, den Bereitstellungsmanager oder den Anwendungsknoten, und wählen Sie die T-Shirt-Größe für die zugehörige virtuelle Maschine aus.
 

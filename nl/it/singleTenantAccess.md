@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,34 +21,34 @@ I seguenti passi illustrano come accedere al tuo ambiente a singolo tenant, insi
 ## Accesso al tuo ambiente a singolo tenant
 {: #accessSTE}
 
-1. Nel tuo browser, vai al [Catalogo {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/catalog/){: new_window}.
+1. Nel tuo browser, vai al [Catalogo {{site.data.keyword.cloud_notm}}](https://{DomainName}/catalog/){: new_window}.
 
 2. Fai clic su **Accedi** e accedi con il tuo ID IBM.
 
 6. Nel filtro di ricerca del catalogo, immetti **WebSphere Application Server**.
 
-    ![alt text](images/filter.png "Filtro di ricerca")
+    ![Filtro di ricerca](images/filter.png)
 
 7. In **Servizi dell'applicazione**, fai clic sul tile **WebSphere Application Server**.
 
-    ![alt text](images/iconWAS.png "Tile WebSphere Application Server")
+    ![Tile WebSphere Application Server](images/iconWAS.png)
 
 8. Nel menu **Ambiente**, seleziona il tuo ambiente a singolo tenant.
 
-    ![alt text](images/environmentSTE.png "Nome ambiente a singolo tenant")
+    ![Nome ambiente a singolo tenant](images/environmentSTE.png)
 
     **Prevenzione dei problemi:** l'ambiente pubblico potrebbe essere mostrato come predefinito. La visualizzazione del nome ambiente corretto presuppone che tu abbia effettuato l'accesso alla regione corretta e che sia un membro di un'organizzazione autorizzata ad accedere al tuo ambiente a singolo tenant.
 
-    **Nota:** se selezioni uno degli ambienti pubblici, potresti incorrere in un addebito orario. Pertanto, se non vedi il nome del tuo ambiente a singolo tenant, apri un ticket di supporto come definito nella pagina [Richiesta di assistenza clienti](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+    **Nota:** se selezioni uno degli ambienti pubblici, potresti incorrere in un addebito orario. Pertanto, se non vedi il nome del tuo ambiente a singolo tenant, apri un ticket di supporto come descritto nella pagina [Come ottenere supporto](reportingIssues.html){: new_window}.
 
 9. Seleziona il piano appropriato e fai clic su **Crea**.
 
-    ![alt text](images/createSTE.png "Scegli un piano e crea il tuo servizio")
+    ![Scegli un piano e crea il tuo servizio](images/createSTE.png)
 
 
 **Nota:** il prezzo orario non si applica per gli ambienti a singolo tenant. Un ambiente a singolo tenant include un numero fisso di **blocchi** che vengono denominati quota. Un ambiente piccolo contiene 64 blocchi. Un ambiente medio contiene 128 blocchi e un ambiente grande contiene 256 blocchi.
 
-Un **blocco** è definito come segue:
+Un **blocco** è definito come segue.
   * 1 vCPU
   * 12,5 GB di disco[1]
   * 2 GB di RAM
@@ -65,18 +65,12 @@ Ad esempio, supponiamo che tu abbia un ambiente piccolo, che contiene 64 blocchi
 ## Ambiente di rete privata
 {: #private_network}
 
-Dopo il provisioning di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment, puoi scaricare le tue credenziali VPN e stabilire una connessione OpenVPN. Per ulteriori informazioni, vedi i seguenti link:
+Una volta eseguito il provisioning del tuo ambiente a singolo tenant, puoi scaricare le tue credenziali VPN e stabilire una connessione OpenVPN. Per ulteriori informazioni, vedi i seguenti link:
 
-* [Accesso VPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [Configurazione di OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [Accesso VPN](networkEnvironment.html#vpnAccess){: new_window}
+* [Configurazione di OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## Gestione del tuo ambiente a singolo tenant
 {: #manageSTE}
 
-Per aggiungere ulteriore capacità al tuo WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment esistente o per ordinare capacità in un altro datacenter, contatta i call center (in Nord America), il tuo rappresentante IBM locale o il tuo Business Partner IBM. Per identificare il rappresentante o il partner, chiama il numero 800-426-4968. Per ulteriori informazioni, contatta i call center (in Nord America). Telefono: 800-IBM-CALL (426-2255) Fax: 800-2IBM-FAX (242-6329).
-
-
-## Supporto del tuo ambiente a singolo tenant
-{: #supportingSTE}
-
-Se riscontri dei problemi, puoi ricevere assistenza aprendo un ticket di supporto come definito nella pagina [Richiesta di assistenza clienti](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+Per aggiungere ulteriore capacità al tuo ambiente a singolo tenant esistente o per ordinare capacità in un altro datacenter, contatta i call center (in Nord America), il tuo rappresentante IBM locale o il tuo Business Partner IBM. Consulta [Come contattare il settore vendite](reportingIssues.html#contacting-sales) per i dettagli.

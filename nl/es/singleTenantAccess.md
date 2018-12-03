@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,34 +21,34 @@ En los pasos siguientes se explica cómo acceder su entorno de un solo arrendata
 ## Acceso a su entorno de un solo arrendatario
 {: #accessSTE}
 
-1. En su navegador, vaya al [catálogo de {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/catalog/){: new_window}.
+1. En su navegador, vaya al [catálogo de {{site.data.keyword.cloud_notm}}](https://{DomainName}/catalog/){: new_window}.
 
 2. Pulse **Iniciar sesión** e inicie la sesión con su IBMid.
 
 6. En el filtro de búsqueda del catálogo, escriba **WebSphere Application Server**.
 
-    ![texto alt](images/filter.png "Filtro de búsqueda")
+    ![Filtro de búsqueda](images/filter.png)
 
 7. En **Servicios de aplicación**, pulse el mosaico **WebSphere Application Server**.
 
-    ![texto alt](images/iconWAS.png "Mosaico WebSphere Application Server")
+    ![Mosaico de WebSphere Application Server](images/iconWAS.png)
 
 8. En el menú **Entorno**, seleccione su entorno de un solo arrendatario.
 
-    ![texto alt](images/environmentSTE.png "Nombre del entorno de un solo arrendatario")
+    ![Nombre del entorno de un solo arrendatario](images/environmentSTE.png)
 
     **Evite problemas:** es posible que se muestre el entorno público como valor predeterminado. Si se muestra el nombre de entorno correcto, se da por supuesto que ha iniciado la sesión en la región correcta y que es miembro de una organización con permiso para acceder a su entorno de un solo arrendatario.
 
-    **Nota:** si selecciona uno de los entornos públicos, es posible que incurra en un cargo por hora. Por lo tanto, si no ve su nombre de entorno de un solo arrendatario, abra una incidencia de soporte tal como se explica en la página [Obtención de soporte al cliente](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+    **Nota:** si selecciona uno de los entornos públicos, es posible que incurra en un cargo por hora. Por lo tanto, si no ve su nombre de entorno de un solo arrendatario, abra una incidencia de soporte tal como se explica en la página [Obtención de ayuda](reportingIssues.html){: new_window}.
 
 9. Seleccione el plan adecuado y pulse **Crear**.
 
-    ![texto alt](images/createSTE.png "Elija un plan y cree su servicio")
+    ![Elija un plan y cree su servicio](images/createSTE.png)
 
 
 **Nota:** el precio por hora no se aplica a los entornos de un solo arrendatario. Un entorno de un solo arrendatario incluye un número fijo de **bloques** que se denominan cuotas. Un entorno pequeño contiene 64 bloques. Un entorno mediano contiene 128 bloques, y uno grande contiene 256 bloques.
 
-Un **bloque** se define de la forma siguiente:
+Un **bloque** se define de la forma siguiente.
   * 1 vCPU
   * 12.5 GB de disco[1]
   * 2 GB de RAM
@@ -65,18 +65,12 @@ Por ejemplo, suponga que tiene un entorno pequeño, que contiene 64 bloques. En 
 ## Entorno de red privada
 {: #private_network}
 
-Después de que se suministre su entorno de un solo arrendatario de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}, puede descargar las credenciales de VPN y establecer una conexión OpenVPN. Para obtener más información, consulte los siguientes enlaces:
+Después de que se suministre su entorno de un solo arrendatario, puede descargar las credenciales de VPN y establecer una conexión OpenVPN. Para obtener más información, consulte los siguientes enlaces:
 
-* [Acceso VPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [Configuración de OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [Acceso VPN](networkEnvironment.html#vpnAccess){: new_window}
+* [Configuración de OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## Gestión del entorno de un solo arrendatario
 {: #manageSTE}
 
-Para añadir capacidad a su entorno de un solo arrendatario de WebSphere Application Server existente en {{site.data.keyword.Bluemix_notm}} o para solicitar capacidad en otro centro de datos, póngase en contacto con los centros de atención al cliente de América, con el representante local de IBM o con su Business Partner de IBM. Para identificar el representante o socio correspondiente, llame al 800-426-4968. Para obtener más información, póngase en contacto con los centros de atención al cliente de América. Teléfono: 800-IBM-CALL (426-2255) Fax: 800-2IBM-FAX (242-6329).
-
-
-## Soporte al entorno de un solo arrendatario
-{: #supportingSTE}
-
-Si tiene problemas, puede recibir ayuda abriendo una incidencia de soporte, tal como se explica en la página [Obtención de soporte al cliente](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+Para añadir capacidad a su entorno de un solo arrendatario existente o para solicitar capacidad en otro centro de datos, póngase en contacto con los centros de atención al cliente de América, con el representante local de IBM o con su Business Partner de IBM. Consulte [Cómo ponerse en contacto con el equipo de ventas](reportingIssues.html#contacting-sales) para obtener más información.

@@ -46,8 +46,8 @@ lastupdated: "2018-08-22"
 스크립트를 실행하면 다음 조치를 수행합니다.
 
 * 실행 중인 모든 WebSphere Application Server 및 IBM HTTP Server 인스턴스 중지
-* Installation Manager, WebSphere Application Server, IBM HTTP Server 및 Java SDK에 대한 최신 수정팩의 선택적인 설치
-* WebSphere, IBM HTTP Server 및 Java SDK에 대한 최신 임시 수정사항 설치
+* 선택적으로 Installation Manager, WebSphere Application Server, IBM HTTP Server 및 Java&trade; SDK에 대한 최신 수정팩 설치
+* WebSphere, IBM HTTP Server 및 Java&trade; SDK에 대한 최신 임시 수정사항 설치
 * 모든 인스턴스 다시 시작
 
 #### 옵션
@@ -88,11 +88,11 @@ lastupdated: "2018-08-22"
 
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}는 `/home/virtuser/IBM/Installation Manager` 디렉토리에 설치되어 있으며 이를 직접 실행하여 수정사항과 수정팩을 적용할 수 있습니다.
 
-**문제 예방:** 기본 바이너리가 제한된 관리 가상 사용자인 **virtuser**로 설치되기 때문에 Installation Manager는 항상 **virtuser**로 실행되어야 합니다.
+**문제 예방:** 기본 바이너리 파일이 제한된 관리 가상 사용자인 `virtuser`로 설치되기 때문에 Installation Manager는 항상 `virtuser`로 실행되어야 합니다.
 
 ## 가상 머신에 시스템 업데이트 적용
 {:#vm-system-updates}
 
-가상 머신에 시스템 업데이트를 적용하는 것은 실제 RHEL(Red Hat Enterprise Linux) 시스템을 업데이트하는 것과 유사합니다. Yum 패키지 관리자를 사용하여 패키지를 설치, 업데이트, 설치 제거하고 그렇지 않은 경우 패키지를 관리할 수 있습니다. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 시스템은 IBM의 Red Hat Satellite 서버에서 업데이트를 받도록 구성되어 있습니다. 이 서버는 Red Hat 네트워크에서 안전한 패키지를 제공합니다. Satellite 서버는 IBM에서 관리하며 사용자 시스템에서 수정할 수 없습니다.
+가상 머신에 시스템 업데이트를 적용하는 것은 실제 RHEL(Red Hat Enterprise Linux&reg;) 시스템을 업데이트하는 것과 유사합니다. Yum 패키지 관리자를 사용하여 패키지를 설치, 업데이트, 설치 제거하고 그렇지 않은 경우 패키지를 관리할 수 있습니다. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 시스템은 IBM의 Red Hat Satellite 서버에서 업데이트를 받도록 구성되어 있습니다. 이 서버는 Red Hat 네트워크에서 안전한 패키지를 제공합니다. Satellite 서버는 IBM에서 관리하며 사용자 시스템에서 수정할 수 없습니다.
 
 자세한 정보는 [Red Hat Enterprise Linux에서 패키지 업데이트 적용](https://access.redhat.com/articles/11258#rhel6){: new_window} 및 [Red Hat 패키지 관리자 Yum](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}을 참조하십시오.

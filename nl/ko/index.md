@@ -24,7 +24,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 사전 구
 
 **참고:** 이제 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 인스턴스를 작성할 때 이용자가 현재 수정팩 레벨 또는 이전 버전[(n 또는 n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} 사이에서 선택할 수 있습니다.
 
-사용자에게 비슷한 WebSphere 관리 환경이 제공되며 기본 운영 체제에 대한 전체 액세스 권한이 있습니다. 기존 스크립트를 재사용하고 자체 프레임워크 또는 써드파티 프레임워크에서 작업하도록 필요에 따라 시스템을 약간 수정할 수 있습니다. 온프레미스 WebSphere 구성과 마찬가지로 WebSphere Application Server Liberty, ND 또는 Traditional 서비스를 관리하도록 Admin Center와 Admin Console이 제공됩니다.
+사용자에게 비슷한 WebSphere 관리 환경이 제공되며 기본 운영 체제에 대한 전체 액세스 권한이 있습니다. 기존 스크립트를 재사용하고 자체 프레임워크 또는 서드파티 프레임워크에서 작업하도록 필요에 따라 시스템을 약간 수정할 수 있습니다. 온프레미스 WebSphere 구성과 마찬가지로 WebSphere Application Server Liberty, ND 또는 Traditional 서비스를 관리하도록 Admin Center와 Admin Console이 제공됩니다.
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜은 둘 이상의 가상 머신이 있는 WebSphere Application Server Network Deployment 셀 환경으로 구성됩니다. 첫 번째 가상 머신에는 배치 관리자와 IBM HTTP Server가 포함되어 있고, 나머지 가상 머신에는 배치 관리자에 연합된 사용자 정의 노드(노드 에이전트)가 포함되어 있습니다. 기존 wsadmin 스크립트를 사용하여 WebSphere 구성을 작성하거나 WebSphere Admin Console을 사용하여 수동으로 환경을 구성하십시오. 이러한 새 기능을 통해 사용자가 클러스터 환경을 설정할 수 있으며, 이는 미들웨어 엔터프라이즈 애플리케이션의 중요한 측면입니다. 이제 클라이언트는 토폴로지를 클러스터링하여 두 개 이상의 인스턴스에서 요청을 로드 밸런싱하도록 선택할 수 있습니다.
 

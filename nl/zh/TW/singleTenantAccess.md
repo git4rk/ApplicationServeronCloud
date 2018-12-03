@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,34 +21,34 @@ lastupdated: "2018-06-08"
 ## 存取單一承租戶環境
 {: #accessSTE}
 
-1. 在瀏覽器中，移至 [{{site.data.keyword.cloud_notm}} 型錄](https://console.bluemix.net/catalog/){: new_window}。
+1. 在瀏覽器中，移至 [{{site.data.keyword.cloud_notm}} 型錄](https://{DomainName}/catalog/){: new_window}。
 
 2. 按一下**登入**，然後使用您的 IBM ID 登入。
 
-6. 在「型錄」搜尋過濾器中，輸入 **WebSphere Application Server**。
+6. 在型錄搜尋過濾器中，輸入 **WebSphere Application Server**。
 
-    ![替代文字](images/filter.png "搜尋過濾器")
+    ![搜尋過濾器](images/filter.png)
 
 7. 在**應用程式服務**下，按一下 **WebSphere Application Server** 磚。
 
-    ![替代文字](images/iconWAS.png "WebSphere Application Server 磚")
+    ![WebSphere Application Server 磚](images/iconWAS.png)
 
 8. 在**環境**功能表中，選取單一承租戶環境。
 
-    ![替代文字](images/environmentSTE.png "單一承租戶環境名稱")
+    ![單一承租戶環境名稱](images/environmentSTE.png)
 
     **避免麻煩：**公用環境可能會顯示為預設值。顯示正確的環境名稱，會假設您登入正確的地區，以及容許存取「單一承租戶環境」的組織成員。
 
-    **附註：**如果您選取其中一個公用環境，則可能會產生每小時費用。因此，如果您看不到「單一承租戶環境」名稱，則請開立「支援問題單」（如[取得客戶支援](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}頁面所定義）。
+    **附註：**如果您選取其中一個公用環境，則可能會產生每小時費用。因此，如果您看不到「單一承租戶環境」名稱，則請開立「支援問題單」（如[取得協助](reportingIssues.html){: new_window}頁面中所述）。
 
 9. 選取適當的方案，然後按一下**建立**。
 
-    ![替代文字](images/createSTE.png "選擇方案並建立服務")
+    ![選擇方案並建立服務](images/createSTE.png)
 
 
 **附註：**每小時定價不適用於「單一承租戶環境」。「單一承租戶環境」包括稱為配額的固定**區塊**數目。小型環境包含 64 個區塊。中型包含 128 個區塊，而大型包含 256 個區塊。
 
-**區塊**定義如下：
+**區塊**定義如下。
   * 1 個 vCPU
   * 12.5 GB 的磁碟[1]
   * 2 GB RAM
@@ -65,18 +65,12 @@ lastupdated: "2018-06-08"
 ## 專用網路環境
 {: #private_network}
 
-佈建「WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}：單一承租戶環境」之後，您可以下載 VPN 認證，並建立 OpenVPN 連線。如需相關資訊，請參閱下列鏈結：
+佈建單一承租戶環境之後，您可以下載 VPN 認證，並建立 OpenVPN 連線。如需相關資訊，請參閱下列鏈結：
 
-* [VPN 存取](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [設定 OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [VPN 存取](networkEnvironment.html#vpnAccess){: new_window}
+* [設定 OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## 管理單一承租戶環境
 {: #manageSTE}
 
-若要在現有「WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}：單一承租戶環境」中新增額外容量，或若要在另一個資料中心內訂購容量，請聯絡「美國電話客服中心」、當地 IBM 業務代表或「IBM 事業夥伴」。若要知道您的業務代表或夥伴，請致電 800-426-4968。如需相關資訊，請聯絡「美國電話客服中心」。電話：800-IBM-CALL (426-2255) 傳真：800-2IBM-FAX (242-6329)。
-
-
-## 支援單一承租戶環境
-{: #supportingSTE}
-
-如果您遇到問題，請開立「支援問題單」（如[取得客戶支援](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}頁面所定義）來取得協助。
+若要在現有單一承租戶環境中新增額外容量，或若要在另一個資料中心內訂購容量，請聯絡「美國電話客服中心」、當地 IBM 業務代表或「IBM 事業夥伴」。如需詳細資料，請參閱[聯絡銷售人員](reportingIssues.html#contacting-sales)。

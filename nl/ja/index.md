@@ -105,7 +105,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} は T シ
 ### 予約契約
 {:#reserve-contract}
 
-予約契約課金では、月額前払のサブスクリプション料金を支払います。これにより、物理的に予約された計算リソースのブロックへのアクセスが保証されます。 これらのサービス・ブロックは、そのユーザー専用として予約され、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の他のユーザーに対して使用できる容量ではなくなります。 既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを使用する請求レートの低い、「独自ライセンス使用」の予約契約を選択できます。予約契約課金をセットアップするには、[IBM 営業担当員にお問い合わせ](reportingIssues.html#contacting-sales)ください。
+予約契約課金では、月額前払のサブスクリプション料金を支払います。これにより、物理的に予約された計算リソースのブロックへのアクセスが保証されます。 これらのサービス・ブロックは、そのユーザー専用として予約され、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の他のユーザーに対して使用できる容量ではなくなります。 既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを使用する請求レートの低い、「独自ライセンス使用」の予約契約を選択できます。 予約契約課金をセットアップするには、[IBM 営業担当員にお問い合わせ](reportingIssues.html#contacting-sales)ください。
 
 サブスクリプションは、8 ブロック単位で増やすことができます。 合計ブロック時間は、その月の時間数に基づきますが、その月の間はずっとブロック時間を使用できます。 例えば、30 日の月は、換算すると 720 時間で、これに 8 ブロックのサブスクリプションを乗算すると、ブロック時間は合計 5,760 となります。
 

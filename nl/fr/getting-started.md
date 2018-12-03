@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,7 +23,7 @@ Avec {{site.data.keyword.appserver_full}}, vous pouvez définir un environnement
 ## Avant de commencer
 {: #prereqs}
 
-Si vous voulez un environnement disposant de plus de ressources de machines virtuelles dédiées, de type contrat avec réservation ou environnement à service exclusif, contactez IBM Sales avant de créer le service. Découvrez ces options plus en détail dans la rubrique [A propos](index.html).
+Si vous voulez un environnement disposant de plus de ressources de machines virtuelles dédiées, de type contrat de réservation ou environnement à service exclusif, contactez IBM Sales avant de créer le service. Découvrez ces options plus en détail dans la rubrique [A propos](index.html).
 
 ### Migration d'un environnement WebSphere existant
 
@@ -34,15 +34,15 @@ Les étapes de création d'un nouvel environnement dans {{site.data.keyword.apps
 ## Etape 1 : création du service
 {: #create}
 
-1. Accédez à la page [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server) du catalogue {{site.data.keyword.cloud_notm}}.
+1. Accédez à la page [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server) du catalogue {{site.data.keyword.cloud_notm}}.
 1. Connectez-vous avec votre ID IBMid ou inscrivez-vous pour un compte {{site.data.keyword.cloud_notm}}.
 1. Sur la page du catalogue, passez en revue les sélections pour la configuration de service.
 
   Pour des environnements avec tarification à l'utilisation, utilisez les sélections par défaut ou modifiez-les pour les adapter à vos besoins.
 
-  Si vous disposez d'un environnement de type contrat avec réservation ou d'un environnement à service exclusif, tenez compte des options suivantes :
+  Si vous disposez d'un environnement de type contrat de réservation ou d'un environnement à service exclusif, tenez compte des options suivantes :
 
-  * **Contrat avec réservation :** sous **Sélectionnez une région/un emplacement où effectuer le déploiement**, vérifiez que la région sélectionnée correspond bien à celle de votre contrat.
+  * **Contrat de réservation :** sous **Sélectionnez une région/un emplacement où effectuer le déploiement**, vérifiez que la région sélectionnée correspond bien à celle de votre contrat.
 
   * **Environnement à service exclusif : ** sous **Sélectionnez une région/un emplacement où effectuer le déploiement**, vérifiez que la zone sélectionnée est la région dans laquelle votre environnement à service exclusif est déployé. Sous **Environnement**, sélectionnez votre environnement à service exclusif. Par défaut, l'environnement public doit s'afficher.
 
@@ -66,7 +66,7 @@ Pour le plan Network Deployment, choisissez le profil et l'architecture pour vot
 ## Etape 3 : dimensionnement de vos machines virtuelles
 {: #vm_sizing}
 
-Vous pouvez dimensionner la machine virtuelle individuellement pour chaque composant de votre environnement. Le dimensionnement de machine virtuelle est mémorisé en blocs de ressources de [taille standard](index.html#vm-size).
+Vous pouvez dimensionner la machine virtuelle individuellement pour chaque composant de votre environnement. Les machines virtuelle sont mémorisées en blocs de ressources de [taille standard](index.html#vm-size).
 
 Cliquez sur l'onglet pour le composant (serveur, gestionnaire de déploiement ou noeud d'application, par exemple) et sélectionnez la taille standard pour la machine virtuelle.
 
@@ -75,7 +75,7 @@ Cliquez sur l'onglet pour le composant (serveur, gestionnaire de déploiement ou
 
 Vérifiez les informations figurant dans le récapitulatif de la configuration du service, dont la durée estimée pour la mise à disposition.
 
-**Contrat de réservation** : assurez-vous que l'option **Facturation** a pour valeur _Contrat de réservation_. Si l'option n'est pas visible, assurez-vous que le nom de [votre organisation](../../account/orgs_spaces.html){:new_window} est exactement le même, casse et espaces blancs compris, que le nom d'organisation pour votre contrat. Si vous mettez à disposition le service sans sélectionner la facturation avec contrat de réservation, la facturation Paiement à la carte est utilisée. 
+**Contrat de réservation :** assurez-vous que l'option **Facturation** est définie sur _Contrat de réservation_. Si l'option n'est pas visible, assurez-vous que le nom de [votre organisation](../../account/orgs_spaces.html){:new_window} est exactement le même, casse et espaces blancs compris, que le nom d'organisation pour votre contrat. Si vous mettez à disposition le service sans sélectionner la facturation avec contrat de réservation, la facturation Paiement à la carte est utilisée.
 
 Cliquez sur **Mettre à disposition** pour configurer votre environnement {{site.data.keyword.appserver_short}}.
 

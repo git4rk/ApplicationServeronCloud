@@ -34,7 +34,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deplo
 
 下图显示了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 单元和 Liberty 集合体环境的体系结构。
 
-图 1. Network Deployment 单元和 Liberty 集合的体系结构
+图 1. Network Deployment 单元和 Liberty 集合体的体系结构
 
 ![图 1. Network Deployment 单元和 Liberty 集合体的体系结构](images/CellCollectiveDiagram.gif)
 

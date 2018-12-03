@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -24,7 +24,7 @@ lastupdated: "2018-04-06"
 ## VPN 存取
 {: #vpnAccess}
 
-在 {{site.data.keyword.Bluemix_notm}} 使用者介面中，從「服務儀表板」佈建 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務實例之後，您可以展開下拉功能表，並使用**下載 VPN 配置**按鈕下載 VPN 配置，來建立 OpenVPN 連線。VPN 配置包含 **.ovpn** 檔案，以及用來向 OpenVPN 伺服器進行鑑別的憑證。建立 OpenVPN 連線之後，您接著可以透過 SSH 存取 VM。您也可以存取「Liberty 管理中心」、傳統「WebSphere 管理主控台」，以及應用程式。
+在 {{site.data.keyword.Bluemix_notm}} 使用者介面中，從服務儀表板佈建 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務實例之後，您可以建立 OpenVPN 連線。若要建立連線，請展開下拉功能表並按一下**下載 VPN 配置**，以便下載您的 VPN 配置。VPN 配置包含 `.ovpn` 檔案，以及用來向 OpenVPN 伺服器進行鑑別的憑證。建立 OpenVPN 連線之後，您接著可以透過 SSH 存取 VM。您也可以存取「Liberty 管理中心」、傳統「WebSphere 管理主控台」，以及應用程式。
 
 VPN 配置的範圍限定為您的組織及地區。從建立時間算起的一年內有效。您可以使用相同的 VPN 配置同時建立多個 OpenVPN 用戶端連線。
 
@@ -33,58 +33,60 @@ VPN 配置的範圍限定為您的組織及地區。從建立時間算起的一�
 ## 進階 VPN 配置管理
 {: #advancedVPN}
 
-在大部分情況下，您只需要可使用**下載 VPN 配置**按鈕來下載的單一 VPN 配置。不過，您可以從 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」中使用**進階 VPN 管理**按鈕來存取進階 VPN 管理頁面，而此頁面可讓您建立及管理多個 VPN 配置。舊 VPN 配置即將到期時，具有多個配置可能有助於平順地轉移至新的 VPN 配置。您也可以要求多個 VPN 配置，以管理 VM 與組織中不同個人或團隊的存取權。  
+在大部分情況下，您只需要可使用**下載 VPN 配置**按鈕來下載的單一 VPN 配置。不過，您可以按一下服務儀表板上的**進階 VPN 管理**以存取進階 VPN 管理頁面，它會讓您建立及管理多個 VPN 配置。舊 VPN 配置即將到期時，具有多個配置可能有助於平順地轉移至新的 VPN 配置。您也可以要求多個 VPN 配置，以管理 VM 與組織中不同個人或團隊的存取權。  
 
 **附註：**您隨時可以對組織使用**最多** 10 個作用中 VPN 配置。
 
 如果您的 VPN 配置受損或過期，則可以使用進階 VPN 管理頁面來撤銷 VPN 配置。此外，從審核角度而言，您可以檢視所有 VPN 管理活動的歷程，以及下載先前從進階 VPN 管理頁面建立的作用中 VPN 配置。
 
-使用 REST API，也可以對 {{site.data.keyword.Bluemix_notm}} 使用者介面之「服務儀表板」中可用的所有特性進行 Script 化。如需相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}。
+使用 REST API，也可以對 {{site.data.keyword.Bluemix_notm}} 使用者介面之服務儀表板中可用的所有特性進行 Script 化。如需相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}。
 
 
 ## 公用網際網路存取
 {: #publicInternetAccess}
 
-您可以選擇從 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」中管理公用網際網路存取。您可以**要求**儲存區中的公用 IP 位址，以及**開啟**從網際網路到 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務實例的連線。反之，您可以**關閉**從服務實例到網際網路的存取，以及將公用 IP 位址**傳回**給儲存區。
+您可以選擇從 {{site.data.keyword.Bluemix_notm}} 使用者介面的服務儀表板中管理公用網際網路存取。您可以**要求**儲存區中的公用 IP 位址，以及**開啟**從網際網路到 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務實例的連線。反之，您可以**關閉**從服務實例到網際網路的存取，以及將公用 IP 位址**傳回**給儲存區。
 
-若要**要求**公用 IP 位址，並**開啟**連線，請遵循以下指示：
+### 要求公用 IP 位址並開啟連線
+{: #request-open-ip}
 
-1. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」上，按一下**管理公用 IP 存取**。
+1. 在 {{site.data.keyword.Bluemix_notm}} 主控台的服務儀表板上，按一下**管理公用 IP 存取**。
 2. 即會顯示主機的 IP 位址，但未顯示您的公用 IP 位址。按一下**要求公用 IP 位址**。
 
-    **附註：**您會回到已指派公用 IP 的「服務儀表板」。不過，會顯示下列訊息：
+    您會回到服務儀表板，並且獲得指派公用 IP。不過，會顯示下列訊息：
 
-    > **目前已關閉存取權。按一下「管理公用 IP」以開啟存取權。**
-3. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」上，按一下**管理公用 IP 存取**。
+    > _目前已關閉存取權。按一下「管理公用 IP」以開啟存取權。_
+3. 在服務儀表板上，按一下**管理公用 IP 存取**。
 4. 即會顯示主機的 IP 位址及新的公用 IP，但會關閉存取。按一下**開啟存取權**。
 
-    **附註：**您會回到已顯示下列訊息的「服務儀表板」：
+    您會回到服務儀表板，其中會顯示下列訊息：
 
-    > **目前已開啟存取權。按一下「管理公用 IP」以關閉存取權。**
+    > _目前已開啟存取權。按一下「管理公用 IP」以關閉存取權。_
 
-若要**關閉**連線，並**傳回**公用 IP 位址，請遵循以下指示：
+### 關閉連線並傳回公用 IP 位址
+{: #close-return-ip}
 
-1. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」上，按一下**管理公用 IP 存取**。
+1. 在服務儀表板上，按一下**管理公用 IP 存取**。
 2. 按一下**關閉存取權**。
 
-    **附註：**您會回到已顯示下列訊息的「服務儀表板」：
+    您會回到服務儀表板，並且會顯示下列訊息：
 
-    > **目前已關閉存取權。按一下「管理公用 IP」以開啟存取權。**
-3. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面的「服務儀表板」上，按一下**管理公用 IP 存取**。
+    > _目前已關閉存取權。按一下「管理公用 IP」以開啟存取權。_
+3. 在 {{site.data.keyword.Bluemix_notm}} 使用者介面的服務儀表板上，按一下**管理公用 IP 存取**。
 4. 按一下**傳回公用 IP 位址**。
 
-    **附註：**您會回到「服務儀表板」，其中主機的 IP 位址會與下列訊息一起顯示：
+    您會回到服務儀表板，其中會顯示您的主機 IP 位址與下列訊息：
 
-    > **已傳回「公用 IP」。**
+    > _已傳回「公用 IP」。_
 
 ## 公用 IP 埠
 {: #publicIPports}
 
-當您開放公用 IP 的存取權時，IP 位址會與您的 VM 相關聯，且會在閘道開啟埠 80 和 443。不過，依預設，Liberty Core 和傳統 WebSphere Base 伺服器不會開啟埠 80 和 443。相反地，IBM HTTP Server 上的埠 80 和 443 會依預設開啟。因此，當您使用公用 IP 時，可能需要配置 Liberty Core 與傳統 WebSphere Base 伺服器，以在埠 80/443 上接聽應用程式資料流量。
+當您開放公用 IP 的存取權時，IP 位址會與您的 VM 相關聯，且會在閘道開啟埠 80 和 443。不過，依預設，Liberty Core 和傳統 WebSphere Base 伺服器不會開啟埠 80 和 443。相反地，IBM HTTP Server 上的埠 80 和 443 會依預設開啟。因此，當您使用公用 IP 時，可能需要配置 Liberty Core 與傳統 WebSphere Base 伺服器，以在埠 80 和 443 上接聽應用程式資料流量。
 * 若要配置 Liberty Core 伺服器，請參閱[配置 Liberty Core 伺服器，以進行公用存取](networkEnvironment.html#configureLibertyForPublicAccess)。
-* 若要配置傳統 WebSphere Base 伺服器，請新增一個 Web 容器傳輸鏈，接聽埠 80/443，如[配置傳輸鏈](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}中所述。
+* 若要配置傳統 WebSphere Base 伺服器，請新增一個 Web 容器傳輸鏈，接聽埠 80 和 443，如[配置傳輸鏈](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}中所述。
 
-**避免麻煩：**Linux 會針對特許使用者（例如 **root**）保留小於 1024 的埠。不過，通常會以**非 root** 使用者身分執行傳統 WebSphere Base 伺服器。因此，當您新增 Web 容器傳輸鏈時，請以 **root** 使用者身分變更 **iptables** 配置。具體而言，會將受限埠 80 及 443 重新導向至 1024 以上的另一個埠（例如 9080 和 9443）。下列指令提供此處理程序的範例：
+**避免麻煩：**Linux 會針對特許使用者（例如 **root**）保留小於 1024 的埠。不過，通常會以**非 root** 使用者身分執行傳統 WebSphere Base 伺服器。因此，當您新增 Web 容器傳輸鏈時，請以 **root** 使用者身分變更 **iptables** 配置。具體而言，會將受限埠 80 及 443 重新導向至高於 1024 的另一個埠（例如 9080 和 9443）。下列指令提供此處理程序的範例：
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
@@ -130,14 +132,14 @@ COMMIT
 ## VPN 專用 IP 埠
 {: #privateIPports}
 
-您透過 VPN 連線來連接 VM 的專用 IP 位址。您的「Liberty 管理中心」（9080、9443）、傳統「WebSphere 管理主控台」（9060、9043）、SSH (22) 和非 80/443 的埠，只能透過 VPN 連線存取，如圖 1 中所描述。請參閱範例 Liberty Core **server.xml** 和 **ibm-web-bnd.xml**，以取得區隔「Liberty 管理中心」與您應用程式埠的詳細資料。
+您透過 VPN 連線來連接 VM 的專用 IP 位址。您的「Liberty 管理中心」（9080、9443）、傳統「WebSphere 管理主控台」（9060、9043）、SSH (22) 和非 80 和 443 的埠，只能透過 VPN 連線存取，如圖 1 中所描述。請參閱範例 Liberty Core **server.xml** 和 **ibm-web-bnd.xml**，以取得區隔「Liberty 管理中心」與您應用程式埠的詳細資料。
 
 **避免麻煩：**對於 Liberty Core 和傳統 WebSphere Base 伺服器而言，防火牆埠會在佈建 VM 時預先配置。不過，對於 Network Deployment 配置而言，部署管理程式或群體控制器是與 IBM HTTP Server 並置，因此您可能需要在防火牆上開啟埠。如需詳細資料，請參閱[防火牆埠](systemAccess.html#firewall_ports)。
 
 ## 配置 Liberty Core 伺服器的公用 IP 存取
 {: #configureLibertyForPublicAccess}
 
-當您使用公用 IP 時，您需要配置 Liberty Core，以在埠 80/443 上接聽應用程式資料流量。
+當您使用公用 IP 時，您需要配置 Liberty Core，以在埠 80 和 443 上接聽應用程式資料流量。
 
 依預設，Liberty 的配置會在 **default_host** 虛擬主機上提供「Liberty 管理中心」以及應用程式，此虛擬主機會與埠 9080 和 9443 上的 **defaultHttpEndpoint** 相關聯。請重新配置伺服器，以區隔「Liberty 管理中心」與應用程式虛擬主機和端點，並在不同的埠上提供它們。
 
@@ -173,7 +175,7 @@ COMMIT
 ```
 {: codeblock}
 
-現在，請建立您的應用程式與 **external_host** 虛擬主機的關聯，方法是在應用程式的 **WEB-INF/ibm-web-bnd.xml** 檔案中包括下列 Snippet：
+現在，請建立您的應用程式與 `external_host` 虛擬主機的關聯，方法是在應用程式的 `WEB-INF/ibm-web-bnd.xml` 檔案中包括下列 Snippet：
 
 ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -194,17 +196,17 @@ COMMIT
 
 請務必注意，WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 已配置兩個 DNS 解析器。解析器配置於 VM 的 **/etc/resolv.conf** 檔案中。主要 DNS 伺服器是 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務所提供的非授權性伺服器。次要 DNS 伺服器是 {{site.data.keyword.Bluemix_notm}} 所提供的非授權性伺服器。
 
-建議您檢閱 DNS 配置，以查看它是否符合您的需要。您可以更新 **/etc/resolv.conf** 檔案，以參照您選擇的 DNS 伺服器（如果 IBM 提供的 DNS 伺服器不符合您的需求）。
+建議您檢閱 DNS 配置，以查看它是否符合您的需要。您可以更新 `/etc/resolv.conf` 檔案，以參照您選擇的 DNS 伺服器（如果 IBM 提供的 DNS 伺服器不符合您的需求）。
 
-**附註：**較舊的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 可能只在 **/etc/resolv.conf** 檔案中配置主要 DNS 伺服器。如果您想要 HA 解決方案，則可以釋放 VM，並佈建新的 VM，或更新 **/etc/resolv.conf** 檔案來新增次要 DNS 伺服器。這可以是您偏好的 DNS 伺服器或 {{site.data.keyword.Bluemix_notm}} 所提供的 DNS 伺服器 (10.0.80.11)。
+**附註：**較舊的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 可能只在 `/etc/resolv.conf` 檔案中配置主要 DNS 伺服器。如果您想要 HA 解決方案，則可以釋放 VM，並佈建新的 VM，或更新 `/etc/resolv.conf` 檔案來新增次要 DNS 伺服器。次要 DNS 伺服器可以是您偏好的 DNS 伺服器或 {{site.data.keyword.Bluemix_notm}} 所提供的 DNS 伺服器 (10.0.80.11)。
 
 
 ## 在自訂節點上開啟新伺服器的埠
 {: #serversOnCustom}
 
-當您在自訂節點上建立伺服器時，必須先在部署管理程式及自訂節點 VM 上開啟該伺服器所需的其他埠，然後再啟動伺服器。在您建立伺服器之後，但在啟動伺服器之前，請執行 `openWASPorts.sh` Script 來開啟埠：
+當您在自訂節點上建立伺服器時，必須先在部署管理程式及自訂節點 VM 上開啟該伺服器所需的其他埠，然後再啟動伺服器。在您建立伺服器之後，但在啟動伺服器之前，請執行 `openWASPorts.sh` Script 來開啟埠。
 
  1. 以 root 使用者身分登入每一個部署管理程式及自訂 VM。
  1. 執行 `/opt/IBM/WebSphere/AppServer/virtual/bin/openWASPorts.sh` Script 以開啟埠。
- 
+
 在您執行 Script 之後，可以從部署管理程式管理主控台啟動伺服器。

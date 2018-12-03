@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,29 +21,29 @@ lastupdated: "2018-06-08"
 ## 访问 Single Tenant Environment
 {: #accessSTE}
 
-1. 在浏览器中，转至 [{{site.data.keyword.cloud_notm}} 目录](https://console.bluemix.net/catalog/){: new_window}。
+1. 在浏览器中，转至 [{{site.data.keyword.cloud_notm}} 目录](https://{DomainName}/catalog/){: new_window}。
 
 2. 单击**登录**，然后使用您的 IBM 标识登录。
 
 6. 在目录搜索过滤器中，输入 **WebSphere Application Server**。
 
-    ![替代文本](images/filter.png "搜索过滤器")
+    ![搜索过滤器](images/filter.png)
 
 7. 在**应用程序服务**下，单击 **WebSphere Application Server** 磁贴。
 
-    ![替代文本](images/iconWAS.png "WebSphere Application Server 磁贴")
+    ![WebSphere Application Server 磁贴](images/iconWAS.png)
 
 8. 在**环境**菜单中，选择您的 Single Tenant Environment。
 
-    ![替代文本](images/environmentSTE.png "Single Tenant Environment 名称")
+    ![Single Tenant Environment 名称](images/environmentSTE.png)
 
-    **应避免的问题：**公共环境可能显示为缺省值。显示正确的环境名称将假定您已登录到正确的区域，并且允许组织的某个成员访问您的 Single Tenant Environment。
+    **应注意的问题：**公共环境可能显示为缺省值。显示正确的环境名称将假定您已登录到正确的区域，并且允许组织的某个成员访问您的 Single Tenant Environment。
 
-    **注：**如果选择其中一个公共环境，那么可能会发生每小时费用。因此，如果看不到您的 Single Tenant Environment 名称，请开具支持凭单，如[获取客户支持](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}页面上所定义。
+    **注：**如果选择其中一个公共环境，那么可能会发生每小时费用。因此，如果看不到您的 Single Tenant Environment 名称，请开具支持凭单，如[获取帮助](reportingIssues.html){: new_window}页面中所述。
 
 9. 选择相应的套餐，然后单击**创建**。
 
-    ![替代文本](images/createSTE.png "选择套餐并创建服务")
+    ![选择套餐并创建服务](images/createSTE.png)
 
 
 **注：**每小时定价不适用于 Single Tenant Environment。Single Tenant Environment 包含固定数量的**块**，这称为配额。小型环境包含 64 个块。中型环境包含 128 个块，大型环境包含 256 个块。
@@ -65,18 +65,12 @@ lastupdated: "2018-06-08"
 ## 专用网络环境
 {: #private_network}
 
-供应 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment 之后，您可以下载 VPN 凭证并建立 OpenVPN 连接。有关更多信息，请参阅以下链接：
+供应 Single Tenant Environment 之后，可以下载 VPN 凭证并建立 OpenVPN 连接。有关更多信息，请参阅以下链接：
 
-* [VPN 访问](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [设置 OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [VPN 访问](networkEnvironment.html#vpnAccess){: new_window}
+* [设置 OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## 管理 Single Tenant Environment
 {: #manageSTE}
 
-要向现有 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment 添加额外容量或订购其他数据中心的容量，请联系美洲呼叫中心、当地 IBM 代表或您的 IBM 业务合作伙伴。要识别代表或合作伙伴，请拨打 800-426-4968。有关更多信息，请联系美洲呼叫中心。电话：800-IBM-CALL (426-2255) 传真：800-2IBM-FAX (242-6329)。
-
-
-## 支持 Single Tenant Environment
-{: #supportingSTE}
-
-如果遇到问题，您可以开具支持凭单来获取帮助，如[获取客户支持](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}页面上所定义。
+要向现有 Single Tenant Environment 添加额外容量或订购其他数据中心的容量，请联系美洲呼叫中心、当地 IBM 代表或您的 IBM 业务合作伙伴。请参阅[联系销售人员](reportingIssues.html#contacting-sales)以获取详细信息。
