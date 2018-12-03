@@ -46,8 +46,8 @@ lastupdated: "2018-08-22"
 執行 Script 會執行下列動作：
 
 * 停止所有執行中的 WebSphere Application Server 及 IBM HTTP Server 實例
-* 選擇性地安裝 Installation Manager、WebSphere Application Server、IBM HTTP Server 及 Java SDK 的最新修正套件
-* 安裝 WebSphere、IBM HTTP Server 及 Java SDK 的最新臨時修正程式
+* （選用）安裝 Installation Manager、WebSphere Application Server、IBM HTTP Server 及 Java&trade; SDK 的最新修正套件
+* 安裝 WebSphere、IBM HTTP Server 及 Java&trade; SDK 的最新臨時修正程式
 * 重新啟動所有實例
 
 #### 選項
@@ -88,11 +88,11 @@ lastupdated: "2018-08-22"
 
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} 安裝在 `/home/virtuser/IBM/Installation Manager` 目錄中，而且可以直接執行以套用修正程式及修正套件。
 
-**避免麻煩：**因為是以 **virtuser**（有限管理虛擬使用者）身分安裝基礎二進位，所以請確保一律以 **virtuser** 身分執行 Installation Manager。
+**避免麻煩：**因為是以 `virtuser`（有限管理虛擬使用者）身分安裝基礎二進位檔，所以請確保一律以 `virtuser` 身分執行 Installation Manager。
 
 ## 將系統更新項目套用至虛擬機器
 {:#vm-system-updates}
 
-在虛擬機器上套用系統更新項目類似於更新實體 Red Hat Enterprise Linux (RHEL) 系統。使用 Yum 套件管理程式，即可安裝、更新、解除安裝以及管理套件。WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 系統配置為接收來自 IBM Red Hat Satellite Server 的更新項目，而該伺服器從 Red Hat 網路提供安全的套件。Satellite Server 由 IBM 管理，且無法從您的系統修改。
+在虛擬機器上套用系統更新項目類似於更新實體 Red Hat Enterprise Linux&reg; (RHEL) 系統。使用 Yum 套件管理程式，即可安裝、更新、解除安裝以及管理套件。WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 系統配置為接收來自 IBM Red Hat Satellite Server 的更新項目，而該伺服器從 Red Hat 網路提供安全的套件。Satellite Server 由 IBM 管理，且無法從您的系統修改。
 
 如需相關資訊，請參閱 [Applying package updates on Red Hat Enterprise Linux 6](https://access.redhat.com/articles/11258#rhel6){: new_window} 及 [Yum](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}（Red Hat 套件管理程式）。

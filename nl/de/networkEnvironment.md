@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-04-06"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -24,7 +24,7 @@ Abbildung 1. Clientansicht des Multi-Tenant-Netzbetriebs mit öffentlicher IP-Ad
 ## VPN-Zugriff
 {: #vpnAccess}
 
-Nachdem Sie eine Serviceinstanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle bereitgestellt haben, können Sie eine OpenVPN-Verbindung einrichten, indem Sie das Dropdown-Menü erweitern und Ihre VPN-Konfiguration über die Schaltfläche **VPN-Konfiguration herunterladen** herunterladen. Die VPN-Konfiguration enthält eine **.ovpn**-Datei und Zertifikate, die für die Authentifizierung beim OpenVPN-Server verwendet werden. Nach dem Einrichten der OpenVPN-Verbindung können Sie über SSH auf Ihre virtuelle Maschine zugreifen. Darüber hinaus können Sie auf das Liberty Admin Center, die klassische WebSphere-Administrationskonsole und Anwendungen zugreifen.
+Nachdem Sie eine Serviceinstanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle bereitgestellt haben, können Sie eine OpenVPN-Verbindung einrichten. Für die Erstellung der Verbindung erweitern Sie das Dropdown-Menü und klicken auf **VPN-Konfiguration herunterladen**, um Ihre VPN-Konfiguration herunterzuladen. Die VPN-Konfiguration enthält eine `.ovpn`-Datei und Zertifikate, die für die Authentifizierung beim OpenVPN-Server verwendet werden. Nach dem Einrichten der OpenVPN-Verbindung können Sie über SSH auf Ihre virtuelle Maschine zugreifen. Darüber hinaus können Sie auf das Liberty Admin Center, die klassische WebSphere-Administrationskonsole und Anwendungen zugreifen.
 
 Die VPN-Konfiguration wird an Ihre Organisation und Region angepasst. Sie ist vom Erstellungszeitpunkt an für einen Zeitraum von einem Jahr gültig. Mehrere OpenVPN-Clientverbindungen können gleichzeitig eingerichtet werden, indem dieselbe VPN-Konfiguration verwendet wird.
 
@@ -33,7 +33,7 @@ Die VPN-Konfiguration wird an Ihre Organisation und Region angepasst. Sie ist vo
 ## Erweiterte VPN-Konfigurationsverwaltung
 {: #advancedVPN}
 
-In den meisten Fällen benötigen Sie nur eine einzelne VPN-Konfiguration, die Sie über die Schaltfläche **VPN-Konfiguration herunterladen** herunterladen können. Auf der Seite für die erweiterte VPN-Verwaltung, auf die Sie über die Schaltfläche **Erweiterte VPN-Verwaltung** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle zugreifen können, ist es jedoch möglich, mehrere VPN-Konfigurationen zu erstellen und zu verwalten. Mehrere Konfigurationen können nützlich sein, um einen reibungslosen Übergang auf eine neue VPN-Konfiguration zu ermöglichen, wenn die alte Konfiguration abläuft. Darüber hinaus können Sie mehrere VPN-Konfigurationen anfordern, um den Zugriff auf Ihre virtuellen Maschinen für mehrere Personen oder Teams in Ihrer Organisation zu verwalten.  
+In den meisten Fällen benötigen Sie nur eine einzelne VPN-Konfiguration, die Sie über die Schaltfläche **VPN-Konfiguration herunterladen** herunterladen können. Auf der Seite für die erweiterte VPN-Verwaltung, auf die Sie über die Schaltfläche **Erweiterte VPN-Verwaltung** im Service-Dashboard zugreifen können, ist es jedoch möglich, mehrere VPN-Konfigurationen zu erstellen und zu verwalten. Mehrere Konfigurationen können nützlich sein, um einen reibungslosen Übergang auf eine neue VPN-Konfiguration zu ermöglichen, wenn die alte Konfiguration abläuft. Darüber hinaus können Sie mehrere VPN-Konfigurationen anfordern, um den Zugriff auf Ihre virtuellen Maschinen für mehrere Personen oder Teams in Ihrer Organisation zu verwalten.  
 
 **Hinweis:** Es sind jeweils **maximal** 10 aktive VPN-Konfigurationen für Ihre Organisation gleichzeitig zulässig.
 
@@ -45,46 +45,48 @@ Alle Features, die über das Service-Dashboard in der {{site.data.keyword.Bluemi
 ## Zugriff auf das öffentliche Internet
 {: #publicInternetAccess}
 
-Optional können Sie den Zugriff auf das öffentliche Internet über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verwalten. Sie können eine öffentliche IP-Adresse aus dem Pool **anfordern** und die Verbindung vom Internet zu Ihrer Serviceinstanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} **öffnen**. Umgekehrt können Sie den Zugriff von Ihrer Serviceinstanz auf das Internet **schließen** und die öffentliche IP-Adresse an den Pool **zurückgeben**.
+Sie können den Zugriff auf das öffentliche Internet wahlweise über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verwalten. Sie können eine öffentliche IP-Adresse aus dem Pool **anfordern** und die Verbindung vom Internet zu Ihrer Serviceinstanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} **öffnen**. Umgekehrt können Sie den Zugriff von Ihrer Serviceinstanz auf das Internet **schließen** und die öffentliche IP-Adresse an den Pool **zurückgeben**.
 
-Führen Sie diese Anweisungen aus, um eine öffentliche IP-Adresse **anzufordern** und eine Verbindung zu **öffnen**:
+### Öffentliche IP-Adresse anfordern und Verbindung öffnen
+{: #request-open-ip}
 
-1. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
+1. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Konsole.
 2. Die IP-Adresse für Ihren Host wird angezeigt, nicht jedoch Ihre öffentliche IP-Adresse. Klicken Sie auf **Öffentliche IP-Adresse anfordern**.
 
-    **Hinweis:** Das Service-Dashboard wird mit einer zugewiesenen öffentlichen IP-Adresse erneut aufgerufen. Es wird jedoch die folgende Nachricht angezeigt:
+    Das Service-Dashboard wird mit einer zugewiesenen öffentlichen IP-Adresse erneut aufgerufen. Es wird jedoch die folgende Nachricht angezeigt:
 
-    > **Zugriff aktuell geschlossen. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu öffnen.**
-3. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
+    > _Zugriff aktuell geschlossen. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu öffnen._
+3. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard.
 4. Die IP-Adressen für Ihren Host und die neue öffentliche IP-Adresse werden angezeigt, der Zugriff ist jedoch geschlossen. Klicken Sie auf **Zugriff öffnen**.
 
-    **Hinweis:** Das Service-Dashboard wird erneut aufgerufen und die folgende Nachricht wird angezeigt:
+    Das Service-Dashboard wird erneut aufgerufen und die folgende Nachricht wird angezeigt:
 
-    > **Zugriff aktuell geöffnet. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu schließen.**
+    > _Zugriff aktuell geöffnet. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu schließen._
 
-Führen Sie diese Anweisungen aus, um eine Verbindung zu **schließen** und eine öffentliche IP-Adresse **zurückzugeben**:
+### Verbindung schließen und öffentliche IP-Adresse zurückgeben
+{: #close-return-ip}
 
-1. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
+1. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard.
 2. Klicken Sie auf **Zugriff schließen**.
 
-    **Hinweis:** Das Service-Dashboard wird erneut aufgerufen und die folgende Nachricht wird angezeigt:
+    Das Service-Dashboard wird erneut aufgerufen und die folgende Nachricht wird angezeigt:
 
-    > **Zugriff aktuell geschlossen. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu öffnen.**
+    > _Zugriff aktuell geschlossen. Auf 'Zugriff auf öffentliche IP-Adresse verwalten' klicken, um den Zugriff zu öffnen._
 3. Klicken Sie auf **Zugriff auf öffentliche IP-Adresse verwalten** im Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle.
 4. Klicken Sie auf **Öffentliche IP-Adresse zurückgeben**.
 
-    **Hinweis:** Das Service-Dashboard wird erneut aufgerufen und die IP-Adresse Ihres Hosts wird zusammen mit der folgenden Nachricht angezeigt:
+    Das Service-Dashboard wird erneut aufgerufen und die IP-Adresse Ihres Hosts wird zusammen mit der folgenden Nachricht angezeigt:
 
-    > **Öffentliche IP-Adresse zurückgegeben.**
+    > _Öffentliche IP-Adresse zurückgegeben._
 
 ## Öffentliche IP-Ports
 {: #publicIPports}
 
-Wenn Sie den Zugriff auf die öffentliche IP öffnen, wird die IP-Adresse der VM zugeordnet, und die Ports 80 und 443 werden am Gateway geöffnet. Die Ports 80 und 443 werden von Liberty Core-Servern und klassischen WebSphere-Basisservern jedoch nicht standardmäßig geöffnet. Im IBM HTTP Server werden diese Ports dagegen standardmäßig geöffnet. Deshalb müssen Sie Liberty Core-Server und klassische WebSphere-Basisserver bei der Verwendung einer öffentlichen IP-Adresse möglicherweise so konfigurieren, dass sie an Port 80/443 für Anwendungsdatenverkehr empfangsbereit sind.
+Wenn Sie den Zugriff auf die öffentliche IP öffnen, wird die IP-Adresse der VM zugeordnet, und die Ports 80 und 443 werden am Gateway geöffnet. Die Ports 80 und 443 werden von Servern mit Liberty Core und Servern mit klassischem WebSphere Base jedoch nicht standardmäßig geöffnet. Im IBM HTTP Server werden diese Ports dagegen standardmäßig geöffnet. Deshalb müssen Sie Server mit Liberty Core und Server mit klassischem WebSphere Base bei der Verwendung einer öffentlichen IP-Adresse möglicherweise so konfigurieren, dass sie an Port 80 und 443 für Anwendungsdatenverkehr empfangsbereit sind.
 * Informationen zur Konfiguration des Liberty Core-Servers finden Sie in [Liberty Core-Server für öffentlichen Zugriff konfigurieren](networkEnvironment.html#configureLibertyForPublicAccess).
-* Fügen Sie zum Konfigurieren des klassischen WebSphere-Basisservers eine Web-Container-Transportkette hinzu, die an Port 80/443 empfangsbereit ist. Weitere Informationen hierzu finden Sie in [Transportketten konfigurieren](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
+* Fügen Sie zum Konfigurieren des Servers mit klassischem WebSphere Base eine Web-Container-Transportkette hinzu, die an Port 80 und 443 empfangsbereit ist. Weitere Informationen hierzu finden Sie in [Transportketten konfigurieren](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
 
-**Probleme vermeiden:** Linux reserviert Ports mit einer Nummer unter 1024 für privilegierte Benutzer wie z. B. **root**. Es ist jedoch ein allgemein übliches Verfahren, klassische WebSphere Base-Server als **non-root**-Benutzer auszuführen. Ändern Sie daher beim Hinzufügen einer Web-Container-Transportkette die **iptables**-Konfiguration als **root**-Benutzer. Adressieren Sie speziell die eingeschränkten Ports 80 und 443 in andere Ports über 1024 um, z. B. in 9080 und 9443. Die folgenden Befehle stellen ein Beispiel für diesen Prozess dar:
+**Probleme vermeiden:** Linux reserviert Ports mit einer Nummer unter 1024 für privilegierte Benutzer wie z. B. **root**. Es ist jedoch ein allgemein übliches Verfahren, klassische WebSphere Base-Server als **non-root**-Benutzer auszuführen. Ändern Sie daher beim Hinzufügen einer Web-Container-Transportkette die **iptables**-Konfiguration als **root**-Benutzer. Adressieren Sie speziell die eingeschränkten Ports 80 und 443 in andere Ports über 1024 um (z. B. 9080 und 9443). Die folgenden Befehle stellen ein Beispiel für diesen Prozess dar:
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
@@ -130,14 +132,14 @@ COMMIT
 ## VPN-Ports für private IP
 {: #privateIPports}
 
-Über die VPN-Verbindung können Sie eine Verbindung zur privaten IP-Adresse der VM herstellen. Der Zugriff auf das Liberty Admin Center (9080, 9443), die klassische WebSphere-Administrationskonsole, SSH (22) und andere Ports als 80/443 ist nur über die VPN-Verbindung möglich (siehe Abbildung 1). Informationen dazu, wie Sie das Liberty Admin Center von den Anwendungsports trennen können, enthalten die Liberty Core-Beispieldateien **server.xml** und **ibm-web-bnd.xml**.
+Über die VPN-Verbindung können Sie eine Verbindung zur privaten IP-Adresse der VM herstellen. Der Zugriff auf das Liberty Admin Center (9080, 9443), die klassische WebSphere-Administrationskonsole (9060, 9043), SSH (22) und andere Ports als 80 und 443 ist nur über die VPN-Verbindung möglich (siehe Abbildung 1). Informationen dazu, wie Sie das Liberty Admin Center von den Anwendungsports trennen können, enthalten die Liberty Core-Beispieldateien **server.xml** und **ibm-web-bnd.xml**.
 
-**Störungen vermeiden**: Im Falle von Liberty Core-Servern und klassischen WebSphere-Basisservern sind die Firewall-Ports bei der Bereitstellung der VM vorkonfiguriert. Bei Network Deployment-Konfigurationen, in denen der Deployment Manager oder der Verbundcontroller mit dem IBM HTTP Server kollokiert ist, müssen jedoch möglicherweise Ports an der Firewall geöffnet werden. Einzelheiten hierzu finden Sie in [Firewall-Ports](systemAccess.html#firewall_ports).
+**Störungen vermeiden**: Im Falle von Servern mit Liberty Core und Servern mit klassischem WebSphere Base sind die Firewall-Ports bei der Bereitstellung der VM vorkonfiguriert. Bei Network Deployment-Konfigurationen, in denen der Deployment Manager oder der Verbundcontroller mit dem IBM HTTP Server kollokiert ist, müssen jedoch möglicherweise Ports an der Firewall geöffnet werden. Einzelheiten hierzu finden Sie in [Firewall-Ports](systemAccess.html#firewall_ports).
 
 ## Liberty Core-Server für Zugriff auf öffentliche IP-Adresse konfigurieren
 {: #configureLibertyForPublicAccess}
 
-Bei Verwendung einer öffentlichen IP-Adresse müssen Sie den Liberty Core-Server so konfigurieren, dass er für Anwendungsdatenverker an Port 80/443 empfangsbereit ist.
+Bei Verwendung einer öffentlichen IP-Adresse müssen Sie den Liberty Core-Server so konfigurieren, dass er für Anwendungsdatenverker an Port 80 und 443 empfangsbereit ist.
 
 Liberty ist standardmäßig so konfiguriert, dass das Liberty Admin Center und die Anwendungen auf dem virtuellen Host **default_host** zur Verfügung stehen, der **defaultHttpEndpoint** an Port 9080 und 9443 zugeordnet wird. Rekonfigurieren Sie den Server, um das Liberty Admin Center vom virtuellen Host und Endpunkt der Anwendungen zu trennen und an separaten Ports verfügbar zu machen.
 
@@ -173,7 +175,7 @@ Das folgende Snippet ist ein Beispiel für Konfigurationsanpassungen an der Date
 ```
 {: codeblock}
 
-Ordnen Sie nun Ihre Anwendung dem virtuellen Host **external_host** zu, indem Sie das folgende Snippet in die Datei **WEB-INF/ibm-web-bnd.xml** der Anwendung einfügen:
+Ordnen Sie nun Ihre Anwendung dem virtuellen Host `external_host` zu, indem Sie das folgende Snippet in die Datei `WEB-INF/ibm-web-bnd.xml` der Anwendung einfügen:
 
 ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -194,17 +196,17 @@ Ordnen Sie nun Ihre Anwendung dem virtuellen Host **external_host** zu, indem Si
 
 Beachten Sie, dass virtuelle Maschinen von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} mit zwei DNS-Resolvern konfiguriert werden. Die Resolver werden in der Datei **/etc/resolv.conf** auf der virtuellen Maschine konfiguriert. Beim primären DNS-Server handelt es sich um einen nicht autoritativen Server, der vom WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Service bereitgestellt wird. Beim sekundären DNS-Server handelt es sich um einen nicht autoritativen Server, der von {{site.data.keyword.Bluemix_notm}} bereitgestellt wird.
 
-Es wird empfohlen, die DNS-Konfiguration zu überprüfen, um festzustellen, ob sie den jeweiligen Anforderungen entspricht. Sie können die Datei **/etc/resolv.conf** so aktualisieren, dass der bevorzugte DNS-Server referenziert wird, falls die von IBM bereitgestellten DNS-Server den jeweiligen Anforderungen nicht entsprechen.
+Es wird empfohlen, die DNS-Konfiguration zu überprüfen, um festzustellen, ob sie den jeweiligen Anforderungen entspricht. Sie können die Datei `/etc/resolv.conf` so aktualisieren, dass der bevorzugte DNS-Server referenziert wird, falls die von IBM bereitgestellten DNS-Server den jeweiligen Anforderungen nicht entsprechen.
 
-**Hinweis:** Für ältere virtuelle Maschinen von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} ist möglicherweise nur ein primärer DNS-Server in der Datei **/etc/resolv.conf** konfiguriert. Für eine Hochverfügbarkeitslösung können Sie entweder die virtuelle Maschine freigeben und eine neue bereitstellen oder die Datei **/etc/resolv.conf** so aktualisieren, dass ein sekundärer DNS-Server hinzugefügt wird. Hierbei kann es sich um den bevorzugten DNS-Server oder um den von {{site.data.keyword.Bluemix_notm}} bereitgestellten (10.0.80.11) handeln.
+**Hinweis:** Für ältere virtuelle Maschinen von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} ist möglicherweise nur ein primärer DNS-Server in der Datei `/etc/resolv.conf` konfiguriert. Für eine Hochverfügbarkeitslösung können Sie entweder die virtuelle Maschine freigeben und eine neue bereitstellen oder die Datei `/etc/resolv.conf` so aktualisieren, dass ein sekundärer DNS-Server hinzugefügt wird. Bei dem sekundären DNS-Server kann es sich um den bevorzugten DNS-Server oder um den von {{site.data.keyword.Bluemix_notm}} bereitgestellten (10.0.80.11) handeln.
 
 
 ## Ports für neue Server auf angepassten Knoten öffnen
 {: #serversOnCustom}
 
-Wenn Sie einen Server auf einem angepassten Knoten erstellen, müssen die zusätzlichen Ports, die für den Server erforderlich sind, auf den virtuellen Maschinen des Deployment Managers und des angepassten Knotens geöffnet werden, bevor der Server gestartet wird. Öffnen Sie nach der Erstellung - aber vor dem Starten - des Servers die Ports, indem Sie das Script `openWASPorts.sh` ausführen:
+Wenn Sie einen Server auf einem angepassten Knoten erstellen, müssen die zusätzlichen Ports, die für den Server erforderlich sind, auf den virtuellen Maschinen des Deployment Managers und des angepassten Knotens geöffnet werden, bevor der Server gestartet wird. Öffnen Sie nach der Erstellung - aber vor dem Starten - des Servers die Ports, indem Sie das Script `openWASPorts.sh` ausführen.
 
  1. Melden Sie sich bei jeder virtuellen Maschine des Deployment Managers und des angepassten Knotens als Rootbenutzer an.
  1. Führen Sie das Script `/opt/IBM/WebSphere/AppServer/virtual/bin/openWASPorts.sh` aus, um die Ports zu öffnen.
- 
+
 Nach der Ausführung des Scripts können Sie den Server über die Deployment Manager-Administrationskonsole starten.

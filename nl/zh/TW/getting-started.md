@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-09-13"
 ## 在開始之前
 {: #prereqs}
 
-如果您要環境具有更多專用虛擬機器資源（例如保留合約或「單一承租戶環境」），則需要先與 IBM 銷售人員聯絡，再建立服務。若要進一步瞭解這些選項，請參閱[關於](index.html)。
+如果您要環境具有更多專用虛擬機器資源（例如保留合約或「單一承租戶環境」），則請先與 IBM 銷售人員聯絡，再建立服務。若要進一步瞭解這些選項，請參閱[關於](index.html)。
 
 ### 移轉現有的 WebSphere 環境
 
@@ -34,7 +34,7 @@ lastupdated: "2018-09-13"
 ## 步驟 1：建立服務
 {: #create}
 
-1. 移至「{{site.data.keyword.cloud_notm}} 型錄」中的 [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server) 頁面。
+1. 移至 {{site.data.keyword.cloud_notm}} 型錄中的 [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server) 頁面。
 1. 使用 IBM ID 登入，或註冊 {{site.data.keyword.cloud_notm}} 帳戶。
 1. 在型錄頁面上，檢閱服務配置的選取項目。
 
@@ -66,7 +66,7 @@ lastupdated: "2018-09-13"
 ## 步驟 3：調整虛擬機器大小
 {: #vm_sizing}
 
-您可以針對環境中的每一個元件，個別地調整虛擬機器的大小。虛擬機器大小是以資源區塊的 [T 恤尺碼](index.html#vm-size)來分割。
+您可以針對環境中的每一個元件，個別地調整虛擬機器的大小。虛擬機器是以資源區塊的 [T 恤尺碼](index.html#vm-size)來分割。
 
 請按一下元件的標籤（例如伺服器、部署管理程式或應用程式節點），並為其虛擬機器選取 T 恤尺碼。
 

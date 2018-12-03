@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,18 +23,18 @@ lastupdated: "2018-09-13"
 ## 시작하기 전에
 {: #prereqs}
 
-예비 계약 또는 Single Tenant Environment와 같은 더 많은 전용 가상 머신 리소스가 있는 환경을 원하는 경우 서비스를 작성하기 전에 IBM 영업 담당자에게 문의해야 합니다. [정보](index.html)에서 이러한 옵션을 자세히 알아보십시오.
+예비 계약 또는 Single Tenant Environment와 같은 더 많은 전용 가상 머신 리소스가 있는 환경을 원하는 경우 서비스를 작성하기 전에 IBM 영업 담당자에게 문의하십시오. [정보](index.html)에서 이러한 옵션을 자세히 알아보십시오.
 
 ### 기존 WebSphere 환경 마이그레이션
 
-기존 WebSphere Application Server Network Deployment 환경을 이 서비스로 마이그레이션하려면 [{{site.data.keyword.cloud_notm}}용 WebSphere 구성 마이그레이션 도구 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}를 사용하십시오. 도구는 {{site.data.keyword.cloud_notm}}의 서비스 인스턴스로 독립형 서버 또는 셀 노드에 대한 프로파일 구성 및 애플리케이션을 업로드합니다. 도구를 사용하는 방법에 대한 단계별 안내와 클라우드 마이그레이션에 대한 개요는 WASdev에서 [IBM Cloud용 WebSphere 구성 마이그레이션 도구 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}를 참조하십시오.
+기존 WebSphere Application Server Network Deployment 환경을 이 서비스로 마이그레이션하려면 [{{site.data.keyword.cloud_notm}}용 WebSphere 구성 마이그레이션 도구 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}를 사용하십시오. 도구는 {{site.data.keyword.cloud_notm}}에서 사용자의 독립형 서버 또는 셀 노드를 위한 프로파일 구성과 애플리케이션을 서비스 인스턴스로 업로드합니다. 도구를 사용하는 방법에 대한 단계별 안내와 클라우드 마이그레이션에 대한 개요는 WASdev에서 [IBM Cloud용 WebSphere 구성 마이그레이션 도구 안내서 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}를 참조하십시오.
 
 다음 단계에서는 {{site.data.keyword.appserver_full}}에서 새 환경을 작성하는 과정을 안내합니다.
 
 ## 1단계: 서비스 작성
 {: #create}
 
-1. {{site.data.keyword.cloud_notm}} 카탈로그의 [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server) 페이지로 이동하십시오.
+1. {{site.data.keyword.cloud_notm}} 카탈로그의 [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server) 페이지로 이동하십시오.
 1. IBM ID로 로그인하거나 {{site.data.keyword.cloud_notm}} 계정으로 로그인하십시오.
 1. 카탈로그 페이지에서 서비스 구성에 대한 선택사항을 검토하십시오.
 
@@ -66,7 +66,7 @@ Network Deployment 플랜의 경우 사용자 환경의 프로파일과 아키�
 ## 3단계: 가상 머신 크기 조정
 {: #vm_sizing}
 
-환경의 각 컴포넌트에 대한 가상 머신의 크기를 개별적으로 조정할 수 있습니다. 가상 머신 크기 조정은 [티셔츠 크기](index.html#vm-size)의 리소스 블록으로 분할됩니다.
+환경의 각 컴포넌트에 대한 가상 머신의 크기를 개별적으로 조정할 수 있습니다. 가상 머신은 [티셔츠 크기](index.html#vm-size)의 리소스 블록으로 분할됩니다.
 
 서버, 배치 관리자 또는 애플리케이션 노드와 같은 컴포넌트의 탭을 클릭하고 가상 머신의 티셔츠 크기를 선택하십시오.
 

@@ -26,7 +26,7 @@ lastupdated: "2018-08-22"
   * 18.0.0.2
   * 18.0.0.1
 
-**传统 WebSphere Application Server**
+**WebSphere Application Server Traditional**
   * 9.0.0.8
   * 9.0.0.7
   * 8.5.5.14
@@ -46,8 +46,8 @@ lastupdated: "2018-08-22"
 运行脚本会执行以下操作：
 
 * 停止所有正在运行的 WebSphere Application Server 和 IBM HTTP Server 实例
-* （可选）安装 Installation Manager、WebSphere Application Server、IBM HTTP Server 和 Java SDK 的最新修订包
-* 安装 WebSphere、IBM HTTP Server 和 Java SDK 的最新临时修订
+* （可选）安装 Installation Manager、WebSphere Application Server、IBM HTTP Server 和 Java&trade; SDK 的最新修订包
+* 安装 WebSphere、IBM HTTP Server 和 Java&trade; SDK 的最新临时修订
 * 重新启动所有实例
 
 #### 选项
@@ -88,12 +88,12 @@ lastupdated: "2018-08-22"
 
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} 安装在 `/home/virtuser/IBM/Installation Manager` 目录中，并且可以直接运行以应用修订和修订包。
 
-**应避免的问题：**因为底层二进制是以 **virtuser**（受限的管理虚拟用户）身份安装的，因此请确保始终以 **virtuser** 身份运行 Installation Manager。
+**应注意的问题：**由于底层二进制文件是以 `virtuser`（受限的管理虚拟用户）身份安装的，因此请确保始终以 `virtuser` 身份运行 Installation Manager。
 
 ## 对虚拟机应用系统更新
 {:#vm-system-updates}
 
-在虚拟机上应用系统更新类似于更新物理 Red Hat Enterprise Linux (RHEL) 系统。通过使用 Yum 包管理器，可以安装、更新、卸载和以其他方式管理包。WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 系统配置为接收来自 IBM 的 Red Hat Satellite 服务器的更新，该服务器提供了来自 Red Hat 网络的安全包。Satellite 服务器由 IBM 管理，不能通过自己的系统进行修改。
+在虚拟机上应用系统更新类似于更新物理 Red Hat Enterprise Linux&reg; (RHEL) 系统。通过使用 Yum 包管理器，可以安装、更新、卸载和以其他方式管理包。WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 系统配置为接收来自 IBM 的 Red Hat Satellite 服务器的更新，该服务器提供了来自 Red Hat 网络的安全包。Satellite 服务器由 IBM 管理，不能通过自己的系统进行修改。
 
 有关更多信息，请参阅 [Applying package updates on Red Hat Enterprise
 Linux](https://access.redhat.com/articles/11258#rhel6){: new_window} 和 [Yum（Red Hat 软件包管理器）](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}。

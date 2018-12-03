@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -18,15 +18,16 @@ lastupdated: "2018-06-08"
 
 Quando você está administrando o seu ambiente do {{site.data.keyword.appserver_full}} e precisa determinar qual usuário usar, é importante entender os conceitos a seguir:
 
- * É possível aplicar manutenção usando o [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} instalado no
-diretório */home/virtuser/IBM/Installation Manager*. Como os binários subjacentes são instalados como **virtuser**, um usuário virtual administrativo limitado, assegure-se de que todos os fix packs e correções temporárias estejam instalados como **virtuser**.
+ * A manutenção pode ser aplicada usando o [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}, que é instalado no diretório `/home/virtuser/IBM/Installation Manager`. Como os arquivos binários subjacentes são instalados como
+`virtuser`, um usuário virtual administrativo limitado, assegure-se de que todos os fix packs e correções temporárias
+sejam instalados como `virtuser`.
 
- * No entanto, ao iniciar e parar servidores da linha de comandos, certifique-se de usar **wsadmin**, o ID administrativo do WebSphere, não **virtuser**.
+ * No entanto, ao iniciar e parar servidores da linha de comandos, certifique-se de usar `wsadmin`, o ID administrativo do WebSphere, não `virtuser`.
 
-## Convenções de Instalação de Cél
+## Convenções de instalação de célula
 {: cell_installation_conventions}
 
-Um WebSphere Application Server na célula do {{site.data.keyword.Bluemix_notm}} é instalado e configurado seguindo uma estrutura de diretório padronizada. A lista a seguir indica algumas das configurações importantes.  Veja /etc/virtualimage.properties para obter uma lista completa das configurações.
+Um WebSphere Application Server na célula do {{site.data.keyword.Bluemix_notm}} é instalado e configurado seguindo uma estrutura de diretório padronizada. A lista a seguir indica algumas das configurações importantes.  Consulte `/etc/virtualimage.properties` para obter uma lista completa das configurações.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -38,7 +39,7 @@ Um WebSphere Application Server na célula do {{site.data.keyword.Bluemix_notm}}
 
 ## convenções de instalação coletiva do Liberty
 
-Um Liberty collective é instalado e configurado seguindo uma estrutura de diretório padronizada. A lista a seguir indica algumas das configurações importantes.  Veja /etc/virtualimage.properties para obter uma lista completa das configurações.
+Um Liberty collective é instalado e configurado seguindo uma estrutura de diretório padronizada. A lista a seguir indica algumas das configurações importantes.  Consulte `/etc/virtualimage.properties` para obter uma lista completa das configurações.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

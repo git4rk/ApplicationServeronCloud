@@ -2,45 +2,43 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-04"
+lastupdated: "2018-11-20"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:codeblock: .codeblock}
+{:tip: .tip}
 
 # Accesso al sistema
 {: #system_access}
 
-In questa sezione vengono illustrati i metodi di creazione e gestione di un'istanza del servizio, insieme a vari modi per accedere e impostare l'accesso ai tuoi sistemi.
+Scopri i metodi per creare e gestire un'istanza del servizio ed esplora i vari modi in cui puoi accedere e impostare l'accesso al tuo sistema.
 {: shortdesc}
-
 
 ## Utilizzo dell'API REST in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 {: #restapi_usage}
 
 Le istanze in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} vengono create, sottoposte a provisioning, gestite ed eliminate in uno dei seguenti modi:
 
-* Dal Catalogo e Dashboard del servizio di {{site.data.keyword.Bluemix_notm}} nell'IU {{site.data.keyword.Bluemix_notm}}.
+* Dal catalogo e dal dashboard del servizio di {{site.data.keyword.Bluemix_notm}}.
 * Dalla creazione di un'applicazione o di uno script che utilizza le API RESTful.
 
 Mediante l'utilizzo delle API REST conformi a Swagger 2.0, i clienti hanno accesso alle stesse funzioni fornite attraverso il portale e il dashboard. Per ulteriori informazioni sulle API REST e sulle risorse supportate, vedi la [Documentazione API REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Per il codice di esempio che illustra l'utilizzo delle API REST, scarica gli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} ospitati in Git.
 
 **Nota:** dopo aver creato un'istanza del servizio, a seconda della dimensione T-shirt creata, il servizio potrebbe non essere immediatamente pronto per l'uso. Si consiglia di eseguire una query nel campo **Stato** del JSON restituito per determinare lo stato corrente dell'istanza del servizio.
 
-**Nota:** l'URL **apiEndpoint** a cui si fa riferimento negli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} punta alla regione degli Stati Uniti Sud. Se stai utilizzando altre regioni, assicurati che la tua applicazione faccia riferimento al **apiEndpoint** appropriato.
+**Nota:** l'URL **apiEndpoint** a cui si fa riferimento negli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} punta alla regione di Dallas. Se stai utilizzando altre regioni, assicurati che la tua applicazione faccia riferimento al **apiEndpoint** appropriato.
 
 *Tabella 1. URL endpoint API per l'implementazione API REST*
 
-| **Nome regione** | **Ubicazione geografica** | **Prefisso regione** | **URL endpoint API** |       
-|:-------------:|:----------:|:--------------:|:-------------:|
-| Stati Uniti Sud | Dallas, TX, US | ng | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| Regno Unito | Londra, Inghilterra | eu-gb | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| Sydney | Sydney, Australia | au-syd | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
-| Francoforte | Francoforte, Germania | eu-de | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-
-
+| **Nome regione** | **Prefisso regione** | **URL endpoint API** |       
+|:-------------:|:--------------:|:-------------:|
+| Dallas | `ng` | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
+| Londra | `eu-gb` | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
+| Francoforte | `eu-de` | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
+| Sydney | `au-syd` | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
 
 ## Dashboard del servizio
 {: #service_dashboard}
@@ -55,7 +53,7 @@ Dal dashboard del servizio puoi accedere a:
 * Il nome host
 * L'utente amministratore e la password amministratore
 * Una chiave SSH privata
-* L'utente amministratore e la password amministratore di WebSphere®
+* L'utente amministratore e la password amministratore di WebSphere&reg;
 * Gli URL di Admin Center e Admin Console
 
 
@@ -64,7 +62,7 @@ Dal dashboard del servizio puoi accedere a:
 
 OpenVPN è richiesto per accedere alle macchine virtuali WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Deve essere installato e in esecuzione con i privilegi da amministratore.
 
-### Utilizza le seguenti istruzioni per impostare openVPN in Windows:
+### Impostazione di openVPN su Windows
 
 1. Scarica il programma di installazione di Windows openVPN per la tua architettura di sistema dal sito web di openVPN:
   * Sistemi a 64 bit: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
@@ -78,10 +76,11 @@ OpenVPN è richiesto per accedere alle macchine virtuali WebSphere Application S
 
 4. Avvia il programma client openVPN "OpenVPN GUI". Assicurati di selezionare **Esegui come amministratore Windows** per avviare il programma. In caso contrario, potresti non riuscire a connetterti.
 
-### Utilizza le seguenti istruzioni per impostare openVPN in Linux:
+### Impostazione di openVPN su Linux
 
 1. Per installare openVPN, segui le [istruzioni di openVPN per Linux](https://openvpn.net/index.php/access-server/docs/admin-guides/182-how-to-connect-to-access-server-with-linux-clients.html){: new_window}.
-  * Se devi scaricare e installare manualmente la gestione pacchetti RPM, passa alla pagina dei [download unix/linux openVPN](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. Potresti avere bisogno di assistenza dal tuo amministratore Linux.
+
+   Se devi scaricare e installare manualmente la gestione pacchetti RPM, passa alla pagina dei [download unix/linux openVPN](https://openvpn.net/index.php/access-server/download-openvpn-as-sw.html){: new_window}. Potresti avere bisogno di assistenza dal tuo amministratore Linux.
 3. Scarica i file di configurazione VPN dal link di download OpenVPN dell'istanza WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} nel dashboard del servizio. Estrai i file nella directory da cui intendi avviare il client
 openVPN. Ti serviranno tutti e quattro i file nella stessa directory.
 3. Avvia il programma client openVPN. Apri una finestra di terminale e vai alla directory che contiene i file di configurazione. Esegui il seguente comando come root:
@@ -91,13 +90,12 @@ openVPN. Ti serviranno tutti e quattro i file nella stessa directory.
   ```
   {: .codeblock}  
 
-### Utilizza le seguenti istruzioni per configurare openVPN in Mac:
+### Impostazione di openVPN su Mac
 1. Un metodo consiste nell'installare [Tunnelblick](https://tunnelblick.net/){: new_window}, un prodotto software open source.
 2. Estrai i file di configurazione di VPN dal servizio WebSphere. Tunnelblick
 ti richiede la password di amministrazione per Mac e aggiunge la configurazione al set di VPN che puoi utilizzare per connetterti.
 3. Connettiti alla rete VPN; potrai quindi accedere alla tua macchina virtuale. Dopo il primo accesso, Tunnelblick
-memorizza in cache la configurazione e puoi connetterti da Tunnelblick. Puoi
-inserire un'icona nella barra dei menu in alto per accedere facilmente.
+memorizza in cache la configurazione e puoi connetterti da Tunnelblick. Puoi inserire un'icona nella barra dei menu per accedere facilmente. 
 
 
 ## Utilizzo di SSH per accedere alle VM di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
@@ -106,67 +104,71 @@ inserire un'icona nella barra dei menu in alto per accedere facilmente.
 Queste istruzioni presumono che tu stia utilizzando OpenSSH
 come tuo client. OpenSSH è di norma disponibile in Linux o in Cygwin in esecuzione su Windows. Può anche essere installato per essere eseguito da un prompt di comandi Windows.
 
-Per verificare l'installazione di OpenSSH, immetti il comando:
+Per verificare l'installazione di OpenSSH, esegui il seguente comando. 
   ```
-      $ ssh -V
+  ssh -V
   ```
   {: codeblock}
 
 Il seguente messaggio è un esempio della risposta:
   ```
-      OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
+  OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
   ```
-  {: codeblock}
 
-Utilizza le seguenti istruzioni per impostare l'accesso SSH alle tue VM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+Utilizza le seguenti istruzioni per impostare l'accesso SSH alle tue VM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
 
 1. Riesamina il messaggio di avvertenza che compare la prima volta che ti colleghi, "L'autenticità dell'host x.x.x.x non può essere stabilita." Questo messaggio è normale. Quando ti viene richiesto, seleziona yes. La chiave pubblica è ora installata sulla tua VM per l'utente **virtuser**.
 2. Accedi a **virtuser** utilizzando la chiave privata. Per dei risultati ottimali, utilizza il metodo di autenticazione della chiave privata.
 3. Copia il contenuto della chiave privata in un file.
-4. Esegui il comando:
+4. Connettiti tramite SSH eseguendo il seguente comando.
 
-  <pre>
-    $ ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
-  </pre>
+  ```
+  ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
+  ```
   {: codeblock}
 
-5. Ottieni l'autorità sysadmin completa passando da **virtuser** a **root** utilizzando il comando:
+5. Ottieni l'autorità sysadmin completa passando da **virtuser** a **root** eseguendo il seguente comando.
 
-  <pre>
-    $ sudo su root
-  </pre>
+  ```
+  sudo su root
+  ```
   {: codeblock}
 
 6. Se stai riscontrando dei problemi durante l'accesso al sistema con la chiave ssh privata, utilizza la password root che ti è stata fornita. Accedi come root eseguendo il seguente comando e fornisci la password.
 
- <pre>
-    $ ssh root@169.53.246.x
-  </pre>
+  ```
+  ssh root@169.53.246.x
+  ```
   {: codeblock}
 
 7. Sia che tu acceda al sistema con la chiave ssh privata sia che tu lo faccia
 con la password root, cambia immediatamente la password root.
-8. Per semplificare i tuoi comandi SSH, crea un file denominato "config" nella directory %HOME%/.ssh. Ad esempio:
+8. Per semplificare i tuoi comandi SSH, crea un file denominato `config` nella directory `%HOME%/.ssh`. Ad esempio:
 
-  <pre>
+   ```
    Host VM1
       Hostname 169.53.246.xxx
       User virtuser
       IdentityFile /path/privateKeyFileName
-  </pre>
-  {: codeblock}
+   ```
+   {: codeblock}
 
-9. Esegui "ssh VM1" per collegarti come **virtuser**.
+9. Esegui il seguente comando per connetterti come **virtuser**.
+
+   ```
+   ssh VM1
+   ```
+   {: codeblock}
 
 ## Percorsi di sistema
 {: #system_paths}
 
-* I comandi Liberty Profile possono essere immessi da */opt/IBM/WebSphere/Liberty/bin*.
-* L'ubicazione del profilo del server Liberty Profile è */opt/IBM/WebSphere/Profiles/Liberty/servers/server1*.
-* I file del prodotto principale Traditional WebSphere Application Server, condivisi da tutti i profili, sono ubicati in */opt/IBM/WebSphere/AppServer/*.
-* I comandi di Traditional WebSphere Application Server possono essere emessi dall'ubicazione del profilo predefinita in */opt/IBM/WebSphere/Profiles/Default**profile_typeprofile_number**/bin* dove:
-  * **profile_type** è un valore tra *AppSrv*, *Dmgr*, *Custom*, *AdminAgent*, *JobMgr* o *SecureProxySrv*.
-  * **profile_number** è un numero sequenziale utilizzato per creare un nome profilo univoco
+* I comandi Liberty possono essere emessi da `/opt/IBM/WebSphere/Liberty/bin`.
+* L'ubicazione del profilo del server Liberty è `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
+* I file del prodotto principale Traditional WebSphere Application Server, condivisi da tutti i profili, sono ubicati in `/opt/IBM/WebSphere/AppServer/`.
+* I comandi di Traditional WebSphere Application Server possono essere emessi dall'ubicazione del profilo predefinita in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` dove:
+  * `<profile_type> è il valore di `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` o `SecureProxySrv`.
+  * `<profile_number>` è un numero sequenziale utilizzato per creare un nome profilo univoco. 
 
 
 ## Gestione dei server dalla riga di comando
@@ -186,7 +188,7 @@ la memorizzazione di un'eccezione di sicurezza, accettare è il modo più facile
 evitare l'avvertenza in futuro.
 
 Un'altra opzione consiste nell'esportare il certificato del firmatario in entrata
-e importarlo quindi nel tuo browser come un certificato root attendibile. Questa opzione richiede che tu crei una voce nel file *hosts* che associ l'indirizzo IP della VM al nome comune del firmatario del certificato. Questo nome è nel seguente formato: wl<pureapplication.ibmcloud.com. Se ora usi il nome host invece dell'indirizzo IP nell'URL, puoi connetterti senza alcun problema. Devi quindi accedere all'Admin Center o alla Admin Console utilizzando il nome host invece dell'indirizzo IP nell'URL.
+e importarlo quindi nel tuo browser come un certificato root attendibile. Questa opzione richiede che tu crei una voce nel file *hosts* che associ l'indirizzo IP della VM al nome comune del firmatario del certificato. Questo nome è nel seguente formato: `wl<pureapplication.ibmcloud.com`. Se ora usi il nome host invece dell'indirizzo IP nell'URL, puoi connetterti senza alcun problema. Devi quindi accedere all'Admin Center o alla Admin Console utilizzando il nome host invece dell'indirizzo IP nell'URL.
 
 Infine, i clienti installano spesso dei loro certificati root per le
 applicazioni che rendono esterne. Per ulteriori informazioni, fai riferimento alla documentazione di [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} o [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} in IBM Knowledge Center.
@@ -195,23 +197,27 @@ applicazioni che rendono esterne. Per ulteriori informazioni, fai riferimento al
 {: #firewall_ports}
 
 Potrebbe essere necessario aprire delle porte sul firewall per consentire l'accesso ad applicazioni
-e database.
-  * Su ciascun nodo di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, puoi trovare uno script openFirewallPorts.sh nella directory WAS_HOME/virtual/bin.
-  * Su ciascun host di collettivo Liberty, puoi trovare uno script openFirewallPorts.sh nella directory WAS_HOME/virtual/bin.
+e database. Puoi aprire le porte del firewall utilizzando lo script `openFirewallPorts.sh` che puoi trovare nelle seguenti ubicazioni. 
+  * Su ciascun nodo di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, lo script `openFirewallPorts.sh` si trova nella directory `WAS_HOME/virtual/bin`.
+  * Su ciascun host di collettivo Liberty, `openFirewallPorts.sh` si trova nella directory `WAS_HOME/virtual/bin`.
 
-Utilizzo:
+### Utilizzo
+
+Esegui lo script `openFirewallPorts.sh` utilizzando la seguente sintassi del comando. 
+
   ```
-      $ openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
+  openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
   ```
   {: codeblock}
 
+dove:
 * PORT è il numero di porta
 * PROTOCOL è TCP o UDP
-* -persist è true o false
+* `-persist` è `true` o `false`
 
-Per specificare più porte, separale con una virgola ","
+Puoi specificare più porte in un elenco separato da virgole. 
 
-**Nota**: sport e dport della porta aperta vengono aperte nelle sezioni INPUT e OUTPUT del firewall. Devi eseguire questo script come root utilizzando sudo. Puoi anche modificare le tabelle IP direttamente.
+**Nota**: sport e dport della porta aperta vengono aperte nelle sezioni INPUT e OUTPUT del firewall. Devi eseguire questo script come root utilizzando `sudo`. Puoi anche modificare le tabelle IP direttamente.
 
 ## Configurazione del server web
 {: #configure_webserver}
@@ -219,58 +225,52 @@ Per specificare più porte, separale con una virgola ","
 Quando esegui il provisioning di una cella o di un collettivo, ricevi un ambiente pre-configurato. Nello specifico, per una cella Traditional Network Deployment, ricevi il seguente ambiente:
 
 * Un Deployment Manager ubicato con il IBM HTTP Server per scopi di sviluppo e verifica.
-
 * Un nodo personalizzato federato per Deployment Manager.
-
 * Viene inizialmente eseguito il provisioning di Deployment Manager, del server IHS e dell'agent nodo nello stato STARTED.
 
 Se hai bisogno che il server web gestisca tutte le richieste dell'utente, potresti dover generare e propagare il plug-in dopo aver distribuito la tua applicazione.
 
-**Prevenzione dei problemi:** prima di generare e propagare il plug-in, assicurati che le seguenti attività pre-requisite siano state completate:
+**Prevenzione dei problemi:** prima di generare e propagare il plug-in, assicurati che le seguenti attività pre-requisite siano state completate. 
 
 * Nel tuo ambiente Windows, Linux o MAC locale, assicurati che [openVPN](systemAccess.html#setup_openvpn) sia configurato, avviato e di essere collegato alla regione appropriata.
-
-* Dal dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fai clic su **Apri la console di gestione** e accedi con wsadmin e la password amministratore fornita nel dashboard del servizio.
-
+* Dal dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fai clic su **Apri la console di gestione** e accedi con wsadmin e la password amministratore fornita nel dashboard del servizio. 
 * Dalla Console di gestione, crea un server delle applicazioni (ad esempio, ***server1***), perché il Deployment Manager è federato con un nodo personalizzato vuoto.
-
 * Avvia il server che hai creato.
-
 * Durante l'installazione dell'applicazione, assicurati che i moduli della tua applicazione siano associati al server che hai appena avviato e al server web (ad esempio, ***webserver1***).
 
-I seguenti passi avanzati presumono che le attività pre-requisite siano state completate:
+I seguenti passi avanzati presumono che le attività pre-requisite siano state completate. 
 
-1. Dalla console di gestione, genera il plug-in dall'opzione dell'ambiente:
-   1. Scegli l'ambiente > Aggiorna la configurazione del plug-in del server web globale
-   2. Fai clic su **OK** o **Sovrascrivi per generare una nuovo file di configurazione del plug-in**
-2. Dal Deployment Manager, copia il plug-in nella configurazione del server web:
+1. Dalla console di gestione, genera il plug-in dall'opzione dell'ambiente. 
+   1. Scegli **Ambiente > Aggiorna la configurazione del plug-in del server web globale**.
+   2. Fai clic su **OK** o **Sovrascrivi per generare un nuovo file di configurazione del plug-in**.
+2. Dal Deployment Manager, copia il plug-in nella configurazione del server web. 
 
   ```
    cp /opt/IBM/WebSphere/Profiles/DefaultDmgr01/config/cells/plugin-cfg.xml /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
   ```
   {: codeblock}
-3. Modifica **httpd.conf** in **IHS_HOME/conf** (ad esempio, */opt/IBM/WebSphere/HTTPServer/conf*) e assicurati che siano presenti le seguenti linee:
+3. Apri il file `httpd.conf` in `IHS_HOME/conf` (ad esempio, `/opt/IBM/WebSphere/HTTPServer/conf`) e assicurati che siano presenti le seguenti due righe. 
 
     ```
     LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
     WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
     ```
     {: codeblock}  
-4. Apri le porte con questi due comandi:
+4. Apri le porte eseguendo i seguenti comandi.
 
-  ```
+   ```
    export serverPorts=2810:TCP,2810:UDP,8880:TCP,8880:UDP,9101:TCP,9101:UDP,9061:TCP,9061:UDP,9080:TCP,9080:UDP,9354:TCP,9354:UDP,9044:TCP,9044:UDP,9443:TCP,9443:UDP,5060:TCP,5060:UDP,5061:TCP,5061:UDP,11005:TCP,11005:UDP,11007:TCP,11007:UDP,9633:TCP,9633:UDP,7276:TCP,7276:UDP,7286:TCP,7286:UDP,5558:TCP,5558:UDP,5578:TCP,5578:UDP
 
    sudo /opt/IBM/WebSphere/AppServer/virtual/bin/openFirewallPorts.sh -ports $serverPorts -persist true
-  ```
-    {: codeblock}
-5. Arresta e avvia il server web con i seguenti due comandi:
+   ```
+   {: codeblock}
+5. Arresta e avvia il server web eseguendo i seguenti comandi:
     ```
     sudo /opt/IBM/WebSphere/HTTPServer/bin/apachectl -k stop
     sudo /opt/IBM/WebSphere/HTTPServer/bin/apachectl -k start
     ```
     {: codeblock}
-8. Accedi alla tua applicazione tramite il plug-in:
+8. Accedi alla tua applicazione tramite il plug-in. 
   ```
    http://169.53.246.xxx/contextRoot/
   ```
@@ -278,34 +278,37 @@ I seguenti passi avanzati presumono che le attività pre-requisite siano state c
 
 **Nota:** i passi forniti rappresentano uno di molti percorsi quando tenti di configurare un server web. Se è necessaria ulteriore assistenza, vedi il [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.0){: new_window}.
 
-**NOTA:** se non puoi accedere alla tua applicazione, c'è probabilmente un problema di accesso alla porta con il tuo firewall. Pertanto, potresti dover riavviare tutti i seguenti server: il server dell'applicazione, l'agent nodo, il server web e il Deployment Manager. Inoltre, è possibile che tu debba accedere al dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} e riavviare ogni macchina virtuale.
+Se non puoi accedere alla tua applicazione, c'è probabilmente un problema di accesso alla porta con il tuo firewall. Pertanto, potresti dover riavviare tutti i seguenti server: il server dell'applicazione, l'agent nodo, il server web e il Deployment Manager. Inoltre, è possibile che tu debba accedere al dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} e riavviare ogni macchina virtuale.
+{: tip}
 
-## Configurazione SSL
+## Configurazione SSL 
 {: #ssl_configuration}
 
-WebSphere Application Server tradizionale e Liberty sono configurati con il protocollo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}.  Per cambiare il protocollo, modifica i seguenti file:
+WebSphere Application Server tradizionale e Liberty sono configurati con il protocollo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Puoi cambiare il protocollo modificando la configurazione SSL.
 
-Per WebSphere Application Server tradizionale:
+### WebSphere Application Server tradizionale
+{: #ssl-was}
 
-1. Modifica **security.xml** in /opt/IBM/WebSphere/Profiles/*profile_name*/config/cell/*cell_name* e modifica la seguente riga:
+1. Apri il file `security.xml` nella directory `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` e modifica la seguente riga.
 
-  ```
-  sslProtocol="SSL_TLSv2"
-  ```
-{: codeblock}
+   ```
+   sslProtocol="SSL_TLSv2"
+   ```
+   {: codeblock}
 
-2. Modifica **ssl.client.props** in /opt/IBM/WebSphere/Profiles/*profile_name*/properties e modifica la seguente riga:
+2. Apri il file `ssl.client.props` nella directory `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` e modifica la seguente riga.
 
-  ```
-  com.ibm.ssl.protocol=SSL_TLSv2
-  ```
-{: codeblock}
+   ```
+   com.ibm.ssl.protocol=SSL_TLSv2
+   ```
+   {: codeblock}
 
-Per Liberty:
+### Liberty
+{: #ssl-liberty}
 
-1. Modifica **server.xml** in /opt/IBM/WebSphere/Profiles/Liberty/servers/server1 e modifica la seguente riga che si trova nell'elemento di configurazione ssl defaultSSLConfig:
+1. Apri il file `server.xml` nella directory `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` e modifica la seguente riga all'interno dell'elemento di configurazione SSL `defaultSSLConfig`.
 
-  ```
-  sslProtocol="SSL_TLSv2"
-  ```
-{: codeblock}
+   ```
+   sslProtocol="SSL_TLSv2"
+   ```
+   {: codeblock}

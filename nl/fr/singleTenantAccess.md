@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,34 +21,34 @@ Les étapes suivantes vous expliquent comment accéder à votre environnement à
 ## Accès à votre environnement à service exclusif
 {: #accessSTE}
 
-1. Dans votre navigateur, accédez au catalogue [{{site.data.keyword.cloud_notm}} ](https://console.bluemix.net/catalog/){: new_window}.
+1. Dans votre navigateur, accédez au catalogue [{{site.data.keyword.cloud_notm}}](https://{DomainName}/catalog/){: new_window}.
 
 2. Cliquez sur **Connexion** et connectez-vous avec votre ID IBMid.
 
 6. Dans le filtre de recherche du catalogue, entrez **WebSphere Application Server**.
 
-    ![alt text](images/filter.png "Filtre de recherche")
+    ![Filtre de recherche](images/filter.png)
 
 7. Sous **Services d'application**, cliquez sur la vignette **WebSphere Application Server**.
 
-    ![alt text](images/iconWAS.png "Vignette WebSphere Application Server")
+    ![Vignette WebSphere Application Server](images/iconWAS.png)
 
 8. Dans le menu **Environnement**, sélectionnez votre environnement à service exclusif.
 
-    ![alt text](images/environmentSTE.png "Nom de l'environnement à service exclusif")
+    ![Nom de l'environnement à service exclusif](images/environmentSTE.png)
 
     **Evitez les problèmes :** l'environnement public doit s'afficher en tant qu'environnement par défaut. L'affichage du nom d'environnement correct suppose que vous êtes connecté à la région adéquate et que vous êtes membre d'une organisation qui est autorisée à accéder à votre environnement à service exclusif.
 
-    **Remarque :** si vous sélectionnez l'un des environnements publics, une facturation horaire peut vous être appliquée. De ce fait, si vous ne voyez pas le nom de votre environnement à service exclusif, ouvrez un ticket de demande de service, comme défini sur la page [Support client](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+    **Remarque :** si vous sélectionnez l'un des environnements publics, une facturation horaire peut vous être appliquée. De ce fait, si vous ne voyez pas le nom de votre environnement à service exclusif, ouvrez un ticket de demande de service, comme décrit sur la page [Obtenir de l'aide](reportingIssues.html){: new_window}.
 
 9. Sélectionnez le plan approprié et cliquez sur **Créer**.
 
-    ![alt text](images/createSTE.png "Choix d'un plan et création de votre service")
+    ![Choix d'un plan et création de votre service](images/createSTE.png)
 
 
 **Remarque :** la tarification horaire ne s'applique pas pour les environnements à service exclusif. Un environnement à service exclusif inclut un nombre fixe de **blocs**, appelé quota. Un petit environnement contient 64 blocs, un moyen, 128 blocs, et un grand, 256 blocs.
 
-Un **bloc** est défini de la façon suivante :
+Un **bloc** est défini de la façon suivante.
   * 1 UC virtuelle
   * 12,5 Go de disque[1]
   * 2 Go de RAM
@@ -65,18 +65,12 @@ Supposez, par exemple, que vous disposiez d'un petit environnement, qui contient
 ## Environnement de réseau privé
 {: #private_network}
 
-Une fois votre environnement WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment mis à disposition, vous pouvez télécharger vos données d'identification VPN et établir une connexion OpenVPN. Pour plus d'informations, voir les liens suivants :
+Une fois votre environnement à service exclusif mis à disposition, vous pouvez télécharger vos données d'identification VPN et établir une connexion OpenVPN. Pour plus d'informations, voir les liens suivants :
 
-* [Accès au VPN (réseau privé virtuel)](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [Configuration d'OpenVPN](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [Accès au VPN (réseau privé virtuel)](networkEnvironment.html#vpnAccess){: new_window}
+* [Configuration d'OpenVPN](systemAccess.html#setup_openvpn){: new_window}
 
 ## Gestion de votre environnement à service exclusif
 {: #manageSTE}
 
-Pour ajouter une capacité supplémentaire à votre environnement WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment existant ou pour commander une capacité dans un autre centre de données, contactez l'un des centres d'appels situés sur le continent américain, votre interlocuteur IBM ou votre partenaire commercial IBM. Pour connaître votre interlocuteur ou partenaire, appelez le +1 800 426 4968. Pour plus d'informations, contactez l'un des centres d'appels situés sur le continent américain. Téléphone : +1 800 IBM CALL (426 2255) Fax : +1 800 2IBM FAX (242 6329).
-
-
-## Prise en charge de votre environnement à service exclusif
-{: #supportingSTE}
-
-Si vous rencontrez des problèmes, vous pouvez vous faire aider en ouvrant un ticket de demande de service, comme défini sur la page [Support client](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window}.
+Pour ajouter une capacité supplémentaire à votre environnement à service exclusif ou pour commander une capacité dans un autre centre de données, contactez l'un des centres d'appels situés sur le continent américain, votre interlocuteur IBM ou votre partenaire commercial IBM. Voir [Prise de contact avec le service commercial](reportingIssues.html#contacting-sales) pour plus de détails.

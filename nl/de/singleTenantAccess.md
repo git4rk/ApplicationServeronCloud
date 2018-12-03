@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,29 +21,29 @@ In den folgenden Schritten werden der Zugriff auf die Single-Tenant-Umgebung und
 ## Zugriff auf die Single-Tenant-Umgebung
 {: #accessSTE}
 
-1. Rufen Sie im Browser den [{{site.data.keyword.cloud_notm}}-Katalog](https://console.bluemix.net/catalog/){: new_window} auf.
+1. Rufen Sie im Browser den [{{site.data.keyword.cloud_notm}}-Katalog](https://{DomainName}/catalog/){: new_window} auf.
 
 2. Klicken Sie auf **Anmelden** und melden Sie sich mit Ihrer IBMid an.
 
 6. Geben Sie im Suchfilter des Katalogs **WebSphere Application Server** ein.
 
-    ![alt text](images/filter.png "Suchfilter")
+    ![Suchfilter](images/filter.png)
 
-7. Klicken Sie unter **Application Services** auf das Feld **WebSphere Application Server**.
+7. Klicken Sie unter **Application Services** auf die Kachel **WebSphere Application Server**.
 
-    ![alt text](images/iconWAS.png "Feld für WebSphere Application Server")
+    ![Kachel für WebSphere Application Server](images/iconWAS.png)
 
 8. Wählen Sie im Menü **Umgebung** Ihre Single-Tenant-Umgebung aus.
 
-    ![alt text](images/environmentSTE.png "Name der Single-Tenant-Umgebung")
+    ![Name der Single-Tenant-Umgebung](images/environmentSTE.png)
 
     **Probleme vermeiden:** Standardmäßig wird möglicherweise die öffentliche Umgebung angezeigt. Bei der Anzeige des korrekten Umgebungsnamens wird davon ausgegangen, dass Sie bei der korrekten Region angemeldet und Mitglied einer Organisation sind, die über Zugriffsberechtigung für Ihre Single-Tenant-Umgebung verfügt.
 
-    **Hinweis:** Wenn Sie eine der öffentlichen Umgebungen auswählen, fallen möglicherweise Gebühren auf Stundenbasis an. Öffnen Sie daher, wenn der Name Ihrer Single-Tenant-Umgebung nicht angezeigt wird, ein Support-Ticket wie auf der Seite [Kundenunterstützung anfordern](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} definiert.
+    **Hinweis:** Wenn Sie eine der öffentlichen Umgebungen auswählen, fallen möglicherweise Gebühren auf Stundenbasis an. Öffnen Sie daher ein Support-Ticket, wenn der Name Ihrer Single-Tenant-Umgebung nicht angezeigt wird. Siehe hierzu die Beschreibung auf der Seite [Hilfe anfordern](reportingIssues.html){: new_window}.
 
 9. Wählen Sie den entsprechenden Plan aus und klicken Sie auf **Erstellen**.
 
-    ![alt text](images/createSTE.png "Plan auswählen und Service erstellen")
+    ![Plan auswählen und Service erstellen](images/createSTE.png)
 
 
 **Hinweis:** Eine Preisstruktur mit einer Abrechnung auf Stundenbasis ist für Single-Tenant-Umgebungen nicht anwendbar. Eine Single-Tenant-Umgebung enthält eine festgelegte Anzahl von **Blöcken**, die als Kontingent bezeichnet werden. Eine kleine Umgebung enthält 64 Blöcke. Eine mittlere Umgebung enthält 128 Blöcke. Eine große Umgebung enthält 256 Blöcke.
@@ -65,18 +65,12 @@ Beispiel: Sie verwenden eine kleine Umgebung mit 64 Blöcken. Innerhalb dieser U
 ## Private Netzumgebung
 {: #private_network}
 
-Nach der Bereitstellung der Single-Tenant-Umgebung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} können Sie Ihre VPN-Berechtigungsnachweise herunterladen und eine OpenVPN-Verbindung einrichten. Weitere Informationen können Sie über die folgenden Links aufrufen:
+Nach der Bereitstellung der Single-Tenant-Umgebung können Sie Ihre VPN-Berechtigungsnachweise herunterladen und eine OpenVPN-Verbindung einrichten. Weitere Informationen können Sie über die folgenden Links aufrufen:
 
-* [VPN-Zugriff](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [OpenVPN einrichten](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [VPN-Zugriff](networkEnvironment.html#vpnAccess){: new_window}
+* [OpenVPN einrichten](systemAccess.html#setup_openvpn){: new_window}
 
 ## Single-Tenant-Umgebung verwalten
 {: #manageSTE}
 
-Wenn Sie Ihrer vorhandenen Single-Tenant-Umgebung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} zusätzliche Kapazität hinzufügen oder Kapazität in einem anderen Rechenzentrum bestellen möchten, wenden Sie sich an die Call-Center für Nord- und Südamerika, an den IBM Ansprechpartner vor Ort oder an den IBM Business Partner. Informationen zum zuständigen Ansprechpartner oder Partner erhalten Sie unter 800-426-4968. Weitere Informationen erhalten Sie in den Call-Centern für Nord- und Südamerika. Telefon: 800-IBM-CALL (426-2255) Telefax: 800-2IBM-FAX (242-6329).
-
-
-## Unterstützung für die Single-Tenant-Umgebung
-{: #supportingSTE}
-
-Wenn Probleme auftreten, können Sie Unterstützung anfordern, indem Sie ein Support-Ticket öffnen, wie auf der Seite [Kundenunterstützung anfordern](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} definiert.
+Wenn Sie Ihrer vorhandenen Single-Tenant-Umgebung zusätzliche Kapazität hinzufügen oder Kapazität in einem anderen Rechenzentrum bestellen möchten, wenden Sie sich an die Call-Center für Nord- und Südamerika, an den IBM Ansprechpartner vor Ort oder an den IBM Business Partner. Einzelheiten hierzu finden Sie in [Kontaktaufnahme mit dem Vertrieb](reportingIssues.html#contacting-sales).

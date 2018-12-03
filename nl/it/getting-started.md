@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-13"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -23,7 +23,7 @@ Con {{site.data.keyword.appserver_full}}, puoi impostare un ambiente WebSphere A
 ## Prima di iniziare
 {: #prereqs}
 
-Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un contratto di riserva o un ambiente a singolo tenant, dovrai contattare il settore Vendite IBM prima di creare il servizio. Scopri di più su queste opzioni in [Informazioni](index.html).
+Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un contratto di riserva o un ambiente a singolo tenant, contatta il settore Vendite IBM prima di creare il servizio. Scopri di più su queste opzioni in [Informazioni](index.html).
 
 ### Migrazione di un ambiente WebSphere esistente
 
@@ -34,7 +34,7 @@ I seguenti passi ti guidano nella creazione di un nuovo ambiente in {{site.data.
 ## Passo 1: crea il servizio
 {: #create}
 
-1. Vai alla pagina [{{site.data.keyword.appserver_short}}](https://console.bluemix.net/catalog/services/websphere-application-server) nel catalogo {{site.data.keyword.cloud_notm}}.
+1. Vai alla pagina [{{site.data.keyword.appserver_short}}](https://{DomainName}/catalog/services/websphere-application-server) nel catalogo {{site.data.keyword.cloud_notm}}.
 1. Accedi con il tuo ID IBM o registrarti per un account {{site.data.keyword.cloud_notm}}.
 1. Nella pagina del catalogo, rivedi le selezioni per la configurazione del servizio.
 
@@ -46,7 +46,7 @@ I seguenti passi ti guidano nella creazione di un nuovo ambiente in {{site.data.
 
   * **Ambiente a singolo tenant:** in **Scegli una regione/ubicazione in cui distribuire**, verifica che la regione selezionata sia la regione in cui viene distribuito il tuo ambiente a singolo tenant. In **Ambiente**, seleziona il tuo ambiente a singolo tenant. Per impostazione predefinita, potrebbe essere mostrato l'ambiente pubblico.
 
-    Se non vedi elencato il tuo ambiente a singolo tenant, verifica di essere nella regione corretta e che la tua organizzazione abbia accesso al tuo ambiente a singolo tenant.
+    Se il tuo ambiente non viene elencato, verifica di essere nella regione corretta e che la tua organizzazione abbia accesso al tuo ambiente a singolo tenant.
     {: tip}
 1. Seleziona il piano dei prezzi per l'edizione di {{site.data.keyword.appserver_short}} che vuoi distribuire.
 1. Fai clic su **Crea**.
@@ -55,7 +55,7 @@ I seguenti passi ti guidano nella creazione di un nuovo ambiente in {{site.data.
 ## Passo 2: scegli il tuo ambiente (solo Network Deployment)
 {: #choose_env}
 
-I piani {{site.data.keyword.appserver_short}} Base e Liberty Core prevedono solo server singoli, quindi se hai scelto questi piani, puoi saltare questo passo.
+I piani {{site.data.keyword.appserver_short}} Base e Liberty Core prevedono solo server singoli, quindi se hai scelto questi piani, puoi saltare questo passo. 
 
 Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo ambiente.
 
@@ -66,7 +66,7 @@ Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo a
 ## Passo 3: dimensiona le tue macchine virtuali
 {: #vm_sizing}
 
-Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Il dimensionamento delle macchine virtuali è suddiviso in più parti in [dimensioni T-shirt](index.html#vm-size) di blocchi di risorse.
+Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Le macchine virtuali sono suddivise in [dimensioni T-shirt](index.html#vm-size) di blocchi di risorse. 
 
 Fai clic sulla scheda relativa al componente, ad esempio il server, il Deployment Manager o il nodo dell'applicazione e seleziona la dimensione T-shirt per sua la macchina virtuale.
 

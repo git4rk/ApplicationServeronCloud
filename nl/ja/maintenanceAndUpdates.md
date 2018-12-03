@@ -46,8 +46,8 @@ lastupdated: "2018-08-22"
 スクリプトを実行すると、次のアクションが実行されます。
 
 * 実行中のすべての WebSphere Application Server インスタンスおよび IBM HTTP Server インスタンスが停止されます。
-* オプションで、Installation Manager、WebSphere Application Server、IBM HTTP Server、および Java SDK 用の最新のフィックスパックがインストールされます。
-* WebSphere、IBM HTTP Server、および Java SDK 用の最新の暫定修正がインストールされます。
+* オプションで、Installation Manager、WebSphere Application Server、IBM HTTP Server、および Java&trade; SDK 用の最新のフィックスパックがインストールされます。
+* WebSphere、IBM HTTP Server、および Java&trade; SDK 用の最新の暫定修正がインストールされます。
 * すべてのインスタンスが再始動されます。
 
 #### オプション
@@ -88,12 +88,12 @@ lastupdated: "2018-08-22"
 
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされ、フィックスおよびフィックスパックを適用するために直接実行できます。
 
-**問題の回避:** 基礎となるバイナリーは **virtuser** (制限付き管理仮想ユーザー) としてインストールされているため、Installation Manager も常に **virtuser** として実行する必要があります。
+**問題の回避:** 基礎となるバイナリー・ファイルは `virtuser` (制限付き管理仮想ユーザー) としてインストールされているため、Installation Manager も常に `virtuser` として実行する必要があります。
 
 ## 仮想マシンへのシステムの更新の適用
 {:#vm-system-updates}
 
-仮想マシンにシステムの更新を適用するのは、物理的な Red Hat Enterprise Linux (RHEL) システムを更新するのと似ています。 Yum パッケージ・マネージャーを使用することで、パッケージをインストール、更新、アンインストール、および管理できます。 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} システムは、IBM の Red Hat Satellite サーバーから更新を受信するように構成されており、これにより、Red Hat ネットワークから非常に安全なパッケージが提供されます。 Satellite サーバーは、IBM により管理されており、ご使用のシステムからは変更できません。
+仮想マシンにシステムの更新を適用するのは、物理的な Red Hat Enterprise Linux&reg; (RHEL) システムを更新するのと似ています。 Yum パッケージ・マネージャーを使用することで、パッケージをインストール、更新、アンインストール、および管理できます。 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} システムは、IBM の Red Hat Satellite サーバーから更新を受信するように構成されており、これにより、Red Hat ネットワークから非常に安全なパッケージが提供されます。 Satellite サーバーは、IBM により管理されており、ご使用のシステムからは変更できません。
 
 詳しくは、[
 Applying package updates on Red Hat Enterprise Linux](https://access.redhat.com/articles/11258#rhel6){: new_window} および

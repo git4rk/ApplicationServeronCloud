@@ -46,8 +46,8 @@ Die Menge an Plattenspeicher, die für die Installation der Aktualisierungen erf
 Durch die Ausführung des Scripts werden die folgenden Aktionen durchgeführt:
 
 * Stoppt alle aktiven Instanzen von WebSphere Application Server und IBM HTTP Server.
-* Installiert optional die neuesten Fixpacks für Installation Manager, WebSphere Application Server, IBM HTTP Server und das Java-SDK.
-* Installiert die neuesten vorläufigen Fixes für WebSphere, IBM HTTP Server und das Java-SDK.
+* Installiert wahlweise die neuesten Fixpacks für Installation Manager, WebSphere Application Server, IBM HTTP Server und das Java&trade;-SDK.
+* Installiert die neuesten vorläufigen Fixes für WebSphere, IBM HTTP Server und das Java&trade;-SDK.
 * Startet alle Instanzen neu.
 
 #### Optionen
@@ -88,11 +88,11 @@ Installiert alle verfügbaren Fixpacks und anschließend alle anwendbaren vorlä
 
 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} wird im Verzeichnis `/home/virtuser/IBM/Installation Manager` installiert und kann direkt zur Anwendung von Fixes und Fixpacks ausgeführt werden.
 
-**Probleme vermeiden:** Da die Installation der zugrunde liegenden Binärdateien als **virtuser** ausgeführt wird, d. h. als virtueller Benutzer mit begrenzer Administratorberechtigung, müssen Sie sicherstellen, dass Installation Manager stets als **virtuser** ausgeführt wird.
+**Probleme vermeiden:** Da die Installation der zugrunde liegenden Binärdateien als `virtuser` ausgeführt wird, d. h. als virtueller Benutzer mit begrenzter Administratorberechtigung, müssen Sie sicherstellen, dass Installation Manager stets als `virtuser` ausgeführt wird.
 
 ## System-Updates für virtuelle Maschinen anwenden
 {:#vm-system-updates}
 
-Die Anwendung von Systemaktualisierungen für eine virtuelle Maschine ähnelt der Aktualisierung eines physischen Red Hat Enterprise Linux-Systems (RHEL-Systems). Mithilfe des Yum-Paketmanagers können Sie Pakete installieren, aktualisieren, deinstallieren und verwalten. Systeme mit WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} werden so konfiguriert, dass sie Aktualisierungen vom IBM Red Hat Satellite-Server erhalten, der geschützte, sichere Pakete über das Red Hat-Netz bereitstellt. Der Satellite-Server wird von IBM verwaltet und kann von Ihrem System aus nicht geändert werden.
+Die Anwendung von Systemaktualisierungen für eine virtuelle Maschine ähnelt der Aktualisierung eines physischen Red Hat Enterprise Linux&reg;-Systems (RHEL-Systems). Mithilfe des Yum-Paketmanagers können Sie Pakete installieren, aktualisieren, deinstallieren und verwalten. Systeme mit WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} werden so konfiguriert, dass sie Aktualisierungen vom IBM Red Hat Satellite-Server erhalten, der geschützte, sichere Pakete über das Red Hat-Netz bereitstellt. Der Satellite-Server wird von IBM verwaltet und kann von Ihrem System aus nicht geändert werden.
 
 Weitere Informationen finden Sie in [Paketaktualisierungen in Red Hat Enterprise Linux anwenden](https://access.redhat.com/articles/11258#rhel6){: new_window} und in [Yum, der Red Hat-Paketmanager](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -18,14 +18,14 @@ lastupdated: "2018-06-08"
 
 如果您管理 {{site.data.keyword.appserver_full}} 環境，而且需要判斷要使用的使用者，請務必瞭解下列概念：
 
- * 使用 */home/virtuser/IBM/Installation Manager* 目錄中所安裝的 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}，可以套用維護。因為是以 **virtuser**（有限管理虛擬使用者）身分安裝基礎二進位檔，所以請確定以 **virtuser** 身分安裝所有修正套件及臨時修正程式。
+ * 使用 `/home/virtuser/IBM/Installation Manager` 目錄中所安裝的 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}，可以套用維護。因為是以 `virtuser`（有限管理虛擬使用者）身分安裝基礎二進位檔，所以請確定以 `virtuser` 身分安裝所有修正套件及臨時修正程式。
 
- * 不過，當您從指令行啟動及停止伺服器時，請務必使用 **wsadmin**（WebSphere 管理 ID），而非 **virtuser**。
+ * 不過，當您從指令行啟動及停止伺服器時，請務必使用 `wsadmin`（WebSphere 管理 ID），而非 `virtuser`。
 
 ## Cell 安裝慣例
 {: cell_installation_conventions}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Cell 是遵循標準化目錄結構所安裝及配置。下列清單記錄一些重要的設定。如需完整的設定清單，請參閱 /etc/virtualimage.properties。
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Cell 是遵循標準化目錄結構所安裝及配置。下列清單記錄一些重要的設定。如需完整的設定清單，請參閱 `/etc/virtualimage.properties`。
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -37,7 +37,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Cell 是遵�
 
 ## Liberty 群體安裝慣例
 
-Liberty Collective 是遵循標準化目錄結構所安裝及配置。下列清單記錄一些重要的設定。如需完整的設定清單，請參閱 /etc/virtualimage.properties。
+Liberty Collective 是遵循標準化目錄結構所安裝及配置。下列清單記錄一些重要的設定。如需完整的設定清單，請參閱 `/etc/virtualimage.properties`。
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

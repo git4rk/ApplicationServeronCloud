@@ -52,23 +52,22 @@ packs aumentou o espaço em disco necessário para 1.3 GB.
 A execução do script executa as seguintes ações:
 
 * Para todas as instâncias do WebSphere Application Server e do IBM HTTP Server em execução
-* Opcionalmente, instala os fix packs mais recentes para o Installation Manager, o WebSphere Application Server, o IBM HTTP
-Server e o Java SDK
-* Instala as correções temporárias mais recentes para o WebSphere, o IBM HTTP Server e o Java SDK
+* Opcionalmente, instala os fix packs mais recentes para o Installation Manager, o WebSphere Application Server, o IBM HTTP Server e o Java&trade; SDK
+* Instala as correções temporárias mais recentes para o WebSphere, o IBM HTTP Server e o Java&trade; SDK
 * Reinicia todas as instâncias
 
 #### Opções
-* ** ` -fixpacks ` **
+* **`-fixpacks`**
 
     Atualiza todos os pacotes para o fix pack mais recente.
-* ** ` -noprompt ` **
+* **`-noprompt`**
 
     Não solicita confirmação antes da atualização.
 
-#### Exemplos de Sintaxe
+#### Exemplos de sintaxe
 
 ```
-./installService.sh-?
+./installService.sh -?
 ```
 {:.codeblock}
 
@@ -95,13 +94,12 @@ Instala todos os fix packs disponíveis e, em seguida, instala todas as correç�
 
 O [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} é instalado no diretório `/home/virtuser/IBM/Installation Manager` e pode ser executado diretamente para aplicar correções e fix packs.
 
-**Evite problemas:** porque os binários subjacentes são instalados como **virtuser**, um usuário administrativo virtual limitado, assegure-se de que o Installation Manager seja sempre executado como **virtuser**.
+**Evite problemas:**como os arquivos binários subjacentes são instalados como `virtuser`, um usuário virtual administrativo limitado, assegure-se de que o Installation Manager seja sempre executado como `virtuser`.
 
-## Aplicando Atualizações do Sistema em Máquinas Virtuais
+## Aplicando atualizações do sistema em máquinas virtuais
 {:#vm-system-updates}
 
-A aplicação de atualizações do sistema em uma máquina virtual é semelhante à atualização de um sistema físico do Red Hat
-Enterprise Linux (RHEL). Usando o gerenciador de pacotes Yum, é possível instalar, atualizar, desinstalar e, de outra forma, gerenciar pacotes. O WebSphere Application Server em sistemas {{site.data.keyword.Bluemix_notm}} está configurado para receber atualizações do servidor Red Hat Satellite da IBM, que fornece pacotes seguros da rede do Red Hat. O servidor Satellite é gerenciado
+A aplicação de atualizações do sistema em uma máquina virtual é semelhante à atualização de um sistema físico do Red Hat Enterprise Linux&reg; (RHEL). Usando o gerenciador de pacotes Yum, é possível instalar, atualizar, desinstalar e, de outra forma, gerenciar pacotes. O WebSphere Application Server em sistemas {{site.data.keyword.Bluemix_notm}} está configurado para receber atualizações do servidor Red Hat Satellite da IBM, que fornece pacotes seguros da rede do Red Hat. O servidor Satellite é gerenciado
 pela IBM e não pode ser modificado de seu sistema.
 
 Para obter mais informações, consulte [Aplicando atualizações de pacote no Red Hat Enterprise Linux](https://access.redhat.com/articles/11258#rhel6){: new_window} e [Yum, o gerenciador de pacote do Red Hat](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html){: new_window}.

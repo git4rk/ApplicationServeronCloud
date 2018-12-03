@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -18,14 +18,14 @@ lastupdated: "2018-06-08"
 
 {{site.data.keyword.appserver_full}} 環境を管理していて、どのユーザーがこの環境を使用するか決定する必要がある場合、以下の概念を理解することが重要です。
 
- * 保守は、*/home/virtuser/IBM/Installation Manager* ディレクトリーにインストールされている [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} を使用して適用できます。 基礎のバイナリーは **virtuser** (制限付き管理仮想ユーザー) としてインストールされているため、すべてのフィックスパックおよび暫定修正は **virtuser** としてインストールするようにしてください。
+ * 保守は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされている、[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} を使用して適用できます。基礎のバイナリー・ファイルは `virtuser` (制限付き管理仮想ユーザー) としてインストールされているため、すべてのフィックスパックおよび暫定修正は `virtuser` としてインストールするようにしてください。
 
- * ただし、コマンド・ラインからサーバーを始動および停止する場合、**virtuser** ではなく **wsadmin** (WebSphere 管理 ID) を使用する必要があります。
+ * ただし、コマンド・ラインからサーバーを始動および停止する場合、`virtuser` ではなく `wsadmin` (WebSphere 管理 ID) を使用する必要があります。
 
 ## セルのインストール規則
 {: cell_installation_conventions}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} セルは、標準化されたディレクトリー構造に従ってインストールおよび構成されます。 以下のリストは、いくつかの重要な設定に言及しています。  これらの設定の完全なリストについては、/etc/virtualimage.properties を参照してください。
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} セルは、標準化されたディレクトリー構造に従ってインストールおよび構成されます。 以下のリストは、いくつかの重要な設定に言及しています。  これらの設定の完全なリストについては、`/etc/virtualimage.properties` を参照してください。
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -37,7 +37,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} セルは、�
 
 ## Liberty 集合のインストール規則
 
-Liberty 集合は、標準化されたディレクトリー構造に従ってインストールおよび構成されます。 以下のリストは、いくつかの重要な設定に言及しています。  これらの設定の完全なリストについては、/etc/virtualimage.properties を参照してください。
+Liberty 集合は、標準化されたディレクトリー構造に従ってインストールおよび構成されます。 以下のリストは、いくつかの重要な設定に言及しています。  これらの設定の完全なリストについては、`/etc/virtualimage.properties` を参照してください。
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

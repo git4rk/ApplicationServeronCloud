@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-08"
+lastupdated: "2018-11-19"
 
 ---
 
@@ -21,29 +21,29 @@ lastupdated: "2018-06-08"
 ## Single Tenant Environment 액세스
 {: #accessSTE}
 
-1. 브라우저에서 [{{site.data.keyword.cloud_notm}} 카탈로그](https://console.bluemix.net/catalog/){: new_window}로 이동하십시오.
+1. 브라우저에서 [{{site.data.keyword.cloud_notm}} 카탈로그](https://{DomainName}/catalog/){: new_window}로 이동하십시오.
 
 2. **로그인**을 클릭하고 IBM ID로 로그인하십시오.
 
 6. 카탈로그 검색 필터에 **WebSphere Application Server**를 입력하십시오.
 
-    ![alt 텍스트](images/filter.png "검색 필터")
+    ![검색 필터](images/filter.png)
 
 7. **애플리케이션 서비스**에서 **WebSphere Application Server** 타일을 클릭하십시오.
 
-    ![alt 텍스트](images/iconWAS.png "WebSphere Application Server 타일")
+    ![WebSphere Application Server 타일](images/iconWAS.png)
 
 8. **환경** 메뉴에서 Single Tenant Environment를 선택하십시오.
 
-    ![alt 텍스트](images/environmentSTE.png "Single Tenant Environment 이름")
+    ![Single Tenant Environment 이름](images/environmentSTE.png)
 
     **문제 예방:** 기본적으로 공용 환경이 표시될 수 있습니다. 올바른 환경 이름이 표시되면 사용자가 올바른 지역에 로그인했으며 Single Tenant Environment에 액세스가 허용된 조직의 구성원임을 알 수 있습니다.
 
-    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [고객 지원 받기](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} 페이지에 정의된 대로 지원 티켓을 여십시오.
+    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [지원 받기](reportingIssues.html){: new_window} 페이지에 설명된 대로 지원 티켓을 여십시오.
 
 9. 적절한 플랜을 선택하고 **작성**을 클릭하십시오.
 
-    ![alt 텍스트](images/createSTE.png "플랜 선택 및 서비스 작성")
+    ![플랜 선택 및 서비스 작성](images/createSTE.png)
 
 
 **참고:** 시간당 가격은 Single Tenant Environment에 적용되지 않습니다. Single Tenant Environment에는 할당량이라는 고정된 수의 **블록**이 포함됩니다. 소형 환경에는 64개의 블록이 포함됩니다. 중형 환경에는 128개 블록이 포함되고 대형 환경에는 256개의 블록이 포함됩니다.
@@ -65,18 +65,12 @@ lastupdated: "2018-06-08"
 ## 사설 네트워크 환경
 {: #private_network}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment를 프로비저닝하면 VPN 신임 정보를 다운로드하고 OpenVPN 연결을 설정할 수 있습니다. 자세한 정보는 다음 링크를 참조하십시오.
+Single Tenant Environment가 프로비저닝된 후 VPN 인증 정보를 다운로드하고 OpenVPN 연결을 설정할 수 있습니다. 자세한 정보는 다음 링크를 참조하십시오.
 
-* [VPN 액세스](https://console.bluemix.net/docs/services/ApplicationServeronCloud/networkEnvironment.html#vpnAccess){: new_window}
-* [OpenVPN 설정](https://console.bluemix.net/docs/services/ApplicationServeronCloud/systemAccess.html#setup_openvpn){: new_window}
+* [VPN 액세스](networkEnvironment.html#vpnAccess){: new_window}
+* [OpenVPN 설정](systemAccess.html#setup_openvpn){: new_window}
 
 ## Single Tenant Environment 관리
 {: #manageSTE}
 
-기존 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}: Single Tenant Environment에 추가 용량을 추가하거나 다른 데이터 센터에서 용량을 주문하려면 미국 콜 센터, 지역 IBM 담당자 또는 IBM Business Partner에게 문의하십시오. 담당자 또는 파트너를 알아보려면 800-426-4968에 전화하십시오. 자세한 정보는 미국 콜 센터에 문의하십시오. 전화: 800-IBM-CALL(426-2255) 팩스: 800-2IBM-FAX(242-6329).
-
-
-## Single Tenant Environment 지원
-{: #supportingSTE}
-
-문제가 발생하면 [고객 지원 받기](https://console.bluemix.net/docs/support/index.html#contacting-support){: new_window} 페이지에 정의된 대로 지원 티켓을 열어 지원을 받을 수 있습니다.
+기존 Single Tenant Environment에 추가 용량을 추가하거나 다른 데이터 센터에서 용량을 주문하려면 미국 콜 센터, 지역 IBM 담당자 또는 IBM 비즈니스 파트너에게 문의하십시오. 세부사항은 [영업 담당자에게 문의](reportingIssues.html#contacting-sales)를 참조하십시오.
