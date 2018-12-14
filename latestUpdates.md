@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-11-20"
+lastupdated: "2018-12-13"
 
 ---
 
@@ -14,6 +14,12 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+
+## December 14, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* The 9.0.0.10 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.10, other fix packs of traditional WebSphere Application Server, such as 9.0.0.9, 8.5.5.14, and 8.5.5.13, are available for provisioning.
+* The 18.0.0.4 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 18.0.0.4, the 18.0.0.3 fix pack version of WebSphere Application Server Liberty is available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## October 24, 2018: Bring-your-own-license billing now available for reserve contract and Single Tenant environments
 
