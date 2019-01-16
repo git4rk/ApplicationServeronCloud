@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ The following diagram shows these network paths:
 
 Figure 1. Client view of Multi-tenant networking with Public IP
 
-![Figure1. Client view of Multi-tenant networking with Public IP](images/wasaas_multi_tenantPublicIP.gif)
+![Figure1. Client view of Multi-tenant networking with Public IP](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN access
 {: #vpnAccess}
@@ -39,7 +39,7 @@ In most cases, you need only a single VPN configuration that you can download by
 
 If your VPN configurations are compromised or expired, you can revoke VPN configuration by using the advanced VPN management page. Additionally, from an audit perspective, you can view a history of all VPN management activity and download active VPN configurations that were created previously from the advanced VPN management page.
 
-All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}.
+All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}.
 
 
 ## Public internet access

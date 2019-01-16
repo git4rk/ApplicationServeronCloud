@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -15,6 +15,11 @@ lastupdated: "2018-12-13"
 
 A list of the latest updates to the service.
 
+## January 16, 2019: Updated API endpoint URLs for REST API implementation
+
+The region prefix for Dallas changed from `ng` to `us-south`. The other region prefixes stayed the same. The REST API endpoint URLs changed from `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` to `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. The `bluemix.net` URLs will continue to be supported, but you should change REST API endpoint URLs to use `websphereappsvr.cloud.ibm.com` if you use the REST APIs to manage your service instances.
+
+For more information about the REST API endpoint URLs, see [System access](systemAccess.html#system_access).
 
 ## December 14, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.0.10 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.10, other fix packs of traditional WebSphere Application Server, such as 9.0.0.9, 8.5.5.14, and 8.5.5.13, are available for provisioning.
