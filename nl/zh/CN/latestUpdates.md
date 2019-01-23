@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 服务的最新更新的列表。
+
+## 2019 年 1 月 16 日：更新了 REST API 实现的 API 端点 URL
+
+达拉斯的区域前缀从 `ng` 更改为 `us-south`。其他区域前缀保持不变。REST API 端点 URL 从 `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` 更改为 `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`。`bluemix.net` URL 将持续受支持，但是如果使用 REST API 来管理服务实例，那么应该将 REST API 端点 URL 更改为使用 `websphereappsvr.cloud.ibm.com`。
+
+有关 REST API 端点 URL 的更多信息，请参阅[系统访问](systemAccess.html#system_access)。
+
+## 2018 年 12 月 14 日：更新了 {{site.data.keyword.Bluemix_notm}} 中的 WebSphere Application Server
+* 现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.10 修订包可用。除了 9.0.0.10 外，传统 WebSphere Application Server 的其他修订包（例如，9.0.0.9、8.5.5.14 和 8.5.5.13）也可用于供应。
+* 现在，在供应新服务实例时，WebSphere Application Server Liberty 的 18.0.0.4 修订包版本可用。除了 18.0.0.4 外，WebSphere Application Server Liberty 的 18.0.0.3 修订包版本也可用于供应。
+* 集成了其他服务维护。
 
 ## 2018 年 10 月 24 日：自带许可证计费现可用于保留合同和单租户环境。
 

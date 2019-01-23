@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ Im folgenden Diagramm sind die Netzpfade dargestellt:
 
 Abbildung 1. Clientansicht des Multi-Tenant-Netzbetriebs mit öffentlicher IP-Adresse
 
-![Abbildung 1. Clientansicht des Multi-Tenant-Netzbetriebs mit öffentlicher IP-Adresse](images/wasaas_multi_tenantPublicIP.gif)
+![Abbildung 1. Clientansicht des Multi-Tenant-Netzbetriebs mit öffentlicher IP-Adresse](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN-Zugriff
 {: #vpnAccess}
@@ -39,7 +39,7 @@ In den meisten Fällen benötigen Sie nur eine einzelne VPN-Konfiguration, die S
 
 Wenn Ihre VPN-Konfigurationen beeinträchtigt oder abgelaufen sind, können Sie VPN-Konfigurationen über die Seite für die erweiterte VPN-Verwaltung widerrufen. Zu Auditzwecken können Sie über die Seite für die erweiterte VPN-Verwaltung auch ein Verlaufsprotokoll der gesamten VPN-Verwaltungsaktivitäten anzeigen und zuvor erstellte, aktive VPN-Konfigurationen herunterladen.
 
-Alle Features, die über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verfügbar sind, können auch scriptgesteuert mit den REST-APIs ausgeführt werden. Weitere Informationen finden Sie in der [REST-API-Dokumentation](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} zu WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+Alle Features, die über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verfügbar sind, können auch scriptgesteuert mit den REST-APIs ausgeführt werden. Weitere Informationen finen Sie in der {{site.data.keyword.Bluemix_notm}} [REST-API-Dokumentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} zu WebSphere Application Server. 
 
 
 ## Zugriff auf das öffentliche Internet

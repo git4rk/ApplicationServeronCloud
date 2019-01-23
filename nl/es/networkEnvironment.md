@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ En el siguiente diagrama se muestran estos métodos de red:
 
 Figura 1. Vista de cliente con red multiarrendatario con IP pública
 
-![Figura 1. Vista de cliente con una red multiarrendatario con IP pública](images/wasaas_multi_tenantPublicIP.gif)
+![Figura 1. Vista de cliente con una red multiarrendatario con IP pública](images/wasaas_multi_tenant_publicIP.png)
 
 ## Acceso VPN
 {: #vpnAccess}
@@ -33,13 +33,13 @@ La configuración de VPN se circunscribe a su organización y su región. Es vá
 ## Gestión avanzada de configuración de VPN
 {: #advancedVPN}
 
-En la mayoría de los casos, solo necesita una única configuración de VPN, que se pueda descargar con el botón ** Descargar configuración de VPN**. Sin embargo, la página de gestión avanzada de VPN, a la que se accede pulsando **Gestión avanzada de VPN** en el panel de control de servicios, le permite crear y gestionar varias configuraciones de VPN. El hecho de tener varias configuraciones puede ser útil para la transición sin problemas a una nueva configuración de VPN cuando la antigua está a punto de caducar. También puede solicitar varias configuraciones de VPN para gestionar el acceso a sus VM con distintos usuarios o equipos de la organización.  
+En la mayoría de los casos, solo necesita una única configuración de VPN, que se pueda descargar con el botón **Descargar configuración de VPN**. Sin embargo, la página de gestión avanzada de VPN, a la que se accede pulsando **Gestión avanzada de VPN** en el panel de control de servicios, le permite crear y gestionar varias configuraciones de VPN. El hecho de tener varias configuraciones puede ser útil para la transición sin problemas a una nueva configuración de VPN cuando la antigua está a punto de caducar. También puede solicitar varias configuraciones de VPN para gestionar el acceso a sus VM con distintos usuarios o equipos de la organización.  
 
-** Nota: ** se le permite un **máximo** de 10 configuraciones de VPN activas para su organización en cualquier momento.
+**Nota:** se le permite un **máximo** de 10 configuraciones de VPN activas para su organización en cualquier momento.
 
 Si las configuraciones de VPN están comprometidas o caducadas, puede revocar la configuración de VPN mediante la página de gestión avanzada de VPN. Además, desde una perspectiva de auditoría, puede ver un historial de toda la actividad de gestión de VPN y descargar las configuraciones de VPN activas que se han creado anteriormente desde la página de gestión avanzada de VPN.
 
-También se pueden crear scripts de todas las características disponibles en el panel de control de servicios de la IU de {{site.data.keyword.Bluemix_notm}} mediante las API REST. Para obtener más información, consulte el apartado sobre WebSphere Application Server en la [Documentación de la API REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} de {{site.data.keyword.Bluemix_notm}}.
+También se pueden crear scripts de todas las características disponibles en el panel de control de servicios de la IU de {{site.data.keyword.Bluemix_notm}} mediante las API REST. Para obtener más información, consulte el apartado sobre WebSphere Application Server en la [Documentación de la API REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} de {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Acceso a Internet pública
@@ -51,18 +51,18 @@ Internet en su WebSphere Application Server en la instancia de servicio de {{sit
 ### Solicitar una dirección IP y abrir una conexión
 {: #request-open-ip}
 
-1. Pulse **Gestionar acceso a IP pública** en el panel de control de servicios de la IU de {{site.data.keyword.Bluemix_notm}}.
+1. Pulse **Gestionar acceso a IP pública** en el panel de control de servicios de la consola de {{site.data.keyword.Bluemix_notm}}.
 2. Se muestra la dirección IP del host, pero no la dirección IP pública. Pulse **Solicitar dirección IP pública**.
 
     Volverá al panel de control de servicios con una IP pública asignada. Sin embargo, se mostrará el mensaje siguiente:
 
-    > _ El acceso está cerrado actualmente. Pulse Gestionar IP pública para abrir el acceso._
+    > _El acceso está cerrado actualmente. Pulse Gestionar IP pública para abrir el acceso._
 3. Pulse **Gestionar acceso a IP pública** en el panel de control de servicios.
 4. Se muestran las direcciones IP del host y la nueva IP pública, pero el acceso está cerrado. Pulse **Abrir acceso**.
 
     Volverá al panel de control de servicios, donde se mostrará el siguiente mensaje:
 
-    > _ El acceso está abierto actualmente. Pulse Gestionar IP pública para cerrar el acceso._
+    > _El acceso está abierto actualmente. Pulse Gestionar IP pública para cerrar el acceso._
 
 ### Cerrar una conexión y volver a una dirección IP pública
 {: #close-return-ip}
@@ -72,7 +72,7 @@ Internet en su WebSphere Application Server en la instancia de servicio de {{sit
 
     Volverá al panel de control de servicios, donde se mostrará el siguiente mensaje:
 
-    > _ El acceso está cerrado actualmente. Pulse Gestionar IP pública para abrir el acceso._
+    > _El acceso está cerrado actualmente. Pulse Gestionar IP pública para abrir el acceso._
 3. Pulse **Gestionar acceso a IP pública** en el panel de control de servicios de la IU de {{site.data.keyword.Bluemix_notm}}.
 4. Pulse **Devolver dirección IP pública**.
 

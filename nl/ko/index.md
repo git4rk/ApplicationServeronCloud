@@ -28,7 +28,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 사전 구
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜은 둘 이상의 가상 머신이 있는 WebSphere Application Server Network Deployment 셀 환경으로 구성됩니다. 첫 번째 가상 머신에는 배치 관리자와 IBM HTTP Server가 포함되어 있고, 나머지 가상 머신에는 배치 관리자에 연합된 사용자 정의 노드(노드 에이전트)가 포함되어 있습니다. 기존 wsadmin 스크립트를 사용하여 WebSphere 구성을 작성하거나 WebSphere Admin Console을 사용하여 수동으로 환경을 구성하십시오. 이러한 새 기능을 통해 사용자가 클러스터 환경을 설정할 수 있으며, 이는 미들웨어 엔터프라이즈 애플리케이션의 중요한 측면입니다. 이제 클라이언트는 토폴로지를 클러스터링하여 두 개 이상의 인스턴스에서 요청을 로드 밸런싱하도록 선택할 수 있습니다.
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜에도 Liberty Collective를 사용할 수 있습니다. Liberty Collective는 Liberty Profile 그룹에 대한 관리 도메인이며 둘 이상의 가상 머신으로 구성되어 있습니다. 첫 번째 가상 머신에는 Liberty Collective의 제어점인 Collective Controlle Liberty 서버가 포함됩니다. Liberty Collective 외에도 이 가상 머신에는 웹 브라우저에서 애플리케이션에 액세스할 수 있는 IBM HTTP Server도 포함됩니다. 나머지 가상 머신은 집합체(collective) 멤버가 있는 집합체 호스트(Liberty 프로파일 서버)입니다. Liberty 제어기 서버에서는 Liberty Admin Center 기능도 사용됩니다.
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜에도 Liberty Collective를 사용할 수 있습니다. Liberty Collective는 Liberty Profile 그룹에 대한 관리 도메인이며 둘 이상의 가상 머신으로 구성되어 있습니다. 첫 번째 가상 머신에는 Liberty Collective의 제어점인 Collective Controlle Liberty 서버가 포함됩니다. Liberty Collective 외에도 이 가상 머신에는 웹 브라우저에서 애플리케이션에 액세스할 수 있게 하는 IBM HTTP Server도 포함됩니다. 나머지 가상 머신은 집합체(collective) 멤버가 있는 집합체 호스트(Liberty 프로파일 서버)입니다. Liberty 제어기 서버에서는 Liberty Admin Center 기능도 사용됩니다.
 
 다음 그림은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 셀과 Liberty Collective 환경의 아키텍처를 보여줍니다.
 

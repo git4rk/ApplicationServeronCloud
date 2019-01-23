@@ -25,7 +25,7 @@ Quando amministri il tuo ambiente {{site.data.keyword.appserver_full}} e hai bis
 ## Convenzioni di installazione della cella
 {: cell_installation_conventions}
 
-Una cella WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} viene installata e configurata rispettando una struttura di directory standardizzata. Il seguente elenco annota alcune importanti impostazioni.  Consulta `/etc/virtualimage.properties` per un elenco completo di impostazioni. 
+Una cella WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} viene installata e configurata rispettando una struttura di directory standardizzata. Il seguente elenco annota alcune importanti impostazioni.  Consulta `/etc/virtualimage.properties` per un elenco completo di impostazioni.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -37,7 +37,7 @@ Una cella WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} vie
 
 ## Convenzioni di installazione del collettivo Liberty
 
-Un collettivo Liberty viene installato e configurato rispettando una struttura di directory standardizzata. Il seguente elenco annota alcune importanti impostazioni.  Consulta `/etc/virtualimage.properties` per un elenco completo di impostazioni. 
+Un collettivo Liberty viene installato e configurato rispettando una struttura di directory standardizzata. Il seguente elenco annota alcune importanti impostazioni.  Consulta `/etc/virtualimage.properties` per un elenco completo di impostazioni.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

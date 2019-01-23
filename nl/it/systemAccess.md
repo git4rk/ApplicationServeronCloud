@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ Le istanze in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * Dal catalogo e dal dashboard del servizio di {{site.data.keyword.Bluemix_notm}}.
 * Dalla creazione di un'applicazione o di uno script che utilizza le API RESTful.
 
-Mediante l'utilizzo delle API REST conformi a Swagger 2.0, i clienti hanno accesso alle stesse funzioni fornite attraverso il portale e il dashboard. Per ulteriori informazioni sulle API REST e sulle risorse supportate, vedi la [Documentazione API REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Per il codice di esempio che illustra l'utilizzo delle API REST, scarica gli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} ospitati in Git.
+Mediante l'utilizzo delle API REST conformi a Swagger 2.0, i clienti hanno accesso alle stesse funzioni fornite attraverso il portale e il dashboard. Per ulteriori informazioni sulle risorse e sulle API REST supportate, vedi la [Documentazione API REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} . Per il codice di esempio che illustra l'utilizzo delle API REST, scarica gli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} ospitati in Git.
 
 **Nota:** dopo aver creato un'istanza del servizio, a seconda della dimensione T-shirt creata, il servizio potrebbe non essere immediatamente pronto per l'uso. Si consiglia di eseguire una query nel campo **Stato** del JSON restituito per determinare lo stato corrente dell'istanza del servizio.
 
-**Nota:** l'URL **apiEndpoint** a cui si fa riferimento negli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} punta alla regione di Dallas. Se stai utilizzando altre regioni, assicurati che la tua applicazione faccia riferimento al **apiEndpoint** appropriato.
+**Nota:** l'URL **apiEndpoint** a cui si fa riferimento negli [Esempi API REST](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window} punta alla regione di Dallas. Se stai utilizzando altre regioni, assicurati che la tua applicazione faccia riferimento al **apiEndpoint** appropriato.
 
 *Tabella 1. URL endpoint API per l'implementazione API REST*
 
 | **Nome regione** | **Prefisso regione** | **URL endpoint API** |       
 |:-------------:|:--------------:|:-------------:|
-| Dallas | `ng` | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| Londra | `eu-gb` | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| Francoforte | `eu-de` | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-| Sydney | `au-syd` | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
+| Dallas | `us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Londra | `eu-gb` | https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Francoforte | `eu-de` | https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Sydney | `au-syd` | https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## Dashboard del servizio
 {: #service_dashboard}
@@ -95,7 +95,7 @@ openVPN. Ti serviranno tutti e quattro i file nella stessa directory.
 2. Estrai i file di configurazione di VPN dal servizio WebSphere. Tunnelblick
 ti richiede la password di amministrazione per Mac e aggiunge la configurazione al set di VPN che puoi utilizzare per connetterti.
 3. Connettiti alla rete VPN; potrai quindi accedere alla tua macchina virtuale. Dopo il primo accesso, Tunnelblick
-memorizza in cache la configurazione e puoi connetterti da Tunnelblick. Puoi inserire un'icona nella barra dei menu per accedere facilmente. 
+memorizza in cache la configurazione e puoi connetterti da Tunnelblick. Puoi inserire un'icona nella barra dei menu per accedere facilmente.
 
 
 ## Utilizzo di SSH per accedere alle VM di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
@@ -104,7 +104,7 @@ memorizza in cache la configurazione e puoi connetterti da Tunnelblick. Puoi ins
 Queste istruzioni presumono che tu stia utilizzando OpenSSH
 come tuo client. OpenSSH è di norma disponibile in Linux o in Cygwin in esecuzione su Windows. Può anche essere installato per essere eseguito da un prompt di comandi Windows.
 
-Per verificare l'installazione di OpenSSH, esegui il seguente comando. 
+Per verificare l'installazione di OpenSSH, esegui il seguente comando.
   ```
   ssh -V
   ```
@@ -167,8 +167,8 @@ con la password root, cambia immediatamente la password root.
 * L'ubicazione del profilo del server Liberty è `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
 * I file del prodotto principale Traditional WebSphere Application Server, condivisi da tutti i profili, sono ubicati in `/opt/IBM/WebSphere/AppServer/`.
 * I comandi di Traditional WebSphere Application Server possono essere emessi dall'ubicazione del profilo predefinita in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` dove:
-  * `<profile_type> è il valore di `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` o `SecureProxySrv`.
-  * `<profile_number>` è un numero sequenziale utilizzato per creare un nome profilo univoco. 
+  * `<profile_type>` è un valore di `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` o `SecureProxySrv`.
+  * `<profile_number>` è un numero sequenziale utilizzato per creare un nome profilo univoco.
 
 
 ## Gestione dei server dalla riga di comando
@@ -197,13 +197,13 @@ applicazioni che rendono esterne. Per ulteriori informazioni, fai riferimento al
 {: #firewall_ports}
 
 Potrebbe essere necessario aprire delle porte sul firewall per consentire l'accesso ad applicazioni
-e database. Puoi aprire le porte del firewall utilizzando lo script `openFirewallPorts.sh` che puoi trovare nelle seguenti ubicazioni. 
+e database. Puoi aprire le porte del firewall utilizzando lo script `openFirewallPorts.sh` che puoi trovare nelle seguenti ubicazioni.
   * Su ciascun nodo di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, lo script `openFirewallPorts.sh` si trova nella directory `WAS_HOME/virtual/bin`.
   * Su ciascun host di collettivo Liberty, `openFirewallPorts.sh` si trova nella directory `WAS_HOME/virtual/bin`.
 
 ### Utilizzo
 
-Esegui lo script `openFirewallPorts.sh` utilizzando la seguente sintassi del comando. 
+Esegui lo script `openFirewallPorts.sh` utilizzando la seguente sintassi del comando.
 
   ```
   openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
@@ -215,7 +215,7 @@ dove:
 * PROTOCOL è TCP o UDP
 * `-persist` è `true` o `false`
 
-Puoi specificare più porte in un elenco separato da virgole. 
+Puoi specificare più porte in un elenco separato da virgole.
 
 **Nota**: sport e dport della porta aperta vengono aperte nelle sezioni INPUT e OUTPUT del firewall. Devi eseguire questo script come root utilizzando `sudo`. Puoi anche modificare le tabelle IP direttamente.
 
@@ -230,26 +230,26 @@ Quando esegui il provisioning di una cella o di un collettivo, ricevi un ambient
 
 Se hai bisogno che il server web gestisca tutte le richieste dell'utente, potresti dover generare e propagare il plug-in dopo aver distribuito la tua applicazione.
 
-**Prevenzione dei problemi:** prima di generare e propagare il plug-in, assicurati che le seguenti attività pre-requisite siano state completate. 
+**Prevenzione dei problemi:** prima di generare e propagare il plug-in, assicurati che le seguenti attività pre-requisite siano state completate.
 
 * Nel tuo ambiente Windows, Linux o MAC locale, assicurati che [openVPN](systemAccess.html#setup_openvpn) sia configurato, avviato e di essere collegato alla regione appropriata.
-* Dal dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fai clic su **Apri la console di gestione** e accedi con wsadmin e la password amministratore fornita nel dashboard del servizio. 
+* Dal dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fai clic su **Apri la console di gestione** e accedi con wsadmin e la password amministratore fornita nel dashboard del servizio.
 * Dalla Console di gestione, crea un server delle applicazioni (ad esempio, ***server1***), perché il Deployment Manager è federato con un nodo personalizzato vuoto.
 * Avvia il server che hai creato.
 * Durante l'installazione dell'applicazione, assicurati che i moduli della tua applicazione siano associati al server che hai appena avviato e al server web (ad esempio, ***webserver1***).
 
-I seguenti passi avanzati presumono che le attività pre-requisite siano state completate. 
+I seguenti passi avanzati presumono che le attività pre-requisite siano state completate.
 
-1. Dalla console di gestione, genera il plug-in dall'opzione dell'ambiente. 
+1. Dalla console di gestione, genera il plug-in dall'opzione dell'ambiente.
    1. Scegli **Ambiente > Aggiorna la configurazione del plug-in del server web globale**.
    2. Fai clic su **OK** o **Sovrascrivi per generare un nuovo file di configurazione del plug-in**.
-2. Dal Deployment Manager, copia il plug-in nella configurazione del server web. 
+2. Dal Deployment Manager, copia il plug-in nella configurazione del server web.
 
   ```
    cp /opt/IBM/WebSphere/Profiles/DefaultDmgr01/config/cells/plugin-cfg.xml /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
   ```
   {: codeblock}
-3. Apri il file `httpd.conf` in `IHS_HOME/conf` (ad esempio, `/opt/IBM/WebSphere/HTTPServer/conf`) e assicurati che siano presenti le seguenti due righe. 
+3. Apri il file `httpd.conf` in `IHS_HOME/conf` (ad esempio, `/opt/IBM/WebSphere/HTTPServer/conf`) e assicurati che siano presenti le seguenti due righe.
 
     ```
     LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
@@ -270,7 +270,7 @@ I seguenti passi avanzati presumono che le attività pre-requisite siano state c
     sudo /opt/IBM/WebSphere/HTTPServer/bin/apachectl -k start
     ```
     {: codeblock}
-8. Accedi alla tua applicazione tramite il plug-in. 
+8. Accedi alla tua applicazione tramite il plug-in.
   ```
    http://169.53.246.xxx/contextRoot/
   ```
@@ -281,10 +281,10 @@ I seguenti passi avanzati presumono che le attività pre-requisite siano state c
 Se non puoi accedere alla tua applicazione, c'è probabilmente un problema di accesso alla porta con il tuo firewall. Pertanto, potresti dover riavviare tutti i seguenti server: il server dell'applicazione, l'agent nodo, il server web e il Deployment Manager. Inoltre, è possibile che tu debba accedere al dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} e riavviare ogni macchina virtuale.
 {: tip}
 
-## Configurazione SSL 
+## Configurazione SSL
 {: #ssl_configuration}
 
-WebSphere Application Server tradizionale e Liberty sono configurati con il protocollo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Puoi cambiare il protocollo modificando la configurazione SSL.
+WebSphere Application Server tradizionale e Liberty sono configurati con il protocollo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Puoi cambiare il protocollo modificando la configurazione SSL.
 
 ### WebSphere Application Server tradizionale
 {: #ssl-was}

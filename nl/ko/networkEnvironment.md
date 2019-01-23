@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 
 그림 1. 공인 IP로 네트워킹하는 멀티 테넌트의 클라이언트 보기
 
-![그림 1. 공인 IP가 있는 멀티 테넌트 네트워킹의 클라이언트 보기](images/wasaas_multi_tenantPublicIP.gif)
+![그림 1. 공인 IP가 있는 멀티 테넌트 네트워킹의 클라이언트 보기](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN 액세스
 {: #vpnAccess}
@@ -28,7 +28,7 @@ lastupdated: "2018-11-19"
 
 VPN 구성의 범위를 사용자 조직과 지역으로 지정합니다. 작성된 때부터 1년 동안 유효합니다. 동일한 VPN 구성을 사용하여 다중 OpenVPN 클라이언트 연결을 동시에 설정할 수 있습니다.
 
-**참고:** VPN 구성은 조직에 **active** 구독이 포함된 경우에만 유효합니다. 조직의 마지막 구독이 삭제되면 조직에 대한 모든 VPN 구성이 일시중단됩니다. 새 구독이 활성화되면 만료되지 않은 VPN 구성이 자동으로 다시 활성화됩니다.
+**참고:** VPN 구성은 조직에 **활성** 구독이 포함된 경우에만 유효합니다. 조직의 마지막 구독이 삭제되면 조직에 대한 모든 VPN 구성이 일시중단됩니다. 새 구독이 활성화되면 만료되지 않은 VPN 구성이 자동으로 다시 활성화됩니다.
 
 ## 고급 VPN 구성 관리
 {: #advancedVPN}
@@ -39,7 +39,7 @@ VPN 구성의 범위를 사용자 조직과 지역으로 지정합니다. 작성
 
 VPN 구성이 손상되거나 만료된 경우 고급 VPN 관리 페이지에서 VPN 구성을 취소할 수 있습니다. 또한 감사 퍼스펙티브에서는 모든 VPN 관리 활동의 히스토리를 보고 고급 VPN 관리 페이지에서 이전에 작성된 활성 VPN 구성을 다운로드할 수 있습니다.
 
-{{site.data.keyword.Bluemix_notm}} UI의 서비스 대시보드에서 사용 가능한 모든 기능은 REST API를 사용하여 스크립트화할 수도 있습니다. 자세한 정보는 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 문서](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}를 참조하십시오.
+{{site.data.keyword.Bluemix_notm}} UI의 서비스 대시보드에서 사용 가능한 모든 기능은 REST API를 사용하여 스크립트화할 수도 있습니다. 자세한 정보는 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 문서](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}를 참조하십시오.
 
 
 ## 공용 인터넷 액세스
@@ -50,7 +50,7 @@ VPN 구성이 손상되거나 만료된 경우 고급 VPN 관리 페이지에서
 ### 공인 IP 주소를 요청하고 연결 열기
 {: #request-open-ip}
 
-1. {{site.data.keyword.Bluemix_notm}} UI의 서비스 대시보드에서 **공인 IP 액세스 관리**를 클릭하십시오.
+1. {{site.data.keyword.Bluemix_notm}} 콘솔의 서비스 대시보드에서 **공인 IP 액세스 관리**를 클릭하십시오.
 2. 호스트의 IP 주소가 표시되지만 이는 공인 IP 주소가 아닙니다. **공인 IP 주소 요청**을 클릭하십시오.
 
     서비스 대시보드로 돌아가고 공인 IP가 지정됩니다. 그러나 다음 메시지가 표시됩니다.

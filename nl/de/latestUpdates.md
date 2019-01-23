@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 Eine Liste der neuesten Aktualisierungen für den Service.
+
+## 16. Januar 2019: Aktualisierte API-Endpunkt-URLs für die REST-API-Implementierung
+
+Das Regionspräfix für Dallas wurde von `ng` in `us-south` geändert. Die übrigen Präfixangaben wurden nicht geändert. Die REST-API-Endpunkt-URLs wurden von `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` in `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api` geändert. Die `bluemix.net`-URLs werden weiterhin unterstützt, Sie sollten jedoch REST-API-Endpunkt-URLs so ändern, dass `websphereappsvr.cloud.ibm.com` verwendet wird, wenn Sie die REST-APIs zur Verwaltung der Serviceinstanz nutzen. 
+
+Weitere Informationen zu den REST-API-Endpunkt-URLs finden Sie in [Systemzugriff](systemAccess.html#system_access). 
+
+## 14. Dezember 2018: Aktualisierung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Die Fixpack-Version 9.0.0.10 für den klassischen WebSphere Application Server ist nun bei der Bereitstellung einer neuen Serviceinstanz verfügbar. Zusätzlich zu 9.0.0.10 stehen auch andere Fixpackversionen des klassischen WebSphere Application Server, wie z. B. 9.0.0.9, 8.5.5.14 und 8.5.5.13, zur Bereitstellung zur Verfügung.
+* Die Fixpack-Version 18.0.0.4 für WebSphere Application Server Liberty ist nun bei der Bereitstellung einer neuen Serviceinstanz verfügbar. Zusätzlich zu 18.0.0.4 steht die Fixpackversion 18.0.0.3 von WebSphere Application Server Liberty zur Bereitstellung zur Verfügung. 
+* Verschiedene Funktionen für die Servicewartung wurden integriert.
 
 ## 24. Oktober 2018: BYOL-Abrechnungen (Bring Your Own License) sind nun für Reservierungsverträge und Single-Tenant-Umgebungen verfügbar
 
@@ -86,8 +97,8 @@ Weitere Informationen zur Abrechnung im Rahmen eines Reservierungsvertrags finde
 ## 30. Juni 2017: Aktualisierung von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Verschiedene Funktionen für die Servicewartung wurden integriert.
-* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen des klassischen WebSphere Application Server Fixpack 8.5.5.12 oder 9.0.0.4 installiert wird. 
-* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen von WebSphere Application Server Liberty (Core- und ND-Pläne) Fixpack 17.0.0.2 installiert wird. 
+* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen des klassischen WebSphere Application Server Fixpack 8.5.5.12 oder 9.0.0.4 installiert wird.
+* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen von WebSphere Application Server Liberty (Core- und ND-Pläne) Fixpack 17.0.0.2 installiert wird.
 * Ein Feature für die [erweiterte VPN-Konfigurationsverwaltung](networkEnvironment.html#advancedVPN){: new_window} wurde hinzugefügt, mit dem Sie mehrere VPN-Konfigurationen in den Regionen London und Sydney erstellen und verwalten können.
 * Es wurden Erweiterungen zum Feature für den [Zugriff auf das öffentliche Internet](networkEnvironment.html#publicInternetAccess){: new_window} hinzugefügt, die die Verwaltung von öffentlichen IP-Adressen durch die Kunden verbessern.
 * Es wurden [eine Reihe von Sicherheitslücken](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} in der IBM SDK Java Technology Edition adressiert, die sich auf WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} auswirken; dazu gehören die folgenden:
@@ -140,7 +151,7 @@ Weitere Informationen zur Abrechnung im Rahmen eines Reservierungsvertrags finde
 
 * Verschiedene Funktionen für die Servicewartung wurden integriert.
 * Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen des klassischen WebSphere Application Server Fixpack 8.5.5.11 oder 9.0.0.2 installiert wird.
-* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen von WebSphere Application Server Liberty (Core- und ND-Pläne) Fixpack 16.0.0.4 installiert wird. 
+* Upgrade von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, damit für neue Instanzen von WebSphere Application Server Liberty (Core- und ND-Pläne) Fixpack 16.0.0.4 installiert wird.
 * Es wurden [eine Reihe von Sicherheitslücken](https://www-01.ibm.com/support/docview.wss?uid=swg21997657){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} adressiert; dazu gehören die folgenden:
   * Eine Sicherheitslücke gegenüber Denial-of-Service-Attacken, die dadurch verursacht wird, dass die Ausführung serialisierter Objekte von nicht vertrauenswürdigen Quellen und die damit verbundene Ressourcenbelegung zugelassen wird.
   * Verwendung fehlerhafter SOAP-Anforderungen, durch die ein Remote-Angreifer sensible Informationen erhalten kann.

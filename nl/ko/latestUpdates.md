@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -15,17 +15,28 @@ lastupdated: "2018-11-20"
 
 서비스에 대한 최신 업데이트 목록입니다.
 
+## 2019년 1월 16일: REST API 구현을 위한 API 엔드포인트 URL 업데이트
+
+댈러스의 지역 접두부가 `ng`에서 `us-south`로 변경되었습니다. 다른 지역 접두부는 동일하게 유지됩니다. REST API 엔드포인트 URL이 `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api`에서 `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`로 변경되었습니다. `bluemix.net` URL은 계속 지원되지만 REST API를 사용하여 서비스 인스턴스를 관리하는 경우 `websphereappsvr.cloud.ibm.com`을 사용하도록 REST API 엔드포인트 URL을 변경해야 합니다.
+
+REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스](systemAccess.html#system_access)를 참조하십시오.
+
+## 2018년 12월 14일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.10 수정팩을 사용할 수 있습니다. 9.0.0.10 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.9, 8.5.5.14, 8.5.5.13)도 프로비저닝에 사용할 수 있습다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 18.0.0.4 수정팩 버전을 사용할 수 있습니다. 18.0.0.4 외에 WebSphere Application Server Liberty의 18.0.0.3 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
+* 기타 서비스 유지보수 통합.
+
 ## 2018년 10월 24일: 현재 예비 계약 및 Single Tenant Environment에 대한 BYOL(Bring-Your-Own-License) 청구 사용 가능
 
 이제 기존 WebSphere Application Server 라이센스가 있는 경우 예비 계약 또는 Single Tenant Environment에서 이 라이센스를 사용할 수 있습니다. BYOL(Bring-Your-Own-License) 청구를 포함하는 환경은 표준 예비 계약 또는 Single Tenant Environment와 동일한 혜택을 제공하지만, 더 저렴한 비용이 청구됩니다. BYOL(Bring-Your-Own-License)을 사용하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
 
-## 2018년 8월 22일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트됨
-* 새 서비스 인스턴스를 프로비저닝할 때 이제 traditional WebSphere Application Server의 8.5.5.14 수정팩을 사용할 수 있습니다. 8.5.5.14 외에 traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.8, 9.0.0.7, 8.5.5.13)도 프로비저닝에 사용할 수 있습니다.
+## 2018년 8월 22일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 8.5.5.14 수정팩을 사용할 수 있습니다. 8.5.5.14 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.8, 9.0.0.7, 8.5.5.13)도 프로비저닝에 사용할 수 있습니다.
 * 기타 서비스 유지보수 통합.
 
-## 2018년 7월 16일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트됨
+## 2018년 7월 16일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
-* 새 서비스 인스턴스를 프로비저닝할 때 이제 traditional WebSphere Application Server의 9.0.0.8 수정팩 버전을 사용할 수 있습니다. 9.0.0.8 외에 traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.7, 8.5.5.13, 8.5.5.12)도 프로비저닝에 사용할 수 있습니다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.8 수정팩 버전을 사용할 수 있습니다. 9.0.0.8 외에 Traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.7, 8.5.5.13, 8.5.5.12)도 프로비저닝에 사용할 수 있습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 18.0.0.2 수정팩 버전을 사용할 수 있습니다. 18.0.0.2 외에 WebSphere Application Server Liberty의 18.0.0.1 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점](https://www-01.ibm.com/support/docview.wss?uid=ibm10717691){: new_window}이 해결되었습니다.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}에 영향을 주는 IBM SDK Java Technology Edition의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=ibm10718297){: new_window}이 해결되었습니다.
@@ -38,7 +49,7 @@ lastupdated: "2018-11-20"
 
 ## 2018년 3월 30일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
-* 새 서비스 인스턴스를 프로비저닝할 때 이제 traditional WebSphere Application Server의 9.0.0.7 수정팩 버전을 사용할 수 있습니다. 9.0.0.7 외에 traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.6, 8.5.5.13, 8.5.5.12)도 프로비저닝에 사용할 수 있습니다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.7 수정팩 버전을 사용할 수 있습니다. 9.0.0.7 외에 Traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.6, 8.5.5.13, 8.5.5.12)도 프로비저닝에 사용할 수 있습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 18.0.0.1 수정팩 버전을 사용할 수 있습니다. 18.0.0.1 외에 WebSphere Application Server Liberty의 17.0.0.4 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점]( http://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window}이 해결되었습니다.
   * IBM® Java SDK의 여러 취약점
@@ -51,12 +62,12 @@ lastupdated: "2018-11-20"
 
 ## 2018년 1월 8일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
-* 새 서비스 인스턴스를 프로비저닝할 때 이제 traditional WebSphere Application Server의 9.0.0.6 수정팩 버전을 사용할 수 있습니다. 9.0.0.6 외에 traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.5, 8.5.5.12, 8.5.5.11)도 프로비저닝에 사용할 수 있습니다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.6 수정팩 버전을 사용할 수 있습니다. 9.0.0.6 외에 Traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.5, 8.5.5.12, 8.5.5.11)도 프로비저닝에 사용할 수 있습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 17.0.0.4 수정팩 버전을 사용할 수 있습니다. 17.0.0.4 외에 WebSphere Application Server Liberty의 17.0.0.3 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg22013153){: new_window}이 해결되었습니다.
   * OpenSAML을 사용하는 경우 XML 엔티티를 구문 분석할 때 오류가 발생하여 원격 인증된 공격자가 민감한 정보를 얻을 수 있는 취약성.
   * Apache HTTP Server를 사용하는 경우 Optionsbleed라는 HTTP OPTIONS 메소드의 결함으로 원격 공격자가 민감한 정보를 얻을 수 있는 취약성.
-  * Apache Portable Runtime Utility(APR-util)는 apr_sdbm*() 함수에서 사용되는 SDBM 데이터베이스 파일의 무결성을 검증하는 데 실패함으로써 서비스가 거부될 수 있는 취약성.
+  * Apache Portable Runtime Utility(APR-util)가 apr_sdbm*() 함수에서 사용되는 SDBM 데이터베이스 파일의 무결성을 검증하는 데 실패함으로써 서비스가 거부될 수 있는 취약성.
 * 기타 서비스 유지보수 통합.
 
 ## 2017년 12월 21일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
@@ -67,7 +78,7 @@ lastupdated: "2018-11-20"
 ## 2017년 10월 27일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
 * {{site.data.keyword.Bluemix_notm}} 서비스 대시보드의 서비스 프로파일 탭 또는 REST API를 통해 이전 수정팩 레벨[(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window}을 프로비저닝하는 기능이 추가되었습니다.
-* 새 서비스 인스턴스를 프로비저닝할 때 이제 traditional WebSphere Application Server의 9.0.0.5 수정팩 버전을 사용할 수 있습니다. 9.0.0.5 외에 traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.4, 8.5.5.12, 8.5.5.11)도 프로비저닝에 사용할 수 있습니다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.5 수정팩 버전을 사용할 수 있습니다. 9.0.0.5 외에 Traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.4, 8.5.5.12, 8.5.5.11)도 프로비저닝에 사용할 수 있습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 17.0.0.3 수정팩 버전을 사용할 수 있습니다. 17.0.0.3 외에 WebSphere Application Server Liberty의 17.0.0.2 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}이 해결되었습니다.
   * IBM WebSphere Application Server가 사용자 정의 시작 스크립트를 사용할 때 사용자 정의된 권한 대신 기본 권한을 사용하여 파일을 작성할 수 있는 취약성.
@@ -214,14 +225,14 @@ lastupdated: "2018-11-20"
 ## 2016년 4월 15일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 8.5.5.8에서 8.5.5.9로 업그레이드되었습니다.
-* OIDC(OpenID Connect) 클라이언트를 사용하는 이용자에게 영향을 미치는 {{site.data.keyword.Bluemix_notm}}에 대해 Liberty for Java에서 [XSS(Cross-site scripting)](http://www-01.ibm.com/support/docview.wss?uid=swg21981221){: new_window} 취약성을 해결했습니다.
+* OIDC(OpenID Connect) 클라이언트를 사용하는 이용자에게 영향을 미치는 {{site.data.keyword.Bluemix_notm}}에 대한 Liberty for Java의 [XSS(Cross-site scripting)](http://www-01.ibm.com/support/docview.wss?uid=swg21981221){: new_window} 취약점이 해결되었습니다.
 * 기타 서비스 유지보수 통합.
 
 ## 2016년 2월 19일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 * 해당 환경을 더 큰 가상 머신이 있는 올바른 크기로 만들도록 메모리 중심 애플리케이션이 있는 클라이언트에 대한 옵션이 추가되었습니다. 클라이언트는 최대 32GB RAM 가상 머신의 제공된 WebSphere Application Server 컴포넌트 또는 단일 시스템의 특정 리소스 크기를 선택할 수 있습니다.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 8.5.5.7에서 8.5.5.8로 업그레이드되었습니다.
 * 일반적으로 [SLOTH](http://www-01.ibm.com/support/docview.wss?uid=swg21977244){: new_window}라고 하는 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}에 영향을 주는 IBM SDK Java Technology Edition의 여러 취약점이 해결되었습니다.
-* OAuth 제공자 출력의 이용자에 영향을 주는 [XSS(Cross-site scripting)](http://www-01.ibm.com/support/docview.wss?uid=swg21976337){: new_window} 취약성이 처리되었습니다.
+* OAuth 제공자 출력의 이용자에 영향을 주는 [XSS(Cross-site scripting)](http://www-01.ibm.com/support/docview.wss?uid=swg21976337){: new_window} 취약점이 해결되었습니다.
 * 기타 서비스 유지보수 통합.
 
 ## 2015년 12월 11일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
@@ -229,11 +240,11 @@ lastupdated: "2018-11-20"
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment 플랜에 새 기능이 추가되었습니다. 플랜은 둘 이상의 가상 머신이 있는 WebSphere Application Server Network Deployment 셀 환경으로 구성됩니다. 해당 새 기능을 사용하면 고가용성, 장애 복구 및 확장성을 위한 클러스터 환경을 설정할 수 있습니다.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Liberty Core 플랜에 새 기능이 추가되었습니다. 플랜에는 Liberty 프로파일(서버)의 그룹에 대한 관리 도메인이고 둘 이상의 가상 머신으로 구성된 Liberty Collective의 사용이 포함됩니다.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 8.5.5.6에서 8.5.5.7로 업그레이드되었습니다.
-* Java 오브젝트 직렬화 해제를 처리하기 위한 [Apache Commons Collections 취약성](https://www.us-cert.gov/ncas/current-activity/2015/11/13/Apache-Commons-Collections-Java-Library-Vulnerability){: new_window}이 처리되었습니다.
-* [HTTP 응답 분할 공격](http://www-01.ibm.com/support/docview.wss?uid=swg21972254){: new_window}을 허용하는 취약성이 처리되었습니다.
+* Java 오브젝트 직렬화 해제를 처리하기 위한 [Apache Commons Collections 취약점](https://www.us-cert.gov/ncas/current-activity/2015/11/13/Apache-Commons-Collections-Java-Library-Vulnerability){: new_window}이 해결되었습니다.
+* [HTTP 응답 분할 공격](http://www-01.ibm.com/support/docview.wss?uid=swg21972254){: new_window}을 허용하는 취약점이 해결되었습니다.
 * 기타 서비스 유지보수 통합.
 
-## 2015년 10월 15일: 업데이트된 Application Server on Cloud
+## 2015년 10월 15일: Application Server on Cloud 업데이트
 * 다음 2개의 새로운 플랜이 추가되었습니다.
   * [WebSphere Application Server Traditional V9 Beta](https://www-01.ibm.com/marketing/iwm/iwmdocs/web/cc/earlyprograms/websphere.shtml){: new_window}
   * WebSphere Application Server ND

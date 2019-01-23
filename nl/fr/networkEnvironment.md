@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ Le diagramme suivant montre ces chemins réseau :
 
 Figure 1. Vue client d'un environnement réseau à service partagé avec adresses IP publique
 
-![Figure 1. Vue client d'un environnement réseau à service partagé avec adresses IP publiques](images/wasaas_multi_tenantPublicIP.gif)
+![Figure 1. Vue client d'un environnement réseau à service partagé avec adresses IP publiques](images/wasaas_multi_tenant_publicIP.png)
 
 ## Accès au VPN (réseau privé virtuel)
 {: #vpnAccess}
@@ -39,7 +39,7 @@ Dans la plupart des cas, vous n'avez besoin que d'une seule configuration VPN qu
 
 Si votre configuration VPN est compromise ou a expiré, vous pouvez la révoquer en utilisant la page de gestion VPN avancée. De plus, pour ce qui est de l'audit, vous pouvez afficher un historique de toute l'activité de gestion VPN et télécharger les configurations VPN actives qui ont été créées précédemment depuis la page de gestion VPN avancée.
 
-Toutes les fonctions disponibles depuis le tableau de bord du service de l'interface utilisateur graphique {{site.data.keyword.Bluemix_notm}} peuvent également être gérées par des scripts en utilisant les API REST. Pour plus d'informations, voir la documentation [WebSphere Application Server in IBM Cloud API](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+Toutes les fonctions disponibles depuis le tableau de bord du service de l'interface utilisateur graphique {{site.data.keyword.Bluemix_notm}} peuvent également être gérées par des scripts en utilisant les API REST. Pour plus d'informations, voir la documentation {{site.data.keyword.Bluemix_notm}} [WebSphere Application Server in IBM Cloud API](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}.
 
 
 ## Accès public à Internet

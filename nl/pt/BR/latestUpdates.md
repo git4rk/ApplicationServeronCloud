@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 Uma lista das atualizações mais recentes para o serviço.
+
+## 16 de janeiro de 2019: URLs de terminal de API atualizadas para a implementação da API de REST
+
+O prefixo de região para Dallas mudou de `ng` para `us-south`. Os outros prefixos de região permaneceram iguais. As URLs de terminal da API de REST mudaram de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` para `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. As URLs `bluemix.net` continuarão sendo suportadas, mas será necessário mudar as URLs de terminal da API de REST para usar `websphereappsvr.cloud.ibm.com`, se você usar as APIs de REST para gerenciar suas instâncias de serviço.
+
+Para obter mais informações sobre as URLs de terminal da API de REST, consulte [Acesso ao sistema](systemAccess.html#system_access).
+
+## 14 de dezembro de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
+* O fix pack 9.0.0.10 do WebSphere Application Server tradicional agora está disponível ao provisionar uma nova instância de serviço. Além do 9.0.0.10, outros fix packs do WebSphere Application Server tradicional, como o 9.0.0.9, o 8.5.5.14 e o 8.5.5.13, estão disponíveis para provisionamento.
+* A versão do fix pack 18.0.0.4 do WebSphere Application Server Liberty agora está disponível ao provisionar uma nova instância de serviço. Além do 18.0.0.4, a versão do fix pack 18.0.0.3 do WebSphere Application Server Liberty está disponível para provisionamento.
+* Integrada a manutenção de serviços diversos.
 
 ## 24 de outubro de 2018: agora, o faturamento com sua própria licença está disponível para o contrato de
 reserva e os ambientes de locatário único

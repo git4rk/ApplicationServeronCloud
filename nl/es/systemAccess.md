@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ Las instancias de WebSphere Application Server en {{site.data.keyword.Bluemix_no
 * En el catálogo de {{site.data.keyword.Bluemix_notm}} y el panel de control de servicios.
 * En la creación de una aplicación o script que utiliza API RESTful.
 
-Mediante el uso de las API REST compatibles con Swagger 2.0, los clientes tienen acceso a la misma función como se ha proporcionado a través del portal y panel de control. Para obtener más información sobre las API REST y los recursos soportados, consulte WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} [Documentación de la API REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}. Para consultar código de ejemplo que muestra el uso de las API REST, descargue el Git alojado en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} [Ejemplos de API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}.
+Mediante el uso de las API REST compatibles con Swagger 2.0, los clientes tienen acceso a la misma función como se ha proporcionado a través del portal y panel de control. Para obtener más información sobre las API REST y los recursos soportados, consulte WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} [Documentación de la API REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}. Para consultar código de ejemplo que muestra el uso de las API REST, descargue el Git alojado en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} [Ejemplos de API REST](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}.
 
 **Nota:** después de crear una instancia de servicio, en función del tamaño de camiseta que se crea, puede que el servicio no esté listo inmediatamente para su uso. Se recomienda consultar el campo **Estado** del JSON devuelto para determinar el estado actual de la instancia de servicio.
 
-**Nota:** el URL de **apiEndpoint** al que se hace referencia en los [ejemplos de las API REST](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window} apunta a la región de Dallas. Si utiliza otras regiones, asegúrese de que la aplicación hace referencia al **apiEndpoint** apropiado.
+**Nota:** el URL de **apiEndpoint** al que se hace referencia en los [ejemplos de las API REST](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window} apunta a la región de Dallas. Si utiliza otras regiones, asegúrese de que la aplicación hace referencia al **apiEndpoint** apropiado.
 
 *Tabla 1. URL de punto final de API para la implementación de la API REST*
 
 | **Nombre de la región** | **Prefijo de la región** | **URL de punto final de API** |       
 |:-------------:|:--------------:|:-------------:|
-| Dallas | `ng` | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| Londres | `eu-gb` | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| Frankfurt | `eu-de` | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-| Sídney | `au-syd` | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
+| Dallas | `us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Londres | `eu-gb` | https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Frankfurt | `eu-de` | https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| Sídney | `au-syd` | https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## Panel de control de servicio
 {: #service_dashboard}
@@ -161,7 +161,7 @@ Siga las instrucciones siguientes para configurar el acceso SSH a las VM de WebS
 * La ubicación del perfil de servidor de Liberty es `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
 * Los archivos del producto WebSphere Application Server tradicional, que comparten todos los perfiles, se encuentran en `/opt/IBM/WebSphere/AppServer/`.
 * Los mandatos de WebSphere Application Server tradicional se emiten desde la ubicación del perfil predeterminado en `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` donde:
-  * `<profile_type> tiene el valor `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` o `SecureProxySrv`.
+  * `<profile_type>` tiene el valor `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` o `SecureProxySrv`.
   * `<profile_number>` es un número secuencial que se utiliza para crear un nombre de perfil exclusivo.
 
 
@@ -200,8 +200,8 @@ Ejecute el script `openFirewallPorts.sh` con la siguiente sintaxis del mandato.
   {: codeblock}
 
 donde:
-* PUERTO es un número de puerto
-* PROTOCOLO es TCP o UDP
+* PORT es un número de puerto
+* PROTOCOL es TCP o UDP
 * `-persist` puede ser `true` o `false`
 
 Puede especificar varios puertos en una lista separada por comas.
@@ -274,7 +274,7 @@ Si no puede acceder a la aplicación, es posible que se trate de un problema de 
 ## Configuración de SSL
 {: #ssl_configuration}
 
-WebSphere Application Server tradicional y Liberty se configuran con el protocolo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Puede cambiar el protocolo modificando la configuración de SSL.
+WebSphere Application Server tradicional y Liberty se configuran con el protocolo [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}. Puede cambiar el protocolo modificando la configuración de SSL.
 
 ### WebSphere Application Server tradicional
 {: #ssl-was}

@@ -53,13 +53,13 @@ Un **bloque** se define de la forma siguiente.
   * 12.5 GB de disco[1]
   * 2 GB de RAM
 
-[1] *Técnicamente, un sistema pequeño solo contiene 12 GB de disco. Un sistema mediano contiene 25 GB de disco y uno grande contiene 50 GB, y así sucesivamente. *
+[1] *Técnicamente, un sistema pequeño solo contiene 12 GB de disco. Un sistema mediano contiene 25 GB de disco y uno grande contiene 50 GB, y así sucesivamente.*
 
 Para cada máquina virtual que cree, especifique el tamaño de camiseta que desee: S, M, L, XL o XXL, lo que corresponde a 1, 2, 4, 8 y 16 bloques. Cuando selecciona un tamaño de camiseta, el número correspondiente de bloques se reduce a partir de su cuota.
 
 Por ejemplo, suponga que tiene un entorno pequeño, que contiene 64 bloques. En este entorno, ha configurado las siguientes instancias de servicio: dos XXL, tres XL y 1 L, lo que constituye un total de 60 bloques utilizados. Si selecciona un tamaño de camiseta mediano para una nueva suscripción de Liberty Core, podría aparecer un mensaje que indique su cuota y el número de bloques que quedan disponibles:
 
-> **Su cuota de memoria de un solo arrendatario para este servicio es de 64 bloques. Incluyendo la configuración actual, quedan 2 bloques. Para aumentar su cuota de memoria, póngase en contacto con el equipo de ventas de IBM. **
+> **Su cuota de memoria de un solo arrendatario para este servicio es de 64 bloques. Incluyendo la configuración actual, quedan 2 bloques. Para aumentar su cuota de memoria, póngase en contacto con el equipo de ventas de IBM.**
 
 
 ## Entorno de red privada

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-22"
+lastupdated: "2018-12-13"
 
 ---
 
@@ -23,12 +23,12 @@ Vous pouvez créer une instance WebSphere Application Server in {{site.data.keyw
 Quand vous créez une nouvelle instance, vous pouvez choisir l'un des niveaux de groupe de correctifs suivants sur l'onglet **Profil de service** de l'instance de service :
 
 **Liberty**
-  * 18.0.0.2
-  * 18.0.0.1
+  * 18.0.0.4
+  * 18.0.0.3
 
 **WebSphere Application Server Traditional**
-  * 9.0.0.8
-  * 9.0.0.7
+  * 9.0.0.10
+  * 9.0.0.9
   * 8.5.5.14
   * 8.5.5.13
 

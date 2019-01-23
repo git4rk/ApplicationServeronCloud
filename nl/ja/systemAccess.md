@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} のインス�
 * {{site.data.keyword.Bluemix_notm}} カタログおよびサービス・ダッシュボードから。
 * RESTful API を使用したアプリケーションまたはスクリプトの作成から。
 
-Swagger 2.0 準拠 REST API を使用して、クライアントはポータルおよびダッシュボードで提供されるものと同じ機能にアクセスできます。 サポートされる REST API とリソースについて詳しくは、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API の資料](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}を参照してください。 REST API の使用法を示すサンプル・コードについては、{{site.data.keyword.Bluemix_notm}} [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}の Git でホストされた WebSphere Application Server をダウンロードしてください。
+Swagger 2.0 準拠 REST API を使用して、クライアントはポータルおよびダッシュボードで提供されるものと同じ機能にアクセスできます。 サポートされる REST API とリソースについて詳しくは、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API の資料](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}を参照してください。 REST API の使用法を示すサンプル・コードについては、{{site.data.keyword.Bluemix_notm}} [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}の Git でホストされた WebSphere Application Server をダウンロードしてください。
 
 **注:** サービス・インスタンスを作成した後、作成された T シャツ・サイズによっては、サービスがすぐに使用可能状態にならないことがあります。 戻された JSON の **Status** フィールドを照会してサービス・インスタンスの現在の状態を判別することをお勧めします。
 
-**注: [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}で参照されている ****apiEndpoint** URL は、ダラス地域を指しています。他の地域を使用する場合は、アプリケーションで適切な **apiEndpoint** を参照するようにしてください。
+**注:** [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}で参照されている **apiEndpoint** URL は、ダラス地域を指しています。他の地域を使用する場合は、アプリケーションで適切な **apiEndpoint** を参照するようにしてください。
 
 *表 1. REST API 実装の API エンドポイント URL*
 
 | **地域名** | **地域接頭部** | **API エンドポイント URL** |       
 |:-------------:|:--------------:|:-------------:|
-| ダラス | `ng` | https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-| ロンドン | `eu-gb` | https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-| フランクフルト | `eu-de` | https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-| シドニー | `au-syd` | https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
+| ダラス | `us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| ロンドン | `eu-gb` | https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| フランクフルト | `eu-de` | https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| シドニー | `au-syd` | https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## サービス・ダッシュボード
 {: #service_dashboard}
@@ -165,7 +165,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM への SSH
 * Liberty サーバー・プロファイルがある場所は、`/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` です。
 * すべてのプロファイルで共有される WebSphere Application Server traditional のコア・プロダクト・ファイルは `/opt/IBM/WebSphere/AppServer/` にあります。
 * WebSphere Application Server traditional のコマンドは、`/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` 内のデフォルト・プロファイル・ロケーションから実行できます。
-  * `<profile_type>` の値は、`AppSrv`、`Dmgr`、`Custom`、`AdminAgent`、`JobMgr`、または `SecureProxySrv` です。
+  * `<profile_type>` は、`AppSrv`、`Dmgr`、`Custom`、`AdminAgent`、`JobMgr`、または `SecureProxySrv` の値です。
   * `<profile_number>` は、固有のプロファイル名を作成するために使用される連続番号です。
 
 
@@ -275,7 +275,7 @@ Web サーバーですべてのユーザー要求を処理する必要がある�
 ## SSL 構成
 {: #ssl_configuration}
 
-WebSphere Application Server traditional および Liberty には、[SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}プロトコルが構成されています。 SSL 構成を変更することで、プロトコルを変更できます。
+WebSphere Application Server traditional および Liberty には、[SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window}プロトコルが構成されています。 SSL 構成を変更することで、プロトコルを変更できます。
 
 ### WebSphere Application Server traditional
 {: #ssl-was}

@@ -21,7 +21,7 @@ lastupdated: "2018-11-20"
 
 Les environnements à service exclusif ne peuvent pas être créés via le catalogue {{site.data.keyword.Bluemix_notm}} et doivent être commandés en contact IBM Sales. Lorsque vous commandez votre environnement, vous pouvez choisir un environnement à service exclusif standard ou BYOL. Les environnements à service exclusif standard incluent toutes les licences d'infrastructure et WebSphere Application Server requises. Dans les environnements à service exclusif BYOL, vous pouvez utiliser des licences WebSphere Application Server distinctes.
 
-Pour commander un environnement à service exclusif, [contactez IBM Sales](reportingIssues.html#contacting-sales). L'équipe commerciale peut vous aider à installer et configurer un environnement adapté à vos besoins. 
+Pour commander un environnement à service exclusif, [contactez IBM Sales](reportingIssues.html#contacting-sales). L'équipe commerciale peut vous aider à installer et configurer un environnement adapté à vos besoins.
 
 ## Présentation de WebSphere Application Server dans un environnement à service exclusif {{site.data.keyword.Bluemix_notm}}
 {: #overviewSTE}

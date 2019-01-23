@@ -18,7 +18,7 @@ WebSphere Application Server no IBM Cloud
 
     {: .navgroup id="reference"}
     installationConventions.md
-    [Documentação da API de REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}
+    [Documentação da API de REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}
     {: .navgroup-end}
 
     {: .navgroup id="howto"}

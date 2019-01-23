@@ -26,7 +26,7 @@ lastupdated: "2018-11-20"
 ## WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} シングル・テナント環境の概要
 {: #overviewSTE}
 
-シングル・テナント環境では、サービス、プライベート・ネットワーキング、および分離リソースの独自の専用インスタンスを使用します。このオファリングは独立して管理されますが、サービス・ダッシュボードおよび作成されたサービス・インスタンスのダッシュボードには、以下の図に示すように、特定の {{site.data.keyword.Bluemix_notm}} パブリック地域を介してアクセスできます。
+シングル・テナント環境では、サービス、プライベート・ネットワーキング、および分離リソースの独自の専用インスタンスを使用します。 このオファリングは独立して管理されますが、サービス・ダッシュボードおよび作成されたサービス・インスタンスのダッシュボードには、以下の図に示すように、特定の {{site.data.keyword.Bluemix_notm}} パブリック地域を介してアクセスできます。
 
 図 1. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} シングル・テナント環境のアーキテクチャー
 
@@ -36,6 +36,6 @@ lastupdated: "2018-11-20"
 ## 組織管理
 {: #organization_management}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} シングル・テナント環境は、お客様のオーダーに従って構成されます。 オーダーの一部として 1 つ以上の {{site.data.keyword.Bluemix_notm}} 組織名を指定した場合、ただちに環境へのアクセスを開始できます。 組織名を指定しなかった場合、またはこの設定を変更する場合、地域の {{site.data.keyword.Bluemix_notm}} コンソールから**アプリケーション・サービス**の[サポート・チケット](reportingIssues.html#reporting_issues)をオープンします。組織名は、{{site.data.keyword.Bluemix_notm}} コンソールで、**「管理」 > 「アカウント」 > 「Cloud Foundry 組織」**に移動して、確認できます。
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} シングル・テナント環境は、お客様のオーダーに従って構成されます。 オーダーの一部として 1 つ以上の {{site.data.keyword.Bluemix_notm}} 組織名を指定した場合、ただちに環境へのアクセスを開始できます。 組織名を指定しなかった場合、またはこの設定を変更する場合、地域の {{site.data.keyword.Bluemix_notm}} コンソールから**アプリケーション・サービス**の[サポート・チケット](reportingIssues.html#reporting_issues)をオープンします。 組織名は、{{site.data.keyword.Bluemix_notm}} コンソールで、**「管理」 > 「アカウント」 > 「Cloud Foundry 組織」**に移動して、確認できます。
 
 **注:** シングル・テナント環境へのアクセス方法については、[シングル・テナント環境へのアクセス](singleTenantAccess.html#singleTenantEnvironment)を参照してください。

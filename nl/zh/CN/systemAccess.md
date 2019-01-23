@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ lastupdated: "2018-11-20"
 * 通过 {{site.data.keyword.Bluemix_notm}}“目录”和服务仪表板。
 * 通过创建使用 RESTful API 的应用程序或脚本。
 
-通过使用符合 Swagger 2.0 的 REST API，客户可使用与门户网站和仪表板所提供的功能相同的功能。有关支持的 REST API 和资源的更多信息，请参阅 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文档](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}。有关演示 REST API 用法的样本代码，请下载 Git 托管的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 样本](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}。
+通过使用符合 Swagger 2.0 的 REST API，客户可使用与门户网站和仪表板所提供的功能相同的功能。有关支持的 REST API 和资源的更多信息，请参阅 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文档](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}。有关演示 REST API 用法的样本代码，请下载 Git 托管的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 样本](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}。
 
 **注：**创建服务实例之后，根据创建的 T 恤尺寸，您的服务可能无法立即使用。建议您查询 JSON 返回的**状态**字段，以确定服务实例的当前状态。
 
-**注：**[REST API 样本](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}中引用的 **apiEndpoint** URL 指向达拉斯区域。如果您使用的是其他区域，请确保您的应用程序引用相应的 **apiEndpoint**。
+**注：**[REST API 样本](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}中引用的 **apiEndpoint** URL 指向达拉斯区域。如果您使用的是其他区域，请确保您的应用程序引用相应的 **apiEndpoint**。
 
 *表 1. REST API 实现的 API 端点 URL*
 
 |**区域名称**|**区域前缀**|**API 端点 URL**|       
 |:-------------:|:--------------:|:-------------:|
-|达拉斯|`ng`|https://wasaas-broker.ng.bluemix.net/wasaas-broker/api|
-|伦敦|`eu-gb`|https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api|
-|法兰克福|`eu-de`|https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api|
-|悉尼|`au-syd`|https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api|
+|达拉斯|`us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|伦敦|`eu-gb`| https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|法兰克福|`eu-de`| https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|悉尼|`au-syd`| https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## 服务仪表板
 {: #service_dashboard}
@@ -160,7 +160,7 @@ OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
 * Liberty 服务器概要文件位置为 `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`。
 * 由所有概要文件共享的传统 WebSphere Application Server 核心产品文件位于 `/opt/IBM/WebSphere/AppServer/` 中。
 * 传统 WebSphere Application Server 命令可以从 `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` 中的缺省概要文件位置发出，其中：
-  * `<profile_type> 的值为 `AppSrv`、`Dmgr`、`Custom`、`AdminAgent`、`JobMgr` 或 `SecureProxySrv`。
+  * `<profile_type>` 的值为 `AppSrv`、`Dmgr`、`Custom`、`AdminAgent`、`JobMgr` 或 `SecureProxySrv`。
   * `<profile_number>` 是用于创建唯一概要文件名称的序号。
 
 
@@ -176,7 +176,7 @@ OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
 
 因为您使用的是 {{site.data.keyword.IBM}} 提供的链接，所以可以放心忽略该警告并进行连接。如果您的浏览器提供存储安全性异常的操作，那么执行该操作是防止未来出现该警告的最简便方法。
 
-另一种选择是导出入局签署者证书，然后将其导入浏览器中作为可信根证书。此种选择可能需要您在 *hosts* 文件中添加条目，以便将 VM 的 IP 地址映射到证书发行方的通用名称。此名称的格式如下：`wl<pureapplication.ibmcloud.com`。如果您现在在 URL 中使用主机名而非 IP 地址，那么应该正常连接。然后必须在 URL 中使用该主机名而非 IP 地址来访问管理中心或管理控制台。
+另一种选择是导出入局签署者证书，然后将其导入浏览器中作为可信根证书。此种选择可能需要您在 *hosts* 文件中添加条目，以便将 VM 的 IP 地址映射到证书发行方的通用名称。此名称的格式如下：`wl<pureapplication.ibmcloud.com`. 如果您现在在 URL 中使用主机名而非 IP 地址，那么应该正常连接。然后必须在 URL 中使用该主机名而非 IP 地址来访问管理中心或管理控制台。
 
 最后，客户通常会为外部应用程序安装他们自己的根证书。有关更多信息，请参阅 IBM Knowledge Center 中的 [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} 或 [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} 文档。
 
@@ -270,7 +270,7 @@ OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
 ## SSL 配置
 {: #ssl_configuration}
 
-WebSphere Application Server Traditional 和 Liberty 是使用 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 协议配置的。您可以通过修改 SSL 配置来更改协议。
+WebSphere Application Server Traditional 和 Liberty 是使用 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 协议配置的。您可以通过修改 SSL 配置来更改协议。
 
 ### WebSphere Application Server Traditional
 {: #ssl-was}

@@ -44,7 +44,7 @@ Los siguientes pasos le guiarán a través de la creación de un nuevo entorno e
 
   * **Contrato de reserva:** en **Elegir una región/ubicación de despliegue**, verifique que la región seleccionada es la región correcta para el contrato.
 
-  * **Entorno de un solo arrendatario: ** en **Elegir una región/ubicación de despliegue**, compruebe que la región seleccionada es la región en la que está desplegado su entorno de un solo arrendatario. En **Entorno**, seleccione su entorno de un solo arrendatario. De forma predeterminada, es posible que se muestre el entorno público.
+  * **Entorno de un solo arrendatario:** en **Elegir una región/ubicación de despliegue**, compruebe que la región seleccionada es la región en la que está desplegado su entorno de un solo arrendatario. En **Entorno**, seleccione su entorno de un solo arrendatario. De forma predeterminada, es posible que se muestre el entorno público.
 
     Si no ve en la lista su entorno de un solo arrendatario, compruebe que está en la región correcta y que su organización tiene acceso a su entorno de un solo arrendatario.
     {: tip}
