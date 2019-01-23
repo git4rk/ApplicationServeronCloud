@@ -25,7 +25,7 @@ Wenn Sie bei der Verwaltung Ihrer {{site.data.keyword.appserver_full}}-Umgebung 
 ## Konventionen bei der Installation von Zellen
 {: cell_installation_conventions}
 
-Eine Zelle von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} wird mit einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen. Eine vollständige Liste der Einstellungen finden Sie in der Datei `/etc/virtualimage.properties`.
+Eine Zelle von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} wird mit einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen.  Eine vollständige Liste der Einstellungen finden Sie in der Datei `/etc/virtualimage.properties`.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -37,7 +37,7 @@ Eine Zelle von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}
 
 ## Konventionen bei der Installation von Liberty-Verbünden
 
-Ein Liberty-Verbund wird unter Verwendung einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen. Eine vollständige Liste der Einstellungen finden Sie in der Datei `/etc/virtualimage.properties`.
+Ein Liberty-Verbund wird unter Verwendung einer standardisierten Verzeichnisstruktur installiert und konfiguriert. Die folgende Liste enthält die wichtigsten Einstellungen.  Eine vollständige Liste der Einstellungen finden Sie in der Datei `/etc/virtualimage.properties`.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

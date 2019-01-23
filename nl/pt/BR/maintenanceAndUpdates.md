@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-22"
+lastupdated: "2018-12-13"
 
 ---
 
@@ -28,12 +28,12 @@ implementação de nuvem híbrida.
 Ao criar uma nova instância, é possível escolher dentre os seguintes níveis de fix pack na guia **Perfil de serviço** na instância de serviço:
 
 ** Liberty **
-  * 18.0.0.2
-  * 18.0.0.1
+  * 18.0.0.4
+  * 18.0.0.3
 
 ** WebSphere Application Server tradicional **
-  * 9.0.0.8
-  * 9.0.0.7
+  * 9.0.0.10
+  * 9.0.0.9
   * 8.5.5.14
   * 8.5.5.13
 

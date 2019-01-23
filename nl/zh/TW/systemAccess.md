@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的實例�
 * 從 {{site.data.keyword.Bluemix_notm}} 型錄及服務儀表板。
 * 藉由建立使用 RESTful API 的應用程式或 Script。
 
-透過使用遵循 Swagger 2.0 的 REST API，客戶能夠存取與透過入口網站和儀表板所提供功能的相同功能。如需所支援 REST API 及資源的相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}。如需示範 REST API 用法的範例程式碼，請下載由 Git 管理的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 範例](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}。
+透過使用遵循 Swagger 2.0 的 REST API，客戶能夠存取與透過入口網站和儀表板所提供功能的相同功能。如需所支援 REST API 及資源的相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}。如需示範 REST API 用法的範例程式碼，請下載由 Git 管理的 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 範例](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}。
 
 **附註：**建立服務實例之後，根據所建立的 T 恤尺碼，您的服務可能無法立即可供使用。建議您查詢所傳回 JSON 的**狀態**欄位，以判斷服務實例的現行狀態。
 
-**附註：**[REST API 範例](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}中所參照的 **apiEndpoint** URL 指向達拉斯地區。如果您是使用其他地區，請確定您的應用程式參照適當的 **apiEndpoint**。
+**附註：**[REST API 範例](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}中所參照的 **apiEndpoint** URL 指向達拉斯地區。如果您是使用其他地區，請確定您的應用程式參照適當的 **apiEndpoint**。
 
 *表 1. REST API 的 API 端點 URL 實作*
 
 |**地區名稱** | **地區字首** | **API 端點 URL** |       
 |:-------------:|:--------------:|:-------------:|
-|達拉斯| `ng` |https://wasaas-broker.ng.bluemix.net/wasaas-broker/api|
-|倫敦| `eu-gb` |https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api|
-|法蘭克福| `eu-de` |https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api|
-|雪梨| `au-syd` |https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api|
+|達拉斯| `us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|倫敦| `eu-gb` | https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|法蘭克福| `eu-de` | https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+|雪梨| `au-syd` | https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## 服務儀表板
 {: #service_dashboard}
@@ -270,7 +270,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的實例�
 ## SSL 配置
 {: #ssl_configuration}
 
-WebSphere Application Server 傳統及 Liberty 已配置 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 通訊協定。您可以修改 SSL 配置來變更通訊協定。
+WebSphere Application Server 傳統及 Liberty 已配置 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 通訊協定。您可以修改 SSL 配置來變更通訊協定。
 
 ### WebSphere Application Server Traditional
 {: #ssl-was}

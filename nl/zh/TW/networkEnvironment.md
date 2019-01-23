@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 
 圖 1. 使用公用 IP 的多方承租戶用戶端畫面
 
-![圖 1. 具有「公用 IP」之多方承租戶網路的用戶端視圖](images/wasaas_multi_tenantPublicIP.gif)
+![圖 1. 具有「公用 IP」之多方承租戶網路的用戶端視圖](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN 存取
 {: #vpnAccess}
@@ -39,7 +39,7 @@ VPN 配置的範圍限定為您的組織及地區。從建立時間算起的一�
 
 如果您的 VPN 配置受損或過期，則可以使用進階 VPN 管理頁面來撤銷 VPN 配置。此外，從審核角度而言，您可以檢視所有 VPN 管理活動的歷程，以及下載先前從進階 VPN 管理頁面建立的作用中 VPN 配置。
 
-使用 REST API，也可以對 {{site.data.keyword.Bluemix_notm}} 使用者介面之服務儀表板中可用的所有特性進行 Script 化。如需相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}。
+使用 REST API，也可以對 {{site.data.keyword.Bluemix_notm}} 使用者介面之服務儀表板中可用的所有特性進行 Script 化。如需相關資訊，請參閱 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 文件](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}。
 
 
 ## 公用網際網路存取

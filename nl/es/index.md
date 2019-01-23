@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} proporciona a los consumidores servidores de WebSphere tradicional y Liberty ya configurados. Está alojado en invitados de máquinas virtuales con acceso raíz al sistema operativo invitado. Cuando cree un servicio, elija entre _Liberty_, _Traditional ND_ o _Traditional WebSphere_.
 
-**Nota:** ahora los consumidores pueden elegir entre el nivel de fixpack actual o una versión más antigua de [ (n o n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} al crear cualquier WebSphere Application Server en la instancia de {{site.data.keyword.Bluemix_notm}}.
+**Nota:** ahora los consumidores pueden elegir entre el nivel de fixpack actual o una versión más antigua de [(n o n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} al crear cualquier WebSphere Application Server en la instancia de {{site.data.keyword.Bluemix_notm}}.
 
 Se le proporciona una experiencia de administración de WebSphere familiar y tiene acceso completo al sistema operativo subyacente. Puede reutilizar los scripts existentes y realizar los pequeños ajustes necesarios en el sistema para trabajar con infraestructuras propias o de terceros. El centro de administración y las consolas de administración se proporcionan para administrar su servicio de WebSphere Application Server Liberty, ND o tradicional, igual que las configuraciones de WebSphere locales.
 
@@ -119,7 +119,7 @@ Puede personalizar la forma y el momento eh que se utilizan los bloques para sat
 
 Se puede elegir entre utilizar los bloques de contrato de reserva o utilizar la facturación de pago según uso cuando se aprovisiona cada entorno.
 
-**Nota:**Si suprime una instancia de servicio, puede que tenga que esperar unos 30 minutos para que sus bloques estén disponibles para las nuevas instancias de servicio.
+**Nota:** Si suprime una instancia de servicio, puede que tenga que esperar unos 30 minutos para que sus bloques estén disponibles para las nuevas instancias de servicio.
 
 #### Excedentes
 

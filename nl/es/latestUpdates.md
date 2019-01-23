@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 Lista con las últimas actualizaciones del servicio.
+
+## 16 de enero de 2019: Actualizados los URL de punto final de API para la implementación de la API REST
+
+El prefijo de región de Dallas ha cambiado de `ng` a `us-south`. Los prefijos del resto de regiones permanecen igual. Los URL de punto final de API REST han cambiado de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` a `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. Los URL de `bluemix.net` seguirán recibiendo soporte, pero debe cambiar los URL de punto final de API para que utilicen `websphereappsvr.cloud.ibm.com` si utiliza las API REST para gestionar sus instancias de servicio.
+
+Para obtener más información sobre los URL de punto final de API REST, consulte [Acceso al sistema](systemAccess.html#system_access).
+
+## 14 de diciembre de 2018: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
+* El fixpack 9.0.0.10 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además del 9.0.0.10, otros fixpacks de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.9, 8.5.5.14 y 8.5.5.13, están disponibles para el suministro.
+* La versión 18.0.0.4 del fixpack de WebSphere Application Server Liberty ya está disponible cuando se aprovisiona una nueva instancia de servicio. Además de la 18.0.0.4, la versión de fixpack 18.0.0.3 de WebSphere Application Server Liberty está disponible para el suministro.
+* Se ha integrado el mantenimiento de servicio.
 
 ## 24 de octubre de 2018: Facturación de su propia licencia ahora disponible para contratos de reserva y entornos de un solo arrendatario
 
@@ -66,7 +77,7 @@ Para obtener más información sobre la facturación de contrato de reserva, con
 
 ## 27 de octubre de 2017: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 
-* Se ha añadido la capacidad de suministrar un nivel de fixpack anterior [ (n-1) ](maintenanceAndUpdates.html#maintenance-strategy){: new_window} mediante el separador Perfil de servicio del panel de control de servicio de {{site.data.keyword.Bluemix_notm}} o la API REST.
+* Se ha añadido la capacidad de suministrar un nivel de fixpack anterior [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} mediante el separador Perfil de servicio del panel de control de servicio de {{site.data.keyword.Bluemix_notm}} o la API REST.
 * La versión del fixpack 9.0.0.5 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además de la 9.0.0.5, otras versiones de fixpack de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.4, 8.5.5.12 y 8.5.5.11, están disponibles para el suministro.
 * La versión 17.0.0.3 del fixpack de WebSphere Application Server Liberty ya está disponible cuando se aprovisiona una nueva instancia de servicio. Además de la 17.0.0.3, la versión de fixpack 17.0.0.2 de WebSphere Application Server Liberty está disponible para el suministro.
 * Se han solucionado [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} que incluyen:

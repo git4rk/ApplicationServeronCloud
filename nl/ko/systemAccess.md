@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -25,20 +25,20 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 인스턴�
 * {{site.data.keyword.Bluemix_notm}} 카탈로그 및 서비스 대시보드에서.
 * RESTful API를 사용하는 애플리케이션 또는 스크립트의 작성에서.
 
-Swagger 2.0 호환 REST API를 사용하여 클라이언트는 포털과 대시보드를 통해 제공된 것과 동일한 기능에 액세스합니다. 지원되는 REST API 및 리소스에 대한 추가 정보는 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 문서](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}를 참조하십시오. REST API를 사용하는 예를 보여주는 샘플 코드를 가져오려면 Git 호스팅 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 샘플](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}을 다운로드하십시오.
+Swagger 2.0 호환 REST API를 사용하여 클라이언트는 포털과 대시보드를 통해 제공된 것과 동일한 기능에 액세스합니다. 지원되는 REST API 및 리소스에 대한 추가 정보는 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 문서](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}를 참조하십시오. REST API를 사용하는 예를 보여주는 샘플 코드를 가져오려면 Git 호스팅 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API 샘플](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}을 다운로드하십시오.
 
 **참고:** 서비스 인스턴스를 작성한 후 작성된 티셔츠 크기에 따라 서비스를 즉각 사용하지 못할 수도 있습니다. 서비스 인스턴스의 현재 상태를 판별하도록 리턴된 JSON의 **상태** 필드를 조회할 것을 권장합니다.
 
-**참고:** [REST API 샘플](https://github.com/IBM-Cloud/WebSphere-in-Bluemix/tree/master/WebSphere-In-Bluemix-API-Examples){: new_window}에서 참조되는 **apiEndpoint** URL은 댈러스 지역을 가리킵니다. 다른 지역을 사용 중인 경우 애플리케이션에서 적합한 **apiEndpoint**를 참조하는지 확인하십시오.
+**참고:** [REST API 샘플](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}에서 참조되는 **apiEndpoint** URL은 댈러스 지역을 가리킵니다. 다른 지역을 사용 중인 경우 애플리케이션에서 적합한 **apiEndpoint**를 참조하는지 확인하십시오.
 
 *표 1. REST API 구현을 위한 API 엔드포인트 URL*
 
 | **지역 이름** | **지역 접두부** | **API 엔드포인트 URL** |       
 |:-------------:|:--------------:|:-------------:|
-|댈러스 | `ng` |https://wasaas-broker.ng.bluemix.net/wasaas-broker/api  |
-|런던 | `eu-gb` |https://wasaas-broker.eu-gb.bluemix.net/wasaas-broker/api  |
-|프랑크푸르트 | `eu-de` |https://wasaas-broker.eu-de.bluemix.net/wasaas-broker/api  |
-|시드니 | `au-syd` |https://wasaas-broker.au-syd.bluemix.net/wasaas-broker/api  |
+| 댈러스 | `us-south` | https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| 런던 | `eu-gb` | https://wasaas-broker.eu-gb.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| 프랑크푸르트 | `eu-de` | https://wasaas-broker.eu-de.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
+| 시드니 | `au-syd` | https://wasaas-broker.au-syd.websphereappsvr.cloud.ibm.com/wasaas-broker/api  |
 
 ## 서비스 대시보드
 {: #service_dashboard}
@@ -70,7 +70,7 @@ OpenVPN은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} �
 3. 서비스 대시보드의 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 인스턴스의 OpenVPN 다운로드 링크에서 VPN 구성 파일을 다운로드하십시오. 압축 파일의 네 개 파일을 모두 `{OpenVPN home}\config` 디렉토리에 추출하십시오. 예:
 
   ```  
-    C:\Program Files\OpenVPN\Config
+  C:\Program Files\OpenVPN\Config
   ```
 
 4. openVPN 클라이언트 프로그램 "OpenVPN GUI"를 시작하십시오. 반드시 **Windows 관리자로 실행**을 선택해서 프로그램을 시작하십시오. 그렇지 않으면 연결하지 못할 수 있습니다.
@@ -91,8 +91,7 @@ OpenVPN은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} �
 ### Mac에서 openVPN 설정
 1. 오픈 소스 소프트웨어 제품인 [Tunnelblick](https://tunnelblick.net/){: new_window}를 설치하는 것이 한 방법입니다.
 2. WebSphere 서비스에서 VPN 구성 파일의 압축을 푸십시오. Tunnelblick에서 Mac의 관리자 비밀번호를 입력하도록 프롬프트를 표시하고 연결하는 데 사용할 수 있는 VPN 세트에 구성을 추가합니다.
-3. VPN 네트워크에 연결하고 나서 가상 머신에 액세스할 수 있습니다. 사용자가 처음 액세스한 후 Tunnelblick에서
-구성을 캐시하고 나면 Tunnelblick에서 액세스할 수 있습니다. 쉽게 액세스할 수 있도록 메뉴 표시줄에 아이콘을 배치할 수 있습니다.
+3. VPN 네트워크에 연결하고 나서 가상 머신에 액세스할 수 있습니다. 사용자가 처음 액세스한 후 Tunnelblick에서 구성을 캐시하고 나면 Tunnelblick에서 액세스할 수 있습니다. 쉽게 액세스할 수 있도록 메뉴 표시줄에 아이콘을 배치할 수 있습니다.
 
 
 ## SSH를 사용하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 액세스
@@ -108,7 +107,7 @@ OpenSSH의 설치를 확인하려면 다음 명령을 실행하십시오.
 
 다음 메시지는 응답의 예입니다.
   ```
-      OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
+  OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
   ```
 
 다음 지시사항을 사용하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 대한 SSH 액세스를 설정하십시오.
@@ -178,7 +177,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 
 {{site.data.keyword.IBM}}에서 제공되는 링크를 사용하고 있으므로 경고를 무시하고 안전하게 연결할 수 있습니다. 브라우저에서 보안 예외를 저장하도록 제안하는 경우 이 방법이 추후 경고를 방지하는 가장 쉬운 방법입니다.
 
-또 다른 옵션으로는 수신되는 서명자 인증서를 내보낸 다음 신뢰할 수 있는 루트 인증서로 브라우저에 가져오는 것입니다. 이 옵션을 사용하려면 인증서 발급자의 공통 이름에 VM의 IP 주소를 맵핑하는 *호스트* 파일에 항목을 작성해야 합니다. 이 이름은 `wl<pureapplication.ibmcloud.com` 형식으로 되어 있습니다. 이제 URL에서 IP 주소 대신에 호스트 이름을 사용하는 경우, 문제없이 연결할 수 있습니다. 그리고 나서 URL에 IP 주소 대신에 해당 호스트 이름을 사용하여 Admin Center 또는 Admin Console에 액세스해야 합니다.
+또 다른 옵션으로는 수신되는 서명자 인증서를 내보낸 다음 신뢰할 수 있는 루트 인증서로 브라우저에 가져오는 것입니다. 이 옵션을 사용하려면 인증서 발급자의 공통 이름에 VM의 IP 주소를 맵핑하는 *호스트* 파일에 항목을 작성해야 합니다. 이 이름은 `wl<pureapplication.ibmcloud.com`. 이제 URL에서 IP 주소 대신에 호스트 이름을 사용하는 경우, 문제없이 연결할 수 있습니다. 그리고 나서 URL에 IP 주소 대신에 해당 호스트 이름을 사용하여 Admin Center 또는 Admin Console에 액세스해야 합니다.
 
 마지막으로 고객은 외부에서 작성한 애플리케이션의 고유 루트 인증서를 설치해야 하는 경우도 있습니다. 자세한 정보는 IBM Knowledge Center에서 [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} 또는 [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} 문서를 참조하십시오.
 
@@ -189,7 +188,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
   * 각 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 노드에서 `openFirewallPorts.sh` 스크립트는 `WAS_HOME/virtual/bin` 디렉토리에 있습니다.
   * 각 Liberty Collective 호스트에서 `openFirewallPorts.sh`는 `WAS_HOME/virtual/bin` 디렉토리에 있습니다.
 
-### 사용법
+###  사용법
 
 다음 명령 구문을 사용하여 `openFirewallPorts.sh` 스크립트를 실행하십시오.
 
@@ -203,7 +202,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 * PROTOCOL은 TCP 또는 UDP입니다.
 * `-persist`는 `true` 또는 `false`입니다.
 
-쉼표로 구분된 목록에 다중 포트를 지정할 수 있습니다. 
+쉼표로 구분된 목록에 다중 포트를 지정할 수 있습니다.
 
 **참고**: 열려 있는 포트의 sport 및 dport가 방화벽의 INPUT 및 OUTPUT 섹션에서 열립니다. `sudo`를 사용하여 루트로 이 스크립트를 실행해야 합니다. 직접 iptables를 수정할 수도 있습니다.
 
@@ -240,7 +239,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 3. `IHS_HOME/conf`(예: `/opt/IBM/WebSphere/HTTPServer/conf`)에서 `httpd.conf`를 열고 다음 두 개의 행이 존재하는지 확인하십시오.
 
     ```
-        LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
+    LoadModule was_ap22_module /opt/IBM/WebSphere/Plugins/bin/64bits/mod_was_ap22_http.so
     WebSpherePluginConfig /opt/IBM/WebSphere/Plugins/config/webserver1/plugin-cfg.xml
     ```
     {: codeblock}  
@@ -272,7 +271,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 ## SSL 구성
 {: #ssl_configuration}
 
-WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/en/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 프로토콜로 구성되어 있습니다. SSL 구성을 수정하여 프로토콜을 변경할 수 있습니다.
+WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.ibm.com/support/knowledgecenter/SSYKE2_8.0.0/com.ibm.java.security.component.80.doc/security-component/jsse2Docs/protocols.html){: new_window} 프로토콜로 구성되어 있습니다. SSL 구성을 수정하여 프로토콜을 변경할 수 있습니다.
 
 ### WebSphere Application Server Traditional
 {: #ssl-was}
@@ -280,14 +279,14 @@ WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.
 1. `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` 디렉토리에서 `security.xml` 파일을 열고 다음 행을 수정하십시오.
 
    ```
-  sslProtocol="SSL_TLSv2"
+   sslProtocol="SSL_TLSv2"
    ```
    {: codeblock}
 
 2. `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` 디렉토리에서 `ssl.client.props` 파일을 열고 다음 행을 수정하십시오.
 
    ```
-  com.ibm.ssl.protocol=SSL_TLSv2
+   com.ibm.ssl.protocol=SSL_TLSv2
    ```
    {: codeblock}
 
@@ -297,6 +296,6 @@ WebSphere Application Server Traditional 및 Liberty는 [SSL_TLSv2](https://www.
 1. `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1` 디렉토리에서 `server.xml` 파일을 열고 `defaultSSLConfig` SSL 구성 요소 내의 다음 행을 수정하십시오.
 
    ```
-  sslProtocol="SSL_TLSv2"
+   sslProtocol="SSL_TLSv2"
    ```
    {: codeblock}

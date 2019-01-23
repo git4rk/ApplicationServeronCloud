@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-22"
+lastupdated: "2018-12-13"
 
 ---
 
@@ -24,12 +24,12 @@ Puoi creare un'istanza di WebSphere Application Server in {{site.data.keyword.Bl
 Quando crei una nuova istanza, puoi scegliere tra i seguenti livelli di fix pack nella scheda **Service Profile** dell'istanza del servizio:
 
 **Liberty**
-  * 18.0.0.2
-  * 18.0.0.1
+  * 18.0.0.4
+  * 18.0.0.3
 
 **WebSphere Application Server tradizionale**
-  * 9.0.0.8
-  * 9.0.0.7
+  * 9.0.0.10
+  * 9.0.0.9
   * 8.5.5.14
   * 8.5.5.13
 
@@ -57,7 +57,7 @@ L'esecuzione dello script effettua le seguenti azioni:
     Aggiorna tutti i pacchetti al fix pack più recente.
 * **`-noprompt`**
 
-    Non richiede conferma prima dell'aggiornamento. 
+    Non richiede conferma prima dell'aggiornamento.
 
 #### Esempi di sintassi
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 Liste des dernières mises à jour du service.
+
+## 16 janvier 2019 : mise à jour de l'URL de noeud final d'API pour l'implémentation d'API REST
+
+Le préfixe de région pour Dallas a changé de `ng` à `us-south`. Les autres préfixes de région restent les mêmes. Les URL de noeud final d'API REST ont été modifiées de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` à `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. Les URL `bluemix.net` continueront à être prises en charge mais vous devez changer les URL de noeud final d'API REST pour qu'elles utilisent `websphereappsvr.cloud.ibm.com` si vous vous servez des API REST pour gérer vos instances de service.
+
+Pour plus d'informations sur les URL de noeud final d'API REST, voir [Accès au système](systemAccess.html#system_access).
+
+## 14 décembre 2018 : mise à jour de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}}
+* Le groupe de correctifs version 9.0.0.10 de Traditional WebSphere Application Server est désormais disponible quand vous mettez à disposition une nouvelle instance de service. En plus de la version 9.0.0.10, d'autres versions de groupe de correctifs de Traditional WebSphere Application Server, telles que les versions 9.0.0.9, 8.5.5.14 et 8.5.5.13, sont disponibles pour la mise à disposition.
+* Le groupe de correctifs version 18.0.0.4 de WebSphere Application Server Liberty est désormais disponible quand vous mettez à disposition une nouvelle instance de service. En plus de la version 18.0.0.4, le groupe de correctifs version 18.0.0.3 de WebSphere Application Server Liberty est disponible pour la mise à disposition.
+* Diverses maintenances de service ont été intégrées.
 
 ## 24 Octobre 2018 : La facturation BYOL (Bring-your-own-license) est désormais disponible pour les environnements de contrat de réservation et à service exclusif.
 
@@ -139,8 +150,8 @@ Pour en savoir plus sur la facturation de contrat de réservation, voir [Options
 ## 10 février 2017 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Diverses maintenances de service ont été intégrées.
-* Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon à ce que le groupe de correctifs 8.5.5.11 ou 9.0.0.2  soit installé avec les nouvelles instances de Tradtional WebSphere Application Server.
-* Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon à ce que le groupe de correctifs 16.0.0.4 soit installé avec les nouvelles instances de WebSphere Application Server Liberty (plans Core et ND).
+* Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon que le groupe de correctifs 8.5.5.11 ou 9.0.0.2 soit installé avec les nouvelles instances de Traditional WebSphere Application Server.
+* Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon que le groupe de correctifs 16.0.0.4 soit installé avec les nouvelles instances de WebSphere Application Server Liberty (plans Core et ND).
 * Correction de [plusieurs vulnérabilités de sécurité](https://www-01.ibm.com/support/docview.wss?uid=swg21997657){: new_window} dans WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, incluant :
   * Vulnérabilité de déni de service, générée par l'autorisation d'exécution accordée aux objets sérialisés provenant de sources non fiables, ce qui entraîne la consommation de ressources.
   * Utilisation de demandes SOAP incorrectement formées, susceptibles de permettre à un agresseur à distance d'obtenir des informations sensibles.

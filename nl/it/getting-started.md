@@ -55,7 +55,7 @@ I seguenti passi ti guidano nella creazione di un nuovo ambiente in {{site.data.
 ## Passo 2: scegli il tuo ambiente (solo Network Deployment)
 {: #choose_env}
 
-I piani {{site.data.keyword.appserver_short}} Base e Liberty Core prevedono solo server singoli, quindi se hai scelto questi piani, puoi saltare questo passo. 
+I piani {{site.data.keyword.appserver_short}} Base e Liberty Core prevedono solo server singoli, quindi se hai scelto questi piani, puoi saltare questo passo.
 
 Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo ambiente.
 
@@ -66,7 +66,7 @@ Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo a
 ## Passo 3: dimensiona le tue macchine virtuali
 {: #vm_sizing}
 
-Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Le macchine virtuali sono suddivise in [dimensioni T-shirt](index.html#vm-size) di blocchi di risorse. 
+Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Le macchine virtuali sono suddivise in [dimensioni T-shirt](index.html#vm-size) di blocchi di risorse.
 
 Fai clic sulla scheda relativa al componente, ad esempio il server, il Deployment Manager o il nodo dell'applicazione e seleziona la dimensione T-shirt per sua la macchina virtuale.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -21,7 +21,7 @@ O diagrama a seguir mostrar esses caminhos de rede:
 
 Figura 1. Visualização do cliente de rede de diversos locatários com IP Público
 
-![Figura 1. Visualização do cliente da rede dediversos locatários com IP público](images/wasaas_multi_tenantPublicIP.gif)
+![Figura 1. Visualização do cliente da rede dediversos locatários com IP público](images/wasaas_multi_tenant_publicIP.png)
 
 
 ## Acesso VPN
@@ -45,7 +45,7 @@ Na maioria dos casos, é necessária apenas uma única configuração de VPN que
 
 Se as suas configurações de VPN estiverem comprometidas ou expiradas, será possível revogar a configuração de VPN usando a página de gerenciamento de VPN avançada. Além disso, em uma perspectiva de auditoria, é possível visualizar um histórico de todas as atividades de gerenciamento de VPN e fazer download de configurações de VPN ativas que foram criadas anteriormente por meio da página de gerenciamento de VPN avançada.
 
-Todos os recursos disponíveis no painel de serviço na IU do {{site.data.keyword.Bluemix_notm}} também podem ser roteados usando nossas APIs de REST. Para obter mais informações, consulte o WebSphere Application Server na {{site.data.keyword.Bluemix_notm}} [Documentação da API de REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}.
+Todos os recursos disponíveis no painel de serviço na IU do {{site.data.keyword.Bluemix_notm}} também podem ser roteados usando nossas APIs de REST. Para obter mais informações, consulte o WebSphere Application Server na {{site.data.keyword.Bluemix_notm}} [Documentação da API de REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}.
 
 
 ## Acesso à Internet pública

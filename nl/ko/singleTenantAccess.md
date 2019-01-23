@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 
     **문제 예방:** 기본적으로 공용 환경이 표시될 수 있습니다. 올바른 환경 이름이 표시되면 사용자가 올바른 지역에 로그인했으며 Single Tenant Environment에 액세스가 허용된 조직의 구성원임을 알 수 있습니다.
 
-    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [지원 받기](reportingIssues.html){: new_window} 페이지에 설명된 대로 지원 티켓을 여십시오.
+    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [도움 받기](reportingIssues.html){: new_window} 페이지에 설명된 대로 지원 티켓을 여십시오.
 
 9. 적절한 플랜을 선택하고 **작성**을 클릭하십시오.
 

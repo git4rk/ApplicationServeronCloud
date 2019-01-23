@@ -21,12 +21,12 @@ L'ambiente a singolo tenant {{site.data.keyword.appserver_full}} fornisce ai cli
 
 Gli ambienti a singolo tenant non possono essere creati tramite il catalogo {{site.data.keyword.Bluemix_notm}} e devono essere ordinati contattando il settore Vendite IBM. Quando ordini il tuo ambiente, puoi scegliere da un ambiente a singolo tenant standard oppure BYOL (bring-your-own-license). Gli ambienti a singolo tenant standard includono tutta l'infrastruttura e le licenze WebSphere Application Server necessarie. Negli ambienti a singolo tenant BYOL (bring-your-own-license), puoi utilizzare licenze WebSphere Application Server separate.
 
-Per ordinare un ambiente a singolo tenant, [contatta il settore Vendite IBM](reportingIssues.html#contacting-sales). Il team di vendita può aiutarti nella configurazione di un ambiente personalizzato in base alle tue esigenze. 
+Per ordinare un ambiente a singolo tenant, [contatta il settore Vendite IBM](reportingIssues.html#contacting-sales). Il team di vendita può aiutarti nella configurazione di un ambiente personalizzato in base alle tue esigenze.
 
 ## Panoramica di WebSphere Application Server in un ambiente a singolo tenant {{site.data.keyword.Bluemix_notm}}
 {: #overviewSTE}
 
-L'ambiente a singolo tenant ti fornisce l'istanza del servizio, rete privata e risorse isolate. Sebbene l'offerta sia gestita in modo indipendente, i dashboard del servizio e dell'istanza del servizio creata sono accessibili attraverso una specifica regione pubblica {{site.data.keyword.Bluemix_notm}} come indicato nella seguente figura. 
+L'ambiente a singolo tenant ti fornisce l'istanza del servizio, rete privata e risorse isolate. Sebbene l'offerta sia gestita in modo indipendente, i dashboard del servizio e dell'istanza del servizio creata sono accessibili attraverso una specifica regione pubblica {{site.data.keyword.Bluemix_notm}} come indicato nella seguente figura.
 
 Figura 1. Architettura di WebSphere Application Server in un ambiente a singolo tenant {{site.data.keyword.Bluemix_notm}}
 

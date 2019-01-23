@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ Il seguente diagramma illustra questi percorsi di rete:
 
 Figura 1. Vista client di una rete a più tenant con IP pubblico
 
-![Figura 1. Vista client di una rete a più tenant con IP pubblico](images/wasaas_multi_tenantPublicIP.gif)
+![Figura 1. Vista client di una rete a più tenant con IP pubblico](images/wasaas_multi_tenant_publicIP.png)
 
 ## Accesso VPN
 {: #vpnAccess}
@@ -39,7 +39,7 @@ Nella maggior parte dei casi, ti serve una sola configurazione VPN che puoi scar
 
 Se le tue configurazioni VPN sono compromesse o scadute, puoi revocare la configurazione VPN utilizzando la pagina di gestione VPN avanzata. Inoltre, da una prospettiva di controllo, puoi visualizzare una cronologia di tutte le attività di gestione VPN e scaricare le configurazioni VPN attive create in precedenza dalla pagina di gestione VPN avanzata.
 
-Tutte le funzioni disponibili nel dashboard del servizio dell'interfaccia utente {{site.data.keyword.Bluemix_notm}} possono anche essere controllate da script utilizzando le nostre API REST. Per ulteriori informazioni, vedi la [Documentazione API REST](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+Tutte le funzioni disponibili nel dashboard del servizio dell'interfaccia utente {{site.data.keyword.Bluemix_notm}} possono anche essere controllate da script utilizzando le nostre API REST. Per ulteriori informazioni, vedi la [Documentazione API REST](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Accesso Internet pubblico
@@ -59,7 +59,7 @@ Facoltativamente, puoi gestire l'accesso a Internet pubblico dal dashboard del s
 3. Fai clic su **Manage Public IP Access** nel dashboard del servizio.
 4. Vengono visualizzati gli indirizzi IP per il tuo host e il tuo nuovo IP pubblico, ma l'accesso è chiuso. Fai clic su **Open Access**.
 
-    Ritorni al dashboard del servizio che visualizza il seguente messaggio: 
+    Ritorni al dashboard del servizio che visualizza il seguente messaggio:
 
     > _Access is currently open. Click Manage Public IP to Close Access._
 
@@ -69,20 +69,20 @@ Facoltativamente, puoi gestire l'accesso a Internet pubblico dal dashboard del s
 1. Fai clic su **Manage Public IP Access** nel dashboard del servizio.
 2. Fai clic su **Close Access**.
 
-    Ritorni al dashboard dei servizio che visualizza il seguente messaggio: 
+    Ritorni al dashboard del servizio che visualizza il seguente messaggio:
 
     > _Access is currently closed. Click Manage Public IP to Open Access._
 3. Fai clic su **Manage Public IP Access** nel dashboard del servizio nell'interfaccia utente {{site.data.keyword.Bluemix_notm}}.
 4. Fai clic su **Return Public IP Address**.
 
-    Ritorni al dashboard del servizio in cui viene visualizzato il tuo host che visualizza il seguente messaggio: 
+    Ritorni al dashboard del servizio in cui viene visualizzato il tuo host che visualizza il seguente messaggio:
 
     > _Returned Public IP._
 
 ## Porte IP pubblico
 {: #publicIPports}
 
-Quando apri l'accesso al tuo IP pubblico, l'indirizzo IP viene associato alla tua VM e le porte 80 e 443 vengono aperte al gateway. Tuttavia, per impostazione predefinita, i server Liberty Core e WebSphere Base tradizionale non aprono le porte 80 e 443. Al contrario, le porte 80 e 443 sono aperte per impostazione predefinita su IBM HTTP Server. Pertanto, potresti dover configurare i tuoi server Liberty Core e WebSphere Base tradizionale per ascoltare il traffico dell'applicazione sulla porta 80 e 443 quando utilizzi un IP pubblico. 
+Quando apri l'accesso al tuo IP pubblico, l'indirizzo IP viene associato alla tua VM e le porte 80 e 443 vengono aperte al gateway. Tuttavia, per impostazione predefinita, i server Liberty Core e WebSphere Base tradizionale non aprono le porte 80 e 443. Al contrario, le porte 80 e 443 sono aperte per impostazione predefinita su IBM HTTP Server. Pertanto, potresti dover configurare i tuoi server Liberty Core e WebSphere Base tradizionale per ascoltare il traffico dell'applicazione sulla porta 80 e 443 quando utilizzi un IP pubblico.
 * Per configurare il tuo server Liberty Core, consulta [Configurare il server Liberty Core per l'accesso pubblico](networkEnvironment.html#configureLibertyForPublicAccess).
 * Per configurare il tuo server WebSphere Base tradizionale, aggiungi una catena di trasporto del contenitore web in ascolto sulla porta 80 e 443 come descritto in [Configurazione delle catene di trasporto](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
 
@@ -132,7 +132,7 @@ COMMIT
 ## Porte IP privato VPN
 {: #privateIPports}
 
-Collega il tuo indirizzo IP privato della VM tramite la connessione VPN. Liberty Admin Center (9080, 9443), la console di gestione WebSphere tradizionale (9060, 9043), SSH (22) e le porte diverse da 80 e 443 sono accessibili solo tramite la connessione VPN come rappresentato nella Figura 1. Consulta il Liberty Core di esempio **server.xml** e **ibm-web-bnd.xml** per i dettagli sulla separazione di Liberty Admin Center dalle tue porte dell'applicazione. 
+Collega il tuo indirizzo IP privato della VM tramite la connessione VPN. Liberty Admin Center (9080, 9443), la console di gestione WebSphere tradizionale (9060, 9043), SSH (22) e le porte diverse da 80 e 443 sono accessibili solo tramite la connessione VPN come rappresentato nella Figura 1. Consulta il Liberty Core di esempio **server.xml** e **ibm-web-bnd.xml** per i dettagli sulla separazione di Liberty Admin Center dalle tue porte dell'applicazione.
 
 **Prevenzione dei problemi:** per i server Liberty Core e WebSphere Base tradizionale, le porte del firewall sono pre-configurate quando esegui il provisioning della tua VM. Tuttavia, per le configurazioni di Network Deployment in cui il Deployment manager o il Controller collettivo viene collocato con IBM HTTP Server, potresti dover aprire le porte nel firewall. Consulta [Porte firewall](systemAccess.html#firewall_ports) per i dettagli.
 
@@ -206,7 +206,7 @@ Ti consigliamo di esaminare la configurazione DNS per vedere se soddisfa le tue 
 
 Quando crei un server su un nodo personalizzato, le porte aggiuntive richieste dal server devono essere aperte sulle VM del Deployment Manager e del nodo personalizzato prima di avviare il server. Dopo aver creato il server, ma prima di avviarlo, apri le porte eseguendo lo script `openWASPorts.sh`.
 
- 1. Accedi a ogni VM del Deployment Manager e del nodo personalizzato come utente root. 
+ 1. Accedi a ogni VM del Deployment Manager e del nodo personalizzato come utente root.
  1. Esegui lo script `/opt/IBM/WebSphere/AppServer/virtual/bin/openWASPorts.sh` per aprire le porte.
 
 Dopo aver eseguito lo script, puoi avviare il server dalla console di gestione del Deployment Manager.

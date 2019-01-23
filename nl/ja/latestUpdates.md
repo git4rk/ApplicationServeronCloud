@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -14,6 +14,17 @@ lastupdated: "2018-11-20"
 {: #latest_updates}
 
 サービスの最新更新情報のリスト。
+
+## 2019 年 1 月 16 日: REST API 実装用の API エンドポイント URL を更新しました
+
+ダラスの地域接頭部が `ng` から `us-south` に変更されました。他の地域接頭部は同じままです。REST API エンドポイント URL が `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` から `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api` に変更されました。`bluemix.net` URL は引き続きサポートされますが、REST API を使用してサービス・インスタンスを管理している場合は、`websphereappsvr.cloud.ibm.com` を使用するように REST API エンドポイント URL を変更する必要があります。
+
+REST API エンドポイント URL について詳しくは、[システム・アクセス](systemAccess.html#system_access)を参照してください。
+
+## 2018 年 12 月 14 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の  9.0.0.10 フィックスパックを使用できるようになりました。9.0.0.10 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.9、8.5.5.14、8.5.5.13 など) もプロビジョニングのために使用できます。
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server Liberty の 18.0.0.4 フィックスパック・バージョンを使用できるようになりました。18.0.0.4 に加えて、WebSphere Application Server Liberty の 18.0.0.3 フィックスパック・バージョンもプロビジョニングのために使用できます。
+* 各種サービス・メンテナンスを統合しました。
 
 ## 2018 年 10 月 24 日: 予約契約およびシングル・テナント環境で、「独自ライセンス使用」請求処理が使用できるようになりました。
 
@@ -152,7 +163,7 @@ lastupdated: "2018-11-20"
 * IBM SDK Java Technology Edition では、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} に影響を与える、以下のような[いくつかのセキュリティー脆弱性](https://www-01.ibm.com/support/docview.wss?uid=swg21995995){: new_window}に対処しました。
   * 機密性、保全性、および可用性に対して高い影響がある、Hotspot コンポーネントに関連する、Oracle Java SE および Java SE Embedded にある未指定の脆弱性。
   * 不明な攻撃ベクトルを使用して、リモート・アタッカーが機密情報を取得する可能性があり、その結果、機密性に高い影響を与える、Networking コンポーネントに関連する Oracle Java SE および Java SE Embedded にある未指定の脆弱性。
-  *  ユーザーが任意の JavaScript コードを Web UI に埋め込むことができる、IBM WebSphere Application Server のクロスサイト・スクリプティングの脆弱性。このコードは、意図された機能を潜在的に変更し、トラステッド・セッション内で資格情報の漏えいにつながる可能性があります。
+  *  ユーザーが任意の JavaScript コードを Web UI に埋め込むことができる、IBM WebSphere Application Server のクロスサイト・スクリプティングの脆弱性。 このコードは、意図された機能を潜在的に変更し、トラステッド・セッション内で資格情報の漏えいにつながる可能性があります。
 
 
 ## 2016 年 11 月 8 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
@@ -193,7 +204,7 @@ lastupdated: "2018-11-20"
 ## 2016 年 6 月 24 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 
 * 新規の _Traditional ND_ または _Traditional WebSphere_ インスタンスを作成するときに、お客様が V8.5 と V9.0 のどちらかを選択できる機能が追加されました。
-* WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} がアップグレードされ、WebSphere Application Server Liberty (Core プランおよび ND プラン) の新規インスタンスはフィックスパック 16.0.0.2 を使用するようになりました。16.0.0.2 は、8.5.5.9 の後の次のフィックスパックです。 16.0.0.2 以降は、これらのプランでサポートされる、使用許諾のある Liberty オプション・フィーチャーすべてがデフォルトでインストールされます。
+* WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} がアップグレードされ、WebSphere Application Server Liberty (Core プランおよび ND プラン) の新規インスタンスはフィックスパック 16.0.0.2 を使用するようになりました。 16.0.0.2 は、8.5.5.9 の後の次のフィックスパックです。 16.0.0.2 以降は、これらのプランでサポートされる、使用許諾のある Liberty オプション・フィーチャーすべてがデフォルトでインストールされます。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} に影響を与える、以下を含む[いくつかのセキュリティー脆弱性](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window}についての対処を行いました。
   * IBM WebSphere Application Server に影響を与える、Apache Standard Taglibs の XML External Entity Injection (XXE) の脆弱性。
   * WebSphere Application Server Liberty プロファイル API Discovery フィーチャーおよび Swagger の資料のセキュリティーが、予想より脆弱である可能性。

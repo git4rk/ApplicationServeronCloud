@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2018-11-19"
 
 图 1. 使用公共 IP 的多租户联网的客户机视图
 
-![图 1. 使用公共 IP 的多租户联网的客户机视图](images/wasaas_multi_tenantPublicIP.gif)
+![图 1. 使用公共 IP 的多租户联网的客户机视图](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN 访问
 {: #vpnAccess}
@@ -39,7 +39,7 @@ VPN 配置的作用域限定为您的组织和区域。有效期为一年，自�
 
 如果 VPN 配置遭到破坏或到期，那么可以使用“高级 VPN 管理”页面来撤销 VPN 配置。此外，在审计透视图中，可以查看所有 VPN 管理活动的历史记录，并下载先前在“高级 VPN 管理”页面中创建的活动 VPN 配置。
 
-此外，{{site.data.keyword.Bluemix_notm}} UI 的服务仪表板上提供的所有功能还可以通过我们的 REST API 进行脚本化。有关更多信息，请参阅 {{site.data.keyword.Bluemix_notm}}[REST API 文档](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}中的 WebSphere Application Server。
+此外，{{site.data.keyword.Bluemix_notm}} UI 的服务仪表板上提供的所有功能还可以通过我们的 REST API 进行脚本化。有关更多信息，请参阅 {{site.data.keyword.Bluemix_notm}} [REST API 文档](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}中的 WebSphere Application Server。
 
 
 ## 公用因特网访问

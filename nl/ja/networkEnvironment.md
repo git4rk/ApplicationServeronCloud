@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-01-16"
 
 ---
 
@@ -19,12 +19,12 @@ lastupdated: "2018-11-19"
 
 図 1. パブリック IP を使用したマルチテナント・ネットワーキングのクライアント・ビュー
 
-![図 1. パブリック IP を使用したマルチテナント・ネットワーキングのクライアント・ビュー](images/wasaas_multi_tenantPublicIP.gif)
+![図 1. パブリック IP を使用したマルチテナント・ネットワーキングのクライアント・ビュー](images/wasaas_multi_tenant_publicIP.png)
 
 ## VPN アクセス
 {: #vpnAccess}
 
-{{site.data.keyword.Bluemix_notm}} UI のサービス・ダッシュボードから WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} のサービス・インスタンスをプロビジョンした後、OpenVPN 接続を確立できます。接続を作成するには、ドロップダウン・メニューを展開し、**「VPN 構成のダウンロード」** をクリックして VPN 構成をダウンロードします。VPN 構成には、`.ovpn` ファイル、および OpenVPN サーバーでの認証に使用される証明書が含まれます。 OpenVPN 接続が確立された後、SSH を通じて VM にアクセスできます。 また、Liberty 管理センター、従来の WebSphere 管理コンソール、およびアプリケーションへのアクセスも可能です。
+{{site.data.keyword.Bluemix_notm}} UI のサービス・ダッシュボードから WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} のサービス・インスタンスをプロビジョンした後、OpenVPN 接続を確立できます。 接続を作成するには、ドロップダウン・メニューを展開し、**「VPN 構成のダウンロード」** をクリックして VPN 構成をダウンロードします。 VPN 構成には、`.ovpn` ファイル、および OpenVPN サーバーでの認証に使用される証明書が含まれます。 OpenVPN 接続が確立された後、SSH を通じて VM にアクセスできます。 また、Liberty 管理センター、従来の WebSphere 管理コンソール、およびアプリケーションへのアクセスも可能です。
 
 VPN 構成の適用範囲は組織と地域です。 作成された時点から 1 年間有効です。 同じ VPN 構成を使用して、同時に複数の OpenVPN クライアント接続を確立できます。
 
@@ -33,13 +33,13 @@ VPN 構成の適用範囲は組織と地域です。 作成された時点から
 ## 拡張 VPN 構成管理
 {: #advancedVPN}
 
-ほとんどの場合、**「VPN 構成のダウンロード」**ボタンを使用してダウンロードできる単一の VPN 構成で十分です。 ただし、サービス・ダッシュボードから**「拡張 VPN 管理」**をクリックしてアクセスする、「拡張 VPN 管理」ページを使用すると、複数の VPN 構成を作成し、管理できます。複数の VPN 構成があると、古い VPN 構成が期限切れ間近のときに、新しい VPN 構成にスムーズに移行でき便利です。 また、組織の各個人やチームによる VM へのアクセスを管理するために、複数の VPN 構成を要求することもできます。  
+ほとんどの場合、**「VPN 構成のダウンロード」**ボタンを使用してダウンロードできる単一の VPN 構成で十分です。 ただし、サービス・ダッシュボードから**「拡張 VPN 管理」**をクリックしてアクセスする、「拡張 VPN 管理」ページを使用すると、複数の VPN 構成を作成し、管理できます。 複数の VPN 構成があると、古い VPN 構成が期限切れ間近のときに、新しい VPN 構成にスムーズに移行でき便利です。 また、組織の各個人やチームによる VM へのアクセスを管理するために、複数の VPN 構成を要求することもできます。  
 
 **注:** 組織で、**最大** 10 個のアクティブ VPN 構成をいつでも使用できます。
 
 VPN 構成が漏えいした場合、または期限切れになった場合、「拡張 VPN 管理」ページを使用して VPN 構成を取り消すことができます。 さらに、監査の観点から、すべての VPN 管理アクティビティーの履歴を表示し、「拡張 VPN 管理」ページで以前に作成されたアクティブな VPN 構成をダウンロードできます。
 
-{{site.data.keyword.Bluemix_notm}} UI のサービス・ダッシュボードから使用できるすべての機能は、REST API を使用してスクリプト化することもできます。 詳しくは、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API の資料](https://wasaas-broker.ng.bluemix.net/wasaas-broker/api#/){: new_window}を参照してください。
+{{site.data.keyword.Bluemix_notm}} UI のサービス・ダッシュボードから使用できるすべての機能は、REST API を使用してスクリプト化することもできます。 詳しくは、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API の資料](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}を参照してください。
 
 
 ## パブリック・インターネット・アクセス
@@ -86,7 +86,7 @@ VPN 構成が漏えいした場合、または期限切れになった場合、�
 * Liberty Core サーバーを構成するには、[パブリック・アクセス用に Liberty Core サーバーを構成する (Configure Liberty Core Server for public access)](networkEnvironment.html#configureLibertyForPublicAccess)を参照してください。
 * 従来の WebSphere Base サーバーを構成するには、ポート 80 および 443 で listen する Web コンテナー・トランスポート・チェーンを追加します。この説明については、[Configuring transport chains](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window} を参照してください。
 
-**問題の回避:** Linux では、**root** などの特権ユーザーのために 1024 未満のポートが予約されています。 ただし、従来型 WebSphere Base サーバーは**非 root** ユーザーとして実行するのが一般的です。 このため、Web コンテナー・トランスポート・チェーンを追加するとき、**iptables**の構成を **root** ユーザーとして変更します。 特に、制限付きポートである 80 と 443 を、1024 より上の別ポート (9080 や 9443 など) に指定変更します。次のコマンドは、このプロセスの例です。
+**問題の回避:** Linux では、**root** などの特権ユーザーのために 1024 未満のポートが予約されています。 ただし、従来型 WebSphere Base サーバーは**非 root** ユーザーとして実行するのが一般的です。 このため、Web コンテナー・トランスポート・チェーンを追加するとき、**iptables**の構成を **root** ユーザーとして変更します。 特に、制限付きポートである 80 と 443 を、1024 より上の別ポート (9080 や 9443 など) に指定変更します。 次のコマンドは、このプロセスの例です。
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
