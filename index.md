@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} provides consumers with pre-configured Traditional WebSphere and Liberty servers. It is hosted on virtual machine guests with root access to the guest operating system. When you are creating your service, choose between _Liberty_, _Traditional ND_, or _Traditional WebSphere_.
 
-**Note:** Consumers are now able to choose between the current fixpack level or one older version [(n or n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} when you create any WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance.
+**Note:** Consumers are now able to choose between the current fixpack level or one older version [(n or n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} when you create any WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance.
 
 You are given a familiar WebSphere administration experience and have full access to the underlying operating system. You can reuse your existing scripts and make the little system tweaks that you need to make to work with your own, or third party, frameworks. The Admin Center and Admin Consoles are provided to administer your WebSphere Application Server Liberty, ND or Traditional service, just like your on-premises WebSphere configurations.
 
@@ -103,7 +103,7 @@ The following table lists the total price per hour for each T-shirt sized virtua
 ### Reserve contract
 {:#reserve-contract}
 
-With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} users. If you have existing WebSphere Application Server licenses, you can choose a bring-your-own-license reserve contract, which uses these licenses and has a reduced billing rate. To set up reserve contract billing, [contact IBM Sales](reportingIssues.html#contacting-sales).
+With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} users. If you have existing WebSphere Application Server licenses, you can choose a bring-your-own-license reserve contract, which uses these licenses and has a reduced billing rate. To set up reserve contract billing, [contact IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 Subscriptions are available in 8-block increments. The total block hours are based on the number of hours in the month, but you can use the block hours at any point throughout the month. For example, a 30-day month has 720 hours, which when multiplied by an 8-block subscription results in a total of 5,760 block hours.
 
@@ -127,7 +127,7 @@ Blocks from the pay-as-you-go model are not reserved capacity and come from a co
 
 Blocks in reserve contract billing are based on the WebSphere Application Server Network Deployment plan, but you can also use the blocks for other plans. With other plans, usage is prorated so that one block hour is reduced by the plan's proration rate when it is reflected in your remaining reserve contract block hours.
 
-The following table shows the proration rates for each plan and the effective price per actual block hour after the proration is calculated. For current prices in your region, [contact IBM Sales](reportingIssues.html#contacting-sales).
+The following table shows the proration rates for each plan and the effective price per actual block hour after the proration is calculated. For current prices in your region, [contact IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Plan | Proration rate | Price/hour after proration |
 |:-------:|:------:|:------:|

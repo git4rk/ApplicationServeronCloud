@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -66,7 +66,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 1. Download the openVPN Windows installer for your system architecture from the openVPN website:
   * 64-bit systems: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32-bit systems:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Ensure you [run as a Windows Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} and openVPN is installed.
+2. Ensure you [run as a Windows Administrator](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} and openVPN is installed.
 3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the `{OpenVPN home}\config` directory. For example:
 
   ```  
@@ -219,7 +219,7 @@ If you require the web server to handle all user requests, then you might need t
 
 **Avoid trouble:** Before you generate and propagate the plug-in, ensure that the following prerequisite tasks are complete.
 
-* In your local Windows, Linux or MAC environment, ensure that [openVPN](systemAccess.html#setup_openvpn) is configured, started and you are connected to the appropriate region.
+* In your local Windows, Linux or MAC environment, ensure that [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) is configured, started and you are connected to the appropriate region.
 * From the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service dashboard, click **Open the admin console** and log in with wsadmin and the Admin Password that is provided in the service dashboard.
 * From the Admin Console, create an application server (for example, ***server1***), because the Deployment Manager is federated with an empty custom node.
 * Start the server that you created.

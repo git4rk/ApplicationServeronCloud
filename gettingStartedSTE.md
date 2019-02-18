@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -21,7 +21,7 @@ The {{site.data.keyword.appserver_full}} Single Tenant Environment provides cust
 
 Single Tenant Environments cannot be created through the {{site.data.keyword.Bluemix_notm}} catalog and must be ordered by contacting IBM sales. When you order your environment, you can choose from a standard or bring-your-own-license Single Tenant Environment. Standard Single Tenant Environments include all required infrastructure and WebSphere Application Server licenses. In bring-your-own-license Single Tenant Environments, you can use separate WebSphere Application Server licenses.
 
-To order a Single Tenant Environment, [contact IBM sales](reportingIssues.html#contacting-sales). The sales team can assist you in setting up an environment that is tailored to your needs.
+To order a Single Tenant Environment, [contact IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales). The sales team can assist you in setting up an environment that is tailored to your needs.
 
 ## Overview of WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment
 {: #overviewSTE}
@@ -36,6 +36,6 @@ Figure 1. Architecture of the WebSphere Application Server in {{site.data.keywor
 ## Organization Management
 {: #organization_management}
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} organization names as part of the order, you can start accessing your environment now. If you did not provide an organization name or if you want to change this setting, open a [support ticket](reportingIssues.html#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your org name in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Account > Cloud Foundry orgs**.
+The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} organization names as part of the order, you can start accessing your environment now. If you did not provide an organization name or if you want to change this setting, open a [support ticket](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your org name in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Account > Cloud Foundry orgs**.
 
-**Note:** To access your Single Tenant Environment, see [Single Tenant Environment Access](singleTenantAccess.html#singleTenantEnvironment).
+**Note:** To access your Single Tenant Environment, see [Single Tenant Environment access](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment).

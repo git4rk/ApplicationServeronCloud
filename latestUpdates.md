@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ A list of the latest updates to the service.
 
 The region prefix for Dallas changed from `ng` to `us-south`. The other region prefixes stayed the same. The REST API endpoint URLs changed from `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` to `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. The `bluemix.net` URLs will continue to be supported, but you should change REST API endpoint URLs to use `websphereappsvr.cloud.ibm.com` if you use the REST APIs to manage your service instances.
 
-For more information about the REST API endpoint URLs, see [System access](systemAccess.html#system_access).
+For more information about the REST API endpoint URLs, see [System access](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access).
 
 ## December 14, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.0.10 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.10, other fix packs of traditional WebSphere Application Server, such as 9.0.0.9, 8.5.5.14, and 8.5.5.13, are available for provisioning.
@@ -28,7 +28,7 @@ For more information about the REST API endpoint URLs, see [System access](syste
 
 ## October 24, 2018: Bring-your-own-license billing now available for reserve contract and Single Tenant environments
 
-If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](reportingIssues.html#contacting-sales).
+If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 ## August 22, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 8.5.5.14 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 8.5.5.14, other fix packs of traditional WebSphere Application Server, such as 9.0.0.8, 9.0.0.7, and 8.5.5.13, are available for provisioning.
@@ -45,7 +45,7 @@ If you have existing WebSphere Application Server licenses, you can now use thes
 
 With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other {{site.data.keyword.appserver_full}} users. You can use your service block hours in any way you choose throughout the month, with any overages being charged according to the typical pay-as-you-go subscription model.
 
-To learn more about reserve contract billing, see [Billing options](index.html#billing-options).
+To learn more about reserve contract billing, see [Billing options](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options).
 
 ## March 30, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -77,7 +77,7 @@ To learn more about reserve contract billing, see [Billing options](index.html#b
 
 ## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added the ability to provision an older fix pack level [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or via the REST API.
+* Added the ability to provision an older fix pack level [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or via the REST API.
 * The 9.0.0.5 fix pack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.5, other fix pack versions of traditional WebSphere Application Server, such as 9.0.0.4, 8.5.5.12, and 8.5.5.11, are available for provisioning.
 * The 17.0.0.3 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 17.0.0.3, the 17.0.0.2 fix pack version of WebSphere Application Server Liberty is available for provisioning.
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
@@ -99,8 +99,8 @@ To learn more about reserve contract billing, see [Billing options](index.html#b
 * Integrated miscellaneous service maintenance.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 8.5.5.12 or 9.0.0.4 is installed with new instances of Traditional WebSphere Application Server.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 17.0.0.2 is installed with new instances of WebSphere Application Server Liberty (Core and ND Plans).
-* Added an [Advanced VPN Configuration Management](networkEnvironment.html#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the London and Sydney regions.
-* Added enhancements to the [Public Internet Access](networkEnvironment.html#publicInternetAccess){: new_window} feature that allows clients to better manage their public IP address.
+* Added an [Advanced VPN Configuration Management](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the London and Sydney regions.
+* Added enhancements to the [Public Internet Access](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} feature that allows clients to better manage their public IP address.
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} in the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An unspecified vulnerability for the Java SE AWT component that could allow an unauthenticated attacker to take control of the system.
   * An unspecified vulnerability for the Java SE JCE component that could allow an unauthenticated attacker to take control of the system.
@@ -116,7 +116,7 @@ To learn more about reserve contract billing, see [Billing options](index.html#b
 ## May 25, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Integrated miscellaneous service maintenance.
-* Added an [Advanced VPN Configuration Management](networkEnvironment.html#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the Frankfurt region.
+* Added an [Advanced VPN Configuration Management](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the Frankfurt region.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}  such that JDK 8 is installed with all new instances of the service.
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A potential security vulnerability with the WebSphere Application Server MQ JCA Resource adapter.
@@ -168,7 +168,7 @@ To learn more about reserve contract billing, see [Billing options](index.html#b
 
 ## November 8, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added ability for clients to request a [Public IP](networkEnvironment.html#networkEnvironment) address for their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM
+* Added ability for clients to request a [Public IP](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) address for their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM
 * Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A vulnerability in IBM WebSphere Application Server that could allow remote attackers to execute arbitrary Java code with a serialized object from untrusted sources.
   * A denial-of-service vulnerability that is caused by an out-of-bounds read in the TS_OBJ_print_bio function. A remote attacker could exploit this vulnerability by using a specially crafted time-stamp file to cause the application to crash.
@@ -205,7 +205,7 @@ To learn more about reserve contract billing, see [Billing options](index.html#b
 
 * Added ability for clients to choose between V8.5 and V9.0 when you create a new _Traditional ND_ or _Traditional WebSphere_ instance.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}  so that new instances of WebSphere Application Server Liberty (Core and ND Plans) use fix pack 16.0.0.2. 16.0.0.2 is the next fix pack after 8.5.5.9. As of 16.0.0.2, all entitled Liberty optional features that are supported for these plans are installed by default.
-* Addressed [Several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+* Addressed [several security vulnerabilities](http://www-01.ibm.com/support/docview.wss?uid=swg21984977){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An XML External Entity Injection (XXE) vulnerability in the Apache Standard Taglibs that affects IBM WebSphere Application Server.
   * A potential for weaker than expected security for the WebSphere Application Server Liberty profile API Discovery feature and Swagger documents.
   * A potential information disclosure vulnerability in Admin Center for IBM WebSphere Application Server Liberty.
