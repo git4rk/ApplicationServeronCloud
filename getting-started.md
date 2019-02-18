@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ With {{site.data.keyword.appserver_full}}, you can set up a pre-configured WebSp
 ## Before you begin
 {: #prereqs}
 
-If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, contact IBM Sales before you create the service. Learn more about these options in [About](index.html).
+If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, contact IBM Sales before you create the service. Learn more about these options in [About](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migrating an existing WebSphere environment
 
@@ -66,7 +66,7 @@ For the Network Deployment plan, choose the profile and architecture for your en
 ## Step 3: Size your virtual machines
 {: #vm_sizing}
 
-You can individually size the virtual machine for each component in your environment. Virtual machines are chunked in [T-shirt sizes](index.html#vm-size) of blocks of resources.
+You can individually size the virtual machine for each component in your environment. Virtual machines are chunked in [T-shirt sizes](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) of blocks of resources.
 
 Click the tab for the component, such as the server, deployment manager, or application node, and select the T-shirt size for its virtual machine.
 
@@ -75,11 +75,11 @@ Click the tab for the component, such as the server, deployment manager, or appl
 
 Review the details in the service configuration summary, including the estimated time that it will take to provision.
 
-**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your org](../../account/orgs_spaces.html){:new_window} is exactly the same, including case and whitespace, as the org name for your contract. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
+**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your org](/docs/account?topic=account-orgsspacesusers){:new_window} is exactly the same, including case and whitespace, as the org name for your contract. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
 
 Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
 
 ## Next steps
 {: #anchor_value}
 
-Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](systemAccess.html).
+Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).
