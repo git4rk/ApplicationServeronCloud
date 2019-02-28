@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -40,7 +40,7 @@ de uma instância de serviço.
 
     **Evite problemas:** o ambiente público pode ser mostrado como o padrão. A exibição do nome do ambiente correto assume que você está com login efetuado na região correta e um membro de uma organização que tem permissão para acessar o seu ambiente de locatário único.
 
-    **Nota:** se você selecionar um dos ambientes públicos, poderá haver um encargo por hora. Portanto, se você não vir seu nome de Ambiente de Locatário Único, abra um Chamado de Suporte, conforme descrito na página [Obtendo ajuda](reportingIssues.html){: new_window}.
+    **Nota:** se você selecionar um dos ambientes públicos, poderá haver um encargo por hora. Portanto, se você não vir seu nome de Ambiente de Locatário Único, abra um Chamado de Suporte, conforme descrito na página [Obtendo ajuda](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}.
 
 9. Selecione o plano apropriado e clique em **Criar**.
 
@@ -70,10 +70,10 @@ serviço que contêm duas XXLs, três XLs e 1 L para um total de 60 blocos usado
 
 Após seu Ambiente de Locatário Único ser provisionado, é possível fazer download de suas credenciais de VPN e estabelecer uma conexão OpenVPN. Para obter mais informações, consulte os links a seguir:
 
-* [ Acesso VPN ](networkEnvironment.html#vpnAccess){: new_window}
-* [ Configurando OpenVPN ](systemAccess.html#setup_openvpn){: new_window}
+* [ Acesso VPN ](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [ Configurando OpenVPN ](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Gerenciando seu Ambiente de Locatário Único
 {: #manageSTE}
 
-Para incluir capacidade extra em seu Ambiente de Locatário Único existente ou para solicitar capacidade em outro data center, entre em contato com as Centrais de Atendimento das Américas, o representante IBM local ou o Parceiro de Negócios IBM. Consulte [Contatando vendas](reportingIssues.html#contacting-sales) para obter detalhes.
+Para incluir capacidade extra em seu Ambiente de Locatário Único existente ou para solicitar capacidade em outro data center, entre em contato com as Centrais de Atendimento das Américas, o representante IBM local ou o Parceiro de Negócios IBM. Consulte [Contatando vendas](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) para obter detalhes.

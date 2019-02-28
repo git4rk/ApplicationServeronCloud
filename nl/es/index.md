@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} proporciona a los consumidores servidores de WebSphere tradicional y Liberty ya configurados. Está alojado en invitados de máquinas virtuales con acceso raíz al sistema operativo invitado. Cuando cree un servicio, elija entre _Liberty_, _Traditional ND_ o _Traditional WebSphere_.
 
-**Nota:** ahora los consumidores pueden elegir entre el nivel de fixpack actual o una versión más antigua de [(n o n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} al crear cualquier WebSphere Application Server en la instancia de {{site.data.keyword.Bluemix_notm}}.
+**Nota:** ahora los consumidores pueden elegir entre el nivel de fixpack actual o una versión más antigua de [(n o n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} al crear cualquier WebSphere Application Server en la instancia de {{site.data.keyword.Bluemix_notm}}.
 
 Se le proporciona una experiencia de administración de WebSphere familiar y tiene acceso completo al sistema operativo subyacente. Puede reutilizar los scripts existentes y realizar los pequeños ajustes necesarios en el sistema para trabajar con infraestructuras propias o de terceros. El centro de administración y las consolas de administración se proporcionan para administrar su servicio de WebSphere Application Server Liberty, ND o tradicional, igual que las configuraciones de WebSphere locales.
 
@@ -107,7 +107,7 @@ En la tabla siguiente se muestra el precio total por hora de cada máquina virtu
 ### Contrato de reserva
 {:#reserve-contract}
 
-Con la facturación de contrato de reserva, adquiere una suscripción mensual de prepago que garantiza el acceso a los bloques de recursos de cálculo reservados físicamente. Estos bloques de servicio se reservan para su uso exclusivo y no se pueden considerar como capacidad disponible para ningún otro usuario de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}. Si ya tiene licencias de WebSphere Application Server, puede elegir un contrato de reserva para traer su propia licencia, que utiliza estas licencias y tiene una tarifa de facturación reducida. Para configurar la facturación del contrato, [póngase en contacto con el equipo de ventas de IBM](reportingIssues.html#contacting-sales).
+Con la facturación de contrato de reserva, adquiere una suscripción mensual de prepago que garantiza el acceso a los bloques de recursos de cálculo reservados físicamente. Estos bloques de servicio se reservan para su uso exclusivo y no se pueden considerar como capacidad disponible para ningún otro usuario de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}. Si ya tiene licencias de WebSphere Application Server, puede elegir un contrato de reserva para traer su propia licencia, que utiliza estas licencias y tiene una tarifa de facturación reducida. Para configurar la facturación del contrato, [póngase en contacto con el equipo de ventas de IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 Las suscripciones están disponibles en incrementos de 8 bloques. Las horas totales de bloque se basan en el número de horas del mes, pero puede utilizar horas de bloque en cualquier momento del mes. Por ejemplo, un mes de 30 días tiene 720 horas, que, si se multiplica por una suscripción de 8 bloques, da como resultado un total de 5.760 horas de bloque.
 
@@ -131,7 +131,7 @@ Los bloques del modelo de pago según uso no constituyen capacidad reservada y p
 
 Los bloques de la facturación del contrato de reserva se basan en el plan de despliegue de red de WebSphere Application Server, pero también puede utilizar los bloques para otros planes. Con los otros planes, el uso se prorratea de modo que se resta una hora de bloque de la tasa de prorrateo del plan cuando se refleja en las horas de bloque restantes del contrato de reserva.
 
-En la tabla siguiente se muestran las tasas de prorrateo para cada plan y el precio efectivo por hora de bloque real después de calcular el prorrateo. Para ver los precios actuales en su región, [póngase en contacto con el equipo de ventas de IBM](reportingIssues.html#contacting-sales).
+En la tabla siguiente se muestran las tasas de prorrateo para cada plan y el precio efectivo por hora de bloque real después de calcular el prorrateo. Para ver los precios actuales en su región, [póngase en contacto con el equipo de ventas de IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Plan | Tasa de prorrateo | Precio/hora después del prorrateo |
 |:-------:|:------:|:------:|

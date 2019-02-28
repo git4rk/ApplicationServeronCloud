@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-02"
+  years: 2017, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,10 +19,10 @@ lastupdated: "2018-05-02"
 
 {{site.data.keyword.appserver_full}}에 문제가 있는 경우 다음 접근 방식 중 하나를 사용하여 지원을 받을 수 있습니다.
 
-* [IBM Cloud Public에 지원 문의](/docs/support/index.html#contacting-support)에 정의되어 있는 프로세스를 따라 지원 티켓을 여십시오.
-* 공용 [IBM Cloud Support 포럼](https://developer.ibm.com/bluemix/support/){: new_window} 중 하나에서 질문하십시오. 포럼은 활발하게 모니터링됩니다.
+* [IBM Cloud Public에 지원 문의](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)에 정의되어 있는 프로세스를 따라 지원 티켓을 여십시오.
+* 공용 [IBM Cloud Support 포럼](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window} 중 하나에서 질문하십시오. 포럼은 활발하게 모니터링됩니다.
 
-  **참고**: 지원 환경을 향상시키려면 게시물에 `ibm-was-oc` 및 `bluemix`를 지정하십시오.
+  **참고**: 지원 환경을 향상시키려면 게시물에 `ibm-was-oc` 태그를 포함하십시오.
 
 ## 영업 담당자에게 문의
 {:#contacting-sales}

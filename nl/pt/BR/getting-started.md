@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ Com o {{site.data.keyword.appserver_full}}, é possível configurar um ambiente 
 ## Antes de Começar
 {: #prereqs}
 
-Se você desejar um ambiente com recursos de máquina virtual mais dedicados, como um contrato de reserva ou um Ambiente de Locatário Único, entre em contato com Vendas IBM antes de criar o serviço. Saiba mais sobre essas opções em [Sobre](index.html).
+Se você desejar um ambiente com recursos de máquina virtual mais dedicados, como um contrato de reserva ou um Ambiente de Locatário Único, entre em contato com Vendas IBM antes de criar o serviço. Saiba mais sobre essas opções em [Sobre](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migrando um ambiente existente do WebSphere
 
@@ -68,7 +68,7 @@ tradicionais ou Liberty Collectives
 ## Etapa 3: dimensione suas máquinas virtuais
 {: #vm_sizing}
 
-É possível dimensionar individualmente a máquina virtual para cada componente em seu ambiente. As máquinas virtuais são fragmentadas em [tamanhos](index.html#vm-size) de blocos de recursos.
+É possível dimensionar individualmente a máquina virtual para cada componente em seu ambiente. As máquinas virtuais são fragmentadas em [tamanhos](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) de blocos de recursos.
 
 Clique na guia para o componente, como o servidor, o gerenciador de implementação ou o nó do aplicativo e selecione o tamanho
 para a sua máquina virtual.
@@ -79,7 +79,7 @@ para a sua máquina virtual.
 Revise os detalhes no resumo da configuração de serviço, incluindo o tempo estimado para o fornecimento.
 
 **Contrato de reserva:** certifique-se de que a opção **Faturamento** esteja configurada como _Contrato de reserva_. Se você não vir a opção, verifique se
-[a sua organização](../../account/orgs_spaces.html){:new_window} é exatamente a mesma do nome da
+[a sua organização](/docs/account?topic=account-orgsspacesusers){:new_window} é exatamente a mesma do nome da
 organização para o seu contrato, incluindo as letras maiúsculas e minúsculas e os espaços em branco. Se você
 fornecer o serviço sem selecionar o faturamento de contrato de reserva, o faturamento pré-pago será usado.
 
@@ -89,4 +89,4 @@ Clique em
 ## Próximas etapas
 {: #anchor_value}
 
-Saiba como acessar e gerenciar o seu novo ambiente {{site.data.keyword.appserver_short}} em [Acesso de sistema](systemAccess.html).
+Saiba como acessar e gerenciar o seu novo ambiente {{site.data.keyword.appserver_short}} em [Acesso de sistema](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-10-25"
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 为使用者提供预配置的传统 WebSphere 和 Liberty 服务器。
 该服务在虚拟机上托管，具有根访问权的虚拟机访客可以访问访客操作系统。创建服务时，请在 _Liberty_、_传统 ND_ 或_传统 WebSphere_ 之间进行选择。
 
-**注：**现在，当您创建任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 实例时，使用者能够选择当前修订包级别或旧版本 [（n 或 n-1）](maintenanceAndUpdates.html#maintenance-strategy){: new_window}。
+**注：**现在，当您创建任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 实例时，使用者能够选择当前修订包级别或旧版本 [（n 或 n-1）](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window}。
 
 为您提供了熟悉的 WebSphere 管理体验，并且您对底层的操作系统具有完全访问权。您可以复用现有脚本，并视需要进行一些系统微调，以便与您自己的或第三方的框架搭配使用。系统提供了管理中心和管理控制台来管理 WebSphere Application Server Liberty、ND 或传统服务，就像内部部署 WebSphere 配置那样。
 
@@ -77,13 +77,13 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供了
 {: #billing-options}
 
 每个块的定价取决于您选择的计费选项：
-* **[现买现付](#pay-as-you-go)：**基于使用量计费，按使用的每个块的小时数定价
+* **[现收现付](#pay-as-you-go)：**基于使用量计费，按使用的每个块的小时数定价
 * **[保留合同](#reserve-contract)：**预付费的每月保留资源预订
 
 ### 现买现付
 {: #pay-as-you-go}
 
-如果并未联系 IBM 销售人员来获取替代的计费选项就供应 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服务，那么将应用现买现付定价。按每月结算周期内使用的每个块的整小时或不足一小时收费。最小计费设置为 1/4 个块小时。
+如果并未联系 IBM 销售人员来获取替代的计费选项就供应 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服务，那么将应用现收现付定价。按每月结算周期内使用的每个块的整小时或不足一小时收费。最小计费设置为 1/4 个块小时。
 
 **注**：由于特定的计算、内存和 I/O 资源量，对停止的实例收费时，会在每小时块费率的基础上减免 5%。在该服务中，停止的实例限制为 10 个 IP 地址或 64 GB 内存。
 
@@ -106,7 +106,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供了
 ### 保留合同
 {:#reserve-contract}
 
-使用保留合同计费时，可以购买预付费的每月预订，以保证对以物理方式保留的计算资源块进行访问。这些服务块已保留供您专用，不能视为是可供其他任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 用户使用的容量。如果您拥有现有 WebSphere Application Server 许可证，那么您可以选择自带许可证的保留合同，该合同将使用这些许可证，并且计费费率更低。要设置保留合同计费，请[联系 IBM 销售人员](reportingIssues.html#contacting-sales)。
+使用保留合同计费时，可以购买预付费的每月预订，以保证对以物理方式保留的计算资源块进行访问。这些服务块已保留供您专用，不能视为是可供其他任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 用户使用的容量。如果您拥有现有 WebSphere Application Server 许可证，那么您可以选择自带许可证的保留合同，该合同将使用这些许可证，并且计费费率更低。要设置保留合同计费，请[联系 IBM 销售人员](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 预订以 8 个块为增量提供。总块小时数基于一个月中的小时数，但您可以在整个月内的任何时间点使用块小时数。例如，一个月有 30 天，共 720 小时，此小时数乘以 8 个块的预订，得出的总数为 5,760 个块小时。
 
@@ -116,7 +116,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供了
 
 可以定制如何以及何时使用块以满足可变工作负载需求，例如先使用 4 个块，接着增加到 12 个块，然后又减少到 8 个块。只要不超出一个月内的总块小时数，便无需额外付费。
 
-供应每个环境时，您可以选择使用保留合同块或者现买现付计费。
+供应每个环境时，您可以选择使用保留合同块或者现收现付计费。
 
 **注：**如果删除服务实例，那么您可能需要等待大约 30 分钟，然后其块才可用于新的服务实例。
 
@@ -124,13 +124,13 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供了
 
 如果使用量超过预订中的每月块小时数，那么会根据按使用量计费模型来收取超额费用，所以只会向您收取使用的额外块小时数的费用。块使用量按整小时或不足一小时计算，最小使用量为 1/4 个块小时。
 
-现买现付模型中的块不是保留容量，而是来自公共资源池。
+现收现付模型中的块不是保留容量，而是来自公共资源池。
 
 #### 分摊比率，使用灵活
 
 保留合同计费中的块数基于 WebSphere Application Server Network Deployment 套餐，但您也可以使用其他套餐的块。对于其他套餐，将按比例分摊使用量，这样当一个块小时反映在剩余保留合同块小时中时，将按套餐的分摊比率减去一个块小时。
 
-下表显示了每个套餐的分摊比率以及计算的按比例分摊后每个实际块小时的生效价格。对于您所在区域的当前价格，请[联系 IBM 销售人员](reportingIssues.html#contacting-sales)。
+下表显示了每个套餐的分摊比率以及计算的按比例分摊后每个实际块小时的生效价格。对于您所在区域的当前价格，请[联系 IBM 销售人员](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 |套餐|分摊比率|按比例分摊后的价格/小时|
 |:-------:|:------:|:------:|

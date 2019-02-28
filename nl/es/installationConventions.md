@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-19"
 
 Cuando esté administrando el entorno {{site.data.keyword.appserver_full}} y tenga que determinar el usuario que debe utilizar, es importante que comprenda los siguientes conceptos:
 
- * El mantenimiento se puede aplicar mediante el [gestor de instalación](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} que está instalado en el directorio `/home/virtuser/IBM/Installation Manager`. Dado que los archivos binarios subyacentes se han instalado como `virtuser`, un usuario virtual administrativo limitado, asegúrese de que todos los fixpacks y arreglos temporales se instalen como `virtuser`.
+ * El mantenimiento se puede aplicar mediante el [gestor de instalación](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} que está instalado en el directorio `/home/virtuser/IBM/Installation Manager`. Dado que los archivos binarios subyacentes se han instalado como `virtuser`, un usuario virtual administrativo limitado, asegúrese de que todos los fixpacks y arreglos temporales se instalen como `virtuser`.
 
  * Sin embargo, cuando inicie y detenga servidores desde la línea de mandatos, asegúrese de utilizar `wsadmin`, el ID de administración de WebSphere, no `virtuser`.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} bietet Nutzern vorkonfigurierte klassische WebSphere-Server und Liberty-Server. Das Programm wird auf virtuellen Gastmaschinen mit Rootzugriff auf das Gastbetriebssystem gehostet. Wenn Sie einen eigenen Service erstellen, müssen Sie zwischen _Liberty_, _klassischem ND_ und _klassischem WebSphere_ wählen.
 
-**Hinweis:** Kunden können nun zwischen der aktuellen Fixpackstufe und einer älteren Version [(n oder n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} auswählen, wenn sie eine beliebige Instanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} erstellen.
+**Hinweis:** Kunden können nun zwischen der aktuellen Fixpackstufe und einer älteren Version [(n oder n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} auswählen, wenn sie eine beliebige Instanz von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} erstellen.
 
 Sie erhalten eine vertraute WebSphere-Administrationserfahrung und uneingeschränkten Zugriff auf das zugrunde liegende Betriebssystem. Sie können bereits vorhandene Scripts weiterverwenden und am System die für die Arbeit mit eigenen Frameworks oder Frameworks von Dritten erforderlichen Optimierungsschritte vornehmen. Admin Center und Administrationskonsolen werden ähnlich Ihren lokalen WebSphere-Konfigurationen zur Verwaltung Ihrer WebSphere Application Server Liberty-, ND- oder klassischen Services bereitgestellt.
 
@@ -103,7 +103,7 @@ In der folgenden Tabelle ist der Gesamtpreis pro Stunden für jede in T-Shirt-Gr
 ### Reservierungsvertrag
 {:#reserve-contract}
 
-Bei der Abrechnung im Rahmen eines Reservierungsvertrags erwerben Sie ein vorausbezahltes monatliches Abonnement, mit dem der Zugriff auf Blöcke mit physisch reservierten Rechenressourcen garantiert wird. Diese Serviceblöcke werden zu Ihrer exklusiven Nutzung reserviert und stehen anderen WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Benutzern nicht als verfügbare Kapazität zur Verfügung. Falls Sie über vorhandene WebSphere Application Server-Lizenzen verfügen, können Sie einen BYOL-Reservierungsvertrag (Bring Your Own License) auswählen, der diese Lizenzen verwendet und einen reduzierten Abrechnungs aufweist. [Kontaktieren Sie den IBM Vertrieb](reportingIssues.html#contacting-sales), um die Abrechnung im Rahmen eines Reservierungsvertrags einzurichten.
+Bei der Abrechnung im Rahmen eines Reservierungsvertrags erwerben Sie ein vorausbezahltes monatliches Abonnement, mit dem der Zugriff auf Blöcke mit physisch reservierten Rechenressourcen garantiert wird. Diese Serviceblöcke werden zu Ihrer exklusiven Nutzung reserviert und stehen anderen WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}-Benutzern nicht als verfügbare Kapazität zur Verfügung. Falls Sie über vorhandene WebSphere Application Server-Lizenzen verfügen, können Sie einen BYOL-Reservierungsvertrag (Bring Your Own License) auswählen, der diese Lizenzen verwendet und einen reduzierten Abrechnungs aufweist. [Kontaktieren Sie den IBM Vertrieb](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales), um die Abrechnung im Rahmen eines Reservierungsvertrags einzurichten.
 
 Abonnements sind in 8-Block-Stufen verfügbar. Die Gesamtzahl der Blockstunden basiert auf der Anzahl der Stunden im Monat, die Blockstunden können jedoch zu jedem beliebigen Zeitpunkt innerhalb des Monats genutzt werden. Beispiel: Ein Monat mit 30 Tagen umfasst 720 Stunden. Multipliziert mit einem 8-Blöcke-Abonnement ergibt dies insgesamt 5.760 Blockstunden.
 
@@ -127,7 +127,7 @@ Blöcke im Rahmen des nutzungsabhängigen Modells stellen keine reservierte Kapa
 
 Bei der Abrechnung im Rahmen eines Reservierungsvertrags basieren Blöcke auf dem WebSphere Application Server Network Deployment-Plan, Sie können die Blöcke jedoch auch für andere Pläne verwenden. Bei anderen Plänen wird die Nutzung anteilmäßig verrechnet. D. h., eine Blockstunde wird durch den Gebührensatz der anteilmäßigen Verrechnung des jeweiligen Plans reduziert, wenn sie in den verbleibenden Blockstunden des Reservierungsvertrags wiedergegeben wird.
 
-Die folgende Tabelle enthält die Gebührensätze für die anteilmäßige Verrechnung innerhalb des jeweiligen Plans und den effektiven Preis pro tatsächlicher Blockstunde nach der anteilmäßigen Verrechnung. Die aktuellen Preise in der jeweiligen Region erhalten Sie beim [IBM Vertrieb](reportingIssues.html#contacting-sales).
+Die folgende Tabelle enthält die Gebührensätze für die anteilmäßige Verrechnung innerhalb des jeweiligen Plans und den effektiven Preis pro tatsächlicher Blockstunde nach der anteilmäßigen Verrechnung. Die aktuellen Preise in der jeweiligen Region erhalten Sie beim [IBM Vertrieb](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Plan | Gebührensatz für anteilmäßige Verrechnung | Preis/Stunde nach anteilmäßiger Verrechnung |
 |:-------:|:------:|:------:|

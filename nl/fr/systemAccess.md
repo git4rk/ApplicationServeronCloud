@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -66,7 +66,7 @@ OpenVPN est requis pour accéder à toute machine virtuelle WebSphere Applicatio
 1. Téléchargez le programme d'installation Windows openVPN pour votre architecture système depuis le site Web openVPN :
   * Systèmes 64 bits : [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * Systèmes 32 bits :  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Prenez soin d'[effectuer l'exécution en tant qu'administrateur Windows](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} et vérifiez qu'openVPN est installé.
+2. Prenez soin d'[effectuer l'exécution en tant qu'administrateur Windows](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} et vérifiez qu'openVPN est installé.
 3. Téléchargez les fichiers de configuration VPN depuis le lien de téléchargement OpenVPN de l'instance WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fourni dans le tableau de bord de service. Décompressez les quatre fichiers vers le répertoire `{répertoire_OpenVPN}\config`. Par exemple :
 
   ```  
@@ -219,7 +219,7 @@ Si le serveur Web doit traiter toutes les requêtes des utilisateurs, vous devre
 
 **Evitez les problèmes :** avant de générer et de propager le plug-in, assurez-vous que les tâches préalables suivantes sont terminées.
 
-* Dans votre environnement Windows, Linux ou MAC local, assurez-vous que [openVPN](systemAccess.html#setup_openvpn) est configuré et démarré, et que vous êtes connecté à la région appropriée.
+* Dans votre environnement Windows, Linux ou MAC local, assurez-vous que [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) est configuré et démarré, et que vous êtes connecté à la région appropriée.
 * A partir du serveur WebSphere Application Server dans le tableau de bord du service {{site.data.keyword.Bluemix_notm}}, cliquez sur **Ouvrir la console d'administration** et connectez-vous avec wsadmin et le mot de passe administrateur fourni dans le tableau de bord de service.
 * Depuis la console d'administration, créez un serveur d'applications (***server1***, par exemple), car le gestionnaire de déploiement est fédéré avec un noeud personnalisé vide.
 * Démarrez le serveur que vous avez créé.

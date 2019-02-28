@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 
     **避免麻煩：**公用環境可能會顯示為預設值。顯示正確的環境名稱，會假設您登入正確的地區，以及容許存取「單一承租戶環境」的組織成員。
 
-    **附註：**如果您選取其中一個公用環境，則可能會產生每小時費用。因此，如果您看不到「單一承租戶環境」名稱，則請開立「支援問題單」（如[取得協助](reportingIssues.html){: new_window}頁面中所述）。
+    **附註：**如果您選取其中一個公用環境，則可能會產生每小時費用。因此，如果您看不到「單一承租戶環境」名稱，則請開立「支援問題單」（如[取得協助](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}頁面中所述）。
 
 9. 選取適當的方案，然後按一下**建立**。
 
@@ -67,10 +67,10 @@ lastupdated: "2018-11-19"
 
 佈建單一承租戶環境之後，您可以下載 VPN 認證，並建立 OpenVPN 連線。如需相關資訊，請參閱下列鏈結：
 
-* [VPN 存取](networkEnvironment.html#vpnAccess){: new_window}
-* [設定 OpenVPN](systemAccess.html#setup_openvpn){: new_window}
+* [VPN 存取](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [設定 OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## 管理單一承租戶環境
 {: #manageSTE}
 
-若要在現有單一承租戶環境中新增額外容量，或若要在另一個資料中心內訂購容量，請聯絡「美國電話客服中心」、當地 IBM 業務代表或「IBM 事業夥伴」。如需詳細資料，請參閱[聯絡銷售人員](reportingIssues.html#contacting-sales)。
+若要在現有單一承租戶環境中新增額外容量，或若要在另一個資料中心內訂購容量，請聯絡「美國電話客服中心」、當地 IBM 業務代表或「IBM 事業夥伴」。如需詳細資料，請參閱[聯絡銷售人員](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。

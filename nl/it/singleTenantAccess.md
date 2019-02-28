@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ I seguenti passi illustrano come accedere al tuo ambiente a singolo tenant, insi
 
     **Prevenzione dei problemi:** l'ambiente pubblico potrebbe essere mostrato come predefinito. La visualizzazione del nome ambiente corretto presuppone che tu abbia effettuato l'accesso alla regione corretta e che sia un membro di un'organizzazione autorizzata ad accedere al tuo ambiente a singolo tenant.
 
-    **Nota:** se selezioni uno degli ambienti pubblici, potresti incorrere in un addebito orario. Pertanto, se non vedi il nome del tuo ambiente a singolo tenant, apri un ticket di supporto come descritto nella pagina [Come ottenere supporto](reportingIssues.html){: new_window}.
+    **Nota:** se selezioni uno degli ambienti pubblici, potresti incorrere in un addebito orario. Pertanto, se non vedi il nome del tuo ambiente a singolo tenant, apri un ticket di supporto come descritto nella pagina [Come ottenere supporto](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}.
 
 9. Seleziona il piano appropriato e fai clic su **Crea**.
 
@@ -67,10 +67,10 @@ Ad esempio, supponiamo che tu abbia un ambiente piccolo, che contiene 64 blocchi
 
 Una volta eseguito il provisioning del tuo ambiente a singolo tenant, puoi scaricare le tue credenziali VPN e stabilire una connessione OpenVPN. Per ulteriori informazioni, vedi i seguenti link:
 
-* [Accesso VPN](networkEnvironment.html#vpnAccess){: new_window}
-* [Configurazione di OpenVPN](systemAccess.html#setup_openvpn){: new_window}
+* [Accesso VPN](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [Configurazione di OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Gestione del tuo ambiente a singolo tenant
 {: #manageSTE}
 
-Per aggiungere ulteriore capacità al tuo ambiente a singolo tenant esistente o per ordinare capacità in un altro datacenter, contatta i call center (in Nord America), il tuo rappresentante IBM locale o il tuo Business Partner IBM. Consulta [Come contattare il settore vendite](reportingIssues.html#contacting-sales) per i dettagli.
+Per aggiungere ulteriore capacità al tuo ambiente a singolo tenant esistente o per ordinare capacità in un altro datacenter, contatta i call center (in Nord America), il tuo rappresentante IBM locale o il tuo Business Partner IBM. Consulta [Come contattare il settore vendite](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) per i dettagli.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -86,7 +86,7 @@ lastupdated: "2018-12-13"
 ### Installation Manager を使用して更新する
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされ、フィックスおよびフィックスパックを適用するために直接実行できます。
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされ、フィックスおよびフィックスパックを適用するために直接実行できます。
 
 **問題の回避:** 基礎となるバイナリー・ファイルは `virtuser` (制限付き管理仮想ユーザー) としてインストールされているため、Installation Manager も常に `virtuser` として実行する必要があります。
 

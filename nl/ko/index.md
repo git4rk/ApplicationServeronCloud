@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 사전 구성된 Traditional WebSphere 및 Liberty 서버를 이용자에게 제공합니다. 이는 게스트 운영 체제에 대한 루트 액세스 권한이 있는 가상 머신 게스트에서 호스팅됩니다. 서비스를 작성할 때는 _Liberty_, _Traditional ND_ 또는 _Traditional WebSphere_ 중에서 선택하십시오.
 
-**참고:** 이제 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 인스턴스를 작성할 때 이용자가 현재 수정팩 레벨 또는 이전 버전[(n 또는 n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} 사이에서 선택할 수 있습니다.
+**참고:** 이제 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 인스턴스를 작성할 때 이용자가 현재 수정팩 레벨 또는 이전 버전[(n 또는 n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} 사이에서 선택할 수 있습니다.
 
 사용자에게 비슷한 WebSphere 관리 환경이 제공되며 기본 운영 체제에 대한 전체 액세스 권한이 있습니다. 기존 스크립트를 재사용하고 자체 프레임워크 또는 서드파티 프레임워크에서 작업하도록 필요에 따라 시스템을 약간 수정할 수 있습니다. 온프레미스 WebSphere 구성과 마찬가지로 WebSphere Application Server Liberty, ND 또는 Traditional 서비스를 관리하도록 Admin Center와 Admin Console이 제공됩니다.
 
@@ -103,7 +103,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 대형
 ### 예비 계약
 {:#reserve-contract}
 
-예비 계약 비용 청구를 사용하는 경우 물리적으로 예약된 컴퓨팅 리소스 블록에 액세스하도록 보장하는 선불 월별 구독을 구매합니다. 이러한 서비스 블록은 독점 사용을 위해 따로 설정되고 다른 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 사용자가 사용할 수 있는 용량으로 인식되지 않습니다. 기존 WebSphere Application Server 라이센스가 있는 경우 BYOL(Bring-Your-Own-License) 예비 계약을 선택할 수 있습니다. 이 경우 이 라이센스를 사용하고 청구 비용이 줄어듭니다. 서비스 계약 비용 청구를 설정하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
+예비 계약 비용 청구를 사용하는 경우 물리적으로 예약된 컴퓨팅 리소스 블록에 액세스하도록 보장하는 선불 월별 구독을 구매합니다. 이러한 서비스 블록은 독점 사용을 위해 따로 설정되고 다른 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 사용자가 사용할 수 있는 용량으로 인식되지 않습니다. 기존 WebSphere Application Server 라이센스가 있는 경우 BYOL(Bring-Your-Own-License) 예비 계약을 선택할 수 있습니다. 이 경우 이 라이센스를 사용하고 청구 비용이 줄어듭니다. 서비스 계약 비용 청구를 설정하려면 [IBM 영업 담당자에게 문의](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)하십시오.
 
 구독은 8블록 단위로 사용할 수 있습니다. 총 블록 시간은 해당 월의 시간을 기반으로 하지만 월중 어느 때라도 블록 시간을 사용할 수 있습니다. 예를 들어, 총 일 수가 30일인 달은 720시간이며, 8블록 구독으로 곱했을 때 총 블록 시간은 5,760시간입니다.
 
@@ -127,7 +127,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}는 대형
 
 예비 계약 비용 청구의 블록은 WebSphere Application Server Network Deployment 플랜을 기반으로 하지만 다른 플랜에 대한 블록을 사용할 수도 있습니다. 다른 플랜을 사용하는 경우 사용량이 나머지 예비 계약 블록 시간에 영향을 주는 경우 사용량은 비례 배분되어 한 블록 시간이 플랜의 비례 배분 비율에 따라 감소됩니다.
 
-다음 표에서는 각 플랜의 비례 배분 비율과 비례 배분이 계산된 후 실제 블록 시간당 유효 가격을 보여줍니다. 사용자 지역의 현재 가격은 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
+다음 표에서는 각 플랜의 비례 배분 비율과 비례 배분이 계산된 후 실제 블록 시간당 유효 가격을 보여줍니다. 사용자 지역의 현재 가격은 [IBM 영업 담당자에게 문의](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)하십시오.
 
 | 플랜 | 비례 배분 비율 | 비례 배분 후 가격/시간 |
 |:-------:|:------:|:------:|

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ Con {{site.data.keyword.appserver_full}}, puede configurar un entorno tradiciona
 ## Antes de empezar
 {: #prereqs}
 
-Si desea un entorno con recursos de máquina virtual más dedicados, como un contrato de reserva o un entorno de un solo arrendatario, póngase en contacto con el equipo de ventas de IBM antes de crear el servicio. Obtenga más información sobre estas opciones en la sección [Acerca de](index.html).
+Si desea un entorno con recursos de máquina virtual más dedicados, como un contrato de reserva o un entorno de un solo arrendatario, póngase en contacto con el equipo de ventas de IBM antes de crear el servicio. Obtenga más información sobre estas opciones en la sección [Acerca de](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migración de un entorno WebSphere existente
 
@@ -66,7 +66,7 @@ Para el plan de despliegue de red, seleccione el perfil y la arquitectura para e
 ## Paso 3: Seleccionar el tamaño de las máquinas virtuales
 {: #vm_sizing}
 
-Puede seleccionar el tamaño de la máquina virtual individualmente para cada componente del entorno. Las máquinas virtuales se fragmentan en [tamaños de camiseta](index.html#vm-size) de bloques de recursos.
+Puede seleccionar el tamaño de la máquina virtual individualmente para cada componente del entorno. Las máquinas virtuales se fragmentan en [tamaños de camiseta](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) de bloques de recursos.
 
 Pulse el separador correspondiente al componente, como el servidor, el gestor de despliegue o el nodo de aplicación, y seleccione el tamaño de camiseta para su máquina virtual.
 
@@ -75,11 +75,11 @@ Pulse el separador correspondiente al componente, como el servidor, el gestor de
 
 Revise los detalles del resumen de la configuración del servicio, incluido el tiempo estimado que tardará en suministrarse.
 
-**Contrato de reserva:** Asegúrese de que la opción **Facturación** está definida como _Contrato de reserva_. Si no ve la opción, compruebe que [su empresa](../../account/orgs_spaces.html){:new_window} es exactamente la misma, incluyendo el caso y el espacio en blanco, que el nombre de la empresa para su contrato. Si se presta el servicio sin seleccionar la facturación de contrato de reserva, se utiliza la facturación de pago según uso.
+**Contrato de reserva:** Asegúrese de que la opción **Facturación** está definida como _Contrato de reserva_. Si no ve la opción, compruebe que [su empresa](/docs/account?topic=account-orgsspacesusers){:new_window} es exactamente la misma, incluyendo el caso y el espacio en blanco, que el nombre de la empresa para su contrato. Si se presta el servicio sin seleccionar la facturación de contrato de reserva, se utiliza la facturación de pago según uso.
 
 Pulse **Suministrar** para configurar el entorno de {{site.data.keyword.appserver_short}}.
 
 ## Pasos siguientes
 {: #anchor_value}
 
-Obtenga información sobre cómo acceder y gestionar el nuevo entorno de {{site.data.keyword.appserver_short}} en la sección [Acceso al sistema](systemAccess.html).
+Obtenga información sobre cómo acceder y gestionar el nuevo entorno de {{site.data.keyword.appserver_short}} en la sección [Acceso al sistema](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).

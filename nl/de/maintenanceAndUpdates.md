@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -86,7 +86,7 @@ Installiert alle verfügbaren Fixpacks und anschließend alle anwendbaren vorlä
 ### Aktualisierung mit Installation Manager
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} wird im Verzeichnis `/home/virtuser/IBM/Installation Manager` installiert und kann direkt zur Anwendung von Fixes und Fixpacks ausgeführt werden.
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} wird im Verzeichnis `/home/virtuser/IBM/Installation Manager` installiert und kann direkt zur Anwendung von Fixes und Fixpacks ausgeführt werden.
 
 **Probleme vermeiden:** Da die Installation der zugrunde liegenden Binärdateien als `virtuser` ausgeführt wird, d. h. als virtueller Benutzer mit begrenzter Administratorberechtigung, müssen Sie sicherstellen, dass Installation Manager stets als `virtuser` ausgeführt wird.
 

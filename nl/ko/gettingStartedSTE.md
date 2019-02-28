@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-11-20"
 
 Single Tenant Environment는 {{site.data.keyword.Bluemix_notm}} 카탈로그를 통해 작성할 수 없으며, IBM 영업 담당자에게 문의하여 주문해야 합니다. 환경을 주문하는 경우 표준 또는 BYOL(Bring-Your-Own-License) Single Tenant Environment 중에서 선택할 수 있습니다. 표준 Single Tenant Environment는 필요한 모든 인프라 및 WebSphere Application Server 라이센스를 포함합니다. BYOL(Bring-Your-Own-License) Single Tenant Environment에서 별도의 WebSphere Application Server 라이센스를 사용할 수 있습니다.
 
-Single Tenant Environment를 주문하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오. 영업 팀은 필요에 따라 조정된 환경을 설정하는 데 도움을 드릴 수 있습니다.
+Single Tenant Environment를 주문하려면 [IBM 영업 담당자에게 문의](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)하십시오. 영업 팀은 필요에 따라 조정된 환경을 설정하는 데 도움을 드릴 수 있습니다.
 
 ## WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment의 개요
 {: #overviewSTE}
@@ -36,6 +36,6 @@ Single Tenant Environment는 고유의 개인 서비스 인스턴스, 개인 네
 ## 조직 관리
 {: #organization_management}
 
-WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment는 사용자 주문에 따라 구성됩니다. 하나 이상의 {{site.data.keyword.Bluemix_notm}} 조직 이름을 주문의 일부로 제공한 경우 지금 사용자 환경에 액세스할 수 있습니다. 조직 이름을 제공하지 않았거나 이 설정을 변경하려는 경우 사용자 지역의 {{site.data.keyword.Bluemix_notm}} 콘솔에서 **애플리케이션 서비스**에 대한 [지원 티켓](reportingIssues.html#reporting_issues)을 여십시오. **관리 > 계정 > Cloud Foundry 조직**으로 이동하여 {{site.data.keyword.Bluemix_notm}} 콘솔에서 조직 이름을 찾을 수 있습니다.
+WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment는 사용자 주문에 따라 구성됩니다. 하나 이상의 {{site.data.keyword.Bluemix_notm}} 조직 이름을 주문의 일부로 제공한 경우 지금 사용자 환경에 액세스할 수 있습니다. 조직 이름을 제공하지 않았거나 이 설정을 변경하려는 경우 사용자 지역의 {{site.data.keyword.Bluemix_notm}} 콘솔에서 **애플리케이션 서비스**에 대한 [지원 티켓](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues)을 여십시오. **관리 > 계정 > Cloud Foundry 조직**으로 이동하여 {{site.data.keyword.Bluemix_notm}} 콘솔에서 조직 이름을 찾을 수 있습니다.
 
-**참고:** Single Tenant Environment에 액세스하려면 [Single Tenant Environment 액세스](singleTenantAccess.html#singleTenantEnvironment)를 참조하십시오.
+**참고:** Single Tenant Environment에 액세스하려면 [Single Tenant Environment 액세스](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment)를 참조하십시오.

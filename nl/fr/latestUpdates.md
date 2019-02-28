@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ Liste des dernières mises à jour du service.
 
 Le préfixe de région pour Dallas a changé de `ng` à `us-south`. Les autres préfixes de région restent les mêmes. Les URL de noeud final d'API REST ont été modifiées de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` à `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. Les URL `bluemix.net` continueront à être prises en charge mais vous devez changer les URL de noeud final d'API REST pour qu'elles utilisent `websphereappsvr.cloud.ibm.com` si vous vous servez des API REST pour gérer vos instances de service.
 
-Pour plus d'informations sur les URL de noeud final d'API REST, voir [Accès au système](systemAccess.html#system_access).
+Pour plus d'informations sur les URL de noeud final d'API REST, voir [Accès au système](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access).
 
 ## 14 décembre 2018 : mise à jour de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}}
 * Le groupe de correctifs version 9.0.0.10 de Traditional WebSphere Application Server est désormais disponible quand vous mettez à disposition une nouvelle instance de service. En plus de la version 9.0.0.10, d'autres versions de groupe de correctifs de Traditional WebSphere Application Server, telles que les versions 9.0.0.9, 8.5.5.14 et 8.5.5.13, sont disponibles pour la mise à disposition.
@@ -28,7 +28,7 @@ Pour plus d'informations sur les URL de noeud final d'API REST, voir [Accès au 
 
 ## 24 Octobre 2018 : La facturation BYOL (Bring-your-own-license) est désormais disponible pour les environnements de contrat de réservation et à service exclusif.
 
-Si vous disposez de licences WebSphere Application Server, vous pouvez désormais choisir d'utiliser ces licences dans vos environnements de contrat de réservation ou à service exclusif. Les environnements avec facturation BYOL offrent les mêmes avantages que les environnements de contrat de réservation ou à service exclusif standard, mais leur taux de facturation est réduit. Pour utiliser l'octroi de licence BYOL, [contactez IBM sales](reportingIssues.html#contacting-sales).
+Si vous disposez de licences WebSphere Application Server, vous pouvez désormais choisir d'utiliser ces licences dans vos environnements de contrat de réservation ou à service exclusif. Les environnements avec facturation BYOL offrent les mêmes avantages que les environnements de contrat de réservation ou à service exclusif standard, mais leur taux de facturation est réduit. Pour utiliser l'octroi de licence BYOL, [contactez IBM sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 ## 22 août 2018 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * Le groupe de correctifs version 8.5.5.14 de Traditional WebSphere Application Server est désormais disponible lorsque vous mettez à disposition une nouvelle instance de service. En plus de la version 8.5.5.14, d'autres versions de groupe de correctifs de Traditional WebSphere Application Server, telles que les versions 9.0.0.8, 9.0.0.7 et 8.5.5.13, sont disponibles pour la mise à disposition.
@@ -45,7 +45,7 @@ Si vous disposez de licences WebSphere Application Server, vous pouvez désormai
 
 Avec une facturation de contrat de réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur {{site.data.keyword.appserver_full}}. Vous pouvez utiliser vos heures de bloc de service du mois comme vous le souhaitez, tous les dépassements éventuels vous étant facturés selon le modèle d'abonnement standard de tarification à l'utilisation.
 
-Pour en savoir plus sur la facturation de contrat de réservation, voir [Options de facturation](index.html#billing-options).
+Pour en savoir plus sur la facturation de contrat de réservation, voir [Options de facturation](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options).
 
 ## 30 mars 2018 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -77,7 +77,7 @@ Pour en savoir plus sur la facturation de contrat de réservation, voir [Options
 
 ## 27 octobre 2017 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Ajout de la possibilité de mettre à disposition un niveau de groupe de correctifs plus ancien [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} via l'onglet Profil de service du tableau de bord de service {{site.data.keyword.Bluemix_notm}} ou par le biais de l'API REST.
+* Ajout de la possibilité de mettre à disposition un niveau de groupe de correctifs plus ancien [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} via l'onglet Profil de service du tableau de bord de service {{site.data.keyword.Bluemix_notm}} ou par le biais de l'API REST.
 * Le groupe de correctifs version 9.0.0.5 de Traditional WebSphere Application Server est désormais disponible lorsque vous mettez à disposition une nouvelle instance de service. En plus de la version 9.0.0.5, d'autres versions de groupe de correctifs de Traditional WebSphere Application Server, telles que les versions 9.0.0.4, 8.5.5.12 et 8.5.5.11, sont disponibles pour la mise à disposition.
 * Le groupe de correctifs version 17.0.0.3 de WebSphere Application Server Liberty est désormais disponible lorsque vous mettez à disposition une nouvelle instance de service. En plus de la version 17.0.0.3, le groupe de correctifs version 17.0.0.2 de WebSphere Application Server Liberty est disponible pour la mise à disposition.
 * Correction de [plusieurs vulnérabilités de sécurité](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} dans WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, incluant :
@@ -99,8 +99,8 @@ Pour en savoir plus sur la facturation de contrat de réservation, voir [Options
 * Diverses maintenances de service ont été intégrées.
 * Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon à ce que le groupe de correctifs 8.5.5.12 ou 9.0.0.4 soit installé avec les nouvelles instances de Traditional WebSphere Application Server.
 * Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon à ce que le groupe de correctifs 17.0.0.2 soit installé avec les nouvelles instances de WebSphere Application Server Liberty (plans Core et ND).
-* Ajout d'une fonction [Advanced VPN Configuration Management](networkEnvironment.html#advancedVPN){: new_window} que vous pouvez utiliser pour créer et gérer des configurations VPN multiples dans les régions de Londres et de Sydney.
-* Optimisation de la fonction d'[accès public à Internet](networkEnvironment.html#publicInternetAccess){: new_window} qui permet aux clients de mieux gérer leur adresse IP publique.
+* Ajout d'une fonction [Advanced VPN Configuration Management](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que vous pouvez utiliser pour créer et gérer des configurations VPN multiples dans les régions de Londres et de Sydney.
+* Optimisation de la fonction d'[accès public à Internet](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} qui permet aux clients de mieux gérer leur adresse IP publique.
 * Correction de [plusieurs vulnérabilités de sécurité](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} dans IBM SDK Java Technology Edition qui affectent WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, incluant :
   * Vulnérabilité non spécifiée pour le composant Java SE AWT qui pourrait permettre à un agresseur non authentifié de prendre le contrôle du système.
   * Vulnérabilité non spécifiée pour le composant Java SE JCE qui pourrait permettre à un agresseur non authentifié de prendre le contrôle du système.
@@ -116,7 +116,7 @@ Pour en savoir plus sur la facturation de contrat de réservation, voir [Options
 ## 25 mai 2017 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Diverses maintenances de service ont été intégrées.
-* Ajout d'une fonction [Advanced VPN Configuration Management](networkEnvironment.html#advancedVPN){: new_window} que vous pouvez utiliser pour créer et gérer des configurations VPN multiples dans la région de Francfort.
+* Ajout d'une fonction [Advanced VPN Configuration Management](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que vous pouvez utiliser pour créer et gérer des configurations VPN multiples dans la région de Francfort.
 * Mise à niveau de WebSphere Application Server dans {{site.data.keyword.Bluemix_notm}} de façon à ce que JDK 8 soit installé avec les nouvelles instances du service.
 * Correction de [plusieurs vulnérabilités de sécurité](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window} dans WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, incluant :
   * Vulnérabilité de sécurité potentielle avec l'adaptateur de ressources WebSphere Application Server MQ JCA.
@@ -168,7 +168,7 @@ Pour en savoir plus sur la facturation de contrat de réservation, voir [Options
 
 ## 8 novembre 2016 : Mise à jour de WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Ajout d'une fonctionnalité permettant aux clients de demander une adresse [IP publique](networkEnvironment.html#networkEnvironment) pour leur machine virtuelle WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Ajout d'une fonctionnalité permettant aux clients de demander une adresse [IP publique](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) pour leur machine virtuelle WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * Correction de [plusieurs vulnérabilités de sécurité](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window} affectant WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, incluant :
   * Vulnérabilité dans IBM WebSphere Application Server qui peut permettre aux agresseurs à distance d'exécuter du code Java arbitraire avec un objet sérialisé à partir de sources non fiables.
   * Vulnérabilité de déni de service qui est due à une lecture hors limites de la fonction TS_OBJ_print_bio. Un agresseur à distance peut exploiter cette vulnérabilité en utilisant un fichier d'horodatage spécialement conçu pour provoquer l'arrêt de l'application.

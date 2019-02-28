@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-02"
+  years: 2017, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,10 +19,10 @@ lastupdated: "2018-05-02"
 
 如果使用 {{site.data.keyword.appserver_full}} 时遇到问题，可以使用以下其中一种方法来获得帮助：
 
-* 按照[联系 IBM Cloud Public 支持](/docs/support/index.html#contacting-support)页面上定义的过程，开具支持凭单。
-* 在其中一个公开的 [IBM Cloud 支持论坛](https://developer.ibm.com/bluemix/support/){: new_window}上提问。这些论坛受到密切监视。
+* 按照[联系 IBM Cloud Public 支持](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)页面上定义的过程，开具支持凭单。
+* 在其中一个公开的 [IBM Cloud 支持论坛](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window}上提问。这些论坛受到密切监视。
 
-  **注**：请在帖子中包含标记 `ibm-was-oc` 和 `bluemix`，以改善您的支持体验。
+  **注**：请在帖子中加入 `ibm-was-oc` 标记来增强您的支持体验。
 
 ## 联系销售人员
 {:#contacting-sales}

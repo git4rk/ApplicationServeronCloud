@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ In den folgenden Schritten werden der Zugriff auf die Single-Tenant-Umgebung und
 
     **Probleme vermeiden:** Standardmäßig wird möglicherweise die öffentliche Umgebung angezeigt. Bei der Anzeige des korrekten Umgebungsnamens wird davon ausgegangen, dass Sie bei der korrekten Region angemeldet und Mitglied einer Organisation sind, die über Zugriffsberechtigung für Ihre Single-Tenant-Umgebung verfügt.
 
-    **Hinweis:** Wenn Sie eine der öffentlichen Umgebungen auswählen, fallen möglicherweise Gebühren auf Stundenbasis an. Öffnen Sie daher ein Support-Ticket, wenn der Name Ihrer Single-Tenant-Umgebung nicht angezeigt wird. Siehe hierzu die Beschreibung auf der Seite [Hilfe anfordern](reportingIssues.html){: new_window}.
+    **Hinweis:** Wenn Sie eine der öffentlichen Umgebungen auswählen, fallen möglicherweise Gebühren auf Stundenbasis an. Öffnen Sie daher ein Support-Ticket, wenn der Name Ihrer Single-Tenant-Umgebung nicht angezeigt wird. Siehe hierzu die Beschreibung auf der Seite [Hilfe anfordern](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}.
 
 9. Wählen Sie den entsprechenden Plan aus und klicken Sie auf **Erstellen**.
 
@@ -67,10 +67,10 @@ Beispiel: Sie verwenden eine kleine Umgebung mit 64 Blöcken. Innerhalb dieser U
 
 Nach der Bereitstellung der Single-Tenant-Umgebung können Sie Ihre VPN-Berechtigungsnachweise herunterladen und eine OpenVPN-Verbindung einrichten. Weitere Informationen können Sie über die folgenden Links aufrufen:
 
-* [VPN-Zugriff](networkEnvironment.html#vpnAccess){: new_window}
-* [OpenVPN einrichten](systemAccess.html#setup_openvpn){: new_window}
+* [VPN-Zugriff](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [OpenVPN einrichten](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Single-Tenant-Umgebung verwalten
 {: #manageSTE}
 
-Wenn Sie Ihrer vorhandenen Single-Tenant-Umgebung zusätzliche Kapazität hinzufügen oder Kapazität in einem anderen Rechenzentrum bestellen möchten, wenden Sie sich an die Call-Center für Nord- und Südamerika, an den IBM Ansprechpartner vor Ort oder an den IBM Business Partner. Einzelheiten hierzu finden Sie in [Kontaktaufnahme mit dem Vertrieb](reportingIssues.html#contacting-sales).
+Wenn Sie Ihrer vorhandenen Single-Tenant-Umgebung zusätzliche Kapazität hinzufügen oder Kapazität in einem anderen Rechenzentrum bestellen möchten, wenden Sie sich an die Call-Center für Nord- und Südamerika, an den IBM Ansprechpartner vor Ort oder an den IBM Business Partner. Einzelheiten hierzu finden Sie in [Kontaktaufnahme mit dem Vertrieb](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).

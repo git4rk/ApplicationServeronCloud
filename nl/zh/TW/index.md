@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供消費者預先配置的傳統 WebSphere 及 Liberty 伺服器。它在具有來賓作業系統之 root 存取權的虛擬機器訪客上進行管理。當您建立服務時，可選擇 _Liberty_、_傳統 ND_ 或_傳統 WebSphere_。
 
-**附註：**當您建立任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 實例時，消費者現在可以選擇現行修正套件層次或往前一個舊版本[（n 或 n-1）](maintenanceAndUpdates.html#maintenance-strategy){: new_window}。
+**附註：**當您建立任何 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 實例時，消費者現在可以選擇現行修正套件層次或往前一個舊版本[（n 或 n-1）](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window}。
 
 您會有熟悉的 WebSphere 管理經驗，以及具有基礎作業系統的完整存取權。您可以重複使用現有 Script，並進行需要的少量系統調整，以便搭配您自己或協力廠商的架構來使用。「管理中心」及「管理主控台」的提供目的是管理 WebSphere Application Server Liberty、ND 或傳統服務（就像內部部署 WebSphere 配置一樣）。
 
@@ -104,7 +104,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供依
 ### 保留合約
 {:#reserve-contract}
 
-透過保留合約計費，您可以購買每月預付訂閱，以保證存取實際保留可計算資源區塊。這些服務區塊會擱置供您專用，因此不能視為任何其他 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 使用者的可用容量。如果您有現有的 WebSphere Application Server 授權，可以選擇自帶授權保留合約，這樣會使用這些授權，並且會享有折價的計費費率。若要設定保留合約計費，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。
+透過保留合約計費，您可以購買每月預付訂閱，以保證存取實際保留可計算資源區塊。這些服務區塊會擱置供您專用，因此不能視為任何其他 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 使用者的可用容量。如果您有現有的 WebSphere Application Server 授權，可以選擇自帶授權保留合約，這樣會使用這些授權，並且會享有折價的計費費率。若要設定保留合約計費，請[與 IBM 銷售人員聯絡](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 訂閱是以 8 區塊的增量提供。總區塊小時數是根據該月份的小時數，但您可以在整個月的任何時間點使用區塊小時。例如，30 天的月份有 720 個小時，並在乘上 8 區塊的訂閱時產生共 5,760 個區塊小時。
 
@@ -128,7 +128,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供依
 
 保留合約計費中的區塊是根據 WebSphere Application Server Network Deployment 方案，但您也可以使用其他方案的區塊。使用其他方案時，會按比例分配用量，因此，會以方案的比例分配費率減少一個區塊小時，而反映在您剩餘的保留合約區塊小時。
 
-下表顯示在計算比例分配之後每一個方案的比例分配費率及每個實際區塊的有效價格。對於地區中的現行價格，請[與 IBM 銷售人員聯絡](reportingIssues.html#contacting-sales)。
+下表顯示在計算比例分配之後每一個方案的比例分配費率及每個實際區塊的有效價格。對於地區中的現行價格，請[與 IBM 銷售人員聯絡](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 | 方案 |比例分配費率| 比例分配後的價格/小時      |
 |:-------:|:------:|:------:|

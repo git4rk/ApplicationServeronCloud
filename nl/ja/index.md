@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} は、事前構成された Traditional WebSphere および Liberty サーバーを利用者に提供します。 これは、ゲスト・オペレーティング・システムへの root アクセス権限を持つ仮想マシン・ゲストでホストされます。 サービスを作成するときに、_Liberty_、_Traditional ND_、または _Traditional WebSphere_ のいずれかを選択します。
 
-**注:** 利用者は、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} インスタンスを作成するときに、現行のフィックスパック・レベルまたは 1 つ古いバージョン [(n または n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} を選択できるようになりました。
+**注:** 利用者は、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} インスタンスを作成するときに、現行のフィックスパック・レベルまたは 1 つ古いバージョン [(n または n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} を選択できるようになりました。
 
 使い慣れた WebSphere 管理操作を使用し、基盤オペレーティング・システムへの全アクセス権限を持つことができます。 既存のスクリプトを再使用可能で、独自のフレームワークまたはサード・パーティーのフレームワークで動作させるために必要なシステム微調整を行います。 オンプレミスの WebSphere 構成と同様に、WebSphere Application Server Liberty、ND、または Traditional のサービスを管理するために、管理センターと管理コンソールが提供されています。
 
@@ -105,7 +105,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} は T シ
 ### 予約契約
 {:#reserve-contract}
 
-予約契約課金では、月額前払のサブスクリプション料金を支払います。これにより、物理的に予約された計算リソースのブロックへのアクセスが保証されます。 これらのサービス・ブロックは、そのユーザー専用として予約され、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の他のユーザーに対して使用できる容量ではなくなります。 既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを使用する請求レートの低い、「独自ライセンス使用」の予約契約を選択できます。 予約契約課金をセットアップするには、[IBM 営業担当員にお問い合わせ](reportingIssues.html#contacting-sales)ください。
+予約契約課金では、月額前払のサブスクリプション料金を支払います。これにより、物理的に予約された計算リソースのブロックへのアクセスが保証されます。 これらのサービス・ブロックは、そのユーザー専用として予約され、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の他のユーザーに対して使用できる容量ではなくなります。 既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを使用する請求レートの低い、「独自ライセンス使用」の予約契約を選択できます。 予約契約課金をセットアップするには、[IBM 営業担当員にお問い合わせ](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)ください。
 
 サブスクリプションは、8 ブロック単位で増やすことができます。 合計ブロック時間は、その月の時間数に基づきますが、その月の間はずっとブロック時間を使用できます。 例えば、30 日の月は、換算すると 720 時間で、これに 8 ブロックのサブスクリプションを乗算すると、ブロック時間は合計 5,760 となります。
 
@@ -129,7 +129,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} は T シ
 
 予約契約課金のブロックは WebSphere Application Server Network Deployment プランに基づきますが、他のプランでもブロックを使用できます。 他のプランでは、使用量は比例配分されます。このため、これが残りの予約契約ブロック時間に反映されると、プランの比例配分率により 1 ブロック時間削減されます。
 
-次の表は、各プランの比例配分率、および比例配分が計算された後の実際のブロック時間当たりの有効料金を示しています。 お住まいの地域の現在の料金については、[IBM 営業担当員にお問い合わせ](reportingIssues.html#contacting-sales)ください。
+次の表は、各プランの比例配分率、および比例配分が計算された後の実際のブロック時間当たりの有効料金を示しています。 お住まいの地域の現在の料金については、[IBM 営業担当員にお問い合わせ](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)ください。
 
 | プラン | 比例配分率 | 比例配分後の料金/時間 |
 |:-------:|:------:|:------:|

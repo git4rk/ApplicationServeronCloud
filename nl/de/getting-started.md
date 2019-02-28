@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ Mit {{site.data.keyword.appserver_full}} können Sie innerhalb von Minuten eine 
 ## Vorbereitungen
 {: #prereqs}
 
-Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, die in einem höheren Maß dediziert sind, wie z. B. im Rahmen eines Reservierungsvertrags oder einer Single-Tenant-Umgebung, wenden Sie sich an den IBM Vertrieb, bevor Sie den Service erstellen. Weitere Einzelheiten zu diesen Optionen finden Sie im Abschnitt [Informationen](index.html).
+Wenn Sie eine Umgebung mit virtuellen Maschinenressourcen einrichten möchten, die in einem höheren Maß dediziert sind, wie z. B. im Rahmen eines Reservierungsvertrags oder einer Single-Tenant-Umgebung, wenden Sie sich an den IBM Vertrieb, bevor Sie den Service erstellen. Weitere Einzelheiten zu diesen Optionen finden Sie im Abschnitt [Informationen](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Vorhandene WebSphere-Umgebung migrieren
 
@@ -66,7 +66,7 @@ Wählen Sie für den Network Deployment-Plan das Profil und die Architektur für
 ## Schritt 3: Größe der virtuellen Maschine bestimmen
 {: #vm_sizing}
 
-Die Größe der virtuellen Maschine kann für jede Komponente in der Umgebung individuell bestimmt werden. Virtuelle Maschinen sind in Ressourcenblöcke unterteilt, die in [T-Shirt-Größen](index.html#vm-size) angegeben werden.
+Die Größe der virtuellen Maschine kann für jede Komponente in der Umgebung individuell bestimmt werden. Virtuelle Maschinen sind in Ressourcenblöcke unterteilt, die in [T-Shirt-Größen](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) angegeben werden.
 
 Klicken Sie auf die Registerkarte für die jeweilige Komponente, z. B. den Server, den Bereitstellungsmanager oder den Anwendungsknoten, und wählen Sie die T-Shirt-Größe für die zugehörige virtuelle Maschine aus.
 
@@ -75,11 +75,11 @@ Klicken Sie auf die Registerkarte für die jeweilige Komponente, z. B. den Serve
 
 Überprüfen Sie die Details in der Servicekonfigurationszusammenfassung einschließlich der geschätzten Zeit für die Bereitstellung.
 
-**Reservierungsvertrag:** Stellen Sie sicher, dass für die Option **Abrechnung** die Einstellung _Reservierungsvertrag_ ausgewählt ist. Wenn diese Option nicht angezeigt wird, stellen Sie sicher, dass der für [Ihre Organisation](../../account/orgs_spaces.html){:new_window} eingegebene Name exakt mit dem Organisationsnamen des Vertrags übereinstimmt, einschließlich Groß-/Kleinschreibung und Leerzeichen. Wenn Sie diesen Service bereitstellen, ohne die Abrechnung im Rahmen eines Reservierungsvertrags auszuwählen, wird eine nutzungsabhängige Abrechnung verwendet.
+**Reservierungsvertrag:** Stellen Sie sicher, dass für die Option **Abrechnung** die Einstellung _Reservierungsvertrag_ ausgewählt ist. Wenn diese Option nicht angezeigt wird, stellen Sie sicher, dass der für [Ihre Organisation](/docs/account?topic=account-orgsspacesusers){:new_window} eingegebene Name exakt mit dem Organisationsnamen des Vertrags übereinstimmt, einschließlich Groß-/Kleinschreibung und Leerzeichen. Wenn Sie diesen Service bereitstellen, ohne die Abrechnung im Rahmen eines Reservierungsvertrags auszuwählen, wird eine nutzungsabhängige Abrechnung verwendet.
 
 Klicken Sie auf **Bereitstellen**, um die {{site.data.keyword.appserver_short}}-Umgebung einzurichten.
 
 ## Weitere Schritte
 {: #anchor_value}
 
-Informationen zum Zugriff auf die neue {{site.data.keyword.appserver_short}}-Umgebung sowie zur Verwaltung finden Sie in [Systemzugriff](systemAccess.html).
+Informationen zum Zugriff auf die neue {{site.data.keyword.appserver_short}}-Umgebung sowie zur Verwaltung finden Sie in [Systemzugriff](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).

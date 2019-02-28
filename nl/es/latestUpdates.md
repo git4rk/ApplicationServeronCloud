@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ Lista con las últimas actualizaciones del servicio.
 
 El prefijo de región de Dallas ha cambiado de `ng` a `us-south`. Los prefijos del resto de regiones permanecen igual. Los URL de punto final de API REST han cambiado de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` a `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. Los URL de `bluemix.net` seguirán recibiendo soporte, pero debe cambiar los URL de punto final de API para que utilicen `websphereappsvr.cloud.ibm.com` si utiliza las API REST para gestionar sus instancias de servicio.
 
-Para obtener más información sobre los URL de punto final de API REST, consulte [Acceso al sistema](systemAccess.html#system_access).
+Para obtener más información sobre los URL de punto final de API REST, consulte [Acceso al sistema](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access).
 
 ## 14 de diciembre de 2018: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 * El fixpack 9.0.0.10 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además del 9.0.0.10, otros fixpacks de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.9, 8.5.5.14 y 8.5.5.13, están disponibles para el suministro.
@@ -28,7 +28,7 @@ Para obtener más información sobre los URL de punto final de API REST, consult
 
 ## 24 de octubre de 2018: Facturación de su propia licencia ahora disponible para contratos de reserva y entornos de un solo arrendatario
 
-Si ya dispone de licencias de WebSphere Application Server, puede utilizarlas en su contrato de reserva o en entornos de un solo arrendatario. Los entornos con facturación de entrega de licencia propia ofrecen los mismos beneficios que los entornos de contrato de reserva estándar o de arrendatario único, pero se facturan a un precio reducido. Para utilizar su propia licencia, [póngase en contacto con ventas de IBM](reportingIssues.html#contacting-sales).
+Si ya dispone de licencias de WebSphere Application Server, puede utilizarlas en su contrato de reserva o en entornos de un solo arrendatario. Los entornos con facturación de entrega de licencia propia ofrecen los mismos beneficios que los entornos de contrato de reserva estándar o de arrendatario único, pero se facturan a un precio reducido. Para utilizar su propia licencia, [póngase en contacto con ventas de IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 ## 22 de agosto de 2018: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 * El fixpack 8.5.5.14 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además del 8.5.5.14, otros fixpacks de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.8, 9.0.0.7 y 8.5.5.13, están disponibles para el suministro.
@@ -45,7 +45,7 @@ Si ya dispone de licencias de WebSphere Application Server, puede utilizarlas en
 
 Con la facturación de contrato de reserva, adquiere una suscripción mensual de prepago que garantiza el acceso a los bloques de recursos de cálculo reservados físicamente. Estos bloques de servicio se reservan para su uso exclusivo y no se pueden considerar como capacidad disponible para ningún otro usuario de {{site.data.keyword.appserver_full}}. Puede utilizar sus horas de bloques de servicio del modo que elija a lo largo del mes; cualquier excedente se facturará de acuerdo con el modelo típico de suscripción de pago según uso.
 
-Para obtener más información sobre la facturación de contrato de reserva, consulte [Opciones de facturación](index.html#billing-options).
+Para obtener más información sobre la facturación de contrato de reserva, consulte [Opciones de facturación](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options).
 
 ## 30 de marzo de 2018: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 
@@ -77,7 +77,7 @@ Para obtener más información sobre la facturación de contrato de reserva, con
 
 ## 27 de octubre de 2017: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 
-* Se ha añadido la capacidad de suministrar un nivel de fixpack anterior [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} mediante el separador Perfil de servicio del panel de control de servicio de {{site.data.keyword.Bluemix_notm}} o la API REST.
+* Se ha añadido la capacidad de suministrar un nivel de fixpack anterior [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} mediante el separador Perfil de servicio del panel de control de servicio de {{site.data.keyword.Bluemix_notm}} o la API REST.
 * La versión del fixpack 9.0.0.5 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además de la 9.0.0.5, otras versiones de fixpack de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.4, 8.5.5.12 y 8.5.5.11, están disponibles para el suministro.
 * La versión 17.0.0.3 del fixpack de WebSphere Application Server Liberty ya está disponible cuando se aprovisiona una nueva instancia de servicio. Además de la 17.0.0.3, la versión de fixpack 17.0.0.2 de WebSphere Application Server Liberty está disponible para el suministro.
 * Se han solucionado [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window} en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} que incluyen:
@@ -99,8 +99,8 @@ Para obtener más información sobre la facturación de contrato de reserva, con
 * Se ha integrado el mantenimiento de servicio.
 * Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} de modo que el fixpack 8.5.5.12 o 9.0.0.4 se instala con las nuevas instancias de WebSphere Application Server tradicional.
 * Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} de modo que el fixpack 17.0.0.2 se instala con las nuevas instancias de WebSphere Application Server Liberty (Core y ND Plans).
-* Se ha añadido una característica de [Gestión avanzada de configuración de VPN](networkEnvironment.html#advancedVPN){: new_window} que puede utilizar para crear y gestionar varias configuraciones de VPN en las regiones de Londres y de Sídney.
-* Se han añadido mejoras a la característica de [Acceso a Internet pública](networkEnvironment.html#publicInternetAccess){: new_window} que
+* Se ha añadido una característica de [Gestión avanzada de configuración de VPN](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que puede utilizar para crear y gestionar varias configuraciones de VPN en las regiones de Londres y de Sídney.
+* Se han añadido mejoras a la característica de [Acceso a Internet pública](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} que
 permite a los clientes gestionar mejor su dirección IP pública.
 * Se han solucionado [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window} en IBM SDK Java Technology Edition que afectan a WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} que incluyen:
   * Una vulnerabilidad no especificada del componente AWT de Java SE que podía permitir que un atacante no autenticado tomar el control del sistema.
@@ -117,7 +117,7 @@ permite a los clientes gestionar mejor su dirección IP pública.
 ## 25 de mayo de 2017: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 
 * Se ha integrado el mantenimiento de servicio.
-* Se ha añadido una característica de [Gestión avanzada de configuración de VPN](networkEnvironment.html#advancedVPN){: new_window} que puede utilizar para crear y gestionar varias configuraciones de VPN en la región de Frankfurt.
+* Se ha añadido una característica de [Gestión avanzada de configuración de VPN](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que puede utilizar para crear y gestionar varias configuraciones de VPN en la región de Frankfurt.
 * Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} de modo que JDK 8 se instalada con todas las instancias nuevas del servicio.
 * Se han solucionado [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window} en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} que incluyen:
   * Una vulnerabilidad de seguridad potencial con el adaptador de recursos JCA MQ de WebSphere Application Server.
@@ -169,7 +169,7 @@ permite a los clientes gestionar mejor su dirección IP pública.
 
 ## 8 de noviembre de 2016: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
 
-* Se ha añadido a los clientes capacidad para solicitar una dirección [IP pública](networkEnvironment.html#networkEnvironment) para su WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} VM
+* Se ha añadido a los clientes capacidad para solicitar una dirección [IP pública](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) para su WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} VM
 * Se han corregido [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window} que afectan a WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}, incluidas las siguientes:
   * Una vulnerabilidad en IBM WebSphere Application Server que permitía a atacantes remotos ejecutar código Java arbitrario con un objeto serializado desde orígenes no fiables.
   * Una vulnerabilidad de denegación de servicio causada por una lectura fuera de límite en la función TS_OBJ_print_bio. Un atacante remoto podía aprovechar esta vulnerabilidad utilizando un archivo con una indicación de fecha y hora especialmente adaptada para hacer que la aplicación se bloqueara.

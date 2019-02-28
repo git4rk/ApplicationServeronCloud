@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 
     **应注意的问题：**公共环境可能显示为缺省值。显示正确的环境名称将假定您已登录到正确的区域，并且允许组织的某个成员访问您的 Single Tenant Environment。
 
-    **注：**如果选择其中一个公共环境，那么可能会发生每小时费用。因此，如果看不到您的 Single Tenant Environment 名称，请开具支持凭单，如[获取帮助](reportingIssues.html){: new_window}页面中所述。
+    **注：**如果选择其中一个公共环境，那么可能会发生每小时费用。因此，如果看不到您的 Single Tenant Environment 名称，请开具支持凭单，如[获取帮助](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}页面中所述。
 
 9. 选择相应的套餐，然后单击**创建**。
 
@@ -67,10 +67,10 @@ lastupdated: "2018-11-19"
 
 供应 Single Tenant Environment 之后，可以下载 VPN 凭证并建立 OpenVPN 连接。有关更多信息，请参阅以下链接：
 
-* [VPN 访问](networkEnvironment.html#vpnAccess){: new_window}
-* [设置 OpenVPN](systemAccess.html#setup_openvpn){: new_window}
+* [VPN 访问](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [设置 OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## 管理 Single Tenant Environment
 {: #manageSTE}
 
-要向现有 Single Tenant Environment 添加额外容量或订购其他数据中心的容量，请联系美洲呼叫中心、当地 IBM 代表或您的 IBM 业务合作伙伴。请参阅[联系销售人员](reportingIssues.html#contacting-sales)以获取详细信息。
+要向现有 Single Tenant Environment 添加额外容量或订购其他数据中心的容量，请联系美洲呼叫中心、当地 IBM 代表或您的 IBM 业务合作伙伴。请参阅[联系销售人员](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)以获取详细信息。

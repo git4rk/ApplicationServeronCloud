@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -66,7 +66,7 @@ OpenVPN은 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} �
 1. openVPN 웹 사이트에서 사용자 시스템 아키텍처용 openVPN Windows 설치 프로그램을 다운로드하십시오.
   * 64비트 시스템: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32비트 시스템:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. 반드시 [Windows 관리자로 실행](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window}하고 openVPN이 설치되어 있어야 합니다.
+2. 반드시 [Windows 관리자로 실행](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window}하고 openVPN이 설치되어 있어야 합니다.
 3. 서비스 대시보드의 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 인스턴스의 OpenVPN 다운로드 링크에서 VPN 구성 파일을 다운로드하십시오. 압축 파일의 네 개 파일을 모두 `{OpenVPN home}\config` 디렉토리에 추출하십시오. 예:
 
   ```  
@@ -219,7 +219,7 @@ Admin Center 또는 Admin Console에 대한 링크를 클릭하면 *신뢰할 �
 
 **문제 예방:** 플러그인을 생성해서 전파하기 전에 다음 전제조건 태스크가 완료되었는지 확인하십시오.
 
-* 로컬 Windows, Linux 또는 MAC 환경에 [openVPN](systemAccess.html#setup_openvpn)이 구성, 시작되었으며 사용자가 적합한 지역에 연결되었는지 확인하십시오.
+* 로컬 Windows, Linux 또는 MAC 환경에 [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn)이 구성, 시작되었으며 사용자가 적합한 지역에 연결되었는지 확인하십시오.
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 서비스 대시보드에서 **관리자 콘솔 열기**를 클릭하고 wsadmin 및 서비스 대시보드에 제공된 관리자 비밀번호로 로그인하십시오.
 * 배치 관리자가 비어 있는 사용자 정의 노드와 연합되어 있으므로 Admin Console에서 애플리케이션 서버(예: ****server1***)를 작성하십시오.
 * 작성한 서버를 시작하십시오.

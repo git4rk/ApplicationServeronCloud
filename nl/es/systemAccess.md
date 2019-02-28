@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -66,7 +66,7 @@ OpenVPN es necesario para acceder a cualquier máquina virtual de WebSphere Appl
 1. Descargue el programa de instalación de openVPN en Windows para su arquitectura del sistema desde el sitio web de openVPN:
   * Sistemas de 64 bits: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * Sistemas de 32 bits:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Asegúrese de que [trabaja como administrador de Windows](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} y de que openVPN está instalado.
+2. Asegúrese de que [trabaja como administrador de Windows](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} y de que openVPN está instalado.
 3. Descargue los archivos de configuración de VPN desde el enlace de descarga de OpenVPN de la instancia de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} en el panel de control de servicios. Extraiga los cuatro archivos en el archivo comprimido en el directorio `{inicio OpenVPN}\config`. Por ejemplo:
 
   ```  
@@ -222,7 +222,7 @@ Si necesita el servidor web para manejar todas las solicitudes de usuario, es po
 
 **Evite problemas:** antes de generar y propagar el plugin, asegúrese de haber completado las siguientes tareas previas necesarias.
 
-* En el entorno Windows, Linux o MAC local, asegúrese de que [openVPN](systemAccess.html#setup_openvpn) esté configurado e iniciado y de que esté conectado a la región adecuada.
+* En el entorno Windows, Linux o MAC local, asegúrese de que [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) esté configurado e iniciado y de que esté conectado a la región adecuada.
 * En el panel de control de servicio de WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}, pulse **Abrir la consola de administración** e inicie una sesión con wsadmin y la contraseña del administrador que se proporciona en el panel de control de servicio.
 * En la consola de administración, cree un servidor de aplicaciones (por ejemplo, ***server1***), ya que el gestor de despliegue está federado con un nodo personalizado vacío.
 * Inicie el servidor que ha creado.

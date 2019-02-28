@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-02"
+  years: 2017, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,10 +19,10 @@ lastupdated: "2018-05-02"
 
 Si tiene problemas con {{site.data.keyword.appserver_full}}, puede obtener ayuda mediante uno de estos métodos:
 
-* Abra una incidencia de soporte siguiendo el proceso que se define en [Cómo obtener soporte para IBM Cloud público](/docs/support/index.html#contacting-support).
-* Formule una pregunta en uno de los [foros de soporte de IBM Cloud](https://developer.ibm.com/bluemix/support/){: new_window} públicos. Los foros se supervisan de forma activa.
+* Abra una incidencia de soporte siguiendo el proceso que se define en [Cómo obtener soporte para IBM Cloud público](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+* Formule una pregunta en uno de los [foros de soporte de IBM Cloud](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window} públicos. Los foros se supervisan de forma activa.
 
-  **Nota**: incluya las etiquetas `ibm-was-oc` y `bluemix` en su publicación para obtener ayuda rápidamente.
+  **Nota**: incluya la etiqueta `ibm-was-oc` en su publicación para mejorar la experiencia de soporte.
 
 ## Cómo ponerse en contacto con el equipo de ventas
 {:#contacting-sales}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ Les étapes suivantes vous expliquent comment accéder à votre environnement à
 
     **Evitez les problèmes :** l'environnement public doit s'afficher en tant qu'environnement par défaut. L'affichage du nom d'environnement correct suppose que vous êtes connecté à la région adéquate et que vous êtes membre d'une organisation qui est autorisée à accéder à votre environnement à service exclusif.
 
-    **Remarque :** si vous sélectionnez l'un des environnements publics, une facturation horaire peut vous être appliquée. De ce fait, si vous ne voyez pas le nom de votre environnement à service exclusif, ouvrez un ticket de demande de service, comme décrit sur la page [Obtenir de l'aide](reportingIssues.html){: new_window}.
+    **Remarque :** si vous sélectionnez l'un des environnements publics, une facturation horaire peut vous être appliquée. De ce fait, si vous ne voyez pas le nom de votre environnement à service exclusif, ouvrez un ticket de demande de service, comme décrit sur la page [Obtenir de l'aide](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}.
 
 9. Sélectionnez le plan approprié et cliquez sur **Créer**.
 
@@ -67,10 +67,10 @@ Supposez, par exemple, que vous disposiez d'un petit environnement, qui contient
 
 Une fois votre environnement à service exclusif mis à disposition, vous pouvez télécharger vos données d'identification VPN et établir une connexion OpenVPN. Pour plus d'informations, voir les liens suivants :
 
-* [Accès au VPN (réseau privé virtuel)](networkEnvironment.html#vpnAccess){: new_window}
-* [Configuration d'OpenVPN](systemAccess.html#setup_openvpn){: new_window}
+* [Accès au VPN (réseau privé virtuel)](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [Configuration d'OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Gestion de votre environnement à service exclusif
 {: #manageSTE}
 
-Pour ajouter une capacité supplémentaire à votre environnement à service exclusif ou pour commander une capacité dans un autre centre de données, contactez l'un des centres d'appels situés sur le continent américain, votre interlocuteur IBM ou votre partenaire commercial IBM. Voir [Prise de contact avec le service commercial](reportingIssues.html#contacting-sales) pour plus de détails.
+Pour ajouter une capacité supplémentaire à votre environnement à service exclusif ou pour commander une capacité dans un autre centre de données, contactez l'un des centres d'appels situés sur le continent américain, votre interlocuteur IBM ou votre partenaire commercial IBM. Voir [Prise de contact avec le service commercial](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) pour plus de détails.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -17,18 +17,18 @@ lastupdated: "2019-01-16"
 
 ## 2019 年 1 月 16 日: REST API 実装用の API エンドポイント URL を更新しました
 
-ダラスの地域接頭部が `ng` から `us-south` に変更されました。他の地域接頭部は同じままです。REST API エンドポイント URL が `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` から `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api` に変更されました。`bluemix.net` URL は引き続きサポートされますが、REST API を使用してサービス・インスタンスを管理している場合は、`websphereappsvr.cloud.ibm.com` を使用するように REST API エンドポイント URL を変更する必要があります。
+ダラスの地域接頭部が `ng` から `us-south` に変更されました。 他の地域接頭部は同じままです。 REST API エンドポイント URL が `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` から `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api` に変更されました。 `bluemix.net` URL は引き続きサポートされますが、REST API を使用してサービス・インスタンスを管理している場合は、`websphereappsvr.cloud.ibm.com` を使用するように REST API エンドポイント URL を変更する必要があります。
 
-REST API エンドポイント URL について詳しくは、[システム・アクセス](systemAccess.html#system_access)を参照してください。
+REST API エンドポイント URL について詳しくは、[システム・アクセス](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access)を参照してください。
 
 ## 2018 年 12 月 14 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
-* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の  9.0.0.10 フィックスパックを使用できるようになりました。9.0.0.10 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.9、8.5.5.14、8.5.5.13 など) もプロビジョニングのために使用できます。
-* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server Liberty の 18.0.0.4 フィックスパック・バージョンを使用できるようになりました。18.0.0.4 に加えて、WebSphere Application Server Liberty の 18.0.0.3 フィックスパック・バージョンもプロビジョニングのために使用できます。
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の  9.0.0.10 フィックスパックを使用できるようになりました。 9.0.0.10 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.9、8.5.5.14、8.5.5.13 など) もプロビジョニングのために使用できます。
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server Liberty の 18.0.0.4 フィックスパック・バージョンを使用できるようになりました。 18.0.0.4 に加えて、WebSphere Application Server Liberty の 18.0.0.3 フィックスパック・バージョンもプロビジョニングのために使用できます。
 * 各種サービス・メンテナンスを統合しました。
 
 ## 2018 年 10 月 24 日: 予約契約およびシングル・テナント環境で、「独自ライセンス使用」請求処理が使用できるようになりました。
 
-既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを予約契約またはシングル・テナント環境で使用できるようになりました。 「独自ライセンス使用」請求処理を行う環境では、標準予約契約またはシングル・テナント環境と同じメリットが提供されますが、請求レートは低くされています。 「独自ライセンス使用」を使用するには、[IBM 営業担当員にお問い合わせください](reportingIssues.html#contacting-sales)。
+既存の WebSphere Application Server ライセンスがある場合は、それらのライセンスを予約契約またはシングル・テナント環境で使用できるようになりました。 「独自ライセンス使用」請求処理を行う環境では、標準予約契約またはシングル・テナント環境と同じメリットが提供されますが、請求レートは低くされています。 「独自ライセンス使用」を使用するには、[IBM 営業担当員にお問い合わせください](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 ## 2018 年 8 月 22 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 * 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の 8.5.5.14 フィックスパックを使用できるようになりました。 8.5.5.14 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.8、9.0.0.7、8.5.5.13 など) もプロビジョニングのために使用できます。
@@ -45,7 +45,7 @@ REST API エンドポイント URL について詳しくは、[システム・�
 
 予約契約課金では、月額前払のサブスクリプション料金を支払います。これにより、物理的に予約された計算リソースのブロックへのアクセスが保証されます。 これらのサービス・ブロックは、そのユーザー専用として予約され、{{site.data.keyword.appserver_full}} の他のユーザーに対して使用できる容量ではなくなります。 その月の間、選択した任意の方法でサービス・ブロック時間を使用できます。このとき、通常の従量制課金サブスクリプション・モデルに従い超過料金が請求されます。
 
-予約契約課金について詳しくは、[課金オプション](index.html#billing-options)を参照してください。
+予約契約課金について詳しくは、[課金オプション](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options)を参照してください。
 
 ## 2018 年 3 月 30 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 
@@ -77,7 +77,7 @@ REST API エンドポイント URL について詳しくは、[システム・�
 
 ## 2017 年 10 月 27 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 
-* {{site.data.keyword.Bluemix_notm}} サービス・ダッシュボードの「サービス・プロファイル」タブを通じて、または REST API を通じて、以前のフィックスパック・レベル [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} をプロビジョンできるようになりました。
+* {{site.data.keyword.Bluemix_notm}} サービス・ダッシュボードの「サービス・プロファイル」タブを通じて、または REST API を通じて、以前のフィックスパック・レベル [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} をプロビジョンできるようになりました。
 * 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の 9.0.0.5 フィックスパック・バージョンを使用できるようになりました。 9.0.0.5 に加えて、WebSphere Application Server traditional の他のフィックスパック・バージョン (9.0.0.4、8.5.5.12、8.5.5.11 など) もプロビジョニングのために使用できます。
 * 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server Liberty の 17.0.0.3 フィックスパック・バージョンを使用できるようになりました。 17.0.0.3 に加えて、WebSphere Application Server Liberty の 17.0.0.2 フィックスパック・バージョンもプロビジョニングのために使用できます。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} では、以下のような[いくつかのセキュリティー脆弱性](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}に対処しました。
@@ -99,8 +99,8 @@ REST API エンドポイント URL について詳しくは、[システム・�
 * 各種サービス・メンテナンスを統合しました。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} がアップグレードされ、WebSphere Application Server traditional の新しいインスタンスにフィックスパック 8.5.5.12 や 9.0.0.4 がインストールされるようになりました。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} がアップグレードされ、WebSphere Application Server Liberty (Core および ND Plans) の新しいインスタンスにフィックスパック 17.0.0.2 がインストールされるようになりました。
-* ロンドンおよびシドニー地域で、複数の VPN 構成の作成および管理に使用できる[拡張 VPN 構成管理](networkEnvironment.html#advancedVPN){: new_window}機能が追加されました。
-* [パブリック・インターネット・アクセス](networkEnvironment.html#publicInternetAccess){: new_window}機能に機能拡張が追加され、クライアントがパブリック IP アドレスをより適切に管理できるようになりました。
+* ロンドンおよびシドニー地域で、複数の VPN 構成の作成および管理に使用できる[拡張 VPN 構成管理](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window}機能が追加されました。
+* [パブリック・インターネット・アクセス](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window}機能に機能拡張が追加され、クライアントがパブリック IP アドレスをより適切に管理できるようになりました。
 * IBM SDK Java Technology Edition では、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} に影響を与える、以下のような[いくつかのセキュリティー脆弱性](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}に対処しました。
   * 非認証の攻撃者がシステムを制御できる可能性がある Java SE AWT コンポーネントの詳細不明の脆弱性。
   * 非認証の攻撃者がシステムを制御できる可能性がある Java SE JCE コンポーネントの詳細不明の脆弱性。
@@ -116,7 +116,7 @@ REST API エンドポイント URL について詳しくは、[システム・�
 ## 2017 年 5 月 25 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 
 * 各種サービス・メンテナンスを統合しました。
-* フランクフルト地域で、複数の VPN 構成の作成および管理に使用できる[拡張 VPN 構成管理](networkEnvironment.html#advancedVPN){: new_window}機能が追加されました。
+* フランクフルト地域で、複数の VPN 構成の作成および管理に使用できる[拡張 VPN 構成管理](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window}機能が追加されました。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} がアップグレードされ、サービスの新しいすべてのインスタンスで JDK 8 がインストールされるようになりました。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} では、以下のような[いくつかのセキュリティー脆弱性](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window}に対処しました。
   * WebSphere Application Server MQ JCA リソース・アダプターにあった潜在的なセキュリティーの脆弱性。
@@ -168,7 +168,7 @@ REST API エンドポイント URL について詳しくは、[システム・�
 
 ## 2016 年 11 月 8 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
 
-* お客様が WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 用の[パブリック IP](networkEnvironment.html#networkEnvironment) アドレスを要求できる機能を追加しました。
+* お客様が WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 用の[パブリック IP](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) アドレスを要求できる機能を追加しました。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} に影響を与える、以下を含む[いくつかのセキュリティー脆弱性](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window}についての対処を行いました。
   * リモート・アタッカーが信頼できないソースからシリアライズド・オブジェクトを使用して任意の Java コードを実行できる恐れのある、IBM WebSphere Application Server の脆弱性。
   * TS_OBJ_print_bio 機能での領域外メモリー参照に起因する、サービス妨害の脆弱性。 特別に作成したタイム・スタンプ・ファイルを使用してリモート・アタッカーがこの脆弱性を悪用し、アプリケーションを異常終了させる恐れがあります。

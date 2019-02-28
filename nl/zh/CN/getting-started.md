@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-19"
 ## 开始之前
 {: #prereqs}
 
-如果需要具有更多专用虚拟机资源的环境（例如，保留合同或 Single Tenant Environment），请在创建服务之前联系 IBM 销售人员。在[关于](index.html)中了解有关这些选项的更多信息。
+如果需要具有更多专用虚拟机资源的环境（例如，保留合同或 Single Tenant Environment），请在创建服务之前联系 IBM 销售人员。在[关于](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about)中了解有关这些选项的更多信息。
 
 ### 迁移现有 WebSphere 环境
 
@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 1. 使用 IBM 标识登录，或注册 {{site.data.keyword.cloud_notm}} 帐户。
 1. 在目录页面上，查看用于服务配置的选择。
 
-  对于现买现付环境，请使用缺省选择或根据您的需求进行修改。
+  对于现收现付环境，请使用缺省选择或根据您的需求进行修改。
 
   如果您有保留合同或 Single Tenant Environment，请特别注意以下选项。
 
@@ -67,7 +67,7 @@ lastupdated: "2018-11-19"
 ## 步骤 3：调整虚拟机的大小
 {: #vm_sizing}
 
-可以针对环境中的每个组件单独调整虚拟机的大小。虚拟机以资源块的 [T 恤尺寸](index.html#vm-size)进行分块。
+可以针对环境中的每个组件单独调整虚拟机的大小。虚拟机以资源块的 [T 恤尺寸](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size)进行分块。
 
 单击组件（例如，服务器、Deployment Manager 或应用程序节点）的对应选项卡，然后选择其虚拟机的 T 恤尺寸。
 
@@ -76,11 +76,11 @@ lastupdated: "2018-11-19"
 
 复查服务配置摘要中的详细信息，包括供应所需的估算时间。
 
-**保留合同：**确保**计费**选项设置为_保留合同_。如果您没有看到此选项，请验证[您的组织名称](../../account/orgs_spaces.html){:new_window}与合同上的组织名称是否完全一致，包括大小写和空格。如果您供应服务时没有选择保留合同计费，那么将使用现买现付计费。
+**保留合同：**确保**计费**选项设置为_保留合同_。如果您没有看到此选项，请验证[您的组织名称](/docs/account?topic=account-orgsspacesusers){:new_window}与合同上的组织名称是否完全一致，包括大小写和空格。如果您供应服务时没有选择保留合同计费，那么将使用现收现付计费。
 
 单击**供应**以设置 {{site.data.keyword.appserver_short}} 环境。
 
 ## 后续步骤
 {: #anchor_value}
 
-了解如何在[系统访问](systemAccess.html)中访问和管理新的 {{site.data.keyword.appserver_short}} 环境。
+了解如何在[系统访问](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access)中访问和管理新的 {{site.data.keyword.appserver_short}} 环境。

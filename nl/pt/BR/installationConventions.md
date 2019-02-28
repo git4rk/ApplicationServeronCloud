@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-19"
 
 Quando você está administrando o seu ambiente do {{site.data.keyword.appserver_full}} e precisa determinar qual usuário usar, é importante entender os conceitos a seguir:
 
- * A manutenção pode ser aplicada usando o [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}, que é instalado no diretório `/home/virtuser/IBM/Installation Manager`. Como os arquivos binários subjacentes são instalados como
+ * A manutenção pode ser aplicada usando o [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window}, que é instalado no diretório `/home/virtuser/IBM/Installation Manager`. Como os arquivos binários subjacentes são instalados como
 `virtuser`, um usuário virtual administrativo limitado, assegure-se de que todos os fix packs e correções temporárias
 sejam instalados como `virtuser`.
 

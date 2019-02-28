@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -83,8 +83,8 @@ VPN 구성이 손상되거나 만료된 경우 고급 VPN 관리 페이지에서
 {: #publicIPports}
 
 공인 IP에 대한 액세스를 열 때는 IP 주소가 사용자의 VM과 연관되며 포트 80 및 443이 게이트웨이에서 열립니다. 그러나 기본적으로 Liberty Core 및 Traditional WebSphere 기본 서버는 포트 80 및 443을 열지 않습니다. 반대로 포트 80 및 443이 IBM HTTP Server에서 기본적으로 열립니다. 따라서 공인 IP를 사용할 때는 Liberty Core 및 Traditional WebSphere 기본 서버가 포트 80 및 443에서 애플리케이션 트래픽을 청취하도록 구성해야 할 수 있습니다.
-* Liberty Core 서버를 구성하려면 [공인 액세스용으로 Liberty Core 서버 구성](networkEnvironment.html#configureLibertyForPublicAccess)을 참조하십시오.
-* Traditional WebSphere 기본 서버를 구성하려면 [전송 체인 구성](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}에 설명된 대로 포트 80 및 443에서 청취하는 웹 컨테이너 전송 체인을 추가하십시오.
+* Liberty Core 서버를 구성하려면 [공인 액세스용으로 Liberty Core 서버 구성](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess)을 참조하십시오.
+* Traditional WebSphere 기본 서버를 구성하려면 [전송 체인 구성](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}에 설명된 대로 포트 80 및 443에서 청취하는 웹 컨테이너 전송 체인을 추가하십시오.
 
 **문제 예방:** Linux는 **root**와 같은 권한 있는 사용자를 위해 1024보다 작은 포트를 예약합니다. 그러나 일반적으로 Traditional WebSphere Base 서버를 **non-root** 사용자로 실행합니다. 그러나 웹 컨테이너 전송 체인을 추가하는 경우 **iptables** 구성을 **root** 사용자로 변경하십시오. 특히 제한된 포트 80 및 443을 1024보다 큰 다른 포트(예: 9080 및 9443)로 경로 재지정하십시오. 다음 명령은 이 프로세스의 예제를 제공합니다.
 
@@ -134,7 +134,7 @@ COMMIT
 
 VPN 연결을 통해 VM의 사설 IP 주소에 연결합니다. Liberty Admin Center(9080, 9443), Traditional WebSphere Admin Console(9060, 9043), SSH(22) 및 80/443 이외의 포트만 그림 1에 표현된 대로 VPN 연결을 통해 액세스 가능합니다. 애플리케이션 포트에서 Liberty Admin Center 분리하기에 대한 세부사항은 샘플 Liberty Core **server.xml** 및 **ibm-web-bnd.xml**을 참조하십시오.
 
-**문제 예방:** Liberty Core 및 Traditional WebSphere Base 서버의 경우, VM이 프로비저닝될 때 방화벽 포트가 사전 구성됩니다. 그러나 배치 관리자 또는 Collective Controller가 IBM HTTP Server와 함께 배치된 Network Deployment 구성의 경우, 방화벽에 포트를 열어야 할 수 있습니다. 세부사항은 [방화벽 포트](systemAccess.html#firewall_ports)를 참조하십시오.
+**문제 예방:** Liberty Core 및 Traditional WebSphere Base 서버의 경우, VM이 프로비저닝될 때 방화벽 포트가 사전 구성됩니다. 그러나 배치 관리자 또는 Collective Controller가 IBM HTTP Server와 함께 배치된 Network Deployment 구성의 경우, 방화벽에 포트를 열어야 할 수 있습니다. 세부사항은 [방화벽 포트](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports)를 참조하십시오.
 
 ## 공인 IP 액세스용으로 Liberty Core 서버 구성
 {: #configureLibertyForPublicAccess}

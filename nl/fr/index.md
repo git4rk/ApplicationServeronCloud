@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2018-10-25"
 
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} fournit aux consommateurs des serveurs Traditional WebSphere et Liberty préconfigurés. Il est hébergé sur des invités de machine virtuelle avec les droits d'accès de l'utilisateur root au système d'exploitation invité. Quand vous créez votre service, choisissez entre _Liberty_, _Traditional ND_ ou _Traditional WebSphere_.
 
-**Remarque :** les consommateurs sont maintenant en mesure de choisir entre le niveau de groupe de correctifs actuel et une version plus ancienne [(n ou n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} quand vous créez un serveur WebSphere Application Server dans une instance {{site.data.keyword.Bluemix_notm}}.
+**Remarque :** les consommateurs sont maintenant en mesure de choisir entre le niveau de groupe de correctifs actuel et une version plus ancienne [(n ou n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} quand vous créez un serveur WebSphere Application Server dans une instance {{site.data.keyword.Bluemix_notm}}.
 
 Vous êtes initié à l'administration WebSphere et disposez d'un accès complet au système d'exploitation sous-jacent. Vous pouvez réutiliser vos scripts existants et apporter de petites personnalisations au système afin de travailler avec vos propres infrastructures ou des infrastructures tierces. Le centre d'administration et les consoles d'administration vous permettent d'administrer votre service WebSphere Application Server Liberty ou Traditional, de la même façon que vos configurations WebSphere sur site.
 
@@ -104,7 +104,7 @@ Le tableau ci-après répertorie le prix total par heure pour chaque machine vir
 ### Contrat de réservation
 {:#reserve-contract}
 
-Avec une facturation de contrat de réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Si vous disposez de licences WebSphere Application Server, vous pouvez choisir un contrat de réservation BYOL (bring-your-own-license), qui utilise ces licences et propose un taux de facturation réduit. Pour configurer une facturation de contrat de réservation, [contactez IBM Sales](reportingIssues.html#contacting-sales).
+Avec une facturation de contrat de réservation, vous achetez un abonnement mensuel prépayé qui garantit l'accès à des blocs de ressources de calcul qui vous sont physiquement réservés. Ces blocs de service sont mis de côté pour votre utilisation exclusive et ne peuvent être considérés comme disponibles pour les autres utilisateurs du serveur WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Si vous disposez de licences WebSphere Application Server, vous pouvez choisir un contrat de réservation BYOL (bring-your-own-license), qui utilise ces licences et propose un taux de facturation réduit. Pour configurer une facturation de contrat de réservation, [contactez IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 Les abonnements sont disponibles par incréments de 8 blocs. Le total des heures de bloc repose sur le nombre d'heures dans le mois, mais vous pouvez utiliser les heures de bloc à toute période du mois. Ainsi, un mois de 30 jours se compose de 720 heures qui, lorsqu'elles sont multipliées par un abonnement de 8 blocs, donnent un total de 5760 heures de bloc.
 
@@ -128,7 +128,7 @@ Les blocs provenant du modèle de tarification à l'utilisation ne correspondent
 
 Les blocs inclus dans une facturation de contrat de réservation reposent sur le plan WebSphere Application Server Network Deployment, mais vous pouvez aussi vous en servir pour d'autres plans. Avec ces autres plans, l'utilisation est répartie au prorata, ce qui fait qu'une heure de bloc est réduite via le taux de proratisation quand elle se reflète dans les heures de bloc restantes dans le contrat de réservation.
 
-Le tableau suivant affiche les taux de proratisation pour chaque plan et le prix effectif par heure de bloc réellement utilisée une fois le calcul au prorata effectué. Pour les prix actuels de votre région, [contactez IBM Sales](reportingIssues.html#contacting-sales).
+Le tableau suivant affiche les taux de proratisation pour chaque plan et le prix effectif par heure de bloc réellement utilisée une fois le calcul au prorata effectué. Pour les prix actuels de votre région, [contactez IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Plan | Taux de proratisation | Prix/heure après proratisation |
 |:-------:|:------:|:------:|

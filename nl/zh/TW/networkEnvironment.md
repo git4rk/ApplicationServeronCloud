@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -83,8 +83,8 @@ VPN 配置的範圍限定為您的組織及地區。從建立時間算起的一�
 {: #publicIPports}
 
 當您開放公用 IP 的存取權時，IP 位址會與您的 VM 相關聯，且會在閘道開啟埠 80 和 443。不過，依預設，Liberty Core 和傳統 WebSphere Base 伺服器不會開啟埠 80 和 443。相反地，IBM HTTP Server 上的埠 80 和 443 會依預設開啟。因此，當您使用公用 IP 時，可能需要配置 Liberty Core 與傳統 WebSphere Base 伺服器，以在埠 80 和 443 上接聽應用程式資料流量。
-* 若要配置 Liberty Core 伺服器，請參閱[配置 Liberty Core 伺服器，以進行公用存取](networkEnvironment.html#configureLibertyForPublicAccess)。
-* 若要配置傳統 WebSphere Base 伺服器，請新增一個 Web 容器傳輸鏈，接聽埠 80 和 443，如[配置傳輸鏈](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}中所述。
+* 若要配置 Liberty Core 伺服器，請參閱[配置 Liberty Core 伺服器，以進行公用存取](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess)。
+* 若要配置傳統 WebSphere Base 伺服器，請新增一個 Web 容器傳輸鏈，接聽埠 80 和 443，如[配置傳輸鏈](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}中所述。
 
 **避免麻煩：**Linux 會針對特許使用者（例如 **root**）保留小於 1024 的埠。不過，通常會以**非 root** 使用者身分執行傳統 WebSphere Base 伺服器。因此，當您新增 Web 容器傳輸鏈時，請以 **root** 使用者身分變更 **iptables** 配置。具體而言，會將受限埠 80 及 443 重新導向至高於 1024 的另一個埠（例如 9080 和 9443）。下列指令提供此處理程序的範例：
 
@@ -134,7 +134,7 @@ COMMIT
 
 您透過 VPN 連線來連接 VM 的專用 IP 位址。您的「Liberty 管理中心」（9080、9443）、傳統「WebSphere 管理主控台」（9060、9043）、SSH (22) 和非 80 和 443 的埠，只能透過 VPN 連線存取，如圖 1 中所描述。請參閱範例 Liberty Core **server.xml** 和 **ibm-web-bnd.xml**，以取得區隔「Liberty 管理中心」與您應用程式埠的詳細資料。
 
-**避免麻煩：**對於 Liberty Core 和傳統 WebSphere Base 伺服器而言，防火牆埠會在佈建 VM 時預先配置。不過，對於 Network Deployment 配置而言，部署管理程式或群體控制器是與 IBM HTTP Server 並置，因此您可能需要在防火牆上開啟埠。如需詳細資料，請參閱[防火牆埠](systemAccess.html#firewall_ports)。
+**避免麻煩：**對於 Liberty Core 和傳統 WebSphere Base 伺服器而言，防火牆埠會在佈建 VM 時預先配置。不過，對於 Network Deployment 配置而言，部署管理程式或群體控制器是與 IBM HTTP Server 並置，因此您可能需要在防火牆上開啟埠。如需詳細資料，請參閱[防火牆埠](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports)。
 
 ## 配置 Liberty Core 伺服器的公用 IP 存取
 {: #configureLibertyForPublicAccess}

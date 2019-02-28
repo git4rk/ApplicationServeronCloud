@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ Con {{site.data.keyword.appserver_full}}, puoi impostare un ambiente WebSphere A
 ## Prima di iniziare
 {: #prereqs}
 
-Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un contratto di riserva o un ambiente a singolo tenant, contatta il settore Vendite IBM prima di creare il servizio. Scopri di più su queste opzioni in [Informazioni](index.html).
+Se vuoi un ambiente con più risorse dedicate della macchina virtuale, come un contratto di riserva o un ambiente a singolo tenant, contatta il settore Vendite IBM prima di creare il servizio. Scopri di più su queste opzioni in [Informazioni](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migrazione di un ambiente WebSphere esistente
 
@@ -66,7 +66,7 @@ Per il piano Network Deployment, scegli il profilo e l'architettura per il tuo a
 ## Passo 3: dimensiona le tue macchine virtuali
 {: #vm_sizing}
 
-Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Le macchine virtuali sono suddivise in [dimensioni T-shirt](index.html#vm-size) di blocchi di risorse.
+Puoi dimensionare individualmente la macchina virtuale per ciascun componente nel tuo ambiente. Le macchine virtuali sono suddivise in [dimensioni T-shirt](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) di blocchi di risorse.
 
 Fai clic sulla scheda relativa al componente, ad esempio il server, il Deployment Manager o il nodo dell'applicazione e seleziona la dimensione T-shirt per sua la macchina virtuale.
 
@@ -75,11 +75,11 @@ Fai clic sulla scheda relativa al componente, ad esempio il server, il Deploymen
 
 Rivedi i dettagli nel riepilogo della configurazione del servizio, compreso il tempo stimato necessario per eseguire il provisioning.
 
-**Contratto di riserva:** assicurati che l'opzione **Fatturazione** sia impostata su _Contratto di riserva_. Se non vedi l'opzione, verifica che [la tua organizzazione](../../account/orgs_spaces.html){:new_window} sia esattamente uguale, compresi maiuscole/minuscole e spazi vuoti, al nome dell'organizzazione per il tuo contratto. Se esegui il provisioning del servizio senza selezionare la fatturazione del contratto di riserva, viene utilizzata la fatturazione con pagamento a consumo.
+**Contratto di riserva:** assicurati che l'opzione **Fatturazione** sia impostata su _Contratto di riserva_. Se non vedi l'opzione, verifica che [la tua organizzazione](/docs/account?topic=account-orgsspacesusers){:new_window} sia esattamente uguale, compresi maiuscole/minuscole e spazi vuoti, al nome dell'organizzazione per il tuo contratto. Se esegui il provisioning del servizio senza selezionare la fatturazione del contratto di riserva, viene utilizzata la fatturazione con pagamento a consumo.
 
 Fai clic su **Provisioning** per impostare il tuo ambiente {{site.data.keyword.appserver_short}}.
 
 ## Passi successivi
 {: #anchor_value}
 
-Scopri come accedere e gestire il tuo nuovo ambiente {{site.data.keyword.appserver_short}} in [Accesso al sistema](systemAccess.html).
+Scopri come accedere e gestire il tuo nuovo ambiente {{site.data.keyword.appserver_short}} in [Accesso al sistema](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ Uma lista das atualizações mais recentes para o serviço.
 
 O prefixo de região para Dallas mudou de `ng` para `us-south`. Os outros prefixos de região permaneceram iguais. As URLs de terminal da API de REST mudaram de `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` para `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. As URLs `bluemix.net` continuarão sendo suportadas, mas será necessário mudar as URLs de terminal da API de REST para usar `websphereappsvr.cloud.ibm.com`, se você usar as APIs de REST para gerenciar suas instâncias de serviço.
 
-Para obter mais informações sobre as URLs de terminal da API de REST, consulte [Acesso ao sistema](systemAccess.html#system_access).
+Para obter mais informações sobre as URLs de terminal da API de REST, consulte [Acesso ao sistema](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access).
 
 ## 14 de dezembro de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 * O fix pack 9.0.0.10 do WebSphere Application Server tradicional agora está disponível ao provisionar uma nova instância de serviço. Além do 9.0.0.10, outros fix packs do WebSphere Application Server tradicional, como o 9.0.0.9, o 8.5.5.14 e o 8.5.5.13, estão disponíveis para provisionamento.
@@ -29,7 +29,7 @@ Para obter mais informações sobre as URLs de terminal da API de REST, consulte
 ## 24 de outubro de 2018: agora, o faturamento com sua própria licença está disponível para o contrato de
 reserva e os ambientes de locatário único
 
-Se você tem licenças existentes do WebSphere Application Server, agora é possível usá-las em seu contrato de reserva ou nos ambientes de locatário único. Os ambientes com faturamento de sua própria licença oferecem os mesmos benefícios que o contrato de reserva padrão ou os ambientes de locatário único, mas são faturados a uma taxa reduzida. Para usar o seu próprio licenciamento, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+Se você tem licenças existentes do WebSphere Application Server, agora é possível usá-las em seu contrato de reserva ou nos ambientes de locatário único. Os ambientes com faturamento de sua própria licença oferecem os mesmos benefícios que o contrato de reserva padrão ou os ambientes de locatário único, mas são faturados a uma taxa reduzida. Para usar o seu próprio licenciamento, [entre em contato com Vendas IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 ## 22 de agosto de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 * O fix pack 8.5.5.14 do WebSphere Application Server tradicional agora é disponibilizado quando você fornece uma nova instância de serviço. Além do 8.5.5.14, outros fix packs do WebSphere Application Server tradicional, como o 9.0.0.8, o 9.0.0.7 e o 8.5.5.13, estão disponíveis para fornecimento.
@@ -48,7 +48,7 @@ Liberty está disponível para fornecimento.
 Com o faturamento do contrato de reserva, você compra uma assinatura mensal pré-paga que garante o acesso a blocos de recursos
 computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para nenhum outro usuário do {{site.data.keyword.appserver_full}}. É possível usar as suas horas de bloqueio de serviço de qualquer maneira que você escolher durante o mês, com todos os excedentes sendo cobrados de acordo com o modelo de assinatura pré-pago típico.
 
-Para saber mais sobre o faturamento do contrato de reserva, consulte [Opções de faturamento](index.html#billing-options).
+Para saber mais sobre o faturamento do contrato de reserva, consulte [Opções de faturamento](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options).
 
 ## 30 de março de 2018: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
@@ -86,7 +86,7 @@ abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} 
 
 ## 27 de outubro de 2017: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
-* Incluída a capacidade de fornecimento de um nível de fix pack mais antigo [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} por meio da guia Perfil de serviço no Painel de serviço do {{site.data.keyword.Bluemix_notm}} ou por meio da API de REST.
+* Incluída a capacidade de fornecimento de um nível de fix pack mais antigo [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} por meio da guia Perfil de serviço no Painel de serviço do {{site.data.keyword.Bluemix_notm}} ou por meio da API de REST.
 * A versão de fix pack 9.0.0.5 do WebSphere Application Server tradicional agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 9.0.0.5, outras versões de fix pack do WebSphere Application Server tradicional, como a 9.0.0.4, a 8.5.5.12 e a 8.5.5.11, estão disponíveis para fornecimento.
 * A versão de fix pack 17.0.0.3 do WebSphere Application Server Liberty agora é disponibilizada quando você fornece uma nova instância de serviço. Além da 17.0.0.3, a versão de fix pack 17.0.0.2 do WebSphere Application Server Liberty está disponível para fornecimento.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}
@@ -109,8 +109,8 @@ abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} 
 * Integrada a manutenção de serviços diversos.
 * WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}, de modo que o fix pack 8.5.5.12 ou 9.0.0.4 é instalado com as novas instâncias do WebSphere Application Server Tradicional.
 * WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}, de modo que o fix pack 17.0.0.2 é instalado com novas instâncias do WebSphere Application Server Liberty (Planos Core e ND).
-* Incluído um recurso [Gerenciamento de configuração de VPN avançado](networkEnvironment.html#advancedVPN){: new_window} que pode ser usado para criar e gerenciar várias configurações de VPN nas regiões de Londres e Sydney.
-* Aprimoramentos incluídos no recurso [Acesso à Internet pública](networkEnvironment.html#publicInternetAccess){: new_window} que permite que os clientes gerenciem melhor o seu endereço IP público.
+* Incluído um recurso [Gerenciamento de configuração de VPN avançado](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que pode ser usado para criar e gerenciar várias configurações de VPN nas regiões de Londres e Sydney.
+* Aprimoramentos incluídos no recurso [Acesso à Internet pública](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} que permite que os clientes gerenciem melhor o seu endereço IP público.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}
 abordadas no IBM SDK Java Technology Edition que afetam o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}
 incluindo:
@@ -131,7 +131,7 @@ inftrees.c.
 ## 25 de maio de 2017: WebSphere Application Server atualizado no {{site.data.keyword.Bluemix_notm}}
 
 * Integrada a manutenção de serviços diversos.
-* Incluído um recurso [Gerenciamento de configuração de VPN avançado](networkEnvironment.html#advancedVPN){: new_window} que pode ser usado para criar e gerenciar várias configurações de VPN na região de Frankfurt.
+* Incluído um recurso [Gerenciamento de configuração de VPN avançado](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que pode ser usado para criar e gerenciar várias configurações de VPN na região de Frankfurt.
 * Atualizado o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} de modo que o JDK 8 seja instalado com todas as novas instâncias do serviço.
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window}
 abordadas no WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
@@ -189,7 +189,7 @@ incluindo:
 
 ## 8 de novembro de 2016: WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} atualizado
 
-* Capacidade incluída para que os clientes solicitem um endereço [IP público](networkEnvironment.html#networkEnvironment) para sua VM do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}
+* Capacidade incluída para que os clientes solicitem um endereço [IP público](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) para sua VM do WebSphere Application Server no {{site.data.keyword.Bluemix_notm}}
 * [Várias vulnerabilidades de segurança](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window} abordadas que afetam o WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} incluindo:
   * Uma vulnerabilidade no IBM WebSphere Application Server que poderia permitir que invasores remotos executassem código Java arbitrário com um objeto serializado de fontes não confiáveis.
   * Uma vulnerabilidade de negação de serviço que é causada por uma leitura fora de limites na função TS_OBJ_print_bio. Um atacante remoto poderia explorar essa vulnerabilidade usando um arquivo de registro de data e hora categorizado para causar o travamento do aplicativo.
