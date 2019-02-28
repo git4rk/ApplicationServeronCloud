@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -67,7 +67,7 @@ OpenVPN è richiesto per accedere alle macchine virtuali WebSphere Application S
 1. Scarica il programma di installazione di Windows openVPN per la tua architettura di sistema dal sito web di openVPN:
   * Sistemi a 64 bit: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * Sistemi a 32 bit:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Assicurati di selezionare [Esegui come un amministratore Windows](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} e che openVPN sia installato.
+2. Assicurati di selezionare [Esegui come un amministratore Windows](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} e che openVPN sia installato.
 3. Scarica i file di configurazione VPN dal link di download OpenVPN dell'istanza WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} nel dashboard del servizio. Estrai tutti i quattro file contenuti nel file compresso nella directory `{OpenVPN home}\config`. Ad esempio:
 
   ```  
@@ -232,7 +232,7 @@ Se hai bisogno che il server web gestisca tutte le richieste dell'utente, potres
 
 **Prevenzione dei problemi:** prima di generare e propagare il plug-in, assicurati che le seguenti attività pre-requisite siano state completate.
 
-* Nel tuo ambiente Windows, Linux o MAC locale, assicurati che [openVPN](systemAccess.html#setup_openvpn) sia configurato, avviato e di essere collegato alla regione appropriata.
+* Nel tuo ambiente Windows, Linux o MAC locale, assicurati che [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) sia configurato, avviato e di essere collegato alla regione appropriata.
 * Dal dashboard del servizio WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}, fai clic su **Apri la console di gestione** e accedi con wsadmin e la password amministratore fornita nel dashboard del servizio.
 * Dalla Console di gestione, crea un server delle applicazioni (ad esempio, ***server1***), perché il Deployment Manager è federato con un nodo personalizzato vuoto.
 * Avvia il server che hai creato.

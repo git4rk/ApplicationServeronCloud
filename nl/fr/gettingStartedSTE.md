@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -21,7 +21,7 @@ lastupdated: "2018-11-20"
 
 Les environnements à service exclusif ne peuvent pas être créés via le catalogue {{site.data.keyword.Bluemix_notm}} et doivent être commandés en contact IBM Sales. Lorsque vous commandez votre environnement, vous pouvez choisir un environnement à service exclusif standard ou BYOL. Les environnements à service exclusif standard incluent toutes les licences d'infrastructure et WebSphere Application Server requises. Dans les environnements à service exclusif BYOL, vous pouvez utiliser des licences WebSphere Application Server distinctes.
 
-Pour commander un environnement à service exclusif, [contactez IBM Sales](reportingIssues.html#contacting-sales). L'équipe commerciale peut vous aider à installer et configurer un environnement adapté à vos besoins.
+Pour commander un environnement à service exclusif, [contactez IBM Sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales). L'équipe commerciale peut vous aider à installer et configurer un environnement adapté à vos besoins.
 
 ## Présentation de WebSphere Application Server dans un environnement à service exclusif {{site.data.keyword.Bluemix_notm}}
 {: #overviewSTE}
@@ -36,6 +36,6 @@ Figure 1. Architecture de WebSphere Application Server dans un environnement à 
 ## Gestion de l'organisation
 {: #organization_management}
 
-Le serveur WebSphere Application Server dans un environnement à service exclusif {{site.data.keyword.Bluemix_notm}} est configuré selon les spécifications indiquées dans votre commande. Si vous avez fourni dans cette dernière un ou plusieurs noms d'organisation {{site.data.keyword.Bluemix_notm}}, vous pouvez accéder à votre environnement dès maintenant. Si vous n'avez pas indiqué de noms d'organisation ou si voulez changer ce paramètre, ouvrez un [ticket de demande de service](reportingIssues.html#reporting_issues) pour **Services d'application** depuis la console {{site.data.keyword.Bluemix_notm}} de votre région. Vous pouvez trouver le nom de votre organisation dans la console {{site.data.keyword.Bluemix_notm}} en sélectionnant **Gérer > Compte > Organisations Cloud Foundry**.
+Le serveur WebSphere Application Server dans un environnement à service exclusif {{site.data.keyword.Bluemix_notm}} est configuré selon les spécifications indiquées dans votre commande. Si vous avez fourni dans cette dernière un ou plusieurs noms d'organisation {{site.data.keyword.Bluemix_notm}}, vous pouvez accéder à votre environnement dès maintenant. Si vous n'avez pas indiqué de noms d'organisation ou si voulez changer ce paramètre, ouvrez un [ticket de demande de service](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues) pour **Services d'application** depuis la console {{site.data.keyword.Bluemix_notm}} de votre région. Vous pouvez trouver le nom de votre organisation dans la console {{site.data.keyword.Bluemix_notm}} en sélectionnant **Gérer > Compte > Organisations Cloud Foundry**.
 
-**Remarque :** pour savoir comment accéder à votre environnement à service exclusif, voir la rubrique [Accès à l'environnement à service exclusif](singleTenantAccess.html#singleTenantEnvironment).
+**Remarque :** pour savoir comment accéder à votre environnement à service exclusif, voir la rubrique [Accès à l'environnement à service exclusif](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment).

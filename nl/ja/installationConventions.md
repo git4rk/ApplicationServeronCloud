@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-19"
 
 {{site.data.keyword.appserver_full}} 環境を管理していて、どのユーザーがこの環境を使用するか決定する必要がある場合、以下の概念を理解することが重要です。
 
- * 保守は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされている、[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} を使用して適用できます。 基礎のバイナリー・ファイルは `virtuser` (制限付き管理仮想ユーザー) としてインストールされているため、すべてのフィックスパックおよび暫定修正は `virtuser` としてインストールするようにしてください。
+ * 保守は、`/home/virtuser/IBM/Installation Manager` ディレクトリーにインストールされている、[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} を使用して適用できます。 基礎のバイナリー・ファイルは `virtuser` (制限付き管理仮想ユーザー) としてインストールされているため、すべてのフィックスパックおよび暫定修正は `virtuser` としてインストールするようにしてください。
 
  * ただし、コマンド・ラインからサーバーを始動および停止する場合、`virtuser` ではなく `wsadmin` (WebSphere 管理 ID) を使用する必要があります。
 

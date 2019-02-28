@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-19"
 
 如果您管理 {{site.data.keyword.appserver_full}} 環境，而且需要判斷要使用的使用者，請務必瞭解下列概念：
 
- * 使用 `/home/virtuser/IBM/Installation Manager` 目錄中所安裝的 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}，可以套用維護。因為是以 `virtuser`（有限管理虛擬使用者）身分安裝基礎二進位檔，所以請確定以 `virtuser` 身分安裝所有修正套件及臨時修正程式。
+ * 使用 `/home/virtuser/IBM/Installation Manager` 目錄中所安裝的 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window}，可以套用維護。因為是以 `virtuser`（有限管理虛擬使用者）身分安裝基礎二進位檔，所以請確定以 `virtuser` 身分安裝所有修正套件及臨時修正程式。
 
  * 不過，當您從指令行啟動及停止伺服器時，請務必使用 `wsadmin`（WebSphere 管理 ID），而非 `virtuser`。
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -66,7 +66,7 @@ OpenVPN ist für den Zugriff auf jeden WebSphere Application Server auf der virt
 1. Laden Sie den Windows Installer für openVPN für die jeweilige Systemarchitektur von der openVPN-Website herunter:
   * 64-Bit-Systeme: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32-Bit-Systeme: [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Stellen Sie sicher, dass Sie die [Ausführung als Windows-Administrator](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} durchführen und openVPN installiert ist.
+2. Stellen Sie sicher, dass Sie die [Ausführung als Windows-Administrator](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} durchführen und openVPN installiert ist.
 3. Laden Sie die VPN-Konfigurationsdateien über den OpenVPN-Download-Link für den WebSphere Application Server in der {{site.data.keyword.Bluemix_notm}}-Instanz im Service-Dashboard herunter. Extrahieren Sie alle vier Dateien aus der komprimierten Datei in das Verzeichnis `{OpenVPN-Ausgangsverzeichnis}\config`. Beispiel:
 
   ```  
@@ -161,7 +161,7 @@ Führen Sie die folgenden Anweisungen aus, um SSH-Zugriff auf den WebSphere Appl
 * Die Position des Liberty-Serverprofils ist `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
 * Die Basisproduktdateien für den klassischen WebSphere Application Server, die von allen Profilen gemeinsam genutzt werden, befinden sich in `/opt/IBM/WebSphere/AppServer/`.
 * Die Befehle für den klassischen WebSphere Application Server können über die Standardprofilposition in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` abgesetzt werden. Dabei gilt Folgendes:
-  * `<profile_type>` ist einer der Werte `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` oder `SecureProxySrv`. 
+  * `<profile_type>` ist einer der Werte `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` oder `SecureProxySrv`.
   * `<profile_number>` ist eine fortlaufende Nummer, die zur Erstellung eines eindeutigen Profilnamens verwendet wird.
 
 
@@ -219,7 +219,7 @@ Wenn der Web-Server alle Benutzeranforderungen verarbeiten soll, muss das Plug-i
 
 **Störungen vermeiden:** Stellen Sie sicher, dass die folgenden vorausgesetzten Tasks ausgeführt wurden, bevor Sie das Plug-in generieren und weitergeben.
 
-* Stellen Sie in einer lokalen Windows-, Linux- oder MAC-Umgebung sicher, dass [openVPN](systemAccess.html#setup_openvpn) konfiguriert und gestartet ist und Sie mit der entsprechenden Region verbunden sind.
+* Stellen Sie in einer lokalen Windows-, Linux- oder MAC-Umgebung sicher, dass [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) konfiguriert und gestartet ist und Sie mit der entsprechenden Region verbunden sind.
 * Klicken Sie im Service-Dashboard von WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} auf **Administrationskonsole öffnen** und melden Sie sich mit 'wsadmin' und dem im Service-Dashboard angegebenen Administratorkennwort an.
 * Erstellen Sie in der Administrationskonsole einen Anwendungsserver (z. B. ***server1***), da der Deployment Manager mit einem leeren angepassten Knoten föderiert wird.
 * Starten Sie den erstellten Server.

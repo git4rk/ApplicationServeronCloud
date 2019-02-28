@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -83,8 +83,8 @@ VPN 配置的作用域限定为您的组织和区域。有效期为一年，自�
 {: #publicIPports}
 
 公开公共 IP 的访问权时，IP 地址将与您的 VM 关联，网关的 80 和 443 端口将打开。但是，缺省情况下，Liberty Core 和传统 WebSphere Base 服务器不打开端口 80 和 443。而 IBM HTTP Server 在缺省情况下打开端口 80 和 443。因此，在使用公共 IP 时，您可能需要配置 Liberty Core 和传统 WebSphere Base 服务器来侦听端口 80 和 443 上的应用程序流量。
-* 要配置 Liberty Core 服务器，请参阅[为公共访问权配置 Liberty Core 服务器](networkEnvironment.html#configureLibertyForPublicAccess)。
-* 要配置传统 WebSphere Base 服务器，请按[配置传输链](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}中所述，添加 Web 容器传输链来侦听端口 80 和 443。
+* 要配置 Liberty Core 服务器，请参阅[为公共访问权配置 Liberty Core 服务器](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess)。
+* 要配置传统 WebSphere Base 服务器，请按[配置传输链](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}中所述，添加 Web 容器传输链来侦听端口 80 和 443。
 
 **应注意的问题：**对于特权用户（例如 **root** 用户），Linux 会保留小于 1024 的端口。但是，以**非 root** 用户身份运行传统 WebSphere Base 服务器是一种常见做法。因此，添加 Web 容器传输链时，请以 **root** 用户身份更改 **iptables** 配置。具体来说，是将受限端口 80 和 443 重定向到大于 1024 的其他端口，例如 9080 和 9443。以下命令提供了此过程的示例：
 
@@ -134,7 +134,7 @@ COMMIT
 
 您可以通过 VPN 连接到 VM 专用 IP 地址。Liberty 管理中心（9080、9443）、传统 WebSphere 管理控制台（9060、9043）、SSH (22) 以及 80 和 443 之外的其他端口均只能通过图 1 描述的 VPN 连接进行访问。有关将 Liberty 管理中心从应用程序端口分开的详细信息，请参阅样本 Liberty Core **server.xml** 和 **ibm-web-bnd.xml**。
 
-**应注意的问题：**对于 Liberty Core 和传统 WebSphere Base 服务器，供应 VM 时可以预配置防火墙端口。但是，对于 Deployment Manager 或 Collective 控制器与 IBM HTTP Server 并置的 Network Deployment 配置，您可能需要在防火墙上打开端口。请参阅[防火墙端口](systemAccess.html#firewall_ports)以获取详细信息。
+**应注意的问题：**对于 Liberty Core 和传统 WebSphere Base 服务器，供应 VM 时可以预配置防火墙端口。但是，对于 Deployment Manager 或 Collective 控制器与 IBM HTTP Server 并置的 Network Deployment 配置，您可能需要在防火墙上打开端口。请参阅[防火墙端口](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports)以获取详细信息。
 
 ## 针对公共 IP 访问配置 Liberty Core 服务器
 {: #configureLibertyForPublicAccess}

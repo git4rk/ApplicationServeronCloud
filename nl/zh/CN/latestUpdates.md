@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2019-01-16"
 
 达拉斯的区域前缀从 `ng` 更改为 `us-south`。其他区域前缀保持不变。REST API 端点 URL 从 `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` 更改为 `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`。`bluemix.net` URL 将持续受支持，但是如果使用 REST API 来管理服务实例，那么应该将 REST API 端点 URL 更改为使用 `websphereappsvr.cloud.ibm.com`。
 
-有关 REST API 端点 URL 的更多信息，请参阅[系统访问](systemAccess.html#system_access)。
+有关 REST API 端点 URL 的更多信息，请参阅[系统访问](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access)。
 
 ## 2018 年 12 月 14 日：更新了 {{site.data.keyword.Bluemix_notm}} 中的 WebSphere Application Server
 * 现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.10 修订包可用。除了 9.0.0.10 外，传统 WebSphere Application Server 的其他修订包（例如，9.0.0.9、8.5.5.14 和 8.5.5.13）也可用于供应。
@@ -28,7 +28,7 @@ lastupdated: "2019-01-16"
 
 ## 2018 年 10 月 24 日：自带许可证计费现可用于保留合同和单租户环境。
 
-如果您拥有现有 WebSphere Application Server 许可证，那么现在可以在保留合同或单租户环境中使用这些许可证。按自带许可证计费的环境提供与标准保留合同或单租户环境相同的功能，但是费率更低。要使用自带许可，请[联系 IBM 销售](reportingIssues.html#contacting-sales)。
+如果您拥有现有 WebSphere Application Server 许可证，那么现在可以在保留合同或单租户环境中使用这些许可证。按自带许可证计费的环境提供与标准保留合同或单租户环境相同的功能，但是费率更低。要使用自带许可，请[联系 IBM 销售](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)。
 
 ## 2018 年 8 月 22 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * 现在，在供应新服务实例时，传统 WebSphere Application Server 的 8.5.5.14 修订包可用。除了 8.5.5.14 外，传统 WebSphere Application Server 的其他修订包（例如，9.0.0.8、9.0.0.7 和 8.5.5.13）也可用于供应。
@@ -43,9 +43,9 @@ lastupdated: "2019-01-16"
 
 ## 2018 年 6 月 13 日：保留合同计费现在可用
 
-使用保留合同计费时，可以购买预付费的每月预订，以保证对以物理方式保留的计算资源块进行访问。这些服务块已保留供您专用，不能视为是可供其他任何 {{site.data.keyword.appserver_full}} 用户使用的容量。您可以在一个月内以所选的任何方式使用服务块小时数，并根据典型的现买现付预订模型对任何超额量进行收费。
+使用保留合同计费时，可以购买预付费的每月预订，以保证对以物理方式保留的计算资源块进行访问。这些服务块已保留供您专用，不能视为是可供其他任何 {{site.data.keyword.appserver_full}} 用户使用的容量。您可以在一个月内以所选的任何方式使用服务块小时数，并根据典型的现收现付预订模型对任何超额量进行收费。
 
-要了解有关保留合同计费的更多信息，请参阅[计费选项](index.html#billing-options)。
+要了解有关保留合同计费的更多信息，请参阅[计费选项](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options)。
 
 ## 2018 年 3 月 30 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -77,7 +77,7 @@ lastupdated: "2019-01-16"
 
 ## 2017 年 10 月 27 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* 添加了通过 {{site.data.keyword.Bluemix_notm}} 服务仪表板的“服务概要文件”选项卡或通过 REST API 来供应较旧修订包级别 [(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} 的功能。
+* 添加了通过 {{site.data.keyword.Bluemix_notm}} 服务仪表板的“服务概要文件”选项卡或通过 REST API 来供应较旧修订包级别 [(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} 的功能。
 *  现在，在供应新服务实例时，传统 WebSphere Application Server 的 9.0.0.5 修订包版本可用。除了 9.0.0.5 外，传统 WebSphere Application Server 的其他修订包版本（例如，9.0.0.4、8.5.5.12 和 8.5.5.11）也可用于供应。
 * 现在，在供应新服务实例时，WebSphere Application Server Liberty 的 17.0.0.3 修订包版本可用。除了 17.0.0.3 外，WebSphere Application Server Liberty 的 17.0.0.2 修订包版本也可用于供应。
 * 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}，包括：
@@ -99,8 +99,8 @@ lastupdated: "2019-01-16"
 * 集成了其他服务维护。
 * 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}，以便 FP8.5.5.12 或 FP9.0.0.4 可以随传统 WebSphere Application Server 的新实例一起安装。
 * 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}，以便 FP17.0.0.2 可以随 WebSphere Application Server Liberty（Core 和 ND 套餐）的新实例一起安装。
-* 添加了[高级 VPN 配置管理](networkEnvironment.html#advancedVPN){: new_window}功能，以允许在伦敦和悉尼区域中创建和管理多个 VPN 配置。
-* 向[公用因特网访问](networkEnvironment.html#publicInternetAccess){: new_window}功能添加了增强功能，以允许客户更好地管理其公共 IP 地址。
+* 添加了[高级 VPN 配置管理](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window}功能，以允许在伦敦和悉尼区域中创建和管理多个 VPN 配置。
+* 向[公用因特网访问](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window}功能添加了增强功能，以允许客户更好地管理其公共 IP 地址。
 * 解决了 IBM SDK Java Technology Edition 中影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}，包括：
   * Java SE AWT 组件的不明确漏洞，此漏洞可能允许未经认证的攻击者控制系统。
   * Java SE JCE 组件的不明确漏洞，此漏洞可能允许未经认证的攻击者控制系统。
@@ -116,7 +116,7 @@ lastupdated: "2019-01-16"
 ## 2017 年 5 月 25 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * 集成了其他服务维护。
-* 添加了[高级 VPN 配置管理](networkEnvironment.html#advancedVPN){: new_window}功能，以允许在法兰克福区域中创建和管理多个 VPN 配置。
+* 添加了[高级 VPN 配置管理](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window}功能，以允许在法兰克福区域中创建和管理多个 VPN 配置。
 * 升级了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}，以便 JDK 8 可以随服务的所有新实例一起安装。
 * 解决了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window}，包括：
   * WebSphere Application Server MQ JCA 资源适配器的潜在安全漏洞。
@@ -168,7 +168,7 @@ lastupdated: "2019-01-16"
 
 ## 2016 年 11 月 8 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* 已添加客户机为 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 请求[公共 IP](networkEnvironment.html#networkEnvironment) 地址的功能 
+* 已添加客户机为 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM 请求[公共 IP](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) 地址的功能 
 * 解决了影响 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 的[若干安全漏洞](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window}，包括：
   * IBM WebSphere Application Server 中可能允许远程攻击者使用不可信源的序列化对象执行任意 Java 代码的漏洞。
   * 由 TS_OBJ_print_bio 函数中的越界读取导致的拒绝服务漏洞。远程攻击者可能使用特制的时间戳记文件，利用此漏洞来导致应用程序崩溃。

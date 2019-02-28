@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -83,8 +83,8 @@ Facoltativamente, puoi gestire l'accesso a Internet pubblico dal dashboard del s
 {: #publicIPports}
 
 Quando apri l'accesso al tuo IP pubblico, l'indirizzo IP viene associato alla tua VM e le porte 80 e 443 vengono aperte al gateway. Tuttavia, per impostazione predefinita, i server Liberty Core e WebSphere Base tradizionale non aprono le porte 80 e 443. Al contrario, le porte 80 e 443 sono aperte per impostazione predefinita su IBM HTTP Server. Pertanto, potresti dover configurare i tuoi server Liberty Core e WebSphere Base tradizionale per ascoltare il traffico dell'applicazione sulla porta 80 e 443 quando utilizzi un IP pubblico.
-* Per configurare il tuo server Liberty Core, consulta [Configurare il server Liberty Core per l'accesso pubblico](networkEnvironment.html#configureLibertyForPublicAccess).
-* Per configurare il tuo server WebSphere Base tradizionale, aggiungi una catena di trasporto del contenitore web in ascolto sulla porta 80 e 443 come descritto in [Configurazione delle catene di trasporto](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
+* Per configurare il tuo server Liberty Core, consulta [Configurare il server Liberty Core per l'accesso pubblico](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess).
+* Per configurare il tuo server WebSphere Base tradizionale, aggiungi una catena di trasporto del contenitore web in ascolto sulla porta 80 e 443 come descritto in [Configurazione delle catene di trasporto](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}.
 
 **Prevenzione dei problemi:** Linux riserva le porte con un numero minore di 1024 per gli utenti privilegiati, come ad esempio **root**. Tuttavia, è prassi comune eseguire i server WebSphere Base tradizionali come utente **non root**. Pertanto, quando aggiungi una catena di trasporto del contenitore web, modifica la tua configurazione **iptables** come utente **root**. In particolare, reindirizza le porte limitate 80 e 443 a un'altra porta superiore a 1024, ad esempio 9080 e 9443. I seguenti comandi forniscono un esempio di questo processo:
 
@@ -134,7 +134,7 @@ COMMIT
 
 Collega il tuo indirizzo IP privato della VM tramite la connessione VPN. Liberty Admin Center (9080, 9443), la console di gestione WebSphere tradizionale (9060, 9043), SSH (22) e le porte diverse da 80 e 443 sono accessibili solo tramite la connessione VPN come rappresentato nella Figura 1. Consulta il Liberty Core di esempio **server.xml** e **ibm-web-bnd.xml** per i dettagli sulla separazione di Liberty Admin Center dalle tue porte dell'applicazione.
 
-**Prevenzione dei problemi:** per i server Liberty Core e WebSphere Base tradizionale, le porte del firewall sono pre-configurate quando esegui il provisioning della tua VM. Tuttavia, per le configurazioni di Network Deployment in cui il Deployment manager o il Controller collettivo viene collocato con IBM HTTP Server, potresti dover aprire le porte nel firewall. Consulta [Porte firewall](systemAccess.html#firewall_ports) per i dettagli.
+**Prevenzione dei problemi:** per i server Liberty Core e WebSphere Base tradizionale, le porte del firewall sono pre-configurate quando esegui il provisioning della tua VM. Tuttavia, per le configurazioni di Network Deployment in cui il Deployment manager o il Controller collettivo viene collocato con IBM HTTP Server, potresti dover aprire le porte nel firewall. Consulta [Porte firewall](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports) per i dettagli.
 
 ## Configurazione di un server Liberty Core per un accesso IP pubblico
 {: #configureLibertyForPublicAccess}

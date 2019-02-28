@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 
     **문제 예방:** 기본적으로 공용 환경이 표시될 수 있습니다. 올바른 환경 이름이 표시되면 사용자가 올바른 지역에 로그인했으며 Single Tenant Environment에 액세스가 허용된 조직의 구성원임을 알 수 있습니다.
 
-    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [도움 받기](reportingIssues.html){: new_window} 페이지에 설명된 대로 지원 티켓을 여십시오.
+    **참고:** 공용 환경 중 하나를 선택하면 시간당 요금이 부과될 수 있습니다. 따라서 Single Tenant Environment 이름이 표시되지 않으면 [도움 받기](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} 페이지에 설명된 대로 지원 티켓을 여십시오.
 
 9. 적절한 플랜을 선택하고 **작성**을 클릭하십시오.
 
@@ -67,10 +67,10 @@ lastupdated: "2018-11-19"
 
 Single Tenant Environment가 프로비저닝된 후 VPN 인증 정보를 다운로드하고 OpenVPN 연결을 설정할 수 있습니다. 자세한 정보는 다음 링크를 참조하십시오.
 
-* [VPN 액세스](networkEnvironment.html#vpnAccess){: new_window}
-* [OpenVPN 설정](systemAccess.html#setup_openvpn){: new_window}
+* [VPN 액세스](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [OpenVPN 설정](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Single Tenant Environment 관리
 {: #manageSTE}
 
-기존 Single Tenant Environment에 추가 용량을 추가하거나 다른 데이터 센터에서 용량을 주문하려면 미국 콜 센터, 지역 IBM 담당자 또는 IBM 비즈니스 파트너에게 문의하십시오. 세부사항은 [영업 담당자에게 문의](reportingIssues.html#contacting-sales)를 참조하십시오.
+기존 Single Tenant Environment에 추가 용량을 추가하거나 다른 데이터 센터에서 용량을 주문하려면 미국 콜 센터, 지역 IBM 담당자 또는 IBM 비즈니스 파트너에게 문의하십시오. 세부사항은 [영업 담당자에게 문의](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)를 참조하십시오.

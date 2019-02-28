@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -84,8 +84,8 @@ Internet en su WebSphere Application Server en la instancia de servicio de {{sit
 {: #publicIPports}
 
 Cuando abre el acceso a IP pública, la dirección IP se asocia a VM y se abren los puertos 80 y 443 en la pasarela. Sin embargo, de forma predeterminada, Liberty Core y los servidores WebSphere Base tradicionales no abren los puertos 80 y 443. Por el contrario, los puertos 80 y 443 se abren de forma predeterminada en IBM HTTP Server. Por lo tanto, es posible que tenga que configurar los servidores Liberty Core y WebSphere Base tradicional para el tráfico de las aplicaciones en el puerto 80 y 443 cuando utilice una IP pública.
-* Para configurar el servidor Liberty Core, consulte [Configuración de Liberty Core Server para el acceso público](networkEnvironment.html#configureLibertyForPublicAccess).
-* Para configurar el servidor WebSphere Base tradicional, añada una escucha de cadena de transporte de contenedor web en el puerto 80 y 443 tal como se describe en [Configuración de cadenas de transporte](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
+* Para configurar el servidor Liberty Core, consulte [Configuración de Liberty Core Server para el acceso público](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess).
+* Para configurar el servidor WebSphere Base tradicional, añada una escucha de cadena de transporte de contenedor web en el puerto 80 y 443 tal como se describe en [Configuración de cadenas de transporte](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}.
 
 **Evite problemas:** Linux reserva los puertos inferiores a 1024 para los usuarios con privilegios, como por ejemplo **root**. Sin embargo, es una práctica común ejecutar los servidores básicos de WebSphere Base como usuario **no root**. Por lo tanto, cuando añada una cadena de transporte de contenedor Web, cambie la configuración de **iptables** como usuario **root**. En concreto, redirija los puertos restringidos 80 y 443 a otro puerto por encima de 1024, como por ejemplo 9080 y 9443. Los mandatos siguientes contienen un ejemplo de este proceso:
 
@@ -135,7 +135,7 @@ COMMIT
 
 Se establece conexión con la dirección IP privada de VM a través de la conexión VPN. Solo se puede acceder a Liberty Admin Center (9080, 9443), a la consola de administración de WebSphere tradicional (9060, 9043), a SSH (22) y a los puertos que no son 80 ni 443 a través de la conexión VPN, tal como se muestra en la Figura 1. Consulte los archivos **server.xml** e **ibm-web-bnd.xml** de ejemplo de Liberty Core para ver detalles sobre cómo separar Liberty Admin Center de los puertos de la aplicación.
 
-**Evite problemas:** para los servidores Liberty Core y WebSphere Base tradicional, los puertos del cortafuegos están preconfigurados cuando se suministra VM. Sin embargo, para configuraciones de Network Deployment donde el gestor de despliegue o el controlador colectivo está situado junto a IBM HTTP Server, es posible que tenga que abrir los puertos en el cortafuegos. Consulte [Puertos del cortafuegos](systemAccess.html#firewall_ports) para ver detalles.
+**Evite problemas:** para los servidores Liberty Core y WebSphere Base tradicional, los puertos del cortafuegos están preconfigurados cuando se suministra VM. Sin embargo, para configuraciones de Network Deployment donde el gestor de despliegue o el controlador colectivo está situado junto a IBM HTTP Server, es posible que tenga que abrir los puertos en el cortafuegos. Consulte [Puertos del cortafuegos](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports) para ver detalles.
 
 ## Configuración de un servidor Liberty Core para un acceso de IP pública
 {: #configureLibertyForPublicAccess}

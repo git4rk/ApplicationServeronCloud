@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ lastupdated: "2018-11-19"
 
     **問題の回避:** デフォルトとしてパブリック環境が表示される場合があります。 正しい環境名を表示するには、正しい地域にログインしていること、およびシングル・テナント環境へのアクセスを許可された組織のメンバーであることが前提となります。
 
-    **注:** パブリック環境のいずれかを選択する場合、時間単位の料金がかかる場合があります。 したがって、シングル・テナント環境の名前が表示されない場合、[ヘルプの利用](reportingIssues.html){: new_window}ページの説明に従ってサポート・チケットをオープンします。
+    **注:** パブリック環境のいずれかを選択する場合、時間単位の料金がかかる場合があります。 したがって、シングル・テナント環境の名前が表示されない場合、[ヘルプの利用](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}ページの説明に従ってサポート・チケットをオープンします。
 
 9. 適切なプランを選択し、**「作成」**をクリックします。
 
@@ -67,10 +67,10 @@ lastupdated: "2018-11-19"
 
 シングル・テナント環境がプロビジョンされた後、VPN 資格情報をダウンロードして OpenVPN 接続を確立できます。 詳しくは、以下のリンクを参照してください。
 
-* [VPN アクセス](networkEnvironment.html#vpnAccess){: new_window}
-* [OpenVPN のセットアップ](systemAccess.html#setup_openvpn){: new_window}
+* [VPN アクセス](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [OpenVPN のセットアップ](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## シングル・テナント環境の管理
 {: #manageSTE}
 
-既存のシングル・テナント環境に容量を追加するには、または別のデータ・センターで容量をオーダーするには、米国コール・センター、地方の IBM 担当員、または IBM ビジネス・パートナーにお問い合わせください。 詳細については、[営業担当員へのお問い合わせ](reportingIssues.html#contacting-sales)を参照してください。
+既存のシングル・テナント環境に容量を追加するには、または別のデータ・センターで容量をオーダーするには、米国コール・センター、地方の IBM 担当員、または IBM ビジネス・パートナーにお問い合わせください。 詳細については、[営業担当員へのお問い合わせ](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)を参照してください。

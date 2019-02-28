@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -67,7 +67,7 @@ O OpenVPN é necessário para acesso a qualquer WebSphere Application Server na 
   * Sistemas de 64 bits:  [ openvpn-install-2.3.4-I001-x86_64.exe ](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * Sistemas de 32 bits:
 [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Assegure-se de [executar como um Administrador do Windows](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window} e que o openVPN esteja instalado.
+2. Assegure-se de [executar como um Administrador do Windows](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} e que o openVPN esteja instalado.
 3. Faça download dos arquivos de configuração VPN do link de download do OpenVPN do WebSphere Application Server na
 instância do {{site.data.keyword.Bluemix_notm}} no painel de serviço. Extraia os quatro arquivos no arquivo compactado para o diretório `{OpenVPN home}\config`. Por exemplo:
 
@@ -233,7 +233,7 @@ Se o servidor da web for necessário para manipular todas as solicitações do u
 
 **Evite problemas:** antes de gerar e propagar o plug-in, assegure-se de que as tarefas de pré-requisito a seguir sejam concluídas.
 
-* Em seu ambiente Windows, Linux ou MAC local, assegure-se de que a [openVPN](systemAccess.html#setup_openvpn) esteja configurada, iniciada e que você esteja conectado à região adequada.
+* Em seu ambiente Windows, Linux ou MAC local, assegure-se de que a [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) esteja configurada, iniciada e que você esteja conectado à região adequada.
 * No WebSphere Application Server no painel de serviço do {{site.data.keyword.Bluemix_notm}}, clique em **Abrir o console administrativo** e efetue login com wsadmin e a Senha de Administrador que é fornecida no painel de serviço.
 * No console administrativo, crie um servidor de aplicativos (por exemplo, ***server1***), porque o Deployment Manager é federado com um nó customizado vazio.
 * Inicie o servidor que você criou.

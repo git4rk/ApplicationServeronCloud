@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -86,7 +86,7 @@ lastupdated: "2018-12-13"
 ### Installation Manager를 사용하여 업데이트
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}는 `/home/virtuser/IBM/Installation Manager` 디렉토리에 설치되어 있으며 이를 직접 실행하여 수정사항과 수정팩을 적용할 수 있습니다.
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window}는 `/home/virtuser/IBM/Installation Manager` 디렉토리에 설치되어 있으며 이를 직접 실행하여 수정사항과 수정팩을 적용할 수 있습니다.
 
 **문제 예방:** 기본 바이너리 파일이 제한된 관리 가상 사용자인 `virtuser`로 설치되기 때문에 Installation Manager는 항상 `virtuser`로 실행되어야 합니다.
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2018-11-19"
 
 {{site.data.keyword.appserver_full}} 환경을 관리하고 사용할 사용자를 판별해야 하는 경우 다음 개념을 이해하는 것이 중요합니다.
 
- * `/home/virtuser/IBM/Installation Manager` 디렉토리에 설치된 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window}를 사용하여 유지보수를 적용할 수 있습니다. 기본 바이너리 파일이 제한된 관리 가상 사용자인 `virtuser`로 설치되므로 모든 수정팩과 임시 수정사항이 `virtuser`로 설치됩니다.
+ * `/home/virtuser/IBM/Installation Manager` 디렉토리에 설치된 [Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window}를 사용하여 유지보수를 적용할 수 있습니다. 기본 바이너리 파일이 제한된 관리 가상 사용자인 `virtuser`로 설치되므로 모든 수정팩과 임시 수정사항이 `virtuser`로 설치됩니다.
 
  * 그러나 명령행에서 서버를 시작하고 중지할 때는 `virtuser`가 아닌 WebSphere Administrative ID인 `wsadmin`을 사용해야 합니다.
 

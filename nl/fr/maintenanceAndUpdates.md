@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -86,7 +86,7 @@ Installe tous les groupes de correctifs disponibles puis tous les correctifs tem
 ### Mise à jour en utilisant Installation Manager
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} est installé dans le répertoire `/home/virtuser/IBM/Installation Manager` et peut être exécuté directement pour appliquer les correctifs et groupes de correctifs.
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} est installé dans le répertoire `/home/virtuser/IBM/Installation Manager` et peut être exécuté directement pour appliquer les correctifs et groupes de correctifs.
 
 **Evitez les problèmes : ** puisque les fichiers binaires sous-jacents sont installés en tant que `virtuser` (utilisateur administrateur virtuel, doté de droits limités), assurez-vous qu'Installation Manager est toujours exécuté en tant que `virtuser`.
 

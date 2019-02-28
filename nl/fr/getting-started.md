@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ Avec {{site.data.keyword.appserver_full}}, vous pouvez définir un environnement
 ## Avant de commencer
 {: #prereqs}
 
-Si vous voulez un environnement disposant de plus de ressources de machines virtuelles dédiées, de type contrat de réservation ou environnement à service exclusif, contactez IBM Sales avant de créer le service. Découvrez ces options plus en détail dans la rubrique [A propos](index.html).
+Si vous voulez un environnement disposant de plus de ressources de machines virtuelles dédiées, de type contrat de réservation ou environnement à service exclusif, contactez IBM Sales avant de créer le service. Découvrez ces options plus en détail dans la rubrique [A propos](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migration d'un environnement WebSphere existant
 
@@ -66,7 +66,7 @@ Pour le plan Network Deployment, choisissez le profil et l'architecture pour vot
 ## Etape 3 : dimensionnement de vos machines virtuelles
 {: #vm_sizing}
 
-Vous pouvez dimensionner la machine virtuelle individuellement pour chaque composant de votre environnement. Les machines virtuelle sont mémorisées en blocs de ressources de [taille standard](index.html#vm-size).
+Vous pouvez dimensionner la machine virtuelle individuellement pour chaque composant de votre environnement. Les machines virtuelle sont mémorisées en blocs de ressources de [taille standard](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size).
 
 Cliquez sur l'onglet pour le composant (serveur, gestionnaire de déploiement ou noeud d'application, par exemple) et sélectionnez la taille standard pour la machine virtuelle.
 
@@ -75,11 +75,11 @@ Cliquez sur l'onglet pour le composant (serveur, gestionnaire de déploiement ou
 
 Vérifiez les informations figurant dans le récapitulatif de la configuration du service, dont la durée estimée pour la mise à disposition.
 
-**Contrat de réservation :** assurez-vous que l'option **Facturation** est définie sur _Contrat de réservation_. Si l'option n'est pas visible, assurez-vous que le nom de [votre organisation](../../account/orgs_spaces.html){:new_window} est exactement le même, casse et espaces blancs compris, que le nom d'organisation pour votre contrat. Si vous mettez à disposition le service sans sélectionner la facturation avec contrat de réservation, la facturation Paiement à la carte est utilisée.
+**Contrat de réservation :** assurez-vous que l'option **Facturation** est définie sur _Contrat de réservation_. Si l'option n'est pas visible, assurez-vous que le nom de [votre organisation](/docs/account?topic=account-orgsspacesusers){:new_window} est exactement le même, casse et espaces blancs compris, que le nom d'organisation pour votre contrat. Si vous mettez à disposition le service sans sélectionner la facturation avec contrat de réservation, la facturation Paiement à la carte est utilisée.
 
 Cliquez sur **Mettre à disposition** pour configurer votre environnement {{site.data.keyword.appserver_short}}.
 
 ## Etapes suivantes
 {: #anchor_value}
 
-Découvrez comment accéder à votre nouvel environnement {{site.data.keyword.appserver_short}} et à le gérer, dans la rubrique [Accès au système](systemAccess.html).
+Découvrez comment accéder à votre nouvel environnement {{site.data.keyword.appserver_short}} et à le gérer, dans la rubrique [Accès au système](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).

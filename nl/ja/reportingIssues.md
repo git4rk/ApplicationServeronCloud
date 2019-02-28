@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-02"
+  years: 2017, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -19,10 +19,10 @@ lastupdated: "2018-05-02"
 
 {{site.data.keyword.appserver_full}} で問題が発生した場合は、以下のいずれかの方法で支援を受けることができます。
 
-* [「IBM Cloud Public サポートへのお問い合わせ」](/docs/support/index.html#contacting-support)ページに示されているプロセスに従って、サポート・チケットをオープンする。
-* [IBM Cloud サポート](https://developer.ibm.com/bluemix/support/){: new_window}のいずれかのパブリック・フォーラムで質問する。 フォーラムは頻繁にモニターされます。
+* [「IBM Cloud Public サポートへのお問い合わせ」](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)ページに示されているプロセスに従って、サポート・チケットをオープンする。
+* [IBM Cloud サポート](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window}のいずれかのパブリック・フォーラムで質問する。 フォーラムは頻繁にモニターされます。
 
-  **注**: より良いサポートが得られるように、投稿には `ibm-was-oc` および `bluemix` のタグを含めてください。
+  **注**: より良いサポートが得られるように、投稿には `ibm-was-oc` タグを含めてください。
 
 ## 営業担当員へのお問い合わせ
 {:#contacting-sales}

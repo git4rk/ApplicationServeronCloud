@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -29,7 +29,7 @@ Swagger 2.0 準拠 REST API を使用して、クライアントはポータル�
 
 **注:** サービス・インスタンスを作成した後、作成された T シャツ・サイズによっては、サービスがすぐに使用可能状態にならないことがあります。 戻された JSON の **Status** フィールドを照会してサービス・インスタンスの現在の状態を判別することをお勧めします。
 
-**注:** [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}で参照されている **apiEndpoint** URL は、ダラス地域を指しています。他の地域を使用する場合は、アプリケーションで適切な **apiEndpoint** を参照するようにしてください。
+**注:** [REST API のサンプル](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}で参照されている **apiEndpoint** URL は、ダラス地域を指しています。 他の地域を使用する場合は、アプリケーションで適切な **apiEndpoint** を参照するようにしてください。
 
 *表 1. REST API 実装の API エンドポイント URL*
 
@@ -67,7 +67,7 @@ Swagger 2.0 準拠 REST API を使用して、クライアントはポータル�
 1. openVPN Web サイトから、ご使用のシステム・アーキテクチャー用の openVPN Windows インストーラーをダウンロードします。
   * 64 ビット・システム: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32 ビット・システム: [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. 必ず、[Windows 管理者として実行](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window}し、OpenVPN をインストールしてください。
+2. 必ず、[Windows 管理者として実行](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window}し、OpenVPN をインストールしてください。
 3. サービス・ダッシュボードで、WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} インスタンスの OpenVPN ダウンロード・リンクから VPN 構成ファイルをダウンロードします。 圧縮ファイル内の 4 ファイルすべてを、`{OpenVPN
 home}\config` ディレクトリーに解凍します。 例:
 
@@ -223,7 +223,7 @@ Web サーバーですべてのユーザー要求を処理する必要がある�
 
 **問題の回避:** プラグインの生成と伝搬を行う前に、以下の前提条件タスクが完了していることを確認してください。
 
-* ローカルの Windows、Linux、または MAC 環境で、[openVPN](systemAccess.html#setup_openvpn) が構成済みで開始済みであり、適切な領域への接続が確立されていることを確認します。
+* ローカルの Windows、Linux、または MAC 環境で、[openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) が構成済みで開始済みであり、適切な領域への接続が確立されていることを確認します。
 * WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} のサービス・ダッシュボードから**管理コンソールを開き**、サービス・ダッシュボードで提供される wsadmin および管理パスワードでログインします。
 * Deployment Manager は空のカスタム・ノードと統合されるため、管理コンソールからアプリケーション・サーバー (例えば ***server1*** など) を作成します。
 * 作成したサーバーを始動します。

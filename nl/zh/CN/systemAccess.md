@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -65,7 +65,7 @@ lastupdated: "2019-01-16"
 1. 从 openVPN Web 站点下载适用于您的系统体系结构的 openVPN Windows 安装程序：
   * 64 位系统：[openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32 位系统：[openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. 确保[以 Windows 管理员身份运行](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window}且已安装 openVPN。
+2. 确保[以 Windows 管理员身份运行](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window}且已安装 openVPN。
 3. 在服务仪表板中，通过 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 实例的 OpenVPN 下载链接来下载 VPN 配置文件。将压缩文件中的全部 4 个文件解压缩到 `{OpenVPN home}\config` 目录。例如：
 
   ```  
@@ -218,7 +218,7 @@ OpenSSH_6.6p1, OpenSSL 1.0.1g 7 Apr 2014
 
 **应注意的问题：**在生成和传播插件之前，请确保完成以下先决条件任务。
 
-* 在本地 Windows、Linux 或 MAC 环境下，确保已配置 [openVPN](systemAccess.html#setup_openvpn) 并启动，并且您已经连接到相应的区域。
+* 在本地 Windows、Linux 或 MAC 环境下，确保已配置 [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) 并启动，并且您已经连接到相应的区域。
 * 在 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服务仪表板上，单击**打开管理控制台**，然后使用 wsadmin 和服务仪表板中提供的管理密码进行登录。
 * 在管理控制台中，创建应用程序服务器（例如，***server1****），因为 Deployment Manager 与空的定制节点联合。
 * 启动所创建的服务器。

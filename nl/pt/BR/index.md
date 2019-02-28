@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -23,7 +23,7 @@ O {{site.data.keyword.appserver_full}} facilita a configuração rápida em uma 
 O WebSphere Application Server no {{site.data.keyword.Bluemix_notm}} fornece aos consumidores os servidores pré-configurados do WebSphere tradicional e do Liberty. Ele é hospedado em convidados da máquina
 virtual com acesso raiz para o sistema operacional guest. Quando você estiver criando seu serviço, escolha entre _Liberty_, _Traditional ND_ ou _Traditional WebSphere_.
 
-**Nota: ** os consumidores agora podem escolher entre o nível de fix pack atual ou uma versão mais antiga [(n ou n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} ao criar qualquer WebSphere Application Server na instância do {{site.data.keyword.Bluemix_notm}}.
+**Nota: ** os consumidores agora podem escolher entre o nível de fix pack atual ou uma versão mais antiga [(n ou n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} ao criar qualquer WebSphere Application Server na instância do {{site.data.keyword.Bluemix_notm}}.
 
 Você recebe uma experiência de administração do WebSphere familiar e tem acesso completo
 ao sistema operacional subjacente. É possível reutilizar seus scripts existentes e fazer pequenos ajustes de sistema
@@ -118,7 +118,7 @@ A tabela a seguir lista o preço total por hora para cada tamanho de máquina vi
 {:#reserve-contract}
 
 Com o faturamento do contrato de reserva, você compra uma assinatura mensal pré-paga que garante o acesso a blocos de recursos
-computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para qualquer outro WebSphere Application Server em usuários do {{site.data.keyword.Bluemix_notm}}. Se você tem licenças existentes do WebSphere Application Server, é possível usá-las ao escolher um contrato de reserva com sua própria licença, que tem uma taxa de faturamento reduzida. Para configurar o faturamento do contrato de reserva, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+computacionais fisicamente reservados. Esses blocos de serviço são reservados para o seu uso exclusivo e não podem ser considerados como capacidade disponível para qualquer outro WebSphere Application Server em usuários do {{site.data.keyword.Bluemix_notm}}. Se você tem licenças existentes do WebSphere Application Server, é possível usá-las ao escolher um contrato de reserva com sua própria licença, que tem uma taxa de faturamento reduzida. Para configurar o faturamento do contrato de reserva, [entre em contato com Vendas IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 Assinaturas estão disponíveis em incrementos de 8 blocos. As horas de bloco totais são baseadas no número de horas no mês, mas
 é possível usar as horas de bloco a qualquer momento durante o mês. Por exemplo, um mês de 30 dias tem 720 horas que, quando multiplicadas por uma assinatura de 8 blocos, resulta em um total de 5.760 horas de bloco.
@@ -144,7 +144,7 @@ Os blocos do modelo pré-pago não são de capacidade reservada e vêm de um con
 Os blocos em faturamento de contrato de reserva são baseados no plano do WebSphere Application Server Network Deployment, mas
 também é possível usar os blocos para outros planos. Com outros planos, o uso é rateado de forma que uma hora de bloco seja reduzida pela taxa de rateio do plano quando ela é refletida em suas horas de bloco do contrato de reserva restantes.
 
-A tabela a seguir mostra as taxas de rateio para cada plano e o preço efetivo por hora de bloco real após o cálculo do rateio. Para preços atuais em sua região, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales).
+A tabela a seguir mostra as taxas de rateio para cada plano e o preço efetivo por hora de bloco real após o cálculo do rateio. Para preços atuais em sua região, [entre em contato com Vendas IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Plano | Taxa de precificação | Preço / hora após rateio |
 |:-------:|:------:|:------:|

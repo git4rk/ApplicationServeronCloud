@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2019-01-16"
 
 댈러스의 지역 접두부가 `ng`에서 `us-south`로 변경되었습니다. 다른 지역 접두부는 동일하게 유지됩니다. REST API 엔드포인트 URL이 `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api`에서 `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`로 변경되었습니다. `bluemix.net` URL은 계속 지원되지만 REST API를 사용하여 서비스 인스턴스를 관리하는 경우 `websphereappsvr.cloud.ibm.com`을 사용하도록 REST API 엔드포인트 URL을 변경해야 합니다.
 
-REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스](systemAccess.html#system_access)를 참조하십시오.
+REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access)를 참조하십시오.
 
 ## 2018년 12월 14일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.10 수정팩을 사용할 수 있습니다. 9.0.0.10 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.9, 8.5.5.14, 8.5.5.13)도 프로비저닝에 사용할 수 있습다.
@@ -28,7 +28,7 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 
 ## 2018년 10월 24일: 현재 예비 계약 및 Single Tenant Environment에 대한 BYOL(Bring-Your-Own-License) 청구 사용 가능
 
-이제 기존 WebSphere Application Server 라이센스가 있는 경우 예비 계약 또는 Single Tenant Environment에서 이 라이센스를 사용할 수 있습니다. BYOL(Bring-Your-Own-License) 청구를 포함하는 환경은 표준 예비 계약 또는 Single Tenant Environment와 동일한 혜택을 제공하지만, 더 저렴한 비용이 청구됩니다. BYOL(Bring-Your-Own-License)을 사용하려면 [IBM 영업 담당자에게 문의](reportingIssues.html#contacting-sales)하십시오.
+이제 기존 WebSphere Application Server 라이센스가 있는 경우 예비 계약 또는 Single Tenant Environment에서 이 라이센스를 사용할 수 있습니다. BYOL(Bring-Your-Own-License) 청구를 포함하는 환경은 표준 예비 계약 또는 Single Tenant Environment와 동일한 혜택을 제공하지만, 더 저렴한 비용이 청구됩니다. BYOL(Bring-Your-Own-License)을 사용하려면 [IBM 영업 담당자에게 문의](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales)하십시오.
 
 ## 2018년 8월 22일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 8.5.5.14 수정팩을 사용할 수 있습니다. 8.5.5.14 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.8, 9.0.0.7, 8.5.5.13)도 프로비저닝에 사용할 수 있습니다.
@@ -45,7 +45,7 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 
 예비 계약 비용 청구를 사용하는 경우 물리적으로 예약된 컴퓨팅 리소스 블록에 액세스하도록 보장하는 선불 월별 구독을 구매합니다. 이러한 서비스 블록은 독점 사용을 위해 따로 설정되고 다른 {{site.data.keyword.appserver_full}} 사용자가 사용할 수 있는 용량으로 인식되지 않습니다. 월 중에 선택한 어느 방식으로든 서비스 블록 시간을 사용할 수 있습니다. 이 때 초과분 요금은 일반 종량과금제 구독 모델에 따라 부과됩니다.
 
-예비 계약 비용 청구에 대해 자세히 알아보려면 [비용 청구 옵션](index.html#billing-options)을 참조하십시오.
+예비 계약 비용 청구에 대해 자세히 알아보려면 [비용 청구 옵션](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options)을 참조하십시오.
 
 ## 2018년 3월 30일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
@@ -77,7 +77,7 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 
 ## 2017년 10월 27일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
-* {{site.data.keyword.Bluemix_notm}} 서비스 대시보드의 서비스 프로파일 탭 또는 REST API를 통해 이전 수정팩 레벨[(n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window}을 프로비저닝하는 기능이 추가되었습니다.
+* {{site.data.keyword.Bluemix_notm}} 서비스 대시보드의 서비스 프로파일 탭 또는 REST API를 통해 이전 수정팩 레벨[(n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window}을 프로비저닝하는 기능이 추가되었습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.5 수정팩 버전을 사용할 수 있습니다. 9.0.0.5 외에 Traditional WebSphere Application Server의 다른 수정팩 버전(예: 9.0.0.4, 8.5.5.12, 8.5.5.11)도 프로비저닝에 사용할 수 있습니다.
 * 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 17.0.0.3 수정팩 버전을 사용할 수 있습니다. 17.0.0.3 외에 WebSphere Application Server Liberty의 17.0.0.2 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg22010172){: new_window}이 해결되었습니다.
@@ -99,8 +99,8 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 * 기타 서비스 유지보수 통합.
 * 수정팩 8.5.5.12 또는 9.0.0.4가 Traditional WebSphere Application Server의 새 인스턴스에서 설치되도록 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 업그레이드되었습니다.
 * 수정팩 17.0.0.2가 WebSphere Application Server Liberty(Core 및 ND 플랜)의 새 인스턴스에서 설치되도록 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 업그레이드되었습니다.
-* 런던 또는 시드니 지역에서 여러 VPN 구성을 작성하고 관리하는 데 사용할 수 있는 [고급 VPN 구성 관리](networkEnvironment.html#advancedVPN){: new_window} 기능이 추가되었습니다.
-* 클라이언트가 공인 IP 주소를 보다 잘 관리할 수 있는 [공용 인터넷 액세스](networkEnvironment.html#publicInternetAccess){: new_window} 기능에 대한 개선사항이 추가되었습니다.
+* 런던 또는 시드니 지역에서 여러 VPN 구성을 작성하고 관리하는 데 사용할 수 있는 [고급 VPN 구성 관리](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} 기능이 추가되었습니다.
+* 클라이언트가 공인 IP 주소를 보다 잘 관리할 수 있는 [공용 인터넷 액세스](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} 기능에 대한 개선사항이 추가되었습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}에 영향을 주는 IBM SDK Java Technology Edition의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg22002169){: new_window}이 해결되었습니다.
   * 인증되지 않은 공격자가 시스템을 제어할 수 있는 Java SE AWT 컴포넌트에 대한 불특정 취약성.
   * 인증되지 않은 공격자가 시스템을 제어할 수 있는 Java SE JCE 컴포넌트에 대한 불특정 취약성.
@@ -116,7 +116,7 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 ## 2017년 5월 25일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
 * 기타 서비스 유지보수 통합.
-* 프랑크푸르트 지역에서 여러 VPN 구성을 작성하고 관리하는 데 사용할 수 있는 [고급 VPN 구성 관리](networkEnvironment.html#advancedVPN){: new_window} 기능이 추가되었습니다.
+* 프랑크푸르트 지역에서 여러 VPN 구성을 작성하고 관리하는 데 사용할 수 있는 [고급 VPN 구성 관리](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} 기능이 추가되었습니다.
 * JDK 8이 서비스의 모든 새 인스턴스에서 설치되도록 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}가 업그레이드되었습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}의 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window}이 해결되었습니다.
   * WebSphere Application Server MQ JCA Resource 어댑터에 대한 잠재적 보안 취약성.
@@ -168,7 +168,7 @@ REST API 엔드포인트 URL에 대한 자세한 정보는 [시스템 액세스]
 
 ## 2016년 11월 8일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
 
-* 클라이언트가 해당 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 대해 [공인 IP](networkEnvironment.html#networkEnvironment) 주소를 요청할 수 있는 기능이 추가되었습니다.
+* 클라이언트가 해당 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM에 대해 [공인 IP](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) 주소를 요청할 수 있는 기능이 추가되었습니다.
 * 다음을 포함하여 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}에 영향을 주는 [여러 보안 취약점](http://www-01.ibm.com/support/docview.wss?uid=swg21993842){: new_window}이 해결되었습니다.
   * 신뢰할 수 없는 소스에서 직렬화된 오브젝트로 원격 공격자가 임의 Java 코드를 실행하도록 허용할 수 있는 IBM WebSphere Application Server의 취약성.
   * TS_OBJ_print_bio 기능의 out-of-bounds 읽기에 의해 발생된 서비스 거부(Dos) 취약성. 원격 공격자는 애플리케이션이 충돌하도록 특별하게 만들어진 시간소인 파일을 사용하여 이 취약성을 활용할 수 있습니다.

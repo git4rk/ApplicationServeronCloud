@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-11-19"
+  years: 2018, 2019
+lastupdated: "2019-02-18"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-11-19"
 ## 시작하기 전에
 {: #prereqs}
 
-예비 계약 또는 Single Tenant Environment와 같은 더 많은 전용 가상 머신 리소스가 있는 환경을 원하는 경우 서비스를 작성하기 전에 IBM 영업 담당자에게 문의하십시오. [정보](index.html)에서 이러한 옵션을 자세히 알아보십시오.
+예비 계약 또는 Single Tenant Environment와 같은 더 많은 전용 가상 머신 리소스가 있는 환경을 원하는 경우 서비스를 작성하기 전에 IBM 영업 담당자에게 문의하십시오. [정보](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about)에서 이러한 옵션을 자세히 알아보십시오.
 
 ### 기존 WebSphere 환경 마이그레이션
 
@@ -66,7 +66,7 @@ Network Deployment 플랜의 경우 사용자 환경의 프로파일과 아키�
 ## 3단계: 가상 머신 크기 조정
 {: #vm_sizing}
 
-환경의 각 컴포넌트에 대한 가상 머신의 크기를 개별적으로 조정할 수 있습니다. 가상 머신은 [티셔츠 크기](index.html#vm-size)의 리소스 블록으로 분할됩니다.
+환경의 각 컴포넌트에 대한 가상 머신의 크기를 개별적으로 조정할 수 있습니다. 가상 머신은 [티셔츠 크기](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size)의 리소스 블록으로 분할됩니다.
 
 서버, 배치 관리자 또는 애플리케이션 노드와 같은 컴포넌트의 탭을 클릭하고 가상 머신의 티셔츠 크기를 선택하십시오.
 
@@ -75,11 +75,11 @@ Network Deployment 플랜의 경우 사용자 환경의 프로파일과 아키�
 
 서비스 구성 요약에서 프로비저닝하는 데 걸리는 예상 시간 등의 세부사항을 검토하십시오.
 
-**예비 계약:** **청구** 옵션이 _예비 계약_으로 설정되었는지 확인하십시오. 옵션이 나타나지 않으면 [사용자 조직](../../account/orgs_spaces.html){:new_window}이 계약의 조직 이름과 대소문자 및 공백을 포함하여 정확히 동일한지 확인하십시오. 예비 계약 청구를 선택하지 않고 서비스를 프로비저닝하는 경우 종량과금제 청구를 사용합니다.
+**예비 계약:** **청구** 옵션이 _예비 계약_으로 설정되었는지 확인하십시오. 옵션이 나타나지 않으면 [사용자 조직](/docs/account?topic=account-orgsspacesusers){:new_window}이 계약의 조직 이름과 대소문자 및 공백을 포함하여 정확히 동일한지 확인하십시오. 예비 계약 청구를 선택하지 않고 서비스를 프로비저닝하는 경우 종량과금제 청구를 사용합니다.
 
 **프로비저닝**을 클릭하여 {{site.data.keyword.appserver_short}} 환경을 설정하십시오.
 
 ## 다음 단계
 {: #anchor_value}
 
-[시스템 액세스](systemAccess.html)에서 새 {{site.data.keyword.appserver_short}} 환경에 액세스하고 환경을 관리하는 방법에 대해 알아봅니다.
+[시스템 액세스](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access)에서 새 {{site.data.keyword.appserver_short}} 환경에 액세스하고 환경을 관리하는 방법에 대해 알아봅니다.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ In den meisten Fällen benötigen Sie nur eine einzelne VPN-Konfiguration, die S
 
 Wenn Ihre VPN-Konfigurationen beeinträchtigt oder abgelaufen sind, können Sie VPN-Konfigurationen über die Seite für die erweiterte VPN-Verwaltung widerrufen. Zu Auditzwecken können Sie über die Seite für die erweiterte VPN-Verwaltung auch ein Verlaufsprotokoll der gesamten VPN-Verwaltungsaktivitäten anzeigen und zuvor erstellte, aktive VPN-Konfigurationen herunterladen.
 
-Alle Features, die über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verfügbar sind, können auch scriptgesteuert mit den REST-APIs ausgeführt werden. Weitere Informationen finen Sie in der {{site.data.keyword.Bluemix_notm}} [REST-API-Dokumentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} zu WebSphere Application Server. 
+Alle Features, die über das Service-Dashboard in der {{site.data.keyword.Bluemix_notm}}-Benutzerschnittstelle verfügbar sind, können auch scriptgesteuert mit den REST-APIs ausgeführt werden. Weitere Informationen finen Sie in der {{site.data.keyword.Bluemix_notm}} [REST-API-Dokumentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window} zu WebSphere Application Server.
 
 
 ## Zugriff auf das öffentliche Internet
@@ -83,8 +83,8 @@ Sie können den Zugriff auf das öffentliche Internet wahlweise über das Servic
 {: #publicIPports}
 
 Wenn Sie den Zugriff auf die öffentliche IP öffnen, wird die IP-Adresse der VM zugeordnet, und die Ports 80 und 443 werden am Gateway geöffnet. Die Ports 80 und 443 werden von Servern mit Liberty Core und Servern mit klassischem WebSphere Base jedoch nicht standardmäßig geöffnet. Im IBM HTTP Server werden diese Ports dagegen standardmäßig geöffnet. Deshalb müssen Sie Server mit Liberty Core und Server mit klassischem WebSphere Base bei der Verwendung einer öffentlichen IP-Adresse möglicherweise so konfigurieren, dass sie an Port 80 und 443 für Anwendungsdatenverkehr empfangsbereit sind.
-* Informationen zur Konfiguration des Liberty Core-Servers finden Sie in [Liberty Core-Server für öffentlichen Zugriff konfigurieren](networkEnvironment.html#configureLibertyForPublicAccess).
-* Fügen Sie zum Konfigurieren des Servers mit klassischem WebSphere Base eine Web-Container-Transportkette hinzu, die an Port 80 und 443 empfangsbereit ist. Weitere Informationen hierzu finden Sie in [Transportketten konfigurieren](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window}.
+* Informationen zur Konfiguration des Liberty Core-Servers finden Sie in [Liberty Core-Server für öffentlichen Zugriff konfigurieren](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess).
+* Fügen Sie zum Konfigurieren des Servers mit klassischem WebSphere Base eine Web-Container-Transportkette hinzu, die an Port 80 und 443 empfangsbereit ist. Weitere Informationen hierzu finden Sie in [Transportketten konfigurieren](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}.
 
 **Probleme vermeiden:** Linux reserviert Ports mit einer Nummer unter 1024 für privilegierte Benutzer wie z. B. **root**. Es ist jedoch ein allgemein übliches Verfahren, klassische WebSphere Base-Server als **non-root**-Benutzer auszuführen. Ändern Sie daher beim Hinzufügen einer Web-Container-Transportkette die **iptables**-Konfiguration als **root**-Benutzer. Adressieren Sie speziell die eingeschränkten Ports 80 und 443 in andere Ports über 1024 um (z. B. 9080 und 9443). Die folgenden Befehle stellen ein Beispiel für diesen Prozess dar:
 
@@ -134,7 +134,7 @@ COMMIT
 
 Über die VPN-Verbindung können Sie eine Verbindung zur privaten IP-Adresse der VM herstellen. Der Zugriff auf das Liberty Admin Center (9080, 9443), die klassische WebSphere-Administrationskonsole (9060, 9043), SSH (22) und andere Ports als 80 und 443 ist nur über die VPN-Verbindung möglich (siehe Abbildung 1). Informationen dazu, wie Sie das Liberty Admin Center von den Anwendungsports trennen können, enthalten die Liberty Core-Beispieldateien **server.xml** und **ibm-web-bnd.xml**.
 
-**Störungen vermeiden**: Im Falle von Servern mit Liberty Core und Servern mit klassischem WebSphere Base sind die Firewall-Ports bei der Bereitstellung der VM vorkonfiguriert. Bei Network Deployment-Konfigurationen, in denen der Deployment Manager oder der Verbundcontroller mit dem IBM HTTP Server kollokiert ist, müssen jedoch möglicherweise Ports an der Firewall geöffnet werden. Einzelheiten hierzu finden Sie in [Firewall-Ports](systemAccess.html#firewall_ports).
+**Störungen vermeiden**: Im Falle von Servern mit Liberty Core und Servern mit klassischem WebSphere Base sind die Firewall-Ports bei der Bereitstellung der VM vorkonfiguriert. Bei Network Deployment-Konfigurationen, in denen der Deployment Manager oder der Verbundcontroller mit dem IBM HTTP Server kollokiert ist, müssen jedoch möglicherweise Ports an der Firewall geöffnet werden. Einzelheiten hierzu finden Sie in [Firewall-Ports](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports).
 
 ## Liberty Core-Server für Zugriff auf öffentliche IP-Adresse konfigurieren
 {: #configureLibertyForPublicAccess}

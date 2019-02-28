@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-19"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -39,7 +39,7 @@ En los pasos siguientes se explica cómo acceder su entorno de un solo arrendata
 
     **Evite problemas:** es posible que se muestre el entorno público como valor predeterminado. Si se muestra el nombre de entorno correcto, se da por supuesto que ha iniciado la sesión en la región correcta y que es miembro de una organización con permiso para acceder a su entorno de un solo arrendatario.
 
-    **Nota:** si selecciona uno de los entornos públicos, es posible que incurra en un cargo por hora. Por lo tanto, si no ve su nombre de entorno de un solo arrendatario, abra una incidencia de soporte tal como se explica en la página [Obtención de ayuda](reportingIssues.html){: new_window}.
+    **Nota:** si selecciona uno de los entornos públicos, es posible que incurra en un cargo por hora. Por lo tanto, si no ve su nombre de entorno de un solo arrendatario, abra una incidencia de soporte tal como se explica en la página [Obtención de ayuda](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window}.
 
 9. Seleccione el plan adecuado y pulse **Crear**.
 
@@ -67,10 +67,10 @@ Por ejemplo, suponga que tiene un entorno pequeño, que contiene 64 bloques. En 
 
 Después de que se suministre su entorno de un solo arrendatario, puede descargar las credenciales de VPN y establecer una conexión OpenVPN. Para obtener más información, consulte los siguientes enlaces:
 
-* [Acceso VPN](networkEnvironment.html#vpnAccess){: new_window}
-* [Configuración de OpenVPN](systemAccess.html#setup_openvpn){: new_window}
+* [Acceso VPN](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [Configuración de OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Gestión del entorno de un solo arrendatario
 {: #manageSTE}
 
-Para añadir capacidad a su entorno de un solo arrendatario existente o para solicitar capacidad en otro centro de datos, póngase en contacto con los centros de atención al cliente de América, con el representante local de IBM o con su Business Partner de IBM. Consulte [Cómo ponerse en contacto con el equipo de ventas](reportingIssues.html#contacting-sales) para obtener más información.
+Para añadir capacidad a su entorno de un solo arrendatario existente o para solicitar capacidad en otro centro de datos, póngase en contacto con los centros de atención al cliente de América, con el representante local de IBM o con su Business Partner de IBM. Consulte [Cómo ponerse en contacto con el equipo de ventas](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) para obtener más información.

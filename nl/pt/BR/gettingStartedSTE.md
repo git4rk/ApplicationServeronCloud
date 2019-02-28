@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-20"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -21,7 +21,7 @@ O Ambiente de Locatário Único do {{site.data.keyword.appserver_full}} fornece 
 
 Os ambientes de locatário único não podem ser criados por meio do catálogo do {{site.data.keyword.Bluemix_notm}} e devem ser solicitados entrando em contato com Vendas IBM. Ao solicitar o ambiente, é possível escolher um ambiente de locatário único padrão ou com sua própria licença. Os ambientes de locatário único padrão incluem toda a infraestrutura necessária e as licenças do WebSphere Application Server. Em Ambientes de Locatário Únicos de licença própria, é possível usar licenças separadas do WebSphere Application Server.
 
-Para solicitar um ambiente de locatário único, [entre em contato com Vendas IBM](reportingIssues.html#contacting-sales). A equipe de vendas pode auxiliá-lo na configuração de um ambiente que seja customizado para suas necessidades.
+Para pedir um Ambiente de locatário único, [entre em contato com a equipe de Vendas da IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales). A equipe de vendas pode auxiliá-lo na configuração de um ambiente que seja customizado para suas necessidades.
 
 ## Visão geral do WebSphere Application Server no Ambiente de Locatário Único do {{site.data.keyword.Bluemix_notm}}
 {: #overviewSTE}
@@ -36,6 +36,6 @@ Figura 1. Arquitetura do WebSphere Application Server no Ambiente de Locatário 
 ## Gerenciamento de organização
 {: #organization_management}
 
-O WebSphere Application Server no Ambiente de Locatário Único do {{site.data.keyword.Bluemix_notm}} é configurado de acordo com seu pedido. Se você fornecer um ou mais nomes de organização do {{site.data.keyword.Bluemix_notm}} como parte do pedido, poderá iniciar o acesso ao seu ambiente agora. Se você não forneceu um nome de organização ou se deseja mudar essa configuração, abra um [chamado de suporte](reportingIssues.html#reporting_issues) para **Application Services** no console do {{site.data.keyword.Bluemix_notm}} de sua região. É possível localizar o nome da organização no console do {{site.data.keyword.Bluemix_notm}}, acessando **Gerenciar > Conta > Organizações do Cloud Foundry**.
+O WebSphere Application Server no Ambiente de Locatário Único do {{site.data.keyword.Bluemix_notm}} é configurado de acordo com seu pedido. Se você fornecer um ou mais nomes de organização do {{site.data.keyword.Bluemix_notm}} como parte do pedido, poderá iniciar o acesso ao seu ambiente agora. Se você não forneceu um nome de organização ou se deseja mudar essa configuração, abra um [chamado de suporte](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues) para **Application Services** no console do {{site.data.keyword.Bluemix_notm}} de sua região. É possível localizar o nome da organização no console do {{site.data.keyword.Bluemix_notm}}, acessando **Gerenciar > Conta > Organizações do Cloud Foundry**.
 
-**Nota:** para acessar o seu ambiente de locatário único, consulte [Acesso ao ambiente do locatário único](singleTenantAccess.html#singleTenantEnvironment).
+**Nota:** para acessar seu Ambiente de locatário único, consulte [Acesso ao Ambiente de locatário único](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment).

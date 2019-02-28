@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-10-25"
+  years: 2017, 2019
+lastupdated: "2019-02-14"
 
 ---
 
@@ -23,7 +23,7 @@ lastupdated: "2018-10-25"
 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} fornisce ai consumatori i server Traditional WebSphere e Liberty. È ospitato su guest macchina virtuale con accesso root al
 sistema operativo guest. Quando crei il tuo servizio, scegli tra _Liberty_, _Traditional ND_ o _Traditional WebSphere_.
 
-**Nota:** i consumatori possono ora scegliere tra il livello di fix pack corrente o una versione precedente [(n o n-1)](maintenanceAndUpdates.html#maintenance-strategy){: new_window} quando crei un'istanza di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
+**Nota:** i consumatori possono ora scegliere tra il livello di fix pack corrente o una versione precedente [(n o n-1)](/docs/services/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} quando crei un'istanza di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}.
 
 Ti verrà offerta una classica esperienza di amministrazione WebSphere e avrai accesso completo al sistema operativo
 sottostante. Puoi riutilizzare i tuoi script esistenti e apportare quelle piccole modifiche al
@@ -111,7 +111,7 @@ La seguente tabella elenca il prezzo totale all'ora per ogni macchina virtuale c
 ### Contratto di riserva
 {:#reserve-contract}
 
-Con la fatturazione del contratto di riserva, acquisti una sottoscrizione mensile prepagata che garantisce l'accesso a blocchi di risorse computazionali riservate fisicamente. Questi blocchi di servizio sono riservati per il tuo uso esclusivo e non possono essere considerati come capacità disponibile per gli altri utenti di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Se hai delle licenze WebSphere Application Server esistenti, puoi scegliere un contratto di riserva BYOL (bring-your-own-license), che utilizza queste licenze e ha un tasso di fatturazione ridotto. Per impostare la fatturazione del contratto di riserva, [contatta il settore Vendite IBM](reportingIssues.html#contacting-sales).
+Con la fatturazione del contratto di riserva, acquisti una sottoscrizione mensile prepagata che garantisce l'accesso a blocchi di risorse computazionali riservate fisicamente. Questi blocchi di servizio sono riservati per il tuo uso esclusivo e non possono essere considerati come capacità disponibile per gli altri utenti di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}. Se hai delle licenze WebSphere Application Server esistenti, puoi scegliere un contratto di riserva BYOL (bring-your-own-license), che utilizza queste licenze e ha un tasso di fatturazione ridotto. Per impostare la fatturazione del contratto di riserva, [contatta il settore Vendite IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 Le sottoscrizioni sono disponibili in incrementi di 8 blocchi. Le ore totali del blocco si basano sul numero di ore del mese, ma puoi utilizzare le ore del blocco in qualsiasi momento durante tutto il mese. Ad esempio, un mese di 30 giorni ha 720 ore, che se moltiplicate per una sottoscrizione di 8 blocchi comportano un totale di 5.760 ore del blocco.
 
@@ -135,7 +135,7 @@ I blocchi del modello pagamento a consumo non sono risorse riservate e provengon
 
 I blocchi nella fatturazione del contratto di riserva si basano sul piano di WebSphere Application Server Network Deployment, ma puoi utilizzare i blocchi anche per altri piani. Con altri piani, l'utilizzo viene ripartito proporzionalmente in modo che un'ora del blocco sia ridotta dal tasso di ripartizione del piano quando si riflette nelle ore del blocco rimanenti del contratto di riserva.
 
-La seguente tabella mostra i tassi di ripartizione per ciascun piano e il prezzo effettivo per ogni ora reale del blocco dopo il calcolo della ripartizione. Per i prezzi correnti nella tua regione, [contatta il settore Vendite IBM](reportingIssues.html#contacting-sales).
+La seguente tabella mostra i tassi di ripartizione per ciascun piano e il prezzo effettivo per ogni ora reale del blocco dopo il calcolo della ripartizione. Per i prezzi correnti nella tua regione, [contatta il settore Vendite IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
 
 | Piano | Tasso di ripartizione | Prezzo/ora dopo la ripartizione |
 |:-------:|:------:|:------:|

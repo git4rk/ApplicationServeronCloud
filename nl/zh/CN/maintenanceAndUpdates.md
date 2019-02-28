@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-13"
+  years: 2017, 2019
+lastupdated: "2019-02-15"
 
 ---
 
@@ -86,7 +86,7 @@ lastupdated: "2018-12-13"
 ### 使用 Installation Manager 更新
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.3/com.ibm.cic.agent.ui.doc/helpindex_imic.html){: new_window} 安装在 `/home/virtuser/IBM/Installation Manager` 目录中，并且可以直接运行以应用修订和修订包。
+[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} 安装在 `/home/virtuser/IBM/Installation Manager` 目录中，并且可以直接运行以应用修订和修订包。
 
 **应注意的问题：**由于底层二进制文件是以 `virtuser`（受限的管理虚拟用户）身份安装的，因此请确保始终以 `virtuser` 身份运行 Installation Manager。
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -65,7 +65,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的實例�
 1. 從 openVPN 網站下載您系統架構的 openVPN Windows 安裝程式：
   * 64 位元系統：[openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32 位元系統：[openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. 確定您[以 Windows 管理者身分執行](https://technet.microsoft.com/en-us/magazine/ff431742.aspx){: new_window}且已安裝 openVPN。
+2. 確定您[以 Windows 管理者身分執行](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window}且已安裝 openVPN。
 3. 在服務儀表板中，從 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 實例的 OpenVPN 下載鏈結下載 VPN 配置檔。將壓縮檔中的全部 4 個檔案解壓縮至 `{OpenVPN home}\config` 目錄。例如：
 
   ```  
@@ -218,7 +218,7 @@ WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 中的實例�
 
 **避免麻煩：**在產生並傳播外掛程式之前，請確定已完成下列必要作業。
 
-* 在本端 Windows、Linux 或 Mac 環境中，確保已配置、啟動 [openVPN](systemAccess.html#setup_openvpn)，且您已連接到適當的的地區。
+* 在本端 Windows、Linux 或 Mac 環境中，確保已配置、啟動 [openVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn)，且您已連接到適當的的地區。
 * 從 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服務儀表板中，按一下**開啟管理主控台**，並使用 wsadmin 及服務儀表板中所提供的「管理密碼」來登入。
 * 從「管理主控台」中，建立應用程式伺服器（例如，***server1***），因為「部署管理程式」已與空的自訂節點聯合。
 * 啟動您建立的伺服器。

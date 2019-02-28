@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-02-15"
 
 ---
 
@@ -83,8 +83,8 @@ VPN 構成が漏えいした場合、または期限切れになった場合、�
 {: #publicIPports}
 
 パブリック IP へのアクセスを開くと、その IP アドレスはご使用の VM と関連付けられ、ゲートウェイでポート 80 とポート 443 が開きます。 ただし、デフォルトで、Liberty Core および従来の WebSphere Base サーバーは、ポート 80 とポート 443 を開きません。 IBM HTTP Server では、デフォルトでポート 80 とポート 443 は開きます。 このため、パブリック IP の使用時にポート 80 および 443 でアプリケーション・トラフィックを listen するよう Liberty Core および従来の WebSphere Base サーバーを構成する必要が生じる可能性があります。
-* Liberty Core サーバーを構成するには、[パブリック・アクセス用に Liberty Core サーバーを構成する (Configure Liberty Core Server for public access)](networkEnvironment.html#configureLibertyForPublicAccess)を参照してください。
-* 従来の WebSphere Base サーバーを構成するには、ポート 80 および 443 で listen する Web コンテナー・トランスポート・チェーンを追加します。この説明については、[Configuring transport chains](http://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5//com.ibm.websphere.nd.doc/ae/trun_chain_transport.html){: new_window} を参照してください。
+* Liberty Core サーバーを構成するには、[パブリック・アクセス用に Liberty Core サーバーを構成する (Configure Liberty Core Server for public access)](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess)を参照してください。
+* 従来の WebSphere Base サーバーを構成するには、ポート 80 および 443 で listen する Web コンテナー・トランスポート・チェーンを追加します。この説明については、[Configuring transport chains](http://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window} を参照してください。
 
 **問題の回避:** Linux では、**root** などの特権ユーザーのために 1024 未満のポートが予約されています。 ただし、従来型 WebSphere Base サーバーは**非 root** ユーザーとして実行するのが一般的です。 このため、Web コンテナー・トランスポート・チェーンを追加するとき、**iptables**の構成を **root** ユーザーとして変更します。 特に、制限付きポートである 80 と 443 を、1024 より上の別ポート (9080 や 9443 など) に指定変更します。 次のコマンドは、このプロセスの例です。
 
@@ -134,7 +134,7 @@ COMMIT
 
 VM のプライベート IP アドレスには、VPN 接続を使用して接続します。 図 1 に示すとおり、Liberty 管理センター (9080, 9443)、従来の WebSphere 管理コンソール (9060, 9043)、SSH (22)、および 80 および 443 以外のポートには、VPN 接続でのみアクセス可能です。Liberty 管理センターとアプリケーション・ポートの分離について詳しくは、サンプルの Liberty Core **server.xml** および **ibm-web-bnd.xml** を参照してください。
 
-**問題の回避:** Liberty Core および従来の WebSphere Base サーバーの場合、VM がプロビジョンされる際にファイアウォール・ポートは事前構成されています。 ただし、Deployment Manager または集合コントローラーが IBM HTTP Server と連結されている Network Deployment の構成においては、ファイアウォールでポートを開く必要がある可能性があります。 詳細については、[ファイアウォール・ポート](systemAccess.html#firewall_ports)を参照してください。
+**問題の回避:** Liberty Core および従来の WebSphere Base サーバーの場合、VM がプロビジョンされる際にファイアウォール・ポートは事前構成されています。 ただし、Deployment Manager または集合コントローラーが IBM HTTP Server と連結されている Network Deployment の構成においては、ファイアウォールでポートを開く必要がある可能性があります。 詳細については、[ファイアウォール・ポート](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports)を参照してください。
 
 ## Liberty Core サーバーをパブリック IP アクセス用に構成する
 {: #configureLibertyForPublicAccess}
