@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-07"
 
 ---
 
@@ -29,8 +29,8 @@ When you create a new instance, you can choose from the following fix pack level
 **WebSphere Application Server traditional**
   * 9.0.0.10
   * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## Applying fixes and fix pack updates
 {:#applying-fixes}

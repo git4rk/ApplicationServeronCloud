@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-07"
 
 ---
 
@@ -14,6 +14,10 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## March 7, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* The 8.5.5.15 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 8.5.5.15, other fix packs of traditional WebSphere Application Server, such as 9.0.0.9, 9.0.0.10 and 8.5.5.14, are available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## January 16, 2019: Updated API endpoint URLs for REST API implementation
 
