@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-03-07"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -23,12 +27,12 @@ You can create a WebSphere Application Server in {{site.data.keyword.Bluemix_not
 When you create a new instance, you can choose from the following fix pack levels on the **Service Profile** tab in the service instance:
 
 **Liberty**
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 **WebSphere Application Server traditional**
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
   * 8.5.5.15
   * 8.5.5.14
 
