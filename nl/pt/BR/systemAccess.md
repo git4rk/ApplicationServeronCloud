@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -175,7 +179,7 @@ ou com a senha raiz, mude imediatamente a senha raiz.
   * `<profile_number>` é um número sequencial que é usado para criar um nome do perfil exclusivo.
 
 
-## Gerenciando servidores pela linha de comandos
+## Gerenciando Servidores a partir da Linha de Comandos
 {: #start_servers}
 
 **Evite problemas:** ao gerenciar os servidores WebSphere da linha de comandos, certifique-se de usar o **wsadmin**, o ID administrativo do WebSphere, não o **virtuser**. Ao gerenciar o servidor IHS da linha de comandos, certifique-se de usar **root**.

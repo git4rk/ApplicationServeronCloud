@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, whats new, new in release
+
+subcollection: wasaas
 
 ---
 
@@ -14,6 +18,15 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 서비스에 대한 최신 업데이트 목록입니다.
+
+## 2019년 4월 5일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 9.0.0.11 수정팩을 사용할 수 있습니다. 9.0.0.11 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.10, 8.5.5.15, 8.5.5.14)도 프로비저닝에 사용할 수 있습니다.
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 WebSphere Application Server Liberty의 19.0.0.3 수정팩 버전을 사용할 수 있습니다. 19.0.0.3 외에 WebSphere Application Server Liberty의 18.0.0.4 수정팩 버전도 프로비저닝에 사용할 수 있습니다.
+* 기타 서비스 유지보수 통합.
+
+## 2019년 3월 7일: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 업데이트
+* 새 서비스 인스턴스를 프로비저닝할 때 이제 Traditional WebSphere Application Server의 8.5.5.15 수정팩을 사용할 수 있습니다. 8.5.5.15 외에 Traditional WebSphere Application Server의 다른 수정팩(예: 9.0.0.9, 9.0.0.10, 8.5.5.14)도 프로비저닝에 사용할 수 있습니다.
+* 기타 서비스 유지보수 통합.
 
 ## 2019년 1월 16일: REST API 구현을 위한 API 엔드포인트 URL 업데이트
 

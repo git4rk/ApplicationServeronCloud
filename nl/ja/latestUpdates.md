@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, whats new, new in release
+
+subcollection: wasaas
 
 ---
 
@@ -14,6 +18,15 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 サービスの最新更新情報のリスト。
+
+## 2019 年 4 月 5 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の 9.0.0.11 フィックスパックを使用できるようになりました。9.0.0.11 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.10、8.5.5.15、8.5.5.14 など) もプロビジョニングのために使用できます。
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server Liberty の 19.0.0.3 フィックスパック・バージョンを使用できるようになりました。19.0.0.3 に加えて、WebSphere Application Server Liberty の 18.0.0.4 フィックスパック・バージョンもプロビジョニングのために使用できます。
+* 各種サービス・メンテナンスを統合しました。
+
+## 2019 年 3 月 7 日: WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} の更新
+* 新しいサービス・インスタンスをプロビジョンするとき、WebSphere Application Server traditional の 8.5.5.15 フィックスパックを使用できるようになりました。8.5.5.15 に加えて、WebSphere Application Server traditional の他のフィックスパック (9.0.0.9、9.0.0.10、8.5.5.14 など) もプロビジョニングのために使用できます。
+* 各種サービス・メンテナンスを統合しました。
 
 ## 2019 年 1 月 16 日: REST API 実装用の API エンドポイント URL を更新しました
 

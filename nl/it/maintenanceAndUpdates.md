@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -24,14 +28,14 @@ Puoi creare un'istanza di WebSphere Application Server in {{site.data.keyword.Bl
 Quando crei una nuova istanza, puoi scegliere tra i seguenti livelli di fix pack nella scheda **Service Profile** dell'istanza del servizio:
 
 **Liberty**
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 **WebSphere Application Server tradizionale**
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## Applicazione di correzioni e aggiornamenti del fix pack
 {:#applying-fixes}

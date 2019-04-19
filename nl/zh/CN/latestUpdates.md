@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, whats new, new in release
+
+subcollection: wasaas
 
 ---
 
@@ -14,6 +18,15 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 服务的最新更新的列表。
+
+## 2019 年 4 月 5 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* 现在，在供应新的服务实例时，传统 WebSphere Application Server 的 9.0.0.11 修订包可用。除了 9.0.0.11 外，传统 WebSphere Application Server 的其他修订包（例如，9.0.0.10、8.5.5.15 和 8.5.5.14）也可用于供应。
+* 现在，在供应新的服务实例时，WebSphere Application Server Liberty 的修订包版本 19.0.0.3 可用。除了 19.0.0.3 外，WebSphere Application Server Liberty 的 18.0.0.4 修订包版本也可用于供应。
+* 集成了其他服务维护。
+
+## 2019 年 3 月 7 日：更新了 WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* 现在，在供应新的服务实例时，传统 WebSphere Application Server 的 8.5.5.15 修订包可用。除了 8.5.5.15 外，传统 WebSphere Application Server 的其他修订包（例如，9.0.0.9, 9.0.0.10 和 8.5.5.14）也可用于供应。
+* 集成了其他服务维护。
 
 ## 2019 年 1 月 16 日：更新了 REST API 实现的 API 端点 URL
 

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: single tenant, websphere, sales, order
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

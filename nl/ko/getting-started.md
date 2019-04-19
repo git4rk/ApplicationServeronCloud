@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-18"
 
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +19,7 @@ lastupdated: "2019-02-18"
 
 
 # 시작하기 튜토리얼
-{:#getting-started}
+{: #getting-started}
 
 {{site.data.keyword.appserver_full}}를 사용하여 사전 구성된 WebSphere Application Server Traditional 또는 Liberty 환경을 수 분 내로 설정할 수 있습니다. 이 시작하기 튜토리얼은 단 몇 단계만으로 WebSphere Application Server 환경을 가상 머신에 프로비저닝하는 과정을 안내합니다.
 {: shortdesc}

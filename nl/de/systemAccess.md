@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -90,7 +90,7 @@ Installs all available fix packs, and then installs all applicable interim fixes
 ### Updating by using Installation Manager
 {:#installation-manager}
 
-[Installation Manager](http://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} is installed in the `/home/virtuser/IBM/Installation Manager` directory and can be run directly to apply fixes and fix packs.
+[Installation Manager](https://www.ibm.com/support/knowledgecenter/SSDV2W_1.8.5/){: new_window} is installed in the `/home/virtuser/IBM/Installation Manager` directory and can be run directly to apply fixes and fix packs.
 
 **Avoid trouble:** Because the underlying binary files are installed as `virtuser`, a limited administrative virtual user, ensure that Installation Manager is always run as `virtuser`.
 

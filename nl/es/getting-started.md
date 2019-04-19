@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-18"
 
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +19,7 @@ lastupdated: "2019-02-18"
 
 
 # Guía de aprendizaje de iniciación
-{:#getting-started}
+{: #getting-started}
 
 Con {{site.data.keyword.appserver_full}}, puede configurar un entorno tradicional o Liberty de WebSphere Application Server preconfigurado en cuestión de minutos. Esta guía de aprendizaje de iniciación le guiará a través del proceso de suministro de un entorno de WebSphere Application Server en una máquina virtual con unos pocos pasos.
 {: shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-14"
 
+keywords: overview, websphere, liberty, version, cell, collective, vm, virtual machine, t-shirt, block, price, reserve contract
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -80,7 +84,7 @@ IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 提供了
 * **[现收现付](#pay-as-you-go)：**基于使用量计费，按使用的每个块的小时数定价
 * **[保留合同](#reserve-contract)：**预付费的每月保留资源预订
 
-### 现买现付
+### 现收现付
 {: #pay-as-you-go}
 
 如果并未联系 IBM 销售人员来获取替代的计费选项就供应 IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 服务，那么将应用现收现付定价。按每月结算周期内使用的每个块的整小时或不足一小时收费。最小计费设置为 1/4 个块小时。

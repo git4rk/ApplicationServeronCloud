@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -23,14 +27,14 @@ Vous pouvez créer une instance WebSphere Application Server in {{site.data.keyw
 Quand vous créez une nouvelle instance, vous pouvez choisir l'un des niveaux de groupe de correctifs suivants sur l'onglet **Profil de service** de l'instance de service :
 
 **Liberty**
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 **WebSphere Application Server Traditional**
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## Applications des mises à jour de correctifs et de groupes de correctifs
 {:#applying-fixes}
