@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -28,14 +32,14 @@ implementação de nuvem híbrida.
 Ao criar uma nova instância, é possível escolher dentre os seguintes níveis de fix pack na guia **Perfil de serviço** na instância de serviço:
 
 ** Liberty **
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 ** WebSphere Application Server tradicional **
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## Aplicando correções e atualizações de fix pack
 {:#applying-fixes}

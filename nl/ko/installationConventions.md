@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: install, installation manager, im, wsadmin, cell, collective, websphere, liberty, virtual image
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

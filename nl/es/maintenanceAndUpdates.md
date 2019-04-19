@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -23,14 +27,14 @@ Puede crear un WebSphere Application Server en la instancia de {{site.data.keywo
 Cuando crea una instancia nueva, puede elegir entre los siguientes niveles de fixpack en el separador **Perfil de servicio** de la instancia de servicio:
 
 **Liberty**
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 **WebSphere Application Server tradicional**
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## Aplicación de arreglos y actualizaciones de fixpack
 {:#applying-fixes}

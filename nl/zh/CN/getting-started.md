@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-18"
 
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +19,7 @@ lastupdated: "2019-02-18"
 
 
 # 入门教程
-{:#getting-started}
+{: #getting-started}
 
 通过 {{site.data.keyword.appserver_full}}，您可以在几分钟内就设置好预配置的 WebSphere Application Server Traditional 环境或 Liberty 环境。本入门教程将指导您如何只通过几个步骤，就在虚拟机上供应 WebSphere Application Server 环境。
 {: shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-18"
 
+keywords: bug, problem, support, sales, ticket
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -22,7 +26,7 @@ Wenn bei der Verwendung von {{site.data.keyword.appserver_full}} Probleme auftre
 * Öffnen Sie ein Support-Ticket, indem Sie den auf der Seite [Unterstützung für IBM Cloud Public anfordern](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) definierten Prozess ausführen.
 * Stellen Sie eine Frage in einem der öffentlichen [IBM Cloud-Unterstützungsforen](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window}. Die Foren werden aktiv überwacht.
 
-  **Hinweis**: Geben Sie den Tag `ibm-was-oc` in Ihrem Beitrag an, um die Bearbeitung Ihrer Unterstützungsanforderung zu vereinfachen. 
+  **Hinweis**: Geben Sie den Tag `ibm-was-oc` in Ihrem Beitrag an, um die Bearbeitung Ihrer Unterstützungsanforderung zu vereinfachen.
 
 ## Kontaktaufnahme mit dem Vertrieb
 {:#contacting-sales}

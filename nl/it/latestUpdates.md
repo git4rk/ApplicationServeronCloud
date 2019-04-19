@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, whats new, new in release
+
+subcollection: wasaas
 
 ---
 
@@ -14,6 +18,15 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 Un elenco degli aggiornamenti più recenti al servizio.
+
+## 5 aprile 2019: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Il fix pack 9.0.0.11 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 9.0.0.11, per il provisioning sono disponibili anche altri fix pack di Traditional WebSphere Application Server, come 9.0.0.10, 8.5.5.15 e 8.5.5.14.
+* La versione del fix pack 19.0.0.3 di WebSphere Application Server Liberty è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 19.0.0.3, per il provisioning è disponibile la versione del fix pack 18.0.0.4 di WebSphere Application Server Liberty.
+* Manutenzione dei servizi vari integrata.
+
+## 7 marzo 2019: aggiornamento di WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* Il fix pack 8.5.5.15 di Traditional WebSphere Application Server è ora disponibile quando esegui il provisioning di una nuova istanza del servizio. Oltre alla 8.5.5.15, per il provisioning sono disponibili anche altri fix pack di Traditional WebSphere Application Server, come 9.0.0.9, 9.0.0.10 e 8.5.5.14.
+* Manutenzione dei servizi vari integrata.
 
 ## 16 gennaio 2019: URL endpoint API aggiornati per l'implementazione dell'API REST
 

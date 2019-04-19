@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
+
+subcollection: wasaas
 
 ---
 
@@ -23,14 +27,14 @@ lastupdated: "2019-02-15"
 创建新实例时，可以从服务实例中的**服务概要文件**选项卡上的以下修订包级别中进行选择：
 
 **Liberty**
+  * 19.0.0.3
   * 18.0.0.4
-  * 18.0.0.3
 
 **WebSphere Application Server Traditional**
+  * 9.0.0.11
   * 9.0.0.10
-  * 9.0.0.9
+  * 8.5.5.15
   * 8.5.5.14
-  * 8.5.5.13
 
 ## 应用修订和修订包更新
 {:#applying-fixes}

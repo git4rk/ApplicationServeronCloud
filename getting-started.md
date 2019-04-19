@@ -19,7 +19,7 @@ subcollection: wasaas
 
 
 # Getting started tutorial
-{:#getting-started}
+{: #getting-started}
 
 With {{site.data.keyword.appserver_full}}, you can set up a pre-configured WebSphere Application Server traditional or Liberty environment in minutes. This getting started tutorial guides you through provisioning a WebSphere Application Server environment on a virtual machine in just a few steps.
 {: shortdesc}

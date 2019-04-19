@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -159,8 +163,8 @@ Procédez comme suit pour configurer l'accès SSH à votre serveur WebSphere App
 
 * Les commandes Liberty peuvent être émises depuis `/opt/IBM/WebSphere/Liberty/bin`.
 * L'emplacement du profil de serveur Liberty est `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
-* Les fichiers produit système du serveur Traditional WebSphere Application Server, qui sont partagés par tous les profils, se trouvent dans `/opt/IBM/WebSphere/AppServer/`.
-* Les commandes du serveur Traditional WebSphere Application Server peuvent être émises depuis l'emplacement de profil par défaut dans `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin`, où :
+* Les fichiers produit système du serveur WebSphere Application Server Traditional, qui sont partagés par tous les profils, se trouvent dans `/opt/IBM/WebSphere/AppServer/`.
+* Les commandes du serveur WebSphere Application Server Traditional peuvent être émises depuis l'emplacement de profil par défaut dans `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin`, où :
   * `<profile_type>` est une valeur de `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr` ou `SecureProxySrv`.
   * `<profile_number>` est un numéro séquentiel qui est utilisé pour créer un nom de profil unique.
 

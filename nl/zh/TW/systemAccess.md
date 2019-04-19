@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -278,8 +282,8 @@ WebSphere Application Server 傳統及 Liberty 已配置 [SSL_TLSv2](https://www
 1. 開啟 `/opt/IBM/WebSphere/Profiles/<profile_name>/config/cell/<cell_name>` 目錄中的 `security.xml` 檔，並修改下列這行。
 
    ```
-   sslProtocol="SSL_TLSv2"
-   ```
+  sslProtocol="SSL_TLSv2"
+  ```
    {: codeblock}
 
 2. 開啟 `/opt/IBM/WebSphere/Profiles/<profile_name>/properties` 目錄中的 `ssl.client.props` 檔，並修改下列這行。

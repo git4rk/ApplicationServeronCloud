@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-18"
 
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +19,7 @@ lastupdated: "2019-02-18"
 
 
 # Esercitazione introduttiva
-{:#getting-started}
+{: #getting-started}
 
 Con {{site.data.keyword.appserver_full}}, puoi impostare un ambiente WebSphere Application Server tradizionale o Liberty preconfigurato in pochi minuti. Questa esercitazione introduttiva ti guida nel provisioning di un ambiente WebSphere Application Server su una macchina virtuale attraverso pochi passi.
 {: shortdesc}

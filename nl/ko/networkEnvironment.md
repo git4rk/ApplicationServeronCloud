@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: public ip, vpn, private ip, dns, port, custom vm
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

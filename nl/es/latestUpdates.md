@@ -2,7 +2,11 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-03-28"
+
+keywords: update, fix pack, fixpack, version, whats new, new in release
+
+subcollection: wasaas
 
 ---
 
@@ -14,6 +18,15 @@ lastupdated: "2019-02-15"
 {: #latest_updates}
 
 Lista con las últimas actualizaciones del servicio.
+
+## 5 de abril de 2019: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
+* El fixpack 9.0.0.11 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además del 9.0.0.11, otros fixpacks de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.10, 8.5.5.15 y 8.5.5.14, están disponibles para el suministro.
+* La versión 19.0.0.3 del fixpack de WebSphere Application Server Liberty ya está disponible cuando se aprovisiona una nueva instancia de servicio. Además de la 19.0.0.3, la versión de fixpack 18.0.0.4 de WebSphere Application Server Liberty está disponible para el suministro.
+* Se ha integrado el mantenimiento de servicio.
+
+## 7 de marzo de 2019: Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}}
+* El fixpack 8.5.5.15 de WebSphere Application Server tradicional ya está disponible cuando suministra una nueva instancia de servicio. Además del 8.5.5.15, otros fixpacks de WebSphere Application Server tradicional, como, por ejemplo, 9.0.0.9, 9.0.0.10 y 8.5.5.14, están disponibles para el suministro.
+* Se ha integrado el mantenimiento de servicio.
 
 ## 16 de enero de 2019: Actualizados los URL de punto final de API para la implementación de la API REST
 
@@ -118,7 +131,7 @@ permite a los clientes gestionar mejor su dirección IP pública.
 
 * Se ha integrado el mantenimiento de servicio.
 * Se ha añadido una característica de [Gestión avanzada de configuración de VPN](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} que puede utilizar para crear y gestionar varias configuraciones de VPN en la región de Frankfurt.
-* Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} de modo que JDK 8 se instalada con todas las instancias nuevas del servicio.
+* Se ha actualizado WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} de modo que JDK 8 se instala con todas las instancias nuevas del servicio.
 * Se han solucionado [varias vulnerabilidades de seguridad](http://www-01.ibm.com/support/docview.wss?uid=swg22004264){: new_window} en WebSphere Application Server en {{site.data.keyword.Bluemix_notm}} que incluyen:
   * Una vulnerabilidad de seguridad potencial con el adaptador de recursos JCA MQ de WebSphere Application Server.
   * Una vulnerabilidad no especificada del componente Bibliotecas que podía permitir que un atacante remoto obtuviera información confidencial, lo que tendría un alto impacto sobre la confidencialidad, utilizando vectores de ataque desconocidos.

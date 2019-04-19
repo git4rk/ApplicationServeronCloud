@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-14"
 
+keywords: overview, websphere, liberty, version, cell, collective, vm, virtual machine, t-shirt, block, price, reserve contract
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: single tenant, access, catalog, create service, block, pricing, vpn, openvpn
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}

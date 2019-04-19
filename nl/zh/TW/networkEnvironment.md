@@ -4,6 +4,10 @@ copyright:
   years: 2017, 2019
 lastupdated: "2019-02-15"
 
+keywords: public ip, vpn, private ip, dns, port, custom vm
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -59,7 +63,7 @@ VPN 配置的範圍限定為您的組織及地區。從建立時間算起的一�
 3. 在服務儀表板上，按一下**管理公用 IP 存取**。
 4. 即會顯示主機的 IP 位址及新的公用 IP，但會關閉存取。按一下**開啟存取權**。
 
-    您會回到服務儀表板，其中會顯示下列訊息：
+    您會回到服務儀表板，並且會顯示下列訊息：
 
     > _目前已開啟存取權。按一下「管理公用 IP」以關閉存取權。_
 

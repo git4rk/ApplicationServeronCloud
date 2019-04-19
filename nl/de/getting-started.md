@@ -4,6 +4,10 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-02-18"
 
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+
+subcollection: wasaas
+
 ---
 
 {:shortdesc: .shortdesc}
@@ -15,7 +19,7 @@ lastupdated: "2019-02-18"
 
 
 # Lernprogramm - Einführung
-{:#getting-started}
+{: #getting-started}
 
 Mit {{site.data.keyword.appserver_full}} können Sie innerhalb von Minuten eine vorkonfigurierte klassische WebSphere Application Server-Umgebung oder eine vorkonfigurierte WebSphere Application Server Liberty-Umgebung einrichten. Dieses Einführungslernprogramm enthält eine Anleitung, mit der Sie in nur wenigen Schritten eine WebSphere Application Server-Umgebung auf einer virtuellen Maschine einrichten können.
 {: shortdesc}
