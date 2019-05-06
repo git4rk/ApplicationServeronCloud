@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-05-03"
 
 keywords: public ip, vpn, private ip, dns, port, custom vm
 
@@ -66,6 +66,7 @@ Optionally, you can manage public internet access from the service dashboard in 
     You are returned to the service dashboard with the following message displayed:
 
     > _Access is currently open. Click Manage Public IP to Close Access._
+5. The IP address is now open in the gateway firewall. Configure your server to expose the port. See [Public IP ports](#publicIPports).
 
 ### Close a connection and return a public IP address
 {: #close-return-ip}
