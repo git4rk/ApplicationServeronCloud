@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-03-28"
+lastupdated: "2019-05-03"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,10 @@ subcollection: wasaas
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## May 6, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+* The [REST API](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#system_access) is now OpenAPI compliant. OpenAPI replaces Swagger.
+* Integrated miscellaneous service maintenance.
 
 ## April 5, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.0.11 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.11, other fix packs of traditional WebSphere Application Server, such as 9.0.0.10, 8.5.5.15 and 8.5.5.14, are available for provisioning.
