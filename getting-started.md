@@ -77,7 +77,7 @@ Click the tab for the component, such as the server, deployment manager, or appl
 ## Step 4: Provision your environment
 {: #service_profile}
 
-Review the details in the service configuration summary, including the estimated time that it will take to provision.
+Review the details in the service configuration summary, including the estimated time that it takes to provision.
 
 **Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your org](/docs/account?topic=account-orgsspacesusers){:new_window} is exactly the same, including case and whitespace, as the org name for your contract. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
 

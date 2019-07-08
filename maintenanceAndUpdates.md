@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-03-28"
+lastupdated: "2019-07-02"
 
 keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
 
@@ -27,12 +27,12 @@ You can create a WebSphere Application Server in {{site.data.keyword.Bluemix_not
 When you create a new instance, you can choose from the following fix pack levels on the **Service Profile** tab in the service instance:
 
 **Liberty**
+  * 19.0.0.6  
   * 19.0.0.3
-  * 18.0.0.4
 
 **WebSphere Application Server traditional**
+  * 9.0.5.0
   * 9.0.0.11
-  * 9.0.0.10
   * 8.5.5.15
   * 8.5.5.14
 
@@ -67,7 +67,7 @@ Running the script performs the following actions:
 ```
 ./installService.sh -?
 ```
-{:.codeblock}
+{: codeblock}
 
 Displays help text.
 
@@ -75,7 +75,7 @@ Displays help text.
 ```
 ./installService.sh
 ```
-{:.codeblock}
+{: codeblock}
 
 Installs all applicable interim fixes, but no fix packs.
 
@@ -83,7 +83,7 @@ Installs all applicable interim fixes, but no fix packs.
 ```
 ./installService.sh -fixpacks
 ```
-{:.codeblock}
+{: codeblock}
 
 Installs all available fix packs, and then installs all applicable interim fixes.
 
