@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-05-02"
+lastupdated: "2019-06-26"
 
 keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
 
@@ -70,7 +70,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 1. Download the openVPN Windows installer for your system architecture from the openVPN website:
   * 64-bit systems: [openvpn-install-2.3.4-I001-x86_64.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-x86_64.exe){: new_window}
   * 32-bit systems:  [openvpn-install-2.3.4-I001-i686.exe](https://swupdate.openvpn.org/community/releases/openvpn-install-2.3.4-I001-i686.exe){: new_window}
-2. Ensure you [run as a Windows Administrator](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} and openVPN is installed.
+2. Ensure that you [run as a Windows Administrator](https://technet.microsoft.com/magazine/ff431742.aspx){: new_window} and openVPN is installed.
 3. Download the VPN configuration files from the OpenVPN download link of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} instance in the service dashboard. Extract all four files in the compressed file to the `{OpenVPN home}\config` directory. For example:
 
   ```  
@@ -119,7 +119,7 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
 1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
 2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
 3. Copy the contents of the private key into a file.
-4. Connect using SSH by running the following command.
+4. Connect with SSH by running the following command.
 
   ```
   ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
@@ -183,7 +183,7 @@ Since you are using links that are provided by {{site.data.keyword.IBM}}, you ca
 
 Another option is to export the incoming signer certificate and then import it into your browser as a trusted root certificate. This option would require you to make an entry in your *hosts* file that maps the VM's IP address to the certificate issuer's common name. This name is in the following format: `wl<pureapplication.ibmcloud.com`. If you now use the host name instead of the IP address in the URL, you can connect cleanly. You then must access the Admin Center or Admin Console by using that host name instead of the IP address in the URL.
 
-Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.0/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_9.0.0/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
+Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
 
 ## Firewall ports
 {: #firewall_ports}
@@ -194,7 +194,7 @@ You might find it necessary to open ports on the firewall to allow access to app
 
 ### Usage
 
-Run the `openFirewallPorts.sh` script using the following command syntax.
+Run the `openFirewallPorts.sh` script with the following command syntax.
 
   ```
   openFirewallPorts.sh -ports <PORT>:<PROTOCOL>,... -persist true|false
@@ -267,7 +267,7 @@ The following high-level steps assume that the prerequisite tasks are complete.
   ```
   {: codeblock}
 
-**Note:** The steps that are provided represent one path of many when you're attempting to configure a web server. If further assistance is needed, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.0){: new_window}.
+**Note:** The steps that are provided represent one path of many when you're attempting to configure a web server. If further assistance is needed, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/search/configure%20web%20server?scope=SSAW57_9.0.5){: new_window}.
 
 If you cannot access your application, you are likely facing a port access issue on your firewall. Therefore, you might need to restart any of the following servers: the application server, the node agent, the web server, and the deployment manager. Additionally, it is possible that you might need to access the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Service Dashboard and restart each virtual machine.
 {: tip}
