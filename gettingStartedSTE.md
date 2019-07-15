@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-07-10"
 
-keywords: single tenant, websphere, sales, order
+keywords: single tenant, websphere, sales, order, resource group
 
 subcollection: wasaas
 
@@ -37,9 +37,14 @@ Figure 1. Architecture of the WebSphere Application Server in {{site.data.keywor
 ![Figure 1. Architecture of Single Tenant Environment](images/WASaaS.png)
 
 
-## Organization Management
+## Resource Group Management
 {: #organization_management}
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} organization names as part of the order, you can start accessing your environment now. If you did not provide an organization name or if you want to change this setting, open a [support ticket](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your org name in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Account > Cloud Foundry orgs**.
+The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} resource group names and IDs as part of the order, you can start accessing your environment now. If you did not provide a resource group name and ID or if you want to change this setting, open a [support ticket](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.Bluemix_notm}} command-line interface](/docs/cli?topic=cloud-cli-install-ibmcloud-cli){: new_window}:
+
+```
+ibmcloud resource groups
+```
+{: .codeblock}  
 
 **Note:** To access your Single Tenant Environment, see [Single Tenant Environment access](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment).

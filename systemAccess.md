@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-26"
+lastupdated: "2019-07-10"
 
 keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
 
@@ -29,7 +29,7 @@ Instances in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} 
 * From the {{site.data.keyword.Bluemix_notm}} catalog and service dashboard.
 * From the creation of an application or script that uses RESTful APIs.
 
-Through use of OpenAPI compliant REST APIs, clients have access to the same function as provided through the portal and dashboard. For more information about supported REST APIs and resources, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}. For sample code that demonstrates usage of the REST APIs, download the Git hosted WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}.
+Through use of OpenAPI compliant REST APIs, clients have access to the same function as provided through the portal and dashboard. For more information about supported REST APIs and resources, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api/v3){: new_window}. For sample code that demonstrates usage of the REST APIs, download the Git hosted WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Samples](https://github.com/IBM-Cloud/WebSphere-in-IBM-Cloud/tree/master/WebSphere-In-IBM-Cloud-API-Examples){: new_window}.
 
 **Note:** After you create a service instance, depending on the T-shirt size that is created, your service might not be immediately ready for use. It is recommended that you query the **Status** field of the JSON returned to determine the current state of the service instance.
 
@@ -47,8 +47,7 @@ Through use of OpenAPI compliant REST APIs, clients have access to the same func
 ## Service dashboard
 {: #service_dashboard}
 
-After you create your service instance, you are taken to the service dashboard. You can always get back to the service dashboard by clicking the service icon from your organization dashboard.
-From the service dashboard you can access:
+After you create your service instance, you are taken to the service dashboard. You can always get back to the service dashboard by clicking the service icon from your {{site.data.keyword.Bluemix_notm}} resource list. From the service dashboard you can access:
 
 * A link to this documentation
 * A link to download the required OpenVPN configuration files
