@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-26"
+lastupdated: "2019-07-10"
 
-keywords: public ip, vpn, private ip, dns, port, custom vm
+keywords: public ip, vpn, private ip, dns, port, custom vm, resource group
 
 subcollection: wasaas
 
@@ -30,20 +30,20 @@ Figure 1. Client view of Multi-tenant networking with Public IP
 
 After you provision a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI, you can establish an OpenVPN connection. To create the connection, expand the drop-down menu and click **Download VPN Configuration** to download your VPN configuration. The VPN configuration contains an `.ovpn` file and certificates that are used to authenticate with the OpenVPN server. Once the OpenVPN connection is established, you can then access your VM through SSH. You can also access your Liberty Admin Center, traditional WebSphere Admin Console, and applications.
 
-The VPN configuration is scoped to your organization and region. It is valid for one year from the time created. Multiple OpenVPN client connections can be established simultaneously by using the same VPN configuration.
+The VPN configuration is scoped to your organization or resource group and region. It is valid for one year from the time created. Multiple OpenVPN client connections can be established simultaneously by using the same VPN configuration.
 
-**Note:** Your VPN configuration is only valid if your organization contains **active** subscriptions. When the last subscription for an organization is deleted, all the VPN configurations for the organization are suspended. Unexpired VPN configurations are automatically reactivated when a new subscription becomes active.
+**Note:** Your VPN configuration is only valid if your organization or resource group contains **active** subscriptions. When the last subscription for an organization or resource group is deleted, all the VPN configurations for the organization or resource group are suspended. Unexpired VPN configurations are automatically reactivated when a new subscription becomes active.
 
 ## Advanced VPN configuration management
 {: #advancedVPN}
 
-In most cases, you need only a single VPN configuration that you can download by using the **Download VPN Configuration** button. However, the advanced VPN management page, which is accessed by clicking **Advanced VPN Management** on the service dashboard, lets you create and manage multiple VPN configurations. Having multiple configurations might be helpful to transition smoothly to a new VPN configuration when the old one is about to expire. You can also request multiple VPN configurations to manage access to your VMs with different individuals or teams in your organization.  
+In most cases, you need only a single VPN configuration that you can download by using the **Download VPN Configuration** button. However, the advanced VPN management page, which is accessed by clicking **Advanced VPN Management** on the service dashboard, lets you create and manage multiple VPN configurations. Having multiple configurations might be helpful to transition smoothly to a new VPN configuration when the old one is about to expire. You can also request multiple VPN configurations to manage access to your VMs with different individuals or teams.  
 
-**Note:** You are allowed a **maximum** of 10 active VPN configurations for your organization at any time.
+**Note:** You are allowed a **maximum** of 10 active VPN configurations for your organization or resource group at any time.
 
 If your VPN configurations are compromised or expired, you can revoke VPN configuration by using the advanced VPN management page. Additionally, from an audit perspective, you can view a history of all VPN management activity and download active VPN configurations that were created previously from the advanced VPN management page.
 
-All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api#/){: new_window}.
+All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api/v3){: new_window}.
 
 
 ## Public internet access

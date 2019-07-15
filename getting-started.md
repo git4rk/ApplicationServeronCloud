@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-18"
+lastupdated: "2019-07-10"
 
-keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group
 
 subcollection: wasaas
 
@@ -50,7 +50,7 @@ The following steps walk you through creating a new environment in {{site.data.k
 
   * **Single Tenant Environment:** Under **Choose a region/location to deploy in**, verify that the selected region is the region where your Single Tenant Environment is deployed. Under **Environment**, select your Single Tenant Environment. By default, the public environment might be shown.
 
-    If your Single Tenant Environment is not listed, check that you're in the correct region and that your organization has access to your Single Tenant Environment.
+    If your Single Tenant Environment is not listed, check that you're in the correct region and that your resource group has access to your Single Tenant Environment.
     {: tip}
 1. Select the pricing plan for the edition of {{site.data.keyword.appserver_short}} that you want to deploy.
 1. Click **Create**.
@@ -79,7 +79,7 @@ Click the tab for the component, such as the server, deployment manager, or appl
 
 Review the details in the service configuration summary, including the estimated time that it takes to provision.
 
-**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your org](/docs/account?topic=account-orgsspacesusers){:new_window} is exactly the same, including case and whitespace, as the org name for your contract. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
+**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your resource group](/docs/resources?topic=resources-rgs){:new_window} is exactly the same, including case and whitespace, as the resource group name for your contract. Also verify that you are in the correct account for the specified resource group name, because resource group names are not required to be unique. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
 
 Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
 

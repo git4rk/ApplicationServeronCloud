@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-02"
+lastupdated: "2019-07-15"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,13 @@ subcollection: wasaas
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## July 15, 2019: Changed organization to resource group
+
+New subscriptions will belong to resource groups instead of orgs and spaces. Existing subscriptions that belong to [orgs and spaces](/docs/account?topic=account-orgsspacesusers){: new_window} will continue to work.
+* For information about resource group management, see [Single Tenant Environments](/docs/services/ApplicationServeronCloud?topic=wasaas-getting_startedSTE).
+* For information about accessing your VM, see [Network environment](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment) and [Single Tenant Environment access](/docs/services/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment).
+* For general information about resource groups, see [Creating and managing resource groups](/docs/resources?topic=resources-rgs){: new_window} in the {{site.data.keyword.Bluemix_notm}} documentation.
 
 ## July 8, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.5.0 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.0, other fix packs of traditional WebSphere Application Server, such as 9.0.0.11, 8.5.5.15 and 8.5.5.14, are available for provisioning.

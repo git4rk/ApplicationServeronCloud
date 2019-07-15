@@ -2,9 +2,9 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-14"
+lastupdated: "2019-07-10"
 
-keywords: overview, websphere, liberty, version, cell, collective, vm, virtual machine, t-shirt, block, price, reserve contract
+keywords: overview, websphere, liberty, version, cell, collective, vm, virtual machine, t-shirt, block, price, reserve contract, resource group
 
 subcollection: wasaas
 
@@ -34,19 +34,19 @@ The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network D
 
 The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Plan also includes the use of a Liberty collective. The Liberty collective is an administrative domain for a group of Liberty profiles (servers) and consists of two or more virtual machines. The first virtual machine contains the collective controller Liberty server, which is a control point for the Liberty collective. In addition to the Liberty collective, this virtual machine also contains the IBM HTTP Server, which allows access to your applications from a web browser. The remaining virtual machines are the collective hosts where the collective members reside (Liberty profile servers). The Liberty Admin Center feature is also enabled on the Liberty controller server.
 
-The following figure shows the architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment Cell and Liberty collective environments.
+The following figure shows the architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Network Deployment cell and Liberty collective environments.
 
 Figure 1. Network deployment cell and Liberty collective architecture
 
 ![Figure 1. Architecture of Network deployment cell and Liberty collective](images/CellCollectiveDiagram.gif)
 
-**Note**: In _Figure 1_ above, the pattern that depicts collocation of the Deployment Manager or the collective controller with the IBM HTTP Server is intended for development and testing purposes. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} also gives you the freedom to reconfigure the preinstalled software to meet your production application and operational needs; just as you would on-premises. Further, for the strictest production requirements, contact your IBM Sales representative who can speak to our single-tenant IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} offering, which offers isolated networking and compute resources.
+**Note**: In _Figure 1_, the pattern that depicts collocation of the Deployment Manager or the collective controller with the IBM HTTP Server is intended for development and testing purposes. WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} also gives you the freedom to reconfigure the preinstalled software to meet your production application and operational needs; just as you would on-premises. Further, for the strictest production requirements, contact your IBM Sales representative who can speak to our single-tenant IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} offering, which offers isolated networking and compute resources.
 
 
 ## Operational environment
 {: #operational_environment}
 
-IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} is a service that returns guests (virtual machines) in a shared environment for consumers to deploy applications. A VPN protects the public service from generic port scans and other unsolicited network-based attacks. However, it is important to note that the service VPN you use to access your service instance might be shared between multiple {{site.data.keyword.Bluemix_notm}} organizations and users. The virtual machines provide compute, memory, and I/O resources, which come from a shared pool of IaaS resources.
+IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} is a service that returns guests (virtual machines) in a shared environment for consumers to deploy applications. A VPN protects the public service from generic port scans and other unsolicited network-based attacks. However, it is important to note that the service VPN you use to access your service instance might be shared between multiple {{site.data.keyword.Bluemix_notm}} resource groups and users. The virtual machines provide compute, memory, and I/O resources, which come from a shared pool of IaaS resources.
 
 As specific compute, memory, and I/O resources are run by virtual machines in a shared environment, service configurations might vary. Configurations for each specific service instance can be viewed through the IBM WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service dashboards and portals.
 

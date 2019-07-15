@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-07-10"
 
 keywords: single tenant, access, catalog, create service, block, pricing, vpn, openvpn
 
@@ -41,7 +41,7 @@ The following steps discuss accessing your Single Tenant Environment, along with
 
     ![Single Tenant Environment name](images/environmentSTE.png)
 
-    **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and a member of an organization that is allowed to access your Single Tenant Environment.
+    **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and have appropriate access to a resource group that is allowed to access your Single Tenant Environment.
 
     **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} page.
 
