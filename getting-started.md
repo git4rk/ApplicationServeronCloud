@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-07-30"
 
-keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group
+keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group, lease
 
 subcollection: wasaas
 
@@ -86,4 +86,16 @@ Click **Provision** to set up your {{site.data.keyword.appserver_short}} environ
 ## Next steps
 {: #anchor_value}
 
-Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access).
+Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access) and [Network environment](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment).
+
+
+### Trial account lease
+{: #triallease}
+
+If you have a trial account, your WebSphere Application Server service resource has a lease. The UI shows when the lease was created, expires, and can be renewed. Initial leases last 14 days and can be renewed for 30 days at a time. To renew a lease, click **RENEW** in the UI for the service resource after the **Lease Renewal Available** date and time and before lease expiration.
+
+**Important**: If you do not renew before the lease expires, your service resource is deleted.
+
+In the REST API output, resources have a non-null `expireTime` field if the subscription has a lease. You cannot renew your lease using the REST API; you must use the UI.
+
+If your account changes to a non-trial (or paid) account, the lease is removed from your service resource and is no longer shown in the UI. If a lease is still shown in the UI after the change to a non-trial account, [contact IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues) to ensure that your account is updated before the lease expires.
