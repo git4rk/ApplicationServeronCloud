@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-30"
+lastupdated: "2019-09-17"
 
 keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group, lease
 
@@ -31,7 +31,7 @@ If you want an environment with more dedicated virtual machine resources, such a
 
 ### Migrating an existing WebSphere environment
 
-To migrate an existing WebSphere Application Server Network Deployment environment to this service, use the [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. The tool uploads the profile configuration and applications for your stand-alone server or cell nodes to a service instance in {{site.data.keyword.cloud_notm}}. For an overview of cloud migration and a step-by-step walkthrough of using the tool, see [the WebSphere Configuration Migration Tool for IBM Cloud guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window}  on WASdev.
+To migrate an existing WebSphere Application Server Network Deployment environment to this service, use the [WebSphere Configuration Migration Tool for {{site.data.keyword.cloud_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){:new_window}. The tool uploads the profile configuration and applications for your stand-alone server or cell nodes to a service instance in {{site.data.keyword.cloud_notm}}. For an overview of cloud migration and a step-by-step walkthrough of using the tool, see [the WebSphere Configuration Migration Tool for IBM Cloud guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){:new_window} on WASdev.
 
 The following steps walk you through creating a new environment in {{site.data.keyword.appserver_full}}.
 
@@ -79,7 +79,7 @@ Click the tab for the component, such as the server, deployment manager, or appl
 
 Review the details in the service configuration summary, including the estimated time that it takes to provision.
 
-**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your resource group](/docs/resources?topic=resources-rgs){:new_window} is exactly the same, including case and whitespace, as the resource group name for your contract. Also verify that you are in the correct account for the specified resource group name, because resource group names are not required to be unique. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
+**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your resource group](/docs/resources?topic=resources-rgs){:new_window} is exactly the same, including case and white space, as the resource group name for your contract. Also verify that you are in the correct account for the specified resource group name, because resource group names are not required to be unique. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
 
 Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
 
@@ -96,6 +96,6 @@ If you have a trial account, your WebSphere Application Server service resource 
 
 **Important**: If you do not renew before the lease expires, your service resource is deleted.
 
-In the REST API output, resources have a non-null `expireTime` field if the subscription has a lease. You cannot renew your lease using the REST API; you must use the UI.
+In the REST API output, resources have a non-null `expireTime` field if the subscription has a lease. You cannot renew your lease by using the REST API; you must use the UI.
 
 If your account changes to a non-trial (or paid) account, the lease is removed from your service resource and is no longer shown in the UI. If a lease is still shown in the UI after the change to a non-trial account, [contact IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues) to ensure that your account is updated before the lease expires.

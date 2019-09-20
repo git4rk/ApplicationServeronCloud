@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-08-26"
 
 keywords: single tenant, websphere, sales, order, resource group
 
@@ -30,7 +30,7 @@ To order a Single Tenant Environment, [contact IBM Sales](/docs/services/Applica
 ## Overview of WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment
 {: #overviewSTE}
 
-The Single Tenant Environment you your own private instance of the service, private networking, and isolated resources. Although the offering is managed independently, the service and created service instance dashboards are accessible through a specific {{site.data.keyword.Bluemix_notm}} public region as indicated in the following figure.
+The Single Tenant Environment provides your own private instance of the service, private networking, and isolated resources. Although the offering is managed independently, the service and created service instance dashboards are accessible through a specific {{site.data.keyword.Bluemix_notm}} public region as indicated in the following figure.
 
 Figure 1. Architecture of the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-09-18"
 
 keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
 
@@ -118,33 +118,40 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
 1. Review the warning message that appears the first time you connect, "The authenticity of host x.x.x.x cannot be established." This message is normal. When prompted, select yes. The public key is now installed on your VM for the user **virtuser**.
 2. Log in to **virtuser** by using the private key. For best results, use the private key authentication method.
 3. Copy the contents of the private key into a file.
-4. Connect with SSH by running the following command.
+4. Connect with SSH by running the following command. For `<IP_address>`, specify the service instance IP address.
 
   ```
-  ssh virtuser@169.53.246.xxx -i /path/privateKeyFileName
+  ssh virtuser@<IP_address> -i /path/privateKeyFileName
   ```
   {: codeblock}
 
-5. Gain full sysadmin authority by switching **virtuser** to **root** by running the following command.
+  If you cannot authenticate to the server with the private key file name, add the `IdentitiesOnly` option set to `yes` to the command. The option instructs SSH to use only the authentication identity files that are specified in the command or in the SSH configuration, even if the SSH agent offers other identities.
+
+  ```
+  ssh -o IdentitiesOnly=yes virtuser@<IP_address> -i /path/privateKeyFileName
+  ```
+  {: codeblock}
+
+5. If you experience problems when you access the system with the private ssh key, use the wsadmin password that is provided. Log in as wsadmin by running the following command with the service instance IP address and then provide the password.
+
+  ```
+  ssh wsadmin@<IP_address>
+  ```
+  {: codeblock}
+
+6. Gain full sysadmin authority by switching **virtuser** to **root** by running the following command.
 
   ```
   sudo su root
   ```
   {: codeblock}
 
-6. If you experience problems when you access the system with the private ssh key, use the root password that is provided. Log in as root by running the command that follows and provide the password.
-
-  ```
-  ssh root@169.53.246.x
-  ```
-  {: codeblock}
-
-7. Whether you access the system with the private ssh key or the root password, immediately change the root password.
+7. Whether you access the system with the private ssh key or the virtuser password, immediately change the virtuser password.
 8. To simplify your SSH commands, create a file that is named `config` in the `%HOME%/.ssh` directory. For example:
 
    ```
    Host VM1
-      Hostname 169.53.246.xxx
+      Hostname <IP_address>
       User virtuser
       IdentityFile /path/privateKeyFileName
    ```
@@ -160,10 +167,10 @@ Use the following instructions to set up SSH access to your WebSphere Applicatio
 ## System paths
 {: #system_paths}
 
-* The Liberty commands can be issued from `/opt/IBM/WebSphere/Liberty/bin`.
+* The Liberty commands can be run from `/opt/IBM/WebSphere/Liberty/bin`.
 * The Liberty server profile location is `/opt/IBM/WebSphere/Profiles/Liberty/servers/server1`.
 * The Traditional WebSphere Application Server core product files, which are shared by all profiles, are located in `/opt/IBM/WebSphere/AppServer/`.
-* The Traditional WebSphere Application Server commands can be issued from the default profile location in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` where:
+* The Traditional WebSphere Application Server commands can be run from the default profile location in `/opt/IBM/WebSphere/Profiles/Default<profile_type><profile_number>/bin` where:
   * `<profile_type>` is a value of `AppSrv`, `Dmgr`, `Custom`, `AdminAgent`, `JobMgr`, or `SecureProxySrv`.
   * `<profile_number>` is a sequential number that is used to create a unique profile name.
 
@@ -182,7 +189,7 @@ Since you are using links that are provided by {{site.data.keyword.IBM}}, you ca
 
 Another option is to export the incoming signer certificate and then import it into your browser as a trusted root certificate. This option would require you to make an entry in your *hosts* file that maps the VM's IP address to the certificate issuer's common name. This name is in the following format: `wl<pureapplication.ibmcloud.com`. If you now use the host name instead of the IP address in the URL, you can connect cleanly. You then must access the Admin Center or Admin Console by using that host name instead of the IP address in the URL.
 
-Lastly, customers often install their own root certificates for applications they make external. For more information, refer to the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
+Lastly, customers often install their own root certificates for applications they make external. For more information, see the [WebSphere Application Server](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/tsec_securecomm.html){: new_window} or [Liberty Core](https://www.ibm.com/support/knowledgecenter/SSD28V_liberty/com.ibm.websphere.wlp.core.doc/ae/twlp_sec_comm.html){: new_window} documentation in IBM Knowledge Center.
 
 ## Firewall ports
 {: #firewall_ports}

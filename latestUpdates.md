@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-15"
+lastupdated: "2019-09-20"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,12 @@ subcollection: wasaas
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## September 20, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.5.1 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.1, other fix packs of traditional WebSphere Application Server, such as 9.0.5.0, 8.5.5.16 and 8.5.5.15, are available for provisioning.
+* The 19.0.0.9 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 19.0.0.9, the 19.0.0.6 fix pack version of WebSphere Application Server Liberty is available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## July 15, 2019: Changed organization to resource group
 
@@ -72,7 +78,7 @@ If you have existing WebSphere Application Server licenses, you can now use thes
 
 ## June 13, 2018: Reserve contract billing now available
 
-With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other {{site.data.keyword.appserver_full}} users. You can use your service block hours in any way you choose throughout the month, with any overages being charged according to the typical pay-as-you-go subscription model.
+With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other {{site.data.keyword.appserver_full}} users. You can use your service block hours in any way you choose throughout the month, with any overages charged according to the typical pay-as-you-go subscription model.
 
 To learn more about reserve contract billing, see [Billing options](/docs/services/ApplicationServeronCloud?topic=wasaas-about#billing-options).
 
@@ -85,7 +91,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
   * A vulnerability where IBM WebSphere Application Server might provide weaker than expected security for the administrative console.
   * A vulnerability where IBM WebSphere Application Server installations that use Form Login might allow a remote attacker to conduct spoofing attacks.
   * A vulnerability where IBM WebSphere Application Server might allow a local attacker to obtain sensitive information, caused by improper handling of application requests, which might allow unauthorized access to read a file.
-  * A vulnerability where Apache Commons FileUpload, as used in several products, might allow a remote attacker to execute arbitrary code on the system, caused by deserialization of untrusted data in DiskFileItem class of the FileUpload library. A remote attacker might exploit this vulnerability to execute arbitrary code under the context of the current process.
+  * A vulnerability where Apache Commons FileUpload, as used in several products, might allow a remote attacker to run arbitrary code on the system, caused by deserialization of untrusted data in DiskFileItem class of the FileUpload library. A remote attacker might exploit this vulnerability to run arbitrary code under the context of the current process.
   * A vulnerability where Intel Haswell Xeon, AMD PRO and ARM Cortex A57 CPUs might allow a local authenticated attacker to obtain sensitive information, caused by a bounds check bypass in the CPU speculative branch instruction execution feature. By conducting targeted cache side-channel attacks, an attacker could exploit this vulnerability to cross the syscall boundary and read data from the CPU virtual memory.
 * Integrated miscellaneous service maintenance.
 
@@ -157,14 +163,14 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg22000834){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A vulnerability where WebSphere Application Server configured with OpenID Connect (OIDC) Trust Association Interceptor (TAI) might allow a user to gain elevated privileges on the system.
   * A vulnerability where WebSphere Application Server might provide weaker than expected security. A remote attacker might exploit this weakness to obtain sensitive information and gain unauthorized access to the admin console.
-  * An issue where WebSphere Application Server is vulnerable to cross-site request forgery, which might allow an attacker to execute malicious and unauthorized actions that are transmitted from a user that the website trusts.
+  * An issue where WebSphere Application Server is vulnerable to cross-site request forgery, which might allow an attacker to run malicious and unauthorized actions that are transmitted from a user that the website trusts.
 
 
 ## March 15, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Integrated miscellaneous service maintenance.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 8.5.5.11 or 9.0.0.3 is installed with new instances of Traditional WebSphere Application Server.
-* Addressed [several security vulnerabilities](https://www-01.ibm.com/support/docview.wss?uid=swg22000587){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+* Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg22000587){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An unspecified vulnerability for the Libraries component that has no confidentiality impact, high integrity impact, and no availability impact.
   * An unspecified vulnerability for the Libraries component that might allow a remote attacker to obtain sensitive information, resulting in a high confidentiality impact by using unknown attack vectors.
   * An unspecified vulnerability for the Libraries component that might allow a remote attacker to cause a denial of service, resulting in a low availability impact by using unknown attack vectors.
@@ -181,7 +187,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 * Integrated miscellaneous service maintenance.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 8.5.5.11 or 9.0.0.2 is installed with new instances of Traditional WebSphere Application Server.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 16.0.0.4 is installed with new instances of WebSphere Application Server Liberty (Core and ND Plans).
-* Addressed [several security vulnerabilities](https://www-01.ibm.com/support/docview.wss?uid=swg21997657){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+* Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21997657){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A vulnerability to denial of service, caused by allowing serialized objects from untrusted sources to run and cause the consumption of resources.
   * The use of malformed SOAP requests that might allow a remote attacker to obtain sensitive information.
 
@@ -189,9 +195,9 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 ## December 16, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Integrated miscellaneous service maintenance.
-* Addressed [several security vulnerabilities](https://www-01.ibm.com/support/docview.wss?uid=swg21995995){: new_window} in the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
+* Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21995995){: new_window} in the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An unspecified vulnerability in Oracle Java SE and Java SE Embedded related to the Hotspot component that has high confidentiality impact, high integrity impact, and high availability impact.
-  * An unspecified vulnerability in Oracle Java SE and Java SE Embedded related to the Networking component that might allow a remote attacker to obtain sensitive information resulting in a high confidentiality impact by using unknown attack vectors.
+  * An unspecified vulnerability in Oracle Java SE and Java SE Embedded related to the Networking component that might allow a remote attacker to obtain sensitive information, resulting in a high confidentiality impact by using unknown attack vectors.
   *  A cross-site scripting vulnerability in IBM WebSphere Application Server that allows users to embed arbitrary JavaScript code in the Web UI. The code can alter the intended functionality potentially, leading to credentials disclosure within a trusted session.
 
 
@@ -199,7 +205,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 
 * Added ability for clients to request a [Public IP](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) address for their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21993842){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
-  * A vulnerability in IBM WebSphere Application Server that might allow remote attackers to execute arbitrary Java code with a serialized object from untrusted sources.
+  * A vulnerability in IBM WebSphere Application Server that might allow remote attackers to run arbitrary Java code with a serialized object from untrusted sources.
   * A denial-of-service vulnerability that is caused by an out-of-bounds read in the TS_OBJ_print_bio function. A remote attacker might exploit this vulnerability by using a specially crafted time-stamp file to cause the application to crash.
   * A potential vulnerability in OpenSSL that might allow a remote attacker to obtain sensitive information, caused by an error in the Triple-DES on 64-bit block cipher, used as a part of the SSL/TLS protocol. By capturing large amounts of encrypted traffic between the SSL/TLS server and the client, a remote attacker able to conduct a man-in-the-middle attack might exploit this vulnerability to recover the plaintext data and obtain sensitive information. This vulnerability is known as the SWEET32 Birthday attack.
   * OpenSSL is vulnerable to a denial of service. By repeatedly requesting renegotiation, a remote authenticated attacker might send an overly large OCSP Status Request extension to consume all available memory resources.
@@ -233,7 +239,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 ## June 24, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Added ability for clients to choose between V8.5 and V9.0 when you create a new _Traditional ND_ or _Traditional WebSphere_ instance.
-* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}  so that new instances of WebSphere Application Server Liberty (Core and ND Plans) use fix pack 16.0.0.2. 16.0.0.2 is the next fix pack after 8.5.5.9. As of 16.0.0.2, all entitled Liberty optional features that are supported for these plans are installed by default.
+* Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} so that new instances of WebSphere Application Server Liberty (Core and ND Plans) use fix pack 16.0.0.2. 16.0.0.2 is the next fix pack after 8.5.5.9. As of 16.0.0.2, all entitled Liberty optional features that are supported for these plans are installed by default.
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21984977){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An XML External Entity Injection (XXE) vulnerability in the Apache Standard Taglibs that affects IBM WebSphere Application Server.
   * A potential for weaker than expected security for the WebSphere Application Server Liberty profile API Discovery feature and Swagger documents.
@@ -248,7 +254,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 
 ## April 26, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Addressed  [potential security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21982128){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} if FIPS 140-2 is enabled and multiple vulnerabilities in Samba - including Badlock.
+* Addressed [potential security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21982128){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} if FIPS 140-2 is enabled and multiple vulnerabilities in Samba - including Badlock.
 * Integrated miscellaneous service maintenance.
 
 ## April 15, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
@@ -258,7 +264,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/servic
 * Integrated miscellaneous service maintenance.
 
 ## February 19, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
-* Added an option for clients with memory-intensive applications to "right-size" their environment with larger virtual machines. Clients can select the specific resource size of a given WebSphere Application Server component or single system up to 32 GB RAM virtual machines.
+* Added an option for clients with memory-intensive applications to "right-size" their environment with larger virtual machines. Clients can select the resource size of a specific WebSphere Application Server component or single system up to 32 GB RAM virtual machines.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} from 8.5.5.7 to 8.5.5.8
 * Addressed multiple vulnerabilities in IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} that are commonly referred to as [SLOTH](https://www.ibm.com/support/docview.wss?uid=swg21977244){: new_window}.
 * Addressed a [Cross-site scripting](https://www.ibm.com/support/docview.wss?uid=swg21976337){: new_window} vulnerability that affects consumers of the OAuth provider output.
