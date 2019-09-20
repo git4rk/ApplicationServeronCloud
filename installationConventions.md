@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-15"
+lastupdated: "2019-09-17"
 
 keywords: install, installation manager, im, wsadmin, cell, collective, websphere, liberty, virtual image
 
@@ -29,7 +29,7 @@ When you are administering your {{site.data.keyword.appserver_full}} environment
 ## Cell installation conventions
 {: cell_installation_conventions}
 
-A WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} cell is installed and configured following a standardized directory structure. The following list notes a few of the important settings.  See `/etc/virtualimage.properties` for a full list of the settings.
+A WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} cell is installed and configured following a standardized directory structure. The following list notes a few of the important settings. See `/etc/virtualimage.properties` for a full list of the settings.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer
@@ -41,7 +41,7 @@ A WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} cell is ins
 
 ## Liberty collective installation conventions
 
-A Liberty collective is installed and configured following a standardized directory structure. The following list notes a few of the important settings.  See `/etc/virtualimage.properties` for a full list of the settings.
+A Liberty collective is installed and configured following a standardized directory structure. The following list notes a few of the important settings. See `/etc/virtualimage.properties` for a full list of the settings.
 
 * IHS_HOME=/opt/IBM/WebSphere/HTTPServer
 * IHS_INSTALL_ROOT=/opt/IBM/WebSphere/HTTPServer

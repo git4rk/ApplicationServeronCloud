@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-09-17"
 
 keywords: public ip, vpn, private ip, dns, port, custom vm, resource group
 
@@ -28,7 +28,7 @@ Figure 1. Client view of Multi-tenant networking with Public IP
 ## VPN access
 {: #vpnAccess}
 
-After you provision a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI, you can establish an OpenVPN connection. To create the connection, expand the drop-down menu and click **Download VPN Configuration** to download your VPN configuration. The VPN configuration contains an `.ovpn` file and certificates that are used to authenticate with the OpenVPN server. Once the OpenVPN connection is established, you can then access your VM through SSH. You can also access your Liberty Admin Center, traditional WebSphere Admin Console, and applications.
+After you provision a WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service instance from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI, you can establish an OpenVPN connection. To create the connection, expand the drop-down menu and click **Download VPN Configuration** to download your VPN configuration. The VPN configuration contains an `.ovpn` file and certificates that are used to authenticate with the OpenVPN server. After the OpenVPN connection is established, you can access your VM through SSH. You can also access your Liberty Admin Center, traditional WebSphere Admin Console, and applications.
 
 The VPN configuration is scoped to your organization or resource group and region. It is valid for one year from the time created. Multiple OpenVPN client connections can be established simultaneously by using the same VPN configuration.
 
@@ -43,7 +43,7 @@ In most cases, you need only a single VPN configuration that you can download by
 
 If your VPN configurations are compromised or expired, you can revoke VPN configuration by using the advanced VPN management page. Additionally, from an audit perspective, you can view a history of all VPN management activity and download active VPN configurations that were created previously from the advanced VPN management page.
 
-All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using our REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api/v3){: new_window}.
+All the features available from the service dashboard in the {{site.data.keyword.Bluemix_notm}} UI can also be scripted by using the REST APIs. For more information, see the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} [REST API Documentation](https://wasaas-broker.us-south.websphereappsvr.cloud.ibm.com/wasaas-broker/api/v3){: new_window}.
 
 
 ## Public internet access
@@ -91,7 +91,7 @@ When you open access to your public IP, the IP address is associated with your V
 * To configure your Liberty Core server, see [Configure Liberty Core Server for public access](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess).
 * To configure your traditional WebSphere Base server, add a web container transport chain that listens on port 80 and 443 as described in [Configuring transport chains](https://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.5/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}.
 
-**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a Web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port over 1024, such as 9080 and 9443. The following commands provide an example of this process:
+**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port over 1024, such as 9080 and 9443. The following commands provide an example of this process:
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
@@ -139,7 +139,7 @@ COMMIT
 
 You connect to your VM's private IP address over the VPN connection. Your Liberty Admin Center (9080, 9443), traditional WebSphere Admin Console (9060, 9043), SSH (22), and ports other than 80 and 443 are only accessible through the VPN connection as depicted in Figure 1. See the sample Liberty Core **server.xml** and **ibm-web-bnd.xml** for details about separating the Liberty Admin Center from your application ports.
 
-**Avoid trouble:** For Liberty Core and traditional WebSphere Base servers, the Firewall ports are preconfigured when your VM is provisioned. However, for Network Deployment configurations where the Deployment manager or the Collective controller is collocated with the IBM HTTP Server, you might need to open ports on the firewall. See [Firewall ports](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports) for details.
+**Avoid trouble:** For Liberty Core and traditional WebSphere Base servers, the Firewall ports are preconfigured when your VM is provisioned. However, for Network Deployment configurations where the deployment manager or the collective controller is collocated with the IBM HTTP Server, you might need to open ports on the firewall. See [Firewall ports](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#firewall_ports) for details.
 
 ## Configuring a Liberty Core server for a public IP access
 {: #configureLibertyForPublicAccess}
@@ -167,7 +167,7 @@ The following snippet is an example of server.xml configuration adjustments:
         <tcpOptions soReuseAddr="true"/>
     </httpEndpoint>
 
-    <!–- restrict default_host to vpn so the Liberty Admin Center is not public -->
+    <!-- restrict default_host to vpn so the Liberty Admin Center is not public -->
     <virtualHost id="default_host" allowFromEndpointRef="defaultHttpEndpoint">
       <hostAlias>*:9080</hostAlias>
       <hostAlias>*:9443</hostAlias>
@@ -203,7 +203,7 @@ It is important to note that WebSphere Application Server in {{site.data.keyword
 
 We recommend that you review the DNS configuration to see whether it fits your needs. You can update the `/etc/resolv.conf` file to reference the DNS server of your choice if the ones provided by IBM do not meet your requirements.
 
-**Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might  have only a primary DNS server configured in the `/etc/resolv.conf` file. If you want a HA solution, you can either release the VM and provision a new one or update the `/etc/resolv.conf` file to add a secondary DNS server. The secondary DNS server can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
+**Note:** Older WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs might have only a primary DNS server configured in the `/etc/resolv.conf` file. If you want a HA solution, you can either release the VM and provision a new one or update the `/etc/resolv.conf` file to add a secondary DNS server. The secondary DNS server can be your preferred DNS server or the one provided by {{site.data.keyword.Bluemix_notm}} (10.0.80.11).
 
 
 ## Opening ports for new servers on custom nodes
