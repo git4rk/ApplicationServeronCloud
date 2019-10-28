@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-10"
+lastupdated: "2019-10-22"
 
 keywords: single tenant, access, catalog, create service, block, pricing, vpn, openvpn
 
@@ -43,7 +43,7 @@ The following steps discuss accessing your Single Tenant Environment, along with
 
     **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and have appropriate access to a resource group that is allowed to access your Single Tenant Environment.
 
-    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} page.
+    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} page.
 
 9. Select the appropriate plan, and click **Create**.
 
@@ -54,10 +54,8 @@ The following steps discuss accessing your Single Tenant Environment, along with
 
 A **block** is defined as follows.
   * 1 vCPU
-  * 12.5 GB disk[1]
+  * 25 GB disk
   * 2 GB RAM
-
-[1] *Technically, a small system contains only 12 GB of disk. A medium system contains 25 GB of disk, and a large contains 50 GB, and so on.*
 
 For each virtual machine you create, specify the T-shirt size you desire: S, M, L, XL, or XXL, which corresponds to 1, 2, 4, 8, and 16 blocks. When you select a T-shirt size, the corresponding number of blocks is decremented from your quota.
 
@@ -71,10 +69,10 @@ For example, suppose that you have a small environment, which contains 64 blocks
 
 After your Single Tenant Environment is provisioned, you can download your VPN credentials and establish an OpenVPN connection. For more information, see the following links:
 
-* [VPN Access](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
-* [Setting up OpenVPN](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
+* [VPN Access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
+* [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
 
 ## Managing your Single Tenant Environment
 {: #manageSTE}
 
-To add extra capacity to your existing Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. See [Contacting sales](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) for details.
+To add extra capacity to your existing Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. See [Contacting sales](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) for details.
