@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-09-17"
+lastupdated: "2019-10-16"
 
 keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group, lease
 
@@ -27,7 +27,7 @@ With {{site.data.keyword.appserver_full}}, you can set up a pre-configured WebSp
 ## Before you begin
 {: #prereqs}
 
-If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, contact IBM Sales before you create the service. Learn more about these options in [About](/docs/services/ApplicationServeronCloud?topic=wasaas-about#about).
+If you want an environment with more dedicated virtual machine resources, such as a reserve contract or a Single Tenant Environment, contact IBM Sales before you create the service. Learn more about these options in [About](/docs/ApplicationServeronCloud?topic=wasaas-about#about).
 
 ### Migrating an existing WebSphere environment
 
@@ -70,7 +70,7 @@ For the Network Deployment plan, choose the profile and architecture for your en
 ## Step 3: Size your virtual machines
 {: #vm_sizing}
 
-You can individually size the virtual machine for each component in your environment. Virtual machines are chunked in [T-shirt sizes](/docs/services/ApplicationServeronCloud?topic=wasaas-about#vm-size) of blocks of resources.
+You can individually size the virtual machine for each component in your environment. Virtual machines are chunked in [T-shirt sizes](/docs/ApplicationServeronCloud?topic=wasaas-about#vm-size) of blocks of resources.
 
 Click the tab for the component, such as the server, deployment manager, or application node, and select the T-shirt size for its virtual machine.
 
@@ -86,7 +86,7 @@ Click **Provision** to set up your {{site.data.keyword.appserver_short}} environ
 ## Next steps
 {: #anchor_value}
 
-Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](/docs/services/ApplicationServeronCloud?topic=wasaas-system_access) and [Network environment](/docs/services/ApplicationServeronCloud?topic=wasaas-networkEnvironment).
+Learn about how to access and manage your new {{site.data.keyword.appserver_short}} environment in [System access](/docs/ApplicationServeronCloud?topic=wasaas-system_access) and [Network environment](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment).
 
 
 ### Trial account lease
@@ -98,4 +98,4 @@ If you have a trial account, your WebSphere Application Server service resource 
 
 In the REST API output, resources have a non-null `expireTime` field if the subscription has a lease. You cannot renew your lease by using the REST API; you must use the UI.
 
-If your account changes to a non-trial (or paid) account, the lease is removed from your service resource and is no longer shown in the UI. If a lease is still shown in the UI after the change to a non-trial account, [contact IBM](/docs/services/ApplicationServeronCloud?topic=wasaas-reporting_issues) to ensure that your account is updated before the lease expires.
+If your account changes to a non-trial (or paid) account, the lease is removed from your service resource and is no longer shown in the UI. If a lease is still shown in the UI after the change to a non-trial account, [contact IBM](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues) to ensure that your account is updated before the lease expires.
