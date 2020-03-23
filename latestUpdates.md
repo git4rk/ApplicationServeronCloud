@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-12-13"
+  years: 2017, 2020
+lastupdated: "2020-03-20"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,12 @@ subcollection: wasaas
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## March 20, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.5.3 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.3, other fix packs of traditional WebSphere Application Server, such as 9.0.5.2, 8.5.5.17 and 8.5.5.16, are available for provisioning.
+* The 20.0.0.3 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 20.0.0.3, the 19.0.0.12 fix pack version of WebSphere Application Server Liberty is available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## December 13, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
