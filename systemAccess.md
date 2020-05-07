@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-10-16"
+  years: 2017, 2020
+lastupdated: "2020-04-02"
 
 keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
 
@@ -100,7 +100,7 @@ OpenVPN is required for access to any WebSphere Application Server in {{site.dat
 ## Using SSH to access WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VMs
 {: #using_ssh}
 
-These instructions assume that you are using OpenSSH as your client. OpenSSH is normally available on Linux or in Cygwin running on Windows. It also can be installed to run from a Windows command prompt.
+These instructions assume that you are using OpenSSH as your client. OpenSSH is normally available on Linux&reg; or in Cygwin running on Windows. It also can be installed to run from a Windows command prompt.
 
 To verify installation of OpenSSH, run the following command.
   ```

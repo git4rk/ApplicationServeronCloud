@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-10-16"
+  years: 2017, 2020
+lastupdated: "2020-04-02"
 
 keywords: public ip, vpn, private ip, dns, port, custom vm, resource group
 
@@ -91,7 +91,7 @@ When you open access to your public IP, the IP address is associated with your V
 * To configure your Liberty Core server, see [Configure Liberty Core Server for public access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#configureLibertyForPublicAccess).
 * To configure your traditional WebSphere Base server, add a web container transport chain that listens on port 80 and 443 as described in [Configuring transport chains](https://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.5/com.ibm.websphere.base.doc/ae/trun_chain_transport.html){: new_window}.
 
-**Avoid trouble:** Linux reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port over 1024, such as 9080 and 9443. The following commands provide an example of this process:
+**Avoid trouble:** Linux&reg; reserves ports smaller than 1024 for privileged users, such as **root**. However, it is a common practice to run traditional WebSphere Base servers as a **non-root** user. Therefore, when you add a web container transport chain, change your **iptables** configuration as the **root** user. Specifically, redirect restricted ports 80 and 443 to another port over 1024, such as 9080 and 9443. The following commands provide an example of this process:
 
 ```
 -bash-4.1# sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 9080
