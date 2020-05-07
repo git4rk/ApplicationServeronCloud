@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-10-24"
+  years: 2019, 2020
+lastupdated: "2020-05-04"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
@@ -88,7 +88,7 @@ You cannot migrate the virtual machine to the upgraded infrastructure. You must 
 
 **Notes**:
   * You can no longer create resources under your organization name. Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}} supports resource groups. You must use Resource Group to [create your new resource](/docs/resources?topic=resources-rgs){: new_window}. You still will be able to access your existing resources created under your organization name. It is recommended that you rename your resource group to a meaningful name instead of `Default`.
-  * You will get one or more new IP addresses and must set up new OpenVPN connectivity to access the virtual machines.
+  * You get one or more new IP addresses and must set up new OpenVPN connectivity to access the virtual machines.
   * If you are currently using public IP, the public IP also changes. You might need to update your DNS settings to direct your customers to the new resources.
   * You might be able to [use a migration tool](#faq-migrate-tools) to move your application.
 
@@ -115,6 +115,17 @@ You cannot migrate the virtual machine to the upgraded infrastructure. You must 
 
   **Limitation**: The tool supports migration only among {{site.data.keyword.appserver_short}} Version 9.x releases.
 
+
+  ## After a virtual machine is provisioned, can I increase its block or RAM size?
+  {: #faq-vm-size}
+  {: faq}
+
+  {{site.data.keyword.appserver_short}} provides [T-shirt sizing with virtual machines sized and priced in *blocks*](/docs/ApplicationServeronCloud?topic=wasaas-about#vm-size){: new_window}. For each block in the T-shirt size, the virtual machine is provisioned with the following resources.
+  * 1 virtual CPU (vCPU)
+  * 2 GB RAM
+  * 25 GB of hard drive space
+
+After a virtual machine is provisioned, its number of blocks and RAM cannot be increased.
 
 
 <!-- For detailed guidance on what to include on this page, see [FAQs guidance](/docs/developing/writing/faq.html#faqs). You can also check out some examples here: [IBM Cloud IAM FAQs](/docs/developing/Access-Management/iamfaq.html#faqs) and [Account FAQs](/docs/account/account_faq.html#accountfaqs). -->

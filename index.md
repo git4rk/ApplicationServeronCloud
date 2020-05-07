@@ -72,7 +72,7 @@ Virtual machines are sized and priced in *blocks*. For each block in the T-shirt
 | XXL | 16 | 16 | 32 | 400 |
 {: caption="Table 1. Blocks per T-shirt size" caption-side="top"}
 
-Each server or node is provisioned in a single virtual machine. For example, in the Network Deployment plan, if you provision one M virtual machine (2 blocks) for your deployment manager and 8 S virtual machines (1 block) for application nodes, you would be charged for a total of 10 blocks.
+Each server or node is provisioned in a single virtual machine. For example, in the Network Deployment plan, if you provision one M virtual machine (2 blocks) for your deployment manager and 8 S virtual machines (1 block) for application nodes, you would be charged for a total of 10 blocks. After a virtual machine is provisioned, its number of blocks or RAM cannot be increased.
 
 ## Billing options
 {: #billing-options}
