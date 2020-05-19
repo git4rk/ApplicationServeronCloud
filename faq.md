@@ -6,7 +6,7 @@ lastupdated: "2020-05-04"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
@@ -41,13 +41,13 @@ The upgraded infrastructure has the same CPU and memory for a block size but the
 {: caption="Table 1. Disk size per T-shirt" caption-side="top"}
 
 
-For information about T-shirt and block sizing, see [Virtual machine sizing](/docs/ApplicationServeronCloud?topic=wasaas-about#vm-size){: new_window}.
+For information about T-shirt and block sizing, see [Virtual machine sizing](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-about#vm-size){: new_window}.
 
 ### Different network connectivity
 
 The upgraded infrastructure is set up on a different network than old infrastructure and requires you to set up separate OpenVPN connectivity. You cannot access virtual machines on both the old and the upgraded infrastructure with the same OpenVPN connectivity.
 
-For more information, see [VPN access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window} and [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}.
+For more information, see [VPN access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#vpnAccess){: new_window} and [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#setup_openvpn){: new_window}.
 
 ## How do I know whether my virtual machine is on old infrastructure or upgraded infrastructure?
 {: #faq-check-machine}
@@ -120,7 +120,7 @@ You cannot migrate the virtual machine to the upgraded infrastructure. You must 
   {: #faq-vm-size}
   {: faq}
 
-  {{site.data.keyword.appserver_short}} provides [T-shirt sizing with virtual machines sized and priced in *blocks*](/docs/ApplicationServeronCloud?topic=wasaas-about#vm-size){: new_window}. For each block in the T-shirt size, the virtual machine is provisioned with the following resources.
+  {{site.data.keyword.appserver_short}} provides [T-shirt sizing with virtual machines sized and priced in *blocks*](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-about#vm-size){: new_window}. For each block in the T-shirt size, the virtual machine is provisioned with the following resources.
   * 1 virtual CPU (vCPU)
   * 2 GB RAM
   * 25 GB of hard drive space

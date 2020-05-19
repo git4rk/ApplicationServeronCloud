@@ -6,7 +6,7 @@ lastupdated: "2019-10-22"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
@@ -57,7 +57,7 @@ I do not see the resource that I provisioned.
 If you do not renew a trial account lease before the lease expires, your service resource is deleted.
 {: tsCauses}
 
-If your account is a trial account, you must renew the lease to keep your resource active. See [Trial account lease](/docs/ApplicationServeronCloud?topic=wasaas-getting-started#triallease){: new_window} for details.
+If your account is a trial account, you must renew the lease to keep your resource active. See [Trial account lease](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting-started#triallease){: new_window} for details.
 {: tsResolve}
 
 ## Why can't I see my environment?
@@ -67,14 +67,14 @@ If your account is a trial account, you must renew the lease to keep your resour
 I am a Single Tenant customer and I am not able to see my environment.
 {: tsSymptoms}
 
-If you cannot [access your Single Tenant Environment](/docs/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment#singleTenantEnvironment){: new_window}, you might need to specify or change a resource group name and ID.
+If you cannot [access your Single Tenant Environment](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-singleTenantEnvironment#singleTenantEnvironment){: new_window}, you might need to specify or change a resource group name and ID.
 {: tsCauses}
 
 Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}} supports [resource groups](/docs/resources?topic=resources-rgs){:new_window}. If access to your environment was granted with the organization name, then you must request access for your resource group:
 {: tsResolve}
 1. Rename your resource group to a meaningful name, instead of using the default name, `Default`.
 2. Click the **WebSphere Application Server** tile.
-3. [Open a support ticket](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} for **Application Services** from the {{site.data.keyword.cloud_notm}} console of your region and provide your organization name, which you used to provide access, and the resource group name.
+3. [Open a support ticket](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#reporting_issues){: new_window} for **Application Services** from the {{site.data.keyword.cloud_notm}} console of your region and provide your organization name, which you used to provide access, and the resource group name.
 
   You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.cloud_notm}} command-line interface](/docs/cli?topic=cloud-cli-install-ibmcloud-cli){: new_window}:
 

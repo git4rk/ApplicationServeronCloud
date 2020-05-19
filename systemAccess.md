@@ -6,7 +6,7 @@ lastupdated: "2020-04-02"
 
 keywords: rest api, access, dashboard, openvpn, vpn, ssh, openssh, command path, admin, manage server, console, firewall port, web server, plugin, plug-in, ssl
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
@@ -229,7 +229,7 @@ If you require the web server to handle all user requests, then you might need t
 
 **Avoid trouble:** Before you generate and propagate the plug-in, ensure that the following prerequisite tasks are complete.
 
-* In your local Windows, Linux or MAC environment, ensure that [openVPN](/docs/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn) is configured, started and you are connected to the appropriate region.
+* In your local Windows, Linux or MAC environment, ensure that [openVPN](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#setup_openvpn) is configured, started and you are connected to the appropriate region.
 * From the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} service dashboard, click **Open the admin console** and log in with wsadmin and the Admin Password that is provided in the service dashboard.
 * From the Admin Console, create an application server (for example, ***server1***), because the Deployment Manager is federated with an empty custom node.
 * Start the server that you created.

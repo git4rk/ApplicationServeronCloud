@@ -6,7 +6,7 @@ lastupdated: "2019-10-22"
 
 keywords: single tenant, access, catalog, create service, block, pricing, vpn, openvpn
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
@@ -43,7 +43,7 @@ The following steps discuss accessing your Single Tenant Environment, along with
 
     **Avoid trouble:** The public environment might be shown as the default. Displaying the correct environment name assumes that you are logged in to the correct region, and have appropriate access to a resource group that is allowed to access your Single Tenant Environment.
 
-    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#reporting_issues){: new_window} page.
+    **Note:** If you select one of the public environments, you might incur an hourly charge. Therefore, if you do not see your Single Tenant Environment name, then open a Support Ticket as described in [Getting help](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#reporting_issues){: new_window} page.
 
 9. Select the appropriate plan, and click **Create**.
 
@@ -69,10 +69,10 @@ For example, suppose that you have a small environment, which contains 64 blocks
 
 After your Single Tenant Environment is provisioned, you can download your VPN credentials and establish an OpenVPN connection. For more information, see the following links:
 
-* [VPN Access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window}
-* [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}
+* [VPN Access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#vpnAccess){: new_window}
+* [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#setup_openvpn){: new_window}
 
 ## Managing your Single Tenant Environment
 {: #manageSTE}
 
-To add extra capacity to your existing Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. See [Contacting sales](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales) for details.
+To add extra capacity to your existing Single Tenant Environment or to order capacity in another datacenter, contact your Americas Call Centers, local IBM representative, or your IBM Business Partner. See [Contacting sales](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#contacting-sales) for details.

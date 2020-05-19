@@ -6,7 +6,7 @@ lastupdated: "2020-03-20"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
@@ -34,9 +34,9 @@ A list of the latest updates to the service.
 ## October 28, 2019: Upgraded infrastructure
 
 Virtual machines are on a new infrastructure. The upgraded infrastructure has the same CPU and memory for a block size but the disk size has doubled. Because the upgraded infrastructure is set up on a different network than old infrastructure, you must set up separate OpenVPN connectivity. You cannot access virtual machines on both the old and the upgraded infrastructure with the same OpenVPN connectivity.
-* For information about T-shirt and block sizing, see [Virtual machine sizing](/docs/ApplicationServeronCloud?topic=wasaas-about#vm-size){: new_window}.
-* For information about network connectivity, see [VPN access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#vpnAccess){: new_window} and [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=wasaas-system_access#setup_openvpn){: new_window}.
-* For more information about the upgraded infrastructure and migrating applications to it, see [FAQs](/docs/ApplicationServeronCloud?topic=wasaas-wasaas-faqs){: new_window}.
+* For information about T-shirt and block sizing, see [Virtual machine sizing](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-about#vm-size){: new_window}.
+* For information about network connectivity, see [VPN access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#vpnAccess){: new_window} and [Setting up OpenVPN](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#setup_openvpn){: new_window}.
+* For more information about the upgraded infrastructure and migrating applications to it, see [FAQs](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-wasaas-faqs){: new_window}.
 
 ## September 20, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -47,8 +47,8 @@ Virtual machines are on a new infrastructure. The upgraded infrastructure has th
 ## July 15, 2019: Changed organization to resource group
 
 New subscriptions will belong to resource groups instead of orgs and spaces. Existing subscriptions that belong to [orgs and spaces](/docs/account?topic=account-orgsspacesusers){: new_window} will continue to work.
-* For information about resource group management, see [Single Tenant Environments](/docs/ApplicationServeronCloud?topic=wasaas-getting_startedSTE).
-* For information about accessing your VM, see [Network environment](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment) and [Single Tenant Environment access](/docs/ApplicationServeronCloud?topic=wasaas-singleTenantEnvironment).
+* For information about resource group management, see [Single Tenant Environments](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting_startedSTE).
+* For information about accessing your VM, see [Network environment](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment) and [Single Tenant Environment access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-singleTenantEnvironment).
 * For general information about resource groups, see [Creating and managing resource groups](/docs/resources?topic=resources-rgs){: new_window} in the {{site.data.keyword.Bluemix_notm}} documentation.
 
 ## July 8, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
@@ -57,7 +57,7 @@ New subscriptions will belong to resource groups instead of orgs and spaces. Exi
 * Integrated miscellaneous service maintenance.
 
 ## May 6, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
-* The [REST API](/docs/ApplicationServeronCloud?topic=wasaas-system_access#system_access) is now OpenAPI compliant. OpenAPI replaces Swagger.
+* The [REST API](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#system_access) is now OpenAPI compliant. OpenAPI replaces Swagger.
 * Integrated miscellaneous service maintenance.
 
 ## April 5, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
@@ -73,7 +73,7 @@ New subscriptions will belong to resource groups instead of orgs and spaces. Exi
 
 The region prefix for Dallas changed from `ng` to `us-south`. The other region prefixes stayed the same. The REST API endpoint URLs changed from `https://wasaas-broker.<region>.bluemix.net/wasaas-broker/api` to `https://wasaas-broker.<region>.websphereappsvr.cloud.ibm.com/wasaas-broker/api`. The `bluemix.net` URLs will continue to be supported, but you should change REST API endpoint URLs to use `websphereappsvr.cloud.ibm.com` if you use the REST APIs to manage your service instances.
 
-For more information about the REST API endpoint URLs, see [System access](/docs/ApplicationServeronCloud?topic=wasaas-system_access#system_access).
+For more information about the REST API endpoint URLs, see [System access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#system_access).
 
 ## December 14, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.0.10 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.10, other fix packs of traditional WebSphere Application Server, such as 9.0.0.9, 8.5.5.14, and 8.5.5.13, are available for provisioning.
@@ -82,7 +82,7 @@ For more information about the REST API endpoint URLs, see [System access](/docs
 
 ## October 24, 2018: Bring-your-own-license billing now available for reserve contract and Single Tenant environments
 
-If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](/docs/ApplicationServeronCloud?topic=wasaas-reporting_issues#contacting-sales).
+If you have existing WebSphere Application Server licenses, you can now use these licenses in your reserve contract or Single Tenant environments. Environments with bring-your-own-license billing offer the same benefits as the standard reserve contract or Single Tenant environments, but are billed at a reduced rate. To use bring-your-own licensing, [contact IBM sales](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#contacting-sales).
 
 ## August 22, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 8.5.5.14 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 8.5.5.14, other fix packs of traditional WebSphere Application Server, such as 9.0.0.8, 9.0.0.7, and 8.5.5.13, are available for provisioning.
@@ -99,7 +99,7 @@ If you have existing WebSphere Application Server licenses, you can now use thes
 
 With reserve contract billing, you purchase a pre-paid monthly subscription that guarantees access to blocks of physically reserved computational resources. These service blocks are set aside for your exclusive use and cannot be considered as available capacity for any other {{site.data.keyword.appserver_full}} users. You can use your service block hours in any way you choose throughout the month, with any overages charged according to the typical pay-as-you-go subscription model.
 
-To learn more about reserve contract billing, see [Billing options](/docs/ApplicationServeronCloud?topic=wasaas-about#billing-options).
+To learn more about reserve contract billing, see [Billing options](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-about#billing-options).
 
 ## March 30, 2018: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -131,7 +131,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/Applic
 
 ## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added the ability to provision an older fix pack level [(n-1)](/docs/ApplicationServeronCloud?topic=wasaas-updating-your-environment#maintenance-strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or through the REST API.
+* Added the ability to provision an older fix pack level [(n-1)](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-updating-your-environment#maintenance-strategy){: new_window} through the Service Profile tab in the {{site.data.keyword.Bluemix_notm}} Service Dashboard or through the REST API.
 * The 9.0.0.5 fix pack version of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.0.5, other fix pack versions of traditional WebSphere Application Server, such as 9.0.0.4, 8.5.5.12, and 8.5.5.11, are available for provisioning.
 * The 17.0.0.3 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 17.0.0.3, the 17.0.0.2 fix pack version of WebSphere Application Server Liberty is available for provisioning.
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg22010172){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
@@ -153,8 +153,8 @@ To learn more about reserve contract billing, see [Billing options](/docs/Applic
 * Integrated miscellaneous service maintenance.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 8.5.5.12 or 9.0.0.4 is installed with new instances of Traditional WebSphere Application Server.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that fix pack 17.0.0.2 is installed with new instances of WebSphere Application Server Liberty (Core and ND Plans).
-* Added an [Advanced VPN Configuration Management](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the London and Sydney regions.
-* Added enhancements to the [Public Internet Access](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#publicInternetAccess){: new_window} feature that allows clients to better manage their public IP address.
+* Added an [Advanced VPN Configuration Management](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the London and Sydney regions.
+* Added enhancements to the [Public Internet Access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#publicInternetAccess){: new_window} feature that allows clients to better manage their public IP address.
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg22002169){: new_window} in the IBM SDK Java Technology Edition that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * An unspecified vulnerability for the Java SE AWT component that might allow an unauthenticated attacker to take control of the system.
   * An unspecified vulnerability for the Java SE JCE component that might allow an unauthenticated attacker to take control of the system.
@@ -170,7 +170,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/Applic
 ## May 25, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * Integrated miscellaneous service maintenance.
-* Added an [Advanced VPN Configuration Management](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the Frankfurt region.
+* Added an [Advanced VPN Configuration Management](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#advancedVPN){: new_window} feature that you can use to create and manage multiple VPN configurations in the Frankfurt region.
 * Upgraded the WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} such that JDK 8 is installed with all new instances of the service.
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg22004264){: new_window} in WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A potential security vulnerability with the WebSphere Application Server MQ JCA Resource adapter.
@@ -222,7 +222,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/Applic
 
 ## November 8, 2016: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added ability for clients to request a [Public IP](/docs/ApplicationServeronCloud?topic=wasaas-networkEnvironment#networkEnvironment) address for their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM
+* Added ability for clients to request a [Public IP](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment#networkEnvironment) address for their WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} VM
 * Addressed [several security vulnerabilities](https://www.ibm.com/support/docview.wss?uid=swg21993842){: new_window} that affect WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} including:
   * A vulnerability in IBM WebSphere Application Server that might allow remote attackers to run arbitrary Java code with a serialized object from untrusted sources.
   * A denial-of-service vulnerability that is caused by an out-of-bounds read in the TS_OBJ_print_bio function. A remote attacker might exploit this vulnerability by using a specially crafted time-stamp file to cause the application to crash.

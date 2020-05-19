@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="wasaas" category="compute,mobile" audience="service" arm="283" href="/docs/ApplicationServeronCloud?topic=wasaas-getting-started#getting-started" path="ApplicationServeronCloud"}
+{: .toc subcollection="ApplicationServeronCloud" category="compute,mobile" audience="service" href="/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting-started#getting-started" path="ApplicationServeronCloud"}
 WebSphere Application Server in IBM Cloud
 
     {: .navgroup id="learn"}

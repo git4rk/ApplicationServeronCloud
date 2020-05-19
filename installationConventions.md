@@ -6,7 +6,7 @@ lastupdated: "2019-09-17"
 
 keywords: install, installation manager, im, wsadmin, cell, collective, websphere, liberty, virtual image
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 

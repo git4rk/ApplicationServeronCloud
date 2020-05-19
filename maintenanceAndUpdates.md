@@ -6,7 +6,7 @@ lastupdated: "2020-05-01"
 
 keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
 
-subcollection: wasaas
+subcollection: ApplicationServeronCloud
 
 ---
 
