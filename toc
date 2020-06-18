@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="ApplicationServeronCloud" category="compute,mobile" audience="service" href="/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting-started#getting-started" path="ApplicationServeronCloud"}
+{: .toc subcollection="ApplicationServeronCloud" category="compute" audience="service" href="/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting-started#getting-started" path="ApplicationServeronCloud"}
 WebSphere Application Server in IBM Cloud
 
     {: .navgroup id="learn"}
