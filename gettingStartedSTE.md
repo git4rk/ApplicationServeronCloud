@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-10-16"
+  years: 2017, 2020
+lastupdated: "2020-06-15"
 
 keywords: single tenant, websphere, sales, order, resource group
 
@@ -40,7 +40,7 @@ Figure 1. Architecture of the WebSphere Application Server in {{site.data.keywor
 ## Resource Group Management
 {: #organization_management}
 
-The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} resource group names and IDs as part of the order, you can start accessing your environment now. If you did not provide a resource group name and ID or if you want to change this setting, open a [support ticket](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.Bluemix_notm}} command-line interface](/docs/cli?topic=cloud-cli-install-ibmcloud-cli){: new_window}:
+The WebSphere Application Server in {{site.data.keyword.Bluemix_notm}} Single Tenant Environment is configured according to your order. If you provided one or more {{site.data.keyword.Bluemix_notm}} resource group names and IDs as part of the order, you can start accessing your environment now. If you did not provide a resource group name and ID or if you want to change this setting, open a [support ticket](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#reporting_issues) for **Application Services** from the {{site.data.keyword.Bluemix_notm}} console of your region. You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.Bluemix_notm}} command-line interface](/docs/cli?topic=cli-install-ibmcloud-cli){: new_window}:
 
 ```
 ibmcloud resource groups
