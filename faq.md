@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-05-04"
+lastupdated: "2020-07-20"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
@@ -126,6 +126,40 @@ You cannot migrate the virtual machine to the upgraded infrastructure. You must 
   * 25 GB of hard drive space
 
 After a virtual machine is provisioned, its number of blocks and RAM cannot be increased.
+
+
+## How do I reset an expired virtual machine password?
+{: #faq-reset-pd}
+{: faq}
+
+A VM password in the upgraded environment expires after 90 days. To reset the password, log in with your SSH key and change the `virtuser` and `wsadmin` passwords.
+
+1. Download the `sshkey` from the **Private SSH Key for virtuser** {{site.data.keyword.cloud_notm}} service instance. See [Using SSH to access WebSphere Application Server in {{site.data.keyword.cloud_notm}} VMs](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-system_access#using_ssh){: new_window}.
+2. Use SSH and the key to connect to the VM.
+  ```
+  ssh -i _privateKey_rsa_ virtuser@PRIVATE_IP
+  ```
+  {: codeblock}
+
+  At this step, you might get prompted to change the password. If so, change the `virtuser` and `wsadmin` passwords.
+
+3. Switch to the root user.
+  ```
+  sudo su
+  ```
+  {: codeblock}
+4. Change your `virtuser` password.
+  ```
+  passwd virtuser
+  ```
+  {: codeblock}
+5. Change your `wsadmin` password.
+  ```
+  passwd wsadmin
+  ```
+  {: codeblock}
+
+**Note**: The changed password is not shown on your service details pages in the {{site.data.keyword.cloud_notm}} console.
 
 
 <!-- For detailed guidance on what to include on this page, see [FAQs guidance](/docs/developing/writing/faq.html#faqs). You can also check out some examples here: [IBM Cloud IAM FAQs](/docs/developing/Access-Management/iamfaq.html#faqs) and [Account FAQs](/docs/account/account_faq.html#accountfaqs). -->

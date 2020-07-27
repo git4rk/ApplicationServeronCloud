@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-10-22"
+  years: 2019, 2020
+lastupdated: "2020-06-15"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -76,7 +76,7 @@ Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.
 2. Click the **WebSphere Application Server** tile.
 3. [Open a support ticket](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-reporting_issues#reporting_issues){: new_window} for **Application Services** from the {{site.data.keyword.cloud_notm}} console of your region and provide your organization name, which you used to provide access, and the resource group name.
 
-  You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.cloud_notm}} command-line interface](/docs/cli?topic=cloud-cli-install-ibmcloud-cli){: new_window}:
+  You can find your resource group names and IDs by running the following command from the [{{site.data.keyword.cloud_notm}} command-line interface](/docs/cli?topic=cli-install-ibmcloud-cli){: new_window}:
 
   ```
   ibmcloud resource groups
