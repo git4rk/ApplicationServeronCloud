@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-06-12"
+lastupdated: "2020-09-04"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,12 @@ subcollection: ApplicationServeronCloud
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## September 4, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.5.5 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.5, other fix packs of traditional WebSphere Application Server, such as 9.0.5.4, 8.5.5.17 and 8.5.5.16, are available for provisioning.
+* The 20.0.0.9 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 20.0.0.9, the 20.0.0.6 fix pack version of WebSphere Application Server Liberty is available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## June 12, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
