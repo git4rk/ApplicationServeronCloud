@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-07-20"
+lastupdated: "2020-12-08"
 
 keywords: bug, problem, faqs, Frequently Asked Questions, question
 
@@ -12,7 +12,10 @@ subcollection: ApplicationServeronCloud
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:note: .note}
+{:external: target="_blank" .external}
 {:codeblock: .codeblock}
+{:tip: .tip}
 {:faq: data-hd-content-type='faq'}
 
 # FAQs
@@ -20,6 +23,26 @@ subcollection: ApplicationServeronCloud
 
 Review frequently asked questions for {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see the [FAQ library](/docs/faqs){: new_window}.
 {: shortdesc}
+
+## How do I migrate from {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}}?
+{: #faq-migrate-to-vsi}
+{: faq}
+
+You can migrate from {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}} to {{site.data.keyword.was4vsi_notm}}.
+
+1. Obtain a [{{site.data.keyword.appserver_short}}](https://www.ibm.com/cloud/websphere-application-server){: external} license, if you do not have one.
+2. Gather details about the number and size of the {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}} VMs. You can use this information when you create virtual server instances (VSIs) in {{site.data.keyword.cloud_notm}}.
+3. Follow the [Deploying {{site.data.keyword.was4vsi_notm}} tutorial](/docs/was-for-vsi?topic=was-for-vsi-getting-started).
+   1. Review the prerequisites.
+   2. Set up a Virtual Private Cloud (VPC) and VSIs in {{site.data.keyword.cloud_notm}}. You are charged for the VSIs.
+   3. Install a WebSphere product. You are not charged for the product installation.
+4. Deploy your application on the new installation. You can use [IBM {{site.data.keyword.appserver_short}} Migration Tool](https://www.ibm.com/support/pages/websphere-application-server-migration-toolkit){: external} to deploy your application on the new installation.
+
+    You also can use [{{site.data.keyword.cloud_notm}} Transformation Advisor](https://www.ibm.com/support/knowledgecenter/SS5Q6W){: external} to modernize your application and move it to the target environment.
+    {: tip}
+5. Test your deployed application.
+6. Delete your {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}} subscription.
+
 
 ## What is the difference between the old infrastructure and the upgraded infrastructure?
 {: #faq-old-or-updated}
@@ -72,48 +95,6 @@ To check the disk size of your VM, you can run the `df -H --total | grep total` 
   Filesystem Size Used Avail Use%
   total      29G  6.3G 23G   22%
   ```
-
-## How do I migrate my application from the old infrastructure to the upgraded infrastructure?
-{: #faq-migrate-infrastructure}
-{: faq}
-
-You cannot migrate the virtual machine to the upgraded infrastructure. You must move your application, data, and any other setting manually.
-
-1. Create a new resource from https://cloud.ibm.com. When creating a resource, you can keep your existing instance or application running. See [Creating and managing resource groups](/docs/resources?topic=resources-rgs){: new_window} in the {{site.data.keyword.cloud_notm}} documentation.
-2. Deploy or migrate your application and then test it.
-3. After the application tests are successful, switch the traffic to the new virtual machine. Switching the traffic depends on your network setup and might require you to work with your networking team.
-4. Delete the old resource.
-</br></br>
-
-
-**Notes**:
-  * You can no longer create resources under your organization name. Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}} supports resource groups. You must use Resource Group to [create your new resource](/docs/resources?topic=resources-rgs){: new_window}. You still will be able to access your existing resources created under your organization name. It is recommended that you rename your resource group to a meaningful name instead of `Default`.
-  * You get one or more new IP addresses and must set up new OpenVPN connectivity to access the virtual machines.
-  * If you are currently using public IP, the public IP also changes. You might need to update your DNS settings to direct your customers to the new resources.
-  * You might be able to [use a migration tool](#faq-migrate-tools) to move your application.
-
-
-## Are there any migration tools that I can use to migrate my application?
-{: #faq-migrate-tools}
-{: faq}
-
-{{site.data.keyword.appserver_short}} provides two ways to migrate your application, but each option has a limitation. Refer to documentation about the options for details.
-
-- Use wsadmin commands to export and import profiles.
-
-  1. Use the [`exportWasprofile` command](https://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.5/com.ibm.websphere.base.doc/ae/rxml_atconfigarchive.html#rxml_atconfigarchive__cmd3){: new_window} to export the entire cell configuration to a configuration archive.
-  2. Use the [`importWasprofile` command](https://www.ibm.com/support/knowledgecenter/SSEQTP_9.0.5/com.ibm.websphere.base.doc/ae/rxml_atconfigarchive.html#rxml_atconfigarchive__cmd5){: new_window} and the exported archive file to restore the configuration or to clone the original profile on another virtual machine.
-</br></br>
-
-  **Limitation**: Only a base server configuration with a single node is supported for the `exportWasprofile` command.
-
-- Use the WebSphere Configuration Migration Tool for IBM Cloud.
-
-  1. [Download the WebSphere Configuration Migration Tool for IBM Cloud]( https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud){: new_window}.
-  2. To migrate your application, follow instructions in the [WebSphere Configuration Migration Tool for IBM Cloud documentation](https://developer.ibm.com/wasdev/docs/websphere-config-migration-cloud/){: new_window}.
-</br></br>
-
-  **Limitation**: The tool supports migration only among {{site.data.keyword.appserver_short}} Version 9.x releases.
 
 
   ## After a virtual machine is provisioned, can I increase its block or RAM size?
