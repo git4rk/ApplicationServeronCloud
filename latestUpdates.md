@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-09-04"
+lastupdated: "2020-12-08"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -138,7 +138,7 @@ To learn more about reserve contract billing, see [Billing options](/docs/Applic
 
 ## December 21, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
-* Added the WebSphere Application Server in IBM Cloud Migration Feature in Dallas, London & Sydney. This feature provides complete end-to-end migration from existing v7, v8, or v8.5.5 on-premises environments to v9 environments in IBM Cloud. For more information, see the [WebSphere Configuration Migration Tool for IBM Cloud](https://developer.ibm.com/wasdev/downloads/#asset/tools-WebSphere_Configuration_Migration_Tool_for_IBM_Cloud).
+* Added the WebSphere Application Server in IBM Cloud Migration Feature in Dallas, London & Sydney. This feature provides complete end-to-end migration from existing v7, v8, or v8.5.5 on-premises environments to v9 environments in IBM Cloud. For more information, see the [WebSphere Configuration Migration Tool for IBM Cloud](https://www.ibm.com/support/pages/websphere-application-server-migration-toolkit).
 * Integrated miscellaneous service maintenance.
 
 ## October 27, 2017: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}

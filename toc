@@ -12,7 +12,7 @@ WebSphere Application Server in IBM Cloud
 
     {: .topicgroup}
     Related links
-        [WASdev](https://developer.ibm.com/wasdev/)
+        [WebSphere Application Server for VSI](https://cloud.ibm.com/docs/was-for-vsi?topic=was-for-vsi-getting-started)
         [WebSphere Application Server V9 documentation](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5)
     {: .navgroup-end}
 
