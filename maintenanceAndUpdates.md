@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-09-04"
+lastupdated: "2020-12-15"
 
 keywords: update, fix pack, fixpack, version, install, installation manager, im, maintenance
 
@@ -27,12 +27,12 @@ You can create a WebSphere Application Server in {{site.data.keyword.Bluemix_not
 When you create a new instance, you can choose from the following fix pack levels on the **Service Profile** tab in the service instance:
 
 **Liberty**
+  * 20.0.0.12
   * 20.0.0.9
-  * 20.0.0.6
 
 **WebSphere Application Server traditional**
+  * 9.0.5.6
   * 9.0.5.5
-  * 9.0.5.4
   * 8.5.5.17
   * 8.5.5.16
 

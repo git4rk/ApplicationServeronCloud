@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-15"
+lastupdated: "2020-12-15"
 
 keywords: bug, problem, troubleshoot, troubleshooting, question
 
@@ -70,7 +70,7 @@ I am a Single Tenant customer and I am not able to see my environment.
 If you cannot [access your Single Tenant Environment](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-singleTenantEnvironment#singleTenantEnvironment){: new_window}, you might need to specify or change a resource group name and ID.
 {: tsCauses}
 
-Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}} supports [resource groups](/docs/resources?topic=resources-rgs){:new_window}. If access to your environment was granted with the organization name, then you must request access for your resource group:
+Similar to other {{site.data.keyword.cloud_notm}} services, {{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}} supports [resource groups](/docs/account?topic=account-rgs){:new_window}. If access to your environment was granted with the organization name, then you must request access for your resource group:
 {: tsResolve}
 1. Rename your resource group to a meaningful name, instead of using the default name, `Default`.
 2. Click the **WebSphere Application Server** tile.

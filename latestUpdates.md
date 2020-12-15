@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-12-08"
+lastupdated: "2020-12-15"
 
 keywords: update, fix pack, fixpack, version, whats new, new in release
 
@@ -18,6 +18,12 @@ subcollection: ApplicationServeronCloud
 {: #latest_updates}
 
 A list of the latest updates to the service.
+
+## December 15, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
+
+* The 9.0.5.6 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.6, other fix packs of traditional WebSphere Application Server, such as 9.0.5.5, 8.5.5.17 and 8.5.5.16, are available for provisioning.
+* The 20.0.0.12 fix pack version of WebSphere Application Server Liberty is now available when you provision a new service instance. In addition to 20.0.0.12, the 20.0.0.9 fix pack version of WebSphere Application Server Liberty is available for provisioning.
+* Integrated miscellaneous service maintenance.
 
 ## September 4, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
@@ -61,7 +67,7 @@ Virtual machines are on a new infrastructure. The upgraded infrastructure has th
 New subscriptions will belong to resource groups instead of orgs and spaces. Existing subscriptions that belong to [orgs and spaces](/docs/account?topic=account-orgsspacesusers){: new_window} will continue to work.
 * For information about resource group management, see [Single Tenant Environments](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-getting_startedSTE).
 * For information about accessing your VM, see [Network environment](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-networkEnvironment) and [Single Tenant Environment access](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-singleTenantEnvironment).
-* For general information about resource groups, see [Creating and managing resource groups](/docs/resources?topic=resources-rgs){: new_window} in the {{site.data.keyword.Bluemix_notm}} documentation.
+* For general information about resource groups, see [Managing resource groups](/docs/account?topic=account-rgs){: new_window} in the {{site.data.keyword.Bluemix_notm}} documentation.
 
 ## July 8, 2019: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 * The 9.0.5.0 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.0, other fix packs of traditional WebSphere Application Server, such as 9.0.0.11, 8.5.5.15 and 8.5.5.14, are available for provisioning.
