@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-12-08"
+lastupdated: "2020-12-15"
 
 keywords: migrate websphere, create service, profile, architecture, vm, virtual machine, provision, resource group, lease
 
@@ -75,7 +75,7 @@ Click the tab for the component, such as the server, deployment manager, or appl
 
 Review the details in the service configuration summary, including the estimated time that it takes to provision.
 
-**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your resource group](/docs/resources?topic=resources-rgs){:new_window} is exactly the same, including case and blank space, as the resource group name for your contract. Also verify that you are in the correct account for the specified resource group name, because resource group names are not required to be unique. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
+**Reserve contract:** Make sure that the **Billing** option is set to _Reserve Contract_. If you don't see the option, verify that [your resource group](/docs/account?topic=account-rgs){:new_window} is exactly the same, including case and blank space, as the resource group name for your contract. Also verify that you are in the correct account for the specified resource group name, because resource group names are not required to be unique. If you provision the service without selecting reserve contract billing, pay-as-you-go billing is used.
 
 Click **Provision** to set up your {{site.data.keyword.appserver_short}} environment.
 

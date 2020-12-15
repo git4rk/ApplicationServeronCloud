@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-02-18"
+  years: 2017, 2020
+lastupdated: "2020-12-15"
 
 keywords: bug, problem, support, sales, ticket
 
@@ -23,7 +23,7 @@ subcollection: ApplicationServeronCloud
 
 If you experience problems with {{site.data.keyword.appserver_full}}, you can receive assistance by using one of the following approaches:
 
-* Open a Support Ticket by following the process that is defined on the [Contacting support for IBM Cloud Public](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) page.
+* Open a Support Ticket by following the process that is defined on the [Contacting support for IBM Cloud Public](/docs/get-support?topic=get-support-using-avatar#getting-customer-support) page.
 * Ask a question in one of the public [IBM Cloud Support forums](https://developer.ibm.com/answers/topics/ibm-cloud/){: new_window}. The forums are actively monitored.
 
   **Note**: Include the `ibm-was-oc` tag in your post to enhance your support experience.
