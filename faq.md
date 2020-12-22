@@ -24,7 +24,30 @@ subcollection: ApplicationServeronCloud
 Review frequently asked questions for {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud}}. To find all FAQs for {{site.data.keyword.cloud_notm}}, see the [FAQ library](/docs/faqs){: new_window}.
 {: shortdesc}
 
-## How do I migrate from {{site.data.keyword.appserver_short}} for {{site.data.keyword.cloud_notm}}?
+## What are the deprecation details for {{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}}?
+{: #faq-deprecation}
+{: faq}
+
+{{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}} service is deprecated. You can use [IBM WebSphere Application Server for VSI](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global){: external} offering to migrate your existing WebSphere applications to a new Virtual Service Instance (VSI) on IBM Cloud. See "Migration Options" section below for more details.
+
+### Important Dates 
+
+### End of Marketing : January 15, 2021
+As of January 15, 2021, new WebSphere Application Server instances will not be provisioned. However, existing instances will continue to be supported until the End of Service date.
+
+
+### End of Service : March 31, 2021 
+Any instance still active as of the End of Service date **will be deleted**. Please migrate your applications and delete WebSphere Application Server instances before the End of Service date.
+
+
+### Migration Options 
+There are other options to leverage WebSphere Application Server on IBM Cloud and we are committed to help. We encourage you to explore and use our recently announced [IBM WebSphere Application Server for VSI](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global){: external} in IBM Cloud, which allows you to quickly install and configure your licensed WebSphere Application Server or Liberty on your VSI (Virtual Server Instance) in IBM Cloud VPC (Virtual Private Cloud). Please refer to the [migration FAQ](#faq-migrate-to-vsi) for more details.
+
+### Special Offer for You
+We recognize migrating your resources can be complex and time consuming, so IBM Cloud is offering a credit of up to USD 2000. Use Code "VPC500" to get USD 500 off when creating your new virtual servers for VPC. Contact IBM Sales team and ask about the special offer for the additional USD 1500. Please refer to [VPC pricing](https://www.ibm.com/cloud/vpc/pricing){: external} for more details.
+
+
+## How do I migrate from {{site.data.keyword.appserver_short}} in {{site.data.keyword.cloud_notm}}?
 {: #faq-migrate-to-vsi}
 {: faq}
 
