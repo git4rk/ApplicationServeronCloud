@@ -19,6 +19,10 @@ subcollection: ApplicationServeronCloud
 
 A list of the latest updates to the service.
 
+## December 23, 2020: Deprecation and End of Service announcement
+
+We are announcing the deprecation of WebSphere Application Server in IBM Cloud service. You can use [IBM WebSphere Application Server for VSI](https://cloud.ibm.com/catalog/content/.-b9f20fe3-baac-459b-b047-cb4ae9eb46f2-global) offering to migrate your existing WebSphere applications to a new Virtual Service Instance (VSI) on IBM Cloud. For more information about this announcement and migrating your applications, see [FAQs](/docs/ApplicationServeronCloud?topic=ApplicationServeronCloud-wasaas-faqs).
+
 ## December 15, 2020: Updated WebSphere Application Server in {{site.data.keyword.Bluemix_notm}}
 
 * The 9.0.5.6 fix pack of traditional WebSphere Application Server is now available when you provision a new service instance. In addition to 9.0.5.6, other fix packs of traditional WebSphere Application Server, such as 9.0.5.5, 8.5.5.17 and 8.5.5.16, are available for provisioning.
